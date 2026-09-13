@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇰 巴基斯坦 (Pakistan) 01 - xiaohe
+- name: 🇵🇰 巴基斯坦 (Pakistan) 01 - myhuo
   server: 64.49.38.3
   port: 8443
   udp: true
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇵🇰 巴基斯坦 (Pakistan) 01 - xiaohe
+  - 🇵🇰 巴基斯坦 (Pakistan) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇰 巴基斯坦 (Pakistan) 01 - xiaohe
+  - 🇵🇰 巴基斯坦 (Pakistan) 01 - myhuo
 rules:
 - MATCH,PROXIES
