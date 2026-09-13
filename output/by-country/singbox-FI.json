@@ -4,25 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 01 - myhuo",
-      "server": "204.168.195.30",
-      "server_port": 51185,
-      "uuid": "12af43c3-84b4-4248-878b-b75f35835487",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "amp-api-edge.apps.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VFDbAJQdqzKl7hL6SmUrhHHEORtILSsJHYWF67an1HU",
-          "short_id": "55a464180d3b1f7e"
-        }
-      }
+      "server": "65.109.215.118",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "rSeYcig_XBy8q3k33NpK3A"
     },
     {
       "type": "selector",

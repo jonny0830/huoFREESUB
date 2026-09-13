@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - myhuo
+  server: 143.246.193.215
+  port: 443
+  udp: true
+  type: vless
+  uuid: 77da6e30-ad4e-11f1-94d5-525400d1d4f7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
+  servername: www.blocket.se
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
   server: 79.141.174.147
   port: 33743
   udp: true
@@ -14,11 +26,11 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
+- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
   server: 91.193.17.156
   port: 9458
   udp: true
@@ -32,14 +44,14 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
+- name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
   server: se-node.rumedia-cdn.com
   port: 25443
   udp: true
   type: hysteria2
   password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
   sni: cf2.rumedia-cdn.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,6 +60,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - myhuo
   - 🇸🇪 瑞典 (Sweden) 02 - myhuo
   - 🇸🇪 瑞典 (Sweden) 03 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,5 +69,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - myhuo
   - 🇸🇪 瑞典 (Sweden) 02 - myhuo
   - 🇸🇪 瑞典 (Sweden) 03 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 04 - myhuo
 rules:
 - MATCH,PROXIES

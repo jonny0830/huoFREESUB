@@ -4,8 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo",
+      "server": "dlbgwqqngrjbwan.jiedddym.com",
+      "server_port": 42868,
+      "uuid": "6dbb8854-17a5-4684-b930-c11f022975ec",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GLtdhq3ZSKYlJv62ye5dFKfjI3UF9mBIGOl5ms75rVA",
+          "short_id": "747a75eb5ecef8"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo",
       "server": "hk02.xn--9kq85xcu6b.com",
       "server_port": 65534,
       "password": "45dae7e6-4573-4e6b-a1f3-57b3bbaf990d",
@@ -20,14 +41,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

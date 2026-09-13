@@ -13,35 +13,14 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - myhuo
-  server: 146.56.112.110
-  port: 8888
-  udp: true
-  type: vmess
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-  alterId: 0
-  cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 03 - myhuo
-  server: 3.39.4.109
-  port: 13672
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 04 - myhuo
   server: 3.36.93.74
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 3.36.93.74
+  sni: speedtest.tinkoff.ru
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - myhuo
+- name: 🇰🇷 韩国 (South Korea) 03 - myhuo
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -53,16 +32,29 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 06 - myhuo
-  server: 152.67.200.82
-  port: 50160
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 04 - myhuo
+  server: 3.39.4.109
+  port: 13672
   udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: vk.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07 - myhuo
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 05 - myhuo
+  server: 146.56.112.110
+  port: 8888
+  udp: true
+  type: vmess
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  alterId: 0
+  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 06 - myhuo
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -74,7 +66,7 @@ proxies:
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 08 - myhuo
+- name: 🇰🇷 韩国 (South Korea) 07 - myhuo
   server: 154.90.62.70
   port: 56127
   udp: true
@@ -82,7 +74,7 @@ proxies:
   password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
   sni: 154.90.62.70
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09 - myhuo
+- name: 🇰🇷 韩国 (South Korea) 08 - myhuo
   server: 152.70.237.123
   port: 2053
   udp: true
@@ -103,7 +95,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - myhuo
   - 🇰🇷 韩国 (South Korea) 07 - myhuo
   - 🇰🇷 韩国 (South Korea) 08 - myhuo
-  - 🇰🇷 韩国 (South Korea) 09 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -117,6 +108,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - myhuo
   - 🇰🇷 韩国 (South Korea) 07 - myhuo
   - 🇰🇷 韩国 (South Korea) 08 - myhuo
-  - 🇰🇷 韩国 (South Korea) 09 - myhuo
 rules:
 - MATCH,PROXIES

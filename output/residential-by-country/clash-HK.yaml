@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
+  server: dlbgwqqngrjbwan.jiedddym.com
+  port: 42868
+  udp: true
+  type: vless
+  uuid: 6dbb8854-17a5-4684-b930-c11f022975ec
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GLtdhq3ZSKYlJv62ye5dFKfjI3UF9mBIGOl5ms75rVA
+    short-id: 747a75eb5ecef8
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
   server: hk02.xn--9kq85xcu6b.com
   port: 65534
   udp: true
@@ -18,11 +31,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
 rules:
 - MATCH,PROXIES

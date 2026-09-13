@@ -18,18 +18,12 @@ proxies:
   servername: sync-bridge.org
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
-  server: 45.74.159.233
-  port: 56659
+  server: 188.132.174.236
+  port: 1080
   udp: true
-  type: vless
-  uuid: 12af43c3-84b4-4248-878b-b75f35835487
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: qLggZ7qospn6X7UEO1zSoohNXK4Y1EX7Hx2sJeWfvw0
-    short-id: 9aa3a3f599f3d5d0
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
 proxy-groups:
 - name: PROXIES
   type: select

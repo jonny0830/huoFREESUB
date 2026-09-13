@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - myhuo
-  server: 104.16.71.213
-  port: 443
+- name: 🇹🇭 泰国 (Thailand) 01 - myhuo
+  server: 103.86.49.57
+  port: 80
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   network: ws
   ws-opts:
-    path: /assignment
+    path: /ws
+    headers:
+      Host: ais.speedtest.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - myhuo
+  - 🇹🇭 泰国 (Thailand) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - myhuo
+  - 🇹🇭 泰国 (Thailand) 01 - myhuo
 rules:
 - MATCH,PROXIES

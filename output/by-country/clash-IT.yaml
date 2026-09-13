@@ -29,20 +29,7 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
     short-id: 5b8a942318178e7b
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 04 - myhuo
-  server: 172.238.232.239
-  port: 32833
-  udp: true
-  type: vless
-  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
-    short-id: a0a305ccc8e94aa8
-  servername: www.intel.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,7 +38,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - myhuo
   - 🇮🇹 意大利 (Italy) 02 - myhuo
   - 🇮🇹 意大利 (Italy) 03 - myhuo
-  - 🇮🇹 意大利 (Italy) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,6 +46,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - myhuo
   - 🇮🇹 意大利 (Italy) 02 - myhuo
   - 🇮🇹 意大利 (Italy) 03 - myhuo
-  - 🇮🇹 意大利 (Italy) 04 - myhuo
 rules:
 - MATCH,PROXIES
