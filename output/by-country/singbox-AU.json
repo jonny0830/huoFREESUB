@@ -12,15 +12,14 @@
       "security": "auto"
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - myhuo",
-      "server": "vpn-au-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "whatsapp.com",
-        "insecure": true
+      "server": "103.75.119.126",
+      "server_port": 2087,
+      "uuid": "731f177e-00aa-480c-b935-661456139a32",
+      "transport": {
+        "type": "ws",
+        "path": "/7586c69d3dc9"
       }
     },
     {
@@ -45,25 +44,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - myhuo",
-      "server": "103.75.119.126",
-      "server_port": 2087,
-      "uuid": "731f177e-00aa-480c-b935-661456139a32",
-      "transport": {
-        "type": "ws",
-        "path": "/7586c69d3dc9"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 - myhuo",
         "🇦🇺 澳大利亚 (Australia) 02 - myhuo",
-        "🇦🇺 澳大利亚 (Australia) 03 - myhuo",
-        "🇦🇺 澳大利亚 (Australia) 04 - myhuo"
+        "🇦🇺 澳大利亚 (Australia) 03 - myhuo"
       ]
     },
     {
@@ -72,8 +59,7 @@
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 - myhuo",
         "🇦🇺 澳大利亚 (Australia) 02 - myhuo",
-        "🇦🇺 澳大利亚 (Australia) 03 - myhuo",
-        "🇦🇺 澳大利亚 (Australia) 04 - myhuo"
+        "🇦🇺 澳大利亚 (Australia) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

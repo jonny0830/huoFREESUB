@@ -1,0 +1,71 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo",
+      "server": "188.114.97.6",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo",
+      "server": "62.233.39.9",
+      "server_port": 8443,
+      "uuid": "dca76b88-b038-e82b-45e1-1d76b476d7ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.dell.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oHaUPZiESTQQ89DMd4uIcPWgsyeFFy58iZYX_8mbvWk",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

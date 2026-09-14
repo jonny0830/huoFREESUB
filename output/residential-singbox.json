@@ -4,53 +4,69 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo",
-      "server": "36.224.152.189",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
-      "server": "wwbqwqqnlyydssc.cfooov.xyz",
-      "server_port": 39817,
-      "uuid": "6dbb8854-17a5-4684-b930-c11f022975ec",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
+      "server": "104.17.147.22",
+      "server_port": 443,
+      "uuid": "518de0d4-6ce8-4404-80db-23c4a8806128",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "uzaav8KrDeu1P9qdg6fDfxmq9Z6vV6a-WVPTWX1zIj4",
-          "short_id": "0044d4f490e795b8"
+        "server_name": "ez-5faafb.esmaoi.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiQkFLTnhqM2tZTSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "ez-5faafb.esmaoi.workers.dev"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo",
-      "server": "dlbgwqqngrjbwan.jiedddym.com",
-      "server_port": 42868,
-      "uuid": "6dbb8854-17a5-4684-b930-c11f022975ec",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 (移动家宽) - myhuo",
+      "server": "170.168.99.8",
+      "server_port": 8443,
+      "uuid": "4350213a-b4e7-262a-0bd7-bd16957cf71a",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "cdn.steamstatic.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "GLtdhq3ZSKYlJv62ye5dFKfjI3UF9mBIGOl5ms75rVA",
-          "short_id": "747a75eb5ecef8"
+          "public_key": "R8Mogel1wypEIpcUXnGmG1cuzT9POghNhqJcw4-CLx0",
+          "short_id": ""
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo",
+      "server": "36.224.152.189",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo",
+      "server": "hk01.kfc-520.com",
+      "server_port": 60001,
+      "password": "49f7ff21-a176-30cc-ab60-a5988fd85ce0",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk01.kfc-520.com",
+        "insecure": true
       }
     },
     {
@@ -58,18 +74,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo"
+        "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
+        "🇸🇪 瑞典 (Sweden) 02 (移动家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo"
+        "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
+        "🇸🇪 瑞典 (Sweden) 02 (移动家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
