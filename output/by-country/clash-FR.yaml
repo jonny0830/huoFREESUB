@@ -5,13 +5,57 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - myhuo
-  server: 51.83.192.80
-  port: 8388
+  server: 15.237.218.241
+  port: 443
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇫🇷 法国 (France) 02 - myhuo
+  server: 13.39.182.161
+  port: 22223
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 03 - myhuo
+  server: 13.37.25.107
+  port: 22223
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 04 - myhuo
+  server: 104.16.72.41
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 05 - myhuo
+  server: 62.210.124.146
+  port: 22000
+  udp: true
+  type: hysteria2
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 06 - myhuo
+  server: 45.144.28.39
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  tls: true
+  servername: usejh2.neobo-tooth.ru
+  skip-cert-verify: false
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇫🇷 法国 (France) 07 - myhuo
   server: 62.210.91.10
   port: 23576
   udp: true
@@ -24,39 +68,43 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: ''
-- name: 🇫🇷 法国 (France) 03 - myhuo
-  server: 152.228.162.19
-  port: 80
+- name: 🇫🇷 法国 (France) 08 - myhuo
+  server: 51.77.217.70
+  port: 2053
   udp: true
   type: vless
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇫🇷 法国 (France) 04 - myhuo
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  tls: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+    short-id: bfe58beb41f1d09f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 09 - myhuo
+  server: 151.247.197.253
+  port: 36723
+  udp: true
+  type: hysteria2
+  password: Krab9Hyst2_Rk7pQ2xL
+  sni: 151.247.197.253
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 10 - myhuo
+  server: 51.83.192.80
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
+- name: 🇫🇷 法国 (France) 11 - myhuo
   server: 45.144.28.39
-  port: 2083
+  port: 2096
   udp: true
   type: vless
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  tls: true
-  servername: usejh2.neobo-tooth.ru
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇫🇷 法国 (France) 05 - myhuo
-  server: 162.19.10.99
-  port: 443
-  udp: true
-  type: vless
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
-  flow: xtls-rprx-vision
-  tls: true
-  servername: nasnet-162191099-direct.mbghalibaf.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 06 - myhuo
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇫🇷 法国 (France) 12 - myhuo
   server: 62.210.91.2
   port: 23576
   udp: true
@@ -69,40 +117,42 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 07 - myhuo
-  server: 35.181.166.40
-  port: 443
+- name: 🇫🇷 法国 (France) 13 - myhuo
+  server: 185.114.72.31
+  port: 2053
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-fr-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 08 - myhuo
-  server: usejh2.neobo-tooth.ru
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: usejh2.neobo-tooth.ru
-- name: 🇫🇷 法国 (France) 09 - myhuo
-  server: 15.237.218.241
+    path: /assignment
+- name: 🇫🇷 法国 (France) 14 - myhuo
+  server: 162.19.10.99
   port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇫🇷 法国 (France) 10 - myhuo
-  server: 62.210.124.146
-  port: 22000
-  udp: true
-  type: hysteria2
-  password: dongtaiwang.com
-  sni: www.microsoft.com
+  type: vless
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nasnet-162191099-direct.mbghalibaf.com
   skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 15 - myhuo
+  server: 81.95.4.189
+  port: 443
+  udp: true
+  type: vless
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  tls: true
+  servername: bab-6.site
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -118,6 +168,11 @@ proxy-groups:
   - 🇫🇷 法国 (France) 08 - myhuo
   - 🇫🇷 法国 (France) 09 - myhuo
   - 🇫🇷 法国 (France) 10 - myhuo
+  - 🇫🇷 法国 (France) 11 - myhuo
+  - 🇫🇷 法国 (France) 12 - myhuo
+  - 🇫🇷 法国 (France) 13 - myhuo
+  - 🇫🇷 法国 (France) 14 - myhuo
+  - 🇫🇷 法国 (France) 15 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -133,5 +188,10 @@ proxy-groups:
   - 🇫🇷 法国 (France) 08 - myhuo
   - 🇫🇷 法国 (France) 09 - myhuo
   - 🇫🇷 法国 (France) 10 - myhuo
+  - 🇫🇷 法国 (France) 11 - myhuo
+  - 🇫🇷 法国 (France) 12 - myhuo
+  - 🇫🇷 法国 (France) 13 - myhuo
+  - 🇫🇷 法国 (France) 14 - myhuo
+  - 🇫🇷 法国 (France) 15 - myhuo
 rules:
 - MATCH,PROXIES
