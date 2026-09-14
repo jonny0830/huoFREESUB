@@ -5,42 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - myhuo
-  server: 147.78.182.3
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 8bf3e040-8ac9-5d0e-304f-9b735e145de8
-  tls: true
-  reality-opts:
-    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
-  servername: www.epson.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
-  server: 188.114.97.6
-  port: 2053
-  udp: true
-  type: vless
-  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
-  tls: true
-  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
-  server: 185.39.204.3
-  port: 8098
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: PluSKSrbtxTvlVv7BOUwn4
-- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   server: 91.240.86.70
   port: 22443
   udp: true
@@ -48,14 +12,14 @@ proxies:
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: hy.quattro-tech.ru
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
+- name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
   server: 130.49.189.158
   port: 43558
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
-- name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
+- name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
   server: msk.frkn.org
   port: 443
   udp: true
@@ -63,7 +27,7 @@ proxies:
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 07 - myhuo
+- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   server: 46.8.200.91
   port: 443
   udp: true
@@ -78,7 +42,7 @@ proxies:
     path: /casc
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 08 - myhuo
+- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -100,9 +64,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 05 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 06 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 07 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 08 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -113,8 +74,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 05 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 06 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 07 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 08 - myhuo
 rules:
 - MATCH,PROXIES

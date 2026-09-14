@@ -5,13 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - myhuo
-  server: 205.237.109.173
+  server: 205.237.109.176
   port: 8443
   udp: true
   type: hysteria2
   password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
   sni: hopp-netherland-new.dynuddns.net
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - myhuo
   server: 162.249.126.2
   port: 8443
@@ -21,50 +21,28 @@ proxies:
   sni: hopp-germany-new.ddnsguru.com
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
-  server: 154.46.31.106
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - myhuo
-  server: 85.204.107.171
+  server: 85.204.107.170
   port: 8443
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - myhuo
-  server: 194.5.248.93
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: roma1.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - myhuo
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - myhuo
   server: 185.156.44.99
   port: 443
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: css.rbxcdn.com
+  sni: vk.com
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - myhuo
-  server: roma3.moritech.net
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - myhuo
+  server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: roma3.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: safari
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,8 +53,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 04 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 05 - myhuo
-  - 🇷🇴 罗马尼亚 (Romania) 06 - myhuo
-  - 🇷🇴 罗马尼亚 (Romania) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,7 +63,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 04 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 05 - myhuo
-  - 🇷🇴 罗马尼亚 (Romania) 06 - myhuo
-  - 🇷🇴 罗马尼亚 (Romania) 07 - myhuo
 rules:
 - MATCH,PROXIES
