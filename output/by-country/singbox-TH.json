@@ -4,26 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇲🇽 墨西哥 (Mexico) 01 - myhuo",
-      "server": "64.177.90.30",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "BWyPPTusFKhGgzKh"
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 (Thailand) 01 - myhuo",
+      "server": "119.46.51.45",
+      "server_port": 37515,
+      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇽 墨西哥 (Mexico) 01 - myhuo"
+        "🇹🇭 泰国 (Thailand) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇽 墨西哥 (Mexico) 01 - myhuo"
+        "🇹🇭 泰国 (Thailand) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
