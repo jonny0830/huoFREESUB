@@ -11,7 +11,22 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+- name: 🇯🇵 日本 (Japan) 02 (家宽) - myhuo
+  server: 129.151.64.169
+  port: 31867
+  udp: true
+  type: vless
+  uuid: bd01efed-f999-41a5-bbb1-3d2357647f11
+  tls: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -28,13 +43,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  - 🇯🇵 日本 (Japan) 02 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  - 🇯🇵 日本 (Japan) 02 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
 rules:
 - MATCH,PROXIES
