@@ -5,42 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - myhuo
-  server: 195.133.5.102
-  port: 7018
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 895b4b796a357570
-- name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
-- name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
-  server: 91.196.32.163
-  port: 443
-  udp: true
-  type: hysteria2
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: germany3.h2corp.local
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
-  server: 195.58.48.137
-  port: 7018
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
-- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
   server: 195.133.23.200
   port: 7018
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 81a20429165df87e
-- name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
+- name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
+  server: 91.240.86.70
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: 91.240.86.70
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
+  server: msk.frkn.org
+  port: 443
+  udp: true
+  type: hysteria2
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: msk.frkn.org
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   server: 46.8.200.91
   port: 443
   udp: true
@@ -54,14 +41,13 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 07 - myhuo
-  server: msk.frkn.org
-  port: 443
+- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
+  server: 130.49.189.158
+  port: 43558
   udp: true
-  type: hysteria2
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: msk.frkn.org
-  skip-cert-verify: false
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,8 +58,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 05 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 06 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,7 +68,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 05 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 06 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 07 - myhuo
 rules:
 - MATCH,PROXIES

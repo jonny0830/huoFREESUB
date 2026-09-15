@@ -12,7 +12,25 @@
       "tls": {
         "enabled": true,
         "server_name": "neth9.lunariai.ru",
-        "insecure": true
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - myhuo",
+      "server": "neth9.lunariai.ru",
+      "server_port": 443,
+      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
+      "transport": {
+        "type": "ws"
       }
     },
     {
@@ -20,14 +38,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01 - myhuo"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - myhuo",
+        "🇧🇬 保加利亚 (Bulgaria) 02 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01 - myhuo"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - myhuo",
+        "🇧🇬 保加利亚 (Bulgaria) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
