@@ -5,13 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - myhuo
-  server: 91.240.86.70
-  port: 22443
+  server: 195.133.23.200
+  port: 7018
   udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
 - name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
   server: msk.frkn.org
   port: 443
@@ -21,6 +20,14 @@ proxies:
   sni: msk.frkn.org
   skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
+  server: 91.240.86.70
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: hy.quattro-tech.ru
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   server: 46.8.200.91
   port: 443
   udp: true
@@ -43,6 +50,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 02 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 03 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,5 +59,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 02 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 03 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
 rules:
 - MATCH,PROXIES
