@@ -4,18 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - myhuo",
-      "server": "65.109.206.69",
-      "server_port": 56092,
-      "uuid": "9bbe5565-56fa-4935-940d-1442f443fcc8",
-      "transport": {
-        "type": "http"
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - myhuo",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - myhuo",
       "server": "65.109.215.118",
       "server_port": 1080,
       "method": "chacha20-ietf-poly1305",
@@ -23,25 +13,42 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
-      "server": "151.101.56.6",
-      "server_port": 443,
-      "uuid": "d7282b41-1f2a-47bb-8593-f464fd6b6d78",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - myhuo",
+      "server": "185.79.138.71",
+      "server_port": 448,
+      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
       "tls": {
         "enabled": true,
-        "server_name": "global.fastly.com",
-        "insecure": true,
+        "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
+          "short_id": "cd21e552537c7c0b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
+      "server": "185.255.179.11",
+      "server_port": 9443,
+      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
+      "tls": {
+        "enabled": true,
+        "server_name": "hub-se-02.hanvpn.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "kayko.global.ssl.fastly.net"
-        }
+        "type": "grpc",
+        "service_name": "se02-grpc-8e47a"
       }
     },
     {

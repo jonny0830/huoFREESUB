@@ -5,20 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - myhuo
-  server: 104.18.32.47
-  port: 8443
+  server: 172.64.229.2
+  port: 80
   udp: true
   type: vless
-  uuid: 4ff70740-8c80-48ae-985f-2afe4924e908
-  tls: true
-  servername: pubb.clnahanpnln.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /sync
+    path: /?ed=2560security=tls
     headers:
-      Host: pubb.clnahanpnln.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
