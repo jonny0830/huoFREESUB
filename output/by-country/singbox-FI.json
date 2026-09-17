@@ -6,6 +6,26 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - myhuo",
+      "server": "185.79.138.71",
+      "server_port": 448,
+      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
+          "short_id": "cd21e552537c7c0b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - myhuo",
       "server": "31.77.199.147",
       "server_port": 4443,
       "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
@@ -29,14 +49,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - myhuo"
+        "🇫🇮 芬兰 (Finland) 01 - myhuo",
+        "🇫🇮 芬兰 (Finland) 02 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - myhuo"
+        "🇫🇮 芬兰 (Finland) 01 - myhuo",
+        "🇫🇮 芬兰 (Finland) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,30 +5,30 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - myhuo",
-      "server": "206.1.97.61",
-      "server_port": 13323,
-      "method": "chacha20-ietf-poly1305",
-      "password": "XyodFtypR0xCFHyWW9gxqp15oU78njiX"
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - myhuo",
+      "server": "185.135.86.175",
+      "server_port": 9068,
+      "method": "aes-256-cfb",
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - myhuo",
-      "server": "156.67.63.231",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - myhuo",
+      "server": "138.124.180.137",
       "server_port": 443,
-      "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
+      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "sync-bridge.org",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI",
-          "short_id": "5606d4a25c99e7af"
+          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
+          "short_id": "33acba1b"
         }
       }
     },
@@ -37,16 +37,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 02 - myhuo"
+        "🇱🇻 拉脱维亚 (Latvia) 01 - myhuo",
+        "🇱🇻 拉脱维亚 (Latvia) 02 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 02 - myhuo"
+        "🇱🇻 拉脱维亚 (Latvia) 01 - myhuo",
+        "🇱🇻 拉脱维亚 (Latvia) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

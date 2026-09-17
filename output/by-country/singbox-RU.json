@@ -4,74 +4,39 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - myhuo",
-      "server": "104.21.4.176",
-      "server_port": 443,
-      "password": "Telegram_healer_config",
+      "server": "91.240.86.70",
+      "server_port": 22443,
+      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
       "tls": {
         "enabled": true,
-        "server_name": "5Er0m2i2eNS2uLpg7SJd45UGqS.87fcvT2k11501YnO2TXm6yw-miPJ2Kr.worKerS.deV",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "hy.quattro-tech.ru",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - myhuo",
+      "server": "46.8.200.91",
+      "server_port": 443,
+      "uuid": "b8201bab-fa6c-4f6e-b289-b5da660c6f69",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf3.rumedia-cdn.com",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/tr/5cJhuZZi5ZL6KKmZ5vKVeM?ed=2560",
+        "path": "/cdn/v3/live",
         "headers": {
-          "Host": "5er0m2i2ens2ulpg7sjd45ugqs.87fcvt2k11501yno2txm6yw-mipj2kr.workers.dev"
+          "Host": "cf3.rumedia-cdn.com"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - myhuo",
-      "server": "94.249.187.46",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "rSeYcig_XBy8q3k33NpK3A"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - myhuo",
-      "server": "194.87.196.13",
-      "server_port": 9011,
-      "method": "aes-256-gcm",
-      "password": "4938e975724d0ed1"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - myhuo",
-      "server": "195.58.48.137",
-      "server_port": 9019,
-      "method": "aes-256-gcm",
-      "password": "8ad9d72a5571df86"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - myhuo",
-      "server": "195.133.5.102",
-      "server_port": 9011,
-      "method": "aes-256-gcm",
-      "password": "895b4b796a357570"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - myhuo",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "/QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA="
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07 - myhuo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - myhuo",
       "server": "msk.frkn.org",
       "server_port": 443,
       "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
@@ -83,24 +48,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 08 - myhuo",
-      "server": "46.8.200.91",
-      "server_port": 443,
-      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - myhuo",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
       "tls": {
         "enabled": true,
-        "server_name": "cf3.rumedia-cdn.com",
-        "insecure": false,
+        "server_name": "ya.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/casc",
-        "headers": {
-          "Host": "cf3.rumedia-cdn.com"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
         }
       }
     },
@@ -112,11 +74,7 @@
         "🇷🇺 俄罗斯 (Russia) 01 - myhuo",
         "🇷🇺 俄罗斯 (Russia) 02 - myhuo",
         "🇷🇺 俄罗斯 (Russia) 03 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 04 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 05 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 06 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 07 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 08 - myhuo"
+        "🇷🇺 俄罗斯 (Russia) 04 - myhuo"
       ]
     },
     {
@@ -126,11 +84,7 @@
         "🇷🇺 俄罗斯 (Russia) 01 - myhuo",
         "🇷🇺 俄罗斯 (Russia) 02 - myhuo",
         "🇷🇺 俄罗斯 (Russia) 03 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 04 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 05 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 06 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 07 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 08 - myhuo"
+        "🇷🇺 俄罗斯 (Russia) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

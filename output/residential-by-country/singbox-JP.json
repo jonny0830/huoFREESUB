@@ -5,24 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇺 匈牙利 (Hungary) 01 - myhuo",
-      "server": "104.24.31.89",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - myhuo",
+      "server": "167.179.111.237",
       "server_port": 443,
-      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560",
+        "path": "/act/player/search?ed=2560fp=chrome",
         "headers": {
-          "Host": "rayan-007.nastaran.dpdns.org"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
@@ -31,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇺 匈牙利 (Hungary) 01 - myhuo"
+        "🇯🇵 日本 (Japan) 01 (家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇺 匈牙利 (Hungary) 01 - myhuo"
+        "🇯🇵 日本 (Japan) 01 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

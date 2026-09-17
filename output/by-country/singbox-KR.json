@@ -4,12 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 01 - myhuo",
-      "server": "140.238.2.250",
-      "server_port": 443,
-      "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
-      "security": "auto"
+      "server": "141.164.45.187",
+      "server_port": 9090,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
     },
     {
       "type": "hysteria2",
@@ -24,20 +24,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - myhuo",
-      "server": "152.70.237.123",
-      "server_port": 2053,
-      "password": "maintell",
-      "tls": {
-        "enabled": true,
-        "server_name": "bing.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - myhuo",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - myhuo",
       "server": "3.39.4.109",
       "server_port": 13672,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -57,29 +45,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 05 - myhuo",
-      "server": "3.39.4.109",
-      "server_port": 18967,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - myhuo",
+      "server": "152.70.237.123",
+      "server_port": 2053,
+      "password": "maintell",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
+        "server_name": "bing.com",
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - myhuo",
+      "tag": "🇰🇷 韩国 (South Korea) 05 - myhuo",
       "server": "vpn-kr-002.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ9wR5tF6vB3z",
@@ -90,24 +69,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 07 - myhuo",
-      "server": "119.28.161.143",
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - myhuo",
+      "server": "140.238.2.250",
       "server_port": 443,
-      "uuid": "1ebb0858-218a-4dee-8746-36a67bc64462",
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pR7MPTAA4cZsW9AO-twMzuogiWGMKPiheTg70fcWWWs",
-          "short_id": "0a427bc3"
-        }
-      }
+      "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 07 - myhuo",
+      "server": "221.139.79.57",
+      "server_port": 13979,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
     },
     {
       "type": "hysteria2",
@@ -122,20 +97,49 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 09 - myhuo",
-      "server": "154.90.62.70",
-      "server_port": 56127,
-      "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
+      "server": "151.245.106.49",
+      "server_port": 2053,
+      "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
       "tls": {
         "enabled": true,
-        "server_name": "154.90.62.70",
-        "insecure": true
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo",
+          "short_id": "429499c03d4cc8a0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 10 - myhuo",
+      "server": "3.39.4.109",
+      "server_port": 18967,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 10 - myhuo",
+      "tag": "🇰🇷 韩国 (South Korea) 11 - myhuo",
       "server": "150-230-252-217.liao.kdns.fr",
       "server_port": 50160,
       "password": "9cfc9458e48c028ec03ff86ebc71c744",
@@ -146,34 +150,28 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 11 - myhuo",
-      "server": "152.67.200.82",
-      "server_port": 50160,
-      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
-      "tls": {
-        "enabled": true,
-        "server_name": "152.67.200.82",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 12 - myhuo",
-      "server": "151.245.106.49",
-      "server_port": 2053,
-      "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
+      "server": "172.64.159.190",
+      "server_port": 443,
+      "uuid": "43e60b75-9920-450a-94ee-8762758ca49c",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "a860d725.69lover.site",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo",
-          "short_id": "429499c03d4cc8a0"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v2/288cd04559d84d1d/stream",
+        "headers": {
+          "Host": "a860d725.69lover.site"
         }
       }
     },

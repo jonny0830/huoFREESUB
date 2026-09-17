@@ -4,48 +4,44 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 - myhuo",
-      "server": "104.16.10.2",
-      "server_port": 443,
-      "uuid": "8102891d-7b37-4dc5-8261-9474b59b5c63",
-      "tls": {
-        "enabled": true,
-        "server_name": "vip.868068.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/proxyip=us.xiabibi.cf",
-        "headers": {
-          "Host": "vip.868068.xyz"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 02 - myhuo",
-      "server": "37.19.198.243",
+      "tag": "🇺🇸 美国 (United States) 01 - myhuo",
+      "server": "156.146.38.169",
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks"
     },
     {
-      "type": "vmess",
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 02 - myhuo",
+      "server": "172.64.42.85",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 03 - myhuo",
-      "server": "67.220.85.46",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "server": "172.64.53.55",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇺🇸 美国 (United States) 04 - myhuo",
-      "server": "37.19.198.160",
+      "server": "37.19.198.244",
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks"
@@ -53,74 +49,190 @@
     {
       "type": "shadowsocks",
       "tag": "🇺🇸 美国 (United States) 05 - myhuo",
-      "server": "198.98.53.130",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "eDfN7SODQceIOmIAbtJJtK"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 06 - myhuo",
-      "server": "104.21.34.106",
-      "server_port": 443,
-      "uuid": "8102891d-7b37-4dc5-8261-9474b59b5c63",
-      "tls": {
-        "enabled": true,
-        "server_name": "vip.868068.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/proxyip=us.xiabibi.cf",
-        "headers": {
-          "Host": "vip.868068.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 07 - myhuo",
-      "server": "104.18.26.90",
-      "server_port": 443,
-      "uuid": "8102891d-7b37-4dc5-8261-9474b59b5c63",
-      "tls": {
-        "enabled": true,
-        "server_name": "vip.868068.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/proxyip=us.xiabibi.cf",
-        "headers": {
-          "Host": "vip.868068.xyz"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 08 - myhuo",
       "server": "15.204.247.206",
       "server_port": 4444,
       "method": "aes-256-gcm",
       "password": "pKEW8JPByTVTLtM"
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 06 - myhuo",
+      "server": "104.18.47.113",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 09 - myhuo",
-      "server": "216.106.183.35",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "tag": "🇺🇸 美国 (United States) 07 - myhuo",
+      "server": "67.220.85.46",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
       "security": "auto"
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 08 - myhuo",
+      "server": "104.18.47.113",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 09 - myhuo",
+      "server": "162.159.38.127",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 10 - myhuo",
-      "server": "139.64.235.77",
+      "server": "162.159.48.32",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 11 - myhuo",
+      "server": "162.159.45.19",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 12 (家宽) - myhuo",
+      "server": "162.159.24.131",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 13 - myhuo",
+      "server": "162.159.24.131",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 14 - myhuo",
+      "server": "172.64.154.8",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 15 - myhuo",
+      "server": "104.18.46.46",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 16 - myhuo",
+      "server": "162.159.43.187",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 17 - myhuo",
+      "server": "18.191.174.144",
       "server_port": 443,
-      "uuid": "b09dfed1-90fa-4353-8bdf-de1edb2e2d79",
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 18 - myhuo",
+      "server": "108.162.198.178",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 19 - myhuo",
+      "server": "66.235.200.203",
+      "server_port": 443,
+      "uuid": "b2593749-691c-428c-9481-14979cba3446",
       "tls": {
         "enabled": true,
-        "server_name": "nb.lovecf.ggff.net",
+        "server_name": "xi.tbv.ccwu.cc",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -131,13 +243,13 @@
         "type": "ws",
         "path": "/proxyip=us.xiabibi.cf",
         "headers": {
-          "Host": "nb.lovecf.ggff.net"
+          "Host": "xi.tbv.ccwu.cc"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 11 - myhuo",
+      "tag": "🇺🇸 美国 (United States) 20 - myhuo",
       "server": "79.141.172.154",
       "server_port": 10453,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -160,216 +272,178 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 12 - myhuo",
-      "server": "3.148.253.102",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 13 - myhuo",
-      "server": "usa.superbuba.top",
-      "server_port": 443,
-      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
-      "tls": {
-        "enabled": true,
-        "server_name": "usa.superbuba.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
-          "short_id": "9c2378562188c3cb"
-        }
-      },
-      "transport": {
-        "type": "grpc"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 14 - myhuo",
-      "server": "37.19.198.244",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 15 - myhuo",
-      "server": "23.150.248.20",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qB2Cv9VIlujj"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 16 - myhuo",
-      "server": "162.35.96.15",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 17 - myhuo",
-      "server": "172.64.145.202",
-      "server_port": 2096,
-      "uuid": "8102891d-7b37-4dc5-8261-9474b59b5c63",
-      "tls": {
-        "enabled": true,
-        "server_name": "vip.868068.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/proxyip=us.xiabibi.cf",
-        "headers": {
-          "Host": "vip.868068.xyz"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 18 - myhuo",
-      "server": "37.19.198.236",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 19 - myhuo",
-      "server": "38.180.135.156",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "YHtesZ0qvgtg"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 20 - myhuo",
-      "server": "104.16.10.2",
-      "server_port": 443,
-      "uuid": "b2593749-691c-428c-9481-14979cba3446",
-      "tls": {
-        "enabled": true,
-        "server_name": "xi.tbv.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/proxyip=us.xiabibi.cf",
-        "headers": {
-          "Host": "xi.tbv.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇺🇸 美国 (United States) 21 - myhuo",
-      "server": "15.204.246.132",
-      "server_port": 7307,
-      "method": "aes-256-gcm",
-      "password": "FoOiGlkAA9yPEGP"
+      "server": "172.64.154.8",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 22 - myhuo",
-      "server": "169.40.42.133",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
+      "server": "104.18.34.14",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 23 - myhuo",
-      "server": "169.40.42.179",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
+      "server": "108.162.198.178",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 24 - myhuo",
-      "server": "169.40.42.202",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
+      "server": "172.64.42.85",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 25 - myhuo",
-      "server": "156.146.38.169",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
+      "server": "172.64.229.170",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 26 - myhuo",
-      "server": "156.146.38.168",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
+      "server": "162.159.48.32",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 27 - myhuo",
-      "server": "104.18.26.90",
+      "server": "172.64.52.6",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 28 - myhuo",
+      "server": "162.159.24.131",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 29 - myhuo",
+      "server": "104.18.39.218",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 30 - myhuo",
+      "server": "172.64.229.2",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 31 - myhuo",
+      "server": "188.114.97.6",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 32 - myhuo",
+      "server": "172.64.229.170",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 33 - myhuo",
+      "server": "212.104.128.68",
       "server_port": 443,
       "uuid": "b2593749-691c-428c-9481-14979cba3446",
       "tls": {
@@ -387,274 +461,180 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 28 - myhuo",
-      "server": "169.40.42.89",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 29 - myhuo",
-      "server": "167.17.69.171",
-      "server_port": 443,
-      "uuid": "00144519-7e0d-476b-8d28-435576af9262",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk",
-          "short_id": "0990d22f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 30 - myhuo",
-      "server": "169.40.42.229",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 31 - myhuo",
-      "server": "47.253.226.114",
-      "server_port": 443,
-      "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 32 - myhuo",
-      "server": "195.123.235.177",
-      "server_port": 443,
-      "uuid": "729dd5f2-f5ff-4070-8c10-863eceded0b1",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "gateway.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "5B83otQ5ZQwtBFhR7xzsGJRXflkFKRJpQguYbE5JWGI",
-          "short_id": "c85d029f5e8eb393"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 33 - myhuo",
-      "server": "156.146.38.170",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 34 - myhuo",
-      "server": "singapore.com",
-      "server_port": 8443,
-      "uuid": "767b6340-96dc-4aa0-8013-a8af7513d920",
-      "tls": {
-        "enabled": true,
-        "server_name": "c7dabe95.proxy-978.pages.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "162.159.0.53",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/?ed=2560security=tls",
         "headers": {
-          "Host": "c7dabe95.proxy-978.pages.dev"
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 35 - myhuo",
-      "server": "169.40.42.231",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
+      "server": "162.159.39.218",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 36 - myhuo",
-      "server": "156.146.38.167",
+      "server": "212.104.128.139",
       "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
+      "uuid": "b2593749-691c-428c-9481-14979cba3446",
+      "tls": {
+        "enabled": true,
+        "server_name": "xi.tbv.ccwu.cc",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=us.xiabibi.cf",
+        "headers": {
+          "Host": "xi.tbv.ccwu.cc"
+        }
+      }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 37 - myhuo",
-      "server": "38.91.107.49",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "server": "108.162.198.178",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 38 - myhuo",
-      "server": "15.204.247.124",
-      "server_port": 2375,
-      "method": "aes-256-gcm",
-      "password": "faBAoD54k87UJG7"
+      "server": "104.18.39.218",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 39 - myhuo",
-      "server": "107.173.254.27",
-      "server_port": 15311,
-      "uuid": "ad78d02b-873f-4cff-8d4a-673f53d6ce0f",
-      "security": "auto"
+      "server": "172.64.42.85",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 40 - myhuo",
-      "server": "169.40.42.104",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
+      "server": "172.64.32.103",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 41 - myhuo",
-      "server": "198.251.78.29",
-      "server_port": 2053,
-      "uuid": "c423cc1b-f88e-421c-9a16-c480d84da20f",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw",
-          "short_id": "b5d625695ec82c7e"
+      "server": "104.18.39.218",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 42 - myhuo",
-      "server": "15.204.247.175",
-      "server_port": 8008,
-      "method": "aes-256-gcm",
-      "password": "XKFKl2rULjIp74"
+      "server": "172.64.32.103",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 43 - myhuo",
-      "server": "138.199.43.159",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
+      "server": "172.64.32.103",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 44 - myhuo",
-      "server": "169.40.42.182",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
+      "server": "172.64.158.146",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 45 - myhuo",
+      "server": "108.162.198.178",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 46 - myhuo",
       "server": "88.216.195.13",
       "server_port": 443,
       "uuid": "3c48b5f5-7766-4896-874e-b3ba1860e83a",
@@ -674,185 +654,731 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 46 - myhuo",
-      "server": "173.244.56.9",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 47 - myhuo",
-      "server": "67.220.72.237",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 48 - myhuo",
-      "server": "vpn-us-003.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-us-003.fastervpn.world",
-        "insecure": true
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 48 - myhuo",
+      "server": "31.43.179.8",
+      "server_port": 443,
+      "uuid": "b2593749-691c-428c-9481-14979cba3446",
+      "tls": {
+        "enabled": true,
+        "server_name": "xi.tbv.ccwu.cc",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=us.xiabibi.cf",
+        "headers": {
+          "Host": "xi.tbv.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "🇺🇸 美国 (United States) 49 - myhuo",
-      "server": "5.78.51.123",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "8tmnvX5zYuWGVIDP2jglZw"
+      "server": "216.106.183.35",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "alter_id": 1
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 50 - myhuo",
-      "server": "flax-spinel23895.my-vm.work",
-      "server_port": 8088,
-      "uuid": "tmp_user",
+      "server": "108.162.198.178",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/api",
+        "path": "/",
         "headers": {
-          "Host": "queuev4.vk.com"
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 51 - myhuo",
-      "server": "169.40.42.173",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
+      "server": "104.18.34.14",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 52 - myhuo",
-      "server": "169.40.42.235",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
+      "server": "104.18.46.46",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 53 - myhuo",
-      "server": "38.110.1.246",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 54 - myhuo",
-      "server": "173.244.56.6",
+      "server": "212.104.128.0",
       "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 55 - myhuo",
-      "server": "172.235.38.85",
-      "server_port": 42942,
-      "uuid": "bca46025-bf43-40c0-895b-054a6fbcfd32",
-      "flow": "xtls-rprx-vision",
+      "uuid": "b2593749-691c-428c-9481-14979cba3446",
       "tls": {
         "enabled": true,
-        "server_name": "www.tesla.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "JmkfJoDWpAqt6gj4cbc4_cwItsdryMlV7joAGfNTKQU",
-          "short_id": "a56d7d8da977f860"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 56 - myhuo",
-      "server": "cf9.danfeng.eu.org",
-      "server_port": 2096,
-      "uuid": "8102891d-7b37-4dc5-8261-9474b59b5c63",
-      "tls": {
-        "enabled": true,
-        "server_name": "vip.868068.xyz",
+        "server_name": "xi.tbv.ccwu.cc",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/proxyip=us.xiabibi.cffp=random",
+        "path": "/proxyip=us.xiabibi.cf",
         "headers": {
-          "Host": "vip.868068.xyz"
+          "Host": "xi.tbv.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 54 - myhuo",
+      "server": "104.18.34.14",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 55 - myhuo",
+      "server": "3.16.81.205",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 56 - myhuo",
+      "server": "172.64.53.55",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 57 - myhuo",
-      "server": "108.181.118.10",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "G5p6ww4o67HB"
+      "server": "172.64.32.108",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 58 - myhuo",
-      "server": "169.40.42.52",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
+      "server": "162.159.38.127",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 59 - myhuo",
+      "server": "162.159.24.131",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 60 - myhuo",
+      "server": "172.64.53.55",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 61 - myhuo",
+      "server": "104.18.46.234",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 62 - myhuo",
+      "server": "108.162.198.178",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 63 - myhuo",
+      "server": "38.180.135.156",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "YHtesZ0qvgtg"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 64 - myhuo",
+      "server": "162.159.45.19",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 65 - myhuo",
+      "server": "172.64.229.170",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 66 - myhuo",
+      "server": "172.64.154.8",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 67 - myhuo",
+      "server": "172.64.32.108",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 68 - myhuo",
+      "server": "162.159.48.32",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 69 - myhuo",
+      "server": "66.235.200.186",
+      "server_port": 443,
+      "uuid": "b2593749-691c-428c-9481-14979cba3446",
+      "tls": {
+        "enabled": true,
+        "server_name": "xi.tbv.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=us.xiabibi.cf",
+        "headers": {
+          "Host": "xi.tbv.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 70 - myhuo",
+      "server": "104.18.46.234",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 71 - myhuo",
+      "server": "172.64.42.85",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 72 - myhuo",
+      "server": "162.159.43.187",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tlssecurity=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 73 - myhuo",
+      "server": "104.18.47.113",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 74 (家宽) - myhuo",
+      "server": "162.159.0.53",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 75 - myhuo",
+      "server": "172.64.229.2",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 76 - myhuo",
+      "server": "162.159.39.218",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 77 - myhuo",
+      "server": "162.159.48.32",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 78 - myhuo",
+      "server": "162.159.43.187",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 79 - myhuo",
+      "server": "172.64.52.6",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 80 - myhuo",
+      "server": "104.18.46.234",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 81 - myhuo",
+      "server": "172.64.154.8",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 82 - myhuo",
+      "server": "162.159.0.169",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 83 - myhuo",
+      "server": "162.159.38.127",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 84 - myhuo",
+      "server": "172.64.52.6",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 85 - myhuo",
+      "server": "172.64.229.170",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 86 - myhuo",
+      "server": "82.198.246.97",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 87 - myhuo",
+      "server": "172.64.32.108",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 88 - myhuo",
+      "server": "162.159.24.131",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 89 - myhuo",
+      "server": "195.26.229.120",
+      "server_port": 443,
+      "uuid": "b2593749-691c-428c-9481-14979cba3446",
+      "tls": {
+        "enabled": true,
+        "server_name": "xi.tbv.ccwu.cc",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=us.xiabibi.cf",
+        "headers": {
+          "Host": "xi.tbv.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 90 - myhuo",
+      "server": "3.144.113.215",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 91 - myhuo",
+      "server": "139.64.235.23",
+      "server_port": 443,
+      "uuid": "b09dfed1-90fa-4353-8bdf-de1edb2e2d79",
+      "tls": {
+        "enabled": true,
+        "server_name": "nb.lovecf.ggff.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=us.xiabibi.cf",
+        "headers": {
+          "Host": "nb.lovecf.ggff.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 92 - myhuo",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "uuid": "8102891d-7b37-4dc5-8261-9474b59b5c63",
+      "tls": {
+        "enabled": true,
+        "server_name": "vip.868068.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=us.xiabibi.cf",
+        "headers": {
+          "Host": "vip.868068.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 93 - myhuo",
+      "server": "162.159.39.218",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 94 - myhuo",
+      "server": "38.91.107.49",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 95 - myhuo",
+      "server": "82.198.246.37",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 96 - myhuo",
+      "server": "172.64.53.55",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 97 - myhuo",
+      "server": "67.220.95.3",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 98 - myhuo",
+      "server": "108.162.198.178",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 99 - myhuo",
       "server": "137.184.218.169",
       "server_port": 36925,
       "uuid": "c9fd0fb1-8251-4106-b09a-f4b426736f67",
@@ -873,264 +1399,40 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 60 - myhuo",
-      "server": "188.114.97.6",
-      "server_port": 2053,
-      "uuid": "d4d2d3f3-9dec-4e8f-8daf-145ecac96e66",
+      "tag": "🇺🇸 美国 (United States) 100 - myhuo",
+      "server": "172.64.229.2",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 101 - myhuo",
+      "server": "31.43.179.106",
+      "server_port": 443,
+      "uuid": "b2593749-691c-428c-9481-14979cba3446",
       "tls": {
         "enabled": true,
-        "server_name": "cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "xi.tbv.ccwu.cc",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "path": "/proxyip=us.xiabibi.cf",
         "headers": {
-          "Host": "crimson-leaf-7e45.hzhduuebfjdcb.workers.dev"
+          "Host": "xi.tbv.ccwu.cc"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 61 - myhuo",
-      "server": "169.40.42.15",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 62 - myhuo",
-      "server": "216.105.168.18",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "bQZl7HDxSabr1FurTYQHFU"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 63 - myhuo",
-      "server": "129.146.123.29",
-      "server_port": 50356,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "PEsqiXk0VctpVxkGsvy90xaUVvmnSf1rJrj+tf5iLlw="
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 64 - myhuo",
-      "server": "216.106.185.141",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 65 - myhuo",
-      "server": "45.149.172.80",
-      "server_port": 443,
-      "uuid": "21a4d978-2c0b-4b26-8ac9-37d54e3a4ab1",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FKTaFzF4zfAqXBdDQHwSVl_XyNcC3T17s_FqhHyZchg",
-          "short_id": "fb9456392070128e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 66 - myhuo",
-      "server": "45.149.172.74",
-      "server_port": 443,
-      "uuid": "77dc177b-79d9-49ac-92e1-2f1011faa5e3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.logitech.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "U3L2Aed8YfC7Aw2sRv_DJDnbOXVP-XUiyxQe3_h7LT8",
-          "short_id": "626d38f0ea642e3b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 67 - myhuo",
-      "server": "169.40.42.95",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 68 - myhuo",
-      "server": "15.204.97.209",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 69 - myhuo",
-      "server": "142.249.37.90",
-      "server_port": 44356,
-      "password": "dongtaiwang.com",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.561891.xyz",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 70 - myhuo",
-      "server": "15.204.97.219",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 71 - myhuo",
-      "server": "129.146.77.248",
-      "server_port": 39495,
-      "uuid": "f836c736-87fc-4fde-aabc-00857ecdff3e",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8",
-        "headers": {
-          "Host": "129.146.77.248"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 72 - myhuo",
-      "server": "107.151.182.197",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 73 - myhuo",
-      "server": "15.204.246.107",
-      "server_port": 8888,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 74 - myhuo",
-      "server": "163.192.14.135",
-      "server_port": 50160,
-      "password": "099830134df5ac3a04a4b21d39b8c395",
-      "tls": {
-        "enabled": true,
-        "server_name": "whatsapp.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 75 - myhuo",
-      "server": "108.181.57.93",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "RSo52SbxW40r"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 76 - myhuo",
-      "server": "15.204.97.198",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 77 - myhuo",
+      "tag": "🇺🇸 美国 (United States) 102 - myhuo",
       "server": "104.18.42.54",
       "server_port": 2096,
       "uuid": "8102891d-7b37-4dc5-8261-9474b59b5c63",
@@ -1153,103 +1455,174 @@
     },
     {
       "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 78 - myhuo",
-      "server": "84.17.41.2",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "tag": "🇺🇸 美国 (United States) 103 - myhuo",
+      "server": "67.220.72.237",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
       "security": "auto"
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 79 - myhuo",
-      "server": "15.204.97.206",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 80 - myhuo",
-      "server": "108.59.244.158",
+      "tag": "🇺🇸 美国 (United States) 104 - myhuo",
+      "server": "169.40.42.75",
       "server_port": 443,
-      "password": "9452bb1ca5043e7f7b70430911afb034",
-      "tls": {
-        "enabled": true,
-        "server_name": "5post-gate.x5.ru",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 81 - myhuo",
-      "server": "172.235.43.210",
-      "server_port": 53957,
-      "uuid": "7ab29f89-6eef-4171-b232-fc4f580ad31b",
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.nvidia.com",
+        "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ",
-          "short_id": "44e82fd7b97b14"
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
         }
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 105 - myhuo",
+      "server": "5.78.51.123",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "8tmnvX5zYuWGVIDP2jglZw"
+    },
+    {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 82 - myhuo",
-      "server": "15.204.97.197",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇺🇸 美国 (United States) 106 - myhuo",
+      "server": "8.35.211.236",
+      "server_port": 443,
+      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
       "tls": {
         "enabled": true,
-        "server_name": "fuck.rkn",
+        "server_name": "kkkk-83j.pages.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "kkkk-83j.pages.dev"
         }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 83 - myhuo",
-      "server": "66.94.121.46",
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 107 - myhuo",
+      "server": "169.40.42.235",
       "server_port": 443,
-      "password": "gf1:gfhysteria2024",
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.broadcom.com",
-        "insecure": true
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 108 - myhuo",
+      "server": "108.181.0.177",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "G5p6ww4o67HB"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 109 - myhuo",
+      "server": "188.114.97.6",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 84 - myhuo",
-      "server": "169.40.42.223",
+      "tag": "🇺🇸 美国 (United States) 110 - myhuo",
+      "server": "91.209.253.229",
+      "server_port": 443,
+      "uuid": "b09dfed1-90fa-4353-8bdf-de1edb2e2d79",
+      "tls": {
+        "enabled": true,
+        "server_name": "nb.lovecf.ggff.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=us.xiabibi.cf",
+        "headers": {
+          "Host": "nb.lovecf.ggff.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 111 - myhuo",
+      "server": "169.40.42.104",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 112 - myhuo",
+      "server": "212.104.128.152",
+      "server_port": 443,
+      "uuid": "b2593749-691c-428c-9481-14979cba3446",
+      "tls": {
+        "enabled": true,
+        "server_name": "xi.tbv.ccwu.cc",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=us.xiabibi.cf",
+        "headers": {
+          "Host": "xi.tbv.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 113 - myhuo",
+      "server": "169.40.42.224",
       "server_port": 443,
       "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
       "flow": "xtls-rprx-vision",
@@ -1269,7 +1642,551 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 85 - myhuo",
+      "tag": "🇺🇸 美国 (United States) 114 - myhuo",
+      "server": "169.40.42.163",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 115 - myhuo",
+      "server": "129.146.61.109",
+      "server_port": 50356,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "7o6yLRjghychuBmpkqI4TIDe5EDz7s0lp4EPU31FcwE="
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 116 - myhuo",
+      "server": "163.192.14.135",
+      "server_port": 50160,
+      "password": "099830134df5ac3a04a4b21d39b8c395",
+      "tls": {
+        "enabled": true,
+        "server_name": "whatsapp.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 117 - myhuo",
+      "server": "198.251.78.29",
+      "server_port": 2053,
+      "uuid": "c423cc1b-f88e-421c-9a16-c480d84da20f",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw",
+          "short_id": "b5d625695ec82c7e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 118 - myhuo",
+      "server": "169.40.42.95",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 119 - myhuo",
+      "server": "45.149.172.74",
+      "server_port": 443,
+      "uuid": "b2f2d18f-7a9d-411c-aa4e-5a20fe06defe",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.logitech.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "U3L2Aed8YfC7Aw2sRv_DJDnbOXVP-XUiyxQe3_h7LT8",
+          "short_id": "626d38f0ea642e3b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 120 - myhuo",
+      "server": "91.209.253.244",
+      "server_port": 443,
+      "uuid": "b09dfed1-90fa-4353-8bdf-de1edb2e2d79",
+      "tls": {
+        "enabled": true,
+        "server_name": "nb.lovecf.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=us.xiabibi.cf",
+        "headers": {
+          "Host": "nb.lovecf.ggff.net"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 121 - myhuo",
+      "server": "159.223.157.129",
+      "server_port": 8443,
+      "password": "suAmQS9LlInNq4Wumh-FUF4GGlpgmG_g",
+      "tls": {
+        "enabled": true,
+        "server_name": "159.223.157.129",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 122 - myhuo",
+      "server": "91.209.253.25",
+      "server_port": 443,
+      "uuid": "b09dfed1-90fa-4353-8bdf-de1edb2e2d79",
+      "tls": {
+        "enabled": true,
+        "server_name": "nb.lovecf.ggff.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=us.xiabibi.cf",
+        "headers": {
+          "Host": "nb.lovecf.ggff.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 123 - myhuo",
+      "server": "162.159.192.125",
+      "server_port": 443,
+      "uuid": "b09dfed1-90fa-4353-8bdf-de1edb2e2d79",
+      "tls": {
+        "enabled": true,
+        "server_name": "nb.lovecf.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=us.xiabibi.cf",
+        "headers": {
+          "Host": "nb.lovecf.ggff.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 124 - myhuo",
+      "server": "169.40.42.173",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 125 - myhuo",
+      "server": "104.18.34.14",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 126 - myhuo",
+      "server": "155.248.209.237",
+      "server_port": 33333,
+      "password": "bce6c821-200d-421f-bf3d-7159e5246ea0",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.123266.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 127 - myhuo",
+      "server": "107.151.182.197",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 128 - myhuo",
+      "server": "34.94.125.227",
+      "server_port": 443,
+      "password": "M7v%w11Se*",
+      "tls": {
+        "enabled": true,
+        "server_name": "mxlo.wsone.icu",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 129 - myhuo",
+      "server": "107.173.237.146",
+      "server_port": 8443,
+      "uuid": "1d39f715-2740-4d99-bc3b-197cc48dcee7",
+      "tls": {
+        "enabled": true,
+        "server_name": "updates.cdn-apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "D3ojIs3AUKP_tV0E4TEjh90HBVJp24Nq3qMfdxD30kc",
+          "short_id": "df8611c07d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 130 - myhuo",
+      "server": "195.123.235.177",
+      "server_port": 443,
+      "uuid": "729dd5f2-f5ff-4070-8c10-863eceded0b1",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5B83otQ5ZQwtBFhR7xzsGJRXflkFKRJpQguYbE5JWGI",
+          "short_id": "c85d029f5e8eb393"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 131 - myhuo",
+      "server": "129.146.77.248",
+      "server_port": 39495,
+      "uuid": "f836c736-87fc-4fde-aabc-00857ecdff3e",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8",
+        "headers": {
+          "Host": "129.146.77.248"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 132 - myhuo",
+      "server": "169.40.42.16",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 133 - myhuo",
+      "server": "15.204.97.206",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 134 - myhuo",
+      "server": "169.40.42.182",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 135 - myhuo",
+      "server": "15.204.97.214",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 136 - myhuo",
+      "server": "108.59.244.158",
+      "server_port": 443,
+      "password": "9452bb1ca5043e7f7b70430911afb034",
+      "tls": {
+        "enabled": true,
+        "server_name": "5post-gate.x5.ru",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 137 - myhuo",
+      "server": "15.204.97.197",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 138 - myhuo",
+      "server": "169.40.42.232",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 139 - myhuo",
+      "server": "45.149.172.80",
+      "server_port": 443,
+      "uuid": "21a4d978-2c0b-4b26-8ac9-37d54e3a4ab1",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FKTaFzF4zfAqXBdDQHwSVl_XyNcC3T17s_FqhHyZchg",
+          "short_id": "fb9456392070128e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 140 - myhuo",
+      "server": "169.40.42.133",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 141 - myhuo",
+      "server": "3.149.6.228",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 142 - myhuo",
+      "server": "142.249.37.90",
+      "server_port": 44356,
+      "password": "dongtaiwang.com",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.561891.xyz",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 143 - myhuo",
+      "server": "15.204.97.198",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 144 - myhuo",
+      "server": "66.94.121.46",
+      "server_port": 443,
+      "password": "gf1:gfhysteria2024",
+      "tls": {
+        "enabled": true,
+        "server_name": "66.94.121.46",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 145 - myhuo",
+      "server": "82.198.246.250",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 146 - myhuo",
       "server": "15.204.97.195",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -1290,8 +2207,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 86 - myhuo",
-      "server": "15.204.97.216",
+      "tag": "🇺🇸 美国 (United States) 147 - myhuo",
+      "server": "15.204.97.209",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
       "flow": "xtls-rprx-vision",
@@ -1311,49 +2228,31 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 87 - myhuo",
-      "server": "194.55.189.249",
-      "server_port": 40443,
-      "uuid": "8212a50b-25bf-4739-bba1-aaffb5ffc84c",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo",
-          "short_id": "aae8"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 88 - myhuo",
-      "server": "169.40.42.225",
+      "tag": "🇺🇸 美国 (United States) 148 - myhuo",
+      "server": "usa.superbuba.top",
       "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
+      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "tls": {
         "enabled": true,
-        "server_name": "yahoo.com",
+        "server_name": "usa.superbuba.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
+          "public_key": "5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4",
+          "short_id": "9c2378562188c3cb"
         }
+      },
+      "transport": {
+        "type": "grpc"
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 89 - myhuo",
-      "server": "15.204.97.214",
+      "tag": "🇺🇸 美国 (United States) 149 - myhuo",
+      "server": "15.204.97.219",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
       "flow": "xtls-rprx-vision",
@@ -1373,8 +2272,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 90 - myhuo",
-      "server": "169.40.42.90",
+      "tag": "🇺🇸 美国 (United States) 150 - myhuo",
+      "server": "169.40.42.74",
       "server_port": 443,
       "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
       "flow": "xtls-rprx-vision",
@@ -1383,7 +2282,7 @@
         "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -1394,341 +2293,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 91 - myhuo",
-      "server": "107.173.237.146",
-      "server_port": 8443,
-      "uuid": "1d39f715-2740-4d99-bc3b-197cc48dcee7",
-      "tls": {
-        "enabled": true,
-        "server_name": "updates.cdn-apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "D3ojIs3AUKP_tV0E4TEjh90HBVJp24Nq3qMfdxD30kc",
-          "short_id": "df8611c07d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 92 - myhuo",
-      "server": "198.200.42.129",
-      "server_port": 52977,
-      "uuid": "2f6f1856-5466-4078-b1f0-d3f977211ada",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "X-DQShHbh23E3SeJjZzC-WStkChJU0lxgktpGalzjw4",
-          "short_id": "0fb9c965"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 93 - myhuo",
-      "server": "150.241.102.181",
-      "server_port": 443,
-      "uuid": "d7cad038-0c3f-4cce-8f8a-36464aaf66c0",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "6KP5Xi1ao0hD5M3FGmco7NgKxU8z5gQVHwsvrQJVFS0",
-          "short_id": "8f3e2b1a"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "speedtest-grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 94 - myhuo",
-      "server": "us05.shifor01.life",
-      "server_port": 443,
-      "uuid": "11f21602-47aa-42e2-9149-69120f2e6df6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "us05.shifor01.life",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
-          "short_id": "169fc2df88419465"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 95 - myhuo",
-      "server": "129.146.61.109",
-      "server_port": 50356,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "7o6yLRjghychuBmpkqI4TIDe5EDz7s0lp4EPU31FcwE="
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 96 - myhuo",
-      "server": "172.67.68.157",
-      "server_port": 443,
-      "uuid": "a388daca-d6e0-c599-a95d-14f4c720743b",
-      "tls": {
-        "enabled": true,
-        "server_name": "a.v2boxerfree.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/v2",
-        "headers": {
-          "Host": "a.v2boxerfree.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 97 - myhuo",
-      "server": "89.125.147.199",
-      "server_port": 443,
-      "uuid": "cabd9303-ae32-4d25-86b9-26b312d0f044",
-      "tls": {
-        "enabled": true,
-        "server_name": "maps.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg",
-          "short_id": "f6c7c139b9c938db"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 98 - myhuo",
-      "server": "vpn-us-006.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-us-006.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 99 - myhuo",
-      "server": "100.42.228.109",
-      "server_port": 443,
-      "password": "BxceQaOe",
-      "tls": {
-        "enabled": true,
-        "server_name": "t.me%252fripaojiedian",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 100 - myhuo",
-      "server": "50.7.197.204",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "hub.failspace.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 101 - myhuo",
-      "server": "144.172.104.26",
-      "server_port": 443,
-      "uuid": "77da6e30-ad4e-11f1-94d5-525400d1d4f7",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.nvidia.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "n25FmewpAEsvLl9Vr0bRFcz044f4IE7orWeWOzu8rwk",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 102 - myhuo",
-      "server": "50.7.227.251",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "uk-dedic-new-1.failspace.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 103 - myhuo",
-      "server": "169.40.42.232",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 104 - myhuo",
-      "server": "91.196.32.163",
-      "server_port": 443,
-      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
-      "tls": {
-        "enabled": true,
-        "server_name": "germany3.h2corp.local",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 105 - myhuo",
-      "server": "50.7.182.21",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nether.failspace.top",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 106 - myhuo",
-      "server": "adheres-scruple.quick-cdn.net",
-      "server_port": 443,
-      "uuid": "a9c57d75-a2d3-47f7-9fd5-020a8c918b93",
-      "tls": {
-        "enabled": true,
-        "server_name": "adheres-scruple.quick-cdn.net",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 107 - myhuo",
-      "server": "64.188.98.171",
-      "server_port": 443,
-      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
-      "tls": {
-        "enabled": true,
-        "server_name": "germany3.h2corp.local",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 108 - myhuo",
-      "server": "www.shopify.com",
-      "server_port": 443,
-      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "guanwang.awsno.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/hls/cctv5phd.m3u8",
-        "headers": {
-          "Host": "guanwang.awsno.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 109 - myhuo",
+      "tag": "🇺🇸 美国 (United States) 151 - myhuo",
       "server": "31.58.50.200",
       "server_port": 8443,
-      "uuid": "4b2fbd30-1a64-4b27-aea9-713d62c9e69b",
+      "uuid": "0165ef77-68d5-468e-922b-43f5395287bb",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "tradingview.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -1739,140 +2314,34 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 110 - myhuo",
-      "server": "38.180.242.205",
-      "server_port": 13779,
-      "uuid": "928e6cce-8ced-4243-9a48-a6642edd09b0",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇺🇸 美国 (United States) 152 - myhuo",
+      "server": "cf3.danfeng.eu.org",
+      "server_port": 8443,
+      "uuid": "8102891d-7b37-4dc5-8261-9474b59b5c63",
       "tls": {
         "enabled": true,
-        "server_name": "tesla.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg",
-          "short_id": "af1bdd293097b664"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 111 - myhuo",
-      "server": "starlink-ft.251313.xyz",
-      "server_port": 443,
-      "password": "https://xship.top",
-      "tls": {
-        "enabled": true,
-        "server_name": "xship.top",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 112 - myhuo",
-      "server": "bounded-crammed.video-streams.org",
-      "server_port": 443,
-      "uuid": "e2acf71a-5b4d-4a5f-b95a-697a3e4a62ad",
-      "tls": {
-        "enabled": true,
-        "server_name": "bounded-crammed.video-streams.org",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "vip.868068.xyz",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/ws",
+        "path": "/proxyip=us.xiabibi.cf",
         "headers": {
-          "Host": "bounded-crammed.video-streams.org"
+          "Host": "vip.868068.xyz"
         }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 113 - myhuo",
-      "server": "82.198.246.250",
-      "server_port": 180,
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 114 - myhuo",
-      "server": "104.18.32.252",
-      "server_port": 443,
-      "uuid": "6dd13cd4-e378-4742-bef1-d8ac54083626",
-      "tls": {
-        "enabled": true,
-        "server_name": "eb9a7750.69lover.site",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/v2/4ecb1e0e26887759/stream",
-        "headers": {
-          "Host": "eb9a7750.69lover.site"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 115 - myhuo",
-      "server": "91.193.17.234",
-      "server_port": 9460,
-      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "rAHMmpeUJ6uOoGgk31dTF4-1RTtLZFnOEs_li2AYQWc",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 116 - myhuo",
-      "server": "15.204.233.41",
-      "server_port": 8882,
-      "method": "aes-256-gcm",
-      "password": "kDWvXYZoTBcGkC4"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 117 - myhuo",
-      "server": "3.16.81.205",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "tag": "🇺🇸 美国 (United States) 153 - myhuo",
+      "server": "138.199.43.159",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 118 - myhuo",
+      "tag": "🇺🇸 美国 (United States) 154 - myhuo",
       "server": "51.81.203.63",
       "server_port": 443,
       "uuid": "cb2dbb6a-a1ea-4023-9ace-6466cee57241",
@@ -1882,7 +2351,7 @@
         "server_name": "www.icloud.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -1893,121 +2362,96 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 119 - myhuo",
-      "server": "64.225.110.247",
-      "server_port": 2083,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tag": "🇺🇸 美国 (United States) 155 - myhuo",
+      "server": "us-1.gsafevpnapi.com",
+      "server_port": 20270,
+      "uuid": "2bf192f1-7d86-43a3-88b3-8f72b7eb5ad9",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/acg/buy/ajax?ed=2560fp=chrome",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 120 - myhuo",
-      "server": "176.108.246.58",
-      "server_port": 9881,
-      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-tunnel"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 121 - myhuo",
-      "server": "at-dedic.failspace.top",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "at-dedic.failspace.top",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 122 - myhuo",
-      "server": "186.246.19.79",
-      "server_port": 40443,
-      "uuid": "5e3f974b-06fc-4555-907a-6681391b7c17",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "www.yahoo.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "oc9uweln_cqyaJnlRMnhhhKrGNP7RrYOsuYtaIOIQDE",
-          "short_id": "2bc0"
+          "public_key": "9I4kbgR2flpbRraCLQ-C0umbyQO26riRY3-GY-Tp9DE",
+          "short_id": "e67d9a00676f15ac"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 123 - myhuo",
-      "server": "2.27.249.79",
+      "tag": "🇺🇸 美国 (United States) 156 - myhuo",
+      "server": "vpn-us-003.fastervpn.world",
       "server_port": 443,
-      "password": "cd74c0a406664a5bc0bac098220a2468",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "nl1.sferavpn.pro",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "44f1c1e2f8b99e792ceed574627a1eb0"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 124 - myhuo",
-      "server": "hy2.123266.xyz",
-      "server_port": 33333,
-      "password": "bce6c821-200d-421f-bf3d-7159e5246ea0",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.123266.xyz",
+        "server_name": "vpn-us-003.fastervpn.world",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 125 - myhuo",
-      "server": "cf3.danfeng.eu.org",
-      "server_port": 8443,
+      "tag": "🇺🇸 美国 (United States) 157 - myhuo",
+      "server": "15.204.97.216",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 158 - myhuo",
+      "server": "vpn-us-006.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-us-006.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 159 - myhuo",
+      "server": "flax-spinel23895.my-vm.work",
+      "server_port": 8088,
+      "uuid": "f7c74a35-1da0-5097-9fa7-a20735610ac1",
+      "transport": {
+        "type": "ws",
+        "path": "/api",
+        "headers": {
+          "Host": "queuev4.vk.com"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 160 - myhuo",
+      "server": "15.204.247.175",
+      "server_port": 8008,
+      "method": "aes-256-gcm",
+      "password": "XKFKl2rULjIp74"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 161 - myhuo",
+      "server": "cf6.danfeng.eu.org",
+      "server_port": 2087,
       "uuid": "8102891d-7b37-4dc5-8261-9474b59b5c63",
       "tls": {
         "enabled": true,
@@ -2028,13 +2472,104 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 126 - myhuo",
-      "server": "141.101.122.147",
+      "tag": "🇺🇸 美国 (United States) 162 - myhuo",
+      "server": "169.40.42.229",
       "server_port": 443,
-      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "a.cwvps.eu.org",
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 163 - myhuo",
+      "server": "216.106.185.141",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 164 - myhuo",
+      "server": "198.200.42.129",
+      "server_port": 52977,
+      "uuid": "2f6f1856-5466-4078-b1f0-d3f977211ada",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "X-DQShHbh23E3SeJjZzC-WStkChJU0lxgktpGalzjw4",
+          "short_id": "0fb9c965"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 165 - myhuo",
+      "server": "38.246.229.58",
+      "server_port": 47642,
+      "uuid": "c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3",
+      "tls": {
+        "enabled": true,
+        "server_name": "sega.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9mg1QdPctekP9woKygHzBCxb8Hw2QTICXROQiiJB6Ag",
+          "short_id": "76ed3287"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 166 - myhuo",
+      "server": "169.40.42.225",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 167 - myhuo",
+      "server": "cf9.danfeng.eu.org",
+      "server_port": 2096,
+      "uuid": "8102891d-7b37-4dc5-8261-9474b59b5c63",
+      "tls": {
+        "enabled": true,
+        "server_name": "vip.868068.xyz",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -2043,75 +2578,318 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/ws",
+        "path": "/proxyip=us.xiabibi.cf ",
         "headers": {
-          "Host": "a.cwvps.eu.org"
+          "Host": "vip.868068.xyz"
         }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 127 - myhuo",
-      "server": "144.31.49.138",
-      "server_port": 443,
-      "password": "cd74c0a406664a5bc0bac098220a2468",
-      "tls": {
-        "enabled": true,
-        "server_name": "ru1.sferavpn.pro",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "44f1c1e2f8b99e792ceed574627a1eb0"
-      }
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 168 - myhuo",
+      "server": "38.110.1.246",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 128 - myhuo",
-      "server": "3.144.113.215",
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 169 - myhuo",
+      "server": "144.172.104.26",
       "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 129 - myhuo",
-      "server": "sg3.xiaoliyu.us",
-      "server_port": 2052,
-      "password": "b8949dae-cb53-4b5a-ad9c-50f58c4656fb",
+      "uuid": "77da6e30-ad4e-11f1-94d5-525400d1d4f7",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "sg3.xiaoliyu.us",
-        "insecure": true
+        "server_name": "www.nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "n25FmewpAEsvLl9Vr0bRFcz044f4IE7orWeWOzu8rwk",
+          "short_id": ""
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 130 - myhuo",
-      "server": "176.109.104.195",
-      "server_port": 9873,
-      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+      "tag": "🇺🇸 美国 (United States) 170 - myhuo",
+      "server": "167.17.69.171",
+      "server_port": 443,
+      "uuid": "00144519-7e0d-476b-8d28-435576af9262",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "dl.google.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
-          "short_id": "aabb"
+          "public_key": "ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk",
+          "short_id": "0990d22f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 171 - myhuo",
+      "server": "169.40.42.89",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 172 - myhuo",
+      "server": "150.241.102.181",
+      "server_port": 443,
+      "uuid": "d7cad038-0c3f-4cce-8f8a-36464aaf66c0",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6KP5Xi1ao0hD5M3FGmco7NgKxU8z5gQVHwsvrQJVFS0",
+          "short_id": "8f3e2b1a"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "grpc-tunnel"
+        "service_name": "speedtest-grpc"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 173 - myhuo",
+      "server": "84.17.41.2",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 174 - myhuo",
+      "server": "www.shopify.com",
+      "server_port": 443,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "guanwang.awsno.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hls/cctv5phd.m3u8",
+        "headers": {
+          "Host": "guanwang.awsno.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 175 - myhuo",
+      "server": "50.7.182.21",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nether.failspace.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 176 - myhuo",
+      "server": "169.40.42.223",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 177 - myhuo",
+      "server": "89.125.147.199",
+      "server_port": 443,
+      "uuid": "cabd9303-ae32-4d25-86b9-26b312d0f044",
+      "tls": {
+        "enabled": true,
+        "server_name": "maps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg",
+          "short_id": "f6c7c139b9c938db"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 178 - myhuo",
+      "server": "50.7.197.204",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hub.failspace.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 179 - myhuo",
+      "server": "172.235.43.210",
+      "server_port": 53957,
+      "uuid": "7ab29f89-6eef-4171-b232-fc4f580ad31b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ",
+          "short_id": "44e82fd7b97b14"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 180 - myhuo",
+      "server": "194.55.189.249",
+      "server_port": 40443,
+      "uuid": "8212a50b-25bf-4739-bba1-aaffb5ffc84c",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo",
+          "short_id": "aae8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 181 - myhuo",
+      "server": "38.180.242.205",
+      "server_port": 13779,
+      "uuid": "928e6cce-8ced-4243-9a48-a6642edd09b0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tesla.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg",
+          "short_id": "af1bdd293097b664"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 182 - myhuo",
+      "server": "50.7.226.174",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "en-new.moriarty-web.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 183 - myhuo",
+      "server": "www.csgo.net",
+      "server_port": 2095,
+      "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "pornbitches.asshole.us.ci"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 131 - myhuo",
+      "tag": "🇺🇸 美国 (United States) 184 - myhuo",
+      "server": "64.188.98.171",
+      "server_port": 443,
+      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
+      "tls": {
+        "enabled": true,
+        "server_name": "germany3.h2corp.local",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 185 - myhuo",
       "server": "us2.xiaoliyu.cyou",
       "server_port": 4433,
       "password": "19f72087-4591-4d72-930b-2697078ec2be",
@@ -2123,87 +2901,76 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 132 - myhuo",
-      "server": "104.21.238.93",
+      "tag": "🇺🇸 美国 (United States) 186 - myhuo",
+      "server": "50.7.37.157",
       "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-44890b90d17e",
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "afzoybehu2ws.vtzv4xe1un6s.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/stream/PANEL_ZEUS/44890b90d17e/loc-0",
-        "headers": {
-          "Host": "afzoybehu2ws.vtzv4xe1un6s.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 133 - myhuo",
-      "server": "104.17.77.77",
-      "server_port": 8443,
-      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "v2ray1.dozapp.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lMnsZUN4/",
-        "headers": {
-          "Host": "v2ray1.dozapp.xyz"
+        "server_name": "at-dedic.failspace.top",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 134 - myhuo",
-      "server": "billing.netraidly.ru",
+      "tag": "🇺🇸 美国 (United States) 187 - myhuo",
+      "server": "186.246.19.79",
       "server_port": 40443,
-      "uuid": "17d29827-7cf1-4115-b40d-548e10ec355d",
+      "uuid": "5e3f974b-06fc-4555-907a-6681391b7c17",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "bjOGTQ4xsiFbyCPM_WzoK53L130rW5vZJtuYDJx_pkM",
-          "short_id": "aa3c"
+          "public_key": "oc9uweln_cqyaJnlRMnhhhKrGNP7RrYOsuYtaIOIQDE",
+          "short_id": "2bc0"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 135 - myhuo",
-      "server": "us4.xiaoliyu.cyou",
+      "tag": "🇺🇸 美国 (United States) 188 - myhuo",
+      "server": "2.27.249.79",
+      "server_port": 443,
+      "password": "cd74c0a406664a5bc0bac098220a2468",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl1.sferavpn.pro",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "44f1c1e2f8b99e792ceed574627a1eb0"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 189 - myhuo",
+      "server": "es1.xiaoliyu.cyou",
       "server_port": 4433,
       "password": "19f72087-4591-4d72-930b-2697078ec2be",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "es1.xiaoliyu.cyou",
         "insecure": true
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 136 - myhuo",
-      "server": "3.149.6.228",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 137 - myhuo",
+      "tag": "🇺🇸 美国 (United States) 190 - myhuo",
       "server": "85.209.157.184",
       "server_port": 443,
       "uuid": "21710d7d-5e87-4655-bac2-36e9b655e3ee",
@@ -2223,29 +2990,9 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 138 - myhuo",
-      "server": "us2.xiaoliyu.us",
-      "server_port": 2077,
-      "password": "b8949dae-cb53-4b5a-ad9c-50f58c4656fb",
-      "tls": {
-        "enabled": true,
-        "server_name": "us2.xiaoliyu.us",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 139 - myhuo",
-      "server": "67.220.95.3",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 140 - myhuo",
-      "server": "72.56.41.33",
+      "tag": "🇺🇸 美国 (United States) 191 - myhuo",
+      "server": "lyra.yokkastars.com",
       "server_port": 40443,
       "uuid": "5be7fb02-b6a5-450f-b041-3243b98e8420",
       "flow": "xtls-rprx-vision",
@@ -2254,7 +3001,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -2264,37 +3011,125 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 141 - myhuo",
-      "server": "169.197.142.22",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 192 - myhuo",
+      "server": "starlink-ft.251313.xyz",
+      "server_port": 443,
+      "password": "https://xship.top",
+      "tls": {
+        "enabled": true,
+        "server_name": "xship.top",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 142 - myhuo",
-      "server": "80.91.79.136",
+      "tag": "🇺🇸 美国 (United States) 193 - myhuo",
+      "server": "169.40.42.90",
       "server_port": 443,
-      "uuid": "807cd1e0-f4ce-4785-b7a3-cde0c1614b8d",
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.logitech.com",
+        "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "g9uQwtqcqsPvzqQy2hM4rpvTIGXRQSAt-MAgHpz_gCI",
-          "short_id": "0b0bf0590fb9c138"
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 143 - myhuo",
+      "tag": "🇺🇸 美国 (United States) 194 - myhuo",
+      "server": "sg3.xiaoliyu.us",
+      "server_port": 2052,
+      "password": "b8949dae-cb53-4b5a-ad9c-50f58c4656fb",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg3.xiaoliyu.us",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 195 - myhuo",
+      "server": "129.146.123.29",
+      "server_port": 50356,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "PEsqiXk0VctpVxkGsvy90xaUVvmnSf1rJrj+tf5iLlw="
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 196 - myhuo",
+      "server": "100.42.228.109",
+      "server_port": 443,
+      "password": "BxceQaOe",
+      "tls": {
+        "enabled": true,
+        "server_name": "t.me%252fripaojiedian",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 197 - myhuo",
+      "server": "169.197.142.22",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 198 - myhuo",
+      "server": "15.204.246.107",
+      "server_port": 8888,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 199 - myhuo",
+      "server": "78.111.89.171",
+      "server_port": 443,
+      "uuid": "0370b162-baff-4757-86cc-cce4bf07f6f1",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lYcMPEgf6ePmF_d8RXR5fsVorycW37v_ECl-fz_H6w4",
+          "short_id": "cfe08c23a85f24"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 200 - myhuo",
+      "server": "129.146.126.143",
+      "server_port": 50356,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "v4eJ0V/39Gc9d/tSDT8Z5MMSWtDpckxKTiDIKPUD0uU="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 201 - myhuo",
+      "server": "198.98.53.130",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "eDfN7SODQceIOmIAbtJJtK"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 202 - myhuo",
       "server": "38.60.204.239",
       "server_port": 36712,
       "password": "CompanyHy2_2026!",
@@ -2320,7 +3155,7 @@
         "🇺🇸 美国 (United States) 09 - myhuo",
         "🇺🇸 美国 (United States) 10 - myhuo",
         "🇺🇸 美国 (United States) 11 - myhuo",
-        "🇺🇸 美国 (United States) 12 - myhuo",
+        "🇺🇸 美国 (United States) 12 (家宽) - myhuo",
         "🇺🇸 美国 (United States) 13 - myhuo",
         "🇺🇸 美国 (United States) 14 - myhuo",
         "🇺🇸 美国 (United States) 15 - myhuo",
@@ -2382,7 +3217,7 @@
         "🇺🇸 美国 (United States) 71 - myhuo",
         "🇺🇸 美国 (United States) 72 - myhuo",
         "🇺🇸 美国 (United States) 73 - myhuo",
-        "🇺🇸 美国 (United States) 74 - myhuo",
+        "🇺🇸 美国 (United States) 74 (家宽) - myhuo",
         "🇺🇸 美国 (United States) 75 - myhuo",
         "🇺🇸 美国 (United States) 76 - myhuo",
         "🇺🇸 美国 (United States) 77 - myhuo",
@@ -2451,7 +3286,66 @@
         "🇺🇸 美国 (United States) 140 - myhuo",
         "🇺🇸 美国 (United States) 141 - myhuo",
         "🇺🇸 美国 (United States) 142 - myhuo",
-        "🇺🇸 美国 (United States) 143 - myhuo"
+        "🇺🇸 美国 (United States) 143 - myhuo",
+        "🇺🇸 美国 (United States) 144 - myhuo",
+        "🇺🇸 美国 (United States) 145 - myhuo",
+        "🇺🇸 美国 (United States) 146 - myhuo",
+        "🇺🇸 美国 (United States) 147 - myhuo",
+        "🇺🇸 美国 (United States) 148 - myhuo",
+        "🇺🇸 美国 (United States) 149 - myhuo",
+        "🇺🇸 美国 (United States) 150 - myhuo",
+        "🇺🇸 美国 (United States) 151 - myhuo",
+        "🇺🇸 美国 (United States) 152 - myhuo",
+        "🇺🇸 美国 (United States) 153 - myhuo",
+        "🇺🇸 美国 (United States) 154 - myhuo",
+        "🇺🇸 美国 (United States) 155 - myhuo",
+        "🇺🇸 美国 (United States) 156 - myhuo",
+        "🇺🇸 美国 (United States) 157 - myhuo",
+        "🇺🇸 美国 (United States) 158 - myhuo",
+        "🇺🇸 美国 (United States) 159 - myhuo",
+        "🇺🇸 美国 (United States) 160 - myhuo",
+        "🇺🇸 美国 (United States) 161 - myhuo",
+        "🇺🇸 美国 (United States) 162 - myhuo",
+        "🇺🇸 美国 (United States) 163 - myhuo",
+        "🇺🇸 美国 (United States) 164 - myhuo",
+        "🇺🇸 美国 (United States) 165 - myhuo",
+        "🇺🇸 美国 (United States) 166 - myhuo",
+        "🇺🇸 美国 (United States) 167 - myhuo",
+        "🇺🇸 美国 (United States) 168 - myhuo",
+        "🇺🇸 美国 (United States) 169 - myhuo",
+        "🇺🇸 美国 (United States) 170 - myhuo",
+        "🇺🇸 美国 (United States) 171 - myhuo",
+        "🇺🇸 美国 (United States) 172 - myhuo",
+        "🇺🇸 美国 (United States) 173 - myhuo",
+        "🇺🇸 美国 (United States) 174 - myhuo",
+        "🇺🇸 美国 (United States) 175 - myhuo",
+        "🇺🇸 美国 (United States) 176 - myhuo",
+        "🇺🇸 美国 (United States) 177 - myhuo",
+        "🇺🇸 美国 (United States) 178 - myhuo",
+        "🇺🇸 美国 (United States) 179 - myhuo",
+        "🇺🇸 美国 (United States) 180 - myhuo",
+        "🇺🇸 美国 (United States) 181 - myhuo",
+        "🇺🇸 美国 (United States) 182 - myhuo",
+        "🇺🇸 美国 (United States) 183 - myhuo",
+        "🇺🇸 美国 (United States) 184 - myhuo",
+        "🇺🇸 美国 (United States) 185 - myhuo",
+        "🇺🇸 美国 (United States) 186 - myhuo",
+        "🇺🇸 美国 (United States) 187 - myhuo",
+        "🇺🇸 美国 (United States) 188 - myhuo",
+        "🇺🇸 美国 (United States) 189 - myhuo",
+        "🇺🇸 美国 (United States) 190 - myhuo",
+        "🇺🇸 美国 (United States) 191 - myhuo",
+        "🇺🇸 美国 (United States) 192 - myhuo",
+        "🇺🇸 美国 (United States) 193 - myhuo",
+        "🇺🇸 美国 (United States) 194 - myhuo",
+        "🇺🇸 美国 (United States) 195 - myhuo",
+        "🇺🇸 美国 (United States) 196 - myhuo",
+        "🇺🇸 美国 (United States) 197 - myhuo",
+        "🇺🇸 美国 (United States) 198 - myhuo",
+        "🇺🇸 美国 (United States) 199 - myhuo",
+        "🇺🇸 美国 (United States) 200 - myhuo",
+        "🇺🇸 美国 (United States) 201 - myhuo",
+        "🇺🇸 美国 (United States) 202 - myhuo"
       ]
     },
     {
@@ -2469,7 +3363,7 @@
         "🇺🇸 美国 (United States) 09 - myhuo",
         "🇺🇸 美国 (United States) 10 - myhuo",
         "🇺🇸 美国 (United States) 11 - myhuo",
-        "🇺🇸 美国 (United States) 12 - myhuo",
+        "🇺🇸 美国 (United States) 12 (家宽) - myhuo",
         "🇺🇸 美国 (United States) 13 - myhuo",
         "🇺🇸 美国 (United States) 14 - myhuo",
         "🇺🇸 美国 (United States) 15 - myhuo",
@@ -2531,7 +3425,7 @@
         "🇺🇸 美国 (United States) 71 - myhuo",
         "🇺🇸 美国 (United States) 72 - myhuo",
         "🇺🇸 美国 (United States) 73 - myhuo",
-        "🇺🇸 美国 (United States) 74 - myhuo",
+        "🇺🇸 美国 (United States) 74 (家宽) - myhuo",
         "🇺🇸 美国 (United States) 75 - myhuo",
         "🇺🇸 美国 (United States) 76 - myhuo",
         "🇺🇸 美国 (United States) 77 - myhuo",
@@ -2600,7 +3494,66 @@
         "🇺🇸 美国 (United States) 140 - myhuo",
         "🇺🇸 美国 (United States) 141 - myhuo",
         "🇺🇸 美国 (United States) 142 - myhuo",
-        "🇺🇸 美国 (United States) 143 - myhuo"
+        "🇺🇸 美国 (United States) 143 - myhuo",
+        "🇺🇸 美国 (United States) 144 - myhuo",
+        "🇺🇸 美国 (United States) 145 - myhuo",
+        "🇺🇸 美国 (United States) 146 - myhuo",
+        "🇺🇸 美国 (United States) 147 - myhuo",
+        "🇺🇸 美国 (United States) 148 - myhuo",
+        "🇺🇸 美国 (United States) 149 - myhuo",
+        "🇺🇸 美国 (United States) 150 - myhuo",
+        "🇺🇸 美国 (United States) 151 - myhuo",
+        "🇺🇸 美国 (United States) 152 - myhuo",
+        "🇺🇸 美国 (United States) 153 - myhuo",
+        "🇺🇸 美国 (United States) 154 - myhuo",
+        "🇺🇸 美国 (United States) 155 - myhuo",
+        "🇺🇸 美国 (United States) 156 - myhuo",
+        "🇺🇸 美国 (United States) 157 - myhuo",
+        "🇺🇸 美国 (United States) 158 - myhuo",
+        "🇺🇸 美国 (United States) 159 - myhuo",
+        "🇺🇸 美国 (United States) 160 - myhuo",
+        "🇺🇸 美国 (United States) 161 - myhuo",
+        "🇺🇸 美国 (United States) 162 - myhuo",
+        "🇺🇸 美国 (United States) 163 - myhuo",
+        "🇺🇸 美国 (United States) 164 - myhuo",
+        "🇺🇸 美国 (United States) 165 - myhuo",
+        "🇺🇸 美国 (United States) 166 - myhuo",
+        "🇺🇸 美国 (United States) 167 - myhuo",
+        "🇺🇸 美国 (United States) 168 - myhuo",
+        "🇺🇸 美国 (United States) 169 - myhuo",
+        "🇺🇸 美国 (United States) 170 - myhuo",
+        "🇺🇸 美国 (United States) 171 - myhuo",
+        "🇺🇸 美国 (United States) 172 - myhuo",
+        "🇺🇸 美国 (United States) 173 - myhuo",
+        "🇺🇸 美国 (United States) 174 - myhuo",
+        "🇺🇸 美国 (United States) 175 - myhuo",
+        "🇺🇸 美国 (United States) 176 - myhuo",
+        "🇺🇸 美国 (United States) 177 - myhuo",
+        "🇺🇸 美国 (United States) 178 - myhuo",
+        "🇺🇸 美国 (United States) 179 - myhuo",
+        "🇺🇸 美国 (United States) 180 - myhuo",
+        "🇺🇸 美国 (United States) 181 - myhuo",
+        "🇺🇸 美国 (United States) 182 - myhuo",
+        "🇺🇸 美国 (United States) 183 - myhuo",
+        "🇺🇸 美国 (United States) 184 - myhuo",
+        "🇺🇸 美国 (United States) 185 - myhuo",
+        "🇺🇸 美国 (United States) 186 - myhuo",
+        "🇺🇸 美国 (United States) 187 - myhuo",
+        "🇺🇸 美国 (United States) 188 - myhuo",
+        "🇺🇸 美国 (United States) 189 - myhuo",
+        "🇺🇸 美国 (United States) 190 - myhuo",
+        "🇺🇸 美国 (United States) 191 - myhuo",
+        "🇺🇸 美国 (United States) 192 - myhuo",
+        "🇺🇸 美国 (United States) 193 - myhuo",
+        "🇺🇸 美国 (United States) 194 - myhuo",
+        "🇺🇸 美国 (United States) 195 - myhuo",
+        "🇺🇸 美国 (United States) 196 - myhuo",
+        "🇺🇸 美国 (United States) 197 - myhuo",
+        "🇺🇸 美国 (United States) 198 - myhuo",
+        "🇺🇸 美国 (United States) 199 - myhuo",
+        "🇺🇸 美国 (United States) 200 - myhuo",
+        "🇺🇸 美国 (United States) 201 - myhuo",
+        "🇺🇸 美国 (United States) 202 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

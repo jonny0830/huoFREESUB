@@ -4,52 +4,57 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
-      "server": "23.252.104.131",
-      "server_port": 54321,
-      "method": "aes-256-gcm",
-      "password": "Proxy2024"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
-      "server": "R3MRCG00129437X.cybervena.com",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo",
-      "server": "r3mrcg001286ek2.cybervena.com",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+      "server": "172.64.52.6",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tag": "🇯🇵 日本 (Japan) 02 (家宽) - myhuo",
+      "server": "167.179.111.237",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/act/player/search?ed=2560fp=chrome",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
     {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo",
+      "server": "7dba81fc3a0b.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "7dba81fc3a0b.oylfmxz.cn",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo",
       "server": "82259754d625.oylfmxz.cn",
       "server_port": 443,
       "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
@@ -61,26 +66,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - myhuo",
-      "server": "7dba81fc3a0b.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "7dba81fc3a0b.oylfmxz.cn",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "7dba81fc3a0b.oylfmxz.cn"
+          "Host": "82259754d625.oylfmxz.cn"
         }
       }
     },
@@ -90,11 +78,9 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
+        "🇯🇵 日本 (Japan) 02 (家宽) - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo"
       ]
     },
     {
@@ -102,11 +88,9 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
+        "🇯🇵 日本 (Japan) 02 (家宽) - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
