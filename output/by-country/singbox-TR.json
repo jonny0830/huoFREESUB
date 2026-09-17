@@ -15,7 +15,7 @@
         "server_name": "sync-bridge.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -25,34 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - myhuo",
-      "server": "max.karmatel.ir",
-      "server_port": 55519,
-      "uuid": "a2b9a1b7-f12f-4503-a9f6-c78ec565a6bf",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "play-apps-features.googleusercontent.com"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 02 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 02 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

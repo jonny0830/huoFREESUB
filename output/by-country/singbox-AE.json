@@ -6,26 +6,7 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - myhuo",
-      "server": "104.156.238.23",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/bt/image/categories?ed=2560fp=chrome",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - myhuo",
-      "server": "srv-21bac9.vless.monster",
+      "server": "31.56.189.27",
       "server_port": 2087,
       "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
       "tls": {
@@ -34,7 +15,11 @@
         "insecure": false,
         "alpn": [
           "h2"
-        ]
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "grpc",
@@ -42,24 +27,29 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - myhuo",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - myhuo",
+      "server": "31.58.181.88",
+      "server_port": 8443,
+      "uuid": "d0da19f1-fb05-488e-99c2-262389b3537b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+        "server_name": "tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc",
+          "short_id": ""
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - myhuo",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - myhuo",
       "server": "89.47.55.8",
       "server_port": 8443,
       "uuid": "1c4298fc-505c-7055-d362-f0bd7b57677c",
@@ -83,6 +73,22 @@
     },
     {
       "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - myhuo",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 05 - myhuo",
       "server": "85.204.107.181",
       "server_port": 8080,
@@ -96,7 +102,28 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 06 - myhuo",
-      "server": "uae.unixzone.us",
+      "server": "188.208.110.238",
+      "server_port": 443,
+      "uuid": "0c597b0d-99d7-4c27-befe-6c5d339d7dbe",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "baeb.edge-static.space",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - myhuo",
+      "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
@@ -117,7 +144,8 @@
         "🇦🇪 阿联酋 (UAE) 03 - myhuo",
         "🇦🇪 阿联酋 (UAE) 04 - myhuo",
         "🇦🇪 阿联酋 (UAE) 05 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 06 - myhuo"
+        "🇦🇪 阿联酋 (UAE) 06 - myhuo",
+        "🇦🇪 阿联酋 (UAE) 07 - myhuo"
       ]
     },
     {
@@ -129,7 +157,8 @@
         "🇦🇪 阿联酋 (UAE) 03 - myhuo",
         "🇦🇪 阿联酋 (UAE) 04 - myhuo",
         "🇦🇪 阿联酋 (UAE) 05 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 06 - myhuo"
+        "🇦🇪 阿联酋 (UAE) 06 - myhuo",
+        "🇦🇪 阿联酋 (UAE) 07 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

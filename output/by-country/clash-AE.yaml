@@ -5,21 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - myhuo
-  server: 104.156.238.23
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /bt/image/categories?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
-  server: srv-21bac9.vless.monster
+  server: 31.56.189.27
   port: 2087
   udp: true
   type: vless
@@ -27,20 +13,23 @@ proxies:
   tls: true
   servername: srv-21bac9.vless.monster
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: freegrpc
-- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
-  server: 130.49.161.70
-  port: 443
+- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
+  server: 31.58.181.88
+  port: 8443
   udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
+  type: vless
+  uuid: d0da19f1-fb05-488e-99c2-262389b3537b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
   server: 89.47.55.8
   port: 8443
   udp: true
@@ -54,6 +43,16 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
+- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 05 - myhuo
   server: 85.204.107.181
   port: 8080
@@ -63,7 +62,19 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 06 - myhuo
-  server: uae.unixzone.us
+  server: 188.208.110.238
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0c597b0d-99d7-4c27-befe-6c5d339d7dbe
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA
+  servername: baeb.edge-static.space
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 07 - myhuo
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -84,6 +95,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - myhuo
   - 🇦🇪 阿联酋 (UAE) 05 - myhuo
   - 🇦🇪 阿联酋 (UAE) 06 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -95,5 +107,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - myhuo
   - 🇦🇪 阿联酋 (UAE) 05 - myhuo
   - 🇦🇪 阿联酋 (UAE) 06 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 07 - myhuo
 rules:
 - MATCH,PROXIES

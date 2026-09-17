@@ -4,20 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - myhuo",
-      "server": "47.240.80.220",
-      "server_port": 2052,
-      "password": "tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.12169.top",
-        "insecure": true
-      }
+      "server": "176.32.35.44",
+      "server_port": 50111,
+      "method": "aes-256-gcm",
+      "password": "6b39ae3234dfd68b"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - myhuo",
+      "server": "181.215.18.196",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "manm1wouaeic9db3"
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - myhuo",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - myhuo",
       "server": "162.128.157.164",
       "server_port": 443,
       "uuid": "5e8e81ac-a1c4-4543-b81e-651bf9872b54",
@@ -37,22 +41,14 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - myhuo",
-      "server": "176.32.35.44",
-      "server_port": 50111,
-      "method": "aes-256-gcm",
-      "password": "6b39ae3234dfd68b"
-    },
-    {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 04 - myhuo",
-      "server": "202.146.222.174",
+      "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/oneclickvpnkeys",
+        "server_name": "https://t.me/wangcai2ð",
         "insecure": true
       }
     },
@@ -69,20 +65,55 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇭🇰 中国香港 (Hong Kong) 06 - myhuo",
-      "server": "202.146.222.29",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "server": "47.240.80.220",
+      "server_port": 2052,
+      "password": "tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz",
       "tls": {
         "enabled": true,
-        "server_name": "speedtest.tinkoff.ru",
+        "server_name": "vpn.12169.top",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 07 - myhuo",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/wangcai2🇨🇳",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - myhuo",
+      "server": "109.66.88.158",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/details?ed=2560fp=chrome",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - myhuo",
       "server": "mz.hkychina.com",
       "server_port": 8443,
       "password": "HysTeria2026!Proxy",
@@ -94,40 +125,53 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - myhuo",
-      "server": "104.16.60.10",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - myhuo",
+      "server": "8.222.70.238",
       "server_port": 443,
-      "uuid": "cdf5205e-897f-46a7-8d7f-21a61a80b466",
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "hk1.69lover.my",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/api/v2/e2fe4e52a165854d/stream",
+        "path": "/mall/china/doc?ed=2560fp=chrome",
         "headers": {
-          "Host": "hk1.69lover.my"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - myhuo",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - myhuo",
       "server": "119.246.1.143",
       "server_port": 443,
       "password": "BxceQaOe",
       "tls": {
         "enabled": true,
-        "server_name": "t.me",
+        "server_name": "t.me%252fripaojiedian",
         "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 12 - myhuo",
+      "server": "47.238.210.5",
+      "server_port": 13779,
+      "uuid": "928e6cce-8ced-4243-9a48-a6642edd09b0",
+      "tls": {
+        "enabled": true,
+        "server_name": "tesla.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg",
+          "short_id": "af1bdd293097b664"
+        }
       }
     },
     {
@@ -143,7 +187,10 @@
         "🇭🇰 中国香港 (Hong Kong) 06 - myhuo",
         "🇭🇰 中国香港 (Hong Kong) 07 - myhuo",
         "🇭🇰 中国香港 (Hong Kong) 08 - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 09 - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 09 - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 10 - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 11 - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 12 - myhuo"
       ]
     },
     {
@@ -158,7 +205,10 @@
         "🇭🇰 中国香港 (Hong Kong) 06 - myhuo",
         "🇭🇰 中国香港 (Hong Kong) 07 - myhuo",
         "🇭🇰 中国香港 (Hong Kong) 08 - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 09 - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 09 - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 10 - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 11 - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 12 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
