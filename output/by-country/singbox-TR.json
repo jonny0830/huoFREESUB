@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - myhuo",
-      "server": "206.1.97.61",
-      "server_port": 13323,
-      "method": "chacha20-ietf-poly1305",
-      "password": "XyodFtypR0xCFHyWW9gxqp15oU78njiX"
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - myhuo",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - myhuo",
       "server": "156.67.63.231",
       "server_port": 443,
       "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
@@ -29,6 +21,20 @@
           "enabled": true,
           "public_key": "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI",
           "short_id": "5606d4a25c99e7af"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - myhuo",
+      "server": "max.karmatel.ir",
+      "server_port": 55519,
+      "uuid": "a2b9a1b7-f12f-4503-a9f6-c78ec565a6bf",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "play-apps-features.googleusercontent.com"
         }
       }
     },

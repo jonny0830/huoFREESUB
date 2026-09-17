@@ -5,99 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - myhuo
-  server: 158.173.221.214
-  port: 11001
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
-- name: 🇬🇧 英国 (United Kingdom) 02 - myhuo
-  server: 149.102.149.207
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-- name: 🇬🇧 英国 (United Kingdom) 03 - myhuo
-  server: 149.102.132.184
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-- name: 🇬🇧 英国 (United Kingdom) 04 - myhuo
-  server: 149.102.149.207
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-- name: 🇬🇧 英国 (United Kingdom) 05 - myhuo
-  server: 149.102.132.184
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-- name: 🇬🇧 英国 (United Kingdom) 06 - myhuo
-  server: 141.98.101.181
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 07 - myhuo
-  server: 129.151.77.196
-  port: 61312
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ogzqyljZNyMjc7OF7aDzKaQO21eW9jaLK3b7wdot4hk=
-- name: 🇬🇧 英国 (United Kingdom) 08 - myhuo
-  server: 66.90.104.42
-  port: 2083
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇬🇧 英国 (United Kingdom) 09 - myhuo
-  server: 129.151.64.102
-  port: 61312
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: bZtYdV6c3t+mqgvUvrzHYYjN01dNa77xEXsSCg+IlNs=
-- name: 🇬🇧 英国 (United Kingdom) 10 - myhuo
-  server: 51.38.71.51
-  port: 2083
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
-- name: 🇬🇧 英国 (United Kingdom) 11 - myhuo
-  server: 134.65.61.31
-  port: 61312
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 56rd6sxghyMun+TJalHZVSJtzjFYPDEBhn6dUXJ4IVg=
-- name: 🇬🇧 英国 (United Kingdom) 12 - myhuo
-  server: 129.151.91.115
-  port: 61312
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ktsunSg4AnlcqH3JiVv7JWSHpbDjDfTvldDgDpApNHw=
-- name: 🇬🇧 英国 (United Kingdom) 13 - myhuo
-  server: 129.151.82.31
-  port: 61312
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 9eJ4Stlb7jKiYJnaWih2vrIpdyQX7W5IPcc9t5EXrC8=
-- name: 🇬🇧 英国 (United Kingdom) 14 - myhuo
   server: 66.90.105.210
   port: 2083
   udp: true
@@ -106,54 +13,73 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇬🇧 英国 (United Kingdom) 15 - myhuo
-  server: 78.129.208.44
-  port: 421
+- name: 🇬🇧 英国 (United Kingdom) 02 - myhuo
+  server: 66.90.104.42
+  port: 2083
   udp: true
   type: vless
-  uuid: a3c861cb-e1e7-4ad6-8be2-7c2314ec6f18
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg
-    short-id: a1facbc8575701ae
-  servername: chistomat.dry.care
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 16 - myhuo
-  server: 87.117.234.19
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇬🇧 英国 (United Kingdom) 03 - myhuo
+  server: 144.24.225.195
+  port: 61312
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: +USQg0EtDGWako1JYfnp7wjswdFw/HSuX3kZwOsFxpU=
+- name: 🇬🇧 英国 (United Kingdom) 04 - myhuo
+  server: 129.151.82.31
+  port: 61312
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 9eJ4Stlb7jKiYJnaWih2vrIpdyQX7W5IPcc9t5EXrC8=
+- name: 🇬🇧 英国 (United Kingdom) 05 - myhuo
+  server: 141.98.101.181
   port: 443
   udp: true
-  type: vless
-  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
-  servername: strapi.io
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 17 - myhuo
-  server: 5.152.223.97
-  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 06 - myhuo
+  server: 144.24.231.162
+  port: 61312
   udp: true
-  type: vless
-  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
-    short-id: 1aa9f3c9021280c0
-  servername: strapi.io
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 18 - myhuo
-  server: vpn-uk-002.fastervpn.world
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: F0hfVWxhzOH0litAYyVAGxOQ7YUtyNdxp5F0PWBLyoQ=
+- name: 🇬🇧 英国 (United Kingdom) 07 - myhuo
+  server: 51.38.71.51
+  port: 2083
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
+- name: 🇬🇧 英国 (United Kingdom) 08 - myhuo
+  server: 158.173.221.214
+  port: 11001
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: c58d16e593d44f42
+- name: 🇬🇧 英国 (United Kingdom) 09 - myhuo
+  server: 146.70.61.18
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 10 - myhuo
+  server: 13.40.130.216
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: vpn-uk-002.fastervpn.world
   skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 19 - myhuo
+- name: 🇬🇧 英国 (United Kingdom) 11 - myhuo
   server: 95.154.196.61
   port: 443
   udp: true
@@ -166,62 +92,33 @@ proxies:
     short-id: e4a1b53b03eff60d
   servername: strapi.io
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 20 - myhuo
-  server: 146.70.61.37
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 21 - myhuo
-  server: 13.40.130.216
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-uk-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 22 - myhuo
-  server: 146.70.61.18
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 23 - myhuo
-  server: 46.250.250.149
-  port: 2053
-  udp: true
-  type: vless
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  tls: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 24 - myhuo
-  server: labs.frkn.org
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 3b8c82ed-fe66-472d-915e-034ccb57103f
-  sni: labs.frkn.org
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 25 - myhuo
-  server: 193.163.203.170
+- name: 🇬🇧 英国 (United Kingdom) 12 - myhuo
+  server: 5.152.223.97
   port: 443
   udp: true
   type: vless
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: b28db60d77c50b4f
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 26 - myhuo
+    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
+    short-id: 1aa9f3c9021280c0
+  servername: strapi.io
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 13 - myhuo
+  server: 46.33.8.21
+  port: 443
+  udp: true
+  type: vless
+  uuid: fe64e0af-e39b-4335-874e-5bb6993e465a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs
+    short-id: 10debbdf94767541
+  servername: filesconvert.org
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 14 - myhuo
   server: 138.124.125.211
   port: 443
   udp: true
@@ -234,22 +131,15 @@ proxies:
     short-id: 72cceb78
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 27 - myhuo
-  server: 66.163.117.58
-  port: 22324
+- name: 🇬🇧 英国 (United Kingdom) 15 - myhuo
+  server: labs.frkn.org
+  port: 443
   udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇬🇧 英国 (United Kingdom) 28 - myhuo
-  server: 134.65.63.79
-  port: 61312
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Jzj07HQI64SzM0hsx0pGCWTw+v9KY0G1IrOh/BXdPpc=
-- name: 🇬🇧 英国 (United Kingdom) 29 - myhuo
+  type: hysteria2
+  password: 3b8c82ed-fe66-472d-915e-034ccb57103f
+  sni: labs.frkn.org
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 16 - myhuo
   server: 186.190.211.188
   port: 443
   udp: true
@@ -259,6 +149,72 @@ proxies:
   servername: 186.190.211.188
   skip-cert-verify: true
   client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 17 - myhuo
+  server: 46.250.250.149
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  tls: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 18 - myhuo
+  server: 193.163.203.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 19 - myhuo
+  server: 66.163.117.58
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇬🇧 英国 (United Kingdom) 20 - myhuo
+  server: 87.117.234.19
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  servername: strapi.io
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 21 - myhuo
+  server: 31.76.39.253
+  port: 443
+  udp: true
+  type: vless
+  uuid: 24b84bd3-baa3-4192-9625-23c9690ae6f6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Hbbi45lhaIjHmcZoXD84dVlGhHnVOTM8LvC3_kh3dis
+    short-id: ff3f36afdec470
+  servername: eng.jokervpn.space
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 22 - myhuo
+  server: 129.151.85.1
+  port: 61312
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: at+GEMal4AsAk4+oajqhEt3nedx4u4q3LortN2CcY3A=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -286,13 +242,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 20 - myhuo
   - 🇬🇧 英国 (United Kingdom) 21 - myhuo
   - 🇬🇧 英国 (United Kingdom) 22 - myhuo
-  - 🇬🇧 英国 (United Kingdom) 23 - myhuo
-  - 🇬🇧 英国 (United Kingdom) 24 - myhuo
-  - 🇬🇧 英国 (United Kingdom) 25 - myhuo
-  - 🇬🇧 英国 (United Kingdom) 26 - myhuo
-  - 🇬🇧 英国 (United Kingdom) 27 - myhuo
-  - 🇬🇧 英国 (United Kingdom) 28 - myhuo
-  - 🇬🇧 英国 (United Kingdom) 29 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -320,12 +269,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 20 - myhuo
   - 🇬🇧 英国 (United Kingdom) 21 - myhuo
   - 🇬🇧 英国 (United Kingdom) 22 - myhuo
-  - 🇬🇧 英国 (United Kingdom) 23 - myhuo
-  - 🇬🇧 英国 (United Kingdom) 24 - myhuo
-  - 🇬🇧 英国 (United Kingdom) 25 - myhuo
-  - 🇬🇧 英国 (United Kingdom) 26 - myhuo
-  - 🇬🇧 英国 (United Kingdom) 27 - myhuo
-  - 🇬🇧 英国 (United Kingdom) 28 - myhuo
-  - 🇬🇧 英国 (United Kingdom) 29 - myhuo
 rules:
 - MATCH,PROXIES
