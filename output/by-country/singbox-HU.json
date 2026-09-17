@@ -4,21 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 01 - myhuo",
-      "server": "172.64.150.28",
+      "type": "vless",
+      "tag": "🇭🇺 匈牙利 (Hungary) 01 - myhuo",
+      "server": "104.24.31.89",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
+        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/?ed=2560",
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "rayan-007.nastaran.dpdns.org"
         }
       }
     },
@@ -27,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🇭🇺 匈牙利 (Hungary) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🇭🇺 匈牙利 (Hungary) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
