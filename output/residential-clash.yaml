@@ -4,19 +4,37 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
-  server: hg.zhujue.us
-  port: 11000
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - myhuo
+  server: 172.67.67.178
+  port: 443
   udp: true
   type: vless
-  uuid: 0e46345c-f33b-4f9b-b8ec-90e7c986af7e
-  flow: xtls-rprx-vision
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   tls: true
-  reality-opts:
-    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
-  servername: s0.awsstatic.com
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
+- name: 🇯🇵 日本 (Japan) 02 (家宽) - myhuo
+  server: 108.160.136.71
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /doc/products/view?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
   server: 7dba81fc3a0b.oylfmxz.cn
   port: 443
   udp: true
@@ -30,21 +48,21 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 7dba81fc3a0b.oylfmxz.cn
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - myhuo
+  - 🇯🇵 日本 (Japan) 02 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - myhuo
+  - 🇯🇵 日本 (Japan) 02 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
 rules:
 - MATCH,PROXIES
