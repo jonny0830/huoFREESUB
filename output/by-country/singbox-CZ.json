@@ -4,21 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 01 - myhuo",
-      "server": "104.16.71.213",
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 01 - myhuo",
+      "server": "89.110.66.154",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
@@ -27,14 +26,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🇨🇿 捷克 (Czech) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🇨🇿 捷克 (Czech) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
