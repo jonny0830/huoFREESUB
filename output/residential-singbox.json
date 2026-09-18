@@ -6,14 +6,14 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
-      "server": "104.18.46.234",
-      "server_port": 2095,
+      "server": "188.114.97.6",
+      "server_port": 8880,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560security=tls",
+        "path": "/?ed=2560",
         "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
         }
       }
     },
@@ -23,7 +23,27 @@
       "server": "36.224.185.173",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
-      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo",
+      "server": "dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn"
+        }
+      }
     },
     {
       "type": "selector",
@@ -31,7 +51,8 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo"
       ]
     },
     {
@@ -39,7 +60,8 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
