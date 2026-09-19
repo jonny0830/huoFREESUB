@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - myhuo
-  server: 128.241.25.11
-  port: 30021
+- name: 🌐 其他地区 (Other) 01 - myhuo
+  server: 104.16.10.116
+  port: 443
   udp: true
   type: vless
-  uuid: 40ca0d8c-0641-4e2d-a701-9fd8330daf6d
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  servername: u.srilankangrill.online
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+      Host: u.srilankangrill.online
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - myhuo
+  - 🌐 其他地区 (Other) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - myhuo
+  - 🌐 其他地区 (Other) 01 - myhuo
 rules:
 - MATCH,PROXIES
