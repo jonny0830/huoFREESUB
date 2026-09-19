@@ -4,28 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - myhuo",
-      "server": "188.42.145.180",
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 01 - myhuo",
+      "server": "34.51.231.250",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "e4be912f-68e8-4d51-80a4-1342b646f8e0",
       "tls": {
         "enabled": true,
-        "server_name": "www.volumeroot.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.volumeroot.com"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg",
+          "short_id": "79ff7d51e3c56323"
         }
       }
     },
@@ -34,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 卢森堡 (Luxembourg) 01 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 卢森堡 (Luxembourg) 01 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

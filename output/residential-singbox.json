@@ -6,28 +6,63 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
-      "server": "188.114.97.6",
+      "server": "162.159.0.53",
       "server_port": 8880,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560",
+        "path": "/?ed=2560security=tls",
         "headers": {
-          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 02 (家宽) - myhuo",
+      "server": "128.241.25.11",
+      "server_port": 30021,
+      "uuid": "40ca0d8c-0641-4e2d-a701-9fd8330daf6d",
+      "tls": {
+        "enabled": true,
+        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
         }
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo",
       "server": "36.224.185.173",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     },
     {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo",
+      "server": "e4e38271-tly2o0-tqbai3-1hpo0.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "e4e38271-tly2o0-tqbai3-1hpo0.nw4.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo",
       "server": "dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn",
       "server_port": 443,
       "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
@@ -39,10 +74,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn"
-        }
+        "path": "/"
       }
     },
     {
@@ -51,8 +83,10 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo"
+        "🇯🇵 日本 (Japan) 02 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo"
       ]
     },
     {
@@ -60,8 +94,10 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo"
+        "🇯🇵 日本 (Japan) 02 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

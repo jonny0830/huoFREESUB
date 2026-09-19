@@ -5,36 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - myhuo
-  server: 31.56.189.27
-  port: 2087
+  server: 104.143.223.69
+  port: 2085
   udp: true
   type: vless
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
-  tls: true
-  servername: srv-21bac9.vless.monster
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  uuid: f68a9fd4-16c7-46d1-b17c-0a4b224cc00d
   network: grpc
   grpc-opts:
-    grpc-service-name: freegrpc
+    grpc-service-name: vless
 - name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
-  server: 130.49.161.70
-  port: 443
+  server: 104.143.223.82
+  port: 2085
   udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  type: vless
+  uuid: 15295b3e-e233-4f3b-95d1-8860d40c75fe
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 - name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
-  server: 85.204.107.181
-  port: 8080
+  server: 104.143.223.71
+  port: 2085
   udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: false
+  type: vless
+  uuid: 3f654175-4f83-47ec-8ce2-f2bf0d160b27
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 - name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
   server: 31.58.181.88
   port: 8443
@@ -48,7 +44,38 @@ proxies:
   servername: tradingview.com
   client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 05 - myhuo
-  server: uae.unixzone.us
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 06 - myhuo
+  server: 31.56.189.27
+  port: 2087
+  udp: true
+  type: vless
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+  tls: true
+  servername: srv-21bac9.vless.monster
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: freegrpc
+- name: 🇦🇪 阿联酋 (UAE) 07 - myhuo
+  server: 85.204.107.178
+  port: 8080
+  udp: true
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 08 - myhuo
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -56,6 +83,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,6 +95,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - myhuo
   - 🇦🇪 阿联酋 (UAE) 04 - myhuo
   - 🇦🇪 阿联酋 (UAE) 05 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 06 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 07 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 08 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,5 +108,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - myhuo
   - 🇦🇪 阿联酋 (UAE) 04 - myhuo
   - 🇦🇪 阿联酋 (UAE) 05 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 06 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 07 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 08 - myhuo
 rules:
 - MATCH,PROXIES
