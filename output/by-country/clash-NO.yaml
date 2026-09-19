@@ -17,18 +17,6 @@ proxies:
   servername: deepl.com
   client-fingerprint: chrome
 - name: 🇳🇴 挪威 (Norway) 02 - myhuo
-  server: 46.29.238.88
-  port: 40443
-  udp: true
-  type: vless
-  uuid: db320947-adfb-400d-b60b-383b8324bffe
-  tls: true
-  reality-opts:
-    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
-    short-id: f7b2
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇳🇴 挪威 (Norway) 03 - myhuo
   server: 151.242.168.125
   port: 390
   udp: true
@@ -41,14 +29,18 @@ proxies:
     short-id: b545fe8c5e22f92d
   servername: bowandbead.com
   client-fingerprint: qq
-- name: 🇳🇴 挪威 (Norway) 04 - myhuo
-  server: 46.8.210.129
-  port: 22443
+- name: 🇳🇴 挪威 (Norway) 03 - myhuo
+  server: 46.29.238.88
+  port: 40443
   udp: true
-  type: hysteria2
-  password: 2a3b101d-d8f9-40e7-9373-b0ef487c0035
-  sni: disk.api-yandex.net
-  skip-cert-verify: false
+  type: vless
+  uuid: db320947-adfb-400d-b60b-383b8324bffe
+  tls: true
+  reality-opts:
+    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
+    short-id: f7b2
+  servername: deepl.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,7 +49,6 @@ proxy-groups:
   - 🇳🇴 挪威 (Norway) 01 - myhuo
   - 🇳🇴 挪威 (Norway) 02 - myhuo
   - 🇳🇴 挪威 (Norway) 03 - myhuo
-  - 🇳🇴 挪威 (Norway) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,6 +57,5 @@ proxy-groups:
   - 🇳🇴 挪威 (Norway) 01 - myhuo
   - 🇳🇴 挪威 (Norway) 02 - myhuo
   - 🇳🇴 挪威 (Norway) 03 - myhuo
-  - 🇳🇴 挪威 (Norway) 04 - myhuo
 rules:
 - MATCH,PROXIES
