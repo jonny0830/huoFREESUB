@@ -4,28 +4,45 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - myhuo",
-      "server": "34.87.244.111",
-      "server_port": 443,
-      "uuid": "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd",
+      "server": "82.198.246.250",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - myhuo",
+      "server": "188.130.207.30",
+      "server_port": 2053,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E",
-          "short_id": "d725f0dd8cce210f"
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - myhuo",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - myhuo",
+      "server": "103.75.119.126",
+      "server_port": 2087,
+      "uuid": "731f177e-00aa-480c-b935-661456139a32",
+      "transport": {
+        "type": "ws",
+        "path": "/7586c69d3dc9"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - myhuo",
       "server": "51.161.204.244",
       "server_port": 443,
       "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
@@ -46,22 +63,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - myhuo",
-      "server": "103.75.119.126",
-      "server_port": 2087,
-      "uuid": "731f177e-00aa-480c-b935-661456139a32",
-      "transport": {
-        "type": "ws",
-        "path": "/7586c69d3dc9"
+      "tag": "🇦🇺 澳大利亚 (Australia) 05 - myhuo",
+      "server": "34.87.244.111",
+      "server_port": 443,
+      "uuid": "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E",
+          "short_id": "d725f0dd8cce210f"
+        }
       }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - myhuo",
-      "server": "82.198.246.233",
-      "server_port": 180,
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-      "security": "auto"
     },
     {
       "type": "selector",
@@ -71,7 +89,8 @@
         "🇦🇺 澳大利亚 (Australia) 01 - myhuo",
         "🇦🇺 澳大利亚 (Australia) 02 - myhuo",
         "🇦🇺 澳大利亚 (Australia) 03 - myhuo",
-        "🇦🇺 澳大利亚 (Australia) 04 - myhuo"
+        "🇦🇺 澳大利亚 (Australia) 04 - myhuo",
+        "🇦🇺 澳大利亚 (Australia) 05 - myhuo"
       ]
     },
     {
@@ -81,7 +100,8 @@
         "🇦🇺 澳大利亚 (Australia) 01 - myhuo",
         "🇦🇺 澳大利亚 (Australia) 02 - myhuo",
         "🇦🇺 澳大利亚 (Australia) 03 - myhuo",
-        "🇦🇺 澳大利亚 (Australia) 04 - myhuo"
+        "🇦🇺 澳大利亚 (Australia) 04 - myhuo",
+        "🇦🇺 澳大利亚 (Australia) 05 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
