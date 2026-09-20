@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - myhuo
   server: 217.30.10.44
-  port: 9052
+  port: 9099
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
+  password: 7heRqkPG3hg4UnRm
 - name: 🇵🇱 波兰 (Poland) 02 - myhuo
   server: 217.30.10.44
   port: 9076
@@ -26,20 +26,6 @@ proxies:
   cipher: aes-256-cfb
   password: tkhHVxxfM2QErBWe
 - name: 🇵🇱 波兰 (Poland) 04 - myhuo
-  server: 217.30.10.44
-  port: 9095
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 05 - myhuo
-  server: 217.30.10.44
-  port: 9071
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 06 - myhuo
   server: 185.223.57.10
   port: 33743
   udp: true
@@ -53,68 +39,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇵🇱 波兰 (Poland) 07 - myhuo
-  server: 217.30.10.44
-  port: 9099
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 7heRqkPG3hg4UnRm
-- name: 🇵🇱 波兰 (Poland) 08 - myhuo
-  server: 150.251.113.34
-  port: 443
-  udp: true
-  type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 09 - myhuo
-  server: 83.168.111.58
-  port: 443
-  udp: true
-  type: vless
-  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 4h74KXbkBMYOhJkZabJNsf85cI91ytap_gkl56mzjTU
-  servername: soulful.host
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 10 - myhuo
-  server: 144.31.5.64
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl6.moritech.net
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 11 - myhuo
-  server: admin.wwwinternetvideo.click
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 12 - myhuo
-  server: 144.31.2.33
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl3.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 13 - myhuo
+- name: 🇵🇱 波兰 (Poland) 05 - myhuo
   server: 144.31.131.38
   port: 443
   udp: true
@@ -127,24 +52,33 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 14 - myhuo
+- name: 🇵🇱 波兰 (Poland) 06 - myhuo
+  server: 83.168.111.58
+  port: 443
+  udp: true
+  type: vless
+  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 4h74KXbkBMYOhJkZabJNsf85cI91ytap_gkl56mzjTU
+  servername: soulful.host
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 07 - myhuo
   server: 194.61.121.93
   port: 7538
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: U9YAoqBgg5VyGBc6vQv1sN
-- name: 🇵🇱 波兰 (Poland) 15 - myhuo
-  server: 144.31.5.3
+- name: 🇵🇱 波兰 (Poland) 08 - myhuo
+  server: admin.wwwinternetvideo.click
   port: 443
   udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl4.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -158,13 +92,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - myhuo
   - 🇵🇱 波兰 (Poland) 07 - myhuo
   - 🇵🇱 波兰 (Poland) 08 - myhuo
-  - 🇵🇱 波兰 (Poland) 09 - myhuo
-  - 🇵🇱 波兰 (Poland) 10 - myhuo
-  - 🇵🇱 波兰 (Poland) 11 - myhuo
-  - 🇵🇱 波兰 (Poland) 12 - myhuo
-  - 🇵🇱 波兰 (Poland) 13 - myhuo
-  - 🇵🇱 波兰 (Poland) 14 - myhuo
-  - 🇵🇱 波兰 (Poland) 15 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -178,12 +105,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - myhuo
   - 🇵🇱 波兰 (Poland) 07 - myhuo
   - 🇵🇱 波兰 (Poland) 08 - myhuo
-  - 🇵🇱 波兰 (Poland) 09 - myhuo
-  - 🇵🇱 波兰 (Poland) 10 - myhuo
-  - 🇵🇱 波兰 (Poland) 11 - myhuo
-  - 🇵🇱 波兰 (Poland) 12 - myhuo
-  - 🇵🇱 波兰 (Poland) 13 - myhuo
-  - 🇵🇱 波兰 (Poland) 14 - myhuo
-  - 🇵🇱 波兰 (Poland) 15 - myhuo
 rules:
 - MATCH,PROXIES

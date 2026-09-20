@@ -4,22 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇷 IR 01 - myhuo",
-      "server": "64.225.110.247",
-      "server_port": 2083,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "type": "hysteria2",
+      "tag": "🇩🇰 丹麦 (Denmark) 01 - myhuo",
+      "server": "se.xiaoliyu.cyou",
+      "server_port": 4433,
+      "password": "19f72087-4591-4d72-930b-2697078ec2be",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
+        "server_name": "se.xiaoliyu.cyou",
         "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/acg/buy/ajax",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
       }
     },
     {
@@ -27,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01 - myhuo"
+        "🇩🇰 丹麦 (Denmark) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01 - myhuo"
+        "🇩🇰 丹麦 (Denmark) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

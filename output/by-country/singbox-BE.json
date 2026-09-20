@@ -5,24 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - myhuo",
-      "server": "172.67.140.160",
-      "server_port": 443,
-      "uuid": "1aa96574-c28b-4ee9-855d-ebdbbf1f7e90",
+      "tag": "🇧🇪 比利时 (Belgium) 01 - myhuo",
+      "server": "132.243.203.218",
+      "server_port": 8443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "5-stAtic-ImG-m13.xDC.ccWu.cC",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/ED3ZQPu7lqyeDGD58KabZ",
+        "path": "/v?ed=2560fp=chrome",
         "headers": {
-          "Host": "5-StATIc-iMG-M13.xdC.CCwU.Cc"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
@@ -31,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🇧🇪 比利时 (Belgium) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🇧🇪 比利时 (Belgium) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

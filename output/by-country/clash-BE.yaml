@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - myhuo
-  server: 64.225.110.247
-  port: 2083
+- name: 🇧🇪 比利时 (Belgium) 01 - myhuo
+  server: 132.243.203.218
+  port: 8443
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -15,7 +15,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /acg/buy/ajax
+    path: /v?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - myhuo
+  - 🇧🇪 比利时 (Belgium) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - myhuo
+  - 🇧🇪 比利时 (Belgium) 01 - myhuo
 rules:
 - MATCH,PROXIES
