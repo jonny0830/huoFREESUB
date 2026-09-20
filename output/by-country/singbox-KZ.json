@@ -1,0 +1,77 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo",
+      "server": "172.64.229.2",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo",
+      "server": "172.64.53.55",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo",
+      "server": "151.101.1.194",
+      "server_port": 80,
+      "uuid": "e732cb07-4a31-49d3-9122-61dc1f68334e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "simorghfr.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

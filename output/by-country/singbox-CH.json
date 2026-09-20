@@ -4,8 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - myhuo",
+      "server": "138.124.60.146",
+      "server_port": 443,
+      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "usa.oblaco.bet",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 - myhuo",
       "server": "82.38.64.229",
       "server_port": 8443,
       "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
@@ -17,18 +38,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 - myhuo",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - myhuo",
       "server": "151.242.2.81",
       "server_port": 443,
       "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
       "tls": {
         "enabled": true,
         "server_name": "cf9.rumedia-cdn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
@@ -39,23 +56,21 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - myhuo",
-      "server": "138.124.60.146",
+      "type": "trojan",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - myhuo",
+      "server": "185.18.250.252",
       "server_port": 443,
-      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
-      "flow": "xtls-rprx-vision",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "usa.oblaco.bet",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
-          "short_id": ""
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
         }
       }
     },
@@ -66,7 +81,8 @@
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - myhuo",
         "🇨🇭 瑞士 (Switzerland) 02 - myhuo",
-        "🇨🇭 瑞士 (Switzerland) 03 - myhuo"
+        "🇨🇭 瑞士 (Switzerland) 03 - myhuo",
+        "🇨🇭 瑞士 (Switzerland) 04 - myhuo"
       ]
     },
     {
@@ -75,7 +91,8 @@
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - myhuo",
         "🇨🇭 瑞士 (Switzerland) 02 - myhuo",
-        "🇨🇭 瑞士 (Switzerland) 03 - myhuo"
+        "🇨🇭 瑞士 (Switzerland) 03 - myhuo",
+        "🇨🇭 瑞士 (Switzerland) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
