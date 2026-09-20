@@ -4,24 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 拉脱维亚 (Latvia) 01 - myhuo
-  server: 185.135.86.175
-  port: 9036
+- name: 🇮🇶 IQ 01 - myhuo
+  server: 81.90.25.152
+  port: 34302
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
+  type: vless
+  uuid: e9a7f2c2-51bd-4a81-de35-26b369e2585b
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 拉脱维亚 (Latvia) 01 - myhuo
+  - 🇮🇶 IQ 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 拉脱维亚 (Latvia) 01 - myhuo
+  - 🇮🇶 IQ 01 - myhuo
 rules:
 - MATCH,PROXIES

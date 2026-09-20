@@ -18,14 +18,15 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - myhuo
-  server: 131.123.41.177
-  port: 8081
+  server: 192.145.31.5
+  port: 8443
   udp: true
   type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  tls: true
+  servername: neth9.lunariai.ru
+  skip-cert-verify: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

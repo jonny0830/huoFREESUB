@@ -5,34 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - myhuo
-  server: 172.67.167.78
-  port: 8443
-  udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 🌐 其他地区 (Other) 02 - myhuo
-  server: 104.18.9.83
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🌐 其他地区 (Other) 03 - myhuo
-  server: 104.16.71.213
+  server: 104.21.13.204
   port: 443
   udp: true
   type: trojan
@@ -48,15 +21,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - myhuo
-  - 🌐 其他地区 (Other) 02 - myhuo
-  - 🌐 其他地区 (Other) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - myhuo
-  - 🌐 其他地区 (Other) 02 - myhuo
-  - 🌐 其他地区 (Other) 03 - myhuo
 rules:
 - MATCH,PROXIES

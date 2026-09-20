@@ -37,52 +37,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - myhuo",
-      "server": "151.242.2.81",
-      "server_port": 443,
-      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf9.rumedia-cdn.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "cf9.rumedia-cdn.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - myhuo",
-      "server": "185.18.250.252",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - myhuo",
-        "🇨🇭 瑞士 (Switzerland) 02 - myhuo",
-        "🇨🇭 瑞士 (Switzerland) 03 - myhuo",
-        "🇨🇭 瑞士 (Switzerland) 04 - myhuo"
+        "🇨🇭 瑞士 (Switzerland) 02 - myhuo"
       ]
     },
     {
@@ -90,9 +50,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - myhuo",
-        "🇨🇭 瑞士 (Switzerland) 02 - myhuo",
-        "🇨🇭 瑞士 (Switzerland) 03 - myhuo",
-        "🇨🇭 瑞士 (Switzerland) 04 - myhuo"
+        "🇨🇭 瑞士 (Switzerland) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
