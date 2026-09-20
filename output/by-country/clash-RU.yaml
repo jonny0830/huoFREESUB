@@ -5,29 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - myhuo
-  server: msk.frkn.org
+  server: 172.67.167.77
   port: 443
   udp: true
-  type: hysteria2
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: msk.frkn.org
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
-  server: 132.243.203.218
-  port: 8443
-  udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: cc08d2d0-8a7a-4469-81d2-c43704451271
   tls: true
-  servername: cdn8848.776676.xyz
+  servername: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /v?ed=2560
+    path: /vl/6871nrbnl9WsdAiOUInt
     headers:
-      Host: cdn8848.776676.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
+      Host: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
   server: 91.240.86.70
   port: 22443
   udp: true
@@ -35,7 +27,27 @@ proxies:
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: itsallproxy.quattro-tech.ru
   skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
+  server: msk.frkn.org
+  port: 443
+  udp: true
+  type: hysteria2
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: msk.frkn.org
+  skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
+  server: 45.12.75.242
+  port: 26424
+  udp: true
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
   server: 46.8.200.91
   port: 443
   udp: true
@@ -49,18 +61,6 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
-  server: 45.12.75.242
-  port: 26424
-  udp: true
-  type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

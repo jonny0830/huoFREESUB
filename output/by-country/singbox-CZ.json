@@ -6,6 +6,32 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - myhuo",
+      "server": "104.21.67.236",
+      "server_port": 443,
+      "uuid": "96e341a7-3077-4613-b482-41bd9c90cc4d",
+      "tls": {
+        "enabled": true,
+        "server_name": "eZaCCesS-proJEcT-4C7950.Ez-dC9bBB.WorKErs.dEV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiN2w4dDlRNVV5NkZ5NU1aeSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "ezaccess-project-4c7950.ez-dc9bbb.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - myhuo",
       "server": "95.85.230.35",
       "server_port": 443,
       "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
@@ -15,7 +41,7 @@
         "server_name": "de.oblaco.bet",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -29,14 +55,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - myhuo"
+        "🇨🇿 捷克 (Czech) 01 - myhuo",
+        "🇨🇿 捷克 (Czech) 02 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - myhuo"
+        "🇨🇿 捷克 (Czech) 01 - myhuo",
+        "🇨🇿 捷克 (Czech) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
