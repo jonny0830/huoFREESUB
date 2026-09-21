@@ -5,29 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - myhuo
-  server: 31.58.181.88
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 0cfc5fac-1d0d-4d66-a099-5f6802d3243b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
-  server: 45.130.125.201
-  port: 80
-  udp: true
-  type: vless
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
   server: 130.49.161.70
   port: 443
   udp: true
@@ -37,28 +14,15 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
-  server: 85.204.107.178
+- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
+  server: 85.204.107.172
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 05 - myhuo
-  server: 89.125.70.65
-  port: 14352
-  udp: true
-  type: vless
-  uuid: 17ab31f7-c021-4aec-83b2-ab48de8886bd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AzOs0Mh5_Ax-CrvFYTYXAp78syFjgkotED2cKO_kbyw
-    short-id: 461b0192ec23b6
-  servername: www.lamer.com.hk
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 06 - myhuo
+- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -69,6 +33,21 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
+  server: 188.72.103.4
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1f959100-a98b-47fb-84fa-359246dc458a
+  tls: true
+  servername: apicdn.4subnodes.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /apiv1/esa1-asda2jcvnbpseflkn-kjweksad
+    headers:
+      Host: apicdn.4subnodes.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,8 +57,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - myhuo
   - 🇦🇪 阿联酋 (UAE) 03 - myhuo
   - 🇦🇪 阿联酋 (UAE) 04 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 05 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 06 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,7 +66,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - myhuo
   - 🇦🇪 阿联酋 (UAE) 03 - myhuo
   - 🇦🇪 阿联酋 (UAE) 04 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 05 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 06 - myhuo
 rules:
 - MATCH,PROXIES

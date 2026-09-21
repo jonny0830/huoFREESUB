@@ -6,20 +6,6 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 01 - myhuo",
-      "server": "103.86.49.57",
-      "server_port": 80,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "aIs.SpEeDtEsT.nEt"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - myhuo",
       "server": "34.15.162.1",
       "server_port": 443,
       "uuid": "2b1d0c2a-9c80-4b72-892e-93d0500b9210",
@@ -28,7 +14,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -39,20 +25,20 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 03 - myhuo",
-      "server": "104.18.26.90",
+      "tag": "🇹🇭 泰国 (Thailand) 02 - myhuo",
+      "server": "8.222.70.238",
       "server_port": 443,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "v2ray.simspeedup.com",
-        "insecure": false
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/ws",
+        "path": "/mall/china/doc?ed=2560fp=chrome",
         "headers": {
-          "Host": "v2ray.simspeedup.com"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
@@ -62,8 +48,7 @@
       "outbounds": [
         "auto",
         "🇹🇭 泰国 (Thailand) 01 - myhuo",
-        "🇹🇭 泰国 (Thailand) 02 - myhuo",
-        "🇹🇭 泰国 (Thailand) 03 - myhuo"
+        "🇹🇭 泰国 (Thailand) 02 - myhuo"
       ]
     },
     {
@@ -71,8 +56,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇭 泰国 (Thailand) 01 - myhuo",
-        "🇹🇭 泰国 (Thailand) 02 - myhuo",
-        "🇹🇭 泰国 (Thailand) 03 - myhuo"
+        "🇹🇭 泰国 (Thailand) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

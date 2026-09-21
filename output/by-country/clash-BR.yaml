@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - myhuo
-  server: 95.181.162.170
-  port: 444
+- name: 🇧🇷 巴西 (Brazil) 01 - myhuo
+  server: 185.125.100.76
+  port: 8443
   udp: true
   type: vless
-  uuid: 7094cade-110a-4be0-b657-15d606dcea6d
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /trade/game/movies
     headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - myhuo
+  - 🇧🇷 巴西 (Brazil) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - myhuo
+  - 🇧🇷 巴西 (Brazil) 01 - myhuo
 rules:
 - MATCH,PROXIES

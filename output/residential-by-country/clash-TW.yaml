@@ -14,9 +14,9 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
-  server: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
+  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   port: 443
   udp: true
   type: vmess
@@ -24,7 +24,7 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
-  servername: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
+  servername: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   skip-cert-verify: false
   network: ws
   ws-opts:
@@ -45,20 +45,6 @@ proxies:
     path: /
     headers:
       Host: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
-  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
-  port: 443
-  udp: true
-  type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +53,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,6 +61,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
 rules:
 - MATCH,PROXIES

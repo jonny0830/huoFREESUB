@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - myhuo
-  server: 103.86.49.57
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
-- name: 🇹🇭 泰国 (Thailand) 02 - myhuo
   server: 34.15.162.1
   port: 443
   udp: true
@@ -26,21 +15,21 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇹🇭 泰国 (Thailand) 03 - myhuo
-  server: 104.18.26.90
+  client-fingerprint: chrome
+- name: 🇹🇭 泰国 (Thailand) 02 - myhuo
+  server: 8.222.70.238
   port: 443
   udp: true
   type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: v2ray.simspeedup.com
-  skip-cert-verify: false
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /ws
+    path: /mall/china/doc?ed=2560fp=chrome
     headers:
-      Host: v2ray.simspeedup.com
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - myhuo
   - 🇹🇭 泰国 (Thailand) 02 - myhuo
-  - 🇹🇭 泰国 (Thailand) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - myhuo
   - 🇹🇭 泰国 (Thailand) 02 - myhuo
-  - 🇹🇭 泰国 (Thailand) 03 - myhuo
 rules:
 - MATCH,PROXIES

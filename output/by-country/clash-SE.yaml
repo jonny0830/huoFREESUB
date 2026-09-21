@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - myhuo
-  server: 51.170.185.165
-  port: 45819
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: u1NAK7Sc9gI0zhd9RVIsisY4VVe58lx0Jvn2QV8QMeo=
-- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
   server: 193.42.39.10
   port: 33743
   udp: true
@@ -21,11 +14,11 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
+- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
   server: se-node.rumedia-cdn.com
   port: 25443
   udp: true
@@ -33,19 +26,21 @@ proxies:
   password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
   sni: cf2.rumedia-cdn.com
   skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
-  server: svvedko.nxxzxaw.beer
-  port: 443
+- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
+  server: 157.228.142.148
+  port: 8443
   udp: true
   type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  flow: xtls-rprx-vision
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  reality-opts:
-    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-    short-id: fb442438e2223836
-  servername: svvedko.nxxzxaw.beer
-  client-fingerprint: random
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /act/rank/lang?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,7 +49,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - myhuo
   - 🇸🇪 瑞典 (Sweden) 02 - myhuo
   - 🇸🇪 瑞典 (Sweden) 03 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,6 +57,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - myhuo
   - 🇸🇪 瑞典 (Sweden) 02 - myhuo
   - 🇸🇪 瑞典 (Sweden) 03 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 04 - myhuo
 rules:
 - MATCH,PROXIES
