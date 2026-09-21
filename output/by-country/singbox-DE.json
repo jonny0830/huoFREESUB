@@ -6,7 +6,7 @@
     {
       "type": "trojan",
       "tag": "🇩🇪 德国 (Germany) 01 - myhuo",
-      "server": "151.101.56.7",
+      "server": "199.232.78.101",
       "server_port": 443,
       "password": "MiTIVPN",
       "tls": {
@@ -23,156 +23,31 @@
       },
       "transport": {
         "type": "ws",
+        "path": "/",
         "headers": {
-          "Host": "mitivpn---ss--s---mitivpn-22e.global.ssl.fastly.net"
+          "Host": "mitivpn---ss--s---mitivpn-11e.global.ssl.fastly.net"
         }
       }
     },
     {
       "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 02 - myhuo",
+      "server": "130.61.34.119",
+      "server_port": 59924,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "JUDchdpxsrrwvJVal4OaHtwjONijBe4gAINdg2AFQaI="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 03 - myhuo",
       "server": "185.226.172.8",
       "server_port": 8008,
       "method": "aes-256-gcm",
       "password": "XKFKl2rULjIp74"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 03 - myhuo",
-      "server": "130.61.226.114",
-      "server_port": 59924,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "wJJYYALkxTj4TAIgQiiuM0WLYLKjCe9UMc9BIN3peYg="
-    },
-    {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 04 - myhuo",
-      "server": "8.209.74.72",
-      "server_port": 20001,
-      "method": "chacha20-ietf-poly1305",
-      "password": "PWpjPo3tqhPN4yRZ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 05 - myhuo",
-      "server": "2.58.81.221",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "kKEd0rBrd56Furjz"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 06 - myhuo",
-      "server": "159.195.192.169",
-      "server_port": 2054,
-      "uuid": "75079a7f-75b5-418b-8a65-f7b2f438cd4a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ibm.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mlJSEX5zJodpeofSicXnd0tlrgonVCGJ3M-qqWF4FSU",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-tunnel"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 07 - myhuo",
-      "server": "31.56.189.27",
-      "server_port": 2087,
-      "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv-21bac9.vless.monster",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "freegrpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 08 - myhuo",
-      "server": "162.55.242.208",
-      "server_port": 2053,
-      "uuid": "659ffdfa-47d2-47d7-af40-5afe0907eead",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY",
-          "short_id": "4d14da19b19cfc8c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 09 - myhuo",
-      "server": "108.165.32.16",
-      "server_port": 443,
-      "uuid": "6dff8e33-b201-4cbb-8f89-b9418702bff2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.logitech.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IGIgHNW_hZRsP2DZqItH5wvFSr6H4rqpI9x-0IUCskU",
-          "short_id": "ca3d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 10 - myhuo",
-      "server": "146.185.178.18",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 11 - myhuo",
       "server": "144.31.168.95",
       "server_port": 443,
       "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
@@ -182,7 +57,7 @@
         "server_name": "eu-central.cendora.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -193,99 +68,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 12 - myhuo",
-      "server": "46.101.230.110",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/drama?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 13 - myhuo",
-      "server": "157.173.125.214",
-      "server_port": 2087,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/redirect/china/view?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 14 - myhuo",
-      "server": "103.251.167.112",
-      "server_port": 8443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/library/lang",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 15 - myhuo",
-      "server": "103.31.77.108",
-      "server_port": 2053,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/channels/act",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 16 - myhuo",
+      "tag": "🇩🇪 德国 (Germany) 05 - myhuo",
       "server": "57.129.96.67",
       "server_port": 443,
       "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
@@ -293,147 +76,81 @@
       "tls": {
         "enabled": true,
         "server_name": "nasnet-571299667-direct.mbghalibaf.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 17 - myhuo",
-      "server": "64.225.110.247",
-      "server_port": 2083,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true
-      },
+      "tag": "🇩🇪 德国 (Germany) 06 - myhuo",
+      "server": "163.8.195.241",
+      "server_port": 2087,
+      "uuid": "56ba5d34-ef22-4ba6-8090-4188b807df54",
       "transport": {
         "type": "ws",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
+        "path": "/29c8fed7ca22"
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 18 - myhuo",
-      "server": "202.181.177.8",
-      "server_port": 8443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/channels/act",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇩🇪 德国 (Germany) 19 - myhuo",
-      "server": "de-node.rumedia-cdn.com",
-      "server_port": 25443,
-      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf6.rumedia-cdn.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 20 - myhuo",
-      "server": "31.59.46.140",
-      "server_port": 8443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/travel/intro?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 21 - myhuo",
-      "server": "89.110.66.154",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 22 - myhuo",
-      "server": "193.181.216.117",
+      "tag": "🇩🇪 德国 (Germany) 07 - myhuo",
+      "server": "162.55.242.208",
       "server_port": 2053,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "uuid": "659ffdfa-47d2-47d7-af40-5afe0907eead",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY",
+          "short_id": "4d14da19b19cfc8c"
         }
-      },
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 08 - myhuo",
+      "server": "2.58.81.221",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "kKEd0rBrd56Furjz"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 09 - myhuo",
+      "server": "57.129.41.216",
+      "server_port": 80,
+      "uuid": "7d74eae4-8a06-4306-a923-ad686f30bf26",
       "transport": {
         "type": "ws",
+        "path": "/vless/",
         "headers": {
-          "Host": "cdn8848.776676.xyz"
+          "Host": "OV-Germany1.09vpn.com"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 23 - myhuo",
-      "server": "144.31.28.106",
-      "server_port": 8443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tag": "🇩🇪 德国 (Germany) 10 - myhuo",
+      "server": "212.80.7.129",
+      "server_port": 6215,
+      "uuid": "2f2ae482-5a3e-455e-aad6-4ac28a82f64f",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
+        "server_name": "cdn.astranet.ignorelist.com",
         "insecure": false
       },
       "transport": {
-        "type": "ws",
-        "path": "/trade",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
+        "type": "grpc",
+        "service_name": "api.v1.ApiService"
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 24 - myhuo",
+      "tag": "🇩🇪 德国 (Germany) 11 - myhuo",
       "server": "31.58.76.68",
       "server_port": 8443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
@@ -456,7 +173,164 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 25 - myhuo",
+      "tag": "🇩🇪 德国 (Germany) 12 - myhuo",
+      "server": "31.56.189.27",
+      "server_port": 2087,
+      "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-21bac9.vless.monster",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "freegrpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 13 - myhuo",
+      "server": "89.110.66.154",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 14 - myhuo",
+      "server": "64.225.110.247",
+      "server_port": 2083,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 15 - myhuo",
+      "server": "146.185.178.18",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 16 - myhuo",
+      "server": "188.130.207.30",
+      "server_port": 2053,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 17 - myhuo",
+      "server": "103.251.167.112",
+      "server_port": 8443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/library/lang",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇩🇪 德国 (Germany) 18 - myhuo",
+      "server": "de-node.rumedia-cdn.com",
+      "server_port": 25443,
+      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf6.rumedia-cdn.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 19 - myhuo",
+      "server": "2.26.125.38",
+      "server_port": 2096,
+      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
+      "tls": {
+        "enabled": true,
+        "server_name": "st3f6d.rumedia-cdn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "st3f6d.rumedia-cdn.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 20 - myhuo",
       "server": "5.104.107.80",
       "server_port": 2053,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
@@ -474,8 +348,88 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 26 - myhuo",
-      "server": "2.27.244.164",
+      "tag": "🇩🇪 德国 (Germany) 21 - myhuo",
+      "server": "31.59.121.156",
+      "server_port": 2053,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 22 - myhuo",
+      "server": "108.165.32.16",
+      "server_port": 443,
+      "uuid": "6dff8e33-b201-4cbb-8f89-b9418702bff2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.logitech.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IGIgHNW_hZRsP2DZqItH5wvFSr6H4rqpI9x-0IUCskU",
+          "short_id": "ca3d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 23 - myhuo",
+      "server": "147.90.89.173",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 24 - myhuo",
+      "server": "129.151.64.169",
+      "server_port": 31867,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/files",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 25 - myhuo",
+      "server": "202.181.177.8",
       "server_port": 8443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
@@ -497,9 +451,9 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 27 - myhuo",
-      "server": "217.12.206.160",
-      "server_port": 81,
+      "tag": "🇩🇪 德国 (Germany) 26 - myhuo",
+      "server": "157.173.125.214",
+      "server_port": 2087,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
@@ -512,7 +466,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/members/playlist?ed=2560",
+        "path": "/redirect/china/view?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -520,30 +474,25 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 28 - myhuo",
-      "server": "178.215.236.234",
+      "tag": "🇩🇪 德国 (Germany) 27 - myhuo",
+      "server": "assets-de.pleiades.codes",
       "server_port": 443,
-      "uuid": "9c64f1aa-da4d-4c3e-9617-9bfbf1657a75",
-      "flow": "xtls-rprx-vision",
+      "uuid": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
       "tls": {
         "enabled": true,
-        "server_name": "ge.sarky.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RpjjScd4SIWgDGPtR_FJPRENMyWaPzb_hyA2cY98CDs",
-          "short_id": "e6240b9af8d53c17"
-        }
+        "server_name": "assets-de.pleiades.codes",
+        "insecure": false
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "cdn.v1.AssetService"
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 29 - myhuo",
-      "server": "144.31.200.207",
-      "server_port": 443,
+      "tag": "🇩🇪 德国 (Germany) 28 - myhuo",
+      "server": "31.59.46.140",
+      "server_port": 8443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
@@ -556,7 +505,30 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/code/directory/ads?ed=2560",
+        "path": "/travel/intro?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 29 - myhuo",
+      "server": "103.31.77.108",
+      "server_port": 2053,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/channels/act",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -588,43 +560,294 @@
     {
       "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 31 - myhuo",
-      "server": "89.169.53.176",
-      "server_port": 4443,
-      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
-      "flow": "xtls-rprx-vision",
+      "server": "132.243.203.207",
+      "server_port": 8443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "de.wvpn.one",
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw",
-          "short_id": "df3aff719526dc5a"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lives?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 32 - myhuo",
-      "server": "de-1.ff-id.xyz",
-      "server_port": 6215,
-      "uuid": "2f2ae482-5a3e-455e-aad6-4ac28a82f64f",
+      "server": "193.181.216.117",
+      "server_port": 2053,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.astranet.ignorelist.com",
-        "insecure": false
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "api.v1.ApiService"
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 33 - myhuo",
+      "server": "82.39.171.142",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 34 - myhuo",
+      "server": "138.68.142.165",
+      "server_port": 2053,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/resource/channel",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 35 - myhuo",
+      "server": "194.154.29.139",
+      "server_port": 8443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/retrieve/txt?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 36 - myhuo",
+      "server": "82.39.171.12",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 37 - myhuo",
+      "server": "217.12.206.160",
+      "server_port": 81,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/members/playlist?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 38 - myhuo",
+      "server": "132.243.203.218",
+      "server_port": 8443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/v?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 39 - myhuo",
+      "server": "2.58.81.221",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "kKEd0rBrd56Furjz"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 40 - myhuo",
+      "server": "185.125.100.76",
+      "server_port": 8443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/trade/game/movies",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 41 - myhuo",
+      "server": "5.101.114.44",
+      "server_port": 2053,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/collection/directory?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 42 - myhuo",
+      "server": "103.109.234.246",
+      "server_port": 443,
+      "uuid": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "de10.delivery-4f1c.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "z_Rn0Vvq1GB39RhN6v7DhdtD-kS0XZa_je0h-no_hWs",
+          "short_id": "59eee550a1014198"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇩🇪 德国 (Germany) 43 - myhuo",
+      "server": "de1.xiaoliyu.cyou",
+      "server_port": 4433,
+      "password": "6a3fe9d0-0d68-4f29-ae99-5771d4217a45",
+      "tls": {
+        "enabled": true,
+        "server_name": "127.0.0.1",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 44 - myhuo",
+      "server": "176.124.220.173",
+      "server_port": 8443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 45 - myhuo",
       "server": "109.107.155.76",
       "server_port": 2053,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
@@ -647,116 +870,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 34 - myhuo",
-      "server": "172.67.185.153",
-      "server_port": 2053,
-      "uuid": "522df6b1-a110-4163-a92f-9935561b1f77",
-      "tls": {
-        "enabled": true,
-        "server_name": "de.huge-b.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Artemis_Vpn",
-        "headers": {
-          "Host": "de.huge-b.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 35 - myhuo",
-      "server": "2.26.125.38",
-      "server_port": 2096,
-      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
-      "tls": {
-        "enabled": true,
-        "server_name": "st3f6d.rumedia-cdn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "st3f6d.rumedia-cdn.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 36 - myhuo",
-      "server": "188.130.207.30",
-      "server_port": 2053,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 37 - myhuo",
-      "server": "176.124.220.173",
-      "server_port": 8443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 38 - myhuo",
-      "server": "164.92.137.46",
-      "server_port": 2083,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/bt/streaming/ad?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 39 - myhuo",
+      "tag": "🇩🇪 德国 (Germany) 46 - myhuo",
       "server": "185.113.223.183",
       "server_port": 8443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
@@ -778,63 +892,73 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇩🇪 德国 (Germany) 40 - myhuo",
-      "server": "2.27.59.206",
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 47 - myhuo",
+      "server": "130.61.227.189",
+      "server_port": 59924,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "EPNhE9qvdzvZpDTA6OzRwv1CsK7SFcOahpqDmNOGM/w="
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 48 - myhuo",
+      "server": "82.118.19.153",
       "server_port": 443,
-      "password": "cd74c0a406664a5bc0bac098220a2468",
+      "uuid": "adcaa148-7c66-4282-a81a-99ec8afa029d",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "de1.sferavpn.pro",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "44f1c1e2f8b99e792ceed574627a1eb0"
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE",
+          "short_id": "670ed9f350bd8ee0"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 41 - myhuo",
-      "server": "31.59.121.156",
+      "tag": "🇩🇪 德国 (Germany) 49 - myhuo",
+      "server": "93.123.101.215",
+      "server_port": 443,
+      "uuid": "dcf8e133-09a2-4884-abf9-80356bb334ac",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "emil.atlasparser.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xcTXD3of3Yt5hHdIwYGZ1LjMBgiL6sqj5J33J4U4ozM",
+          "short_id": "a7c31f92"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 50 - myhuo",
+      "server": "116.202.2.27",
       "server_port": 2053,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "uuid": "0f2b674f-1855-47d3-aa4e-e5e3c637ebcf",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true,
+        "server_name": "91.98.44.116",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 42 - myhuo",
-      "server": "194.154.29.139",
-      "server_port": 8443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
+        },
+        "reality": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/retrieve/txt?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
+          "public_key": "kQ80VUyUaQF2Qczqb4XqnNdGD8pYwuVNqBEezMjtBTc",
+          "short_id": "72a35f6d88599886"
         }
       }
     },
@@ -884,7 +1008,15 @@
         "🇩🇪 德国 (Germany) 39 - myhuo",
         "🇩🇪 德国 (Germany) 40 - myhuo",
         "🇩🇪 德国 (Germany) 41 - myhuo",
-        "🇩🇪 德国 (Germany) 42 - myhuo"
+        "🇩🇪 德国 (Germany) 42 - myhuo",
+        "🇩🇪 德国 (Germany) 43 - myhuo",
+        "🇩🇪 德国 (Germany) 44 - myhuo",
+        "🇩🇪 德国 (Germany) 45 - myhuo",
+        "🇩🇪 德国 (Germany) 46 - myhuo",
+        "🇩🇪 德国 (Germany) 47 - myhuo",
+        "🇩🇪 德国 (Germany) 48 - myhuo",
+        "🇩🇪 德国 (Germany) 49 - myhuo",
+        "🇩🇪 德国 (Germany) 50 - myhuo"
       ]
     },
     {
@@ -932,7 +1064,15 @@
         "🇩🇪 德国 (Germany) 39 - myhuo",
         "🇩🇪 德国 (Germany) 40 - myhuo",
         "🇩🇪 德国 (Germany) 41 - myhuo",
-        "🇩🇪 德国 (Germany) 42 - myhuo"
+        "🇩🇪 德国 (Germany) 42 - myhuo",
+        "🇩🇪 德国 (Germany) 43 - myhuo",
+        "🇩🇪 德国 (Germany) 44 - myhuo",
+        "🇩🇪 德国 (Germany) 45 - myhuo",
+        "🇩🇪 德国 (Germany) 46 - myhuo",
+        "🇩🇪 德国 (Germany) 47 - myhuo",
+        "🇩🇪 德国 (Germany) 48 - myhuo",
+        "🇩🇪 德国 (Germany) 49 - myhuo",
+        "🇩🇪 德国 (Germany) 50 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

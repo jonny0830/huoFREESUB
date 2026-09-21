@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - myhuo
-  server: 193.42.39.10
-  port: 33743
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
   server: se-node.rumedia-cdn.com
   port: 25443
   udp: true
@@ -26,36 +12,17 @@ proxies:
   password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
   sni: cf2.rumedia-cdn.com
   skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
-  server: 157.228.142.148
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /act/rank/lang?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 02 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 02 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 03 - myhuo
 rules:
 - MATCH,PROXIES
