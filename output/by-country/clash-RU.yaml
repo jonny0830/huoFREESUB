@@ -5,32 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - myhuo
-  server: 188.114.97.6
-  port: 8880
+  server: 172.64.158.146
+  port: 80
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /?ed=2560security=tls
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
-  server: 104.21.12.21
-  port: 443
+  server: 172.64.158.146
+  port: 8080
   udp: true
   type: vless
-  uuid: 73796e63-0000-4000-8000-000000000000
-  tls: true
-  servername: nahan-core.fatitelegram.workers.dev
-  skip-cert-verify: true
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /sync
+    path: /?ed=2560security=tls
     headers:
-      Host: nahan-core.fatitelegram.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
+  server: 91.196.32.163
+  port: 443
+  udp: true
+  type: hysteria2
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: 91.196.32.163
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   server: 91.240.86.70
   port: 22443
   udp: true
@@ -38,28 +42,21 @@ proxies:
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: hy.quattro-tech.ru
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
-  server: 46.8.200.91
-  port: 443
+- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
+  server: 5.129.238.144
+  port: 8443
   udp: true
   type: vless
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   tls: true
-  servername: cf3.rumedia-cdn.com
+  servername: xinnusvpn.duckdns.org
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /cdn/v3/live
+    path: /wsnl
     headers:
-      Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
-  server: msk.frkn.org
-  port: 443
-  udp: true
-  type: hysteria2
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: msk.frkn.org
-  skip-cert-verify: false
+      Host: xinnusvpn.duckdns.org
 proxy-groups:
 - name: PROXIES
   type: select

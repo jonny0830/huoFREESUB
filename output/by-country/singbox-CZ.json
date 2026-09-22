@@ -4,57 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇨🇿 捷克 (Czech) 01 - myhuo",
-      "server": "104.19.164.155",
-      "server_port": 2083,
-      "uuid": "532a9115-aee7-4d39-9638-1e5146de075b",
-      "tls": {
-        "enabled": true,
-        "server_name": "muddy-math-c1fc.tmpnriqueau89.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "muddy-math-c1fc.tmpnriqueau89.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - myhuo",
-      "server": "95.182.94.186",
+      "server": "104.21.87.130",
       "server_port": 443,
-      "uuid": "ec7a4183-3e7b-49c4-90dc-fe352e1b0ad0",
-      "flow": "xtls-rprx-vision",
+      "password": "Telegram_healer_config",
       "tls": {
         "enabled": true,
-        "server_name": "us04.mcloud.mov",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fkZTYNydTBVO-1LSiTvDcyBMx-zBP5Am780jECmUgg0",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - myhuo",
-      "server": "104.21.70.223",
-      "server_port": 443,
-      "uuid": "527451fe-ee1f-4e6f-94ca-808f055f7c9b",
-      "tls": {
-        "enabled": true,
-        "server_name": "05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev",
+        "server_name": "Z6Y-Daox0HyHdTDy.R720KPBYx2L3I406.WorKERS.DEV",
         "insecure": false,
         "alpn": [
           "http/1.1"
@@ -66,9 +23,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vl/ERYN0G44hia16zhR",
+        "path": "/tr/ZizffFwMuYF9RUfnS3Ad2bGqcOrQk?ed=2560",
         "headers": {
-          "Host": "05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev"
+          "Host": "z6y-daox0hyhdtdy.r720kpbyx2l3i406.workers.dev"
         }
       }
     },
@@ -77,18 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - myhuo",
-        "🇨🇿 捷克 (Czech) 02 - myhuo",
-        "🇨🇿 捷克 (Czech) 03 - myhuo"
+        "🇨🇿 捷克 (Czech) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - myhuo",
-        "🇨🇿 捷克 (Czech) 02 - myhuo",
-        "🇨🇿 捷克 (Czech) 03 - myhuo"
+        "🇨🇿 捷克 (Czech) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
