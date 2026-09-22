@@ -4,16 +4,70 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - myhuo",
-      "server": "87.58.148.70",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "rg0g3xp9rk9nk9o0"
+      "server": "95.217.24.119",
+      "server_port": 2087,
+      "uuid": "ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "62.238.103.54",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc",
+          "short_id": "e9fae729e40ae07e"
+        }
+      }
     },
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - myhuo",
+      "server": "95.216.27.15",
+      "server_port": 2053,
+      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+          "short_id": "d368b94e275ab080"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
+      "server": "65.108.3.59",
+      "server_port": 443,
+      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.eitaa.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
+          "short_id": "90ec9bba2019"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - myhuo",
       "server": "152.233.54.104",
       "server_port": 443,
       "uuid": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
@@ -22,7 +76,7 @@
         "server_name": "fi1.cache-4d8a.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -36,130 +90,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
-      "server": "185.79.138.71",
-      "server_port": 448,
-      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
-          "short_id": "cd21e552537c7c0b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - myhuo",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
-        }
-      }
-    },
-    {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 05 - myhuo",
-      "server": "65.108.3.59",
+      "server": "87.58.148.70",
       "server_port": 443,
-      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "web.eitaa.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
-          "short_id": "90ec9bba2019"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - myhuo",
-      "server": "202.166.187.132",
-      "server_port": 443,
-      "uuid": "8be20011-59b1-4118-91ed-83e8e6b662cd",
-      "tls": {
-        "enabled": true,
-        "server_name": "f.yoptybla.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "f.yoptybla.ru"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 07 - myhuo",
-      "server": "est1313.ggisopi.su",
-      "server_port": 443,
-      "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "est1313.ggisopi.su",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 08 - myhuo",
-      "server": "31.77.199.182",
-      "server_port": 443,
-      "uuid": "c09cfd91-b234-4998-9bed-a0211b7f5c3c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fi2.yservice.help",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
-          "short_id": "abcd1234"
-        }
-      }
+      "method": "aes-256-gcm",
+      "password": "rg0g3xp9rk9nk9o0"
     },
     {
       "type": "selector",
@@ -170,10 +106,7 @@
         "🇫🇮 芬兰 (Finland) 02 - myhuo",
         "🇫🇮 芬兰 (Finland) 03 - myhuo",
         "🇫🇮 芬兰 (Finland) 04 - myhuo",
-        "🇫🇮 芬兰 (Finland) 05 - myhuo",
-        "🇫🇮 芬兰 (Finland) 06 - myhuo",
-        "🇫🇮 芬兰 (Finland) 07 - myhuo",
-        "🇫🇮 芬兰 (Finland) 08 - myhuo"
+        "🇫🇮 芬兰 (Finland) 05 - myhuo"
       ]
     },
     {
@@ -184,10 +117,7 @@
         "🇫🇮 芬兰 (Finland) 02 - myhuo",
         "🇫🇮 芬兰 (Finland) 03 - myhuo",
         "🇫🇮 芬兰 (Finland) 04 - myhuo",
-        "🇫🇮 芬兰 (Finland) 05 - myhuo",
-        "🇫🇮 芬兰 (Finland) 06 - myhuo",
-        "🇫🇮 芬兰 (Finland) 07 - myhuo",
-        "🇫🇮 芬兰 (Finland) 08 - myhuo"
+        "🇫🇮 芬兰 (Finland) 05 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

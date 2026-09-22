@@ -6,21 +6,31 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - myhuo",
-      "server": "151.241.226.201",
+      "server": "104.17.169.13",
       "server_port": 2053,
-      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
+      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
-          "short_id": "9e419c0759b54d6f"
+        "server_name": "inDeX.HaRMONiCA01.WORkers.DeV",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/axch1mttbxz2k55y01",
+        "headers": {
+          "Host": "inDeX.HaRMONiCA01.WORkers.DeV"
         }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - myhuo",
+      "server": "78.135.77.91",
+      "server_port": 25020,
+      "uuid": "nitro_teeam@",
+      "security": "auto",
+      "transport": {
+        "type": "ws"
       }
     },
     {
@@ -28,14 +38,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 01 - myhuo",
+        "🇹🇷 土耳其 (Turkey) 02 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 01 - myhuo",
+        "🇹🇷 土耳其 (Turkey) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
