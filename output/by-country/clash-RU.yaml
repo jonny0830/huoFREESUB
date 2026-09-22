@@ -27,14 +27,6 @@ proxies:
     headers:
       Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
-  server: msk.frkn.org
-  port: 443
-  udp: true
-  type: hysteria2
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: msk.frkn.org
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -54,7 +46,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 02 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 03 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,6 +54,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 02 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 03 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
 rules:
 - MATCH,PROXIES
