@@ -17,21 +17,6 @@ proxies:
   servername: usa.oblaco.bet
   client-fingerprint: chrome
 - name: 🇨🇭 瑞士 (Switzerland) 02 - myhuo
-  server: 82.38.139.24
-  port: 8445
-  udp: true
-  type: vless
-  uuid: c6f6ecc2-26af-4e2f-95a7-e7018819a716
-  tls: true
-  reality-opts:
-    public-key: _UazRMiBq9RqMaVrHeLsvUuoBkGFo9Gm-A4ivuZ6ZS8
-    short-id: 6ba85179e30d4fc2
-  servername: hetzner.com
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: Google
-- name: 🇨🇭 瑞士 (Switzerland) 03 - myhuo
   server: 82.38.64.229
   port: 8443
   udp: true
@@ -39,6 +24,21 @@ proxies:
   password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
   sni: hopp-swizland-new.mysynology.net
   skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 03 - myhuo
+  server: 104.18.28.234
+  port: 443
+  udp: true
+  type: vless
+  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  tls: true
+  servername: netlivpn5505.ffffdsaaa.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: netlivpn5505.ffffdsaaa.workers.dev
 - name: 🇨🇭 瑞士 (Switzerland) 04 - myhuo
   server: 151.242.2.81
   port: 443
@@ -48,7 +48,6 @@ proxies:
   tls: true
   servername: cf9.rumedia-cdn.com
   skip-cert-verify: false
-  client-fingerprint: qq
   network: ws
   ws-opts:
     path: /cdn/v3/live

@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - myhuo
+  server: 172.67.209.139
+  port: 443
+  udp: true
+  type: vless
+  uuid: cbfeff27-6e7a-4e99-b5ad-6b830e191741
+  tls: true
+  servername: srv-b890f5-eb36b6.omidiabolfazl155-c5f1.workers.dev
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/wk14rIXEvRltsm88Nsboi?ed=2560
+    headers:
+      Host: srv-b890f5-eb36b6.omidiabolfazl155-c5f1.workers.dev
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - myhuo
   server: 193.148.59.178
   port: 443
   udp: true
@@ -23,11 +38,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01 - myhuo
+  - 🇧🇬 保加利亚 (Bulgaria) 02 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - myhuo
+  - 🇧🇬 保加利亚 (Bulgaria) 02 - myhuo
 rules:
 - MATCH,PROXIES

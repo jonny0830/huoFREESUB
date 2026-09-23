@@ -18,27 +18,17 @@ proxies:
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
 - name: 🇫🇮 芬兰 (Finland) 02 - myhuo
-  server: 62.238.103.54
-  port: 2083
+  server: 193.23.201.65
+  port: 5432
   udp: true
   type: vless
-  uuid: d78de562-872e-43dd-be48-e9d7b06c87a3
+  uuid: e84e0918-68ca-4fcc-a1d1-b566fd9ac7ee
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: tADYkZWWksM_mCqqwlRHCciSCXnP3JMYrPi5eoRHh2s
-    short-id: d059fb98048c5318
-  servername: www.yahoo.com
-  client-fingerprint: chrome
+  servername: 193.23.201.65
+  skip-cert-verify: false
+  client-fingerprint: safari
 - name: 🇫🇮 芬兰 (Finland) 03 - myhuo
-  server: iq5ny.pleiades.codes
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  sni: iq5ny.pleiades.codes
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
   server: 31.76.80.230
   port: 8443
   udp: true
@@ -51,13 +41,14 @@ proxies:
   network: ws
   ws-opts:
     path: /assets
-- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
-  server: p1tun3.greewebservices.ir
-  port: 2070
+- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
+  server: iq5ny.pleiades.codes
+  port: 8443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ao5znrhEwVqoJy-l7AVvgw
+  type: hysteria2
+  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  sni: iq5ny.pleiades.codes
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +58,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - myhuo
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
-  - 🇫🇮 芬兰 (Finland) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,6 +67,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - myhuo
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
-  - 🇫🇮 芬兰 (Finland) 05 - myhuo
 rules:
 - MATCH,PROXIES

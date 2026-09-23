@@ -13,6 +13,18 @@ proxies:
   sni: hy.quattro-tech.ru
   skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
+  server: 45.12.75.242
+  port: 26424
+  udp: true
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
   server: 46.8.200.91
   port: 443
   udp: true
@@ -26,18 +38,17 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
-  server: 45.12.75.242
-  port: 26424
+- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
+  server: 77.110.105.102
+  port: 443
   udp: true
   type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  uuid: 89a0fe83-dcb3-4e3c-92ed-407fc668e7b1
+  flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
-  client-fingerprint: chrome
+  servername: ru-1.brodvpn.com
+  skip-cert-verify: false
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +57,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 02 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 03 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +66,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 02 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 03 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
 rules:
 - MATCH,PROXIES
