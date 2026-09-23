@@ -28,27 +28,64 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo",
-      "server": "217.60.182.79",
-      "server_port": 443,
-      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
-      "tls": {
-        "enabled": true,
-        "server_name": "cabinet.wwwinternetvideo.click",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo",
       "server": "94.183.170.135",
       "server_port": 8443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
       "tls": {
         "enabled": true,
         "server_name": "estproxy4.lockdwn.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo",
+      "server": "217.60.182.79",
+      "server_port": 443,
+      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
+      "tls": {
+        "enabled": true,
+        "server_name": "cabinet.wwwinternetvideo.click",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo",
+      "server": "94.183.170.135",
+      "server_port": 443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo",
+      "server": "93.123.39.203",
+      "server_port": 8443,
+      "uuid": "d544c858-b1ba-45b2-8868-8197daf2a6ee",
+      "tls": {
+        "enabled": true,
+        "server_name": "est.luxes.network",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assets"
       }
     },
     {
@@ -58,7 +95,9 @@
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo"
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo"
       ]
     },
     {
@@ -67,7 +106,9 @@
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo"
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

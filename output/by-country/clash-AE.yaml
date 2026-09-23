@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - myhuo
-  server: 45.130.125.201
-  port: 80
-  udp: true
-  type: vless
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
   server: 130.49.161.70
   port: 443
   udp: true
@@ -25,15 +14,15 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
-  server: 85.204.107.175
+- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
+  server: 85.204.107.178
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
+- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -44,6 +33,19 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
+  server: 139.185.44.42
+  port: 8443
+  udp: true
+  type: vless
+  uuid: b0fa80ad-d759-4bcc-a0fd-f802d53b5a88
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: VlWMFvYxwGIsctI7BfOgC4PCG3EMToD7_H8vWcRB42w
+    short-id: 855834d3b002ad21
+  servername: www.microsoft.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

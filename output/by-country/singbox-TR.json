@@ -5,24 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - myhuo",
-      "server": "104.25.155.45",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - myhuo",
+      "server": "146.75.84.3",
       "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-4eef5adc237a",
+      "uuid": "8abb648a-b004-42a4-aa05-49cdc2f94d4e",
       "tls": {
         "enabled": true,
-        "server_name": "r5zenrelur2s.pqzdileiu8es.workers.dev",
+        "server_name": "ssl.fastly.com",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/stream/PANEL_ZEUS/4eef5adc237a/loc-1",
+        "path": "/",
         "headers": {
-          "Host": "r5zenrelur2s.pqzdileiu8es.workers.dev"
+          "Host": "BechBad.global.ssl.fastly.net"
         }
       }
     },
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

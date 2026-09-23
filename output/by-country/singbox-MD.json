@@ -36,7 +36,7 @@
         "server_name": "moldova.cdn-europe.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -46,24 +46,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇲🇩 摩尔多瓦 (Moldova) 03 - myhuo",
-      "server": "143.246.219.51",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇲🇩 摩尔多瓦 (Moldova) 01 - myhuo",
-        "🇲🇩 摩尔多瓦 (Moldova) 02 - myhuo",
-        "🇲🇩 摩尔多瓦 (Moldova) 03 - myhuo"
+        "🇲🇩 摩尔多瓦 (Moldova) 02 - myhuo"
       ]
     },
     {
@@ -71,8 +59,7 @@
       "tag": "auto",
       "outbounds": [
         "🇲🇩 摩尔多瓦 (Moldova) 01 - myhuo",
-        "🇲🇩 摩尔多瓦 (Moldova) 02 - myhuo",
-        "🇲🇩 摩尔多瓦 (Moldova) 03 - myhuo"
+        "🇲🇩 摩尔多瓦 (Moldova) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
