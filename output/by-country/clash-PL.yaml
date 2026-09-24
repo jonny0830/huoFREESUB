@@ -6,49 +6,27 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - myhuo
   server: 217.30.10.44
-  port: 9052
+  port: 9099
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
+  password: 7heRqkPG3hg4UnRm
 - name: 🇵🇱 波兰 (Poland) 02 - myhuo
-  server: 217.30.10.44
-  port: 9071
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 03 - myhuo
-  server: 217.30.10.44
-  port: 9006
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: FAdUvMJUq5vDgKEq
-- name: 🇵🇱 波兰 (Poland) 04 - myhuo
   server: 217.30.10.44
   port: 9062
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: tkhHVxxfM2QErBWe
-- name: 🇵🇱 波兰 (Poland) 05 - myhuo
+- name: 🇵🇱 波兰 (Poland) 03 - myhuo
   server: 217.30.10.44
-  port: 9099
+  port: 9076
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 7heRqkPG3hg4UnRm
-- name: 🇵🇱 波兰 (Poland) 06 - myhuo
-  server: 45.192.12.93
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 07 - myhuo
-  server: 185.223.57.10
+  password: S2zDyyPcmZN2h8EC
+- name: 🇵🇱 波兰 (Poland) 04 - myhuo
+  server: 185.223.57.16
   port: 33743
   udp: true
   type: vless
@@ -57,11 +35,19 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇵🇱 波兰 (Poland) 08 - myhuo
+- name: 🇵🇱 波兰 (Poland) 05 - myhuo
+  server: 45.192.12.93
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 06 - myhuo
   server: 144.31.131.38
   port: 443
   udp: true
@@ -74,7 +60,43 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 07 - myhuo
+  server: 188.114.96.19
+  port: 80
+  udp: true
+  type: vmess
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 08 - myhuo
+  server: 94.249.180.45
+  port: 443
+  udp: true
+  type: vless
+  uuid: fed5c436-f9aa-4a60-b25f-876052fdf578
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: tihB0D9qSyy2YITcQ33I6vqspKe_riFJYXzJZaHbs1M
+  servername: pl.spbculture.org
+  client-fingerprint: safari
 - name: 🇵🇱 波兰 (Poland) 09 - myhuo
+  server: 144.31.2.33
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl3.moritech.net
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 10 - myhuo
   server: 82.118.22.161
   port: 443
   udp: true
@@ -87,17 +109,6 @@ proxies:
     short-id: fa3ea655619a3e78
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 10 - myhuo
-  server: pl4.moritech.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl4.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 11 - myhuo
   server: 144.31.5.64
   port: 443
@@ -108,6 +119,7 @@ proxies:
   tls: true
   servername: pl6.moritech.net
   skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

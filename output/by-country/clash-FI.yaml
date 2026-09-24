@@ -5,18 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - myhuo
-  server: assets-fi.pleiades.codes
+  server: 83.219.97.26
   port: 443
   udp: true
   type: vless
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
   tls: true
-  servername: assets-fi.pleiades.codes
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - myhuo
   server: 95.216.27.15
   port: 2053
@@ -30,15 +29,18 @@ proxies:
   servername: www.google.com
   client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 03 - myhuo
-  server: karo.rick313.dpdns.org
-  port: 2087
+  server: assets-fi.pleiades.codes
+  port: 443
   udp: true
   type: vless
-  uuid: 2e4e6812-be87-415b-a2e8-b0e17e9f2da7
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
   tls: true
-  servername: karo.rick313.dpdns.org
+  servername: assets-fi.pleiades.codes
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
 proxy-groups:
 - name: PROXIES
   type: select
