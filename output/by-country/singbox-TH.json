@@ -6,20 +6,14 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 01 - myhuo",
-      "server": "34.15.162.1",
-      "server_port": 443,
-      "uuid": "2b1d0c2a-9c80-4b72-892e-93d0500b9210",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw",
-          "short_id": "ca672c53fbbac555"
+      "server": "103.86.49.57",
+      "server_port": 80,
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "aIs.SpEeDtEsT.nEt"
         }
       }
     },
@@ -34,7 +28,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -44,12 +38,33 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 03 - myhuo",
+      "server": "34.15.162.1",
+      "server_port": 443,
+      "uuid": "2b1d0c2a-9c80-4b72-892e-93d0500b9210",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw",
+          "short_id": "ca672c53fbbac555"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇭 泰国 (Thailand) 01 - myhuo",
-        "🇹🇭 泰国 (Thailand) 02 - myhuo"
+        "🇹🇭 泰国 (Thailand) 02 - myhuo",
+        "🇹🇭 泰国 (Thailand) 03 - myhuo"
       ]
     },
     {
@@ -57,7 +72,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇭 泰国 (Thailand) 01 - myhuo",
-        "🇹🇭 泰国 (Thailand) 02 - myhuo"
+        "🇹🇭 泰国 (Thailand) 02 - myhuo",
+        "🇹🇭 泰国 (Thailand) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
