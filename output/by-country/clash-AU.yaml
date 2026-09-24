@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - myhuo
-  server: 82.198.246.37
+  server: 82.198.246.97
   port: 180
   udp: true
   type: vmess
@@ -26,19 +26,11 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 03 - myhuo
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇦🇺 澳大利亚 (Australia) 04 - myhuo
   server: au1.gsafevpnapi.com
   port: 20270
   udp: true
   type: vless
-  uuid: 38b8e2fb-b9a0-40a6-b42c-335def2765cf
+  uuid: 6eef3a79-22bc-4086-b5e6-95e07db73016
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -54,7 +46,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 02 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 03 - myhuo
-  - 🇦🇺 澳大利亚 (Australia) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,6 +54,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 02 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 03 - myhuo
-  - 🇦🇺 澳大利亚 (Australia) 04 - myhuo
 rules:
 - MATCH,PROXIES
