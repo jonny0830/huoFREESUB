@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - myhuo
-  server: 140.238.213.114
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 02 - myhuo
   server: 151.242.2.81
   port: 443
   udp: true
@@ -27,13 +19,40 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf9.rumedia-cdn.com
-- name: 🇨🇭 瑞士 (Switzerland) 03 - myhuo
-  server: 82.38.64.229
+- name: 🇨🇭 瑞士 (Switzerland) 02 - myhuo
+  server: 82.38.64.239
   port: 8443
   udp: true
   type: hysteria2
   password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
   sni: hopp-swizland-new.mysynology.net
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 03 - myhuo
+  server: 140.238.213.114
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 04 - myhuo
+  server: 185.18.250.245
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇨🇭 瑞士 (Switzerland) 05 - myhuo
+  server: 77.110.104.238
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5413edfb-08d6-4fba-b51c-809c04feb127
+  sni: ch2-hy2.veilvpn.life
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -43,6 +62,8 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 02 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 03 - myhuo
+  - 🇨🇭 瑞士 (Switzerland) 04 - myhuo
+  - 🇨🇭 瑞士 (Switzerland) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,5 +72,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 02 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 03 - myhuo
+  - 🇨🇭 瑞士 (Switzerland) 04 - myhuo
+  - 🇨🇭 瑞士 (Switzerland) 05 - myhuo
 rules:
 - MATCH,PROXIES

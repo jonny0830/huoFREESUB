@@ -13,20 +13,12 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - myhuo
-  server: 85.204.107.183
+  server: 85.204.107.176
   port: 8443
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: whatsapp.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -35,7 +27,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 02 - myhuo
-  - 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,6 +34,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 02 - myhuo
-  - 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
 rules:
 - MATCH,PROXIES
