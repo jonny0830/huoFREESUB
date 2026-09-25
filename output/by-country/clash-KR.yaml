@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - myhuo
+  server: 132.226.226.189
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 02 - myhuo
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -16,15 +24,7 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 02 - myhuo
-  server: 132.226.226.189
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: www.bing.com
-  skip-cert-verify: true
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 03 - myhuo
   server: 152.69.231.175
   port: 50160
@@ -34,6 +34,38 @@ proxies:
   sni: 152-69-231-175.liao.kdns.fr
   skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 04 - myhuo
+  server: 150-230-252-217.liao.kdns.fr
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 9cfc9458e48c028ec03ff86ebc71c744
+  sni: 150-230-252-217.liao.kdns.fr
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 05 - myhuo
+  server: 140.238.2.250
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 06 - myhuo
+  server: 152.70.237.123
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: maintell
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 07 - myhuo
+  server: 152.67.200.82
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 08 - myhuo
   server: 154.90.62.70
   port: 56127
   udp: true
@@ -41,19 +73,7 @@ proxies:
   password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
   sni: 154.90.62.70
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - myhuo
-  server: 151.245.106.49
-  port: 2053
-  udp: true
-  type: vless
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  tls: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-    short-id: 429499c03d4cc8a0
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 06 - myhuo
+- name: 🇰🇷 韩国 (South Korea) 09 - myhuo
   server: 3.39.4.109
   port: 13672
   udp: true
@@ -65,37 +85,7 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇰🇷 韩国 (South Korea) 07 - myhuo
-  server: 150-230-252-217.liao.kdns.fr
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 9cfc9458e48c028ec03ff86ebc71c744
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - myhuo
-  server: 152.67.200.82
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09 - myhuo
-  server: 141.164.45.187
-  port: 9090
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇰🇷 韩国 (South Korea) 10 - myhuo
-  server: 141.164.45.187
-  port: 6679
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -110,7 +100,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07 - myhuo
   - 🇰🇷 韩国 (South Korea) 08 - myhuo
   - 🇰🇷 韩国 (South Korea) 09 - myhuo
-  - 🇰🇷 韩国 (South Korea) 10 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -125,6 +114,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07 - myhuo
   - 🇰🇷 韩国 (South Korea) 08 - myhuo
   - 🇰🇷 韩国 (South Korea) 09 - myhuo
-  - 🇰🇷 韩国 (South Korea) 10 - myhuo
 rules:
 - MATCH,PROXIES
