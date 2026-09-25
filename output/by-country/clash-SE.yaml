@@ -5,12 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - myhuo
-  server: 13.48.104.64
-  port: 443
+  server: se-node.rumedia-cdn.com
+  port: 25443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  type: hysteria2
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  sni: cf2.rumedia-cdn.com
+  skip-cert-verify: true
 - name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
   server: 172.238.244.13
   port: 17000

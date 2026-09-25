@@ -4,57 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - myhuo
-  server: 57.129.130.57
-  port: 52014
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
+  server: 36.224.141.124
+  port: 50099
   udp: true
-  type: vless
-  uuid: 47ba5dc6-8961-48a0-8b54-f57ec524627a
-  tls: true
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
-  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
-  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
-  server: 118.167.230.191
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo
-  server: 3d0bb862-tm96o0-tnhquc-1j0a4.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
-  sni: 3d0bb862-tm96o0-tnhquc-1j0a4.nw4.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - myhuo
-  server: hk01.kfc-520.com
-  port: 60001
-  udp: true
-  type: hysteria2
-  password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
-  sni: hk01.kfc-520.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - myhuo
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
   server: 24864168545164.oylfmxz.cn
   port: 443
   udp: true
@@ -73,22 +30,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
 rules:
 - MATCH,PROXIES
