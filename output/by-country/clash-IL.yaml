@@ -31,6 +31,13 @@ proxies:
   servername: store.steampowered.com
   client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 03 - myhuo
+  server: 31.57.185.82
+  port: 41770
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: upFH0BmL9pV55mch4LvbPLe+Mf7vgG0YHGaTOT9gMG0=:t1hZF7WQEYGf0ycfk4son7eeAaVkfOxscBpbk5H/Zyo=
+- name: 🇮🇱 以色列 (Israel) 04 - myhuo
   server: de2.dzvn.space
   port: 2291
   udp: true
@@ -43,19 +50,6 @@ proxies:
     short-id: 50ace5ab34f6df9b
   servername: de2.dzvn.space
   client-fingerprint: firefox
-- name: 🇮🇱 以色列 (Israel) 04 - myhuo
-  server: arcturus.yokkastars.com
-  port: 40443
-  udp: true
-  type: vless
-  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
-    short-id: db46e2946fc466fd
-  servername: deepl.com
-  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select

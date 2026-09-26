@@ -4,12 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - myhuo",
-      "server": "125.224.202.118",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "a9a0d092-6f0e-4701-81ee-454643d6d506"
+      "server": "160.187.100.109",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-tw-002.fastervpn.world",
+        "insecure": true
+      }
     },
     {
       "type": "hysteria2",
@@ -24,15 +28,23 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
-      "server": "vpn-tw-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "server": "118.167.230.191",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
         "enabled": true,
-        "server_name": "speedtest.tinkoff.ru",
-        "insecure": true
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
       }
     },
     {
@@ -47,7 +59,7 @@
         "server_name": "www.sony.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -76,6 +88,18 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 - myhuo",
+      "server": "85.237.207.49",
+      "server_port": 50160,
+      "password": "a56619e2bed91121eabb97d20be207c3",
+      "tls": {
+        "enabled": true,
+        "server_name": "85-237-207-49.liao.kdns.fr",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -84,7 +108,8 @@
         "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 04 - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 05 - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 05 - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 06 - myhuo"
       ]
     },
     {
@@ -95,7 +120,8 @@
         "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 04 - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 05 - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 05 - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 06 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
