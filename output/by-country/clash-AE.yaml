@@ -5,29 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - myhuo
-  server: nl3.freekeysh110.online
-  port: 443
-  udp: true
-  type: vless
-  uuid: c21fc85c-0568-4684-8a6e-2725393dfecf
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zVEDSKwQEIM6xRD7YEhJakteNI2xPK3xhhKulDo_vWg
-    short-id: b664d93e9d7a04f1
-  servername: nl3.freekeysh110.online
-  client-fingerprint: edge
-- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
   server: 94.183.224.45
   port: 443
   udp: true
@@ -40,15 +17,25 @@ proxies:
     short-id: a1b2c3d4e5f67890
   servername: dzen.ru
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
-  server: 85.204.107.174
+- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
+  server: 85.204.107.171
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 05 - myhuo
+- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -57,7 +44,9 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇦🇪 阿联酋 (UAE) 06 - myhuo
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - myhuo
   server: 146.70.102.82
   port: 443
   udp: true
@@ -80,7 +69,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - myhuo
   - 🇦🇪 阿联酋 (UAE) 04 - myhuo
   - 🇦🇪 阿联酋 (UAE) 05 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 06 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -91,6 +79,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - myhuo
   - 🇦🇪 阿联酋 (UAE) 04 - myhuo
   - 🇦🇪 阿联酋 (UAE) 05 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 06 - myhuo
 rules:
 - MATCH,PROXIES

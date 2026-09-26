@@ -4,8 +4,36 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
+      "server": "172.64.53.55",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 02 (家宽) - myhuo",
+      "server": "172.64.229.170",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
       "type": "anytls",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo",
       "server": "ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn",
       "server_port": 443,
       "password": "9sK2mP8xQ7vL3nZ6",
@@ -20,14 +48,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo"
+        "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
+        "🇺🇸 美国 (United States) 02 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo"
+        "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
+        "🇺🇸 美国 (United States) 02 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

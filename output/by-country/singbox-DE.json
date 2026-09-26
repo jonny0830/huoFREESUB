@@ -4,32 +4,112 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇩🇪 德国 (Germany) 01 - myhuo",
-      "server": "185.226.172.8",
-      "server_port": 8008,
-      "method": "aes-256-gcm",
-      "password": "XKFKl2rULjIp74"
+      "server": "199.232.78.101",
+      "server_port": 443,
+      "password": "MiTiVPN",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
+        "headers": {
+          "Host": "mitivpn---de--s---mitivpn-1.global.ssl.fastly.net"
+        }
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 02 - myhuo",
-      "server": "209.46.102.22",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "1hhrqrokj3ag"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 03 - myhuo",
       "server": "213.202.208.199",
       "server_port": 7001,
       "method": "aes-256-gcm",
       "password": "RexnBgU7EV5ADxG"
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 03 - myhuo",
+      "server": "185.226.172.8",
+      "server_port": 8008,
+      "method": "aes-256-gcm",
+      "password": "XKFKl2rULjIp74"
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 04 - myhuo",
+      "server": "82.118.19.153",
+      "server_port": 443,
+      "uuid": "adcaa148-7c66-4282-a81a-99ec8afa029d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE",
+          "short_id": "670ed9f350bd8ee0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 05 - myhuo",
+      "server": "162.55.242.208",
+      "server_port": 2053,
+      "uuid": "659ffdfa-47d2-47d7-af40-5afe0907eead",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY",
+          "short_id": "4d14da19b19cfc8c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 06 - myhuo",
+      "server": "77.91.76.156",
+      "server_port": 57160,
+      "uuid": "68ad9a6d-2463-4c31-92a7-31547b9d4783",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "funpay.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Tbu7sr_pvHngDWFIa0ApL5UL9vEGxlHESd9g53KQehw",
+          "short_id": "77b5"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇩🇪 德国 (Germany) 07 - myhuo",
       "server": "8.211.15.144",
       "server_port": 8443,
       "password": "fc04RSUu3TfONQnlbKTwvA",
@@ -41,7 +121,142 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 05 - myhuo",
+      "tag": "🇩🇪 德国 (Germany) 08 - myhuo",
+      "server": "31.77.161.15",
+      "server_port": 443,
+      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "short_id": "db04ce8bdb8900f1"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 09 - myhuo",
+      "server": "51.195.126.38",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "2YdE4lFOid5a"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 10 - myhuo",
+      "server": "163.8.195.241",
+      "server_port": 2087,
+      "uuid": "56ba5d34-ef22-4ba6-8090-4188b807df54",
+      "transport": {
+        "type": "ws",
+        "path": "/29c8fed7ca22"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 11 - myhuo",
+      "server": "8.209.74.72",
+      "server_port": 20001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "PWpjPo3tqhPN4yRZ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 12 - myhuo",
+      "server": "209.46.102.22",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "1hhrqrokj3ag"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 13 - myhuo",
+      "server": "89.169.53.176",
+      "server_port": 4443,
+      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "de.wvpn.one",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw",
+          "short_id": "df3aff719526dc5a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 14 - myhuo",
+      "server": "57.129.96.67",
+      "server_port": 443,
+      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nasnet-571299667-direct.mbghalibaf.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 15 - myhuo",
+      "server": "82.39.171.142",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 16 - myhuo",
+      "server": "ger-asli.jorzel.ir",
+      "server_port": 8087,
+      "uuid": "280e6d2e-b93e-4f51-bc9e-bf2bb709c81c",
+      "tls": {
+        "enabled": true,
+        "server_name": "forum.powerampapp.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RIdGdVW-OSclLoLfjqsqtUg08TQUcdVcw2OeiYXgLDU",
+          "short_id": "7813dbc2acd967a5"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 17 - myhuo",
       "server": "159.69.103.251",
       "server_port": 80,
       "uuid": "1bbef2cd-2851-4f00-b37e-a2478a1e5a70",
@@ -62,8 +277,8 @@
     },
     {
       "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 06 - myhuo",
-      "server": "193.24.210.211",
+      "tag": "🇩🇪 德国 (Germany) 18 - myhuo",
+      "server": "node8.quaxly.com",
       "server_port": 25040,
       "password": "Km/pIG4AGCjCOiGWj5FsWA==",
       "tls": {
@@ -77,44 +292,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 07 - myhuo",
-      "server": "de18.bexait.ir",
-      "server_port": 2434,
-      "uuid": "8dfc237e-0376-48b4-9822-5f4e627d41f1",
+      "tag": "🇩🇪 德国 (Germany) 19 - myhuo",
+      "server": "ger-asli.jorzel.ir",
+      "server_port": 9145,
+      "uuid": "280e6d2e-b93e-4f51-bc9e-bf2bb709c81c",
       "tls": {
         "enabled": true,
-        "server_name": "icloud.com",
+        "server_name": "android.clients.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
-          "public_key": "yzCvRpbQ-cRePaJAuQkw42_xEf-R860gFsQwoPki2E0",
-          "short_id": "9de041877612a718"
+          "public_key": "Fw1tpKBQ_bT_eSTbaCSYBthpXAQ76kujwfywvjgpUA0",
+          "short_id": "5e06032a9c448538"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 08 - myhuo",
-      "server": "57.129.96.67",
-      "server_port": 443,
-      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nasnet-571299667-direct.mbghalibaf.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 09 - myhuo",
+      "tag": "🇩🇪 德国 (Germany) 20 - myhuo",
       "server": "api-4pda-k9x4m.xubi.org",
       "server_port": 443,
       "uuid": "57e2a48b-0cc2-4b60-aacd-b36358fcba96",
@@ -124,7 +322,7 @@
         "server_name": "4pda.to",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -135,32 +333,63 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 10 - myhuo",
-      "server": "82.39.171.142",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇩🇪 德国 (Germany) 21 - myhuo",
+      "server": "ger-asl.jorzel.ir",
+      "server_port": 8087,
+      "uuid": "280e6d2e-b93e-4f51-bc9e-bf2bb709c81c",
       "tls": {
         "enabled": true,
-        "server_name": "yahoo.com",
+        "server_name": "forum.powerampapp.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RIdGdVW-OSclLoLfjqsqtUg08TQUcdVcw2OeiYXgLDU",
+          "short_id": "7813dbc2acd967a5"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 22 - myhuo",
+      "server": "ger-asl.jorzel.ir",
+      "server_port": 9145,
+      "uuid": "280e6d2e-b93e-4f51-bc9e-bf2bb709c81c",
+      "tls": {
+        "enabled": true,
+        "server_name": "android.clients.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Fw1tpKBQ_bT_eSTbaCSYBthpXAQ76kujwfywvjgpUA0",
+          "short_id": "5e06032a9c448538"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 23 - myhuo",
+      "server": "freeman.curtvip.ir",
+      "server_port": 20410,
+      "uuid": "442581ff-646e-4e99-af3e-a9d9a636a44b",
+      "tls": {
+        "enabled": true,
+        "server_name": "secureconnect-pa.mtls.clients6.google.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
+          "public_key": "BErODvy5h6Cjw5zWfX_CZ5ODH9p1XbZwU-ZEHyVXEGI",
+          "short_id": "e2ce3e050232978c"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 11 - myhuo",
-      "server": "2.58.81.221",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "kKEd0rBrd56Furjz"
     },
     {
       "type": "selector",
@@ -177,7 +406,19 @@
         "🇩🇪 德国 (Germany) 08 - myhuo",
         "🇩🇪 德国 (Germany) 09 - myhuo",
         "🇩🇪 德国 (Germany) 10 - myhuo",
-        "🇩🇪 德国 (Germany) 11 - myhuo"
+        "🇩🇪 德国 (Germany) 11 - myhuo",
+        "🇩🇪 德国 (Germany) 12 - myhuo",
+        "🇩🇪 德国 (Germany) 13 - myhuo",
+        "🇩🇪 德国 (Germany) 14 - myhuo",
+        "🇩🇪 德国 (Germany) 15 - myhuo",
+        "🇩🇪 德国 (Germany) 16 - myhuo",
+        "🇩🇪 德国 (Germany) 17 - myhuo",
+        "🇩🇪 德国 (Germany) 18 - myhuo",
+        "🇩🇪 德国 (Germany) 19 - myhuo",
+        "🇩🇪 德国 (Germany) 20 - myhuo",
+        "🇩🇪 德国 (Germany) 21 - myhuo",
+        "🇩🇪 德国 (Germany) 22 - myhuo",
+        "🇩🇪 德国 (Germany) 23 - myhuo"
       ]
     },
     {
@@ -194,7 +435,19 @@
         "🇩🇪 德国 (Germany) 08 - myhuo",
         "🇩🇪 德国 (Germany) 09 - myhuo",
         "🇩🇪 德国 (Germany) 10 - myhuo",
-        "🇩🇪 德国 (Germany) 11 - myhuo"
+        "🇩🇪 德国 (Germany) 11 - myhuo",
+        "🇩🇪 德国 (Germany) 12 - myhuo",
+        "🇩🇪 德国 (Germany) 13 - myhuo",
+        "🇩🇪 德国 (Germany) 14 - myhuo",
+        "🇩🇪 德国 (Germany) 15 - myhuo",
+        "🇩🇪 德国 (Germany) 16 - myhuo",
+        "🇩🇪 德国 (Germany) 17 - myhuo",
+        "🇩🇪 德国 (Germany) 18 - myhuo",
+        "🇩🇪 德国 (Germany) 19 - myhuo",
+        "🇩🇪 德国 (Germany) 20 - myhuo",
+        "🇩🇪 德国 (Germany) 21 - myhuo",
+        "🇩🇪 德国 (Germany) 22 - myhuo",
+        "🇩🇪 德国 (Germany) 23 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

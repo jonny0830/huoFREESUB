@@ -6,14 +6,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 - myhuo",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - myhuo",
       "server": "108.181.121.226",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -21,7 +13,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - myhuo",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - myhuo",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -40,8 +32,37 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - myhuo",
+      "server": "140.174.184.5",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "qItG8SueYQcP"
+    },
+    {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 04 - myhuo",
+      "server": "87.76.179.117",
+      "server_port": 7443,
+      "uuid": "cb15d1b0-e48b-4c4c-b98a-fa1103aa3723",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
+          "short_id": "d2061bb1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - myhuo",
       "server": "esbe.vihodest.net",
       "server_port": 443,
       "uuid": "88956de8-38db-449c-8410-4b70a4fb5c9b",
@@ -51,7 +72,7 @@
         "server_name": "esbe.vihodest.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -61,6 +82,14 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - myhuo",
+      "server": "66.163.118.73",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -68,7 +97,9 @@
         "🇪🇸 西班牙 (Spain) 01 - myhuo",
         "🇪🇸 西班牙 (Spain) 02 - myhuo",
         "🇪🇸 西班牙 (Spain) 03 - myhuo",
-        "🇪🇸 西班牙 (Spain) 04 - myhuo"
+        "🇪🇸 西班牙 (Spain) 04 - myhuo",
+        "🇪🇸 西班牙 (Spain) 05 - myhuo",
+        "🇪🇸 西班牙 (Spain) 06 - myhuo"
       ]
     },
     {
@@ -78,7 +109,9 @@
         "🇪🇸 西班牙 (Spain) 01 - myhuo",
         "🇪🇸 西班牙 (Spain) 02 - myhuo",
         "🇪🇸 西班牙 (Spain) 03 - myhuo",
-        "🇪🇸 西班牙 (Spain) 04 - myhuo"
+        "🇪🇸 西班牙 (Spain) 04 - myhuo",
+        "🇪🇸 西班牙 (Spain) 05 - myhuo",
+        "🇪🇸 西班牙 (Spain) 06 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

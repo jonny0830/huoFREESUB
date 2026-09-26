@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - myhuo
-  server: 172.64.158.146
-  port: 8880
+  server: 104.18.47.113
+  port: 8080
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -16,13 +16,59 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
+  server: 167.82.76.7
+  port: 443
+  udp: true
+  type: trojan
+  password: MiTiVPN
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
+  server: 91.196.32.163
+  port: 443
+  udp: true
+  type: hysteria2
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: 91.196.32.163
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
+  server: 91.196.32.216
+  port: 9543
+  udp: true
+  type: vless
+  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
   server: 91.240.86.70
   port: 22443
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: itsallproxy.quattro-tech.ru
+  sni: 91.240.86.70
   skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
+  server: 46.8.200.91
+  port: 443
+  udp: true
+  type: vless
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  tls: true
+  servername: cf3.rumedia-cdn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf3.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -30,6 +76,10 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 02 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 03 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 05 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 06 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -37,5 +87,9 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 02 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 03 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 05 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 06 - myhuo
 rules:
 - MATCH,PROXIES
