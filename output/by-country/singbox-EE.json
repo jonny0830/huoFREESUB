@@ -6,6 +6,22 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo",
       "server": "94.183.170.147",
       "server_port": 8443,
       "uuid": "66ac188b-bd8d-4218-b9ba-0bad0e152cd0",
@@ -29,23 +45,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo",
       "server": "94.183.170.135",
-      "server_port": 8443,
+      "server_port": 443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "tls": {
-        "enabled": true,
-        "server_name": "estproxy4.lockdwn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+      "transport": {
+        "type": "ws"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo",
       "server": "217.60.182.79",
       "server_port": 443,
       "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
@@ -56,13 +66,52 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo",
+      "server": "176.109.106.182",
+      "server_port": 9881,
+      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-tunnel"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo",
+      "server": "109.206.241.10",
+      "server_port": 449,
+      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+      "tls": {
+        "enabled": true,
+        "server_name": "russiapower.accesscam.org",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo"
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo"
       ]
     },
     {
@@ -71,7 +120,10 @@
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo"
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -16,17 +16,6 @@ proxies:
     headers:
       Host: platform115.halalkhor.info
 - name: 🇨🇱 智利 (Chile) 02 - myhuo
-  server: platform101.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.halalkhor.info
-- name: 🇨🇱 智利 (Chile) 03 - myhuo
   server: platform103.golnamakcert.top
   port: 80
   udp: true
@@ -37,6 +26,17 @@ proxies:
     path: /platform103
     headers:
       Host: platform103.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 03 - myhuo
+  server: platform101.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
