@@ -36,7 +36,7 @@
         "server_name": "store.steampowered.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -48,7 +48,7 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 03 - myhuo",
-      "server": "193.202.10.2",
+      "server": "arcturus.yokkastars.com",
       "server_port": 40443,
       "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
       "flow": "xtls-rprx-vision",
@@ -67,28 +67,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 04 - myhuo",
-      "server": "platform115.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform115",
-        "headers": {
-          "Host": "platform115.halalkhor.info"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇱 以色列 (Israel) 01 - myhuo",
         "🇮🇱 以色列 (Israel) 02 - myhuo",
-        "🇮🇱 以色列 (Israel) 03 - myhuo",
-        "🇮🇱 以色列 (Israel) 04 - myhuo"
+        "🇮🇱 以色列 (Israel) 03 - myhuo"
       ]
     },
     {
@@ -97,8 +82,7 @@
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01 - myhuo",
         "🇮🇱 以色列 (Israel) 02 - myhuo",
-        "🇮🇱 以色列 (Israel) 03 - myhuo",
-        "🇮🇱 以色列 (Israel) 04 - myhuo"
+        "🇮🇱 以色列 (Israel) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

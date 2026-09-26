@@ -4,16 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - myhuo",
-      "server": "91.240.86.70",
-      "server_port": 22443,
-      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
-      "tls": {
-        "enabled": true,
-        "server_name": "itsallproxy.quattro-tech.ru",
-        "insecure": true
-      }
+      "server": "195.133.23.200",
+      "server_port": 30210,
+      "method": "aes-256-gcm",
+      "password": "81a20429165df87e"
     },
     {
       "type": "vless",
@@ -37,54 +33,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - myhuo",
-      "server": "45.12.75.242",
-      "server_port": 26424,
-      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
-      "tls": {
-        "enabled": true,
-        "server_name": "ya.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
-          "short_id": "23103e1e"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - myhuo",
-      "server": "msk.frkn.org",
-      "server_port": 443,
-      "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - myhuo",
+      "server": "91.240.86.70",
+      "server_port": 22443,
+      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
       "tls": {
         "enabled": true,
-        "server_name": "msk.frkn.org",
+        "server_name": "itsallproxy.quattro-tech.ru",
         "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - myhuo",
-      "server": "46.8.200.91",
-      "server_port": 443,
-      "uuid": "b8201bab-fa6c-4f6e-b289-b5da660c6f69",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf3.rumedia-cdn.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "cf3.rumedia-cdn.com"
-        }
       }
     },
     {
@@ -94,9 +51,7 @@
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - myhuo",
         "🇷🇺 俄罗斯 (Russia) 02 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 03 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 04 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 05 - myhuo"
+        "🇷🇺 俄罗斯 (Russia) 03 - myhuo"
       ]
     },
     {
@@ -105,9 +60,7 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - myhuo",
         "🇷🇺 俄罗斯 (Russia) 02 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 03 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 04 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 05 - myhuo"
+        "🇷🇺 俄罗斯 (Russia) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
