@@ -6,9 +6,9 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - myhuo",
-      "server": "194.87.59.96",
-      "server_port": 2085,
-      "uuid": "6864bd16-f8bb-457c-a191-dca5b80ca32a",
+      "server": "153.76.185.151",
+      "server_port": 3090,
+      "uuid": "51c8ed23-7ca5-43f1-b0a8-0a37a7a16647",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
@@ -17,12 +17,24 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - myhuo",
-      "server": "153.76.185.93",
-      "server_port": 3090,
-      "uuid": "d21a3080-7011-47a1-9b1e-297578f28b3f",
+      "server": "5.9.117.252",
+      "server_port": 4433,
+      "uuid": "ef286b0e-21ed-4e2b-9110-e2ddc7627892",
+      "tls": {
+        "enabled": true,
+        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+        }
       }
     },
     {

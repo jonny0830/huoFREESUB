@@ -5,14 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - myhuo
-  server: service.erisrtg.ir
-  port: 9098
+  server: 62.60.152.1
+  port: 56328
   udp: true
   type: vless
-  uuid: 9730ec36-a1d8-4cae-a246-fde2678be5df
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
+  uuid: ce230b9c-0531-40da-bc3f-f27a8e059db1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: iI1pc8k9-mIPHL2Dga-4n4h3KoBT68lN434nglpgm2M
+    short-id: f3a9c21e8b6d4571
+  servername: table.vkroom-it-service.xyz
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

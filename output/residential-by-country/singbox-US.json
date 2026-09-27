@@ -5,26 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇸 塞尔维亚 (Serbia) 01 - myhuo",
-      "server": "176.108.246.58",
-      "server_port": 9889,
-      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - myhuo",
+      "server": "104.21.12.21",
+      "server_port": 443,
+      "uuid": "73796e63-0000-4000-8000-000000000000",
       "tls": {
         "enabled": true,
-        "server_name": "dl.google.com",
+        "server_name": "nahan-core.fatitelegram.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU",
-          "short_id": ""
+          "fingerprint": "chrome"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "grpc-tunnel"
+        "type": "ws",
+        "path": "/sync",
+        "headers": {
+          "Host": "nahan-core.fatitelegram.workers.dev"
+        }
       }
     },
     {
@@ -32,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 塞尔维亚 (Serbia) 01 - myhuo"
+        "🇺🇸 美国 (United States) 01 (移动家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 塞尔维亚 (Serbia) 01 - myhuo"
+        "🇺🇸 美国 (United States) 01 (移动家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
