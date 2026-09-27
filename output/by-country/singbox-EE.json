@@ -11,7 +11,7 @@
       "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
       "tls": {
         "enabled": true,
-        "server_name": "russiapower.accesscam.org",
+        "server_name": "109.206.241.10",
         "insecure": true
       }
     },
@@ -25,10 +25,10 @@
         "enabled": true,
         "server_name": "estproxy4.lockdwn.com",
         "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ]
       }
     },
     {
@@ -68,12 +68,12 @@
     {
       "type": "hysteria2",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo",
-      "server": "77.239.126.219",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "server": "94.183.170.65",
+      "server_port": 443,
+      "password": "e60bc99b-6630-4799-af84-f90ebdc643b6",
       "tls": {
         "enabled": true,
-        "server_name": "onecloudstream.com",
+        "server_name": "hys2.arkonsoft.top",
         "insecure": false
       }
     },
@@ -92,18 +92,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - myhuo",
-      "server": "94.183.170.65",
-      "server_port": 443,
-      "password": "e60bc99b-6630-4799-af84-f90ebdc643b6",
-      "tls": {
-        "enabled": true,
-        "server_name": "hys2.arkonsoft.top",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -113,8 +101,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - myhuo"
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo"
       ]
     },
     {
@@ -126,8 +113,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - myhuo"
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

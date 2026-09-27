@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: trojan
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
+  sni: 109.206.241.10
   skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
   server: 94.183.170.135
@@ -21,7 +21,6 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo
   server: 94.183.170.147
   port: 8443
@@ -47,12 +46,12 @@ proxies:
   ws-opts:
     path: /
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo
-  server: 77.239.126.219
-  port: 9443
+  server: 94.183.170.65
+  port: 443
   udp: true
   type: hysteria2
-  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  sni: onecloudstream.com
+  password: e60bc99b-6630-4799-af84-f90ebdc643b6
+  sni: hys2.arkonsoft.top
   skip-cert-verify: false
 - name: 🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo
   server: 94.183.170.65
@@ -65,14 +64,6 @@ proxies:
     path: /ws/generate
     headers:
       Host: hys2.arkonsoft.top
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - myhuo
-  server: 94.183.170.65
-  port: 443
-  udp: true
-  type: hysteria2
-  password: e60bc99b-6630-4799-af84-f90ebdc643b6
-  sni: hys2.arkonsoft.top
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,7 +75,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -96,6 +86,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - myhuo
 rules:
 - MATCH,PROXIES
