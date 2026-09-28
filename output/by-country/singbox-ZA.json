@@ -12,17 +12,36 @@
       "password": "tfAcRikawhNoZAhu"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇿🇦 南非 (South Africa) 02 - myhuo",
-      "server": "platform106.golnamakcert.top",
+      "server": "102.133.165.160",
+      "server_port": 16233,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Xsy8Ox4yOV3xLlpxtjzs3X"
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 03 - myhuo",
+      "server": "platform117.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform106",
+        "path": "/platform117",
         "headers": {
-          "Host": "platform106.halalkhor.info"
+          "Host": "platform117.halalkhor.info"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 04 - myhuo",
+      "server": "platform107.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform107"
       }
     },
     {
@@ -31,7 +50,9 @@
       "outbounds": [
         "auto",
         "🇿🇦 南非 (South Africa) 01 - myhuo",
-        "🇿🇦 南非 (South Africa) 02 - myhuo"
+        "🇿🇦 南非 (South Africa) 02 - myhuo",
+        "🇿🇦 南非 (South Africa) 03 - myhuo",
+        "🇿🇦 南非 (South Africa) 04 - myhuo"
       ]
     },
     {
@@ -39,7 +60,9 @@
       "tag": "auto",
       "outbounds": [
         "🇿🇦 南非 (South Africa) 01 - myhuo",
-        "🇿🇦 南非 (South Africa) 02 - myhuo"
+        "🇿🇦 南非 (South Africa) 02 - myhuo",
+        "🇿🇦 南非 (South Africa) 03 - myhuo",
+        "🇿🇦 南非 (South Africa) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
