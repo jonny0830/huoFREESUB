@@ -4,23 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇽 墨西哥 (Mexico) 01 - myhuo
-  server: 45.164.20.85
-  port: 10226
+- name: 🇨🇿 捷克 (Czech) 01 - myhuo
+  server: 153.76.185.147
+  port: 3090
   udp: true
   type: vless
-  uuid: 9aab8f39-ccb3-44ea-acdc-a8aefe211287
+  uuid: dca830a2-3c69-4e1b-bc0b-a2ea22af53ba
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇽 墨西哥 (Mexico) 01 - myhuo
+  - 🇨🇿 捷克 (Czech) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇽 墨西哥 (Mexico) 01 - myhuo
+  - 🇨🇿 捷克 (Czech) 01 - myhuo
 rules:
 - MATCH,PROXIES
