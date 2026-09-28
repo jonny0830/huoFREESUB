@@ -15,7 +15,7 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
-  server: 85.204.107.173
+  server: 85.204.107.178
   port: 8080
   udp: true
   type: hysteria2
@@ -23,6 +23,21 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
+  server: 172.64.52.68
+  port: 443
+  udp: true
+  type: vless
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -41,6 +56,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - myhuo
   - 🇦🇪 阿联酋 (UAE) 02 - myhuo
   - 🇦🇪 阿联酋 (UAE) 03 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,5 +65,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - myhuo
   - 🇦🇪 阿联酋 (UAE) 02 - myhuo
   - 🇦🇪 阿联酋 (UAE) 03 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 04 - myhuo
 rules:
 - MATCH,PROXIES
