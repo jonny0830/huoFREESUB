@@ -4,8 +4,45 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - myhuo",
+      "server": "195.238.126.20",
+      "server_port": 9011,
+      "method": "aes-256-cfb",
+      "password": "M3t2ZEQcMGRWBjRa"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - myhuo",
+      "server": "195.238.126.20",
+      "server_port": 9012,
+      "method": "aes-256-cfb",
+      "password": "xaupMUvhptwxdDUg"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - myhuo",
+      "server": "62.77.158.1",
+      "server_port": 443,
+      "uuid": "2eceaf2b-a775-5a9c-9990-dad2b3660fb6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "online.1c.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs",
+          "short_id": "6a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - myhuo",
       "server": "94.176.234.161",
       "server_port": 443,
       "uuid": "d448490d-4ee6-442f-80e1-5e1c186c4ce1",
@@ -15,7 +52,7 @@
         "server_name": "www.intel.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -29,14 +66,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01 - myhuo"
+        "🇱🇹 立陶宛 (Lithuania) 01 - myhuo",
+        "🇱🇹 立陶宛 (Lithuania) 02 - myhuo",
+        "🇱🇹 立陶宛 (Lithuania) 03 - myhuo",
+        "🇱🇹 立陶宛 (Lithuania) 04 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01 - myhuo"
+        "🇱🇹 立陶宛 (Lithuania) 01 - myhuo",
+        "🇱🇹 立陶宛 (Lithuania) 02 - myhuo",
+        "🇱🇹 立陶宛 (Lithuania) 03 - myhuo",
+        "🇱🇹 立陶宛 (Lithuania) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

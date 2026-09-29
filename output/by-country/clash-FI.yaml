@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - myhuo
+  server: 65.109.199.174
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3ba22938-7323-48ef-a981-7092171dc60e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1U9eTADaumTYxiO9NifVHUv5mbMowU2NSjgc2rBdvHo
+    short-id: 7a0300af51a1c4cf
+  servername: Miro.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 02 - myhuo
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -16,7 +29,7 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 02 - myhuo
+- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
   server: 185.79.138.71
   port: 448
   udp: true
@@ -28,31 +41,19 @@ proxies:
     short-id: cd21e552537c7c0b
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
-  server: 138.124.17.179
+- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
+  server: 45.149.147.97
   port: 443
   udp: true
   type: vless
-  uuid: ca5ffe64-81e0-42f0-a136-03cc4f662a4f
+  uuid: f28e0ce1-ed75-4e90-b069-5215a80dfb4a
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: eqlfwoHUoRvNeOKYzCzHSV64rSzyUVGS2w_nsOpWIG4
-    short-id: ffdf2e6056999b66
-  servername: finewl1.krusofiya.fun
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
-  server: 153.52.117.131
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3d9daa27-6283-406d-a2d4-c6f22c635a14
-  tls: true
-  servername: fi.astrafic.ru
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless-grpc
+    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
+    short-id: d345ad4657adeef9
+  servername: google.com
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select

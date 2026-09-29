@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - myhuo",
-      "server": "213.183.63.60",
-      "server_port": 9030,
-      "method": "aes-256-cfb",
-      "password": "GeregetR8cvQHzYr"
-    },
-    {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - myhuo",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - myhuo",
       "server": "193.148.59.178",
       "server_port": 443,
       "uuid": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
@@ -23,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -37,16 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01 - myhuo",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - myhuo"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01 - myhuo",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - myhuo"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
