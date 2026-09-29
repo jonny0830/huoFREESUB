@@ -5,27 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - myhuo
-  server: 13.48.104.64
+  server: 51.20.96.231
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
-  server: 13.62.228.76
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
   server: 51.20.86.152
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
+- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -40,19 +33,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
-- name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
-  server: secas.astrafic.ru
+- name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
+  server: 89.125.37.143
   port: 443
   udp: true
   type: vless
-  uuid: 3d9daa27-6283-406d-a2d4-c6f22c635a14
+  uuid: d39a375e-2f51-4d26-8cf4-5b437bbb3c99
+  flow: xtls-rprx-vision
   tls: true
-  servername: secas.astrafic.ru
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless-grpc
+  reality-opts:
+    public-key: nF_kEdHan2dgl2tlQ_dtNaKZ4oORhuiFrXHbtEDcT2Q
+    short-id: 2d6d073dc88f22a8
+  servername: nordic.global-cdn.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,7 +55,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - myhuo
   - 🇸🇪 瑞典 (Sweden) 03 - myhuo
   - 🇸🇪 瑞典 (Sweden) 04 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,6 +64,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - myhuo
   - 🇸🇪 瑞典 (Sweden) 03 - myhuo
   - 🇸🇪 瑞典 (Sweden) 04 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 05 - myhuo
 rules:
 - MATCH,PROXIES

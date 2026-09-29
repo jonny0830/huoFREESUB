@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇴🇲 OM 01 - myhuo
-  server: 130.94.81.180
-  port: 18415
+- name: 🇸🇨 塞舌尔 (Seychelles) 01 - myhuo
+  server: 45.207.207.25
+  port: 443
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: b667234b8d2e7eb34444857ea3a9b18a
+  cipher: aes-256-gcm
+  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇴🇲 OM 01 - myhuo
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇴🇲 OM 01 - myhuo
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - myhuo
 rules:
 - MATCH,PROXIES
