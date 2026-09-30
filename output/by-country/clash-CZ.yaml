@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - myhuo
-  server: 162.249.127.134
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hop-germany-september.dynuddns.com
-  skip-cert-verify: true
-- name: 🇨🇿 捷克 (Czech) 02 - myhuo
   server: 195.133.66.229
   port: 443
   udp: true
@@ -22,7 +14,7 @@ proxies:
   reality-opts:
     public-key: Zl6Fe6WYQuaFe_QNUB4qU7nRkGujy7LqjoQ96GO3jUc
   servername: nlll.gaz-service.shop
-  client-fingerprint: chrome
+  client-fingerprint: qq
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
@@ -32,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - myhuo
-  - 🇨🇿 捷克 (Czech) 02 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - myhuo
-  - 🇨🇿 捷克 (Czech) 02 - myhuo
 rules:
 - MATCH,PROXIES

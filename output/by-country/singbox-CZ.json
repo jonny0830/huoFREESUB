@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇨🇿 捷克 (Czech) 01 - myhuo",
-      "server": "162.249.127.134",
-      "server_port": 8443,
-      "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
-      "tls": {
-        "enabled": true,
-        "server_name": "hop-germany-september.dynuddns.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - myhuo",
+      "tag": "🇨🇿 捷克 (Czech) 01 - myhuo",
       "server": "195.133.66.229",
       "server_port": 443,
       "uuid": "4abdfe42-aec7-4b66-974d-3f891e2e8184",
@@ -26,7 +14,7 @@
         "server_name": "nlll.gaz-service.shop",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -44,16 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - myhuo",
-        "🇨🇿 捷克 (Czech) 02 - myhuo"
+        "🇨🇿 捷克 (Czech) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - myhuo",
-        "🇨🇿 捷克 (Czech) 02 - myhuo"
+        "🇨🇿 捷克 (Czech) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
