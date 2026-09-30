@@ -4,21 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo",
-      "server": "89.218.15.90",
-      "server_port": 10002,
-      "uuid": "392fcc7e-b995-11f1-a6b7-1b2272a86bd5",
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 01 - myhuo",
+      "server": "104.16.71.213",
+      "server_port": 443,
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "kz1.vpnjantit.com",
+        "server_name": "www.calmlunch.com",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/vpnjantit",
+        "path": "/assignment",
         "headers": {
-          "Host": "kz1.vpnjantit.com"
+          "Host": "www.calmlunch.com"
         }
       }
     },
@@ -27,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo"
+        "🌐 其他地区 (Other) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo"
+        "🌐 其他地区 (Other) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
