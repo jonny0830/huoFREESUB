@@ -5,66 +5,98 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - myhuo
-  server: 199.232.78.170
-  port: 443
+  server: 130.61.183.247
+  port: 59924
   udp: true
-  type: trojan
-  password: mitivpn
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: '@VPNine1'
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: XiznHqnfpN5coXauKLkZsUJwNHbUHG9ITdbSn64+UZQ=
 - name: 🇩🇪 德国 (Germany) 02 - myhuo
-  server: 8.209.74.72
-  port: 20001
+  server: 209.46.102.22
+  port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
+  password: 1hhrqrokj3ag
 - name: 🇩🇪 德国 (Germany) 03 - myhuo
-  server: 199.232.78.101
-  port: 443
-  udp: true
-  type: trojan
-  password: mitivpn
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSus---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN
-- name: 🇩🇪 德国 (Germany) 04 - myhuo
-  server: 31.76.11.83
-  port: 23226
-  udp: true
-  type: vmess
-  uuid: 3dff544a-379e-41f9-95d9-4b95a8e4026e
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 (Germany) 05 - myhuo
-  server: 2.58.81.221
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-- name: 🇩🇪 德国 (Germany) 06 - myhuo
   server: 185.226.172.8
   port: 8008
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
-- name: 🇩🇪 德国 (Germany) 07 - myhuo
-  server: 216.106.187.60
-  port: 22324
+- name: 🇩🇪 德国 (Germany) 04 - myhuo
+  server: 8.209.74.72
+  port: 20001
   udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+- name: 🇩🇪 德国 (Germany) 05 - myhuo
+  server: 199.247.23.162
+  port: 80
+  udp: true
+  type: vless
+  uuid: 306dcb21-d02d-49dd-8ec7-0005b972b47a
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 06 - myhuo
+  server: 51.195.126.38
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+- name: 🇩🇪 德国 (Germany) 07 - myhuo
+  server: alive-flea.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: alive-flea.rooster465.autos
+  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 08 - myhuo
-  server: 85.234.100.9
+  server: 91.132.160.209
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2412bd96-925b-43f2-81d1-0ed4f0793699
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 9XSdNkmBhBszLYoODqMrm7r_JRur2PRbzF9T1Uf2AV0
+    short-id: f1004027e382c2fa
+  servername: dlcdn.apache.org
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 09 - myhuo
+  server: kvm1.avenone.ir
+  port: 8402
+  udp: true
+  type: vless
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+- name: 🇩🇪 德国 (Germany) 10 - myhuo
+  server: actual-squid.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: actual-squid.rooster465.autos
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 11 - myhuo
+  server: 213.178.141.33
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: germa12.ggisopi.su
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 12 - myhuo
+  server: arcturus.yokkastars.com
   port: 40443
   udp: true
   type: vless
@@ -75,16 +107,21 @@ proxies:
     public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
     short-id: db46e2946fc466fd
   servername: deepl.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 09 - myhuo
-  server: 185.177.229.129
-  port: 22324
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 13 - myhuo
+  server: id-nl-01.mintrocket.org
+  port: 443
   udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 (Germany) 10 - myhuo
+  type: vless
+  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
+    short-id: fee1f986a72444db
+  servername: id-nl-01.mintrocket.org
+  client-fingerprint: safari
+- name: 🇩🇪 德国 (Germany) 14 - myhuo
   server: 57.129.41.216
   port: 80
   udp: true
@@ -95,51 +132,7 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 11 - myhuo
-  server: 2.58.81.221
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-- name: 🇩🇪 德国 (Germany) 12 - myhuo
-  server: 51.195.126.38
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-- name: 🇩🇪 德国 (Germany) 13 - myhuo
-  server: actual-squid.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: actual-squid.rooster465.autos
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 14 - myhuo
-  server: 2.26.125.147
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
-  tls: true
-  servername: stf94fd.rumedia-cdn.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: stf94fd.rumedia-cdn.com
 - name: 🇩🇪 德国 (Germany) 15 - myhuo
-  server: 31.77.8.97
-  port: 110
-  udp: true
-  type: vmess
-  uuid: d2d8601b-c14b-42c6-b8ea-33889bce152a
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 (Germany) 16 - myhuo
   server: de1.xiaoliyu.cyou
   port: 4433
   udp: true
@@ -147,7 +140,35 @@ proxies:
   password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
   sni: 'off'
   skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 16 - myhuo
+  server: 2.58.81.221
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
 - name: 🇩🇪 德国 (Germany) 17 - myhuo
+  server: 2.58.81.221
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+- name: 🇩🇪 德国 (Germany) 18 - myhuo
+  server: germany.tofreedom.ru
+  port: 8444
+  udp: true
+  type: vless
+  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
+  tls: true
+  servername: germany.tofreedom.ru
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /c7f5317cd04691bc
+    headers:
+      Host: germany.tofreedom.ru
+- name: 🇩🇪 德国 (Germany) 19 - myhuo
   server: 82.39.171.12
   port: 443
   udp: true
@@ -160,60 +181,27 @@ proxies:
     short-id: c39cc7310a
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 18 - myhuo
-  server: germa12.ggisopi.su
-  port: 443
-  udp: true
-  type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: germa12.ggisopi.su
-  client-fingerprint: qq
-- name: 🇩🇪 德国 (Germany) 19 - myhuo
-  server: 94.143.231.146
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  tls: true
-  servername: sub.merky.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
 - name: 🇩🇪 德国 (Germany) 20 - myhuo
+  server: p2tun4.greewebservices.ir
+  port: 1040
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: DUAd_9d2osCSYDNCWNJngw
+- name: 🇩🇪 德国 (Germany) 21 - myhuo
   server: 31.76.11.83
   port: 11950
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: iku/Gfrt9YeEUUleXr2Ptf3uvs0hszCR0JHPqGSjs+c=
-- name: 🇩🇪 德国 (Germany) 21 - myhuo
+- name: 🇩🇪 德国 (Germany) 22 - myhuo
   server: 130.61.228.41
   port: 59924
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: PAijPIjA3tTKiNb0oRJyZrveMENhEwhO8Dk8/gp/ztM=
-- name: 🇩🇪 德国 (Germany) 22 - myhuo
-  server: 91.132.160.209
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2412bd96-925b-43f2-81d1-0ed4f0793699
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 9XSdNkmBhBszLYoODqMrm7r_JRur2PRbzF9T1Uf2AV0
-    short-id: f1004027e382c2fa
-  servername: dlcdn.apache.org
-  client-fingerprint: ''
 - name: 🇩🇪 德国 (Germany) 23 - myhuo
   server: rubifen.adaspoloandco.com
   port: 443
@@ -227,6 +215,63 @@ proxies:
   network: ws
   ws-opts:
     path: /GOrbEh
+- name: 🇩🇪 德国 (Germany) 24 - myhuo
+  server: 193.108.117.54
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: aidrivercat.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aidrivercat.org
+- name: 🇩🇪 德国 (Germany) 25 - myhuo
+  server: 185.177.229.129
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 (Germany) 26 - myhuo
+  server: 95.81.75.9
+  port: 57160
+  udp: true
+  type: vless
+  uuid: 68ad9a6d-2463-4c31-92a7-31547b9d4783
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Tbu7sr_pvHngDWFIa0ApL5UL9vEGxlHESd9g53KQehw
+    short-id: 77b5
+  servername: funpay.com
+  client-fingerprint: ''
+- name: 🇩🇪 德国 (Germany) 27 - myhuo
+  server: 31.70.111.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 28 - myhuo
+  server: p2tun3.greewebservices.ir
+  port: 1030
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: DUAd_9d2osCSYDNCWNJngw
 proxy-groups:
 - name: PROXIES
   type: select
@@ -255,6 +300,11 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 21 - myhuo
   - 🇩🇪 德国 (Germany) 22 - myhuo
   - 🇩🇪 德国 (Germany) 23 - myhuo
+  - 🇩🇪 德国 (Germany) 24 - myhuo
+  - 🇩🇪 德国 (Germany) 25 - myhuo
+  - 🇩🇪 德国 (Germany) 26 - myhuo
+  - 🇩🇪 德国 (Germany) 27 - myhuo
+  - 🇩🇪 德国 (Germany) 28 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -283,5 +333,10 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 21 - myhuo
   - 🇩🇪 德国 (Germany) 22 - myhuo
   - 🇩🇪 德国 (Germany) 23 - myhuo
+  - 🇩🇪 德国 (Germany) 24 - myhuo
+  - 🇩🇪 德国 (Germany) 25 - myhuo
+  - 🇩🇪 德国 (Germany) 26 - myhuo
+  - 🇩🇪 德国 (Germany) 27 - myhuo
+  - 🇩🇪 德国 (Germany) 28 - myhuo
 rules:
 - MATCH,PROXIES
