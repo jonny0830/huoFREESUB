@@ -4,23 +4,39 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - myhuo",
-      "server": "144.31.212.253",
-      "server_port": 443,
-      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
-      "tls": {
-        "enabled": true,
-        "server_name": "vps155-edge.kermemehori.ru",
-        "insecure": true
-      }
+      "server": "204.168.147.195",
+      "server_port": 1085,
+      "uuid": "0c1b7949-fe09-43d9-863f-2c031f66bfc1"
     },
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - myhuo",
-      "server": "smart.avenone.ir",
+      "server": "77.42.20.51",
       "server_port": 1085,
       "uuid": "0c1b7949-fe09-43d9-863f-2c031f66bfc1"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
+      "server": "212.147.245.198",
+      "server_port": 443,
+      "uuid": "042d2d08-2973-5d10-97ad-3b75f16bbe54",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "online.1c.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xwLNHc6jBOg5Ddr1LezwY7I45nP485Qfu1YJXMKwVnI",
+          "short_id": "330a464a00000000"
+        }
+      }
     },
     {
       "type": "selector",
@@ -28,7 +44,8 @@
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - myhuo",
-        "🇫🇮 芬兰 (Finland) 02 - myhuo"
+        "🇫🇮 芬兰 (Finland) 02 - myhuo",
+        "🇫🇮 芬兰 (Finland) 03 - myhuo"
       ]
     },
     {
@@ -36,7 +53,8 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - myhuo",
-        "🇫🇮 芬兰 (Finland) 02 - myhuo"
+        "🇫🇮 芬兰 (Finland) 02 - myhuo",
+        "🇫🇮 芬兰 (Finland) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

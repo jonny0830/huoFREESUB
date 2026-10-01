@@ -5,21 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 01 - myhuo",
-      "server": "35.233.43.229",
-      "server_port": 443,
-      "uuid": "e3fb56fe-bdbc-4f0e-b1ed-de2f7c85f254",
+      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - myhuo",
+      "server": "89.125.96.79",
+      "server_port": 2053,
+      "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "wss.zazazuza.ru",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs",
-          "short_id": "68e97022627fa882"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vpn-wss/fluxor/59011/",
+        "headers": {
+          "Host": "wss.zazazuza.ru"
         }
       }
     },
@@ -28,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 (Belgium) 01 - myhuo"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 (Belgium) 01 - myhuo"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
