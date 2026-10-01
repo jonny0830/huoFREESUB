@@ -5,21 +5,14 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 01 - myhuo",
-      "server": "172.64.150.28",
+      "tag": "🇳🇬 尼日利亚 (Nigeria) 01 - myhuo",
+      "server": "103.97.91.17",
       "server_port": 443,
-      "password": "humanity",
+      "password": "600421cf-11d7-429f-a65b-c30397f1bc03",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
+        "server_name": "la.freeguard.org",
         "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
       }
     },
     {
@@ -27,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🇳🇬 尼日利亚 (Nigeria) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🇳🇬 尼日利亚 (Nigeria) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

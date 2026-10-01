@@ -5,34 +5,59 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - myhuo
-  server: china.letsconnectpoint.com
+  server: 194.113.235.66
   port: 443
   udp: true
   type: vless
-  uuid: 914f3806-07a1-4158-9624-e183de065a38
+  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
-  servername: china.letsconnectpoint.com
-  client-fingerprint: ios
+    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
+    short-id: 9e4eced6e98ed4d4
+  servername: github.com
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
   server: 91.240.86.70
   port: 22443
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: 91.240.86.70
+  sni: itsallproxy.quattro-tech.ru
   skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
-  server: srv-17e124.21freedom.net
-  port: 11592
+  server: 139.28.168.201
+  port: 443
+  udp: true
+  type: vless
+  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
+    short-id: 3b74d85e
+  servername: china.letsconnectpoint.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
+  server: 91.196.32.163
+  port: 443
   udp: true
   type: hysteria2
-  password: 41edb44c8e
-  sni: srv-17e124.21freedom.net
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: germany3.h2corp.local
   skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
+  server: 45.12.75.242
+  port: 26424
+  udp: true
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +66,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 02 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 03 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,5 +76,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 02 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 03 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 05 - myhuo
 rules:
 - MATCH,PROXIES

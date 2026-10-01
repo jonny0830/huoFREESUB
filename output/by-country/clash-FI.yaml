@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - myhuo
+  server: 144.31.212.253
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 02 - myhuo
   server: smart.avenone.ir
   port: 1085
   udp: true
@@ -16,11 +24,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - myhuo
+  - 🇫🇮 芬兰 (Finland) 02 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - myhuo
+  - 🇫🇮 芬兰 (Finland) 02 - myhuo
 rules:
 - MATCH,PROXIES

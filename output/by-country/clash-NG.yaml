@@ -4,28 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - myhuo
-  server: 172.64.150.28
+- name: 🇳🇬 尼日利亚 (Nigeria) 01 - myhuo
+  server: 103.97.91.17
   port: 443
   udp: true
   type: trojan
-  password: humanity
-  sni: www.calmlunch.com
+  password: 600421cf-11d7-429f-a65b-c30397f1bc03
+  sni: la.freeguard.org
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - myhuo
+  - 🇳🇬 尼日利亚 (Nigeria) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - myhuo
+  - 🇳🇬 尼日利亚 (Nigeria) 01 - myhuo
 rules:
 - MATCH,PROXIES

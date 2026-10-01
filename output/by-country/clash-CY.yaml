@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo
+  server: 194.76.154.31
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  tls: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+    short-id: a8ae
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo
   server: 5.253.28.224
   port: 40443
   udp: true
@@ -16,8 +28,8 @@ proxies:
     public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
     short-id: 68a8
   servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo
+  client-fingerprint: firefox
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo
   server: 5.253.28.240
   port: 40443
   udp: true
@@ -29,9 +41,9 @@ proxies:
     public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
     short-id: 88b6
   servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo
-  server: hydra.yokkastars.com
+  client-fingerprint: firefox
+- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo
+  server: 5.253.28.240
   port: 2443
   udp: true
   type: vless
@@ -41,10 +53,23 @@ proxies:
     public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
     short-id: 92c32de179e5d908
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: rex-eb0bf76b710ce763
+- name: 🇨🇾 塞浦路斯 (Cyprus) 05 - myhuo
+  server: india.letsconnectpoint.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 914f3806-07a1-4158-9624-e183de065a38
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: erUEmyU1QK8y2corQh9bOjk0oHl2Mo6Z9WgoyKg_rC0
+    short-id: c1e3d5d4
+  servername: india.letsconnectpoint.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,6 +78,8 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo
+  - 🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo
+  - 🇨🇾 塞浦路斯 (Cyprus) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +88,7 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo
+  - 🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo
+  - 🇨🇾 塞浦路斯 (Cyprus) 05 - myhuo
 rules:
 - MATCH,PROXIES
