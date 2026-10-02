@@ -24,23 +24,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - myhuo",
-      "server": "132.145.80.230",
-      "server_port": 80,
-      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8",
-        "headers": {
-          "Host": "kr02.a0a.xyz"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - myhuo",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - myhuo",
       "server": "3.39.4.109",
       "server_port": 18967,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -60,72 +45,28 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 05 - myhuo",
-      "server": "131.186.19.174",
-      "server_port": 50160,
-      "password": "7302ad33229de166d393cd56143a1e4c",
-      "tls": {
-        "enabled": true,
-        "server_name": "whatsapp.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - myhuo",
-      "server": "152.67.200.82",
-      "server_port": 50160,
-      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
-      "tls": {
-        "enabled": true,
-        "server_name": "152.67.200.82",
-        "insecure": true
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 07 - myhuo",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - myhuo",
       "server": "141.164.45.187",
-      "server_port": 5498,
+      "server_port": 2376,
       "method": "aes-256-gcm",
-      "password": "lGqs95QkFHo2NV"
+      "password": "faBAoD54k87UJG7"
     },
     {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 08 - myhuo",
-      "server": "151.245.106.49",
-      "server_port": 2053,
-      "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo",
-          "short_id": "429499c03d4cc8a0"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 09 - myhuo",
-      "server": "154.90.62.70",
-      "server_port": 56127,
-      "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
-      "tls": {
-        "enabled": true,
-        "server_name": "154.90.62.70",
-        "insecure": true
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 05 - myhuo",
+      "server": "132.145.80.230",
+      "server_port": 80,
+      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8"
       }
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 10 - myhuo",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - myhuo",
       "server": "3.39.4.109",
       "server_port": 13672,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -145,28 +86,76 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 07 - myhuo",
+      "server": "151.245.106.49",
+      "server_port": 2053,
+      "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo",
+          "short_id": "429499c03d4cc8a0"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 08 - myhuo",
+      "server": "152.67.200.82",
+      "server_port": 50160,
+      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 09 - myhuo",
+      "server": "152-69-231-175.liao.kdns.fr",
+      "server_port": 50160,
+      "password": "1beb216e3f60aea9555dae60d219a5ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "152-69-231-175.liao.kdns.fr",
+        "insecure": true
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 11 - myhuo",
+      "tag": "🇰🇷 韩国 (South Korea) 10 - myhuo",
       "server": "141.164.45.187",
-      "server_port": 8091,
+      "server_port": 7001,
       "method": "aes-256-gcm",
-      "password": "PCnnH6SQSnfoS27"
+      "password": "RexnBgU7EV5ADxG"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 11 - myhuo",
+      "server": "154.90.62.70",
+      "server_port": 56127,
+      "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
+      "tls": {
+        "enabled": true,
+        "server_name": "154.90.62.70",
+        "insecure": true
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 12 - myhuo",
       "server": "141.164.45.187",
-      "server_port": 6679,
+      "server_port": 9090,
       "method": "aes-256-gcm",
-      "password": "TEzjfAYq2IjtuoS"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 13 - myhuo",
-      "server": "141.164.45.187",
-      "server_port": 9101,
-      "method": "aes-256-gcm",
-      "password": "e4FCWrgpkji3QY"
+      "password": "Y6R9pAtvxxzmGC"
     },
     {
       "type": "selector",
@@ -184,8 +173,7 @@
         "🇰🇷 韩国 (South Korea) 09 - myhuo",
         "🇰🇷 韩国 (South Korea) 10 - myhuo",
         "🇰🇷 韩国 (South Korea) 11 - myhuo",
-        "🇰🇷 韩国 (South Korea) 12 - myhuo",
-        "🇰🇷 韩国 (South Korea) 13 - myhuo"
+        "🇰🇷 韩国 (South Korea) 12 - myhuo"
       ]
     },
     {
@@ -203,8 +191,7 @@
         "🇰🇷 韩国 (South Korea) 09 - myhuo",
         "🇰🇷 韩国 (South Korea) 10 - myhuo",
         "🇰🇷 韩国 (South Korea) 11 - myhuo",
-        "🇰🇷 韩国 (South Korea) 12 - myhuo",
-        "🇰🇷 韩国 (South Korea) 13 - myhuo"
+        "🇰🇷 韩国 (South Korea) 12 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

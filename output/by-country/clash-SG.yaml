@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - myhuo
-  server: 68.183.227.4
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 02 - myhuo
   server: 149.88.23.202
   port: 18000
   udp: true
@@ -19,16 +12,14 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 03 - myhuo
-  server: 5.223.18.177
-  port: 80
+- name: 🇸🇬 新加坡 (Singapore) 02 - myhuo
+  server: 68.183.227.4
+  port: 8080
   udp: true
-  type: vless
-  uuid: 717d03fa-4678-47a0-b27a-dff61a08ef83
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 新加坡 (Singapore) 04 - myhuo
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 03 - myhuo
   server: 5.223.41.125
   port: 80
   udp: true
@@ -37,69 +28,49 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇸🇬 新加坡 (Singapore) 05 - myhuo
-  server: 5.223.41.164
+- name: 🇸🇬 新加坡 (Singapore) 04 - myhuo
+  server: 5.223.41.121
   port: 80
   udp: true
   type: vless
-  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
+  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 05 - myhuo
+  server: 5.223.41.93
+  port: 80
+  udp: true
+  type: vless
+  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
   network: ws
   ws-opts:
     path: /
 - name: 🇸🇬 新加坡 (Singapore) 06 - myhuo
-  server: 5.223.41.179
-  port: 80
+  server: 68.183.227.236
+  port: 8080
   udp: true
-  type: vless
-  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
-  network: ws
-  ws-opts:
-    path: /
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 07 - myhuo
-  server: 5.223.41.248
+  server: 5.223.41.82
   port: 80
   udp: true
   type: vless
-  uuid: 2e055175-728b-44be-90a4-e7f59ed16f1b
+  uuid: 22aa8dac-98b8-4f54-b36d-fb60ec3db6d7
   network: ws
   ws-opts:
     path: /
 - name: 🇸🇬 新加坡 (Singapore) 08 - myhuo
-  server: 53629131-tmm5c0-tntd4s-yjq0.sg7.hyhuawei.com
+  server: 4da82491-tmm5c0-ts40sw-14g76.sg7.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
-  sni: 53629131-tmm5c0-tntd4s-yjq0.sg7.hyhuawei.com
+  password: 4729b4c8-1790-11eb-8684-f23c913c8d2b
+  sni: 4da82491-tmm5c0-ts40sw-14g76.sg7.hyhuawei.com
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 09 - myhuo
-  server: 5.223.41.138
-  port: 80
-  udp: true
-  type: vless
-  uuid: ac8e1bf3-775a-44ee-b018-d553cce0201a
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 新加坡 (Singapore) 10 - myhuo
-  server: 5.223.41.95
-  port: 80
-  udp: true
-  type: vless
-  uuid: f29e9fce-1f37-4a83-9e6c-05a997123dfb
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 新加坡 (Singapore) 11 - myhuo
-  server: 5.223.41.117
-  port: 80
-  udp: true
-  type: vless
-  uuid: d8f8d6dd-7428-47f8-88de-c60a2b01decb
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 新加坡 (Singapore) 12 - myhuo
   server: 5.223.41.51
   port: 80
   udp: true
@@ -108,12 +79,39 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇸🇬 新加坡 (Singapore) 13 - myhuo
-  server: 5.223.41.121
+- name: 🇸🇬 新加坡 (Singapore) 10 - myhuo
+  server: 5.223.18.177
   port: 80
   udp: true
   type: vless
-  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
+  uuid: 717d03fa-4678-47a0-b27a-dff61a08ef83
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 11 - myhuo
+  server: 5.223.41.138
+  port: 80
+  udp: true
+  type: vless
+  uuid: ac8e1bf3-775a-44ee-b018-d553cce0201a
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 12 - myhuo
+  server: 5.223.41.248
+  port: 80
+  udp: true
+  type: vless
+  uuid: 2e055175-728b-44be-90a4-e7f59ed16f1b
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 13 - myhuo
+  server: 5.223.41.117
+  port: 80
+  udp: true
+  type: vless
+  uuid: d8f8d6dd-7428-47f8-88de-c60a2b01decb
   network: ws
   ws-opts:
     path: /
@@ -127,7 +125,36 @@ proxies:
   ws-opts:
     path: /
 - name: 🇸🇬 新加坡 (Singapore) 15 - myhuo
-  server: 146.235.16.130
+  server: 103.106.229.236
+  port: 443
+  udp: true
+  type: vless
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  tls: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: sg.monkora.org
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 16 - myhuo
+  server: 5.223.41.95
+  port: 80
+  udp: true
+  type: vless
+  uuid: f29e9fce-1f37-4a83-9e6c-05a997123dfb
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 17 - myhuo
+  server: 5.223.41.179
+  port: 80
+  udp: true
+  type: vless
+  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 18 - myhuo
+  server: sg2-8sb.6121999.dpdns.org
   port: 19825
   udp: true
   type: vless
@@ -139,61 +166,23 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: sg2-8sb.6121999.dpdns.org
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 16 - myhuo
-  server: 5.223.41.93
-  port: 80
-  udp: true
-  type: vless
-  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 新加坡 (Singapore) 17 - myhuo
-  server: 217.217.254.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  tls: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 18 - myhuo
-  server: 5.223.41.82
-  port: 80
-  udp: true
-  type: vless
-  uuid: 22aa8dac-98b8-4f54-b36d-fb60ec3db6d7
-  network: ws
-  ws-opts:
-    path: /
 - name: 🇸🇬 新加坡 (Singapore) 19 - myhuo
-  server: 54.169.200.246
-  port: 41688
+  server: ww11.levikogjgfdd.ir
+  port: 18000
   udp: true
-  type: vless
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
-  servername: www.intel.com
-  client-fingerprint: chrome
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 20 - myhuo
-  server: sg2-8sb.6121999.dpdns.org
-  port: 19825
+  server: 5.223.41.164
+  port: 80
   udp: true
   type: vless
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-  servername: sg2-8sb.6121999.dpdns.org
-  client-fingerprint: chrome
+  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇸🇬 新加坡 (Singapore) 21 - myhuo
   server: 3.0.111.82
   port: 12972
@@ -206,16 +195,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇸🇬 新加坡 (Singapore) 22 - myhuo
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 23 - myhuo
   server: 3.0.111.82
   port: 17623
   udp: true
@@ -228,7 +209,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: safari
-- name: 🇸🇬 新加坡 (Singapore) 24 - myhuo
+- name: 🇸🇬 新加坡 (Singapore) 23 - myhuo
   server: 3.0.111.82
   port: 10574
   udp: true
@@ -241,32 +222,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: edge
-- name: 🇸🇬 新加坡 (Singapore) 25 - myhuo
-  server: sg4.dexlos.com
-  port: 20654
-  udp: true
-  type: hysteria2
-  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
-  sni: sg4.dexlos.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: xK9mN2pLq5vR8wB3
-- name: 🇸🇬 新加坡 (Singapore) 26 - myhuo
-  server: free-server.techsonic.dev
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  tls: true
-  servername: free-server.techsonic.dev
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 27 - myhuo
+- name: 🇸🇬 新加坡 (Singapore) 24 - myhuo
   server: 173.234.14.105
   port: 59615
   udp: true
@@ -278,7 +234,55 @@ proxies:
     public-key: 7PB-58vYXFLNhK6kY8bJJO3-fPOXTPQJ0UqDlhSOH3M
     short-id: 6b
   servername: biosmod.partners.nvidia.com
-  client-fingerprint: ios
+  client-fingerprint: qq
+- name: 🇸🇬 新加坡 (Singapore) 25 - myhuo
+  server: 217.217.254.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  tls: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 26 - myhuo
+  server: sg4.dexlos.com
+  port: 20654
+  udp: true
+  type: hysteria2
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: sg4.dexlos.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: xK9mN2pLq5vR8wB3
+- name: 🇸🇬 新加坡 (Singapore) 27 - myhuo
+  server: support.zoom.us
+  port: 80
+  udp: true
+  type: vless
+  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 28 - myhuo
+  server: trackydev.site
+  port: 443
+  udp: true
+  type: vless
+  uuid: 92d67828-4c56-4795-af5a-f387651380dc
+  tls: true
+  servername: trackydev.site
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: trackydev.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -311,6 +315,7 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 25 - myhuo
   - 🇸🇬 新加坡 (Singapore) 26 - myhuo
   - 🇸🇬 新加坡 (Singapore) 27 - myhuo
+  - 🇸🇬 新加坡 (Singapore) 28 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -343,5 +348,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 25 - myhuo
   - 🇸🇬 新加坡 (Singapore) 26 - myhuo
   - 🇸🇬 新加坡 (Singapore) 27 - myhuo
+  - 🇸🇬 新加坡 (Singapore) 28 - myhuo
 rules:
 - MATCH,PROXIES

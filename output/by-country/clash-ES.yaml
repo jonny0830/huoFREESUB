@@ -12,41 +12,25 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 (Spain) 02 - myhuo
-  server: mygptagent.org
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: mygptagent.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /linkvws
-- name: 🇪🇸 西班牙 (Spain) 03 - myhuo
-  server: 193.238.154.5
+  server: 34.175.44.113
   port: 443
   udp: true
   type: vless
-  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
+  uuid: 0b4b1548-c7ca-45a5-9096-6c3cc4b1c43b
   tls: true
-  servername: assets-es.pleiades.codes
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
-- name: 🇪🇸 西班牙 (Spain) 04 - myhuo
-  server: xby.mangshe.xyz
-  port: 2060
+  reality-opts:
+    public-key: iI9J--AfPKCXbVle3Om-WMn_g-3bO3SsVzUCNtwUkU0
+    short-id: fe85cb6a5c84e64c
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇪🇸 西班牙 (Spain) 03 - myhuo
+  server: 140.174.184.5
+  port: 8388
   udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: xby.mangshe.xyz
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 05 - myhuo
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+- name: 🇪🇸 西班牙 (Spain) 04 - myhuo
   server: 66.163.118.73
   port: 22324
   udp: true
@@ -54,13 +38,6 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇪🇸 西班牙 (Spain) 06 - myhuo
-  server: 140.174.184.5
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,8 +47,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - myhuo
   - 🇪🇸 西班牙 (Spain) 03 - myhuo
   - 🇪🇸 西班牙 (Spain) 04 - myhuo
-  - 🇪🇸 西班牙 (Spain) 05 - myhuo
-  - 🇪🇸 西班牙 (Spain) 06 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -81,7 +56,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - myhuo
   - 🇪🇸 西班牙 (Spain) 03 - myhuo
   - 🇪🇸 西班牙 (Spain) 04 - myhuo
-  - 🇪🇸 西班牙 (Spain) 05 - myhuo
-  - 🇪🇸 西班牙 (Spain) 06 - myhuo
 rules:
 - MATCH,PROXIES
