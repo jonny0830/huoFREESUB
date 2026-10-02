@@ -4,8 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - myhuo",
+      "server": "13.48.104.64",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - myhuo",
+      "server": "51.20.96.231",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - myhuo",
+      "server": "13.62.228.76",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - myhuo",
       "server": "5.157.10.148",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
@@ -15,7 +39,7 @@
         "server_name": "surstreming.vvzzkontaktezzvv.garden",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -29,14 +53,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 01 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 02 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 03 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 04 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 01 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 02 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 03 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
