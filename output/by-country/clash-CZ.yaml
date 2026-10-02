@@ -5,18 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - myhuo
-  server: 85.117.235.50
+  server: 188.114.98.134
   port: 443
   udp: true
   type: vless
-  uuid: f4d71fd6-1c25-4748-836b-1dbda9268039
-  flow: xtls-rprx-vision
+  uuid: ba49d874-fe02-465d-82d3-ed981dc7694f
   tls: true
-  reality-opts:
-    public-key: PmdZ2ETkHc0zjYcs22xT_wyZk5fEpX7mg7RP396HBBc
-    short-id: 232b1b09e45325a4
-  servername: cz1.animeteka.info
-  client-fingerprint: firefox
+  servername: o94yv7LiF0-AnxIsd9EFehVvs7mXn6bh.z-UlE-ikA-d-e-nE-k-E.WorkeRs.dEv
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

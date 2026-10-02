@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
-  server: hi.northcluster.info
-  port: 52300
-  udp: true
-  type: vmess
-  uuid: 6e571484-4166-4699-8f58-b34a1823691f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /video
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -32,13 +21,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
 rules:
 - MATCH,PROXIES
