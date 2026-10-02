@@ -13,43 +13,37 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 02 - myhuo
-  server: 138.199.48.82
+  server: yyz-ca-01.blncvpn4u.cc
   port: 9443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
 - name: 🇨🇦 加拿大 (Canada) 03 - myhuo
-  server: 51.222.200.165
-  port: 5000
+  server: 134.195.198.214
+  port: 22324
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 04 - myhuo
-  server: 188.114.97.6
+  server: 137.184.174.93
   port: 8080
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇨🇦 加拿大 (Canada) 05 - myhuo
-  server: 188.114.97.6
-  port: 2095
+  server: 158.51.121.63
+  port: 22324
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 06 - myhuo
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   udp: true
   type: vmess
@@ -57,13 +51,31 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 07 - myhuo
-  server: 138.197.141.58
-  port: 8080
+  server: 66.70.179.198
+  port: 2053
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+  type: vless
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  tls: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇨🇦 加拿大 (Canada) 08 - myhuo
+  server: 209.200.246.148
+  port: 443
+  udp: true
+  type: vless
+  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
+    short-id: f98843107912e782
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 09 - myhuo
   server: 158.51.121.123
   port: 443
   udp: true
@@ -77,26 +89,30 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-- name: 🇨🇦 加拿大 (Canada) 09 - myhuo
-  server: 158.51.121.63
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+    headers:
+      Host: mygptagent.org
 - name: 🇨🇦 加拿大 (Canada) 10 - myhuo
-  server: 23.95.76.164
-  port: 443
+  server: 51.222.141.125
+  port: 445
   udp: true
-  type: vless
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  tls: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: ca.monkora.org
-  client-fingerprint: firefox
+  type: ss
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
 - name: 🇨🇦 加拿大 (Canada) 11 - myhuo
+  server: 51.222.200.165
+  port: 5000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇨🇦 加拿大 (Canada) 12 - myhuo
+  server: 138.199.48.82
+  port: 9443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+- name: 🇨🇦 加拿大 (Canada) 13 - myhuo
   server: 158.51.123.42
   port: 22324
   udp: true
@@ -104,44 +120,20 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 12 - myhuo
-  server: 188.114.97.6
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 13 - myhuo
-  server: 134.195.198.214
-  port: 22324
+- name: 🇨🇦 加拿大 (Canada) 14 - myhuo
+  server: 134.195.196.211
+  port: 18000
   udp: true
   type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 14 - myhuo
-  server: yyz-ca-01.blncvpn4u.cc
-  port: 9443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
 - name: 🇨🇦 加拿大 (Canada) 15 - myhuo
-  server: 66.70.179.198
-  port: 2053
+  server: milo.rubinaz.xyz
+  port: 8080
   udp: true
   type: vless
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  tls: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-    short-id: 83f8317a948bb769
-  servername: www.cloudflare.com
-  client-fingerprint: random
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
 - name: 🇨🇦 加拿大 (Canada) 16 - myhuo
   server: 66.163.113.176
   port: 22324
@@ -151,33 +143,33 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 17 - myhuo
-  server: 209.200.246.148
-  port: 443
-  udp: true
-  type: vless
-  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
-    short-id: f98843107912e782
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 18 - myhuo
-  server: 51.222.141.125
+  server: 51.222.12.127
   port: 445
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: zDNVedRFPQexG9v
-- name: 🇨🇦 加拿大 (Canada) 19 - myhuo
-  server: 23.162.200.198
-  port: 18000
+- name: 🇨🇦 加拿大 (Canada) 18 - myhuo
+  server: 51.79.64.198
+  port: 8119
   udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇨🇦 加拿大 (Canada) 19 - myhuo
+  server: 51.79.85.185
+  port: 8118
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇨🇦 加拿大 (Canada) 20 - myhuo
+  server: 51.222.136.236
+  port: 8882
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
 proxy-groups:
 - name: PROXIES
   type: select
@@ -202,6 +194,7 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 17 - myhuo
   - 🇨🇦 加拿大 (Canada) 18 - myhuo
   - 🇨🇦 加拿大 (Canada) 19 - myhuo
+  - 🇨🇦 加拿大 (Canada) 20 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -226,5 +219,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 17 - myhuo
   - 🇨🇦 加拿大 (Canada) 18 - myhuo
   - 🇨🇦 加拿大 (Canada) 19 - myhuo
+  - 🇨🇦 加拿大 (Canada) 20 - myhuo
 rules:
 - MATCH,PROXIES

@@ -1,0 +1,38 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
+  server: 3eb19e9f-tmm5c0-u10a65-1os43.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 96c798f6-4645-11ee-b8a1-f23c9164ca5d
+  sni: 3eb19e9f-tmm5c0-u10a65-1os43.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
+  server: 7108fdc9-tmm5c0-tnkuks-wujn.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
+  sni: 7108fdc9-tmm5c0-tnkuks-wujn.nw4.hyhuawei.com
+  skip-cert-verify: true
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
+rules:
+- MATCH,PROXIES
