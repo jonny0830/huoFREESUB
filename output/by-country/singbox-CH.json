@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - myhuo",
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
+      "tls": {
+        "enabled": true,
+        "server_name": "140.238.213.114",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 - myhuo",
       "server": "132.243.175.144",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -13,7 +25,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 - myhuo",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - myhuo",
       "server": "82.38.64.239",
       "server_port": 8443,
       "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
@@ -25,7 +37,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - myhuo",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - myhuo",
       "server": "179.237.103.152",
       "server_port": 443,
       "uuid": "e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8",
@@ -51,7 +63,8 @@
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - myhuo",
         "🇨🇭 瑞士 (Switzerland) 02 - myhuo",
-        "🇨🇭 瑞士 (Switzerland) 03 - myhuo"
+        "🇨🇭 瑞士 (Switzerland) 03 - myhuo",
+        "🇨🇭 瑞士 (Switzerland) 04 - myhuo"
       ]
     },
     {
@@ -60,7 +73,8 @@
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - myhuo",
         "🇨🇭 瑞士 (Switzerland) 02 - myhuo",
-        "🇨🇭 瑞士 (Switzerland) 03 - myhuo"
+        "🇨🇭 瑞士 (Switzerland) 03 - myhuo",
+        "🇨🇭 瑞士 (Switzerland) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

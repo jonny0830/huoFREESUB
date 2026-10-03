@@ -4,34 +4,44 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - myhuo",
-      "server": "165.154.195.38",
-      "server_port": 35034,
-      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
-      "security": "auto"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
-      "server": "vpn-tw-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vk.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
       "server": "103.115.109.49",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/oneclickvpnkeys",
+        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
+        "insecure": true
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
+      "server": "tw6.dexlos.com",
+      "server_port": 8080,
+      "uuid": "D7286728-678E-443B-B76B-B699654C66DD",
+      "password": "D7286728-678E-443B-B76B-B699654C66DD",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw6.dexlos.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
+      "server": "160.187.100.109",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "off",
         "insecure": true
       }
     },
@@ -55,6 +65,14 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - myhuo",
+      "server": "165.154.195.38",
+      "server_port": 35034,
+      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -62,7 +80,8 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 04 - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 04 - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 05 - myhuo"
       ]
     },
     {
@@ -72,7 +91,8 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 04 - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 04 - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 05 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

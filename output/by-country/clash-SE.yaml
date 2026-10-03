@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - myhuo
+  server: 13.61.185.249
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
   server: 5.157.10.148
   port: 443
   udp: true
@@ -17,17 +24,35 @@ proxies:
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
   client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
-  server: 199.68.198.13
+- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
+  server: 176.108.246.110
+  port: 9830
+  udp: true
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  tls: true
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+  servername: dl.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
+  server: 94.143.231.146
   port: 443
   udp: true
   type: vless
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   tls: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
-  client-fingerprint: firefox
+  servername: sub.merky.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +60,8 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - myhuo
   - 🇸🇪 瑞典 (Sweden) 02 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 03 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,5 +69,7 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - myhuo
   - 🇸🇪 瑞典 (Sweden) 02 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 03 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 04 - myhuo
 rules:
 - MATCH,PROXIES
