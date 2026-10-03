@@ -15,15 +15,24 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - myhuo",
-      "server": "222.167.245.240",
-      "server_port": 28015,
-      "password": "e19b5aa3-16c9-435a-8bc9-76f2f6ddff43",
+      "server": "31.77.59.163",
+      "server_port": 443,
+      "uuid": "ff35ca20-2304-4b3a-80e5-2c82953cf2ce",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "api-test-udp-traffic.kaneki.cfd",
-        "insecure": false
+        "server_name": "pl37.mech-pro.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
+          "short_id": "16e0f049"
+        }
       }
     },
     {
@@ -35,12 +44,24 @@
       "tls": {
         "enabled": true,
         "server_name": "cheerful-swan.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 04 - myhuo",
+      "server": "222.167.245.240",
+      "server_port": 28015,
+      "password": "e19b5aa3-16c9-435a-8bc9-76f2f6ddff43",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-test-udp-traffic.kaneki.cfd",
         "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04 - myhuo",
+      "tag": "🇵🇱 波兰 (Poland) 05 - myhuo",
       "server": "144.31.4.193",
       "server_port": 444,
       "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
@@ -63,7 +84,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 05 - myhuo",
+      "tag": "🇵🇱 波兰 (Poland) 06 - myhuo",
+      "server": "pl-waw.dontblockmepls.com",
+      "server_port": 2063,
+      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "rusbid.de",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 07 - myhuo",
       "server": "83.168.95.145",
       "server_port": 443,
       "uuid": "82f37352-85e5-49bb-9edc-a80997065659",
@@ -83,21 +125,6 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 06 - myhuo",
-      "server": "188.114.96.19",
-      "server_port": 80,
-      "uuid": "aed88e79-5762-4d2f-86fa-f438f32a7654",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -107,7 +134,8 @@
         "🇵🇱 波兰 (Poland) 03 - myhuo",
         "🇵🇱 波兰 (Poland) 04 - myhuo",
         "🇵🇱 波兰 (Poland) 05 - myhuo",
-        "🇵🇱 波兰 (Poland) 06 - myhuo"
+        "🇵🇱 波兰 (Poland) 06 - myhuo",
+        "🇵🇱 波兰 (Poland) 07 - myhuo"
       ]
     },
     {
@@ -119,7 +147,8 @@
         "🇵🇱 波兰 (Poland) 03 - myhuo",
         "🇵🇱 波兰 (Poland) 04 - myhuo",
         "🇵🇱 波兰 (Poland) 05 - myhuo",
-        "🇵🇱 波兰 (Poland) 06 - myhuo"
+        "🇵🇱 波兰 (Poland) 06 - myhuo",
+        "🇵🇱 波兰 (Poland) 07 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

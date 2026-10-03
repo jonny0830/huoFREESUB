@@ -14,13 +14,18 @@ proxies:
   ws-opts:
     path: /
 - name: 🇵🇱 波兰 (Poland) 02 - myhuo
-  server: 222.167.245.240
-  port: 28015
+  server: 31.77.59.163
+  port: 443
   udp: true
-  type: hysteria2
-  password: e19b5aa3-16c9-435a-8bc9-76f2f6ddff43
-  sni: api-test-udp-traffic.kaneki.cfd
-  skip-cert-verify: false
+  type: vless
+  uuid: ff35ca20-2304-4b3a-80e5-2c82953cf2ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
+    short-id: 16e0f049
+  servername: pl37.mech-pro.online
+  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 03 - myhuo
   server: 202.78.163.237
   port: 443
@@ -28,8 +33,16 @@ proxies:
   type: trojan
   password: UX82473651
   sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 04 - myhuo
+  server: 222.167.245.240
+  port: 28015
+  udp: true
+  type: hysteria2
+  password: e19b5aa3-16c9-435a-8bc9-76f2f6ddff43
+  sni: api-test-udp-traffic.kaneki.cfd
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 05 - myhuo
   server: 144.31.4.193
   port: 444
   udp: true
@@ -44,7 +57,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
-- name: 🇵🇱 波兰 (Poland) 05 - myhuo
+- name: 🇵🇱 波兰 (Poland) 06 - myhuo
+  server: pl-waw.dontblockmepls.com
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 07 - myhuo
   server: 83.168.95.145
   port: 443
   udp: true
@@ -57,19 +82,6 @@ proxies:
     short-id: d345ad4657adeef9
   servername: google.com
   client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 06 - myhuo
-  server: 188.114.96.19
-  port: 80
-  udp: true
-  type: vmess
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,6 +93,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - myhuo
   - 🇵🇱 波兰 (Poland) 05 - myhuo
   - 🇵🇱 波兰 (Poland) 06 - myhuo
+  - 🇵🇱 波兰 (Poland) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,5 +105,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - myhuo
   - 🇵🇱 波兰 (Poland) 05 - myhuo
   - 🇵🇱 波兰 (Poland) 06 - myhuo
+  - 🇵🇱 波兰 (Poland) 07 - myhuo
 rules:
 - MATCH,PROXIES

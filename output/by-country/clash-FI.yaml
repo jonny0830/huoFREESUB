@@ -13,6 +13,18 @@ proxies:
   sni: fi01.clgate.network
   skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 02 - myhuo
+  server: 151.241.137.132
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5786d86f-7731-4174-b1a3-84297e54b015
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: finland.ali-bard.online
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -23,35 +35,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
-  server: 94.143.231.146
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  tls: true
-  servername: sub.merky.top
-  skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
-  server: fi1.rovilo.ir
-  port: 443
-  udp: true
-  type: vless
-  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: i_cD6qpNHvE-j2vFGxEBmXNvX5U8PE4-lBkxcti8Ry8
-    short-id: 714369014b7679bf
-  servername: store.steampowered.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,7 +44,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - myhuo
   - 🇫🇮 芬兰 (Finland) 02 - myhuo
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
-  - 🇫🇮 芬兰 (Finland) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,6 +52,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - myhuo
   - 🇫🇮 芬兰 (Finland) 02 - myhuo
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
-  - 🇫🇮 芬兰 (Finland) 04 - myhuo
 rules:
 - MATCH,PROXIES

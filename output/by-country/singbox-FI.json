@@ -18,6 +18,27 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - myhuo",
+      "server": "151.241.137.132",
+      "server_port": 443,
+      "uuid": "5786d86f-7731-4174-b1a3-84297e54b015",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "finland.ali-bard.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
@@ -26,56 +47,12 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
           "short_id": "d368b94e275ab080"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
-      "server": "94.143.231.146",
-      "server_port": 443,
-      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
-      "tls": {
-        "enabled": true,
-        "server_name": "sub.merky.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/merky-connect/de6/",
-        "headers": {
-          "Host": "sub.merky.top"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - myhuo",
-      "server": "fi1.rovilo.ir",
-      "server_port": 443,
-      "uuid": "452f869f-7720-47c3-a175-b6673e31d3e8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "store.steampowered.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "i_cD6qpNHvE-j2vFGxEBmXNvX5U8PE4-lBkxcti8Ry8",
-          "short_id": "714369014b7679bf"
         }
       }
     },
@@ -86,8 +63,7 @@
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - myhuo",
         "🇫🇮 芬兰 (Finland) 02 - myhuo",
-        "🇫🇮 芬兰 (Finland) 03 - myhuo",
-        "🇫🇮 芬兰 (Finland) 04 - myhuo"
+        "🇫🇮 芬兰 (Finland) 03 - myhuo"
       ]
     },
     {
@@ -96,8 +72,7 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - myhuo",
         "🇫🇮 芬兰 (Finland) 02 - myhuo",
-        "🇫🇮 芬兰 (Finland) 03 - myhuo",
-        "🇫🇮 芬兰 (Finland) 04 - myhuo"
+        "🇫🇮 芬兰 (Finland) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

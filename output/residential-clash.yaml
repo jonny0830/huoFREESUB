@@ -4,25 +4,72 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
-  server: 324d64f1-tmm5c0-tnsc3a-1f0gu.hk3.hyhuawei.com
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - myhuo
+  server: 162.159.0.53
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
+  server: e86088da-tmm5c0-tqbai3-1hpo0.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
+  sni: e86088da-tmm5c0-tqbai3-1hpo0.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo
+  server: ba139335-tmm5c0-tnsc3a-1f0gu.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
   password: 3085fcf8-a69c-11ec-bd7c-f23c913c8d2b
-  sni: 324d64f1-tmm5c0-tnsc3a-1f0gu.hk3.hyhuawei.com
+  sni: ba139335-tmm5c0-tnsc3a-1f0gu.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 04 (家宽) - myhuo
+  server: s3.huhiuh.space
+  port: 18642
+  udp: true
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo
+  server: argo6.5671234.xyz
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
+  tls: true
+  servername: argo6.5671234.xyz
   skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /e8e2cecb6188f7fb
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo
+  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo
+  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo
 rules:
 - MATCH,PROXIES
