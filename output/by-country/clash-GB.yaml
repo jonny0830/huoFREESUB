@@ -5,28 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - myhuo
-  server: 51.77.225.200
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
-- name: 🇬🇧 英国 (United Kingdom) 02 - myhuo
-  server: 149.102.132.184
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-- name: 🇬🇧 英国 (United Kingdom) 03 - myhuo
-  server: 149.102.132.184
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-- name: 🇬🇧 英国 (United Kingdom) 04 - myhuo
-  server: 66.90.104.43
+  server: 66.90.104.42
   port: 2083
   udp: true
   type: vless
@@ -34,35 +13,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇬🇧 英国 (United Kingdom) 05 - myhuo
-  server: 149.102.149.207
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-- name: 🇬🇧 英国 (United Kingdom) 06 - myhuo
-  server: 78.129.252.54
-  port: 17092
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: 7c55c080c3949e03f1a6a559a9851c68
-- name: 🇬🇧 英国 (United Kingdom) 07 - myhuo
-  server: 141.98.101.181
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 08 - myhuo
-  server: 146.70.23.32
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 09 - myhuo
+- name: 🇬🇧 英国 (United Kingdom) 02 - myhuo
   server: 66.90.105.211
   port: 2083
   udp: true
@@ -71,14 +22,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇬🇧 英国 (United Kingdom) 10 - myhuo
-  server: 146.70.61.37
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 11 - myhuo
+- name: 🇬🇧 英国 (United Kingdom) 03 - myhuo
   server: 186.190.211.147
   port: 22324
   udp: true
@@ -86,7 +30,55 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇬🇧 英国 (United Kingdom) 12 - myhuo
+- name: 🇬🇧 英国 (United Kingdom) 04 - myhuo
+  server: 149.102.149.207
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+- name: 🇬🇧 英国 (United Kingdom) 05 - myhuo
+  server: 51.77.225.200
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
+- name: 🇬🇧 英国 (United Kingdom) 06 - myhuo
+  server: 149.102.132.184
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+- name: 🇬🇧 英国 (United Kingdom) 07 - myhuo
+  server: 149.102.149.207
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+- name: 🇬🇧 英国 (United Kingdom) 08 - myhuo
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vmess
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 09 - myhuo
+  server: 94.156.250.148
+  port: 7001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇬🇧 英国 (United Kingdom) 10 - myhuo
   server: 87.192.47.10
   port: 52006
   udp: true
@@ -97,7 +89,7 @@ proxies:
   servername: grok.setlisting.ru
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 13 - myhuo
+- name: 🇬🇧 英国 (United Kingdom) 11 - myhuo
   server: 46.250.250.149
   port: 2053
   udp: true
@@ -109,7 +101,53 @@ proxies:
     short-id: 9922313fffed1c63
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 12 - myhuo
+  server: shop.amz-26.info
+  port: 2052
+  udp: true
+  type: vless
+  uuid: e7cea628-417d-1eb5-b742-14993bf0aaba
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /
+    headers:
+      Host: microsoftstore-turkey.ip-venzo.com
+- name: 🇬🇧 英国 (United Kingdom) 13 - myhuo
+  server: 186.190.211.188
+  port: 443
+  udp: true
+  type: vless
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  tls: true
+  servername: 186.190.211.188
+  skip-cert-verify: true
+  client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 14 - myhuo
+  server: 46.250.240.80
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
+  tls: true
+  reality-opts:
+    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
+    short-id: 4cc9dc65f7770115
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 15 - myhuo
+  server: staging.lastilhame.monster
+  port: 443
+  udp: true
+  type: vless
+  uuid: aded66f1-de12-4c3c-af9e-a21d6e7d9c96
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
+    short-id: 2a80364e93d9
+  servername: www.foxsports.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 16 - myhuo
   server: server.slavkiti.monster
   port: 443
   udp: true
@@ -122,20 +160,13 @@ proxies:
     short-id: 8325360e8bd2
   servername: www.foxsports.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 15 - myhuo
-  server: 199.232.78.159
-  port: 443
+- name: 🇬🇧 英国 (United Kingdom) 17 - myhuo
+  server: 78.129.252.54
+  port: 17092
   udp: true
-  type: vless
-  uuid: 36e8e5e8-8010-45a1-9fb7-9fa21f7e4c66
-  tls: true
-  servername: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pannn1.global.ssl.fastly.net
+  type: ss
+  cipher: aes-128-gcm
+  password: 7c55c080c3949e03f1a6a559a9851c68
 proxy-groups:
 - name: PROXIES
   type: select
@@ -156,6 +187,8 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 13 - myhuo
   - 🇬🇧 英国 (United Kingdom) 14 - myhuo
   - 🇬🇧 英国 (United Kingdom) 15 - myhuo
+  - 🇬🇧 英国 (United Kingdom) 16 - myhuo
+  - 🇬🇧 英国 (United Kingdom) 17 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -176,5 +209,7 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 13 - myhuo
   - 🇬🇧 英国 (United Kingdom) 14 - myhuo
   - 🇬🇧 英国 (United Kingdom) 15 - myhuo
+  - 🇬🇧 英国 (United Kingdom) 16 - myhuo
+  - 🇬🇧 英国 (United Kingdom) 17 - myhuo
 rules:
 - MATCH,PROXIES

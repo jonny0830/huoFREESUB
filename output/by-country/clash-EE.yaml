@@ -5,16 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
-  server: 94.183.170.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
-  server: 89.125.13.202
+  server: 163.245.52.91
   port: 443
   udp: true
   type: vless
@@ -25,7 +16,15 @@ proxies:
     public-key: g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ
     short-id: ad6e08b22389abd2
   servername: d3-ee1.cloud-cdn.xyz
-  client-fingerprint: chrome
+  client-fingerprint: edge
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
+  server: 109.206.241.10
+  port: 449
+  udp: true
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: 109.206.241.10
+  skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo
   server: 94.183.170.135
   port: 8443
@@ -35,9 +34,19 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo
-  server: 77.72.85.247
+  server: 94.183.170.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo
+  server: 194.26.141.148
   port: 8443
   udp: true
   type: vless
@@ -45,11 +54,24 @@ proxies:
   tls: true
   servername: fdghyt.com
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo
+  server: 143.246.41.23
+  port: 25895
+  udp: true
+  type: vless
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  tls: true
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
+  servername: www.samsung.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,6 +81,8 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,5 +92,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo
 rules:
 - MATCH,PROXIES
