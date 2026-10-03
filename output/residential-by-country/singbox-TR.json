@@ -5,32 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - myhuo",
-      "server": "trackydev.site",
-      "server_port": 443,
-      "uuid": "92d67828-4c56-4795-af5a-f387651380dc",
-      "tls": {
-        "enabled": true,
-        "server_name": "trackydev.site",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
-      }
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo",
+      "server": "178.83.46.216",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
