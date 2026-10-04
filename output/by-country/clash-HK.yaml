@@ -10,49 +10,32 @@ proxies:
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 5koepr9k4rjabc1z
+  password: n7vuxdsmlqnrbxqe
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - myhuo
-  server: 24f1571a-tmm5c0-tug19l-1go3q.hk3.hyhuawei.com
-  port: 443
+  server: 47.240.80.220
+  port: 2052
   udp: true
-  type: hysteria2
-  password: 19dd9c70-e4a5-11ed-8347-f23c9164ca5d
-  sni: 24f1571a-tmm5c0-tug19l-1go3q.hk3.hyhuawei.com
+  type: trojan
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  sni: 47.240.80.220
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - myhuo
-  server: 152.175.4.131
-  port: 36699
-  udp: true
-  type: vless
-  uuid: 852e7dda-15f5-4e76-b01b-ba5267c64cad
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 2EW5xh5d-W3ZB5t2PngbNtZfewW5Hmg9an5HuuV1zhg
-    short-id: e848fe0b
-  servername: swdist.apple.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
-  server: 3226c07a-tmm5c0-u093mf-1mina.nw4.hyhuawei.com
+  server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
-  password: 367e233c-2f54-11ee-9ae1-f23c9164ca5d
-  sni: 3226c07a-tmm5c0-u093mf-1mina.nw4.hyhuawei.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
-  server: 34.96.188.243
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
+  server: 971746e8-tmm5c0-trpvht-1ey07.nw4.hyhuawei.com
   port: 443
   udp: true
-  type: vless
-  uuid: 75d38591-267e-4d89-98bc-164f25b50880
-  tls: true
-  reality-opts:
-    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
-    short-id: 64b3f192fc0669e1
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
+  type: hysteria2
+  password: 203d1d64-3313-11ed-bb74-f23c9164ca5d
+  sni: 971746e8-tmm5c0-trpvht-1ey07.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
   server: 202.146.222.89
   port: 443
   udp: true
@@ -60,7 +43,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: t.me
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
   server: jumpernode.site
   port: 443
   udp: true
@@ -73,6 +56,14 @@ proxies:
     short-id: 6d962e8d8a0dce
   servername: p-nt-www-amazon-com-kalias.amazon.com
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
+  server: eadd8612-tmm5c0-u2e9xs-2b2n.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: fcd39788-ca23-11ed-86e2-f23c913c8d2b
+  sni: eadd8612-tmm5c0-u2e9xs-2b2n.hk3.hyhuawei.com
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
   server: strong-haddock.rooster465.autos
   port: 443
@@ -80,16 +71,8 @@ proxies:
   type: trojan
   password: UX82473651
   sni: strong-haddock.rooster465.autos
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2üá®üá≥
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
   server: mz.hkychina.com
   port: 8443
   udp: true
@@ -97,43 +80,7 @@ proxies:
   password: HysTeria2026!Proxy
   sni: mz.hkychina.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - myhuo
-  server: goldcnmltyljgfwgov.vip52.wogcnmnnagfwgov.com
-  port: 11252
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - myhuo
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - myhuo
-  server: 2.27.109.179
-  port: 45464
-  udp: true
-  type: trojan
-  password: XuMweB2PWs
-  sni: 2.27.109.179.sslip.io
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - myhuo
-  server: 34.92.16.7
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
-  tls: true
-  reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-    short-id: 56d4e7ae4f86fa39
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - myhuo
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
   server: hk2.xiaoliyu.cyou
   port: 4433
   udp: true
@@ -141,20 +88,15 @@ proxies:
   password: 19f72087-4591-4d72-930b-2697078ec2be
   sni: hk2.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 16 - myhuo
-  server: direct-hk-mixed-03.mix.inetsnode.de
-  port: 37799
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - myhuo
+  server: 202.146.222.29
+  port: 443
   udp: true
-  type: vless
-  uuid: 852e7dda-15f5-4e76-b01b-ba5267c64cad
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 2EW5xh5d-W3ZB5t2PngbNtZfewW5Hmg9an5HuuV1zhg
-    short-id: e848fe0b
-  servername: swdist.apple.com
-  client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 17 - myhuo
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: "https://t.me/wangcai2ð\x9F\x87¨ð\x9F\x87³"
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - myhuo
   server: 194.99.79.26
   port: 443
   udp: true
@@ -168,14 +110,8 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-- name: 🇭🇰 中国香港 (Hong Kong) 18 - myhuo
-  server: ihk135.zxom.eu.org
-  port: 20016
-  udp: true
-  type: trojan
-  password: 62ae18560ab740e0
-  sni: ihk135.zxom.eu.org
-  skip-cert-verify: true
+    headers:
+      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -193,12 +129,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 11 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 12 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 13 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 14 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 15 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 16 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 17 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 18 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -216,11 +146,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 11 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 12 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 13 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 14 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 15 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 16 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 17 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 18 - myhuo
 rules:
 - MATCH,PROXIES

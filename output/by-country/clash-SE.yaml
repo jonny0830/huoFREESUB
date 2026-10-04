@@ -5,6 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - myhuo
+  server: 172.234.97.206
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 9cdcec15-2c73-40d5-b50f-d00381fddd26
+  tls: true
+  servername: stsr.hospitaldt.ir
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
+  server: swed4.o4ka-internet.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8f6e49e6-7f03-4f10-9da9-1716158d80ed
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
+    short-id: 5629431325884ff0
+  servername: swed4.o4ka-internet.com
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
   server: 132.243.231.4
   port: 443
   udp: true
@@ -17,34 +42,6 @@ proxies:
     short-id: 5efa80b939612291
   servername: d3-se1.cloud-cdn.xyz
   client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
-  server: 94.143.231.146
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  tls: true
-  servername: sub.merky.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
-  server: swed4.o4ka-internet.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8f6e49e6-7f03-4f10-9da9-1716158d80ed
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
-    short-id: 5629431325884ff0
-  servername: swed4.o4ka-internet.com
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select

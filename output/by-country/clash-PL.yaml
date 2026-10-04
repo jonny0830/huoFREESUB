@@ -5,13 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - myhuo
-  server: 222.167.245.240
-  port: 28015
+  server: 50.7.249.155
+  port: 443
   udp: true
-  type: hysteria2
-  password: e19b5aa3-16c9-435a-8bc9-76f2f6ddff43
-  sni: api-test-udp-traffic.kaneki.cfd
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: poland-good.failspace.top
   skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 02 - myhuo
   server: cheerful-swan.rooster465.autos
   port: 443
@@ -19,41 +22,30 @@ proxies:
   type: trojan
   password: UX82473651
   sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 03 - myhuo
-  server: 83.168.95.145
+  server: 50.7.249.138
   port: 443
   udp: true
   type: vless
-  uuid: 82f37352-85e5-49bb-9edc-a80997065659
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-  servername: google.com
-  client-fingerprint: chrome
+  servername: polkadotnewone.failspace.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 04 - myhuo
-  server: pl-waw.dontblockmepls.com
-  port: 2063
+  server: 50.7.249.98
+  port: 443
   udp: true
   type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
+  servername: pol-pol-poland.failspace.top
+  skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 05 - myhuo
-  server: 144.31.49.47
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 06 - myhuo
   server: 188.114.96.19
   port: 80
   udp: true
@@ -76,7 +68,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - myhuo
   - 🇵🇱 波兰 (Poland) 04 - myhuo
   - 🇵🇱 波兰 (Poland) 05 - myhuo
-  - 🇵🇱 波兰 (Poland) 06 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,6 +78,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - myhuo
   - 🇵🇱 波兰 (Poland) 04 - myhuo
   - 🇵🇱 波兰 (Poland) 05 - myhuo
-  - 🇵🇱 波兰 (Poland) 06 - myhuo
 rules:
 - MATCH,PROXIES

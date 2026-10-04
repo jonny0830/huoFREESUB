@@ -1,0 +1,35 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🌐 其他地区 (Other) 01 - myhuo
+  server: 104.21.72.213
+  port: 443
+  udp: true
+  type: vless
+  uuid: a2c57a6c-dacb-44d1-9055-fb42d4c888a5
+  tls: true
+  servername: pew.dianawmoon.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /27729/dianahtupgd
+    headers:
+      Host: pew.dianawmoon.dpdns.org
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🌐 其他地区 (Other) 01 - myhuo
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🌐 其他地区 (Other) 01 - myhuo
+rules:
+- MATCH,PROXIES
