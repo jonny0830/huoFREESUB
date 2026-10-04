@@ -22,23 +22,15 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - myhuo",
-      "server": "uae.unixzone.us",
+      "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - myhuo",
-      "server": "144.31.49.47",
-      "server_port": 443,
-      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
-      "tls": {
-        "enabled": true,
-        "server_name": "admin.wwwinternetvideo.click",
-        "insecure": false
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
       }
     },
     {
@@ -47,8 +39,7 @@
       "outbounds": [
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 02 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 03 - myhuo"
+        "🇦🇪 阿联酋 (UAE) 02 - myhuo"
       ]
     },
     {
@@ -56,8 +47,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 02 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 03 - myhuo"
+        "🇦🇪 阿联酋 (UAE) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
