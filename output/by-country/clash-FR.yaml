@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - myhuo
-  server: 51.255.13.232
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-- name: 🇫🇷 法国 (France) 02 - myhuo
-  server: 62.210.124.146
-  port: 22000
-  udp: true
-  type: hysteria2
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 03 - myhuo
   server: 62.210.91.2
   port: 23576
   udp: true
@@ -31,28 +16,8 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   servername: fuck.rkn
-  client-fingerprint: ''
-- name: 🇫🇷 法国 (France) 04 - myhuo
-  server: 143.246.208.113
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  tls: true
-  servername: assets-fr4.pleiades.codes
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
-- name: 🇫🇷 法国 (France) 05 - myhuo
-  server: 35.181.166.40
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 06 - myhuo
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 02 - myhuo
   server: 62.210.91.10
   port: 23576
   udp: true
@@ -65,103 +30,38 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: ''
-- name: 🇫🇷 法国 (France) 07 - myhuo
-  server: 137.74.16.237
+- name: 🇫🇷 法国 (France) 03 - myhuo
+  server: 143.246.208.113
   port: 443
   udp: true
   type: vless
-  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
-  flow: xtls-rprx-vision
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
   tls: true
-  reality-opts:
-    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
-    short-id: b390e0a721d242b0
-  servername: www.icloud.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 08 - myhuo
-  server: fmwf6gbnad0a.dop16.com
-  port: 443
-  udp: true
-  type: trojan
-  password: 2e631f0c-226a-484b-9e7c-d6c9c444ef13
-  sni: fmwf6gbnad0a.dop16.com
+  servername: assets-fr4.pleiades.codes
   skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 09 - myhuo
-  server: 172.64.150.28
-  port: 443
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+- name: 🇫🇷 法国 (France) 04 - myhuo
+  server: 51.255.13.232
+  port: 8388
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 10 - myhuo
-  server: 185.114.72.31
-  port: 2053
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 11 - myhuo
-  server: 185.255.179.166
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 12 - myhuo
-  server: 62.210.7.139
-  port: 60111
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: 62.210.7.139
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 13 - myhuo
-  server: 185.220.100.168
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 14 - myhuo
-  server: 54.37.136.194
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+- name: 🇫🇷 法国 (France) 05 - myhuo
+  server: 51.77.217.70
   port: 2053
   udp: true
   type: vless
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
   tls: true
   reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-    short-id: 50ba05992b05c1c3
-  servername: www.cloudflare.com
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+    short-id: bfe58beb41f1d09f
+  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 15 - myhuo
-  server: 212.227.144.37
-  port: 8443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 16 - myhuo
+- name: 🇫🇷 法国 (France) 06 - myhuo
   server: 152.228.139.33
   port: 35108
   udp: true
@@ -176,7 +76,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-common3
-- name: 🇫🇷 法国 (France) 17 - myhuo
+- name: 🇫🇷 法国 (France) 07 - myhuo
   server: 152.228.139.33
   port: 51671
   udp: true
@@ -191,6 +91,61 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc_common3
+- name: 🇫🇷 法国 (France) 08 - myhuo
+  server: vpn-fr-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-fr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 09 - myhuo
+  server: 185.225.68.232
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 10 - myhuo
+  server: 188.114.96.3
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 11 - myhuo
+  server: 57.131.21.102
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
+  tls: true
+  servername: milan.adaspoloandco.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /RoBeRt
+    headers:
+      Host: milan.adaspoloandco.com
+- name: 🇫🇷 法国 (France) 12 - myhuo
+  server: 185.114.72.31
+  port: 2053
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
@@ -208,11 +163,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 10 - myhuo
   - 🇫🇷 法国 (France) 11 - myhuo
   - 🇫🇷 法国 (France) 12 - myhuo
-  - 🇫🇷 法国 (France) 13 - myhuo
-  - 🇫🇷 法国 (France) 14 - myhuo
-  - 🇫🇷 法国 (France) 15 - myhuo
-  - 🇫🇷 法国 (France) 16 - myhuo
-  - 🇫🇷 法国 (France) 17 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -230,10 +180,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 10 - myhuo
   - 🇫🇷 法国 (France) 11 - myhuo
   - 🇫🇷 法国 (France) 12 - myhuo
-  - 🇫🇷 法国 (France) 13 - myhuo
-  - 🇫🇷 法国 (France) 14 - myhuo
-  - 🇫🇷 法国 (France) 15 - myhuo
-  - 🇫🇷 法国 (France) 16 - myhuo
-  - 🇫🇷 法国 (France) 17 - myhuo
 rules:
 - MATCH,PROXIES

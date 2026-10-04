@@ -5,26 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - myhuo
-  server: 50.7.249.155
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: poland-good.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 02 - myhuo
-  server: cheerful-swan.rooster465.autos
+  server: 202.78.163.237
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: cheerful-swan.rooster465.autos
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03 - myhuo
-  server: 50.7.249.138
+- name: 🇵🇱 波兰 (Poland) 02 - myhuo
+  server: polkadotnewone.failspace.top
   port: 443
   udp: true
   type: vless
@@ -33,9 +22,21 @@ proxies:
   tls: true
   servername: polkadotnewone.failspace.top
   skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 03 - myhuo
+  server: pl-waw.dontblockmepls.com
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 04 - myhuo
-  server: 50.7.249.98
+  server: pol-pol-poland.failspace.top
   port: 443
   udp: true
   type: vless
@@ -46,6 +47,28 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 05 - myhuo
+  server: 70.34.255.101
+  port: 80
+  udp: true
+  type: vless
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇵🇱 波兰 (Poland) 06 - myhuo
+  server: 83.168.107.220
+  port: 443
+  udp: true
+  type: vless
+  uuid: b1813cbd-831f-4cb3-baf8-5bc0cc8298bc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: s0lbZ5BO3ctZjE8DzsXkNL0NvLl6FgLG6532NQzXigo
+    short-id: c56d4f1c
+  servername: google.com
+  client-fingerprint: safari
+- name: 🇵🇱 波兰 (Poland) 07 - myhuo
   server: 188.114.96.19
   port: 80
   udp: true
@@ -58,6 +81,17 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 08 - myhuo
+  server: 50.7.249.155
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: poland-good.failspace.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,6 +102,9 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - myhuo
   - 🇵🇱 波兰 (Poland) 04 - myhuo
   - 🇵🇱 波兰 (Poland) 05 - myhuo
+  - 🇵🇱 波兰 (Poland) 06 - myhuo
+  - 🇵🇱 波兰 (Poland) 07 - myhuo
+  - 🇵🇱 波兰 (Poland) 08 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,5 +115,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - myhuo
   - 🇵🇱 波兰 (Poland) 04 - myhuo
   - 🇵🇱 波兰 (Poland) 05 - myhuo
+  - 🇵🇱 波兰 (Poland) 06 - myhuo
+  - 🇵🇱 波兰 (Poland) 07 - myhuo
+  - 🇵🇱 波兰 (Poland) 08 - myhuo
 rules:
 - MATCH,PROXIES

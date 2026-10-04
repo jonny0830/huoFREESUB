@@ -10,30 +10,29 @@ proxies:
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: n7vuxdsmlqnrbxqe
+  password: f8asl798zconw8rx
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - myhuo
-  server: 47.240.80.220
-  port: 2052
+  server: telegram.khp25.com
+  port: 1080
   udp: true
-  type: trojan
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  sni: 47.240.80.220
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: pno0e2keji2gsfea
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - myhuo
-  server: 202.146.222.174
+  server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: https://t.me/wangcai2üáüá
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
-  server: 971746e8-tmm5c0-trpvht-1ey07.nw4.hyhuawei.com
+  server: dc5d989c-tmm5c0-tzxeoy-hns7.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 203d1d64-3313-11ed-bb74-f23c9164ca5d
-  sni: 971746e8-tmm5c0-trpvht-1ey07.nw4.hyhuawei.com
+  password: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b
+  sni: dc5d989c-tmm5c0-tzxeoy-hns7.nw4.hyhuawei.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
   server: 202.146.222.89
@@ -41,61 +40,68 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: https%3a%2f%2ft.me%2fclashv8
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
-  server: jumpernode.site
-  port: 443
-  udp: true
-  type: vless
-  uuid: 23af32ca-bea1-4a5e-bebb-04d1b1b633bc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE
-    short-id: 6d962e8d8a0dce
-  servername: p-nt-www-amazon-com-kalias.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
-  server: eadd8612-tmm5c0-u2e9xs-2b2n.hk3.hyhuawei.com
+  server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
-  password: fcd39788-ca23-11ed-86e2-f23c913c8d2b
-  sni: eadd8612-tmm5c0-u2e9xs-2b2n.hk3.hyhuawei.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
+  server: d280a266-tmm5c0-tzxeoy-hns7.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b
+  sni: d280a266-tmm5c0-tzxeoy-hns7.hk3.hyhuawei.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
-  server: strong-haddock.rooster465.autos
+  server: 185.244.208.69
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: strong-haddock.rooster465.autos
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
-  server: mz.hkychina.com
-  port: 8443
+  server: 93ucrn4i0pffuabk.v.3dns.vip
+  port: 443
   udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 93ucrn4i0pffuabk.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 93ucrn4i0pffuabk.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
-  server: hk2.xiaoliyu.cyou
-  port: 4433
+  server: ru1.xiaoliyu.cyou
+  port: 18333
   udp: true
   type: hysteria2
   password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: hk2.xiaoliyu.cyou
+  sni: ru1.xiaoliyu.cyou
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 11 - myhuo
-  server: 202.146.222.29
+  server: 34.96.188.243
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: "https://t.me/wangcai2ð\x9F\x87¨ð\x9F\x87³"
-  skip-cert-verify: true
+  type: vless
+  uuid: 75d38591-267e-4d89-98bc-164f25b50880
+  tls: true
+  reality-opts:
+    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
+    short-id: 64b3f192fc0669e1
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 12 - myhuo
   server: 194.99.79.26
   port: 443
@@ -110,8 +116,21 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-    headers:
-      Host: aksai.org
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - myhuo
+  server: mz.hkychina.com
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - myhuo
+  server: telegramx.khp25.com
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: m5nsedvdczx6x06e
 proxy-groups:
 - name: PROXIES
   type: select
@@ -129,6 +148,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 11 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 12 - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 13 - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 14 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -146,5 +167,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 11 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 12 - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 13 - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 14 - myhuo
 rules:
 - MATCH,PROXIES

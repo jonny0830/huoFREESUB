@@ -5,26 +5,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - myhuo",
-      "server": "104.21.72.213",
+      "tag": "🇦🇶 AQ 01 - myhuo",
+      "server": "2.27.26.128",
       "server_port": 443,
-      "uuid": "a2c57a6c-dacb-44d1-9055-fb42d4c888a5",
+      "uuid": "8710a337-f504-4b75-8989-224cfd803b2d",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pew.dianawmoon.dpdns.org",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "aq-1.global-cdn.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HKkU-5UanGjWdmX8E-EGulXMk1BnidkFsVveyyOlTg8",
+          "short_id": "90f9d05bf95cb335"
         }
-      },
-      "transport": {
-        "type": "httpupgrade",
-        "path": "/27729/dianahtupgd",
-        "host": "pew.dianawmoon.dpdns.org"
       }
     },
     {
@@ -32,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🇦🇶 AQ 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🇦🇶 AQ 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
