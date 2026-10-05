@@ -4,26 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇭 泰国 (Thailand) 01 - myhuo",
-      "server": "119.46.51.45",
-      "server_port": 37515,
-      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
-      "security": "auto"
+      "type": "hysteria2",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - myhuo",
+      "server": "us3.xiaoliyu.cyou",
+      "server_port": 18333,
+      "password": "19f72087-4591-4d72-930b-2697078ec2be",
+      "tls": {
+        "enabled": true,
+        "server_name": "us3.xiaoliyu.cyou",
+        "insecure": true
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - myhuo"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - myhuo"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

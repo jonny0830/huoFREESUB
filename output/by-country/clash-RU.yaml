@@ -5,27 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - myhuo
-  server: 90.156.203.62
-  port: 5112
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: VVlAff77CnAU43Aoc5j15Y
-- name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
   server: 130.49.189.158
   port: 43558
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU=
-- name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
-  server: srv-17e124.21freedom.net
-  port: 11592
+- name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
+  server: 45.12.75.242
+  port: 26424
   udp: true
-  type: hysteria2
-  password: 41edb44c8e
-  sni: srv-17e124.21freedom.net
-  skip-cert-verify: true
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 02 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 02 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 03 - myhuo
 rules:
 - MATCH,PROXIES

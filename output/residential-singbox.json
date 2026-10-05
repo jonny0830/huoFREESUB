@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
-      "server": "104.18.39.218",
+      "server": "104.18.34.14",
       "server_port": 8080,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
@@ -19,15 +19,16 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 02 (家宽) - myhuo",
-      "server": "31.77.227.6",
-      "server_port": 52006,
-      "uuid": "bc659d88-a1e0-076c-a49a-7b51b26a7a7f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "bigdick.gamegrow.ru",
-        "insecure": false
+      "tag": "🇺🇸 美国 (United States) 02 (家宽) - myhuo",
+      "server": "162.159.43.187",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
       }
     },
     {
@@ -50,13 +51,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 04 (家宽) - myhuo",
+      "server": "31.77.227.6",
+      "server_port": 52006,
+      "uuid": "bc659d88-a1e0-076c-a49a-7b51b26a7a7f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "bigdick.gamegrow.ru",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
-        "🇦🇹 奥地利 (Austria) 02 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo"
+        "🇺🇸 美国 (United States) 02 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo",
+        "🇦🇹 奥地利 (Austria) 04 (家宽) - myhuo"
       ]
     },
     {
@@ -64,8 +79,9 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
-        "🇦🇹 奥地利 (Austria) 02 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo"
+        "🇺🇸 美国 (United States) 02 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo",
+        "🇦🇹 奥地利 (Austria) 04 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
