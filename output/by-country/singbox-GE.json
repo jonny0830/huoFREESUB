@@ -4,21 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 01 - myhuo",
-      "server": "www.calmlunch.com",
+      "type": "vless",
+      "tag": "🇬🇪 格鲁吉亚 (Georgia) 01 - myhuo",
+      "server": "172.67.159.161",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "76ac91c5-ea82-4046-8ee7-2ffbb563ac94",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
+        "server_name": "geo.shkola112.site",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/api-vless",
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "geo.shkola112.site"
         }
       }
     },
@@ -27,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🇬🇪 格鲁吉亚 (Georgia) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🇬🇪 格鲁吉亚 (Georgia) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
