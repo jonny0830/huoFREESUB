@@ -26,15 +26,20 @@
     {
       "type": "vmess",
       "tag": "🇮🇳 印度 (India) 02 - myhuo",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "server": "185.67.125.90",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
       "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "aksai.org",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/linkvws",
         "headers": {
-          "Host": "152.67.8.205"
+          "Host": "aksai.org"
         }
       }
     },
