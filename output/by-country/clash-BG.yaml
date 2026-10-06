@@ -4,25 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01 - myhuo
-  server: srv-17e124.21freedom.net
-  port: 11592
+- name: 🇧🇬 保加利亚 (Bulgaria) 01 - myhuo
+  server: 213.183.63.60
+  port: 9061
   udp: true
-  type: hysteria2
-  password: 41edb44c8e
-  sni: srv-17e124.21freedom.net
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 4R3hUfZ2FHhDmNcP
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01 - myhuo
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01 - myhuo
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - myhuo
 rules:
 - MATCH,PROXIES
