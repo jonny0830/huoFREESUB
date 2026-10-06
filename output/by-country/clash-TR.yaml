@@ -5,18 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - myhuo
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
   server: 206.1.103.221
-  port: 42264
+  port: 17390
   udp: true
   type: ss
   cipher: 2022-blake3-aes-256-gcm
-  password: Rzv4KXTXvFEqeALuBgzETlujcXrzIAsrSMAevky5x8c=:hdA4n/xn83dcbzxCAxapim47QxGlbAUPQ8I1rbC2RN8=
+  password: 4zo9pQzwxsh1bMeReRoD/Ma2N3ZKvTJ6gZRhRcOGtzU=:5bsD1WmoheBbkMn4uYAa3A3ERVpjp3CRyYylrTg4sg8=
+- name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
+  server: netork.povrak.ir
+  port: 37523
+  udp: true
+  type: vmess
+  uuid: ce0bcb75-baa7-41a7-833e-eb54a8f6a08e
+  alterId: 0
+  cipher: auto
+- name: 🇹🇷 土耳其 (Turkey) 03 - myhuo
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -24,6 +38,7 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - myhuo
   - 🇹🇷 土耳其 (Turkey) 02 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -31,5 +46,6 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - myhuo
   - 🇹🇷 土耳其 (Turkey) 02 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 03 - myhuo
 rules:
 - MATCH,PROXIES
