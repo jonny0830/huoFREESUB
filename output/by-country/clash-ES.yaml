@@ -5,13 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - myhuo
-  server: 185.174.137.172
-  port: 8446
+  server: 108.181.121.226
+  port: 8388
   udp: true
-  type: hysteria2
-  password: e9dc02d400b67c727aca1620
-  sni: 185.174.137.172
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 (Spain) 02 - myhuo
   server: 140.174.184.5
   port: 8388
@@ -20,12 +19,16 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
 - name: 🇪🇸 西班牙 (Spain) 03 - myhuo
-  server: 108.181.121.226
-  port: 8388
+  server: 154.62.226.101
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
+  type: vless
+  uuid: 5b5e4cbf-2366-499a-8327-0cd9918c687d
+  flow: xtls-rprx-vision
+  tls: true
+  servername: static.surfweb.club
+  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 04 - myhuo
   server: 212.227.235.66
   port: 2053
@@ -37,7 +40,7 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 05 - myhuo
   server: 46.28.71.247
   port: 443
@@ -52,7 +55,7 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 06 - myhuo
-  server: assets-es.pleiades.codes
+  server: 193.238.154.5
   port: 443
   udp: true
   type: vless

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - myhuo
-  server: 77.74.123.99
+  server: 77.74.123.104
   port: 8443
   udp: true
   type: hysteria2
@@ -13,7 +13,7 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - myhuo
-  server: 162.249.126.37
+  server: 162.249.126.39
   port: 8443
   udp: true
   type: hysteria2
@@ -21,7 +21,7 @@ proxies:
   sni: hop-germany-september.dynuddns.com
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
-  server: 103.126.51.51
+  server: 103.126.51.49
   port: 8443
   udp: true
   type: hysteria2
@@ -29,18 +29,16 @@ proxies:
   sni: ocober-romania-new.yyuyy.com
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - myhuo
-  server: 46.28.67.55
+  server: 38.180.253.20
   port: 443
   udp: true
   type: vless
-  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+  uuid: 5b5e4cbf-2366-499a-8327-0cd9918c687d
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
-    short-id: d06d78e974491b6e
-  servername: www.cloudflare.com
-  client-fingerprint: random
+  servername: video.surfweb.club
+  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - myhuo
   server: 162.249.125.133
   port: 443
@@ -51,6 +49,13 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - myhuo
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +66,7 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 04 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 05 - myhuo
+  - 🇷🇴 罗马尼亚 (Romania) 06 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,5 +77,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 04 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 05 - myhuo
+  - 🇷🇴 罗马尼亚 (Romania) 06 - myhuo
 rules:
 - MATCH,PROXIES
