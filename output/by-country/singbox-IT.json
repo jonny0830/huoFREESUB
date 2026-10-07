@@ -13,10 +13,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 02 - myhuo",
-      "server": "57.131.48.45",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "itzvpn@321"
+      "server": "91.201.65.122",
+      "server_port": 9097,
+      "method": "aes-256-cfb",
+      "password": "Sn5B7jTqr76aCJT8"
     },
     {
       "type": "vless",
@@ -40,13 +40,22 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 04 - myhuo",
+      "server": "91.201.65.122",
+      "server_port": 9039,
+      "method": "aes-256-cfb",
+      "password": "qYEN5HX4JKeVCdEC"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇹 意大利 (Italy) 01 - myhuo",
         "🇮🇹 意大利 (Italy) 02 - myhuo",
-        "🇮🇹 意大利 (Italy) 03 - myhuo"
+        "🇮🇹 意大利 (Italy) 03 - myhuo",
+        "🇮🇹 意大利 (Italy) 04 - myhuo"
       ]
     },
     {
@@ -55,7 +64,8 @@
       "outbounds": [
         "🇮🇹 意大利 (Italy) 01 - myhuo",
         "🇮🇹 意大利 (Italy) 02 - myhuo",
-        "🇮🇹 意大利 (Italy) 03 - myhuo"
+        "🇮🇹 意大利 (Italy) 03 - myhuo",
+        "🇮🇹 意大利 (Italy) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
