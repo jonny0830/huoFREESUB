@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 亚美尼亚 (Armenia) 01 - myhuo
-  server: us3.xiaoliyu.cyou
-  port: 18333
+- name: 🇸🇨 塞舌尔 (Seychelles) 01 - myhuo
+  server: 45.205.27.78
+  port: 10443
   udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: us3.xiaoliyu.cyou
+  type: trojan
+  password: f980c10a-6c40-4c3e-8879-ef6d9ba6d453
+  sni: 45.205.27.78
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 亚美尼亚 (Armenia) 01 - myhuo
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 亚美尼亚 (Armenia) 01 - myhuo
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - myhuo
 rules:
 - MATCH,PROXIES
