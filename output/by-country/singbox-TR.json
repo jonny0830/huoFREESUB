@@ -4,34 +4,73 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - myhuo",
-      "server": "104.21.48.18",
-      "server_port": 2053,
-      "password": "e309e031-991e-4656-9934-44d10deb8fd8",
+      "server": "206.1.100.83",
+      "server_port": 25178,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "ADzlhA3ndouUCY3JbLddR/jwgYY7IDGc1T+5DuCix9Y=:KyFe2akGo5hcrswbMkD2+BM52si+D7lzyccZFTd4xaU="
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - myhuo",
+      "server": "85.192.48.142",
+      "server_port": 443,
+      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nimm.mpd.cc.cd",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/0962",
-        "headers": {
-          "Host": "nimm.mpd.cc.cd"
+        "server_name": "nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "short_id": "db04ce8bdb8900f1"
         }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - myhuo",
-      "server": "162.249.126.39",
-      "server_port": 9443,
-      "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - myhuo",
+      "server": "78.135.73.47",
+      "server_port": 443,
+      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "hop-germany-september.dynuddns.com",
-        "insecure": false
+        "server_name": "www.datadoghq.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
+          "short_id": "f46cd3ea3d1eb72d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - myhuo",
+      "server": "151.241.226.201",
+      "server_port": 2053,
+      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
+          "short_id": "9e419c0759b54d6f"
+        }
       }
     },
     {
@@ -40,7 +79,9 @@
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 02 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 02 - myhuo",
+        "🇹🇷 土耳其 (Turkey) 03 - myhuo",
+        "🇹🇷 土耳其 (Turkey) 04 - myhuo"
       ]
     },
     {
@@ -48,7 +89,9 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 02 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 02 - myhuo",
+        "🇹🇷 土耳其 (Turkey) 03 - myhuo",
+        "🇹🇷 土耳其 (Turkey) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

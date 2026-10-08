@@ -5,7 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 越南 (Vietnam) 01 - myhuo
-  server: 103.30.76.65
+  server: 150.95.109.109
+  port: 2086
+  udp: true
+  type: vless
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+- name: 🇻🇳 越南 (Vietnam) 02 - myhuo
+  server: 103.30.76.197
   port: 44988
   udp: true
   type: vless
@@ -23,11 +29,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇻🇳 越南 (Vietnam) 01 - myhuo
+  - 🇻🇳 越南 (Vietnam) 02 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 (Vietnam) 01 - myhuo
+  - 🇻🇳 越南 (Vietnam) 02 - myhuo
 rules:
 - MATCH,PROXIES

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - myhuo
-  server: 3.253.106.233
+  server: loved-shark.rooster465.autos
   port: 443
   udp: true
   type: trojan
@@ -13,7 +13,7 @@ proxies:
   sni: loved-shark.rooster465.autos
   skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - myhuo
-  server: 3.255.76.207
+  server: ie.tronsg.com
   port: 443
   udp: true
   type: trojan
@@ -21,13 +21,26 @@ proxies:
   sni: ie.tronsg.com
   skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 03 - myhuo
-  server: sacred-anemone.rooster465.autos
+  server: 34.242.77.118
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: sacred-anemone.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
+- name: 🇮🇪 爱尔兰 (Ireland) 04 - myhuo
+  server: 198.55.102.59
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 7f86f371-5a85-48be-babc-7af1ae7ffb75
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 9gYnZLxZAPxIKzu9e-cOLBpbCn9p9og9gBodOCh5HB8
+    short-id: ce6767c3f1
+  servername: vk.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +49,7 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01 - myhuo
   - 🇮🇪 爱尔兰 (Ireland) 02 - myhuo
   - 🇮🇪 爱尔兰 (Ireland) 03 - myhuo
+  - 🇮🇪 爱尔兰 (Ireland) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +58,6 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01 - myhuo
   - 🇮🇪 爱尔兰 (Ireland) 02 - myhuo
   - 🇮🇪 爱尔兰 (Ireland) 03 - myhuo
+  - 🇮🇪 爱尔兰 (Ireland) 04 - myhuo
 rules:
 - MATCH,PROXIES
