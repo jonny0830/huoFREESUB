@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - myhuo
-  server: 178.83.46.91
+  server: 168.222.43.200
   port: 2053
   udp: true
   type: vless
@@ -21,22 +21,7 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: safari
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
-  server: sbgfgov.vip24.wogacnmnagfwgov.com
-  port: 11224
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - myhuo
-  server: p141.panda001.net
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - myhuo
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo
   server: 42.200.173.5
   port: 443
   udp: true
@@ -48,7 +33,22 @@ proxies:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
     short-id: 1a
   servername: s3.ap-east-1.amazonaws.com
-  client-fingerprint: random
+  client-fingerprint: ios
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - myhuo
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo
+  server: sbgfgov.vip23.wogacnmnagfwgov.com
+  port: 11223
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,9 +56,9 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo
   - 🇰🇷 韩国 (South Korea) 04 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,8 +66,8 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo
   - 🇰🇷 韩国 (South Korea) 04 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo
 rules:
 - MATCH,PROXIES

@@ -5,41 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - myhuo
-  server: 91.196.32.163
-  port: 443
+  server: 194.87.68.140
+  port: 50660
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+- name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
+  server: 46.17.41.166
+  port: 50660
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
+- name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
+  server: srv-17e124.21freedom.net
+  port: 11592
   udp: true
   type: hysteria2
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: germany3.h2corp.local
+  password: 41edb44c8e
+  sni: srv-17e124.21freedom.net
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
+- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   server: 194.38.11.86
   port: 65443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
-  server: 103.88.243.142
-  port: 11592
-  udp: true
-  type: hysteria2
-  password: 41edb44c8e
-  sni: srv-17e124.21freedom.net
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
-  server: du-rov.secureservice.top
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: random
 - name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
   server: 81.177.215.175
   port: 443
@@ -52,8 +45,34 @@ proxies:
     public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
     short-id: 9e4eced6e98ed4d4
   servername: github.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
+  server: 5.42.99.64
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: random
+- name: 🇷🇺 俄罗斯 (Russia) 07 - myhuo
+  server: 5.42.99.64
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: random
+- name: 🇷🇺 俄罗斯 (Russia) 08 - myhuo
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -65,6 +84,19 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 09 - myhuo
+  server: du-rov.secureservice.top
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -76,6 +108,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 05 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 06 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 07 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 08 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 09 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,5 +122,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 05 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 06 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 07 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 08 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 09 - myhuo
 rules:
 - MATCH,PROXIES

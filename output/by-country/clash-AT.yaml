@@ -19,21 +19,6 @@ proxies:
   password: Hc9_NX924RE_Mn948rgrwiub_m93V84nll
   sni: keyhop-voxility-at.dynuddns.com
   skip-cert-verify: false
-- name: 🇦🇹 奥地利 (Austria) 03 - myhuo
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: 698b212d-ca12-4794-8256-252a6e1b4533
-  tls: true
-  servername: w2p6.vpnpolar.online
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /beeline
-    headers:
-      Host: w2p6.vpnpolar.online
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,7 +26,6 @@ proxy-groups:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01 - myhuo
   - 🇦🇹 奥地利 (Austria) 02 - myhuo
-  - 🇦🇹 奥地利 (Austria) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,6 +33,5 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 (Austria) 01 - myhuo
   - 🇦🇹 奥地利 (Austria) 02 - myhuo
-  - 🇦🇹 奥地利 (Austria) 03 - myhuo
 rules:
 - MATCH,PROXIES

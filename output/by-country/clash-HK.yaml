@@ -5,30 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - myhuo
-  server: dog-hk.kunlun01dns.com
-  port: 21019
+  server: 46.17.42.141
+  port: 50660
   udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - myhuo
-  server: 202.146.222.174
-  port: 443
+  server: 46.17.45.31
+  port: 50660
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - myhuo
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%253a%252f%252ft.me%252fclashv8%25f0%259f%2587%25a8%25f0%259f%2587%25b3
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
   server: 43.161.230.103
   port: 8443
   udp: true
@@ -36,7 +26,44 @@ proxies:
   password: HysTeria2026!Proxy
   sni: mz.hkychina.com
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/oneclickvpnkeys
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.29
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
+  server: 111.243.83.19
+  port: 32134
+  udp: true
+  type: vless
+  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
+    short-id: 6c6c7c97
+  servername: buylite.music.apple.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
   server: jumpernode.site
   port: 443
   udp: true
@@ -49,27 +76,15 @@ proxies:
     short-id: 6d962e8d8a0dce
   servername: p-nt-www-amazon-com-kalias.amazon.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
-  server: 202.146.222.29
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
+  server: goldcnmltyljgfwgov.vip52.wogcnmnnagfwgov.com
+  port: 11252
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2рҹүёрҹүі
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
-  server: 47.238.210.5
-  port: 13779
-  udp: true
-  type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  tls: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -85,20 +100,15 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
-  server: 3696b38bsg.murphyweb.sbs
-  port: 32134
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - myhuo
+  server: 2.27.109.179
+  port: 45464
   udp: true
-  type: vless
-  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
-    short-id: 6c6c7c97
-  servername: buylite.music.apple.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
+  type: trojan
+  password: XuMweB2PWs
+  sni: 2.27.109.179.sslip.io
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - myhuo
   server: hk2.998998.best
   port: 443
   udp: true
@@ -114,6 +124,24 @@ proxies:
     path: /asivewritten
     headers:
       Host: server15.9966338.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - myhuo
+  server: nas.aizhzo.com
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - myhuo
+  server: silversbgfgov.vip26.wogbcnmnagfwgov.com
+  port: 11226
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -129,6 +157,10 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 11 - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 12 - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 13 - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 14 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -144,5 +176,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 11 - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 12 - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 13 - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 14 - myhuo
 rules:
 - MATCH,PROXIES

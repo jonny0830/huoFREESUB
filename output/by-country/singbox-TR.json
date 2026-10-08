@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - myhuo",
-      "server": "206.1.100.83",
-      "server_port": 25178,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "ADzlhA3ndouUCY3JbLddR/jwgYY7IDGc1T+5DuCix9Y=:KyFe2akGo5hcrswbMkD2+BM52si+D7lzyccZFTd4xaU="
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - myhuo",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - myhuo",
       "server": "85.192.48.142",
       "server_port": 443,
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
@@ -33,8 +25,36 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - myhuo",
+      "server": "206.1.103.150",
+      "server_port": 64035,
+      "uuid": "beb22b15-2c6f-4bc4-b4ef-309b5a797a57",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - myhuo",
+      "server": "206.1.103.150",
+      "server_port": 62396,
+      "uuid": "beb22b15-2c6f-4bc4-b4ef-309b5a797a57",
+      "security": "auto"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - myhuo",
+      "server": "162.249.126.39",
+      "server_port": 9443,
+      "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
+      "tls": {
+        "enabled": true,
+        "server_name": "hop-germany-september.dynuddns.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - myhuo",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -44,7 +64,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -55,7 +75,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - myhuo",
+      "tag": "🇹🇷 土耳其 (Turkey) 06 - myhuo",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -64,7 +84,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -74,6 +94,14 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 (Turkey) 07 - myhuo",
+      "server": "206.1.100.83",
+      "server_port": 25178,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "ADzlhA3ndouUCY3JbLddR/jwgYY7IDGc1T+5DuCix9Y=:KyFe2akGo5hcrswbMkD2+BM52si+D7lzyccZFTd4xaU="
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -81,7 +109,10 @@
         "🇹🇷 土耳其 (Turkey) 01 - myhuo",
         "🇹🇷 土耳其 (Turkey) 02 - myhuo",
         "🇹🇷 土耳其 (Turkey) 03 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 04 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 04 - myhuo",
+        "🇹🇷 土耳其 (Turkey) 05 - myhuo",
+        "🇹🇷 土耳其 (Turkey) 06 - myhuo",
+        "🇹🇷 土耳其 (Turkey) 07 - myhuo"
       ]
     },
     {
@@ -91,7 +122,10 @@
         "🇹🇷 土耳其 (Turkey) 01 - myhuo",
         "🇹🇷 土耳其 (Turkey) 02 - myhuo",
         "🇹🇷 土耳其 (Turkey) 03 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 04 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 04 - myhuo",
+        "🇹🇷 土耳其 (Turkey) 05 - myhuo",
+        "🇹🇷 土耳其 (Turkey) 06 - myhuo",
+        "🇹🇷 土耳其 (Turkey) 07 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

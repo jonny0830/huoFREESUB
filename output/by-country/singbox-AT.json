@@ -24,39 +24,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 03 - myhuo",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "uuid": "698b212d-ca12-4794-8256-252a6e1b4533",
-      "tls": {
-        "enabled": true,
-        "server_name": "w2p6.vpnpolar.online",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/beeline",
-        "headers": {
-          "Host": "w2p6.vpnpolar.online"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - myhuo",
-        "🇦🇹 奥地利 (Austria) 02 - myhuo",
-        "🇦🇹 奥地利 (Austria) 03 - myhuo"
+        "🇦🇹 奥地利 (Austria) 02 - myhuo"
       ]
     },
     {
@@ -64,8 +37,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - myhuo",
-        "🇦🇹 奥地利 (Austria) 02 - myhuo",
-        "🇦🇹 奥地利 (Austria) 03 - myhuo"
+        "🇦🇹 奥地利 (Austria) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
