@@ -5,22 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo",
-      "server": "199.189.254.16",
-      "server_port": 443,
-      "uuid": "5b5e4cbf-2366-499a-8327-0cd9918c687d",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇮🇶 IQ 01 - myhuo",
+      "server": "45.130.125.207",
+      "server_port": 8443,
+      "uuid": "31aa0950-eb19-45ff-94a2-af416deb3b90",
       "tls": {
         "enabled": true,
-        "server_name": "panel.surfweb.club",
+        "server_name": "SquarE-saLaD-EbDe.ZDFGVcCfgUUYgGG.wOrKeRS.DEV",
         "insecure": false,
         "alpn": [
-          "h2",
           "http/1.1"
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiZm5INktPV0lGcHI1NjNSOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
+        "headers": {
+          "Host": "square-salad-ebde.zdfgvccfguuyggg.workers.dev"
         }
       }
     },
@@ -29,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo"
+        "🇮🇶 IQ 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo"
+        "🇮🇶 IQ 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

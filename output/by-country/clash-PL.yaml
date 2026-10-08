@@ -5,27 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - myhuo
-  server: 64.176.73.20
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5b5e4cbf-2366-499a-8327-0cd9918c687d
-  flow: xtls-rprx-vision
-  tls: true
-  servername: storage.surfweb.club
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 02 - myhuo
-  server: 81.90.20.200
-  port: 443
-  udp: true
-  type: vless
-  uuid: 51c14658-8873-4454-9383-c41fc80bde4b
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl.pupoe.sbs
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03 - myhuo
   server: 70.34.255.101
   port: 80
   udp: true
@@ -34,15 +13,24 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇵🇱 波兰 (Poland) 04 - myhuo
-  server: 202.78.163.237
+- name: 🇵🇱 波兰 (Poland) 02 - myhuo
+  server: 70.34.252.154
+  port: 80
+  udp: true
+  type: vless
+  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇵🇱 波兰 (Poland) 03 - myhuo
+  server: 45.192.12.93
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 05 - myhuo
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 04 - myhuo
   server: 177.1.192.74
   port: 443
   udp: true
@@ -54,32 +42,15 @@ proxies:
     public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
     short-id: 770618b6
   servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 06 - myhuo
-  server: 144.31.49.47
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 07 - myhuo
-  server: 70.34.252.154
-  port: 80
-  udp: true
-  type: vless
-  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇵🇱 波兰 (Poland) 08 - myhuo
-  server: 92.118.150.146
+  client-fingerprint: randomized
+- name: 🇵🇱 波兰 (Poland) 05 - myhuo
+  server: 202.78.163.237
   port: 443
   udp: true
   type: trojan
-  password: Trojan@82164024
-  sni: pl.tronsg.com
-  skip-cert-verify: false
+  password: UX82473651
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -90,9 +61,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - myhuo
   - 🇵🇱 波兰 (Poland) 04 - myhuo
   - 🇵🇱 波兰 (Poland) 05 - myhuo
-  - 🇵🇱 波兰 (Poland) 06 - myhuo
-  - 🇵🇱 波兰 (Poland) 07 - myhuo
-  - 🇵🇱 波兰 (Poland) 08 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -103,8 +71,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - myhuo
   - 🇵🇱 波兰 (Poland) 04 - myhuo
   - 🇵🇱 波兰 (Poland) 05 - myhuo
-  - 🇵🇱 波兰 (Poland) 06 - myhuo
-  - 🇵🇱 波兰 (Poland) 07 - myhuo
-  - 🇵🇱 波兰 (Poland) 08 - myhuo
 rules:
 - MATCH,PROXIES

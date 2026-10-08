@@ -5,27 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - myhuo
-  server: 194.38.11.86
-  port: 65443
+  server: 172.67.203.158
+  port: 443
+  udp: true
+  type: vless
+  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
+  tls: true
+  servername: 12YGbaE0K3gN0z0f.mEhrsHADHaDdadI8.WorkerS.DEv
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/YCNmDFbqMu7cgTzgsfEWGtBD8kR
+    headers:
+      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
+  server: 46.17.41.166
+  port: 20880
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
+- name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
   server: 130.49.189.158
   port: 43558
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8=
-- name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
-  server: srv-17e124.21freedom.net
-  port: 11592
-  udp: true
-  type: hysteria2
-  password: 41edb44c8e
-  sni: srv-17e124.21freedom.net
-  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   server: 5.42.99.64
   port: 8443
@@ -40,12 +47,17 @@ proxies:
   servername: du-rov.secureservice.top
   client-fingerprint: random
 - name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
-  server: 90.156.203.62
-  port: 5112
+  server: 45.12.75.242
+  port: 26424
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: VVlAff77CnAU43Aoc5j15Y
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
