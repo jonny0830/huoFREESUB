@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
+  server: 95.85.242.166
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2b781b4a-5942-0018-a7f3-5a07b7b488c1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
+    short-id: 15bcc0a77c3cacdf
+  servername: ee-root.sworkingvpn.com
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -13,18 +26,32 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo
+  server: 94.183.170.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: estproxy4.lockdwn.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo
 rules:
 - MATCH,PROXIES

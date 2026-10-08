@@ -4,33 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - myhuo
-  server: 128.241.25.72
-  port: 30021
-  udp: true
-  type: vless
-  uuid: 65f26a08-9a5e-4b28-9004-f98676cc1e49
-  tls: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
-  server: 61.230.162.88
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) R50 - myhuo
+- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - myhuo
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
@@ -41,16 +15,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) R50 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) R50 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - myhuo
 rules:
 - MATCH,PROXIES

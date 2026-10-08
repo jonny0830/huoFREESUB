@@ -21,7 +21,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -42,7 +42,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -52,22 +52,13 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 04 - myhuo",
-      "server": "91.201.65.122",
-      "server_port": 9074,
-      "method": "aes-256-cfb",
-      "password": "p5wSkb2uM3pKSS3j"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇹 意大利 (Italy) 01 - myhuo",
         "🇮🇹 意大利 (Italy) 02 - myhuo",
-        "🇮🇹 意大利 (Italy) 03 - myhuo",
-        "🇮🇹 意大利 (Italy) 04 - myhuo"
+        "🇮🇹 意大利 (Italy) 03 - myhuo"
       ]
     },
     {
@@ -76,8 +67,7 @@
       "outbounds": [
         "🇮🇹 意大利 (Italy) 01 - myhuo",
         "🇮🇹 意大利 (Italy) 02 - myhuo",
-        "🇮🇹 意大利 (Italy) 03 - myhuo",
-        "🇮🇹 意大利 (Italy) 04 - myhuo"
+        "🇮🇹 意大利 (Italy) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
