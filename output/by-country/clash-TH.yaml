@@ -5,7 +5,46 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - myhuo
-  server: 104.16.10.9
+  server: 119.46.51.45
+  port: 37515
+  udp: true
+  type: vmess
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+- name: 🇹🇭 泰国 (Thailand) 02 - myhuo
+  server: v2ray.simspeedup.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ais.speedtest.net
+- name: 🇹🇭 泰国 (Thailand) 03 - myhuo
+  server: pphfree2.mvpnpvpn.de5.net
+  port: 52351
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+- name: 🇹🇭 泰国 (Thailand) 04 - myhuo
+  server: 154.21.203.106
+  port: 21033
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
+    short-id: cbd39bea0805e2
+  servername: www.kaidee.com
+  client-fingerprint: firefox
+- name: 🇹🇭 泰国 (Thailand) 05 - myhuo
+  server: 104.16.10.2
   port: 443
   udp: true
   type: vless
@@ -18,16 +57,8 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 (Thailand) 02 - myhuo
-  server: 119.46.51.45
-  port: 37515
-  udp: true
-  type: vmess
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-- name: 🇹🇭 泰国 (Thailand) 03 - myhuo
-  server: 2610sgdodo.volkvpn.com
+- name: 🇹🇭 泰国 (Thailand) 06 - myhuo
+  server: 103.30.78.13
   port: 25102
   udp: true
   type: vless
@@ -38,7 +69,15 @@ proxies:
     public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
     short-id: cbd39bea0805e2
   servername: www.kaidee.com
-  client-fingerprint: ios
+  client-fingerprint: firefox
+- name: 🇹🇭 泰国 (Thailand) 07 - myhuo
+  server: silversbgfgov.vip43.wogbcnmnagfwgov.com
+  port: 11243
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +86,10 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - myhuo
   - 🇹🇭 泰国 (Thailand) 02 - myhuo
   - 🇹🇭 泰国 (Thailand) 03 - myhuo
+  - 🇹🇭 泰国 (Thailand) 04 - myhuo
+  - 🇹🇭 泰国 (Thailand) 05 - myhuo
+  - 🇹🇭 泰国 (Thailand) 06 - myhuo
+  - 🇹🇭 泰国 (Thailand) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,5 +98,9 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - myhuo
   - 🇹🇭 泰国 (Thailand) 02 - myhuo
   - 🇹🇭 泰国 (Thailand) 03 - myhuo
+  - 🇹🇭 泰国 (Thailand) 04 - myhuo
+  - 🇹🇭 泰国 (Thailand) 05 - myhuo
+  - 🇹🇭 泰国 (Thailand) 06 - myhuo
+  - 🇹🇭 泰国 (Thailand) 07 - myhuo
 rules:
 - MATCH,PROXIES

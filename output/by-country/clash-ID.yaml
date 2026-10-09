@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: qq
 - name: 🇮🇩 印尼 (Indonesia) 02 - myhuo
   server: 103.172.197.2
   port: 29172
@@ -27,8 +27,21 @@ proxies:
   reality-opts:
     public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
   servername: aws.amazon.com
-  client-fingerprint: random
+  client-fingerprint: ios
 - name: 🇮🇩 印尼 (Indonesia) 03 - myhuo
+  server: 154.64.251.118
+  port: 46984
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XBntt77MdH3EMkPXibOAO_NSBrL_aqwiLItU98rqlHE
+    short-id: 9c3c0f8ec8b4af12
+  servername: www.lamer.com.sg
+  client-fingerprint: firefox
+- name: 🇮🇩 印尼 (Indonesia) 04 - myhuo
   server: 104.21.70.21
   port: 443
   udp: true
@@ -47,6 +60,7 @@ proxy-groups:
   - 🇮🇩 印尼 (Indonesia) 01 - myhuo
   - 🇮🇩 印尼 (Indonesia) 02 - myhuo
   - 🇮🇩 印尼 (Indonesia) 03 - myhuo
+  - 🇮🇩 印尼 (Indonesia) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,5 +69,6 @@ proxy-groups:
   - 🇮🇩 印尼 (Indonesia) 01 - myhuo
   - 🇮🇩 印尼 (Indonesia) 02 - myhuo
   - 🇮🇩 印尼 (Indonesia) 03 - myhuo
+  - 🇮🇩 印尼 (Indonesia) 04 - myhuo
 rules:
 - MATCH,PROXIES
