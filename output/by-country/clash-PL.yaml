@@ -6,30 +6,26 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - myhuo
   server: 217.30.10.44
-  port: 9042
+  port: 9052
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
+  password: jt2ekBNc9HuVtm2a
 - name: 🇵🇱 波兰 (Poland) 02 - myhuo
-  server: 217.30.10.44
-  port: 9006
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: FAdUvMJUq5vDgKEq
-- name: 🇵🇱 波兰 (Poland) 03 - myhuo
-  server: 95.85.253.241
-  port: 2087
+  server: 222.167.245.248
+  port: 8443
   udp: true
   type: vless
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  uuid: a889fba5-5472-4022-a6b4-9710157fda2f
+  flow: xtls-rprx-vision
   tls: true
-  servername: 95.85.253.241
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 04 - myhuo
-  server: 144.31.131.38
+  reality-opts:
+    public-key: 7JLSiscJksRdmmRLnbqXlBgc4nce6lTvhKp3NIlXHFg
+    short-id: a2aa
+  servername: pol2.fytpn.com
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 03 - myhuo
+  server: 2.59.253.251
   port: 443
   udp: true
   type: vless
@@ -39,15 +35,23 @@ proxies:
   reality-opts:
     public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
     short-id: db04ce8bdb8900f1
-  servername: prod.pl-node-01.security-sbrf.ru
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 05 - myhuo
+  servername: nvidia.com
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 04 - myhuo
   server: 217.60.33.215
   port: 443
   udp: true
   type: hysteria2
   password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
   sni: streambox.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 05 - myhuo
+  server: 78.17.128.153
+  port: 35076
+  udp: true
+  type: hysteria2
+  password: b4c8ee9caa74b7ba0a61
+  sni: scrap.halyvanedorogo.ru
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 06 - myhuo
   server: 45.192.12.93
@@ -58,33 +62,34 @@ proxies:
   sni: admin.wwwinternetvideo.click
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 07 - myhuo
-  server: 78.17.128.153
-  port: 35076
+  server: 2.26.225.89
+  port: 8443
   udp: true
-  type: hysteria2
-  password: b4c8ee9caa74b7ba0a61
-  sni: scrap.halyvanedorogo.ru
-  skip-cert-verify: true
+  type: vless
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  tls: true
+  servername: pl.flen-vpn.xyz
+  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 08 - myhuo
-  server: 92.118.150.146
+  server: 202.78.163.237
   port: 443
   udp: true
   type: trojan
-  password: Trojan@82164024
-  sni: pl.tronsg.com
+  password: UX82473651
+  sni: cheerful-swan.rooster465.autos
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 09 - myhuo
-  server: 177.1.192.72
+  server: 82.118.22.161
   port: 443
   udp: true
   type: vless
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
-    short-id: 46455ff0
-  servername: addons.mozilla.org
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 10 - myhuo
   server: 95.85.253.241
@@ -95,28 +100,8 @@ proxies:
   tls: true
   servername: 95.85.253.241
   skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 11 - myhuo
-  server: 177.1.192.74
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
-    short-id: 770618b6
-  servername: addons.mozilla.org
-  client-fingerprint: randomized
-- name: 🇵🇱 波兰 (Poland) 12 - myhuo
-  server: cheerful-swan.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 13 - myhuo
   server: 78.17.159.90
   port: 443
   udp: true
@@ -129,27 +114,15 @@ proxies:
     short-id: a2aa
   servername: github.com
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 14 - myhuo
-  server: 2.26.231.218
-  port: 2063
+- name: 🇵🇱 波兰 (Poland) 12 - myhuo
+  server: 222.167.245.248
+  port: 2097
   udp: true
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 15 - myhuo
-  server: 144.31.49.47
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 16 - myhuo
+  type: trojan
+  password: gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU
+  sni: pol2.fytpn.com
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 13 - myhuo
   server: 95.85.253.241
   port: 8443
   udp: true
@@ -164,37 +137,22 @@ proxies:
     path: /ws-cdn1-vless
     headers:
       Host: pl.fastmirror-labs.xyz
-- name: 🇵🇱 波兰 (Poland) 17 - myhuo
-  server: pol2.fytpn.com
-  port: 8443
+- name: 🇵🇱 波兰 (Poland) 14 - myhuo
+  server: 91.215.43.248
+  port: 443
   udp: true
   type: vless
-  uuid: a889fba5-5472-4022-a6b4-9710157fda2f
-  flow: xtls-rprx-vision
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
   tls: true
-  reality-opts:
-    public-key: 7JLSiscJksRdmmRLnbqXlBgc4nce6lTvhKp3NIlXHFg
-    short-id: a2aa
-  servername: pol2.fytpn.com
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 18 - myhuo
-  server: 95.85.253.241
-  port: 2053
-  udp: true
-  type: vless
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  tls: true
-  servername: 95.85.253.241
+  servername: my.kempekl.online
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 19 - myhuo
-  server: pol2.fytpn.com
-  port: 2097
-  udp: true
-  type: trojan
-  password: gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU
-  sni: pol2.fytpn.com
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 20 - myhuo
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
+- name: 🇵🇱 波兰 (Poland) 15 - myhuo
   server: 150.251.113.34
   port: 443
   udp: true
@@ -207,18 +165,45 @@ proxies:
     short-id: 150a627d15154cf2
   servername: www.cloudflare.com
   client-fingerprint: edge
-- name: 🇵🇱 波兰 (Poland) 21 - myhuo
-  server: 82.118.22.161
+- name: 🇵🇱 波兰 (Poland) 16 - myhuo
+  server: 144.31.49.47
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 17 - myhuo
+  server: 95.85.253.241
+  port: 2053
+  udp: true
+  type: vless
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  tls: true
+  servername: 95.85.253.241
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 18 - myhuo
+  server: 177.1.192.72
   port: 443
   udp: true
   type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
+    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
+    short-id: 46455ff0
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 19 - myhuo
+  server: 95.85.253.241
+  port: 2087
+  udp: true
+  type: vless
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  tls: true
+  servername: 95.85.253.241
+  skip-cert-verify: false
   client-fingerprint: random
 proxy-groups:
 - name: PROXIES
@@ -244,8 +229,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 17 - myhuo
   - 🇵🇱 波兰 (Poland) 18 - myhuo
   - 🇵🇱 波兰 (Poland) 19 - myhuo
-  - 🇵🇱 波兰 (Poland) 20 - myhuo
-  - 🇵🇱 波兰 (Poland) 21 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -270,7 +253,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 17 - myhuo
   - 🇵🇱 波兰 (Poland) 18 - myhuo
   - 🇵🇱 波兰 (Poland) 19 - myhuo
-  - 🇵🇱 波兰 (Poland) 20 - myhuo
-  - 🇵🇱 波兰 (Poland) 21 - myhuo
 rules:
 - MATCH,PROXIES

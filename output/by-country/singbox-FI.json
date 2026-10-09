@@ -32,8 +32,41 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 04 - myhuo",
+      "server": "144.31.212.253",
+      "server_port": 443,
+      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
+      "tls": {
+        "enabled": true,
+        "server_name": "144.31.212.253",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - myhuo",
+      "server": "151.241.137.132",
+      "server_port": 443,
+      "uuid": "5786d86f-7731-4174-b1a3-84297e54b015",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "finland.ali-bard.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - myhuo",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
@@ -42,7 +75,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -53,7 +86,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - myhuo",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - myhuo",
+      "server": "65.108.3.59",
+      "server_port": 443,
+      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.eitaa.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
+          "short_id": "90ec9bba2019"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 08 - myhuo",
       "server": "144.31.27.215",
       "server_port": 43000,
       "uuid": "47f79fc1-0646-40e8-8a58-73e85d183d5a",
@@ -74,61 +128,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - myhuo",
-      "server": "151.241.137.132",
-      "server_port": 443,
-      "uuid": "5786d86f-7731-4174-b1a3-84297e54b015",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "finland.ali-bard.online",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 07 - myhuo",
-      "server": "144.31.212.253",
-      "server_port": 443,
-      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
-      "tls": {
-        "enabled": true,
-        "server_name": "vps155-edge.kermemehori.ru",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 08 - myhuo",
-      "server": "65.108.3.59",
-      "server_port": 443,
-      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "web.eitaa.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
-          "short_id": "90ec9bba2019"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 09 - myhuo",
+      "server": "vpn.cyrionflare.xyz",
+      "server_port": 2087,
+      "uuid": "15f434b8-aaec-4306-98c9-dd8f5ef608d4"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 10 - myhuo",
       "server": "van2.ragnarok-it.xyz",
       "server_port": 8446,
       "uuid": "a61496c3-f256-4a36-8a52-8638b9cc900a",
@@ -149,7 +156,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 10 - myhuo",
+      "tag": "🇫🇮 芬兰 (Finland) 11 - myhuo",
       "server": "45.149.114.171",
       "server_port": 777,
       "method": "chacha20-ietf-poly1305",
@@ -157,26 +164,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 11 - myhuo",
-      "server": "36a466g.fi1.h1clayd.click",
-      "server_port": 443,
-      "uuid": "9a0e84f8-4b58-477f-99da-5fac5a2e58e8",
+      "tag": "🇫🇮 芬兰 (Finland) 12 - myhuo",
+      "server": "217.19.122.214",
+      "server_port": 7449,
+      "uuid": "985fbc4e-f2fd-4a7f-b09f-f9b7728dd0a4",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "36a466g.fi1.h1clayd.click",
+        "server_name": "passport.yandex.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg",
-          "short_id": "b3c9d0c6bdd114a6"
+          "public_key": "OGMQnJGgrCYDojFm4u7YrvOoOmtjK6iZ4_q-Kmanozs",
+          "short_id": "03cf706025caa46e"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "0adb9638509b"
       }
     },
     {
@@ -194,7 +198,8 @@
         "🇫🇮 芬兰 (Finland) 08 - myhuo",
         "🇫🇮 芬兰 (Finland) 09 - myhuo",
         "🇫🇮 芬兰 (Finland) 10 - myhuo",
-        "🇫🇮 芬兰 (Finland) 11 - myhuo"
+        "🇫🇮 芬兰 (Finland) 11 - myhuo",
+        "🇫🇮 芬兰 (Finland) 12 - myhuo"
       ]
     },
     {
@@ -211,7 +216,8 @@
         "🇫🇮 芬兰 (Finland) 08 - myhuo",
         "🇫🇮 芬兰 (Finland) 09 - myhuo",
         "🇫🇮 芬兰 (Finland) 10 - myhuo",
-        "🇫🇮 芬兰 (Finland) 11 - myhuo"
+        "🇫🇮 芬兰 (Finland) 11 - myhuo",
+        "🇫🇮 芬兰 (Finland) 12 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

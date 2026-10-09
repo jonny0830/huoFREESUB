@@ -9,7 +9,7 @@ proxies:
   port: 2052
   udp: true
   type: vless
-  uuid: 26769ac3-b34c-430a-87f8-e1de14619d25
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
   network: ws
   ws-opts:
     path: /@BlueKnight_net--@BlueKnight_net
@@ -20,7 +20,7 @@ proxies:
   port: 2052
   udp: true
   type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  uuid: 26769ac3-b34c-430a-87f8-e1de14619d25
   network: ws
   ws-opts:
     path: /@BlueKnight_net--@BlueKnight_net
@@ -31,12 +31,24 @@ proxies:
   port: 2052
   udp: true
   type: vless
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
   network: ws
   ws-opts:
     path: /@BlueKnight_net--@BlueKnight_net
     headers:
       Host: uwu.blueknightnet.qzz.io
+- name: 🌐 其他地区 (Other) 04 - myhuo
+  server: ccs2g.pai50288.uk
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  tls: true
+  servername: ccs2g.pai50288.uk
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /pai50288
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +57,7 @@ proxy-groups:
   - 🌐 其他地区 (Other) 01 - myhuo
   - 🌐 其他地区 (Other) 02 - myhuo
   - 🌐 其他地区 (Other) 03 - myhuo
+  - 🌐 其他地区 (Other) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,5 +66,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 01 - myhuo
   - 🌐 其他地区 (Other) 02 - myhuo
   - 🌐 其他地区 (Other) 03 - myhuo
+  - 🌐 其他地区 (Other) 04 - myhuo
 rules:
 - MATCH,PROXIES
