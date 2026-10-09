@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇾 白俄罗斯 (Belarus) 01 - myhuo
-  server: 89.125.96.80
+  server: ddnl0.zazazuza.ru
   port: 2053
   udp: true
   type: vless
@@ -13,9 +13,12 @@ proxies:
   tls: true
   servername: wss.zazazuza.ru
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: wss.zazazuza.ru
 proxy-groups:
 - name: PROXIES
   type: select

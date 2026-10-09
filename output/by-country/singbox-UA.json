@@ -13,10 +13,9 @@
         "enabled": true,
         "server_name": "z5n1.vpnpolar.online",
         "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",

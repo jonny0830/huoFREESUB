@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -25,53 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 02 - myhuo",
-      "server": "31.57.185.253",
-      "server_port": 54602,
-      "uuid": "cd373981-6114-4408-9c8d-7b39d31c3a73",
-      "transport": {
-        "type": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 03 - myhuo",
-      "server": "es.srv.dvzh.net",
-      "server_port": 443,
-      "uuid": "91344c03-b37f-42c5-90f1-cbb95c5cf256",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "es.srv.dvzh.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0",
-          "short_id": "e4e77e76e6e49da7"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01 - myhuo",
-        "🇮🇱 以色列 (Israel) 02 - myhuo",
-        "🇮🇱 以色列 (Israel) 03 - myhuo"
+        "🇮🇱 以色列 (Israel) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01 - myhuo",
-        "🇮🇱 以色列 (Israel) 02 - myhuo",
-        "🇮🇱 以色列 (Israel) 03 - myhuo"
+        "🇮🇱 以色列 (Israel) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

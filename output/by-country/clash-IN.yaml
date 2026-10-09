@@ -17,6 +17,17 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇮🇳 印度 (India) 02 - myhuo
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇮🇳 印度 (India) 03 - myhuo
   server: 148.113.5.44
   port: 443
   udp: true
@@ -28,18 +39,7 @@ proxies:
     public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
     short-id: 221873918e0bb74d
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - myhuo
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

@@ -16,28 +16,6 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇱 以色列 (Israel) 02 - myhuo
-  server: 31.57.185.253
-  port: 54602
-  udp: true
-  type: vless
-  uuid: cd373981-6114-4408-9c8d-7b39d31c3a73
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇮🇱 以色列 (Israel) 03 - myhuo
-  server: es.srv.dvzh.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: 91344c03-b37f-42c5-90f1-cbb95c5cf256
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
-    short-id: e4e77e76e6e49da7
-  servername: es.srv.dvzh.net
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -45,15 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇱 以色列 (Israel) 01 - myhuo
-  - 🇮🇱 以色列 (Israel) 02 - myhuo
-  - 🇮🇱 以色列 (Israel) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇱 以色列 (Israel) 01 - myhuo
-  - 🇮🇱 以色列 (Israel) 02 - myhuo
-  - 🇮🇱 以色列 (Israel) 03 - myhuo
 rules:
 - MATCH,PROXIES
