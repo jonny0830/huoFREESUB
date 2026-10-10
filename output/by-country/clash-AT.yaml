@@ -12,13 +12,27 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇹 奥地利 (Austria) 02 - myhuo
-  server: 5.254.51.109
+  server: 5.254.51.108
   port: 9443
   udp: true
   type: hysteria2
   password: Hc9_NX924RE_Mn948rgrwiub_m93V84nll
   sni: keyhop-voxility-at.dynuddns.com
-  skip-cert-verify: false
+  skip-cert-verify: true
+- name: 🇦🇹 奥地利 (Austria) 03 - myhuo
+  server: 80.87.194.253
+  port: 2096
+  udp: true
+  type: vless
+  uuid: f13b36ac-3765-4458-8a4d-08575038c463
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: id.vk.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
 proxy-groups:
 - name: PROXIES
   type: select
@@ -26,6 +40,7 @@ proxy-groups:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01 - myhuo
   - 🇦🇹 奥地利 (Austria) 02 - myhuo
+  - 🇦🇹 奥地利 (Austria) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -33,5 +48,6 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 (Austria) 01 - myhuo
   - 🇦🇹 奥地利 (Austria) 02 - myhuo
+  - 🇦🇹 奥地利 (Austria) 03 - myhuo
 rules:
 - MATCH,PROXIES

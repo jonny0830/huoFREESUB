@@ -25,18 +25,28 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - myhuo",
+      "server": "zfd-hkv1.kunlun01dns.com",
+      "server_port": 16114,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

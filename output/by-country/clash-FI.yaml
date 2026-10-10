@@ -12,13 +12,6 @@ proxies:
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 02 - myhuo
-  server: 185.103.110.68
-  port: 18283
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -30,14 +23,20 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
-  server: 144.31.212.253
-  port: 443
+- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
+  server: 185.103.110.68
+  port: 18283
   udp: true
-  type: hysteria2
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: vps155-edge.kermemehori.ru
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
+  server: feow.nomush.ir
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: K63q-WhHdJoC_AIxT6E4r_IIuGIb6CuV
 - name: 🇫🇮 芬兰 (Finland) 05 - myhuo
   server: 144.31.27.215
   port: 43000
@@ -50,7 +49,7 @@ proxies:
     public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
     short-id: 568d87a47271344e
   servername: 144.31.27.215
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 06 - myhuo
   server: 87.228.92.114
   port: 25481
@@ -78,65 +77,22 @@ proxies:
     public-key: Y6ZtoxCUW1qFIvLTNfbrsyfCDoIBaRsqGNtbF_mcAXM
     short-id: 7bac4b112d30d1
   servername: amd.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 08 - myhuo
-  server: 85.209.129.5
-  port: 443
-  udp: true
-  type: trojan
-  password: muLkJXY1WyEbDdP-AoNpjg3HddPCAcBA
-  sni: fl.global-cdn.org
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ajv
-- name: 🇫🇮 芬兰 (Finland) 09 - myhuo
-  server: 151.241.137.132
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5786d86f-7731-4174-b1a3-84297e54b015
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: finland.ali-bard.online
   client-fingerprint: edge
-- name: 🇫🇮 芬兰 (Finland) 10 - myhuo
-  server: 2.26.106.232
-  port: 8443
+- name: 🇫🇮 芬兰 (Finland) 08 - myhuo
+  server: 144.31.212.253
+  port: 443
   udp: true
-  type: vless
-  uuid: 5a96c1fc-f167-44b9-9020-8f6867537d14
-  tls: true
-  reality-opts:
-    public-key: fQ1M2sO50w5A3oM55Hfs8vmZ320I8VaKdzRqeXOMMnQ
-    short-id: 07f508fe5d2355d3
-  servername: finland02.azotvpn.xyz
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇫🇮 芬兰 (Finland) 11 - myhuo
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 09 - myhuo
   server: 45.149.114.171
   port: 777
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
-- name: 🇫🇮 芬兰 (Finland) 12 - myhuo
-  server: 65.108.3.59
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  servername: web.eitaa.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -151,9 +107,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 07 - myhuo
   - 🇫🇮 芬兰 (Finland) 08 - myhuo
   - 🇫🇮 芬兰 (Finland) 09 - myhuo
-  - 🇫🇮 芬兰 (Finland) 10 - myhuo
-  - 🇫🇮 芬兰 (Finland) 11 - myhuo
-  - 🇫🇮 芬兰 (Finland) 12 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -168,8 +121,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 07 - myhuo
   - 🇫🇮 芬兰 (Finland) 08 - myhuo
   - 🇫🇮 芬兰 (Finland) 09 - myhuo
-  - 🇫🇮 芬兰 (Finland) 10 - myhuo
-  - 🇫🇮 芬兰 (Finland) 11 - myhuo
-  - 🇫🇮 芬兰 (Finland) 12 - myhuo
 rules:
 - MATCH,PROXIES

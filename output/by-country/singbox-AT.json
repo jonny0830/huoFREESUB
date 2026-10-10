@@ -14,13 +14,37 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇹 奥地利 (Austria) 02 - myhuo",
-      "server": "5.254.51.109",
+      "server": "5.254.51.108",
       "server_port": 9443,
       "password": "Hc9_NX924RE_Mn948rgrwiub_m93V84nll",
       "tls": {
         "enabled": true,
         "server_name": "keyhop-voxility-at.dynuddns.com",
-        "insecure": false
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 03 - myhuo",
+      "server": "80.87.194.253",
+      "server_port": 2096,
+      "uuid": "f13b36ac-3765-4458-8a4d-08575038c463",
+      "tls": {
+        "enabled": true,
+        "server_name": "id.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless-grpc-reality"
       }
     },
     {
@@ -29,7 +53,8 @@
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - myhuo",
-        "🇦🇹 奥地利 (Austria) 02 - myhuo"
+        "🇦🇹 奥地利 (Austria) 02 - myhuo",
+        "🇦🇹 奥地利 (Austria) 03 - myhuo"
       ]
     },
     {
@@ -37,7 +62,8 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - myhuo",
-        "🇦🇹 奥地利 (Austria) 02 - myhuo"
+        "🇦🇹 奥地利 (Austria) 02 - myhuo",
+        "🇦🇹 奥地利 (Austria) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
