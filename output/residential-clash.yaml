@@ -4,20 +4,43 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
-  server: 218.237.185.234
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo
-  server: 168.222.43.200
-  port: 2053
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
+  server: 61.18.134.10
+  port: 443
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  uuid: e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
+  tls: true
+  servername: mswo-gy191m.zhiyuantech.cloud
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
+    headers:
+      Host: mswo-gy191m.zhiyuantech.cloud
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
+  server: 42.200.173.5
+  port: 443
+  udp: true
+  type: vless
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  servername: s3.ap-east-1.amazonaws.com
+  client-fingerprint: random
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
+  server: sbgfgov.vip24.wogacnmnagfwgov.com
+  port: 11224
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -27,73 +50,32 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo
-  server: 61.18.134.10
-  port: 443
+  client-fingerprint: qq
+- name: 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - myhuo
+  server: test.keoplentuio.xyz
+  port: 2053
   udp: true
   type: vless
-  uuid: e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
-  tls: true
-  servername: mswo-gy191m.zhiyuantech.cloud
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
-    headers:
-      Host: mswo-gy191m.zhiyuantech.cloud
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo
-  server: sbgfgov.vip24.wogacnmnagfwgov.com
-  port: 11224
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 06 (家宽) - myhuo
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - myhuo
-  server: t4.qifei.app
-  port: 443
-  udp: true
-  type: vless
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-  servername: s3.ap-east-1.amazonaws.com
-  client-fingerprint: random
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo
-  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
+  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo
-  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
+  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - myhuo
 rules:
 - MATCH,PROXIES
