@@ -4,21 +4,17 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
-  server: 61.18.134.10
-  port: 443
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
+  server: hinet1.2yly.com
+  port: 24215
   udp: true
   type: vless
-  uuid: e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
   tls: true
-  servername: mswo-gy191m.zhiyuantech.cloud
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
-    headers:
-      Host: mswo-gy191m.zhiyuantech.cloud
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: safari
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
   server: 42.200.173.5
   port: 443
@@ -31,7 +27,7 @@ proxies:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
     short-id: 1a
   servername: s3.ap-east-1.amazonaws.com
-  client-fingerprint: random
+  client-fingerprint: ios
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
   server: sbgfgov.vip24.wogacnmnagfwgov.com
   port: 11224
@@ -40,42 +36,21 @@ proxies:
   uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
   alterId: 2
   cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
-  server: hinet1.2yly.com
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: qq
-- name: 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - myhuo
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
-  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
-  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - myhuo
 rules:
 - MATCH,PROXIES

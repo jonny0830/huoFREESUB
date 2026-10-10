@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇩 摩尔多瓦 (Moldova) 01 - myhuo
-  server: ap2.directly.chat
+  server: 87.228.71.198
   port: 443
   udp: true
   type: vless
@@ -13,6 +13,7 @@ proxies:
   tls: true
   servername: ap2.directly.chat
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /md/1

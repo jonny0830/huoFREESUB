@@ -6,26 +6,39 @@
     {
       "type": "vless",
       "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - myhuo",
-      "server": "89.125.96.93",
+      "server": "89.125.96.81",
       "server_port": 2053,
       "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
       "tls": {
         "enabled": true,
         "server_name": "wss.zazazuza.ru",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vpn-wss/fluxor/59011/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇾 白俄罗斯 (Belarus) 02 - myhuo",
+      "server": "194.26.229.39",
+      "server_port": 443,
+      "uuid": "d1004cfe-c279-e865-d865-71964dbdf85d",
+      "tls": {
+        "enabled": true,
+        "server_name": "ost.tmk-videos.online",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/vpn-wss/fluxor/59011/",
+        "path": "/hls/live/broadcast/e75ebceb",
         "headers": {
-          "Host": "wss.zazazuza.ru"
+          "Host": "ost.tmk-videos.online"
         }
       }
     },
@@ -34,14 +47,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 白俄罗斯 (Belarus) 01 - myhuo"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - myhuo",
+        "🇧🇾 白俄罗斯 (Belarus) 02 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 白俄罗斯 (Belarus) 01 - myhuo"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - myhuo",
+        "🇧🇾 白俄罗斯 (Belarus) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
