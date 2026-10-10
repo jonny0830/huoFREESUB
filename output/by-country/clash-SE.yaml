@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - myhuo
+  server: sweedenqfds777.qcloud.surf
+  port: 21223
+  udp: true
+  type: hysteria2
+  password: 8bd04756-3beb-4348-82c9-d35453df50ce
+  sni: sweedenqfds777.qcloud.surf
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -15,11 +23,11 @@ proxies:
     public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
     short-id: d0ea1847066af5a6
   servername: www.samsung.com
-  client-fingerprint: firefox
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
-- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
+- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
   server: 77.110.96.201
   port: 36264
   udp: true
@@ -29,20 +37,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: Telegram@vpnjey
-- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
-  server: sub.merky.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  tls: true
-  servername: sub.merky.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select

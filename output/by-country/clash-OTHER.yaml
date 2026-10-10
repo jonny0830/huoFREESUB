@@ -5,27 +5,62 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - myhuo
-  server: 104.18.0.181
-  port: 2052
+  server: 104.21.3.219
+  port: 443
   udp: true
   type: vless
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  tls: true
+  servername: ccs2g.pai50288.uk
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /rain1226
+    path: /pai50288
     headers:
-      Host: eu02.123450908.xyz
+      Host: ccs2g.pai50288.uk
+- name: 🌐 其他地区 (Other) 02 - myhuo
+  server: 104.21.3.219
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  tls: true
+  servername: ccs2g.pai50288.uk
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /pai50288
+    headers:
+      Host: ccs2g.pai50288.uk
+- name: 🌐 其他地区 (Other) 03 - myhuo
+  server: 104.21.3.219
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  tls: true
+  servername: ccs2g.pai50288.uk
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /pai50288
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - myhuo
+  - 🌐 其他地区 (Other) 02 - myhuo
+  - 🌐 其他地区 (Other) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - myhuo
+  - 🌐 其他地区 (Other) 02 - myhuo
+  - 🌐 其他地区 (Other) 03 - myhuo
 rules:
 - MATCH,PROXIES

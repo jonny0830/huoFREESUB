@@ -11,7 +11,7 @@
       "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
       "tls": {
         "enabled": true,
-        "server_name": "russiapower.accesscam.org",
+        "server_name": "109.206.241.10",
         "insecure": true
       }
     },
@@ -28,6 +28,22 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo",
       "server": "185.252.177.216",
       "server_port": 443,
       "uuid": "616c7b3b-41f4-4038-88c6-d6fedd0ae4a7",
@@ -48,22 +64,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo",
-      "server": "94.183.170.135",
-      "server_port": 8443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "tls": {
-        "enabled": true,
-        "server_name": "estproxy4.lockdwn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo",
       "server": "77.72.85.247",
       "server_port": 8443,
@@ -71,51 +71,17 @@
       "tls": {
         "enabled": true,
         "server_name": "fdghyt.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/vpn-wss/fluxor/59011/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo",
-      "server": "45.133.151.163",
-      "server_port": 25895,
-      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k",
-          "short_id": "a73f0410d728c823"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - myhuo",
-      "server": "93.89.220.37",
-      "server_port": 443,
-      "uuid": "185e2bb3-2934-48d0-bbd5-dd20d16e83ee",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ibm.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g",
-          "short_id": "e88cb983f3c97528"
+        "path": "/vpn-wss/fluxor/59011/",
+        "headers": {
+          "Host": "fdghyt.com"
         }
       }
     },
@@ -128,9 +94,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo",
         "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - myhuo"
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo"
       ]
     },
     {
@@ -141,9 +105,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo",
         "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - myhuo"
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

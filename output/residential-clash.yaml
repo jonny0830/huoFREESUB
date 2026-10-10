@@ -4,17 +4,13 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
-  server: hinet1.2yly.com
-  port: 24215
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
+  server: 218.237.185.234
+  port: 4652
   udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: safari
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
   server: 42.200.173.5
   port: 443
@@ -27,30 +23,45 @@ proxies:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
     short-id: 1a
   servername: s3.ap-east-1.amazonaws.com
-  client-fingerprint: ios
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
-  server: sbgfgov.vip24.wogacnmnagfwgov.com
-  port: 11224
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - myhuo
+  server: me17.msjia8844.site
+  port: 7443
   udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
+  server: hinet1.2yly.com
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
 rules:
 - MATCH,PROXIES

@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - myhuo",
-      "server": "89.125.96.81",
+      "server": "89.125.96.80",
       "server_port": 2053,
       "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
       "tls": {
@@ -20,43 +20,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇧🇾 白俄罗斯 (Belarus) 02 - myhuo",
-      "server": "194.26.229.39",
-      "server_port": 443,
-      "uuid": "d1004cfe-c279-e865-d865-71964dbdf85d",
-      "tls": {
-        "enabled": true,
-        "server_name": "ost.tmk-videos.online",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/hls/live/broadcast/e75ebceb",
-        "headers": {
-          "Host": "ost.tmk-videos.online"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 白俄罗斯 (Belarus) 01 - myhuo",
-        "🇧🇾 白俄罗斯 (Belarus) 02 - myhuo"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 白俄罗斯 (Belarus) 01 - myhuo",
-        "🇧🇾 白俄罗斯 (Belarus) 02 - myhuo"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
