@@ -4,72 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
-      "server": "155.117.19.17",
-      "server_port": 443,
-      "password": "5fa748137b6d822308eea4611f474ad5",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
-      }
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 02 (移动家宽) - myhuo",
-      "server": "vip3.kaixincloud.top",
-      "server_port": 2083,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "newwk1.f1w.de5.net",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "newwk1.f1w.de5.net"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo",
-      "server": "218.237.185.234",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo",
-      "server": "t4.qifei.app",
-      "server_port": 443,
-      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "s3.ap-east-1.amazonaws.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
       "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -78,7 +21,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -89,48 +32,54 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - myhuo",
-      "server": "sg.australiacaregroup.site",
-      "server_port": 20004,
-      "password": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 (家宽) - myhuo",
+      "server": "s3.huhiuh.space",
+      "server_port": 18642,
+      "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
       "tls": {
         "enabled": true,
-        "server_name": "tw.australiacaregroup.site",
+        "server_name": "s3.huhiuh.space",
         "insecure": true
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 07 (移动家宽) - myhuo",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 04 (家宽) - myhuo",
+      "server": "p141.panda001.net",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo",
+      "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
+      "server_port": 11223,
+      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
+      "security": "auto",
+      "alter_id": 2
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
-        "🇺🇸 美国 (United States) 02 (移动家宽) - myhuo",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - myhuo",
-        "🇹🇷 土耳其 (Turkey) 07 (移动家宽) - myhuo"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
+        "🇸🇬 新加坡 (Singapore) 03 (家宽) - myhuo",
+        "🇰🇷 韩国 (South Korea) 04 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
-        "🇺🇸 美国 (United States) 02 (移动家宽) - myhuo",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - myhuo",
-        "🇹🇷 土耳其 (Turkey) 07 (移动家宽) - myhuo"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
+        "🇸🇬 新加坡 (Singapore) 03 (家宽) - myhuo",
+        "🇰🇷 韩国 (South Korea) 04 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

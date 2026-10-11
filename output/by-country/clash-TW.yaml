@@ -5,21 +5,55 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
+  server: 165.154.195.38
+  port: 35034
+  udp: true
+  type: vmess
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'https:'
+  sni: https://t.me/wangcai2
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
-  server: 160.187.100.109
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
+  server: vpn-tw-002.fastervpn.world
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
+  sni: vk.com
   skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
+  server: fsjp19.46852.top
+  port: 13460
+  udp: true
+  type: vless
+  uuid: 1b0ef044-585e-4b57-ab38-8b97e4eef8fa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: aMWflVU1irMrKvFSbdiD4CwJd7cvHPkjKu7ip9r-EHw
+    short-id: 05282fc98fd39400
+  servername: cloudflare.com
+  client-fingerprint: ios
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - myhuo
+  server: fsjp19.46852.top
+  port: 13459
+  udp: true
+  type: vless
+  uuid: 1b0ef044-585e-4b57-ab38-8b97e4eef8fa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hNCjtGGnj9dBM_b9_naRrpaMxW6uPJshmi3cxiKLnnw
+    short-id: b9
+  servername: cloudflare.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -27,6 +61,9 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +71,8 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 05 - myhuo
 rules:
 - MATCH,PROXIES
