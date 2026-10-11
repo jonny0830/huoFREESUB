@@ -5,42 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - myhuo
-  server: 62.60.159.81
-  port: 2053
-  udp: true
-  type: vless
-  uuid: fc00adfb-232a-46ce-8b93-0c70e516aa8a
-  tls: true
-  reality-opts:
-    public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
-    short-id: d0ea1847066af5a6
-  servername: www.samsung.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpce5bb9e71
-- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
-  server: 191.44.114.51
-  port: 443
-  udp: true
-  type: vless
-  uuid: accfae78-b31c-47cb-86a1-bb9a07973e4a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: oT9R1OPLe1DlvnRK9sXmUH7_bXQ8LcbqEZRCCw4gXgA
-    short-id: af01c62234f5a7b5
-  servername: google.com
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
-  server: 13.143.174.151
-  port: 21223
-  udp: true
-  type: hysteria2
-  password: 8bd04756-3beb-4348-82c9-d35453df50ce
-  sni: sweedenqfds777.qcloud.surf
-  skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
   server: 136.148.223.212
   port: 25119
   udp: true
@@ -53,8 +17,67 @@ proxies:
     short-id: 10f517
   servername: www.samsung.com
   client-fingerprint: random
+- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
+  server: sw.golangwikito.cfd
+  port: 443
+  udp: true
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
+    short-id: a1037b25dcef6aa7
+  servername: sw.golangwikito.cfd
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
+  server: 62.60.159.81
+  port: 2053
+  udp: true
+  type: vless
+  uuid: fc00adfb-232a-46ce-8b93-0c70e516aa8a
+  tls: true
+  reality-opts:
+    public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
+    short-id: d0ea1847066af5a6
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpce5bb9e71
+- name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
+  server: 77.110.96.201
+  port: 36264
+  udp: true
+  type: hysteria2
+  password: Telegram-vpnjey
+  sni: se.vpnjey2.dpdns.org
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: Telegram@vpnjey
 - name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
-  server: 2.26.55.163
+  server: swe.wizard.select
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
+    short-id: 3b20e438da99
+  servername: swe.wizard.select
+  client-fingerprint: qq
+- name: 🇸🇪 瑞典 (Sweden) 06 - myhuo
+  server: sweedenqfds777.qcloud.surf
+  port: 21223
+  udp: true
+  type: hysteria2
+  password: 8bd04756-3beb-4348-82c9-d35453df50ce
+  sni: sweedenqfds777.qcloud.surf
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 07 - myhuo
+  server: specific3.kandnet.com
   port: 443
   udp: true
   type: vless
@@ -75,6 +98,8 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - myhuo
   - 🇸🇪 瑞典 (Sweden) 04 - myhuo
   - 🇸🇪 瑞典 (Sweden) 05 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 06 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,5 +110,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - myhuo
   - 🇸🇪 瑞典 (Sweden) 04 - myhuo
   - 🇸🇪 瑞典 (Sweden) 05 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 06 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 07 - myhuo
 rules:
 - MATCH,PROXIES

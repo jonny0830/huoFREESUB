@@ -24,18 +24,38 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇧🇷 巴西 (Brazil) 02 - myhuo",
+      "server": "147.15.23.247",
+      "password": "CyG0RFxMjzs41uQD4OLuHQ==",
+      "tls": {
+        "enabled": true,
+        "server_name": "rmgyvpn.rest",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "CyG0RFxMjzs41uQD4OLuHQ=="
+      },
+      "server_ports": [
+        "20000:30000"
+      ]
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - myhuo"
+        "🇧🇷 巴西 (Brazil) 01 - myhuo",
+        "🇧🇷 巴西 (Brazil) 02 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - myhuo"
+        "🇧🇷 巴西 (Brazil) 01 - myhuo",
+        "🇧🇷 巴西 (Brazil) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
