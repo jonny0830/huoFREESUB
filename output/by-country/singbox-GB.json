@@ -4,40 +4,76 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 01 - myhuo",
-      "server": "13.135.199.253",
+      "server": "172.67.131.125",
       "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "uuid": "8d0f652c-3caa-4570-a138-668364f3d25e",
+      "tls": {
+        "enabled": true,
+        "server_name": "sqqfq0vy-l4v0qa0zlxnjd79-ykvkw.mrmamali.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/zInkY7qcXuM6P1AZTQ?ed=2560",
+        "headers": {
+          "Host": "sqqfq0vy-l4v0qa0zlxnjd79-ykvkw.mrmamali.workers.dev"
+        }
+      }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 02 - myhuo",
-      "server": "158.173.24.73",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
+      "server": "172.67.162.201",
+      "server_port": 2053,
+      "uuid": "dc1e9f00-c064-4870-9bfc-463db50257d7",
+      "tls": {
+        "enabled": true,
+        "server_name": "restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoicVkwaG9XUUQyUDhzRkZ5UiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev"
+        }
+      }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 03 - myhuo",
-      "server": "13.40.42.59",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "server": "104.27.110.232",
+      "server_port": 2053,
+      "uuid": "dce8ca0a-ed26-45c9-9962-38888c19a0ad",
+      "tls": {
+        "enabled": true,
+        "server_name": "still-scene-fda3.devtahair.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiSDNSSGYxT05LU2VEbyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjYyLjYwLjIxNy4yMzAiXX0=",
+        "headers": {
+          "Host": "still-scene-fda3.devtahair.workers.dev"
+        }
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 04 - myhuo",
-      "server": "149.102.132.184",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "g5h5jleTRSyO3Rk4"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 05 - myhuo",
       "server": "51.38.71.51",
       "server_port": 2083,
       "method": "2022-blake3-aes-256-gcm",
@@ -45,11 +81,19 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 06 - myhuo",
+      "tag": "🇬🇧 英国 (United Kingdom) 05 - myhuo",
       "server": "149.102.132.184",
       "server_port": 443,
       "method": "aes-256-gcm",
       "password": "g5h5jleTRSyO3Rk4"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 06 - myhuo",
+      "server": "141.98.101.181",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
     },
     {
       "type": "shadowsocks",
@@ -70,6 +114,46 @@
     {
       "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 09 - myhuo",
+      "server": "13.40.42.59",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 10 - myhuo",
+      "server": "94.156.250.148",
+      "server_port": 7001,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 11 - myhuo",
+      "server": "146.70.61.37",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 12 - myhuo",
+      "server": "149.102.149.207",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "LXchLsIwtCeUAUgu"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 13 - myhuo",
+      "server": "149.102.132.184",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "g5h5jleTRSyO3Rk4"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 14 - myhuo",
       "server": "149.102.149.207",
       "server_port": 443,
       "method": "aes-256-gcm",
@@ -77,35 +161,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 10 - myhuo",
-      "server": "46.250.250.149",
-      "server_port": 2053,
-      "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M",
-          "short_id": "9922313fffed1c63"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 11 - myhuo",
-      "server": "141.98.101.181",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 12 - myhuo",
+      "tag": "🇬🇧 英国 (United Kingdom) 15 - myhuo",
       "server": "23.81.34.204",
       "server_port": 443,
       "uuid": "99955907-9070-46f0-a200-9c7a0b9d74fe",
@@ -126,23 +182,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 13 - myhuo",
-      "server": "146.70.61.18",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 14 - myhuo",
-      "server": "146.70.61.37",
+      "tag": "🇬🇧 英国 (United Kingdom) 16 - myhuo",
+      "server": "146.70.23.32",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 15 - myhuo",
+      "tag": "🇬🇧 英国 (United Kingdom) 17 - myhuo",
       "server": "164.37.100.195",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
@@ -163,17 +211,35 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 16 - myhuo",
-      "server": "186.190.211.188",
+      "tag": "🇬🇧 英国 (United Kingdom) 18 - myhuo",
+      "server": "23.81.36.65",
       "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "186.190.211.188",
-        "insecure": true,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "uk.nztvpn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "UcFVpzbYTy8Iym6ZnCAtLQK-MeRg6wZuyni4xEOKG18",
+          "short_id": "0da7e14db353e7d0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 19 - myhuo",
+      "server": "node-uk.connectsuite.org",
+      "server_port": 8443,
+      "uuid": "c08f0056-7a6d-4931-813b-aaa3cdd00aed",
+      "tls": {
+        "enabled": true,
+        "server_name": "node-uk.connectsuite.org",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -181,39 +247,77 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇬🇧 英国 (United Kingdom) 17 - myhuo",
-      "server": "57.129.132.223",
-      "server_port": 80,
-      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "google.com"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 18 - myhuo",
-      "server": "146.70.23.32",
+      "tag": "🇬🇧 英国 (United Kingdom) 20 - myhuo",
+      "server": "146.70.61.18",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 19 - myhuo",
-      "server": "149.102.149.207",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "LXchLsIwtCeUAUgu"
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 21 - myhuo",
+      "server": "31.76.62.32",
+      "server_port": 443,
+      "uuid": "8e66d40e-6f62-4243-a7d8-ebe83e4c2e77",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lv-rix-1.koolb.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "C4kK4uxh9a5ym0-JmcaTwkUwkB0FTRjSAIlHLTKRHlo",
+          "short_id": "84341e3e"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 20 - myhuo",
+      "tag": "🇬🇧 英国 (United Kingdom) 22 - myhuo",
+      "server": "46.250.240.80",
+      "server_port": 2053,
+      "uuid": "948df76f-505d-4608-9c76-a933ee3ccc76",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E",
+          "short_id": "4cc9dc65f7770115"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 23 - myhuo",
+      "server": "23.81.36.148",
+      "server_port": 1222,
+      "uuid": "36c3dcc2-17b6-4478-b8a7-3978e6d5afe9",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.forvo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE",
+          "short_id": "a25d0f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 24 - myhuo",
       "server": "5.199.0.226",
       "server_port": 443,
       "uuid": "b0a100ee-c397-43f2-bdae-2adfb7a0d4e5",
@@ -223,7 +327,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
@@ -236,68 +340,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 21 - myhuo",
-      "server": "31.76.115.238",
-      "server_port": 8443,
-      "uuid": "8ff3db5a-5f41-4f25-a8a4-7fbf00f1c319",
+      "tag": "🇬🇧 英国 (United Kingdom) 25 - myhuo",
+      "server": "95.85.224.51",
+      "server_port": 443,
+      "uuid": "342ab7e4-5a89-0001-8809-304120d4aa83",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ya.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
-          "short_id": "d2061bb1"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 22 - myhuo",
-      "server": "23.81.36.148",
-      "server_port": 1222,
-      "uuid": "36c3dcc2-17b6-4478-b8a7-3978e6d5afe9",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.forvo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE",
-          "short_id": "a25d0f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 23 - myhuo",
-      "server": "51.89.194.151",
-      "server_port": 2053,
-      "uuid": "8e790f25-1d71-4601-9fb0-d503931dcfca",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "max.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0",
-          "short_id": "d051f678212f9d54"
+          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
+          "short_id": "a696de84963656de"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 24 - myhuo",
+      "tag": "🇬🇧 英国 (United Kingdom) 26 - myhuo",
       "server": "5.254.49.34",
       "server_port": 995,
       "uuid": "affb1e92-db55-4929-81e4-2e7e327b909b",
@@ -318,27 +382,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 25 - myhuo",
-      "server": "46.250.240.80",
-      "server_port": 2053,
-      "uuid": "948df76f-505d-4608-9c76-a933ee3ccc76",
+      "tag": "🇬🇧 英国 (United Kingdom) 27 - myhuo",
+      "server": "193.23.195.37",
+      "server_port": 8443,
+      "uuid": "8ff3db5a-5f41-4f25-a8a4-7fbf00f1c319",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "ya.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E",
-          "short_id": "4cc9dc65f7770115"
+          "public_key": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
+          "short_id": "d2061bb1"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 26 - myhuo",
+      "tag": "🇬🇧 英国 (United Kingdom) 28 - myhuo",
       "server": "uk1.connectsuite.org",
       "server_port": 443,
       "uuid": "fda89998-7e9a-4494-857a-cd0d00661b58",
@@ -354,28 +419,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 27 - myhuo",
-      "server": "107.181.151.39",
-      "server_port": 443,
-      "uuid": "ed042cf7-efe0-49bd-848b-8d7e655111ff",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇬🇧 英国 (United Kingdom) 29 - myhuo",
+      "server": "51.89.194.151",
+      "server_port": 2053,
+      "uuid": "8e790f25-1d71-4601-9fb0-d503931dcfca",
       "tls": {
         "enabled": true,
-        "server_name": "www.mozilla.org",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "1036b2383b72"
+          "public_key": "xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0",
+          "short_id": "d051f678212f9d54"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 28 - myhuo",
+      "tag": "🇬🇧 英国 (United Kingdom) 30 - myhuo",
       "server": "107.181.151.241",
       "server_port": 443,
       "uuid": "317bc783-340f-453c-afb5-b6bf637c0b23",
@@ -396,7 +460,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 29 - myhuo",
+      "tag": "🇬🇧 英国 (United Kingdom) 31 - myhuo",
+      "server": "107.181.151.39",
+      "server_port": 443,
+      "uuid": "4d017db2-7655-4276-9557-e2ec25b04ee7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "ee1716767f9b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 32 - myhuo",
       "server": "104.238.2.82",
       "server_port": 443,
       "uuid": "d806a58b-33aa-42e0-b170-395e49c16b37",
@@ -417,8 +502,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 30 - myhuo",
-      "server": "87.239.249.137",
+      "tag": "🇬🇧 英国 (United Kingdom) 33 - myhuo",
+      "server": "46.250.250.149",
+      "server_port": 2053,
+      "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M",
+          "short_id": "9922313fffed1c63"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 34 - myhuo",
+      "server": "lists.soloramtin.cyou",
       "server_port": 443,
       "uuid": "67eb6b17-7797-4ded-bf52-423c4c5f6cbd",
       "flow": "xtls-rprx-vision",
@@ -435,23 +540,6 @@
           "short_id": "91af08b1ce1f"
         }
       }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇬🇧 英国 (United Kingdom) 31 - myhuo",
-      "server": "v36.hdacd.com",
-      "server_port": 30836,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-      "security": "auto",
-      "alter_id": 2
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 32 - myhuo",
-      "server": "94.156.250.148",
-      "server_port": 7001,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "selector",
@@ -489,7 +577,9 @@
         "🇬🇧 英国 (United Kingdom) 29 - myhuo",
         "🇬🇧 英国 (United Kingdom) 30 - myhuo",
         "🇬🇧 英国 (United Kingdom) 31 - myhuo",
-        "🇬🇧 英国 (United Kingdom) 32 - myhuo"
+        "🇬🇧 英国 (United Kingdom) 32 - myhuo",
+        "🇬🇧 英国 (United Kingdom) 33 - myhuo",
+        "🇬🇧 英国 (United Kingdom) 34 - myhuo"
       ]
     },
     {
@@ -527,7 +617,9 @@
         "🇬🇧 英国 (United Kingdom) 29 - myhuo",
         "🇬🇧 英国 (United Kingdom) 30 - myhuo",
         "🇬🇧 英国 (United Kingdom) 31 - myhuo",
-        "🇬🇧 英国 (United Kingdom) 32 - myhuo"
+        "🇬🇧 英国 (United Kingdom) 32 - myhuo",
+        "🇬🇧 英国 (United Kingdom) 33 - myhuo",
+        "🇬🇧 英国 (United Kingdom) 34 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

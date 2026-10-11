@@ -20,7 +20,7 @@ proxies:
   sni: keyhop-voxility-at.dynuddns.com
   skip-cert-verify: true
 - name: 🇦🇹 奥地利 (Austria) 03 - myhuo
-  server: 80.87.194.253
+  server: 80.87.196.9
   port: 2096
   udp: true
   type: vless
@@ -29,10 +29,23 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: id.vk.com
-  client-fingerprint: chrome
+  client-fingerprint: random
   network: grpc
   grpc-opts:
     grpc-service-name: vless-grpc-reality
+- name: 🇦🇹 奥地利 (Austria) 04 - myhuo
+  server: kozyavka.yandex-api.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1b7ee703-fa08-4305-8469-ae3e30e61e44
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _qSbW4JL4Ffqvj25vX-6a2ul9Qlj6PBdlF0ghsf_0RQ
+    short-id: a9dc98a7dc87a7dc
+  servername: kozyavka.yandex-api.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +54,7 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01 - myhuo
   - 🇦🇹 奥地利 (Austria) 02 - myhuo
   - 🇦🇹 奥地利 (Austria) 03 - myhuo
+  - 🇦🇹 奥地利 (Austria) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,5 +63,6 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01 - myhuo
   - 🇦🇹 奥地利 (Austria) 02 - myhuo
   - 🇦🇹 奥地利 (Austria) 03 - myhuo
+  - 🇦🇹 奥地利 (Austria) 04 - myhuo
 rules:
 - MATCH,PROXIES

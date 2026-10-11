@@ -4,8 +4,96 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - myhuo",
+      "server": "172.66.47.45",
+      "server_port": 443,
+      "uuid": "e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ezaccess-project-f62c30.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "ezaccess-project-f62c30.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - myhuo",
+      "server": "188.114.96.3",
+      "server_port": 2087,
+      "uuid": "756e8f39-04e8-436d-b5c6-905d37d9562c",
+      "tls": {
+        "enabled": true,
+        "server_name": "Ez-98919A.MOtoRicb.Workers.DeV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiR1BxUFhYR0w1TlBLMTRsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ",
+        "headers": {
+          "Host": "ez-98919a.motoricb.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - myhuo",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "33918b20-9e02-4dc6-8b30-79b2d4b2e0e6",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiUjJBU3JkVlRwSWtnciIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0",
+        "headers": {
+          "Host": "auto-scale-238b2b.infra-core-1630dd.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 04 - myhuo",
+      "server": "www.speedtest.net",
+      "server_port": 80,
+      "uuid": "7201b2cd-0675-4c1a-9c76-07ca14ffcf08",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiTlZxbGYyajQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+        "headers": {
+          "Host": "6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 05 - myhuo",
+      "server": "153.76.185.164",
+      "server_port": 3090,
+      "uuid": "a7a4e6f3-4e63-4cc2-ba22-4635f3ff6aca",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇿 捷克 (Czech) 06 - myhuo",
       "server": "95.85.238.173",
       "server_port": 443,
       "password": "c-E0lamG8OnEj9M_uh3oJPmIXqYIVGctO-NHELF1TmNYs7Jl",
@@ -20,14 +108,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - myhuo"
+        "🇨🇿 捷克 (Czech) 01 - myhuo",
+        "🇨🇿 捷克 (Czech) 02 - myhuo",
+        "🇨🇿 捷克 (Czech) 03 - myhuo",
+        "🇨🇿 捷克 (Czech) 04 - myhuo",
+        "🇨🇿 捷克 (Czech) 05 - myhuo",
+        "🇨🇿 捷克 (Czech) 06 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - myhuo"
+        "🇨🇿 捷克 (Czech) 01 - myhuo",
+        "🇨🇿 捷克 (Czech) 02 - myhuo",
+        "🇨🇿 捷克 (Czech) 03 - myhuo",
+        "🇨🇿 捷克 (Czech) 04 - myhuo",
+        "🇨🇿 捷克 (Czech) 05 - myhuo",
+        "🇨🇿 捷克 (Czech) 06 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

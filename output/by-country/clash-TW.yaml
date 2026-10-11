@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
-  server: 160.187.100.109
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   server: 103.115.109.49
   port: 443
   udp: true
@@ -20,14 +12,14 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 'https:'
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
-  server: sbgfgov.vip23.wogacnmnagfwgov.com
-  port: 11223
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
+  server: 160.187.100.109
+  port: 443
   udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'off'
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,7 +27,6 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,6 +34,5 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
 rules:
 - MATCH,PROXIES

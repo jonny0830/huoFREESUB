@@ -12,6 +12,52 @@ proxies:
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 02 - myhuo
+  server: 185.103.110.68
+  port: 18283
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
+  server: 45.149.114.171
+  port: 777
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
+  server: 85.209.129.5
+  port: 443
+  udp: true
+  type: trojan
+  password: muLkJXY1WyEbDdP-AoNpjg3HddPCAcBA
+  sni: fl.global-cdn.org
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ajv
+- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
+  server: 144.31.212.253
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: 144.31.212.253
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
+  server: fi.pythonsetupbib.online
+  port: 443
+  udp: true
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
+    short-id: bdf5852d1423e694
+  servername: fi.pythonsetupbib.online
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -23,21 +69,7 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
-  server: 185.103.110.68
-  port: 18283
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
-  server: feow.nomush.ir
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: K63q-WhHdJoC_AIxT6E4r_IIuGIb6CuV
-- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
+- name: 🇫🇮 芬兰 (Finland) 08 - myhuo
   server: 144.31.27.215
   port: 43000
   udp: true
@@ -49,8 +81,8 @@ proxies:
     public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
     short-id: 568d87a47271344e
   servername: 144.31.27.215
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
+  client-fingerprint: edge
+- name: 🇫🇮 芬兰 (Finland) 09 - myhuo
   server: 87.228.92.114
   port: 25481
   udp: true
@@ -65,8 +97,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 8cb5baa18cd7
-- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
-  server: van2.ragnarok-it.xyz
+- name: 🇫🇮 芬兰 (Finland) 10 - myhuo
+  server: 195.226.92.129
   port: 8446
   udp: true
   type: vless
@@ -78,21 +110,32 @@ proxies:
     short-id: 7bac4b112d30d1
   servername: amd.com
   client-fingerprint: edge
-- name: 🇫🇮 芬兰 (Finland) 08 - myhuo
-  server: 144.31.212.253
+- name: 🇫🇮 芬兰 (Finland) 11 - myhuo
+  server: specific.to1.task-hit.ru
   port: 443
   udp: true
-  type: hysteria2
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: vps155-edge.kermemehori.ru
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 09 - myhuo
-  server: 45.149.114.171
-  port: 777
+  type: vless
+  uuid: 621bcb9e-7df5-427b-a9d4-6e87223c8bca
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nAC29oXt_go8eVQerHBtS2da2WmcExd9V7jI0Om-wE4
+  servername: www.yahoo.com
+  client-fingerprint: safari
+- name: 🇫🇮 芬兰 (Finland) 12 - myhuo
+  server: 83.220.175.235
+  port: 2096
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  type: vless
+  uuid: f13b36ac-3765-4458-8a4d-08575038c463
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: id.vk.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
 proxy-groups:
 - name: PROXIES
   type: select
@@ -107,6 +150,9 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 07 - myhuo
   - 🇫🇮 芬兰 (Finland) 08 - myhuo
   - 🇫🇮 芬兰 (Finland) 09 - myhuo
+  - 🇫🇮 芬兰 (Finland) 10 - myhuo
+  - 🇫🇮 芬兰 (Finland) 11 - myhuo
+  - 🇫🇮 芬兰 (Finland) 12 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -121,5 +167,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 07 - myhuo
   - 🇫🇮 芬兰 (Finland) 08 - myhuo
   - 🇫🇮 芬兰 (Finland) 09 - myhuo
+  - 🇫🇮 芬兰 (Finland) 10 - myhuo
+  - 🇫🇮 芬兰 (Finland) 11 - myhuo
+  - 🇫🇮 芬兰 (Finland) 12 - myhuo
 rules:
 - MATCH,PROXIES
