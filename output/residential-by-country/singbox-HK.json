@@ -4,44 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo",
-      "server": "85322329-tn2tc0-to3dy2-nx3b.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "32315324-cf6b-11ed-979b-f23c9164ca5d",
-      "tls": {
-        "enabled": true,
-        "server_name": "85322329-tn2tc0-to3dy2-nx3b.nw4.hyhuawei.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo",
-      "server": "916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "28a5ce18-e7a1-11ec-91b2-f23c91cfbbc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com",
-        "insecure": true
-      }
+      "server": "v10.hdacd.com",
+      "server_port": 30807,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

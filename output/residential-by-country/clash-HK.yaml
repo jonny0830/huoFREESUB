@@ -5,34 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
-  server: 85322329-tn2tc0-to3dy2-nx3b.nw4.hyhuawei.com
-  port: 443
+  server: v10.hdacd.com
+  port: 30807
   udp: true
-  type: hysteria2
-  password: 32315324-cf6b-11ed-979b-f23c9164ca5d
-  sni: 85322329-tn2tc0-to3dy2-nx3b.nw4.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
-  server: 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 28a5ce18-e7a1-11ec-91b2-f23c91cfbbc9
-  sni: 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
-  skip-cert-verify: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
 rules:
 - MATCH,PROXIES

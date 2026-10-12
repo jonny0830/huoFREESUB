@@ -12,24 +12,6 @@ proxies:
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 02 - myhuo
-  server: 185.103.110.68
-  port: 18283
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
-  server: 85.209.129.5
-  port: 443
-  udp: true
-  type: trojan
-  password: muLkJXY1WyEbDdP-AoNpjg3HddPCAcBA
-  sni: fl.global-cdn.org
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ajv
-- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -40,34 +22,21 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
-  server: fi.pythonsetupbib.online
-  port: 443
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
+  server: 195.226.92.129
+  port: 8446
   udp: true
   type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  uuid: a61496c3-f256-4a36-8a52-8638b9cc900a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
-    short-id: bdf5852d1423e694
-  servername: fi.pythonsetupbib.online
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
-  server: 170.168.4.59
-  port: 17170
-  udp: true
-  type: vless
-  uuid: 3eec23c1-2a0d-4d53-afa5-62745a1f5ffe
-  tls: true
-  servername: northerntrail.gazette.help
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trail-grpc
-- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
+    public-key: Y6ZtoxCUW1qFIvLTNfbrsyfCDoIBaRsqGNtbF_mcAXM
+    short-id: 7bac4b112d30d1
+  servername: amd.com
+  client-fingerprint: edge
+- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
   server: 65.108.3.59
   port: 443
   udp: true
@@ -80,7 +49,27 @@ proxies:
     short-id: 90ec9bba2019
   servername: web.eitaa.com
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 08 - myhuo
+- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
+  server: edge10.cyrionflare.com
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
+  server: 109.172.54.135
+  port: 8444
+  udp: true
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
   server: 144.31.212.253
   port: 443
   udp: true
@@ -88,69 +77,26 @@ proxies:
   password: cf83b611-6cba-4535-adcb-8da06c6a9146
   sni: 144.31.212.253
   skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 09 - myhuo
-  server: van2.ragnarok-it.xyz
-  port: 8446
+- name: 🇫🇮 芬兰 (Finland) 08 - myhuo
+  server: fi.pythonsetupbib.online
+  port: 443
   udp: true
   type: vless
-  uuid: a61496c3-f256-4a36-8a52-8638b9cc900a
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Y6ZtoxCUW1qFIvLTNfbrsyfCDoIBaRsqGNtbF_mcAXM
-    short-id: 7bac4b112d30d1
-  servername: amd.com
-  client-fingerprint: edge
-- name: 🇫🇮 芬兰 (Finland) 10 - myhuo
-  server: edge10.cyrionflare.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 (Finland) 11 - myhuo
-  server: fi-p1.h1cloud.net
-  port: 25481
-  udp: true
-  type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  tls: true
-  reality-opts:
-    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
-    short-id: 3b84fc70657725af
-  servername: www.bing.com
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 8cb5baa18cd7
-- name: 🇫🇮 芬兰 (Finland) 12 - myhuo
-  server: finkawwwbroy5.qcloud.surf
-  port: 20326
-  udp: true
-  type: hysteria2
-  password: 8bd04756-3beb-4348-82c9-d35453df50ce
-  sni: finkawwwbroy5.qcloud.surf
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 13 - myhuo
-  server: 45.149.114.171
-  port: 777
+    public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
+    short-id: bdf5852d1423e694
+  servername: fi.pythonsetupbib.online
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 09 - myhuo
+  server: 185.103.110.68
+  port: 18283
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
-- name: 🇫🇮 芬兰 (Finland) 14 - myhuo
-  server: ns.l90909l.vip
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 3fcec4e4-a674-44d2-8cae-c253cec43b9c
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: id.vk.com
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless-grpc-reality
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
 proxy-groups:
 - name: PROXIES
   type: select
@@ -165,11 +111,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 07 - myhuo
   - 🇫🇮 芬兰 (Finland) 08 - myhuo
   - 🇫🇮 芬兰 (Finland) 09 - myhuo
-  - 🇫🇮 芬兰 (Finland) 10 - myhuo
-  - 🇫🇮 芬兰 (Finland) 11 - myhuo
-  - 🇫🇮 芬兰 (Finland) 12 - myhuo
-  - 🇫🇮 芬兰 (Finland) 13 - myhuo
-  - 🇫🇮 芬兰 (Finland) 14 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -184,10 +125,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 07 - myhuo
   - 🇫🇮 芬兰 (Finland) 08 - myhuo
   - 🇫🇮 芬兰 (Finland) 09 - myhuo
-  - 🇫🇮 芬兰 (Finland) 10 - myhuo
-  - 🇫🇮 芬兰 (Finland) 11 - myhuo
-  - 🇫🇮 芬兰 (Finland) 12 - myhuo
-  - 🇫🇮 芬兰 (Finland) 13 - myhuo
-  - 🇫🇮 芬兰 (Finland) 14 - myhuo
 rules:
 - MATCH,PROXIES

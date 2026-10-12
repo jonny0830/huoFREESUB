@@ -4,8 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - myhuo",
+      "server": "144.172.65.72",
+      "server_port": 8443,
+      "uuid": "8afeb33c-b686-43e9-a629-0d98f991ec28",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - myhuo",
       "server": "152.67.115.203",
       "server_port": 443,
       "password": "633bc3be486b646190661ac2387c150a",
@@ -21,26 +42,39 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - myhuo",
-      "server": "140.238.198.229",
-      "password": "a34f3990b69f44bfa0d32385",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - myhuo",
+      "server": "vpn-au-001.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "rmgyvpn.rest",
+        "server_name": "127.0.0.1",
         "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - myhuo",
+      "server": "212.135.211.242",
+      "server_port": 443,
+      "uuid": "235e318a-8bcb-4480-b256-7b65cc5d0b0a",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "aus.lovehk.xyz",
+        "insecure": false
       },
-      "obfs": {
-        "type": "salamander",
-        "password": "a34f3990b69f44bfa0d32385"
-      },
-      "server_ports": [
-        "20000:30000",
-        "20000:20000"
-      ]
+      "transport": {
+        "type": "ws",
+        "path": "/Sydney3",
+        "headers": {
+          "Host": "aus.lovehk.xyz"
+        }
+      }
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - myhuo",
+      "tag": "🇦🇺 澳大利亚 (Australia) 05 - myhuo",
       "server": "137.23.2.56",
       "password": "b42d90fa667942aebc734d60",
       "tls": {
@@ -58,18 +92,6 @@
       ]
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - myhuo",
-      "server": "vpn-au-001.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-au-001.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -77,7 +99,8 @@
         "🇦🇺 澳大利亚 (Australia) 01 - myhuo",
         "🇦🇺 澳大利亚 (Australia) 02 - myhuo",
         "🇦🇺 澳大利亚 (Australia) 03 - myhuo",
-        "🇦🇺 澳大利亚 (Australia) 04 - myhuo"
+        "🇦🇺 澳大利亚 (Australia) 04 - myhuo",
+        "🇦🇺 澳大利亚 (Australia) 05 - myhuo"
       ]
     },
     {
@@ -87,7 +110,8 @@
         "🇦🇺 澳大利亚 (Australia) 01 - myhuo",
         "🇦🇺 澳大利亚 (Australia) 02 - myhuo",
         "🇦🇺 澳大利亚 (Australia) 03 - myhuo",
-        "🇦🇺 澳大利亚 (Australia) 04 - myhuo"
+        "🇦🇺 澳大利亚 (Australia) 04 - myhuo",
+        "🇦🇺 澳大利亚 (Australia) 05 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
