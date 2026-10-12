@@ -4,8 +4,16 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
-  server: 118.167.248.243
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
+  server: 85322329-tn2tc0-to3dy2-nx3b.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 32315324-cf6b-11ed-979b-f23c9164ca5d
+  sni: 85322329-tn2tc0-to3dy2-nx3b.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -14,14 +22,14 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo
+  client-fingerprint: ios
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - myhuo
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
   server: 654168416355441.d6f54hd1j.cc
   port: 443
   udp: true
@@ -35,9 +43,15 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 654168416355441.d6f54hd1j.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - myhuo
+  server: 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 28a5ce18-e7a1-11ec-91b2-f23c91cfbbc9
+  sni: 916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - myhuo
   server: 24864168545164.d6f54hd1j.cc
   port: 443
   udp: true
@@ -51,33 +65,48 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇸🇬 新加坡 (Singapore) 05 (家宽) - myhuo
+    headers:
+      Host: 24864168545164.d6f54hd1j.cc
+- name: 🇰🇷 韩国 (South Korea) 07 (家宽) - myhuo
+  server: 218.237.185.234
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇸🇬 新加坡 (Singapore) 08 (家宽) - myhuo
   server: s3.huhiuh.space
   port: 18642
   udp: true
   type: hysteria2
   password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: www.bing.com
+  sni: s3.huhiuh.space
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
-  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 07 (家宽) - myhuo
+  - 🇸🇬 新加坡 (Singapore) 08 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
-  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 07 (家宽) - myhuo
+  - 🇸🇬 新加坡 (Singapore) 08 (家宽) - myhuo
 rules:
 - MATCH,PROXIES

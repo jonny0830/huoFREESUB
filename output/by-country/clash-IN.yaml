@@ -5,6 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - myhuo
+  server: 34.131.228.210
+  port: 443
+  udp: true
+  type: trojan
+  password: M7v%w11Se*
+  sni: hyfuuf6.wsone.icu
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 02 - myhuo
+  server: 217.217.249.70
+  port: 43000
+  udp: true
+  type: vless
+  uuid: 47b83a67-f69d-4d15-9c63-73b7cd0f7d26
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3gTzdNHyWfheX_IrYiMoraornFzYxPFU9EGirW1gfRk
+    short-id: 99f735c4
+  servername: 217.217.249.70
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 03 - myhuo
   server: 152.67.8.205
   port: 80
   udp: true
@@ -15,7 +36,25 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇮🇳 印度 (India) 02 - myhuo
+- name: 🇮🇳 印度 (India) 04 - myhuo
+  server: 194.61.31.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 05 - myhuo
+  server: 103.194.228.102
+  port: 4443
+  udp: true
+  type: vless
+  uuid: f247f7e4-04bb-48a5-828d-b8e75ec4c3af
+- name: 🇮🇳 印度 (India) 06 - myhuo
   server: 148.113.5.44
   port: 443
   udp: true
@@ -27,27 +66,7 @@ proxies:
     public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
     short-id: 221873918e0bb74d
   servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇮🇳 印度 (India) 03 - myhuo
-  server: 194.61.31.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  tls: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 04 - myhuo
-  server: hyfuuf6.wsone.icu
-  port: 443
-  udp: true
-  type: trojan
-  password: M7v%w11Se*
-  sni: hyfuuf6.wsone.icu
-  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,6 +76,8 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - myhuo
   - 🇮🇳 印度 (India) 03 - myhuo
   - 🇮🇳 印度 (India) 04 - myhuo
+  - 🇮🇳 印度 (India) 05 - myhuo
+  - 🇮🇳 印度 (India) 06 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,5 +87,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - myhuo
   - 🇮🇳 印度 (India) 03 - myhuo
   - 🇮🇳 印度 (India) 04 - myhuo
+  - 🇮🇳 印度 (India) 05 - myhuo
+  - 🇮🇳 印度 (India) 06 - myhuo
 rules:
 - MATCH,PROXIES

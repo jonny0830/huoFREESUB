@@ -5,7 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - myhuo
-  server: arcturus.yokkastars.com
+  server: 104.18.12.149
+  port: 443
+  udp: true
+  type: vless
+  uuid: 36a857e4-f3d4-43aa-8b90-d7da849da989
+  tls: true
+  servername: 002.inc-electrocell-001-002.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoib0RnakxTZUZvOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: 002.inc-electrocell-001-002.workers.dev
+- name: 🇮🇶 IQ 02 - myhuo
+  server: 178.17.57.120
   port: 40443
   udp: true
   type: vless
@@ -16,18 +31,20 @@ proxies:
     public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
     short-id: db46e2946fc466fd
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - myhuo
+  - 🇮🇶 IQ 02 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - myhuo
+  - 🇮🇶 IQ 02 - myhuo
 rules:
 - MATCH,PROXIES

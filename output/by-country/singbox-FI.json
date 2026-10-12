@@ -12,8 +12,39 @@
       "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 02 - myhuo",
+      "server": "185.103.110.68",
+      "server_port": 18283,
+      "method": "aes-128-gcm",
+      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
+      "server": "85.209.129.5",
+      "server_port": 443,
+      "password": "muLkJXY1WyEbDdP-AoNpjg3HddPCAcBA",
+      "tls": {
+        "enabled": true,
+        "server_name": "fl.global-cdn.org",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "ajv"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - myhuo",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
@@ -22,7 +53,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -32,67 +63,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
-      "server": "144.31.212.253",
-      "server_port": 443,
-      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
-      "tls": {
-        "enabled": true,
-        "server_name": "144.31.212.253",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - myhuo",
-      "server": "65.108.3.59",
-      "server_port": 443,
-      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "web.eitaa.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
-          "short_id": "90ec9bba2019"
-        }
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 05 - myhuo",
-      "server": "170.168.4.59",
-      "server_port": 17170,
-      "uuid": "3eec23c1-2a0d-4d53-afa5-62745a1f5ffe",
-      "tls": {
-        "enabled": true,
-        "server_name": "northerntrail.gazette.help",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ]
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "trail-grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - myhuo",
-      "server": "edge10.cyrionflare.com",
-      "server_port": 2052,
-      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 07 - myhuo",
       "server": "fi.pythonsetupbib.online",
       "server_port": 443,
       "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
@@ -112,16 +84,92 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - myhuo",
+      "server": "170.168.4.59",
+      "server_port": 17170,
+      "uuid": "3eec23c1-2a0d-4d53-afa5-62745a1f5ffe",
+      "tls": {
+        "enabled": true,
+        "server_name": "northerntrail.gazette.help",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "trail-grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - myhuo",
+      "server": "65.108.3.59",
+      "server_port": 443,
+      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.eitaa.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
+          "short_id": "90ec9bba2019"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 08 - myhuo",
-      "server": "185.103.110.68",
-      "server_port": 18283,
-      "method": "aes-128-gcm",
-      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
+      "server": "144.31.212.253",
+      "server_port": 443,
+      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
+      "tls": {
+        "enabled": true,
+        "server_name": "144.31.212.253",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 09 - myhuo",
+      "server": "van2.ragnarok-it.xyz",
+      "server_port": 8446,
+      "uuid": "a61496c3-f256-4a36-8a52-8638b9cc900a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Y6ZtoxCUW1qFIvLTNfbrsyfCDoIBaRsqGNtbF_mcAXM",
+          "short_id": "7bac4b112d30d1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 10 - myhuo",
+      "server": "edge10.cyrionflare.com",
+      "server_port": 2052,
+      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 11 - myhuo",
       "server": "fi-p1.h1cloud.net",
       "server_port": 25481,
       "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d",
@@ -145,7 +193,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 10 - myhuo",
+      "tag": "🇫🇮 芬兰 (Finland) 12 - myhuo",
       "server": "finkawwwbroy5.qcloud.surf",
       "server_port": 20326,
       "password": "8bd04756-3beb-4348-82c9-d35453df50ce",
@@ -156,8 +204,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 13 - myhuo",
+      "server": "45.149.114.171",
+      "server_port": 777,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
+    },
+    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 11 - myhuo",
+      "tag": "🇫🇮 芬兰 (Finland) 14 - myhuo",
       "server": "ns.l90909l.vip",
       "server_port": 2096,
       "uuid": "3fcec4e4-a674-44d2-8cae-c253cec43b9c",
@@ -180,35 +236,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 12 - myhuo",
-      "server": "195.226.92.129",
-      "server_port": 8446,
-      "uuid": "a61496c3-f256-4a36-8a52-8638b9cc900a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Y6ZtoxCUW1qFIvLTNfbrsyfCDoIBaRsqGNtbF_mcAXM",
-          "short_id": "7bac4b112d30d1"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 13 - myhuo",
-      "server": "45.149.114.171",
-      "server_port": 777,
-      "method": "chacha20-ietf-poly1305",
-      "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -225,7 +252,8 @@
         "🇫🇮 芬兰 (Finland) 10 - myhuo",
         "🇫🇮 芬兰 (Finland) 11 - myhuo",
         "🇫🇮 芬兰 (Finland) 12 - myhuo",
-        "🇫🇮 芬兰 (Finland) 13 - myhuo"
+        "🇫🇮 芬兰 (Finland) 13 - myhuo",
+        "🇫🇮 芬兰 (Finland) 14 - myhuo"
       ]
     },
     {
@@ -244,7 +272,8 @@
         "🇫🇮 芬兰 (Finland) 10 - myhuo",
         "🇫🇮 芬兰 (Finland) 11 - myhuo",
         "🇫🇮 芬兰 (Finland) 12 - myhuo",
-        "🇫🇮 芬兰 (Finland) 13 - myhuo"
+        "🇫🇮 芬兰 (Finland) 13 - myhuo",
+        "🇫🇮 芬兰 (Finland) 14 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

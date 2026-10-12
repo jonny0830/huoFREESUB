@@ -5,21 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇱 AL 01 - myhuo",
-      "server": "best.valaiqm.ir",
-      "server_port": 3037,
-      "uuid": "a1fb63f7-a942-4010-a830-bc395703a9a4",
+      "tag": "🇧🇪 比利时 (Belgium) 01 - myhuo",
+      "server": "172.67.209.13",
+      "server_port": 443,
+      "uuid": "fa45096d-bed0-ad80-c773-23c30000001b",
       "tls": {
         "enabled": true,
-        "server_name": "telewebion.ir",
+        "server_name": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cYQAluLQY4m0yBUkvqWo3LEXTp-_9In3gJUDoEMmn1U",
-          "short_id": "a9c9"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sync ",
+        "headers": {
+          "Host": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev"
         }
       }
     },
@@ -28,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - myhuo"
+        "🇧🇪 比利时 (Belgium) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - myhuo"
+        "🇧🇪 比利时 (Belgium) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
