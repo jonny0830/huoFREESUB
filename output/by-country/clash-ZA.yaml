@@ -12,18 +12,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: Xsy8Ox4yOV3xLlpxtjzs3X
 - name: 🇿🇦 南非 (South Africa) 02 - myhuo
-  server: 34.35.189.111
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4758aee6-6d1a-4306-b460-2398b5af4e35
-  tls: true
-  reality-opts:
-    public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
-    short-id: 5ced03e42cc31aab
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇿🇦 南非 (South Africa) 03 - myhuo
   server: 34.35.186.228
   port: 443
   udp: true
@@ -34,14 +22,19 @@ proxies:
     public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
     short-id: 89b3a20484eb43ec
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇿🇦 南非 (South Africa) 04 - myhuo
-  server: 102.37.156.224
+  client-fingerprint: ios
+- name: 🇿🇦 南非 (South Africa) 03 - myhuo
+  server: 34.35.189.111
   port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
+  type: vless
+  uuid: 4758aee6-6d1a-4306-b460-2398b5af4e35
+  tls: true
+  reality-opts:
+    public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
+    short-id: 5ced03e42cc31aab
+  servername: www.cloudflare.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,7 +43,6 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - myhuo
   - 🇿🇦 南非 (South Africa) 02 - myhuo
   - 🇿🇦 南非 (South Africa) 03 - myhuo
-  - 🇿🇦 南非 (South Africa) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,6 +51,5 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - myhuo
   - 🇿🇦 南非 (South Africa) 02 - myhuo
   - 🇿🇦 南非 (South Africa) 03 - myhuo
-  - 🇿🇦 南非 (South Africa) 04 - myhuo
 rules:
 - MATCH,PROXIES

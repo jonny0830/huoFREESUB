@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - myhuo
-  server: 132.243.175.144
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-- name: 🇨🇭 瑞士 (Switzerland) 02 - myhuo
   server: 140.238.213.114
   port: 50160
   udp: true
@@ -19,29 +12,7 @@ proxies:
   password: 84a506ca5aca505696a454d828420b3f
   sni: 140.238.213.114
   skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 03 - myhuo
-  server: 208.69.78.217
-  port: 2053
-  udp: true
-  type: vless
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  tls: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇨🇭 瑞士 (Switzerland) 04 - myhuo
-  server: 208.69.78.217
-  port: 33171
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 05 - myhuo
+- name: 🇨🇭 瑞士 (Switzerland) 02 - myhuo
   server: 45.90.59.15
   port: 443
   udp: true
@@ -54,7 +25,22 @@ proxies:
     short-id: 19253fae84102271
   servername: www.cloudflare.com
   client-fingerprint: edge
-- name: 🇨🇭 瑞士 (Switzerland) 06 - myhuo
+- name: 🇨🇭 瑞士 (Switzerland) 03 - myhuo
+  server: ch.srv.vbuste.ru
+  port: 444
+  udp: true
+  type: vless
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  tls: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: ch.srv.vbuste.ru
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇨🇭 瑞士 (Switzerland) 04 - myhuo
   server: 138.124.63.224
   port: 8444
   udp: true
@@ -69,9 +55,9 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇨🇭 瑞士 (Switzerland) 07 - myhuo
+- name: 🇨🇭 瑞士 (Switzerland) 05 - myhuo
   server: 208.69.78.217
-  port: 33117
+  port: 21021
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -79,7 +65,20 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 08 - myhuo
+- name: 🇨🇭 瑞士 (Switzerland) 06 - myhuo
+  server: br.urobotix.tech
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7b9b233c-c646-4859-88b2-2a55695c6487
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jQx41aPKBwFCRKregjdLMmwo4ShIYfjHWIMIl-0HJhc
+    short-id: 288d01b5
+  servername: br.urobotix.tech
+  client-fingerprint: chrome
+- name: 🇨🇭 瑞士 (Switzerland) 07 - myhuo
   server: 138.124.96.88
   port: 41826
   udp: true
@@ -94,24 +93,21 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇨🇭 瑞士 (Switzerland) 09 - myhuo
-  server: ch.srv.vbuste.ru
-  port: 444
+- name: 🇨🇭 瑞士 (Switzerland) 08 - myhuo
+  server: 208.69.78.217
+  port: 2053
   udp: true
   type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   tls: true
   reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: ch.srv.vbuste.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇨🇭 瑞士 (Switzerland) 10 - myhuo
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 瑞士 (Switzerland) 09 - myhuo
   server: 208.69.78.217
-  port: 33152
+  port: 21161
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -119,9 +115,16 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 10 - myhuo
+  server: 132.243.175.144
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 - name: 🇨🇭 瑞士 (Switzerland) 11 - myhuo
   server: 208.69.78.217
-  port: 33044
+  port: 21054
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
