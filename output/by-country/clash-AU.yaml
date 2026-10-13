@@ -17,6 +17,14 @@ proxies:
   servername: www.tradingview.com
   client-fingerprint: random
 - name: 🇦🇺 澳大利亚 (Australia) 02 - myhuo
+  server: vpn-au-001.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 03 - myhuo
   server: 152.67.115.203
   port: 443
   udp: true
@@ -26,31 +34,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
-- name: 🇦🇺 澳大利亚 (Australia) 03 - myhuo
-  server: vpn-au-001.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
-  skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 04 - myhuo
-  server: 212.135.211.242
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 235e318a-8bcb-4480-b256-7b65cc5d0b0a
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: aus.lovehk.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /Sydney3
-    headers:
-      Host: aus.lovehk.xyz
-- name: 🇦🇺 澳大利亚 (Australia) 05 - myhuo
   server: 137.23.2.56
   port: 20000
   udp: true
@@ -70,7 +54,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 03 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 04 - myhuo
-  - 🇦🇺 澳大利亚 (Australia) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,6 +63,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 03 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 04 - myhuo
-  - 🇦🇺 澳大利亚 (Australia) 05 - myhuo
 rules:
 - MATCH,PROXIES

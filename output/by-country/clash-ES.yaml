@@ -25,18 +25,6 @@ proxies:
   servername: www.microsoft.com
   client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 03 - myhuo
-  server: 212.227.235.66
-  port: 2053
-  udp: true
-  type: vless
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
-  tls: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-    short-id: 29e8dcd2b37aaa7f
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 04 - myhuo
   server: 46.28.71.247
   port: 443
   udp: true
@@ -48,15 +36,32 @@ proxies:
     public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇪🇸 西班牙 (Spain) 05 - myhuo
-  server: spainspeedboostjbl88.qcloud.surf
-  port: 27313
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 04 - myhuo
+  server: 212.227.235.66
+  port: 2053
   udp: true
-  type: hysteria2
-  password: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
-  sni: spainspeedboostjbl88.qcloud.surf
-  skip-cert-verify: true
+  type: vless
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  tls: true
+  reality-opts:
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+    short-id: 29e8dcd2b37aaa7f
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 05 - myhuo
+  server: 185.76.241.87
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9ee57d03-dcf5-488b-aff7-305301879353
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DcdLu5TEodox9cSq7WLfV-47vURmKkRc1BO19KJvgkM
+    short-id: 861215e33e8dba4f
+  servername: ru-in-es-4vp.movietop24.site
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 06 - myhuo
   server: 193.238.154.78
   port: 443
@@ -70,6 +75,19 @@ proxies:
     short-id: e93d46ee3735069e
   servername: gateway.icloud.com
   client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 07 - myhuo
+  server: 83.147.18.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: fd8cf7e1173f0edb
+  servername: www.cloudflare.com
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,6 +99,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - myhuo
   - 🇪🇸 西班牙 (Spain) 05 - myhuo
   - 🇪🇸 西班牙 (Spain) 06 - myhuo
+  - 🇪🇸 西班牙 (Spain) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,5 +111,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - myhuo
   - 🇪🇸 西班牙 (Spain) 05 - myhuo
   - 🇪🇸 西班牙 (Spain) 06 - myhuo
+  - 🇪🇸 西班牙 (Spain) 07 - myhuo
 rules:
 - MATCH,PROXIES

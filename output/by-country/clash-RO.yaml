@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - myhuo
+  server: 154.46.31.106
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - myhuo
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: google.com
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
   server: 162.249.125.133
   port: 443
   udp: true
@@ -14,7 +29,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - myhuo
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - myhuo
   server: 46.28.67.55
   port: 443
   udp: true
@@ -26,35 +41,7 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
-  server: 146.70.124.85
-  port: 443
-  udp: true
-  type: vless
-  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
-    short-id: fe24f8a0a560056e
-  servername: www.datadoghq.com
-  client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - myhuo
-  server: 103.126.51.58
-  port: 995
-  udp: true
-  type: vless
-  uuid: 1fc575d3-81bb-44d5-9efa-4131c7cc677a
-  tls: true
-  servername: ocober-romania-new.yyuyy.com
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: httpupgrade
-  httpupgrade-opts:
-    path: /api/v1
-    headers:
-      Host: ocober-romania-new.yyuyy.com
+  client-fingerprint: qq
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - myhuo
   server: 194.68.44.42
   port: 64546
@@ -76,6 +63,19 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 07 - myhuo
+  server: 146.70.124.85
+  port: 443
+  udp: true
+  type: vless
+  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
+    short-id: fe24f8a0a560056e
+  servername: www.datadoghq.com
+  client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 (Romania) 08 - myhuo
   server: 83.147.245.126
   port: 443
   udp: true
@@ -88,21 +88,6 @@ proxies:
     short-id: 344f1f56582dda0f
   servername: assets-str-53.nexus-infinitus.com
   client-fingerprint: random
-- name: 🇷🇴 罗马尼亚 (Romania) 08 - myhuo
-  server: 154.46.31.106
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-- name: 🇷🇴 罗马尼亚 (Romania) 09 - myhuo
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: t.me
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -116,7 +101,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 06 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 07 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 08 - myhuo
-  - 🇷🇴 罗马尼亚 (Romania) 09 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -130,6 +114,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 06 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 07 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 08 - myhuo
-  - 🇷🇴 罗马尼亚 (Romania) 09 - myhuo
 rules:
 - MATCH,PROXIES

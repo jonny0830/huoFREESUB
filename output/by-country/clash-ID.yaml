@@ -5,18 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01 - myhuo
-  server: 154.21.203.106
-  port: 46984
+  server: 103.172.197.2
+  port: 29172
   udp: true
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: XBntt77MdH3EMkPXibOAO_NSBrL_aqwiLItU98rqlHE
-    short-id: 9c3c0f8ec8b4af12
-  servername: www.lamer.com.sg
-  client-fingerprint: firefox
+    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
+  servername: aws.amazon.com
+  client-fingerprint: chrome
 - name: 🇮🇩 印尼 (Indonesia) 02 - myhuo
   server: 103.172.197.3
   port: 16006
@@ -28,7 +27,20 @@ proxies:
   reality-opts:
     public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
+- name: 🇮🇩 印尼 (Indonesia) 03 - myhuo
+  server: dghk2610.supertoolify.com
+  port: 46984
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XBntt77MdH3EMkPXibOAO_NSBrL_aqwiLItU98rqlHE
+    short-id: 9c3c0f8ec8b4af12
+  servername: www.lamer.com.sg
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +48,7 @@ proxy-groups:
   - AUTO
   - 🇮🇩 印尼 (Indonesia) 01 - myhuo
   - 🇮🇩 印尼 (Indonesia) 02 - myhuo
+  - 🇮🇩 印尼 (Indonesia) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +56,6 @@ proxy-groups:
   proxies:
   - 🇮🇩 印尼 (Indonesia) 01 - myhuo
   - 🇮🇩 印尼 (Indonesia) 02 - myhuo
+  - 🇮🇩 印尼 (Indonesia) 03 - myhuo
 rules:
 - MATCH,PROXIES

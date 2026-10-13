@@ -5,53 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - myhuo
-  server: 130.49.161.70
+  server: 104.21.67.122
   port: 443
   udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
-  server: 84.235.244.108
-  port: 22573
-  udp: true
   type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
+  tls: true
+  servername: novantunnel.tech
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /Novan-AE9
     headers:
-      Host: uae.unixzone.us
+      Host: novantunnel.tech
+- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
+  server: 104.143.223.79
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 14e227c3-5a83-4b4d-a41a-e5f499c79415
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 - name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
-  server: 146.70.102.82
-  port: 443
-  udp: true
-  type: vless
-  uuid: 31fd2fde-ca69-450e-8c03-eaad819b06b9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
-    short-id: 002fb4ec7b3088cc
-  servername: www.datadoghq.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
-  server: 157.228.155.238
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
-    short-id: 6f76ad09
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 05 - myhuo
   server: 157.228.155.185
   port: 443
   udp: true
@@ -64,19 +40,94 @@ proxies:
     short-id: 5ea112e8
   servername: addons.mozilla.org
   client-fingerprint: randomized
-- name: 🇦🇪 阿联酋 (UAE) 06 - myhuo
-  server: 94.249.188.202
-  port: 43000
+- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
+  server: 157.228.155.238
+  port: 443
   udp: true
   type: vless
-  uuid: f8842728-bf43-47e2-83bf-283e21f33664
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: TdLpPmh5-Tbcj3bUPp7uw9znQ_Asao8z9jG7Eccrhwk
-    short-id: 7887c27d
-  servername: 94.249.188.202
+    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
+    short-id: 6f76ad09
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 05 - myhuo
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 06 - myhuo
+  server: 151.241.166.159
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9ee57d03-dcf5-488b-aff7-305301879353
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: tPhBRGpTbyaPFF3W0wpqncSrdNsV5I-eyM3S9CZoeCQ
+    short-id: 9a26e586f8cadc07
+  servername: pl-hsts.zloygo.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 07 - myhuo
+  server: 31.59.210.32
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
+  tls: true
+  reality-opts:
+    public-key: qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA
+    short-id: 7ec4374ffc6308fd
+  servername: www.yandex.ru
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: astracat
+- name: 🇦🇪 阿联酋 (UAE) 08 - myhuo
+  server: 84.235.244.108
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 09 - myhuo
+  server: 146.70.102.82
+  port: 443
+  udp: true
+  type: vless
+  uuid: 31fd2fde-ca69-450e-8c03-eaad819b06b9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
+    short-id: 002fb4ec7b3088cc
+  servername: www.datadoghq.com
   client-fingerprint: random
+- name: 🇦🇪 阿联酋 (UAE) 10 - myhuo
+  server: 157.228.128.59
+  port: 443
+  udp: true
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
+    short-id: 06e00e7c
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,6 +139,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - myhuo
   - 🇦🇪 阿联酋 (UAE) 05 - myhuo
   - 🇦🇪 阿联酋 (UAE) 06 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 07 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 08 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 09 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 10 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,5 +154,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - myhuo
   - 🇦🇪 阿联酋 (UAE) 05 - myhuo
   - 🇦🇪 阿联酋 (UAE) 06 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 07 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 08 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 09 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 10 - myhuo
 rules:
 - MATCH,PROXIES

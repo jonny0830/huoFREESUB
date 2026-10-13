@@ -12,13 +12,15 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 - name: 🇨🇭 瑞士 (Switzerland) 02 - myhuo
-  server: 140.238.213.114
-  port: 50160
+  server: 208.69.78.217
+  port: 21080
   udp: true
   type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: 'off'
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
   skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 03 - myhuo
   server: 152.67.75.161
   port: 443
@@ -43,6 +45,14 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 05 - myhuo
+  server: 140.238.213.114
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 06 - myhuo
   server: 138.124.63.224
   port: 8444
   udp: true
@@ -57,59 +67,52 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇨🇭 瑞士 (Switzerland) 06 - myhuo
-  server: 208.69.78.217
-  port: 21016
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 07 - myhuo
-  server: 208.69.78.217
-  port: 33025
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 08 - myhuo
-  server: 208.69.78.217
-  port: 2053
+  server: 144.31.135.38
+  port: 9444
   udp: true
   type: vless
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  uuid: 9a48995b-dd98-40a4-98cb-5fbb270f3d63
   tls: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+- name: 🇨🇭 瑞士 (Switzerland) 08 - myhuo
+  server: 138.124.96.88
+  port: 41826
+  udp: true
+  type: vless
+  uuid: 2eb3f6a0-df6e-49b6-994c-177acdd50a97
+  tls: true
+  servername: sweden.homyak.app
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /
+    headers:
+      Host: ''
 - name: 🇨🇭 瑞士 (Switzerland) 09 - myhuo
-  server: 208.69.78.217
-  port: 21047
+  server: 116.204.164.5
+  port: 7443
   udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
+  type: vless
+  uuid: 2416ff70-cb17-4cdc-834d-a89c00261e01
+  tls: true
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
 - name: 🇨🇭 瑞士 (Switzerland) 10 - myhuo
-  server: 208.69.78.217
-  port: 8444
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 11 - myhuo
   server: 208.69.78.217
   port: 33130
   udp: true
@@ -119,9 +122,19 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 11 - myhuo
+  server: 208.69.78.217
+  port: 21047
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 12 - myhuo
   server: 208.69.78.217
-  port: 21113
+  port: 21086
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -131,7 +144,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 13 - myhuo
   server: 208.69.78.217
-  port: 33171
+  port: 8444
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -151,7 +164,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 15 - myhuo
   server: 208.69.78.217
-  port: 21086
+  port: 33133
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -161,7 +174,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 16 - myhuo
   server: 208.69.78.217
-  port: 33141
+  port: 33195
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -171,7 +184,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 17 - myhuo
   server: 208.69.78.217
-  port: 21021
+  port: 33141
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -181,7 +194,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 18 - myhuo
   server: 208.69.78.217
-  port: 33044
+  port: 21158
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -191,7 +204,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 19 - myhuo
   server: 208.69.78.217
-  port: 21158
+  port: 33044
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -201,7 +214,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 20 - myhuo
   server: 208.69.78.217
-  port: 33152
+  port: 21021
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -211,7 +224,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 21 - myhuo
   server: 208.69.78.217
-  port: 21090
+  port: 33117
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -221,7 +234,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 22 - myhuo
   server: 208.69.78.217
-  port: 33117
+  port: 33092
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -231,7 +244,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 23 - myhuo
   server: 208.69.78.217
-  port: 33195
+  port: 21000
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -239,9 +252,10 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
+  ports: 21000-21199,33000-33199
 - name: 🇨🇭 瑞士 (Switzerland) 24 - myhuo
   server: 208.69.78.217
-  port: 21147
+  port: 21016
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -251,7 +265,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 25 - myhuo
   server: 208.69.78.217
-  port: 33133
+  port: 33152
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -261,7 +275,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 26 - myhuo
   server: 208.69.78.217
-  port: 21161
+  port: 33171
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -271,7 +285,17 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 27 - myhuo
   server: 208.69.78.217
-  port: 21054
+  port: 21090
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 28 - myhuo
+  server: 208.69.78.217
+  port: 33013
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -311,6 +335,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 25 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 26 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 27 - myhuo
+  - 🇨🇭 瑞士 (Switzerland) 28 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -343,5 +368,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 25 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 26 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 27 - myhuo
+  - 🇨🇭 瑞士 (Switzerland) 28 - myhuo
 rules:
 - MATCH,PROXIES

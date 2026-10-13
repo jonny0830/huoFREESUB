@@ -7,17 +7,17 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - myhuo",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9001,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
+      "password": "UkXRsXvR6buDMG2Y"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 02 - myhuo",
       "server": "195.238.126.20",
-      "server_port": 9008,
+      "server_port": 9012,
       "method": "aes-256-cfb",
-      "password": "y9VURyNzJWNRYEGQ"
+      "password": "xaupMUvhptwxdDUg"
     },
     {
       "type": "shadowsocks",
@@ -31,29 +31,21 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 04 - myhuo",
       "server": "195.238.126.20",
+      "server_port": 9008,
+      "method": "aes-256-cfb",
+      "password": "y9VURyNzJWNRYEGQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - myhuo",
+      "server": "195.238.126.20",
       "server_port": 9086,
       "method": "aes-256-cfb",
       "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - myhuo",
-      "server": "195.238.126.20",
-      "server_port": 9068,
-      "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 06 - myhuo",
-      "server": "195.238.126.20",
-      "server_port": 9001,
-      "method": "aes-256-cfb",
-      "password": "UkXRsXvR6buDMG2Y"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - myhuo",
       "server": "195.238.126.20",
       "server_port": 9011,
       "method": "aes-256-cfb",
@@ -61,7 +53,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - myhuo",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - myhuo",
       "server": "195.238.126.20",
       "server_port": 9045,
       "method": "aes-256-cfb",
@@ -69,11 +61,61 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - myhuo",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - myhuo",
       "server": "195.238.126.20",
       "server_port": 9002,
       "method": "aes-256-cfb",
       "password": "b8KkNDjEd5QqFyRm"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - myhuo",
+      "server": "84.32.109.20",
+      "server_port": 443,
+      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "litv.nztvpn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4",
+          "short_id": "0da7e14db353e7d0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 10 - myhuo",
+      "server": "89.23.113.11",
+      "server_port": 443,
+      "uuid": "9ee57d03-dcf5-488b-aff7-305301879353",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru-in-lt-4vp.movietop24.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DP_8vX-l2ugAHn828ZGa4wHp4Y7YOZrhGKiTMaFoCDc",
+          "short_id": "4ea43db267b5fd8b"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 11 - myhuo",
+      "server": "195.238.126.20",
+      "server_port": 9068,
+      "method": "aes-256-cfb",
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "selector",
@@ -88,7 +130,9 @@
         "🇱🇹 立陶宛 (Lithuania) 06 - myhuo",
         "🇱🇹 立陶宛 (Lithuania) 07 - myhuo",
         "🇱🇹 立陶宛 (Lithuania) 08 - myhuo",
-        "🇱🇹 立陶宛 (Lithuania) 09 - myhuo"
+        "🇱🇹 立陶宛 (Lithuania) 09 - myhuo",
+        "🇱🇹 立陶宛 (Lithuania) 10 - myhuo",
+        "🇱🇹 立陶宛 (Lithuania) 11 - myhuo"
       ]
     },
     {
@@ -103,7 +147,9 @@
         "🇱🇹 立陶宛 (Lithuania) 06 - myhuo",
         "🇱🇹 立陶宛 (Lithuania) 07 - myhuo",
         "🇱🇹 立陶宛 (Lithuania) 08 - myhuo",
-        "🇱🇹 立陶宛 (Lithuania) 09 - myhuo"
+        "🇱🇹 立陶宛 (Lithuania) 09 - myhuo",
+        "🇱🇹 立陶宛 (Lithuania) 10 - myhuo",
+        "🇱🇹 立陶宛 (Lithuania) 11 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
