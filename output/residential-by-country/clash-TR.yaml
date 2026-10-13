@@ -5,6 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo
+  server: 206.1.102.81
+  port: 17915
+  udp: true
+  type: vless
+  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
+  tls: true
+  servername: googol.wookshop.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
@@ -16,11 +26,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo
 rules:
 - MATCH,PROXIES

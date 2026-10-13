@@ -5,47 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - myhuo
-  server: 104.21.70.21
-  port: 443
+  server: 51.83.192.80
+  port: 8388
   udp: true
-  type: vless
-  uuid: 5934b979-e128-4c90-a600-744b97bffc8c
-  tls: true
-  servername: 5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vl/Fi3kP8cNjBoo8UPv?ed=2560fp=unsafe
-    headers:
-      Host: 5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
 - name: 🇫🇷 法国 (France) 02 - myhuo
-  server: 51.75.118.149
-  port: 20016
-  udp: true
-  type: vless
-  uuid: e558719d-e09b-442c-a0c4-f9471fcc3075
-  network: grpc
-  grpc-opts:
-    grpc-service-name: alibodama-grpc
-- name: 🇫🇷 法国 (France) 03 - myhuo
-  server: 13.36.234.11
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 13.36.234.11
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 04 - myhuo
-  server: 51.77.217.70
-  port: 8447
-  udp: true
-  type: hysteria2
-  password: capadmbd5f18bd:jX4BuciLLIqLvzJZsHpoXtc2
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: ChY5QQQT3ZtUdNT8
-- name: 🇫🇷 法国 (France) 05 - myhuo
   server: 51.44.167.227
   port: 443
   udp: true
@@ -53,7 +19,55 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: vpn-fr-001.fastervpn.world
   skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 03 - myhuo
+  server: 54.36.174.140
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
+- name: 🇫🇷 法国 (France) 04 - myhuo
+  server: 62.210.91.10
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 05 - myhuo
+  server: 62.210.124.146
+  port: 22000
+  udp: true
+  type: hysteria2
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 06 - myhuo
+  server: 62.210.91.2
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 07 - myhuo
+  server: 62.210.147.2
+  port: 43115
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 08 - myhuo
   server: 51.77.217.70
   port: 8446
   udp: true
@@ -63,9 +77,9 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: ChY5QQQT3ZtUdNT8
-- name: 🇫🇷 法国 (France) 07 - myhuo
+- name: 🇫🇷 法国 (France) 09 - myhuo
   server: 51.77.217.70
-  port: 8445
+  port: 8447
   udp: true
   type: hysteria2
   password: capadmbd5f18bd:jX4BuciLLIqLvzJZsHpoXtc2
@@ -73,47 +87,66 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: ChY5QQQT3ZtUdNT8
-- name: 🇫🇷 法国 (France) 08 - myhuo
-  server: 152.228.162.19
+- name: 🇫🇷 法国 (France) 10 - myhuo
+  server: 51.77.217.70
+  port: 2053
+  udp: true
+  type: vless
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  tls: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+    short-id: bfe58beb41f1d09f
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇫🇷 法国 (France) 11 - myhuo
+  server: pl134.vpnbook.com
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
+- name: 🇫🇷 法国 (France) 12 - myhuo
+  server: 62.210.7.139
+  port: 60111
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: 62.210.7.139
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 13 - myhuo
+  server: ov-france1.09vpn.com
   port: 80
   udp: true
   type: vless
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
   network: ws
   ws-opts:
     path: /vless/
     headers:
       Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 09 - myhuo
-  server: 62.210.147.2
-  port: 43115
+- name: 🇫🇷 法国 (France) 14 - myhuo
+  server: e3k67dwms3-51255166202-direct.tavafog.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 593bf46b-8316-5050-9357-d8a41e4db78b
+  flow: xtls-rprx-vision
+  tls: true
+  servername: e3k67dwms3-51255166202-direct.tavafog.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 15 - myhuo
+  server: 51.77.217.70
+  port: 21000
   udp: true
   type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: www.microsoft.com
+  password: capadmbd5f18bd:jX4BuciLLIqLvzJZsHpoXtc2
+  sni: vpn.local
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 10 - myhuo
-  server: 149.202.57.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: rgiw5k0gg5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 11 - myhuo
-  server: 51.255.165.170
-  port: 443
-  udp: true
-  type: vless
-  uuid: tyxyrytyro
-  flow: xtls-rprx-vision
-  tls: true
-  servername: tyxyrytyro-51255165170-direct.araghchy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 12 - myhuo
+  obfs: salamander
+  obfs-password: ChY5QQQT3ZtUdNT8
+  ports: 21000-21199,33000-33199
+- name: 🇫🇷 法国 (France) 16 - myhuo
   server: 193.70.85.96
   port: 443
   udp: true
@@ -124,7 +157,17 @@ proxies:
   servername: 7q4eiwcseu-193708596-direct.rahbarii.com
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 13 - myhuo
+- name: 🇫🇷 法国 (France) 17 - myhuo
+  server: 51.77.217.70
+  port: 8445
+  udp: true
+  type: hysteria2
+  password: capadmbd5f18bd:jX4BuciLLIqLvzJZsHpoXtc2
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ChY5QQQT3ZtUdNT8
+- name: 🇫🇷 法国 (France) 18 - myhuo
   server: 152.228.139.33
   port: 51671
   udp: true
@@ -139,14 +182,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc_common3
-- name: 🇫🇷 法国 (France) 14 - myhuo
-  server: 51.255.13.232
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-- name: 🇫🇷 法国 (France) 15 - myhuo
+- name: 🇫🇷 法国 (France) 19 - myhuo
   server: 152.228.139.33
   port: 35108
   udp: true
@@ -157,63 +193,80 @@ proxies:
     public-key: X_lOw5Zz4SJBa1cRHV4dAq5msYE-ClY5-WNcBmBWRxg
     short-id: 52add08b86a5ccea
   servername: www.nvidia.com
-  client-fingerprint: chrome
+  client-fingerprint: random
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-common3
-- name: 🇫🇷 法国 (France) 16 - myhuo
-  server: 54.36.174.140
+- name: 🇫🇷 法国 (France) 20 - myhuo
+  server: rgiw5k0gg5-1492025789-direct.kheibarr.com
   port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
-- name: 🇫🇷 法国 (France) 17 - myhuo
-  server: 62.210.91.10
-  port: 23576
-  udp: true
   type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  uuid: rgiw5k0gg5
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
+  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 18 - myhuo
-  server: 151.247.197.253
-  port: 36723
-  udp: true
-  type: hysteria2
-  password: Krab9Hyst2_Rk7pQ2xL
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 19 - myhuo
-  server: 62.210.91.2
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 20 - myhuo
-  server: 51.77.217.70
-  port: 21000
-  udp: true
-  type: hysteria2
-  password: capadmbd5f18bd:jX4BuciLLIqLvzJZsHpoXtc2
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: ChY5QQQT3ZtUdNT8
-  ports: 21000-21199,33000-33199
 - name: 🇫🇷 法国 (France) 21 - myhuo
+  server: fra.loozerp.wiki
+  port: 443
+  udp: true
+  type: vless
+  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
+    short-id: ff776ff77be48b88
+  servername: fra.loozerp.wiki
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 22 - myhuo
+  server: 54.37.136.194
+  port: 2053
+  udp: true
+  type: vless
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  tls: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+    short-id: 50ba05992b05c1c3
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 23 - myhuo
+  server: 51.75.118.149
+  port: 20016
+  udp: true
+  type: vless
+  uuid: e558719d-e09b-442c-a0c4-f9471fcc3075
+  network: ws
+  ws-opts:
+    path: /alibodama-ws
+    headers:
+      Host: 51.75.118.149
+- name: 🇫🇷 法国 (France) 24 - myhuo
+  server: karta8.api3-max.ru
+  port: 443
+  udp: true
+  type: vless
+  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
+  flow: xtls-rprx-vision
+  tls: true
+  servername: karta8.api3-max.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 25 - myhuo
+  server: 85.31.102.163
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 26 - myhuo
   server: 145.223.68.58
   port: 443
   udp: true
@@ -225,28 +278,17 @@ proxies:
     public-key: qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg
     short-id: a44ff7d2e80213c2
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 22 - myhuo
-  server: 51.77.217.70
-  port: 2053
-  udp: true
-  type: vless
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  tls: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 23 - myhuo
-  server: pl134.vpnbook.com
+  client-fingerprint: ios
+- name: 🇫🇷 法国 (France) 27 - myhuo
+  server: 173.212.201.85
   port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
-- name: 🇫🇷 法国 (France) 24 - myhuo
-  server: 104.17.147.22
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: www.docker.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 28 - myhuo
+  server: 172.64.152.23
   port: 443
   udp: true
   type: trojan
@@ -256,35 +298,7 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 25 - myhuo
-  server: 173.212.201.85
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: 173.212.201.85
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 26 - myhuo
-  server: 62.210.7.139
-  port: 60111
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: google.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 27 - myhuo
-  server: 54.37.136.194
-  port: 2053
-  udp: true
-  type: vless
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  tls: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-    short-id: 50ba05992b05c1c3
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 28 - myhuo
+- name: 🇫🇷 法国 (France) 29 - myhuo
   server: 137.74.16.237
   port: 443
   udp: true
@@ -297,106 +311,19 @@ proxies:
     short-id: b390e0a721d242b0
   servername: www.icloud.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 29 - myhuo
-  server: 51.75.118.165
-  port: 20023
-  udp: true
-  type: vless
-  uuid: 49ade50d-9cd6-81a9-db5d-8e4a7f56930b
-  network: ws
-  ws-opts:
-    path: /ws/49ade50d-9cd6-81a9-db5d-8e4a7f56930b
-    headers:
-      Host: 51.75.118.165
 - name: 🇫🇷 法国 (France) 30 - myhuo
-  server: 89.150.34.41
-  port: 2053
+  server: 145.239.55.210
+  port: 80
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
+  type: vmess
+  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 31 - myhuo
-  server: 62.210.124.146
-  port: 22000
-  udp: true
-  type: hysteria2
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 32 - myhuo
-  server: 185.114.72.31
-  port: 2053
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 33 - myhuo
-  server: 213.1.145.50
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 34 - myhuo
-  server: 85.31.102.163
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 35 - myhuo
-  server: 104.21.72.47
-  port: 443
-  udp: true
-  type: vless
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
-  tls: true
-  servername: trex-panel-nubj0s.samifakor.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
+    path: /
     headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
-- name: 🇫🇷 法国 (France) 36 - myhuo
-  server: 155.103.71.142
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 37 - myhuo
-  server: 51.255.166.202
-  port: 443
-  udp: true
-  type: vless
-  uuid: 593bf46b-8316-5050-9357-d8a41e4db78b
-  flow: xtls-rprx-vision
-  tls: true
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -432,13 +359,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 28 - myhuo
   - 🇫🇷 法国 (France) 29 - myhuo
   - 🇫🇷 法国 (France) 30 - myhuo
-  - 🇫🇷 法国 (France) 31 - myhuo
-  - 🇫🇷 法国 (France) 32 - myhuo
-  - 🇫🇷 法国 (France) 33 - myhuo
-  - 🇫🇷 法国 (France) 34 - myhuo
-  - 🇫🇷 法国 (France) 35 - myhuo
-  - 🇫🇷 法国 (France) 36 - myhuo
-  - 🇫🇷 法国 (France) 37 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -474,12 +394,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 28 - myhuo
   - 🇫🇷 法国 (France) 29 - myhuo
   - 🇫🇷 法国 (France) 30 - myhuo
-  - 🇫🇷 法国 (France) 31 - myhuo
-  - 🇫🇷 法国 (France) 32 - myhuo
-  - 🇫🇷 法国 (France) 33 - myhuo
-  - 🇫🇷 法国 (France) 34 - myhuo
-  - 🇫🇷 法国 (France) 35 - myhuo
-  - 🇫🇷 法国 (France) 36 - myhuo
-  - 🇫🇷 法国 (France) 37 - myhuo
 rules:
 - MATCH,PROXIES
