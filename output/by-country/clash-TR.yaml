@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - myhuo
-  server: 85.192.48.142
-  port: 443
-  udp: true
-  type: vless
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: nvidia.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
   server: 62.60.233.157
   port: 8444
   udp: true
@@ -31,7 +18,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇹🇷 土耳其 (Turkey) 03 - myhuo
+- name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
   server: 78.135.73.47
   port: 443
   udp: true
@@ -44,7 +31,7 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 04 - myhuo
+- name: 🇹🇷 土耳其 (Turkey) 03 - myhuo
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -55,19 +42,8 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - myhuo
-  server: 172.67.176.3
-  port: 2053
-  udp: true
-  type: trojan
-  password: e309e031-991e-4656-9934-44d10deb8fd8
-  sni: nimm.mpd.cc.cd
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /0962
-- name: 🇹🇷 土耳其 (Turkey) 06 - myhuo
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 04 - myhuo
   server: 153.56.210.61
   port: 443
   udp: true
@@ -79,7 +55,33 @@ proxies:
     public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
     short-id: a696de84963656de
   servername: amd.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 05 - myhuo
+  server: tr.datanode-internal.net
+  port: 443
+  udp: true
+  type: vless
+  uuid: 93996a55-febe-4183-9366-df6cb11a34dd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic
+    short-id: abbcd128
+  servername: sun9-38.userapi.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 06 - myhuo
+  server: 85.192.48.142
+  port: 443
+  udp: true
+  type: vless
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  servername: nvidia.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

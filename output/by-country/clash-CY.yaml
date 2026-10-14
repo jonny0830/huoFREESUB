@@ -5,31 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo
-  server: 77.110.105.122
+  server: co-a.speedtec.ru
   port: 443
   udp: true
   type: vless
   uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI
-    short-id: 226509f017e4c36d
   servername: co-pl.speedtec.ru
-  client-fingerprint: random
+  skip-cert-verify: false
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo
-  server: xstack.mahanfixe.workers.dev
-  port: 443
+  server: hydra.yokkastars.com
+  port: 40443
   udp: true
   type: vless
-  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
+  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  flow: xtls-rprx-vision
   tls: true
-  servername: xstack.mahanfixe.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /xiron
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  servername: deepl.com
+  client-fingerprint: random
 - name: 🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo
   server: 5.253.28.240
   port: 2443
@@ -41,23 +38,10 @@ proxies:
     public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
     short-id: 92c32de179e5d908
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: rex-eb0bf76b710ce763
-- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo
-  server: 5.253.28.240
-  port: 40443
-  udp: true
-  type: vless
-  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,7 +50,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo
-  - 🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,6 +58,5 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo
-  - 🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo
 rules:
 - MATCH,PROXIES

@@ -4,56 +4,50 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - myhuo
-  server: 155.117.19.17
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo
-  server: 218.237.185.234
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
+  server: p141.panda001.net
   port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - myhuo
-  server: googol.wookshop.ir
-  port: 17915
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  server: fujrdt.d6f54hd1j.cc
+  port: 443
+  udp: true
+  type: vmess
+  uuid: d877dc6f-7323-4b47-a7dd-14228cbae854
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: fujrdt.d6f54hd1j.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fujrdt.d6f54hd1j.cc
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - myhuo
+  server: test.keoplentuio.xyz
+  port: 2053
   udp: true
   type: vless
-  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
-  tls: true
-  servername: googol.wookshop.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - myhuo
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - myhuo
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - myhuo
 rules:
 - MATCH,PROXIES

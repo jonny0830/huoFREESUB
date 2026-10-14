@@ -30,18 +30,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 03 - myhuo
-  server: es3.h1cloud.net
-  port: 25136
-  udp: true
-  type: vless
-  uuid: c1c13ef7-affa-47e1-8967-25cc67679c10
-  tls: true
-  reality-opts:
-    public-key: nkmfL3QCskKAfBUk-OiTgcWyIXGmXrZVtDEoio0Qo1w
-    short-id: f78838fbd85e59ae
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇪🇸 西班牙 (Spain) 04 - myhuo
   server: 193.238.154.78
   port: 443
   udp: true
@@ -62,7 +50,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - myhuo
   - 🇪🇸 西班牙 (Spain) 02 - myhuo
   - 🇪🇸 西班牙 (Spain) 03 - myhuo
-  - 🇪🇸 西班牙 (Spain) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,6 +58,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - myhuo
   - 🇪🇸 西班牙 (Spain) 02 - myhuo
   - 🇪🇸 西班牙 (Spain) 03 - myhuo
-  - 🇪🇸 西班牙 (Spain) 04 - myhuo
 rules:
 - MATCH,PROXIES

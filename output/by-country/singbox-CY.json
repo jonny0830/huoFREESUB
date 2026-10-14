@@ -6,42 +6,35 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo",
-      "server": "77.110.105.122",
+      "server": "co-a.speedtec.ru",
       "server_port": 443,
       "uuid": "019fbe0f-2d9f-4b89-9f81-e1e36129892a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "co-pl.speedtec.ru",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo",
+      "server": "hydra.yokkastars.com",
+      "server_port": 40443,
+      "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
           "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI",
-          "short_id": "226509f017e4c36d"
+          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
+          "short_id": "88b6"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo",
-      "server": "xstack.mahanfixe.workers.dev",
-      "server_port": 443,
-      "uuid": "a8b1d666-d3ba-4b17-90c4-ba7514c74f78",
-      "tls": {
-        "enabled": true,
-        "server_name": "xstack.mahanfixe.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/xiron"
       }
     },
     {
@@ -55,7 +48,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -69,35 +62,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo",
-      "server": "5.253.28.240",
-      "server_port": 40443,
-      "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
-          "short_id": "88b6"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo",
         "🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo",
-        "🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo"
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo"
       ]
     },
     {
@@ -106,8 +77,7 @@
       "outbounds": [
         "🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo",
         "🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo",
-        "🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo"
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
