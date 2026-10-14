@@ -19,20 +19,12 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
-  server: 193.233.74.6
-  port: 8444
+  server: 185.227.174.29
+  port: 8389
   udp: true
-  type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
-  servername: github.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
+  type: ss
+  cipher: aes-256-gcm
+  password: EwUhOxemnPqaUvJgq4S8ug
 - name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
   server: 130.49.189.158
   port: 43558
@@ -41,90 +33,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
 - name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
-  server: 217.60.72.238
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
-  client-fingerprint: qq
-- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
   server: 194.38.11.86
   port: 65443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
-  server: alb1337.zaebalsanoproxyklinus.lol
-  port: 28152
-  udp: true
-  type: hysteria2
-  password: 6656cc0a-5908-4d04-a436-64f5843c0c7a
-  sni: alb1337.zaebalsanoproxyklinus.lol
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - myhuo
-  server: 153.80.241.206
-  port: 8444
-  udp: true
-  type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: github.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 08 - myhuo
-  server: 159.194.240.128
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 09 - myhuo
-  server: 194.87.118.184
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 10 - myhuo
-  server: 194.87.118.184
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
-  sni: 194.87.118.184
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 11 - myhuo
-  server: 87.242.95.150
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 7ac594a4-fabc-486c-9a91-5662c09e63cd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pobC1laHCtpMK1EA520CyOpYeel0t90hEV_eRJExFAE
-    short-id: 20272c52657d22da
-  servername: passport.yandex.ru
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 12 - myhuo
+- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
   server: 91.196.32.121
   port: 2443
   udp: true
@@ -139,32 +54,33 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 🇷🇺 俄罗斯 (Russia) 13 - myhuo
-  server: 37.18.14.145
-  port: 4510
-  udp: true
-  type: vless
-  uuid: c3db7657-88ce-42a6-b998-1e0364b277ac
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: hkvjyE8WMKHvdGfMta7PAIGz6HAv2WiXvWvAQmsE_DM
-    short-id: 2d0c188798bae174
-  servername: 9c99da.usecache.net
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 14 - myhuo
-  server: 83.166.235.114
+- name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
+  server: freede.aiage.work
   port: 443
   udp: true
   type: vless
-  uuid: a16a3e32-8d63-4dec-8c67-1361388a64ca
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: PdHyJBOPSoTgTljNWw-I6b5iTX_vaZfNwmPT6aeNpmc
-    short-id: 40ce66d79fdbeb13
-  servername: eh1.vk.ru
-  client-fingerprint: random
+    public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
+    short-id: 5f5e74dfd296b28d
+  servername: freede.aiage.work
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 07 - myhuo
+  server: 153.80.241.206
+  port: 8444
+  udp: true
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
 proxy-groups:
 - name: PROXIES
   type: select
@@ -177,13 +93,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 06 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 07 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 08 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 09 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 10 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 11 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 12 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 13 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 14 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -196,12 +105,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 06 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 07 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 08 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 09 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 10 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 11 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 12 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 13 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 14 - myhuo
 rules:
 - MATCH,PROXIES

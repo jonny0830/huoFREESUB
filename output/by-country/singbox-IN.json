@@ -4,26 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - myhuo",
-      "server": "in.tronsg.com",
+      "server": "148.113.5.44",
       "server_port": 443,
-      "password": "Trojan@82164024",
+      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "in.tronsg.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 02 - myhuo",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws"
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
+          "short_id": "221873918e0bb74d"
+        }
       }
     },
     {
@@ -31,16 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 - myhuo",
-        "🇮🇳 印度 (India) 02 - myhuo"
+        "🇮🇳 印度 (India) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 - myhuo",
-        "🇮🇳 印度 (India) 02 - myhuo"
+        "🇮🇳 印度 (India) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

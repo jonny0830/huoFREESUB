@@ -22,14 +22,18 @@ proxies:
   ws-opts:
     path: /
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo
-  server: 94.183.170.135
-  port: 8443
+  server: ees92.shhflow.xyz
+  port: 443
   udp: true
   type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: 43212c32-01f2-4356-b216-67dc1c178262
+  flow: xtls-rprx-vision
   tls: true
-  servername: estproxy4.lockdwn.com
-  skip-cert-verify: false
+  reality-opts:
+    public-key: h1xVB_-djXL6A7tvnnVbjV4bYKplHOuN0bgmFJQE6AE
+    short-id: 7f3a91c2d8e640ab
+  servername: ees92.shhflow.xyz
+  client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo
   server: ee-1-1.unturned-rust-dead.lol
   port: 443
@@ -45,31 +49,19 @@ proxies:
   grpc-opts:
     grpc-service-name: ee-grpc
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo
-  server: 179.254.126.20
-  port: 25895
-  udp: true
-  type: vless
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  tls: true
-  reality-opts:
-    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-    short-id: a73f0410d728c823
-  servername: www.samsung.com
-  client-fingerprint: random
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo
-  server: 188.225.38.216
+  server: 143.246.41.31
   port: 443
   udp: true
   type: vless
-  uuid: 30292475-4666-4c26-bcb2-338a0919958b
+  uuid: 43212c32-01f2-4356-b216-67dc1c178262
+  flow: xtls-rprx-vision
   tls: true
-  servername: lalibobi.online
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: lalibobi.orbit.v3.Connect
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - myhuo
+  reality-opts:
+    public-key: h1xVB_-djXL6A7tvnnVbjV4bYKplHOuN0bgmFJQE6AE
+    short-id: 7f3a91c2d8e640ab
+  servername: ees92.shhflow.xyz
+  client-fingerprint: random
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo
   server: 185.31.242.61
   port: 443
   udp: true
@@ -93,7 +85,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -105,6 +96,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - myhuo
 rules:
 - MATCH,PROXIES

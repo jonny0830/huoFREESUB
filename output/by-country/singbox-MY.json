@@ -4,23 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇲🇾 马来西亚 (Malaysia) 01 - myhuo",
-      "server": "154.21.203.106",
-      "server_port": 46984,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "flow": "xtls-rprx-vision",
+      "server": "172.67.205.213",
+      "server_port": 443,
+      "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "www.lamer.com.sg",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XBntt77MdH3EMkPXibOAO_NSBrL_aqwiLItU98rqlHE",
-          "short_id": "9c3c0f8ec8b4af12"
+        "server_name": "my.lovehk.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/KualaLumpur1",
+        "headers": {
+          "Host": "my.lovehk.xyz"
         }
       }
     },
