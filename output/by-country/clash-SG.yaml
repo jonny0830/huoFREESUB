@@ -5,20 +5,100 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - myhuo
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+  network: ws
+  ws-opts:
+    path: /138.2.74.219-28616
+    headers:
+      Host: nautica-cff.kloningstrife002.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 02 - myhuo
+  server: 104.17.3.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+  tls: true
+  servername: nautica-cff.kloningstrife002.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /138.2.74.219-28616
+    headers:
+      Host: nautica-cff.kloningstrife002.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 03 - myhuo
+  server: 022xw1dmczg0c6165pcla6.tomborn69.workers.dev
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5d4f5139-6965-42ed-8dba-fe3ef9fed7c1
+  tls: true
+  servername: 022xw1dmczg0c6165pcla6.tomborn69.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vl/fw89i0TpKDRV7i25w2uWIf
+- name: 🇸🇬 新加坡 (Singapore) 04 - myhuo
+  server: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  tls: true
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+- name: 🇸🇬 新加坡 (Singapore) 05 - myhuo
+  server: 57.129.130.200
+  port: 52014
+  udp: true
+  type: vless
+  uuid: b1ecd06b-a931-47a2-8f48-d1d133d2b4f3
+  tls: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 06 - myhuo
+  server: 149.88.23.207
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 07 - myhuo
   server: 68.183.227.236
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 02 - myhuo
-  server: 128.199.172.224
+- name: 🇸🇬 新加坡 (Singapore) 08 - myhuo
+  server: 68.183.235.122
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 03 - myhuo
+- name: 🇸🇬 新加坡 (Singapore) 09 - myhuo
+  server: 68.183.227.4
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 10 - myhuo
   server: 149.88.23.202
   port: 18000
   udp: true
@@ -26,56 +106,43 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 04 - myhuo
-  server: 68.183.227.45
+- name: 🇸🇬 新加坡 (Singapore) 11 - myhuo
+  server: 128.199.172.224
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 05 - myhuo
+- name: 🇸🇬 新加坡 (Singapore) 12 - myhuo
+  server: 129.150.59.74
+  port: 14384
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
+- name: 🇸🇬 新加坡 (Singapore) 13 - myhuo
+  server: 103.36.91.32
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf
+  password: asd123456
+- name: 🇸🇬 新加坡 (Singapore) 14 - myhuo
   server: 45.128.12.20
   port: 14249
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 9epp3o9ng8ej59uv
-- name: 🇸🇬 新加坡 (Singapore) 06 - myhuo
-  server: 68.183.227.4
-  port: 8080
+- name: 🇸🇬 新加坡 (Singapore) 15 - myhuo
+  server: 139.180.146.200
+  port: 8886
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 07 - myhuo
-  server: 68.183.235.122
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 08 - myhuo
-  server: 54.251.9.130
-  port: 24146
-  udp: true
-  type: vless
-  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
-    short-id: 7205d9079521832c
-  servername: www.intel.com
-  client-fingerprint: qq
-- name: 🇸🇬 新加坡 (Singapore) 09 - myhuo
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 10 - myhuo
+  type: trojan
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  sni: 139.180.146.200
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 16 - myhuo
   server: 206.206.78.36
   port: 443
   udp: true
@@ -88,20 +155,46 @@ proxies:
     short-id: 133a3f10a1581047
   servername: www.cloudflare.com
   client-fingerprint: edge
-- name: 🇸🇬 新加坡 (Singapore) 11 - myhuo
-  server: funagfrdfs.alixxplay.com
-  port: 57541
+- name: 🇸🇬 新加坡 (Singapore) 17 - myhuo
+  server: 104.64.205.103
+  port: 443
   udp: true
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  uuid: d3ad7253-2dbd-42fd-9b07-04caea38de54
+  tls: true
+  servername: cdn-dynmedia.shalana.shop
+  skip-cert-verify: false
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 18 - myhuo
+  server: 146.235.16.130
+  port: 19825
+  udp: true
+  type: vless
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: hAtfAzXQrbxyqiK3b2XrsxZ35sWiN8iqp0LvjKr9_DE
-    short-id: 22b19630280c3f
-  servername: www.lamer.com.sg
-  client-fingerprint: ios
-- name: 🇸🇬 新加坡 (Singapore) 12 - myhuo
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  servername: sg2-8sb.6121999.dpdns.org
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 19 - myhuo
+  server: 86.38.247.109
+  port: 2087
+  udp: true
+  type: trojan
+  password: sshs8_6481354771
+  sni: ul-singapore1.09vpn.com
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 20 - myhuo
+  server: cdn-dynmedia.shalana.shop
+  port: 119
+  udp: true
+  type: trojan
+  password: A7GQgrEcSn
+  sni: cdn-dynmedia.shalana.shop
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 21 - myhuo
   server: 5.34.177.164
   port: 443
   udp: true
@@ -114,97 +207,6 @@ proxies:
     short-id: b2efed6d157e7bb0
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 13 - myhuo
-  server: 3.0.111.82
-  port: 10574
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇸🇬 新加坡 (Singapore) 14 - myhuo
-  server: brave-tomcat.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: brave-tomcat.rooster465.autos
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 15 - myhuo
-  server: 18.141.136.8
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: musical-mouse.rooster465.autos
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 16 - myhuo
-  server: 67.159.52.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
-    short-id: feedbacc
-  servername: sg.fasti.win
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 17 - myhuo
-  server: sg4.dexlos.com
-  port: 20654
-  udp: true
-  type: hysteria2
-  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
-  sni: sg4.dexlos.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: xK9mN2pLq5vR8wB3
-- name: 🇸🇬 新加坡 (Singapore) 18 - myhuo
-  server: cdn-dynmedia.shalana.shop
-  port: 443
-  udp: true
-  type: vless
-  uuid: d3ad7253-2dbd-42fd-9b07-04caea38de54
-  tls: true
-  servername: cdn-dynmedia.shalana.shop
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 19 - myhuo
-  server: 3.0.111.82
-  port: 12972
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: ios
-- name: 🇸🇬 新加坡 (Singapore) 20 - myhuo
-  server: 139.180.146.200
-  port: 8886
-  udp: true
-  type: trojan
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  sni: 139.180.146.200
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 21 - myhuo
-  server: glorious-glider.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: glorious-glider.rooster465.autos
-  skip-cert-verify: false
 - name: 🇸🇬 新加坡 (Singapore) 22 - myhuo
   server: 34.87.113.18
   port: 443
@@ -216,27 +218,21 @@ proxies:
     public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
     short-id: eb97ce837da2f6ad
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
 - name: 🇸🇬 新加坡 (Singapore) 23 - myhuo
-  server: 54.169.200.246
-  port: 41688
+  server: 68.183.227.45
+  port: 8080
   udp: true
-  type: vless
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
-  servername: www.intel.com
-  client-fingerprint: edge
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 24 - myhuo
-  server: cdn-dynmedia.shalana.shop
-  port: 119
+  server: glorious-glider.rooster465.autos
+  port: 443
   udp: true
   type: trojan
-  password: A7GQgrEcSn
-  sni: cdn-dynmedia.shalana.shop
+  password: UX82473651
+  sni: glorious-glider.rooster465.autos
   skip-cert-verify: false
 - name: 🇸🇬 新加坡 (Singapore) 25 - myhuo
   server: 138.2.73.238
@@ -244,34 +240,24 @@ proxies:
   udp: true
   type: hysteria2
   password: f87376e17da040ed04c9665ce8972930
-  sni: 138.2.73.238
+  sni: 'off'
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 26 - myhuo
-  server: free.nadun.store
+  server: 54.151.181.75
   port: 443
   udp: true
-  type: vless
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  tls: true
-  servername: free.nadun.store
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
+  type: trojan
+  password: UX82473651
+  sni: moral-basilisk.rooster465.autos
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 27 - myhuo
-  server: sg2-8sb.6121999.dpdns.org
-  port: 19825
+  server: 56.10.9.77
+  port: 443
   udp: true
-  type: vless
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  servername: sg2-8sb.6121999.dpdns.org
-  client-fingerprint: chrome
+  type: trojan
+  password: UX82473651
+  sni: inviting-ferret.rooster465.autos
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 28 - myhuo
   server: simple-molly.rooster465.autos
   port: 443
@@ -281,74 +267,32 @@ proxies:
   sni: simple-molly.rooster465.autos
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 29 - myhuo
-  server: 139.162.27.96
-  port: 2096
+  server: 203.137.165.164
+  port: 57554
   udp: true
   type: vless
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  uuid: 9d81ab94-494c-4507-bc63-334db46e80d9
   tls: true
-  servername: free-server.techsonic.dev
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /free-server.techsonic.dev
+    path: /@Marisa_kristi
     headers:
-      Host: free-server.techsonic.dev
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
 - name: 🇸🇬 新加坡 (Singapore) 30 - myhuo
-  server: funagfrdfs.alixxplay.com
-  port: 46105
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
-    short-id: 28f5c1f8f98a
-  servername: www.lamer.com.sg
-  client-fingerprint: safari
-- name: 🇸🇬 新加坡 (Singapore) 31 - myhuo
-  server: 3.0.111.82
-  port: 17623
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: ios
-- name: 🇸🇬 新加坡 (Singapore) 32 - myhuo
-  server: tongue-expects-begins-old.trycloudflare.com
+  server: free.nadun.store
   port: 443
   udp: true
   type: vless
-  uuid: c01391fa-7bd3-4b9d-b2db-4829b75e30da
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
   tls: true
-  servername: tongue-expects-begins-old.trycloudflare.com
+  servername: free.nadun.store
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /
-- name: 🇸🇬 新加坡 (Singapore) 33 - myhuo
-  server: inviting-ferret.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: inviting-ferret.rooster465.autos
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 34 - myhuo
-  server: moral-basilisk.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: moral-basilisk.rooster465.autos
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 35 - myhuo
+- name: 🇸🇬 新加坡 (Singapore) 31 - myhuo
   server: eu3.998998.best
   port: 443
   udp: true
@@ -364,6 +308,118 @@ proxies:
     path: /aiaiai
     headers:
       Host: server40.9966338.xyz
+- name: 🇸🇬 新加坡 (Singapore) 32 - myhuo
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: 45deab47-28e0-4048-b7a2-1ab672f684f8
+  tls: true
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 33 - myhuo
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: 8a9dff00-0705-4c1b-9126-8c1bdc8b5d0a
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 34 - myhuo
+  server: 18.141.136.8
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: musical-mouse.rooster465.autos
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 35 - myhuo
+  server: brave-tomcat.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: brave-tomcat.rooster465.autos
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 36 - myhuo
+  server: 139.162.27.96
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  tls: true
+  servername: free-server.techsonic.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 37 - myhuo
+  server: 3.0.111.82
+  port: 12972
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 38 - myhuo
+  server: 3.0.111.82
+  port: 10574
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
+- name: 🇸🇬 新加坡 (Singapore) 39 - myhuo
+  server: 3.0.111.82
+  port: 17623
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 40 - myhuo
+  server: sg2-8sb.6121999.dpdns.org
+  port: 19825
+  udp: true
+  type: vless
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  servername: sg2-8sb.6121999.dpdns.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -404,6 +460,11 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 33 - myhuo
   - 🇸🇬 新加坡 (Singapore) 34 - myhuo
   - 🇸🇬 新加坡 (Singapore) 35 - myhuo
+  - 🇸🇬 新加坡 (Singapore) 36 - myhuo
+  - 🇸🇬 新加坡 (Singapore) 37 - myhuo
+  - 🇸🇬 新加坡 (Singapore) 38 - myhuo
+  - 🇸🇬 新加坡 (Singapore) 39 - myhuo
+  - 🇸🇬 新加坡 (Singapore) 40 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -444,5 +505,10 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 33 - myhuo
   - 🇸🇬 新加坡 (Singapore) 34 - myhuo
   - 🇸🇬 新加坡 (Singapore) 35 - myhuo
+  - 🇸🇬 新加坡 (Singapore) 36 - myhuo
+  - 🇸🇬 新加坡 (Singapore) 37 - myhuo
+  - 🇸🇬 新加坡 (Singapore) 38 - myhuo
+  - 🇸🇬 新加坡 (Singapore) 39 - myhuo
+  - 🇸🇬 新加坡 (Singapore) 40 - myhuo
 rules:
 - MATCH,PROXIES

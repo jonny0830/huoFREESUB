@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - myhuo
+  server: 104.21.67.122
+  port: 443
+  udp: true
+  type: vless
+  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
+  tls: true
+  servername: novantunnel.tech
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /Novan-AE9
+    headers:
+      Host: novantunnel.tech
+- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
   server: 157.228.155.238
   port: 443
   udp: true
@@ -16,8 +30,8 @@ proxies:
     public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
     short-id: 6f76ad09
   servername: addons.mozilla.org
-  client-fingerprint: random
-- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
   server: 157.228.155.185
   port: 443
   udp: true
@@ -30,7 +44,7 @@ proxies:
     short-id: 5ea112e8
   servername: addons.mozilla.org
   client-fingerprint: randomized
-- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
+- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
   server: 130.49.161.70
   port: 443
   udp: true
@@ -40,7 +54,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
+- name: 🇦🇪 阿联酋 (UAE) 05 - myhuo
   server: 157.228.128.59
   port: 443
   udp: true
@@ -53,7 +67,7 @@ proxies:
     short-id: 06e00e7c
   servername: addons.mozilla.org
   client-fingerprint: randomized
-- name: 🇦🇪 阿联酋 (UAE) 05 - myhuo
+- name: 🇦🇪 阿联酋 (UAE) 06 - myhuo
   server: 31.59.210.26
   port: 2088
   udp: true
@@ -64,11 +78,26 @@ proxies:
     public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
     short-id: b1ad165f903c62fe
   servername: www.yandex.ru
-  client-fingerprint: safari
+  client-fingerprint: qq
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 06 - myhuo
+- name: 🇦🇪 阿联酋 (UAE) 07 - myhuo
+  server: 116.204.164.27
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 00274dd7-7cee-420d-9942-b24d047611a7
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 08 - myhuo
   server: 31.59.210.32
   port: 443
   udp: true
@@ -79,26 +108,11 @@ proxies:
     public-key: qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA
     short-id: 7ec4374ffc6308fd
   servername: www.yandex.ru
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 07 - myhuo
-  server: 31.59.210.25
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  tls: true
-  reality-opts:
-    public-key: KDBhxT2YMtMjDEC9VdoDEISdCwxd6KFrSE8uyUaHcTY
-    short-id: ed435c242097fd05
-  servername: www.yandex.ru
   client-fingerprint: ''
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 08 - myhuo
+- name: 🇦🇪 阿联酋 (UAE) 09 - myhuo
   server: 31.59.210.37
   port: 443
   udp: true
@@ -113,17 +127,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 09 - myhuo
-  server: 84.235.244.108
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 10 - myhuo
   server: 37.9.4.112
   port: 17701
@@ -135,6 +138,17 @@ proxies:
   obfs: salamander
   obfs-password: 588c76723192f87cfe6d6786816177cd2bd9773acdc545928d7d1d5e8338d4ce
 - name: 🇦🇪 阿联酋 (UAE) 11 - myhuo
+  server: 84.235.244.108
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 12 - myhuo
   server: 146.70.102.82
   port: 443
   udp: true
@@ -147,17 +161,6 @@ proxies:
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 12 - myhuo
-  server: zordbx861.233874.xyz
-  port: 8888
-  udp: true
-  type: vless
-  uuid: 46509b23-fe97-45b3-9c89-bd1b2a93bd4e
-  tls: true
-  reality-opts:
-    public-key: vBSBoPYKiB5RZ9_jNPEdLnroJ2M7MKw0c1Rvh6-QmV4
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

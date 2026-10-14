@@ -4,24 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 01 - myhuo",
-      "server": "140.238.2.250",
-      "server_port": 443,
-      "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
-      "security": "auto"
+      "server": "141.164.45.187",
+      "server_port": 8008,
+      "method": "aes-256-gcm",
+      "password": "XKFKl2rULjIp74"
     },
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 02 - myhuo",
-      "server": "43.201.100.203",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "optimum-snapper.rooster465.autos",
-        "insecure": false
-      }
+      "server": "141.164.45.187",
+      "server_port": 9090,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
     },
     {
       "type": "vless",
@@ -34,7 +30,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -44,8 +40,23 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇰🇷 韩国 (South Korea) 04 - myhuo",
+      "server": "132.145.80.230",
+      "server_port": 80,
+      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8",
+        "headers": {
+          "Host": "null"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 05 - myhuo",
       "server": "kr2-r.link-t7.com",
       "server_port": 10047,
       "uuid": "745A6079-6A61-423D-BDD9-B344C1D26E62",
@@ -69,7 +80,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 05 - myhuo",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - myhuo",
       "server": "kr.tronsg.com",
       "server_port": 443,
       "password": "Trojan@82164024",
@@ -80,18 +91,87 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 07 - myhuo",
+      "server": "152.70.237.123",
+      "server_port": 2053,
+      "password": "maintell",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 08 - myhuo",
+      "server": "152.67.200.82",
+      "server_port": 50160,
+      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 09 - myhuo",
+      "server": "152.69.231.175",
+      "server_port": 50160,
+      "password": "1beb216e3f60aea9555dae60d219a5ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "152-69-231-175.liao.kdns.fr",
+        "insecure": false
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - myhuo",
-      "server": "211.178.105.134",
-      "server_port": 6123,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
+      "tag": "🇰🇷 韩国 (South Korea) 10 - myhuo",
+      "server": "141.164.45.187",
+      "server_port": 5498,
+      "method": "aes-256-gcm",
+      "password": "lGqs95QkFHo2NV"
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 07 - myhuo",
+      "tag": "🇰🇷 韩国 (South Korea) 11 - myhuo",
       "server": "3.39.4.109",
       "server_port": 18967,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 12 - myhuo",
+      "server": "132.226.226.189",
+      "server_port": 50160,
+      "password": "1671a252e2a97dc2bda4e515475931da",
+      "tls": {
+        "enabled": true,
+        "server_name": "132.226.226.189",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 13 - myhuo",
+      "server": "3.39.4.109",
+      "server_port": 13672,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -109,20 +189,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 08 - myhuo",
-      "server": "152.69.231.175",
-      "server_port": 50160,
-      "password": "1beb216e3f60aea9555dae60d219a5ca",
-      "tls": {
-        "enabled": true,
-        "server_name": "152-69-231-175.liao.kdns.fr",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 09 - myhuo",
+      "tag": "🇰🇷 韩国 (South Korea) 14 - myhuo",
       "server": "141.164.43.178",
       "server_port": 443,
       "uuid": "583cc910-b57c-4dd0-a4a7-cea51a30b032",
@@ -143,55 +211,19 @@
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 10 - myhuo",
-      "server": "3.36.50.213",
+      "tag": "🇰🇷 韩国 (South Korea) 15 - myhuo",
+      "server": "43.201.100.203",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "pure-kodiak.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 11 - myhuo",
-      "server": "132.226.226.189",
-      "server_port": 50160,
-      "password": "1671a252e2a97dc2bda4e515475931da",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 12 - myhuo",
-      "server": "3.35.207.188",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "main-fawn.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 13 - myhuo",
-      "server": "152.70.237.123",
-      "server_port": 2053,
-      "password": "maintell",
-      "tls": {
-        "enabled": true,
-        "server_name": "152.70.237.123",
-        "insecure": true
+        "server_name": "optimum-snapper.rooster465.autos",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 14 - myhuo",
+      "tag": "🇰🇷 韩国 (South Korea) 16 - myhuo",
       "server": "151.245.106.49",
       "server_port": 2053,
       "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
@@ -210,53 +242,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 15 - myhuo",
-      "server": "43.203.141.118",
-      "server_port": 443,
-      "uuid": "7e68e32f-8015-4f37-9082-70e8b0b58043",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "anjen.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DHOrfoin7TeRpnIoU3d6qT5Yrq3QPVFp49kApATA4iE",
-          "short_id": "e04a526b0b09c765"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 16 - myhuo",
-      "server": "noted-cougar.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "noted-cougar.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vmess",
       "tag": "🇰🇷 韩国 (South Korea) 17 - myhuo",
-      "server": "132.145.80.230",
-      "server_port": 80,
-      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 18 - myhuo",
       "server": "154.90.62.70",
       "server_port": 56127,
       "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
@@ -267,30 +254,9 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 19 - myhuo",
-      "server": "3.39.4.109",
-      "server_port": 13672,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 20 - myhuo",
-      "server": "13.125.69.162",
+      "tag": "🇰🇷 韩国 (South Korea) 18 - myhuo",
+      "server": "engaging-toucan.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
@@ -301,31 +267,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 21 - myhuo",
-      "server": "central-jawfish.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "central-jawfish.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 22 - myhuo",
-      "server": "152.67.200.82",
-      "server_port": 50160,
-      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
-      "tls": {
-        "enabled": true,
-        "server_name": "t.me",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 23 - myhuo",
+      "tag": "🇰🇷 韩国 (South Korea) 19 - myhuo",
       "server": "pretty-rat.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -336,30 +278,58 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 24 - myhuo",
-      "server": "jp4.998998.best",
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 20 - myhuo",
+      "server": "3.36.50.213",
       "server_port": 443,
-      "uuid": "5504eaa8-1395-402f-8e0e-75ecd762e627",
-      "security": "auto",
+      "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "nat12.9966338.xyz",
+        "server_name": "pure-kodiak.rooster465.autos",
         "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vvvvvvvvv",
-        "headers": {
-          "Host": "nat12.9966338.xyz"
-        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 21 - myhuo",
+      "server": "main-fawn.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "main-fawn.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 22 - myhuo",
+      "server": "central-jawfish.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "central-jawfish.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 23 - myhuo",
+      "server": "noted-cougar.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "noted-cougar.rooster465.autos",
+        "insecure": true
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 25 - myhuo",
+      "tag": "🇰🇷 韩国 (South Korea) 24 - myhuo",
       "server": "141.164.45.187",
-      "server_port": 6679,
+      "server_port": 6697,
       "method": "aes-256-gcm",
       "password": "TEzjfAYq2IjtuoS"
     },
@@ -391,8 +361,7 @@
         "🇰🇷 韩国 (South Korea) 21 - myhuo",
         "🇰🇷 韩国 (South Korea) 22 - myhuo",
         "🇰🇷 韩国 (South Korea) 23 - myhuo",
-        "🇰🇷 韩国 (South Korea) 24 - myhuo",
-        "🇰🇷 韩国 (South Korea) 25 - myhuo"
+        "🇰🇷 韩国 (South Korea) 24 - myhuo"
       ]
     },
     {
@@ -422,8 +391,7 @@
         "🇰🇷 韩国 (South Korea) 21 - myhuo",
         "🇰🇷 韩国 (South Korea) 22 - myhuo",
         "🇰🇷 韩国 (South Korea) 23 - myhuo",
-        "🇰🇷 韩国 (South Korea) 24 - myhuo",
-        "🇰🇷 韩国 (South Korea) 25 - myhuo"
+        "🇰🇷 韩国 (South Korea) 24 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

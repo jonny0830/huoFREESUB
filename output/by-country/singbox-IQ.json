@@ -6,6 +6,28 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01 - myhuo",
+      "server": "www.speedtest.net",
+      "server_port": 443,
+      "uuid": "5d4f5139-6965-42ed-8dba-fe3ef9fed7c1",
+      "tls": {
+        "enabled": true,
+        "server_name": "022xw1dmczg0c6165pcla6.tomborn69.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http%2f1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/GXgLIjqfzM8AIh6QJM?ed=2560",
+        "headers": {
+          "Host": "022xw1dmczg0c6165pcla6.tomborn69.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇶 IQ 02 - myhuo",
       "server": "178.17.57.120",
       "server_port": 40443,
       "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
@@ -15,7 +37,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -29,14 +51,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - myhuo"
+        "🇮🇶 IQ 01 - myhuo",
+        "🇮🇶 IQ 02 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - myhuo"
+        "🇮🇶 IQ 01 - myhuo",
+        "🇮🇶 IQ 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

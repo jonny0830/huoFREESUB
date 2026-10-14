@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo",
-      "server": "frr.drwrdoh.org",
-      "server_port": 8086,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "f2Nq5YLnyclPaWR8my7/Vdd3ZX8URncXZNly5+HcUSs=:dQ6WYcPpGX5xIxUVPAR8w1A9eY6kEVoKKW3HleJ6o8Y="
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo",
       "server": "77.110.105.122",
       "server_port": 443,
       "uuid": "019fbe0f-2d9f-4b89-9f81-e1e36129892a",
@@ -34,29 +26,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo",
-      "server": "5.253.30.99",
-      "server_port": 40443,
-      "uuid": "511c1563-2cb6-4064-abc6-a59ee49818a8",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo",
+      "server": "xstack.mahanfixe.workers.dev",
+      "server_port": 443,
+      "uuid": "a8b1d666-d3ba-4b17-90c4-ba7514c74f78",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "xstack.mahanfixe.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
-          "short_id": "88b6"
         }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/xiron"
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo",
-      "server": "hydra.yokkastars.com",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo",
+      "server": "5.253.28.240",
       "server_port": 2443,
       "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
       "tls": {
@@ -75,6 +66,27 @@
       "transport": {
         "type": "grpc",
         "service_name": "rex-eb0bf76b710ce763"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo",
+      "server": "5.253.28.240",
+      "server_port": 40443,
+      "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
+          "short_id": "88b6"
+        }
       }
     },
     {
