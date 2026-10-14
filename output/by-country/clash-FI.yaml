@@ -30,7 +30,7 @@ proxies:
     public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
     short-id: 1c3e8241a8743df9
   servername: brointelengence.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04 - myhuo
   server: 95.216.27.15
   port: 2053
@@ -44,40 +44,23 @@ proxies:
   servername: www.google.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 05 - myhuo
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
   server: edge10.cyrionflare.com
   port: 2052
   udp: true
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
-  server: 36a466g.fi1.h1clayd.click
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
-  tls: true
-  reality-opts:
-    public-key: pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg
-    short-id: b3c9d0c6bdd114a6
-  servername: 36a466g.fi1.h1clayd.click
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 0adb9638509b
 - name: 🇫🇮 芬兰 (Finland) 07 - myhuo
-  server: 65.108.3.59
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  servername: web.eitaa.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 08 - myhuo
   server: 109.172.54.135
   port: 8444
   udp: true
@@ -91,32 +74,21 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇫🇮 芬兰 (Finland) 09 - myhuo
-  server: webdisk.jaggyslawa.org
+- name: 🇫🇮 芬兰 (Finland) 08 - myhuo
+  server: 36a466g.fi1.h1clayd.click
   port: 443
   udp: true
   type: vless
-  uuid: 8cc7d0fc-1b83-4ee3-b51d-8a03a9b19435
-  flow: xtls-rprx-vision
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
   tls: true
   reality-opts:
-    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: 87174b37ce3b
-  servername: www.microsoft.com
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 10 - myhuo
-  server: 87.242.95.77
-  port: 8449
-  udp: true
-  type: vless
-  uuid: 30292475-4666-4c26-bcb2-338a0919958b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WBkO_JIRKVjfwh7GlIIACmAJaVFobgm_EebPZgk7ijU
-    short-id: c374306818a47741
-  servername: meadow.lalibobi.online
-  client-fingerprint: edge
+    public-key: pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg
+    short-id: b3c9d0c6bdd114a6
+  servername: 36a466g.fi1.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 0adb9638509b
 proxy-groups:
 - name: PROXIES
   type: select
@@ -130,8 +102,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - myhuo
   - 🇫🇮 芬兰 (Finland) 07 - myhuo
   - 🇫🇮 芬兰 (Finland) 08 - myhuo
-  - 🇫🇮 芬兰 (Finland) 09 - myhuo
-  - 🇫🇮 芬兰 (Finland) 10 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -145,7 +115,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - myhuo
   - 🇫🇮 芬兰 (Finland) 07 - myhuo
   - 🇫🇮 芬兰 (Finland) 08 - myhuo
-  - 🇫🇮 芬兰 (Finland) 09 - myhuo
-  - 🇫🇮 芬兰 (Finland) 10 - myhuo
 rules:
 - MATCH,PROXIES
