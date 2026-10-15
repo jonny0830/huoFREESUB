@@ -9,35 +9,20 @@ proxies:
   port: 10443
   udp: true
   type: trojan
-  password: e4109f08-8a5c-46bc-ad65-f6450a3f2038
+  password: a8da71ab-e827-4d6b-92d4-af2ec39e58c0
   sni: 45.205.27.78
   skip-cert-verify: true
-- name: 🇸🇨 塞舌尔 (Seychelles) 02 - myhuo
-  server: 156.226.168.221
-  port: 35193
-  udp: true
-  type: vless
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
-  servername: www.apple.com
-  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - myhuo
-  - 🇸🇨 塞舌尔 (Seychelles) 02 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - myhuo
-  - 🇸🇨 塞舌尔 (Seychelles) 02 - myhuo
 rules:
 - MATCH,PROXIES

@@ -16,7 +16,7 @@ proxies:
     public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
     short-id: 221873918e0bb74d
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 02 - myhuo
   server: 194.61.31.126
   port: 2053
@@ -28,7 +28,7 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 03 - myhuo
   server: 152.67.8.205
   port: 80
@@ -41,6 +41,37 @@ proxies:
   ws-opts:
     path: /
 - name: 🇮🇳 印度 (India) 04 - myhuo
+  server: 172.105.39.124
+  port: 7002
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇮🇳 印度 (India) 05 - myhuo
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 06 - myhuo
+  server: hk03.ccdn3.work
+  port: 753
+  udp: true
+  type: vless
+  uuid: fc12fb20-4380-11ec-8c97-d707e267af0b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: y3AAdi1d5zRrTb_pm-DJWsoP-srtEzYP2P8XxmvbkhQ
+    short-id: 4b8ad8fe52fca1a0
+  servername: i1.hdslb.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 07 - myhuo
   server: in.tronsg.com
   port: 443
   udp: true
@@ -48,13 +79,6 @@ proxies:
   password: Trojan@82164024
   sni: in.tronsg.com
   skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 05 - myhuo
-  server: 172.105.39.124
-  port: 7002
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,6 +89,8 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - myhuo
   - 🇮🇳 印度 (India) 04 - myhuo
   - 🇮🇳 印度 (India) 05 - myhuo
+  - 🇮🇳 印度 (India) 06 - myhuo
+  - 🇮🇳 印度 (India) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,5 +101,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - myhuo
   - 🇮🇳 印度 (India) 04 - myhuo
   - 🇮🇳 印度 (India) 05 - myhuo
+  - 🇮🇳 印度 (India) 06 - myhuo
+  - 🇮🇳 印度 (India) 07 - myhuo
 rules:
 - MATCH,PROXIES

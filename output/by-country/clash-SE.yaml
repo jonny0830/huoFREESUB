@@ -12,19 +12,6 @@ proxies:
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
 - name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
-  server: se3.h1cloud.net
-  port: 25119
-  udp: true
-  type: vless
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
-    short-id: 10f517
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
   server: 46.246.125.153
   port: 443
   udp: true
@@ -36,7 +23,18 @@ proxies:
     public-key: ftglT-Ghp2FPiPlwyEAldfiAE1IL_AJ9UCkfCj0zk2I
     short-id: a83b77e064761e3c
   servername: res.cdn.office.net
-  client-fingerprint: chrome
+  client-fingerprint: random
+- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
   server: 62.60.159.81
   port: 2053
@@ -53,7 +51,15 @@ proxies:
   grpc-opts:
     grpc-service-name: grpce5bb9e71
 - name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
-  server: 94.143.231.146
+  server: sweedenqfds777.qcloud.surf
+  port: 21223
+  udp: true
+  type: hysteria2
+  password: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
+  sni: sweedenqfds777.qcloud.surf
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 06 - myhuo
+  server: sub.merky.top
   port: 443
   udp: true
   type: vless
@@ -61,22 +67,25 @@ proxies:
   tls: true
   servername: sub.merky.top
   skip-cert-verify: false
+  client-fingerprint: safari
   network: ws
   ws-opts:
     path: /merky-connect/de6/
-- name: 🇸🇪 瑞典 (Sweden) 06 - myhuo
-  server: swe.wizard.select
-  port: 443
+    headers:
+      Host: sub.merky.top
+- name: 🇸🇪 瑞典 (Sweden) 07 - myhuo
+  server: se3.h1cloud.net
+  port: 25119
   udp: true
   type: vless
-  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
-    short-id: 3b20e438da99
-  servername: swe.wizard.select
-  client-fingerprint: safari
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,6 +97,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - myhuo
   - 🇸🇪 瑞典 (Sweden) 05 - myhuo
   - 🇸🇪 瑞典 (Sweden) 06 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,5 +109,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - myhuo
   - 🇸🇪 瑞典 (Sweden) 05 - myhuo
   - 🇸🇪 瑞典 (Sweden) 06 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 07 - myhuo
 rules:
 - MATCH,PROXIES
