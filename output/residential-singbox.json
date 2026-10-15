@@ -4,68 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo",
-      "server": "206.1.102.64",
-      "server_port": 8080,
-      "uuid": "184a0393-5c9e-403c-9be6-427b066308e1",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo",
       "server": "test.keoplentuio.xyz",
       "server_port": 2053,
       "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo",
-      "server": "p141.panda001.net",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 04 (家宽) - myhuo",
-      "server": "69.63.221.116",
-      "server_port": 25517,
-      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
         "enabled": true,
-        "server_name": "wzs.echo.net.eu.org",
-        "insecure": false,
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HBRETS1lYDldeEEFRGxhbVloPHhpEVl9AFwxSGQ9bSQ==",
-        "headers": {
-          "Host": "wzs.echo.net.eu.org"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo",
-      "server": "fujrdt.d6f54hd1j.cc",
-      "server_port": 443,
-      "uuid": "d877dc6f-7323-4b47-a7dd-14228cbae854",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "fujrdt.d6f54hd1j.cc",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "fujrdt.d6f54hd1j.cc"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
         }
       }
     },
@@ -75,10 +36,7 @@
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo",
-        "🇺🇸 美国 (United States) 04 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo"
       ]
     },
     {
@@ -86,10 +44,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo",
-        "🇺🇸 美国 (United States) 04 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,39 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇿🇦 南非 (South Africa) 01 - myhuo
-  server: 139.84.247.164
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
-- name: 🇿🇦 南非 (South Africa) 02 - myhuo
   server: 102.133.165.160
   port: 16233
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: Xsy8Ox4yOV3xLlpxtjzs3X
-- name: 🇿🇦 南非 (South Africa) 03 - myhuo
-  server: 102.37.156.224
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-- name: 🇿🇦 南非 (South Africa) 04 - myhuo
-  server: 34.35.186.228
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
-  tls: true
-  reality-opts:
-    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
-    short-id: 89b3a20484eb43ec
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇿🇦 南非 (South Africa) 05 - myhuo
+- name: 🇿🇦 南非 (South Africa) 02 - myhuo
   server: 34.35.189.111
   port: 443
   udp: true
@@ -48,7 +22,19 @@ proxies:
     public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
     short-id: 5ced03e42cc31aab
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
+- name: 🇿🇦 南非 (South Africa) 03 - myhuo
+  server: 34.35.186.228
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
+  tls: true
+  reality-opts:
+    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
+    short-id: 89b3a20484eb43ec
+  servername: www.cloudflare.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,8 +43,6 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - myhuo
   - 🇿🇦 南非 (South Africa) 02 - myhuo
   - 🇿🇦 南非 (South Africa) 03 - myhuo
-  - 🇿🇦 南非 (South Africa) 04 - myhuo
-  - 🇿🇦 南非 (South Africa) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,7 +51,5 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - myhuo
   - 🇿🇦 南非 (South Africa) 02 - myhuo
   - 🇿🇦 南非 (South Africa) 03 - myhuo
-  - 🇿🇦 南非 (South Africa) 04 - myhuo
-  - 🇿🇦 南非 (South Africa) 05 - myhuo
 rules:
 - MATCH,PROXIES
