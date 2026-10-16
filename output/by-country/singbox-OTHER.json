@@ -6,7 +6,21 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - myhuo",
-      "server": "undef.network",
+      "server": "freesocks.work",
+      "server_port": 2052,
+      "uuid": "26769ac3-b34c-430a-87f8-e1de14619d25",
+      "transport": {
+        "type": "ws",
+        "path": "/@BlueKnight_net--@BlueKnight_net",
+        "headers": {
+          "Host": "uwu.blueknightnet.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 02 - myhuo",
+      "server": "freesocks.work",
       "server_port": 2052,
       "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
       "transport": {
@@ -22,14 +36,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🌐 其他地区 (Other) 01 - myhuo",
+        "🌐 其他地区 (Other) 02 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🌐 其他地区 (Other) 01 - myhuo",
+        "🌐 其他地区 (Other) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
