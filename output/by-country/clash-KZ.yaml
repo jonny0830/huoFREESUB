@@ -13,6 +13,18 @@ proxies:
   sni: fi1server.rabstvo.shop
   skip-cert-verify: false
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
+  server: 178.236.16.98
+  port: 35728
+  udp: true
+  type: vless
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  tls: true
+  reality-opts:
+    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+    short-id: 69a2
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -31,6 +43,7 @@ proxy-groups:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +51,6 @@ proxy-groups:
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
 rules:
 - MATCH,PROXIES

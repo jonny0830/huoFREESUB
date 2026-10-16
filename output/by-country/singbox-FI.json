@@ -15,7 +15,7 @@
         "server_name": "brointelengence.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -32,62 +32,12 @@
       "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "45.144.234.157"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - myhuo",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - myhuo",
-      "server": "fi-p1.h1cloud.net",
-      "server_port": 25481,
-      "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E",
-          "short_id": "3b84fc70657725af"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "8cb5baa18cd7"
-      }
+      "server": "b2a2.velqixa.ir",
+      "server_port": 39221,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Pzlcb_PeV3uRgiC2NNoNKw"
     },
     {
       "type": "selector",
@@ -96,9 +46,7 @@
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - myhuo",
         "🇫🇮 芬兰 (Finland) 02 - myhuo",
-        "🇫🇮 芬兰 (Finland) 03 - myhuo",
-        "🇫🇮 芬兰 (Finland) 04 - myhuo",
-        "🇫🇮 芬兰 (Finland) 05 - myhuo"
+        "🇫🇮 芬兰 (Finland) 03 - myhuo"
       ]
     },
     {
@@ -107,9 +55,7 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - myhuo",
         "🇫🇮 芬兰 (Finland) 02 - myhuo",
-        "🇫🇮 芬兰 (Finland) 03 - myhuo",
-        "🇫🇮 芬兰 (Finland) 04 - myhuo",
-        "🇫🇮 芬兰 (Finland) 05 - myhuo"
+        "🇫🇮 芬兰 (Finland) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
