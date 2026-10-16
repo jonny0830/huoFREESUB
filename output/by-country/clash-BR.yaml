@@ -27,6 +27,103 @@ proxies:
     path: /platform101
     headers:
       Host: platform101.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 03 - myhuo
+  server: platform118.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 04 - myhuo
+  server: platform117.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 05 - myhuo
+  server: platform102.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 06 - myhuo
+  server: platform106.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 07 - myhuo
+  server: platform113.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform113
+    headers:
+      Host: platform113.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 08 - myhuo
+  server: platform107.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 09 - myhuo
+  server: platform109.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 10 - myhuo
+  server: platform103.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform103
+- name: 🇧🇷 巴西 (Brazil) 11 - myhuo
+  server: 137.131.171.249
+  port: 20000
+  udp: true
+  type: hysteria2
+  password: CyG0RFxMjzs41uQD4OLuHQ==
+  sni: rmgyvpn.rest
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+  ports: 20000-30000
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +131,15 @@ proxy-groups:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - myhuo
   - 🇧🇷 巴西 (Brazil) 02 - myhuo
+  - 🇧🇷 巴西 (Brazil) 03 - myhuo
+  - 🇧🇷 巴西 (Brazil) 04 - myhuo
+  - 🇧🇷 巴西 (Brazil) 05 - myhuo
+  - 🇧🇷 巴西 (Brazil) 06 - myhuo
+  - 🇧🇷 巴西 (Brazil) 07 - myhuo
+  - 🇧🇷 巴西 (Brazil) 08 - myhuo
+  - 🇧🇷 巴西 (Brazil) 09 - myhuo
+  - 🇧🇷 巴西 (Brazil) 10 - myhuo
+  - 🇧🇷 巴西 (Brazil) 11 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +147,14 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - myhuo
   - 🇧🇷 巴西 (Brazil) 02 - myhuo
+  - 🇧🇷 巴西 (Brazil) 03 - myhuo
+  - 🇧🇷 巴西 (Brazil) 04 - myhuo
+  - 🇧🇷 巴西 (Brazil) 05 - myhuo
+  - 🇧🇷 巴西 (Brazil) 06 - myhuo
+  - 🇧🇷 巴西 (Brazil) 07 - myhuo
+  - 🇧🇷 巴西 (Brazil) 08 - myhuo
+  - 🇧🇷 巴西 (Brazil) 09 - myhuo
+  - 🇧🇷 巴西 (Brazil) 10 - myhuo
+  - 🇧🇷 巴西 (Brazil) 11 - myhuo
 rules:
 - MATCH,PROXIES

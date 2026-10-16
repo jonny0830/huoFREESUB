@@ -12,6 +12,14 @@ proxies:
   cipher: aes-256-cfb
   password: VcFuyXvND2yQWSFY
 - name: 🇪🇸 西班牙 (Spain) 02 - myhuo
+  server: 185.174.137.172
+  port: 8446
+  udp: true
+  type: hysteria2
+  password: e9dc02d400b67c727aca1620
+  sni: 185.174.137.172
+  skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 03 - myhuo
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -22,8 +30,8 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 03 - myhuo
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 04 - myhuo
   server: 46.28.71.247
   port: 443
   udp: true
@@ -35,7 +43,20 @@ proxies:
     public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 05 - myhuo
+  server: 193.238.154.78
+  port: 443
+  udp: true
+  type: vless
+  uuid: 897d47f8-4dd5-42a1-bcd0-bef19caff55a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 4eE3K8Eac-ELze-LwRyJolqmhPqgCVqwQM1DKu6i0Ts
+    short-id: e93d46ee3735069e
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +65,8 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - myhuo
   - 🇪🇸 西班牙 (Spain) 02 - myhuo
   - 🇪🇸 西班牙 (Spain) 03 - myhuo
+  - 🇪🇸 西班牙 (Spain) 04 - myhuo
+  - 🇪🇸 西班牙 (Spain) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +75,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - myhuo
   - 🇪🇸 西班牙 (Spain) 02 - myhuo
   - 🇪🇸 西班牙 (Spain) 03 - myhuo
+  - 🇪🇸 西班牙 (Spain) 04 - myhuo
+  - 🇪🇸 西班牙 (Spain) 05 - myhuo
 rules:
 - MATCH,PROXIES
