@@ -4,8 +4,34 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 - myhuo",
+      "server": "5.188.181.201",
+      "server_port": 9011,
+      "method": "aes-256-cfb",
+      "password": "M3t2ZEQcMGRWBjRa"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - myhuo",
+      "server": "5.188.181.201",
+      "server_port": 9001,
+      "method": "aes-256-cfb",
+      "password": "UkXRsXvR6buDMG2Y"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - myhuo",
+      "server": "18.100.47.39",
+      "server_port": 443,
+      "uuid": "7060231d-b9ba-495f-a218-bf427940cf3e",
+      "transport": {
+        "type": "http"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - myhuo",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -25,7 +51,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - myhuo",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - myhuo",
       "server": "46.28.71.247",
       "server_port": 443,
       "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
@@ -35,7 +61,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -46,7 +72,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - myhuo",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - myhuo",
       "server": "193.238.154.78",
       "server_port": 443,
       "uuid": "897d47f8-4dd5-42a1-bcd0-bef19caff55a",
@@ -72,7 +98,10 @@
         "auto",
         "🇪🇸 西班牙 (Spain) 01 - myhuo",
         "🇪🇸 西班牙 (Spain) 02 - myhuo",
-        "🇪🇸 西班牙 (Spain) 03 - myhuo"
+        "🇪🇸 西班牙 (Spain) 03 - myhuo",
+        "🇪🇸 西班牙 (Spain) 04 - myhuo",
+        "🇪🇸 西班牙 (Spain) 05 - myhuo",
+        "🇪🇸 西班牙 (Spain) 06 - myhuo"
       ]
     },
     {
@@ -81,7 +110,10 @@
       "outbounds": [
         "🇪🇸 西班牙 (Spain) 01 - myhuo",
         "🇪🇸 西班牙 (Spain) 02 - myhuo",
-        "🇪🇸 西班牙 (Spain) 03 - myhuo"
+        "🇪🇸 西班牙 (Spain) 03 - myhuo",
+        "🇪🇸 西班牙 (Spain) 04 - myhuo",
+        "🇪🇸 西班牙 (Spain) 05 - myhuo",
+        "🇪🇸 西班牙 (Spain) 06 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

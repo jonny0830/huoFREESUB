@@ -13,31 +13,6 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 02 - myhuo
-  server: 103.86.49.57
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
-- name: 🇹🇭 泰国 (Thailand) 03 - myhuo
-  server: 104.16.111.193
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  tls: true
-  servername: v2ray.simspeedup.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 (Thailand) 04 - myhuo
   server: pphfree2.mvpnpvpn.de5.net
   port: 52351
   udp: true
@@ -51,8 +26,6 @@ proxy-groups:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - myhuo
   - 🇹🇭 泰国 (Thailand) 02 - myhuo
-  - 🇹🇭 泰国 (Thailand) 03 - myhuo
-  - 🇹🇭 泰国 (Thailand) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,7 +33,5 @@ proxy-groups:
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - myhuo
   - 🇹🇭 泰国 (Thailand) 02 - myhuo
-  - 🇹🇭 泰国 (Thailand) 03 - myhuo
-  - 🇹🇭 泰国 (Thailand) 04 - myhuo
 rules:
 - MATCH,PROXIES

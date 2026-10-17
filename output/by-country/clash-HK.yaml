@@ -5,38 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - myhuo
-  server: sth.free-outline.giize.com
-  port: 1081
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 6qmp91myp2jj13dt
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - myhuo
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.29
+  sni: "https://t.me/wangcai2ð\x9F\x87"
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - myhuo
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2🇨🇳
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - myhuo
   server: nas.aizhzo.com
   port: 5010
   udp: true
   type: hysteria2
   password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
+  sni: 127.0.0.1
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - myhuo
+  server: 103.85.27.30
+  port: 45087
+  udp: true
+  type: vless
+  uuid: 5d0f8977-ca64-46b8-d8a4-12cafa375de8
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: nycqg19zkwacpm1b.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: nycqg19zkwacpm1b.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
   server: yg1.ygkkk.dpdns.org
   port: 443
@@ -65,6 +72,14 @@ proxies:
     short-id: af1bdd293097b664
   servername: tesla.com
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -76,6 +91,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,5 +103,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
 rules:
 - MATCH,PROXIES
