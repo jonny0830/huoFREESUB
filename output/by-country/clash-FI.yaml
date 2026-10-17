@@ -41,20 +41,30 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 04 - myhuo
-  server: 45.133.151.167
-  port: 25481
+  server: mci1.amir12.ir
+  port: 1222
   udp: true
   type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
   tls: true
   reality-opts:
-    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
-    short-id: 3b84fc70657725af
-  servername: www.bing.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 8cb5baa18cd7
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
+  server: 31.77.199.147
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,6 +74,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - myhuo
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
+  - 🇫🇮 芬兰 (Finland) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,5 +84,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - myhuo
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
+  - 🇫🇮 芬兰 (Finland) 05 - myhuo
 rules:
 - MATCH,PROXIES

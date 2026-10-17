@@ -12,13 +12,6 @@ proxies:
   cipher: aes-256-cfb
   password: M3t2ZEQcMGRWBjRa
 - name: 🇪🇸 西班牙 (Spain) 02 - myhuo
-  server: 5.188.181.201
-  port: 9001
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UkXRsXvR6buDMG2Y
-- name: 🇪🇸 西班牙 (Spain) 03 - myhuo
   server: 18.100.47.39
   port: 443
   udp: true
@@ -28,6 +21,19 @@ proxies:
   h2-opts:
     host: []
     path: /
+- name: 🇪🇸 西班牙 (Spain) 03 - myhuo
+  server: 83.147.18.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: fd8cf7e1173f0edb
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 04 - myhuo
   server: 212.227.235.66
   port: 2053
@@ -52,7 +58,7 @@ proxies:
     public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 06 - myhuo
   server: 193.238.154.78
   port: 443

@@ -14,30 +14,33 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
-  server: hinet1.2yly.com
-  port: 24215
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo
+  server: 49.254.204.133
+  port: 1774
   udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: qq
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
 - name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - myhuo
-  server: test.keoplentuio.xyz
-  port: 2053
+  server: 177.3.208.65
+  port: 443
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  tls: true
+  servername: tgmansion.site
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-tr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo
   - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - myhuo
 - name: AUTO
   type: url-test
@@ -45,7 +48,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo
   - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - myhuo
 rules:
 - MATCH,PROXIES
