@@ -4,24 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇬 埃及 (Egypt) 01 - myhuo
-  server: 38.54.59.102
-  port: 443
+- name: 🇻🇳 越南 (Vietnam) 01 - myhuo
+  server: 150.95.109.109
+  port: 2086
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
+  type: vless
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇬 埃及 (Egypt) 01 - myhuo
+  - 🇻🇳 越南 (Vietnam) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇬 埃及 (Egypt) 01 - myhuo
+  - 🇻🇳 越南 (Vietnam) 01 - myhuo
 rules:
 - MATCH,PROXIES

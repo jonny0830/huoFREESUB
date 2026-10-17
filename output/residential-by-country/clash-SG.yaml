@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 (家宽) - myhuo
-  server: 152.70.253.44
-  port: 443
-  udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇸🇬 新加坡 (Singapore) 02 (家宽) - myhuo
   server: s3.huhiuh.space
   port: 18642
   udp: true
@@ -33,13 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 (家宽) - myhuo
-  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 (家宽) - myhuo
-  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - myhuo
 rules:
 - MATCH,PROXIES

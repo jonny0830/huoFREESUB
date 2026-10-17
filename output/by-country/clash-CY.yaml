@@ -11,6 +11,17 @@ proxies:
   type: vless
   uuid: c7c27192-60a5-4ce1-b613-95270d82309d
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo
+  server: 5.253.29.254
+  port: 14430
+  udp: true
+  type: vless
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.253.29.254
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo
   server: 5.253.28.240
   port: 2443
   udp: true
@@ -25,30 +36,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: rex-eb0bf76b710ce763
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo
-  server: 5.253.30.99
-  port: 40443
-  udp: true
-  type: vless
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo
-  server: 5.253.29.254
-  port: 14430
-  udp: true
-  type: vless
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.253.29.254
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,7 +44,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo
-  - 🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,6 +52,5 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo
-  - 🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo
 rules:
 - MATCH,PROXIES

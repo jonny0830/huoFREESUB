@@ -13,7 +13,7 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 02 - myhuo
-  server: v2ray.simspeedup.com
+  server: 103.86.49.57
   port: 80
   udp: true
   type: vless
@@ -24,27 +24,7 @@ proxies:
     headers:
       Host: ais.speedtest.net
 - name: 🇹🇭 泰国 (Thailand) 03 - myhuo
-  server: pphfree2.mvpnpvpn.de5.net
-  port: 52351
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
-- name: 🇹🇭 泰国 (Thailand) 04 - myhuo
-  server: funagfrdfs.alixxplay.com
-  port: 56415
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
-    short-id: cbd39bea0805e2
-  servername: www.kaidee.com
-  client-fingerprint: ios
-- name: 🇹🇭 泰国 (Thailand) 05 - myhuo
-  server: 104.16.10.2
+  server: 104.16.111.193
   port: 443
   udp: true
   type: vless
@@ -57,6 +37,13 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
+- name: 🇹🇭 泰国 (Thailand) 04 - myhuo
+  server: pphfree2.mvpnpvpn.de5.net
+  port: 52351
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,7 +53,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 02 - myhuo
   - 🇹🇭 泰国 (Thailand) 03 - myhuo
   - 🇹🇭 泰国 (Thailand) 04 - myhuo
-  - 🇹🇭 泰国 (Thailand) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,6 +62,5 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 02 - myhuo
   - 🇹🇭 泰国 (Thailand) 03 - myhuo
   - 🇹🇭 泰国 (Thailand) 04 - myhuo
-  - 🇹🇭 泰国 (Thailand) 05 - myhuo
 rules:
 - MATCH,PROXIES
