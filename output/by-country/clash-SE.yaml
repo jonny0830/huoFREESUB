@@ -5,6 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - myhuo
+  server: 77.110.96.201
+  port: 36264
+  udp: true
+  type: hysteria2
+  password: Telegram-vpnjey
+  sni: se.vpnjey2.dpdns.org
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: Telegram@vpnjey
+- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
+  server: 62.60.159.81
+  port: 2053
+  udp: true
+  type: vless
+  uuid: fc00adfb-232a-46ce-8b93-0c70e516aa8a
+  tls: true
+  reality-opts:
+    public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
+    short-id: d0ea1847066af5a6
+  servername: www.samsung.com
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpce5bb9e71
+- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -15,44 +40,31 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
-  server: mui.firzav.ir
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ZJdYmMiJBWkbTZ5nExBRpQ_f7uIG7wL4
-- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
-  server: hy-se.bypassme.online
-  port: 443
-  udp: true
-  type: hysteria2
-  password: e625f8ef-f935-4c7d-a259-0f154b6842fd
-  sni: hy-se.bypassme.online
-  skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
-  server: 193.27.200.200
+  server: 45.12.63.219
   port: 443
   udp: true
   type: vless
-  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
-  flow: xtls-rprx-vision
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
   tls: true
-  reality-opts:
-    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
-    short-id: 3b20e438da99
-  servername: swe.wizard.select
-  client-fingerprint: random
+  servername: edge-lab-b.10media.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: swedenfeed
 - name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
-  server: 77.110.96.201
-  port: 36264
+  server: 94.143.231.146
+  port: 443
   udp: true
-  type: hysteria2
-  password: Telegram-vpnjey
-  sni: se.vpnjey2.dpdns.org
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: Telegram@vpnjey
+  type: vless
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  tls: true
+  servername: sub.merky.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
 - name: 🇸🇪 瑞典 (Sweden) 06 - myhuo
   server: se1.h1cloud.net
   port: 26128

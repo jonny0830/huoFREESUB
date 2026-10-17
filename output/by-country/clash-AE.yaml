@@ -5,29 +5,53 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - myhuo
+  server: 159.242.242.30
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime58.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
+  server: 104.21.108.4
+  port: 443
+  udp: true
+  type: vless
+  uuid: fa45096d-bed0-ad80-c773-23c300000018
+  tls: true
+  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync+
+    headers:
+      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
   server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
-  server: mog.keyblack.site
-  port: 8444
+- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
+  server: 185.253.116.33
+  port: 14430
   udp: true
   type: vless
-  uuid: ef8c7169-87fc-49ad-be91-1f3984ab446d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DQGwrxOgoiyBDrbdFUofP88FGtxHDA2duzNXKkyxaig
-    short-id: 6ba85179e30d4fc2
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 185.253.116.33
+- name: 🇦🇪 阿联酋 (UAE) 05 - myhuo
   server: 157.228.128.59
   port: 443
   udp: true
@@ -40,7 +64,7 @@ proxies:
     short-id: 06e00e7c
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
+- name: 🇦🇪 阿联酋 (UAE) 06 - myhuo
   server: 31.59.210.26
   port: 2088
   udp: true
@@ -51,37 +75,7 @@ proxies:
     public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
     short-id: b1ad165f903c62fe
   servername: www.yandex.ru
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 05 - myhuo
-  server: 31.59.210.32
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  tls: true
-  reality-opts:
-    public-key: qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA
-    short-id: 7ec4374ffc6308fd
-  servername: www.yandex.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 06 - myhuo
-  server: 31.59.210.25
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  tls: true
-  reality-opts:
-    public-key: KDBhxT2YMtMjDEC9VdoDEISdCwxd6KFrSE8uyUaHcTY
-    short-id: ed435c242097fd05
-  servername: www.yandex.ru
-  client-fingerprint: firefox
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
@@ -96,12 +90,40 @@ proxies:
     public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
     short-id: 6dbf4931096f9890
   servername: www.yandex.ru
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
 - name: 🇦🇪 阿联酋 (UAE) 08 - myhuo
-  server: uae.unixzone.us
+  server: 178.105.133.160
+  port: 4443
+  udp: true
+  type: vless
+  uuid: bd3ebd5f-a315-4e27-9271-3c80f49821c9
+  tls: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 09 - myhuo
+  server: mog.keyblack.site
+  port: 8444
+  udp: true
+  type: vless
+  uuid: ef8c7169-87fc-49ad-be91-1f3984ab446d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DQGwrxOgoiyBDrbdFUofP88FGtxHDA2duzNXKkyxaig
+    short-id: 6ba85179e30d4fc2
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 10 - myhuo
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -109,7 +131,9 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇦🇪 阿联酋 (UAE) 09 - myhuo
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 11 - myhuo
   server: 45.59.120.217
   port: 443
   udp: true
@@ -121,17 +145,32 @@ proxies:
     short-id: 29c2dd1e3ef7c4d4
   servername: strm.yandex.net
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 10 - myhuo
-  server: 185.253.116.33
-  port: 14430
+- name: 🇦🇪 阿联酋 (UAE) 12 - myhuo
+  server: 31.59.210.32
+  port: 443
   udp: true
   type: vless
-  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 185.253.116.33
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
+  tls: true
+  reality-opts:
+    public-key: qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA
+    short-id: 7ec4374ffc6308fd
+  servername: www.yandex.ru
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: astracat
+- name: 🇦🇪 阿联酋 (UAE) 13 - myhuo
+  server: 139.185.44.26
+  port: 8888
+  udp: true
+  type: vless
+  uuid: 46509b23-fe97-45b3-9c89-bd1b2a93bd4e
+  tls: true
+  reality-opts:
+    public-key: vBSBoPYKiB5RZ9_jNPEdLnroJ2M7MKw0c1Rvh6-QmV4
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -147,6 +186,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 08 - myhuo
   - 🇦🇪 阿联酋 (UAE) 09 - myhuo
   - 🇦🇪 阿联酋 (UAE) 10 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 11 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 12 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 13 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -162,5 +204,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 08 - myhuo
   - 🇦🇪 阿联酋 (UAE) 09 - myhuo
   - 🇦🇪 阿联酋 (UAE) 10 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 11 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 12 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 13 - myhuo
 rules:
 - MATCH,PROXIES

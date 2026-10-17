@@ -5,23 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - myhuo",
-      "server": "83.147.18.75",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - myhuo",
+      "server": "88.218.95.88",
       "server_port": 443,
-      "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
-      "flow": "xtls-rprx-vision",
+      "uuid": "b8df3f50-ffef-4c7e-9ef3-d5b156a47c02",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc",
-          "short_id": "7f1e29593aa94ad1"
+          "public_key": "rRg3JiP2006ldJYh2TDPAn7dtlXLcSHdgHgkGI_HZTE",
+          "short_id": "43adea0ec9f97a0a"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
@@ -29,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01 - myhuo"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01 - myhuo"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

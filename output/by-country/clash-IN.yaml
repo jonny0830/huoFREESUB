@@ -5,17 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - myhuo
-  server: 194.61.31.126
-  port: 2053
+  server: 13.140.56.100
+  port: 14430
   udp: true
   type: vless
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  tls: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: random
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 02 - myhuo
   server: 148.113.5.44
   port: 443
@@ -30,16 +29,12 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 03 - myhuo
-  server: 13.140.56.100
-  port: 14430
+  server: 172.105.39.124
+  port: 7002
   udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
 - name: 🇮🇳 印度 (India) 04 - myhuo
   server: 152.67.8.205
   port: 80
@@ -51,21 +46,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇮🇳 印度 (India) 05 - myhuo
-  server: 5.253.28.240
-  port: 2443
-  udp: true
-  type: vless
-  uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
-  tls: true
-  reality-opts:
-    public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
-    short-id: 92c32de179e5d908
-  servername: deepl.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: rex-eb0bf76b710ce763
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,7 +55,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - myhuo
   - 🇮🇳 印度 (India) 03 - myhuo
   - 🇮🇳 印度 (India) 04 - myhuo
-  - 🇮🇳 印度 (India) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,6 +64,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - myhuo
   - 🇮🇳 印度 (India) 03 - myhuo
   - 🇮🇳 印度 (India) 04 - myhuo
-  - 🇮🇳 印度 (India) 05 - myhuo
 rules:
 - MATCH,PROXIES
