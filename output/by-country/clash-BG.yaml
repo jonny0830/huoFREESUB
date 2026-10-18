@@ -24,18 +24,6 @@ proxies:
     short-id: 77bb0d07bddbc832
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - myhuo
-  server: p1real4.greewebservices.ir
-  port: 1260
-  udp: true
-  type: vless
-  uuid: b374647d-7516-4d1e-8c85-544c7d734c1f
-  tls: true
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: 9b60d3
-  servername: play.googleapis.com
-  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01 - myhuo
   - 🇧🇬 保加利亚 (Bulgaria) 02 - myhuo
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - myhuo
   - 🇧🇬 保加利亚 (Bulgaria) 02 - myhuo
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - myhuo
 rules:
 - MATCH,PROXIES

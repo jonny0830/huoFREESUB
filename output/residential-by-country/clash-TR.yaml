@@ -5,29 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo
-  server: 177.3.208.65
-  port: 443
+  server: test.keoplentuio.xyz
+  port: 2053
   udp: true
   type: vless
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo
+  server: 206.1.100.148
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 53373a04-2dd2-472e-af5d-d55fbffa7dbd
   tls: true
-  servername: tgmansion.site
+  servername: game.jafarghasemivip.ir
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-tr
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo
 rules:
 - MATCH,PROXIES

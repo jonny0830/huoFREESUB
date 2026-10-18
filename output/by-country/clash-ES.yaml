@@ -12,16 +12,27 @@ proxies:
   cipher: aes-256-cfb
   password: M3t2ZEQcMGRWBjRa
 - name: 🇪🇸 西班牙 (Spain) 02 - myhuo
-  server: 18.100.47.39
-  port: 443
+  server: 217.76.158.214
+  port: 36326
   udp: true
   type: vless
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
-  network: h2
-  h2-opts:
-    host: []
-    path: /
+  uuid: 63ff4bfa-0f1d-48e4-8314-e882b14e602c
+  network: ws
+  ws-opts:
+    path: /jdiedjiedjijd
 - name: 🇪🇸 西班牙 (Spain) 03 - myhuo
+  server: 212.227.235.66
+  port: 2053
+  udp: true
+  type: vless
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  tls: true
+  reality-opts:
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+    short-id: 29e8dcd2b37aaa7f
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 04 - myhuo
   server: 83.147.18.3
   port: 443
   udp: true
@@ -34,18 +45,6 @@ proxies:
     short-id: fd8cf7e1173f0edb
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 04 - myhuo
-  server: 212.227.235.66
-  port: 2053
-  udp: true
-  type: vless
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
-  tls: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-    short-id: 29e8dcd2b37aaa7f
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 05 - myhuo
   server: 46.28.71.247
   port: 443
@@ -58,7 +57,7 @@ proxies:
     public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: ''
 - name: 🇪🇸 西班牙 (Spain) 06 - myhuo
   server: 193.238.154.78
   port: 443

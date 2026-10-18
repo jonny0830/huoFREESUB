@@ -13,40 +13,19 @@ proxies:
   password: qYEN5HX4JKeVCdEC
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - myhuo
   server: 195.238.126.20
-  port: 9011
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - myhuo
-  server: 195.238.126.20
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - myhuo
-  server: 195.238.126.20
-  port: 9001
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UkXRsXvR6buDMG2Y
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - myhuo
-  server: 195.238.126.20
-  port: 9002
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - myhuo
-  server: 195.238.126.20
   port: 9008
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - myhuo
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - myhuo
+  server: 195.238.126.20
+  port: 9011
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - myhuo
   server: 84.32.109.20
   port: 443
   udp: true
@@ -58,20 +37,8 @@ proxies:
     public-key: 3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4
     short-id: 0da7e14db353e7d0
   servername: litv.nztvpn.com
-  client-fingerprint: chrome
-- name: 🇱🇹 立陶宛 (Lithuania) 08 - myhuo
-  server: 212.24.105.101
-  port: 443
-  udp: true
-  type: vless
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  tls: true
-  reality-opts:
-    public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
-    short-id: 2301ac8aee8bf6d4
-  servername: b58e68t.lt1.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇱🇹 立陶宛 (Lithuania) 09 - myhuo
+  client-fingerprint: random
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - myhuo
   server: b58e68t.lt1.h1clayd.click
   port: 443
   udp: true
@@ -82,7 +49,7 @@ proxies:
     public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
     short-id: 2301ac8aee8bf6d4
   servername: b58e68t.lt1.h1clayd.click
-  client-fingerprint: ios
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,10 +60,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 03 - myhuo
   - 🇱🇹 立陶宛 (Lithuania) 04 - myhuo
   - 🇱🇹 立陶宛 (Lithuania) 05 - myhuo
-  - 🇱🇹 立陶宛 (Lithuania) 06 - myhuo
-  - 🇱🇹 立陶宛 (Lithuania) 07 - myhuo
-  - 🇱🇹 立陶宛 (Lithuania) 08 - myhuo
-  - 🇱🇹 立陶宛 (Lithuania) 09 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -107,9 +70,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 03 - myhuo
   - 🇱🇹 立陶宛 (Lithuania) 04 - myhuo
   - 🇱🇹 立陶宛 (Lithuania) 05 - myhuo
-  - 🇱🇹 立陶宛 (Lithuania) 06 - myhuo
-  - 🇱🇹 立陶宛 (Lithuania) 07 - myhuo
-  - 🇱🇹 立陶宛 (Lithuania) 08 - myhuo
-  - 🇱🇹 立陶宛 (Lithuania) 09 - myhuo
 rules:
 - MATCH,PROXIES
