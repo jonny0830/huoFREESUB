@@ -6,25 +6,6 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - myhuo",
-      "server": "104.21.67.122",
-      "server_port": 443,
-      "uuid": "ee556a4f-d9f6-44de-af02-42c51659416a",
-      "tls": {
-        "enabled": true,
-        "server_name": "novantunnel.tech",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/Novan-AE9",
-        "headers": {
-          "Host": "novantunnel.tech"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - myhuo",
       "server": "157.228.155.184",
       "server_port": 443,
       "uuid": "c39f95b5-64b5-4f7a-a93d-fa9e9cf24de8",
@@ -44,31 +25,24 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - myhuo",
-      "server": "104.21.108.4",
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - myhuo",
+      "server": "130.49.161.70",
       "server_port": 443,
-      "uuid": "fa45096d-bed0-ad80-c773-23c300000018",
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
       "tls": {
         "enabled": true,
-        "server_name": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": false
       },
-      "transport": {
-        "type": "ws",
-        "path": "/sync ",
-        "headers": {
-          "Host": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev"
-        }
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - myhuo",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - myhuo",
       "server": "157.228.128.59",
       "server_port": 443,
       "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
@@ -88,38 +62,22 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - myhuo",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - myhuo",
-      "server": "31.59.210.26",
-      "server_port": 2088,
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - myhuo",
+      "server": "31.59.210.32",
+      "server_port": 443,
       "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
       "tls": {
         "enabled": true,
         "server_name": "www.yandex.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg",
-          "short_id": "b1ad165f903c62fe"
+          "public_key": "qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA",
+          "short_id": "7ec4374ffc6308fd"
         }
       },
       "transport": {
@@ -129,7 +87,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 07 - myhuo",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - myhuo",
       "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
@@ -141,54 +99,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 08 - myhuo",
-      "server": "83.147.216.223",
-      "server_port": 4433,
-      "uuid": "660174a2-d32d-4521-840d-d1853bfc80b8",
-      "tls": {
-        "enabled": true,
-        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - myhuo",
+      "server": "200.181.82.91",
+      "server_port": 21737,
+      "method": "aes-256-gcm",
+      "password": "0dad9116-eb88-47b6-98dd-67c9ed43afa6"
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 09 - myhuo",
-      "server": "45.77.241.190",
-      "server_port": 8441,
-      "uuid": "7cf16c7c-f5e8-401f-8d0e-7542c447bf58",
-      "tls": {
-        "enabled": true,
-        "server_name": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 10 - myhuo",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - myhuo",
       "server": "45.59.120.217",
       "server_port": 443,
       "uuid": "8732f92b-ba85-48f7-92e4-ad029f1cd4e7",
@@ -207,27 +127,29 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 11 - myhuo",
-      "server": "31.59.210.37",
-      "server_port": 443,
-      "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
+      "type": "trojan",
+      "tag": "🇦🇪 阿联酋 (UAE) 08 - myhuo",
+      "server": "200.181.82.91",
+      "server_port": 28740,
+      "password": "0dad9116-eb88-47b6-98dd-67c9ed43afa6",
       "tls": {
         "enabled": true,
-        "server_name": "www.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4",
-          "short_id": "6dbf4931096f9890"
-        }
-      },
+        "server_name": "www.baidu.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 09 - myhuo",
+      "server": "185.253.116.33",
+      "server_port": 14430,
+      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
       "transport": {
-        "type": "grpc",
-        "service_name": "astracat"
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "185.253.116.33"
+        }
       }
     },
     {
@@ -243,9 +165,7 @@
         "🇦🇪 阿联酋 (UAE) 06 - myhuo",
         "🇦🇪 阿联酋 (UAE) 07 - myhuo",
         "🇦🇪 阿联酋 (UAE) 08 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 09 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 10 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 11 - myhuo"
+        "🇦🇪 阿联酋 (UAE) 09 - myhuo"
       ]
     },
     {
@@ -260,9 +180,7 @@
         "🇦🇪 阿联酋 (UAE) 06 - myhuo",
         "🇦🇪 阿联酋 (UAE) 07 - myhuo",
         "🇦🇪 阿联酋 (UAE) 08 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 09 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 10 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 11 - myhuo"
+        "🇦🇪 阿联酋 (UAE) 09 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

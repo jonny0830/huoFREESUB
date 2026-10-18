@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇧🇷 巴西 (Brazil) 01 - myhuo",
+      "server": "216.128.168.190",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "owVdNnQcdPgthSyX"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇧🇷 巴西 (Brazil) 02 - myhuo",
       "server": "137.131.171.249",
       "password": "CyG0RFxMjzs41uQD4OLuHQ==",
       "tls": {
@@ -26,14 +34,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - myhuo"
+        "🇧🇷 巴西 (Brazil) 01 - myhuo",
+        "🇧🇷 巴西 (Brazil) 02 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - myhuo"
+        "🇧🇷 巴西 (Brazil) 01 - myhuo",
+        "🇧🇷 巴西 (Brazil) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

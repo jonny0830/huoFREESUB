@@ -35,16 +35,19 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 03 - myhuo",
-      "server": "81.28.12.12",
+      "server": "cl-glb6e059ee.gcdn.co",
       "server_port": 443,
       "uuid": "6206cb76-491d-4237-baf1-8c29eea4eafb",
       "tls": {
         "enabled": true,
         "server_name": "node-3.wt419.site",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         }
       },
       "transport": {
