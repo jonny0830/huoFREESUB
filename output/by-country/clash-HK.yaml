@@ -5,96 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - myhuo
-  server: 87.83.109.106
-  port: 19106
-  udp: true
-  type: vless
-  uuid: c752c174-41d2-41c3-ac2a-e4c0df9e5482
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: hYb4wEKoSCy8rJqf7MUQ0virZWUoKBQbKT6Fbt96yEs
-    short-id: 63f6e09994d5
-  servername: www.tesla.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - myhuo
-  server: 87.83.109.246
-  port: 19246
-  udp: true
-  type: vless
-  uuid: c752c174-41d2-41c3-ac2a-e4c0df9e5482
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zHrps6IQU-eosDd7ikdvrxzpuduxtcqi6pPmFLL_GEo
-    short-id: 4dd1
-  servername: www.tesla.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - myhuo
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  sni: 'off'
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
-  server: 103.182.97.250
-  port: 23198
-  udp: true
-  type: vless
-  uuid: c752c174-41d2-41c3-ac2a-e4c0df9e5482
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: VMDDT8LM17r-nv3cE7y_lUSRdnIzfWys-96TTVmVfkM
-    short-id: c40b095a
-  servername: www.tesla.com
-  client-fingerprint: edge
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
-  server: tmp1.deepfind.site
-  port: 2053
-  udp: true
-  type: vless
-  uuid: c752c174-41d2-41c3-ac2a-e4c0df9e5482
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: o2uLRBkgcAPCavo12l6VUzaSnSmxjUvod-NBSiUPdy8
-    short-id: '85'
-  servername: www.tesla.com
-  client-fingerprint: safari
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
-  server: 8.210.24.181
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - myhuo
+  server: 202.146.222.29
   port: 443
   udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 6jdvarazgu3qqr6q.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 6jdvarazgu3qqr6q.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
-  server: 82.29.36.250
-  port: 443
-  udp: true
-  type: vless
-  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
-    short-id: ac3342a709db
-  servername: aws.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
-  server: 8.217.13.103
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.29
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - myhuo
+  server: 47.243.194.125
   port: 443
   udp: true
   type: vmess
@@ -102,38 +29,32 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
-  servername: qtkdr8jxe3wefxjm.v.3dns.vip
+  servername: nycqg19zkwacpm1b.v.3dns.vip
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: qtkdr8jxe3wefxjm.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
-  server: 47.243.65.243
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: lcv8v9l7oyamxxfz.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: lcv8v9l7oyamxxfz.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
-  server: node1.luoye.ee
-  port: 443
+      Host: nycqg19zkwacpm1b.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
+  server: 4c2d5151.266nets.com
+  port: 12001
   udp: true
   type: trojan
-  password: 7e0eb2b0-e118-4cae-852f-5605573a744c
-  sni: node1.luoye.ee
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - myhuo
+  password: bad06c3525a6eaee1757b34776b83892
+  sni: ixigua.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
+  server: nas.aizhzo.com
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: 127.0.0.1
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -149,82 +70,7 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - myhuo
-  server: 4c2d5151.266nets.com
-  port: 12001
-  udp: true
-  type: trojan
-  password: bad06c3525a6eaee1757b34776b83892
-  sni: ixigua.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - myhuo
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%c3%b0%c2%9f%c2%87%c2%a8%c3%b0%c2%9f%c2%87%c2%b3
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - myhuo
-  server: nas.aizhzo.com
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - myhuo
-  server: 200.181.82.91
-  port: 28122
-  udp: true
-  type: trojan
-  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
-  sni: www.baidu.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 16 - myhuo
-  server: 2.27.109.179
-  port: 45464
-  udp: true
-  type: trojan
-  password: XuMweB2PWs
-  sni: 2.27.109.179
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 17 - myhuo
-  server: 200.181.82.91
-  port: 21148
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
-- name: 🇭🇰 中国香港 (Hong Kong) 18 - myhuo
-  server: 87.83.109.6
-  port: 11096
-  udp: true
-  type: vless
-  uuid: c752c174-41d2-41c3-ac2a-e4c0df9e5482
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: HyMlyYJ68KV573OEioBe6hsxOcD9zb-Ia12Gr48MZwk
-    short-id: e8b2fd76
-  servername: www.tesla.com
-  client-fingerprint: safari
-- name: 🇭🇰 中国香港 (Hong Kong) 19 - myhuo
-  server: 207.56.137.51
-  port: 443
-  udp: true
-  type: vless
-  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
-    short-id: f713561d
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 20 - myhuo
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
   server: 156.239.13.161
   port: 51443
   udp: true
@@ -237,19 +83,49 @@ proxies:
     short-id: aa5b653590725505
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 21 - myhuo
-  server: m.cnmjin.net
-  port: 16632
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
+  server: 207.56.137.51
+  port: 443
+  udp: true
+  type: vless
+  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
+    short-id: f713561d
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
+  server: ex1ogt73nzpqkac2.v.3dns.vip
+  port: 443
   udp: true
   type: vmess
-  uuid: f3485652-a8ee-4f31-9af3-821c53f2bb82
+  uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
   cipher: auto
+  tls: true
+  servername: ex1ogt73nzpqkac2.v.3dns.vip
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /ws-vmess
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
+  server: qtkdr8jxe3wefxjm.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: qtkdr8jxe3wefxjm.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
     headers:
-      Host: 38f5eab4e496b3c8c927160a60d5865b.mobgslb.tbcache.com
+      Host: qtkdr8jxe3wefxjm.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -265,17 +141,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 11 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 12 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 13 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 14 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 15 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 16 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 17 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 18 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 19 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 20 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 21 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -291,16 +156,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 11 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 12 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 13 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 14 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 15 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 16 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 17 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 18 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 19 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 20 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 21 - myhuo
 rules:
 - MATCH,PROXIES

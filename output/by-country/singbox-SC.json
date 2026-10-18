@@ -5,23 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 01 - myhuo",
-      "server": "82.25.34.196",
-      "server_port": 14196,
-      "uuid": "c752c174-41d2-41c3-ac2a-e4c0df9e5482",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - myhuo",
+      "server": "45.145.12.148",
+      "server_port": 443,
+      "uuid": "b869a8d0-0733-4346-8d1c-c1230a78651c",
       "tls": {
         "enabled": true,
-        "server_name": "www.tesla.com",
+        "server_name": "max.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "lj1IL7m3pkOIf_7RPgDJ3vjZqKmlle4xnYDsIAta7Xw",
-          "short_id": "4fbc5a26121e6efb"
+          "public_key": "OOI0p2vKjr8xdwcVCzxcd3rAxmMr7XRA0wMk14IXaFM",
+          "short_id": "35debf0dc757d053"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
@@ -29,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 (Norway) 01 - myhuo"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 (Norway) 01 - myhuo"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
