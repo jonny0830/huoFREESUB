@@ -13,6 +13,17 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 02 - myhuo
+  server: 103.86.49.57
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ais.speedtest.net
+- name: 🇹🇭 泰国 (Thailand) 03 - myhuo
   server: 104.18.26.90
   port: 443
   udp: true
@@ -27,13 +38,19 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 (Thailand) 03 - myhuo
-  server: 103.107.52.106
-  port: 52351
+- name: 🇹🇭 泰国 (Thailand) 04 - myhuo
+  server: 130.94.23.97
+  port: 24563
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+  type: vless
+  uuid: c752c174-41d2-41c3-ac2a-e4c0df9e5482
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: rgHe12JeWdUE7vzOuuMIK7durN-tFaiJAalxDBYzBVI
+    short-id: b3cb889777
+  servername: www.tesla.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,6 +59,7 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - myhuo
   - 🇹🇭 泰国 (Thailand) 02 - myhuo
   - 🇹🇭 泰国 (Thailand) 03 - myhuo
+  - 🇹🇭 泰国 (Thailand) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,5 +68,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - myhuo
   - 🇹🇭 泰国 (Thailand) 02 - myhuo
   - 🇹🇭 泰国 (Thailand) 03 - myhuo
+  - 🇹🇭 泰国 (Thailand) 04 - myhuo
 rules:
 - MATCH,PROXIES

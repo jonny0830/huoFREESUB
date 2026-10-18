@@ -5,6 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - myhuo
+  server: 13.135.33.165
+  port: 22224
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇮🇪 爱尔兰 (Ireland) 02 - myhuo
   server: 3.11.104.202
   port: 22224
   udp: true
@@ -16,11 +22,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇪 爱尔兰 (Ireland) 01 - myhuo
+  - 🇮🇪 爱尔兰 (Ireland) 02 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 爱尔兰 (Ireland) 01 - myhuo
+  - 🇮🇪 爱尔兰 (Ireland) 02 - myhuo
 rules:
 - MATCH,PROXIES

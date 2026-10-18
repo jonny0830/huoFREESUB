@@ -4,12 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇳🇴 挪威 (Norway) 01 - myhuo",
-      "server": "185.213.23.63",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+      "server": "82.25.34.196",
+      "server_port": 14196,
+      "uuid": "c752c174-41d2-41c3-ac2a-e4c0df9e5482",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.tesla.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lj1IL7m3pkOIf_7RPgDJ3vjZqKmlle4xnYDsIAta7Xw",
+          "short_id": "4fbc5a26121e6efb"
+        }
+      }
     },
     {
       "type": "selector",

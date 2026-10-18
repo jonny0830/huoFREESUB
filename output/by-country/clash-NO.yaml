@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇴 挪威 (Norway) 01 - myhuo
-  server: 185.213.23.63
-  port: 990
+  server: 82.25.34.196
+  port: 14196
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  type: vless
+  uuid: c752c174-41d2-41c3-ac2a-e4c0df9e5482
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lj1IL7m3pkOIf_7RPgDJ3vjZqKmlle4xnYDsIAta7Xw
+    short-id: 4fbc5a26121e6efb
+  servername: www.tesla.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

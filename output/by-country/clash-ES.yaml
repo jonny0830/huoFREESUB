@@ -6,20 +6,18 @@ log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - myhuo
   server: 5.188.181.201
-  port: 9001
+  port: 9027
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: UkXRsXvR6buDMG2Y
+  password: EXN3S3eQpjE7EJu8
 - name: 🇪🇸 西班牙 (Spain) 02 - myhuo
-  server: 217.76.158.214
-  port: 36326
+  server: 5.188.181.201
+  port: 9025
   udp: true
-  type: vless
-  uuid: 63ff4bfa-0f1d-48e4-8314-e882b14e602c
-  network: ws
-  ws-opts:
-    path: /jdiedjiedjijd
+  type: ss
+  cipher: aes-256-cfb
+  password: XPtzA9sCug3SPR4c
 - name: 🇪🇸 西班牙 (Spain) 03 - myhuo
   server: 212.227.235.66
   port: 2053
@@ -31,20 +29,19 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇪🇸 西班牙 (Spain) 04 - myhuo
-  server: 46.28.71.247
-  port: 443
+  server: es2.h1cloud.net
+  port: 25535
   udp: true
   type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  flow: xtls-rprx-vision
+  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
   tls: true
   reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
-  client-fingerprint: random
+    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
+    short-id: 7642ce57308852e7
+  servername: www.microsoft.com
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 05 - myhuo
   server: 193.238.154.78
   port: 443
