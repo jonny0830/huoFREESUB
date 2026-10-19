@@ -5,6 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - myhuo
+  server: 2.26.3.75
+  port: 443
+  udp: true
+  type: hysteria2
+  password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
+  sni: fi.67chat.ru
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 02 - myhuo
+  server: 77.42.73.93
+  port: 1222
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  servername: play.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
+  server: 77.42.73.93
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -15,7 +56,21 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02 - myhuo
+- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
+  server: 109.172.54.135
+  port: 8444
+  udp: true
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -28,38 +83,6 @@ proxies:
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
-  server: 2.26.3.75
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
-  sni: fi.67chat.ru
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
-  server: 77.42.73.93
-  port: 1222
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-    short-id: a25d0f
-  servername: play.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
-  server: 65.109.243.156
-  port: 2112
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-    short-id: 125ba3
-  servername: play.google.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,6 +93,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
   - 🇫🇮 芬兰 (Finland) 05 - myhuo
+  - 🇫🇮 芬兰 (Finland) 06 - myhuo
+  - 🇫🇮 芬兰 (Finland) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,5 +105,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
   - 🇫🇮 芬兰 (Finland) 05 - myhuo
+  - 🇫🇮 芬兰 (Finland) 06 - myhuo
+  - 🇫🇮 芬兰 (Finland) 07 - myhuo
 rules:
 - MATCH,PROXIES

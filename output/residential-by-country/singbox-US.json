@@ -4,15 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) R46 - myhuo",
-      "server": "4c2d5151.266nets.com",
-      "server_port": 12031,
-      "password": "bad06c3525a6eaee1757b34776b83892",
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
+      "server": "155.117.19.17",
+      "server_port": 443,
+      "password": "5fa748137b6d822308eea4611f474ad5",
       "tls": {
         "enabled": true,
-        "server_name": "ixigua.com",
+        "server_name": "www.bing.com",
         "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
       }
     },
     {
@@ -20,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) R46 - myhuo"
+        "🇺🇸 美国 (United States) 01 (家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) R46 - myhuo"
+        "🇺🇸 美国 (United States) 01 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

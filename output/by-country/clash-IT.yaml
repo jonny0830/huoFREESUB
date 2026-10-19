@@ -5,12 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - myhuo
-  server: 57.131.48.45
-  port: 8388
+  server: 204.216.216.23
+  port: 10086
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
+  type: vless
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
 - name: 🇮🇹 意大利 (Italy) 02 - myhuo
   server: 185.164.175.81
   port: 19999
@@ -19,6 +18,13 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 03 - myhuo
+  server: 57.131.48.45
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
+- name: 🇮🇹 意大利 (Italy) 04 - myhuo
   server: 31.59.180.155
   port: 443
   udp: true
@@ -31,13 +37,6 @@ proxies:
     short-id: 5aab0b0401044801
   servername: italynew.nztvpn.com
   client-fingerprint: firefox
-- name: 🇮🇹 意大利 (Italy) 04 - myhuo
-  server: 91.201.65.122
-  port: 9050
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: FG5ddLsMPbV5CutE
 - name: 🇮🇹 意大利 (Italy) 05 - myhuo
   server: 82.118.16.187
   port: 443
@@ -65,12 +64,30 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 07 - myhuo
-  server: 91.201.65.122
-  port: 9074
+  server: 57.131.38.163
+  port: 2053
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: p5wSkb2uM3pKSS3j
+  type: vless
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  tls: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+    short-id: 5b8a942318178e7b
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇹 意大利 (Italy) 08 - myhuo
+  server: 204.216.216.23
+  port: 1114
+  udp: true
+  type: vless
+  uuid: 6ba2eac6-0ec9-44ca-a42b-a8e23aafb530
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ
+    short-id: 79a1e14b
+  servername: yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,6 +100,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 05 - myhuo
   - 🇮🇹 意大利 (Italy) 06 - myhuo
   - 🇮🇹 意大利 (Italy) 07 - myhuo
+  - 🇮🇹 意大利 (Italy) 08 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -95,5 +113,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 05 - myhuo
   - 🇮🇹 意大利 (Italy) 06 - myhuo
   - 🇮🇹 意大利 (Italy) 07 - myhuo
+  - 🇮🇹 意大利 (Italy) 08 - myhuo
 rules:
 - MATCH,PROXIES
