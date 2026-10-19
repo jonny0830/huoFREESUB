@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - myhuo
   server: 213.183.63.60
-  port: 9066
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 2KUaE2a8NWTvuCZ3
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - myhuo
-  server: 213.183.63.60
   port: 9028
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 9eeJ2fwnZA5Fxgz8
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - myhuo
+  server: 213.183.63.60
+  port: 9066
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 2KUaE2a8NWTvuCZ3
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - myhuo
   server: 213.183.63.60
   port: 9085
@@ -26,19 +26,18 @@ proxies:
   cipher: aes-256-cfb
   password: 9ej82EKe2gq7gLAM
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - myhuo
-  server: 213.183.63.60
-  port: 9098
+  server: 195.123.226.21
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - myhuo
-  server: 213.183.63.60
-  port: 9029
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: dU3DSNS8wYPXzEKw
+  type: vless
+  uuid: 6589c320-db68-43cd-a273-b46299bab355
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: rabtI-ymNXBUvYYRwAw8DiR-1pdP7U0WPIaCBHEkgzo
+    short-id: 77bb0d07bddbc832
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,7 +47,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 02 - myhuo
   - 🇧🇬 保加利亚 (Bulgaria) 03 - myhuo
   - 🇧🇬 保加利亚 (Bulgaria) 04 - myhuo
-  - 🇧🇬 保加利亚 (Bulgaria) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,6 +56,5 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 02 - myhuo
   - 🇧🇬 保加利亚 (Bulgaria) 03 - myhuo
   - 🇧🇬 保加利亚 (Bulgaria) 04 - myhuo
-  - 🇧🇬 保加利亚 (Bulgaria) 05 - myhuo
 rules:
 - MATCH,PROXIES

@@ -4,24 +4,40 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - myhuo",
-      "server": "162.249.125.133",
+      "server": "de1.dedushka.top",
       "server_port": 443,
-      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
         "enabled": true,
-        "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c1b4086fea89914496c7e10967a419216566"
+        "server_name": "de1.dedushka.top",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - myhuo",
+      "server": "bogging-eyeteeth-fly.freesocks.work",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - myhuo",
+      "server": "185.156.44.99",
+      "server_port": 443,
+      "password": "gf1:gfhysteria2024",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.com",
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - myhuo",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - myhuo",
       "server": "hy2-new.aspidnet.xyz",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -37,7 +53,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - myhuo",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - myhuo",
+      "server": "edge10.cyrionflare.com",
+      "server_port": 2052,
+      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - myhuo",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -58,7 +81,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - myhuo",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 07 - myhuo",
       "server": "146.70.124.85",
       "server_port": 443,
       "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
@@ -78,28 +101,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - myhuo",
-      "server": "185.156.44.99",
-      "server_port": 443,
-      "password": "gf1:gfhysteria2024",
-      "tls": {
-        "enabled": true,
-        "server_name": "css.rbxcdn.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - myhuo",
-      "server": "154.46.31.106",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 07 - myhuo",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 08 - myhuo",
       "server": "82.117.255.174",
       "server_port": 443,
       "uuid": "679439c5-28f2-485e-af5f-60a5fcd9c36c",
@@ -119,6 +122,26 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 09 - myhuo",
+      "server": "ksbemdmd.color-shop.ir",
+      "server_port": 443,
+      "uuid": "e3026ffb-cde6-4cfe-b4b7-f76d5264e969",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9Wh7M-tz9D_1WBaQhz2wIJian960Ffcx66NH8HAidDI",
+          "short_id": "61a0eb582ed4f2b5"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -129,7 +152,9 @@
         "🇷🇴 罗马尼亚 (Romania) 04 - myhuo",
         "🇷🇴 罗马尼亚 (Romania) 05 - myhuo",
         "🇷🇴 罗马尼亚 (Romania) 06 - myhuo",
-        "🇷🇴 罗马尼亚 (Romania) 07 - myhuo"
+        "🇷🇴 罗马尼亚 (Romania) 07 - myhuo",
+        "🇷🇴 罗马尼亚 (Romania) 08 - myhuo",
+        "🇷🇴 罗马尼亚 (Romania) 09 - myhuo"
       ]
     },
     {
@@ -142,7 +167,9 @@
         "🇷🇴 罗马尼亚 (Romania) 04 - myhuo",
         "🇷🇴 罗马尼亚 (Romania) 05 - myhuo",
         "🇷🇴 罗马尼亚 (Romania) 06 - myhuo",
-        "🇷🇴 罗马尼亚 (Romania) 07 - myhuo"
+        "🇷🇴 罗马尼亚 (Romania) 07 - myhuo",
+        "🇷🇴 罗马尼亚 (Romania) 08 - myhuo",
+        "🇷🇴 罗马尼亚 (Romania) 09 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

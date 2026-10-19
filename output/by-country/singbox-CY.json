@@ -13,21 +13,28 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo",
-      "server": "5.253.29.254",
-      "server_port": 14430,
-      "uuid": "c7c27192-60a5-4ce1-b613-95270d82309d",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.253.29.254"
+      "server": "5.253.30.99",
+      "server_port": 40443,
+      "uuid": "511c1563-2cb6-4064-abc6-a59ee49818a8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
+          "short_id": "88b6"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo",
-      "server": "hydra.yokkastars.com",
+      "server": "5.253.28.240",
       "server_port": 2443,
       "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
       "tls": {
@@ -35,7 +42,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -49,13 +56,28 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo",
+      "server": "5.253.29.254",
+      "server_port": 14430,
+      "uuid": "c7c27192-60a5-4ce1-b613-95270d82309d",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.253.29.254"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo",
         "🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo"
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo",
+        "🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo"
       ]
     },
     {
@@ -64,7 +86,8 @@
       "outbounds": [
         "🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo",
         "🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo"
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo",
+        "🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
