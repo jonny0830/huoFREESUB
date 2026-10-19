@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - myhuo
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
   server: 78.135.73.47
   port: 443
   udp: true
@@ -17,21 +29,8 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
-  server: 82.26.86.145
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 2f7361b1-3c6b-4ddf-9e28-5297a22513ca
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zr9whFIDeaz-lu6vji80yM4Vd7TBYCA4mthRk3c2U0s
-    short-id: 1bb0633431089fe4
-  servername: www.rutube.ru
-  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 03 - myhuo
-  server: 104.21.48.18
+  server: nimm.mpd.cc.cd
   port: 2053
   udp: true
   type: trojan
@@ -41,21 +40,6 @@ proxies:
   network: ws
   ws-opts:
     path: /0962
-- name: 🇹🇷 土耳其 (Turkey) 04 - myhuo
-  server: 155.103.70.53
-  port: 30303
-  udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==
-    headers:
-      Host: wzs.echo.net.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,7 +48,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - myhuo
   - 🇹🇷 土耳其 (Turkey) 02 - myhuo
   - 🇹🇷 土耳其 (Turkey) 03 - myhuo
-  - 🇹🇷 土耳其 (Turkey) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,6 +56,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - myhuo
   - 🇹🇷 土耳其 (Turkey) 02 - myhuo
   - 🇹🇷 土耳其 (Turkey) 03 - myhuo
-  - 🇹🇷 土耳其 (Turkey) 04 - myhuo
 rules:
 - MATCH,PROXIES

@@ -6,26 +6,6 @@
     {
       "type": "vmess",
       "tag": "🇲🇾 马来西亚 (Malaysia) 01 - myhuo",
-      "server": "104.21.23.80",
-      "server_port": 443,
-      "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "my.lovehk.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/KualaLumpur1",
-        "headers": {
-          "Host": "my.lovehk.xyz"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 02 - myhuo",
       "server": "47.250.135.244",
       "server_port": 10000,
       "uuid": "aedc66b8-99d7-4a21-8310-61870e7f870d",
@@ -36,16 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - myhuo",
-        "🇲🇾 马来西亚 (Malaysia) 02 - myhuo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - myhuo",
-        "🇲🇾 马来西亚 (Malaysia) 02 - myhuo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
