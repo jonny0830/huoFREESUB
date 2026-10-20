@@ -15,7 +15,7 @@
         "server_name": "www.amazon.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -25,8 +25,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
+      "server": "vpn-tw-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-tw-002.fastervpn.world%5cu0026insecure%3d1%5cu0026allowinsecure%3d1",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -44,12 +56,26 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - myhuo",
+      "server": "103.115.109.49",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 02 - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 04 - myhuo"
       ]
     },
     {
@@ -57,7 +83,9 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 02 - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
