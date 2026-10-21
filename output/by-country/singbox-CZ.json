@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇨🇿 捷克 (Czech) 01 - myhuo",
+      "server": "67.159.18.34",
+      "server_port": 17001,
+      "method": "aes-256-gcm",
+      "password": "I6o9NnialYLMEjVt28RF4dpjmr9wMvNL"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - myhuo",
       "server": "195.123.245.241",
       "server_port": 443,
       "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
@@ -15,7 +23,7 @@
         "server_name": "gateway.icloud.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -25,12 +33,25 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇿 捷克 (Czech) 02 - myhuo",
-      "server": "67.159.18.34",
-      "server_port": 17001,
-      "method": "aes-256-gcm",
-      "password": "I6o9NnialYLMEjVt28RF4dpjmr9wMvNL"
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - myhuo",
+      "server": "server.slavkiti.monster",
+      "server_port": 443,
+      "uuid": "ff40696b-06d6-443b-9481-8d01eddd13e1",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.foxsports.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "d659da01fb94"
+        }
+      }
     },
     {
       "type": "selector",
@@ -38,7 +59,8 @@
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - myhuo",
-        "🇨🇿 捷克 (Czech) 02 - myhuo"
+        "🇨🇿 捷克 (Czech) 02 - myhuo",
+        "🇨🇿 捷克 (Czech) 03 - myhuo"
       ]
     },
     {
@@ -46,7 +68,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - myhuo",
-        "🇨🇿 捷克 (Czech) 02 - myhuo"
+        "🇨🇿 捷克 (Czech) 02 - myhuo",
+        "🇨🇿 捷克 (Czech) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

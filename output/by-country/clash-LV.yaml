@@ -5,32 +5,83 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - myhuo
-  server: 185.220.223.25
-  port: 443
+  server: 185.135.86.175
+  port: 9094
   udp: true
-  type: vless
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
-    short-id: 3c6afdc4124d0560
-  servername: lv.aiage.work
-  client-fingerprint: firefox
+  type: ss
+  cipher: aes-256-cfb
+  password: rpgbNnU9rDDU4aWZ
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - myhuo
-  server: 185.220.223.24
+  server: 185.135.86.175
+  port: 9068
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - myhuo
+  server: 185.135.86.175
+  port: 9033
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UTJA57ypk2XKQpnm
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - myhuo
+  server: 185.135.86.175
+  port: 9036
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: hbtvgUz5uNYyB3Rf
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - myhuo
+  server: 185.135.86.175
+  port: 9034
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Yg4MbdXFQ9HFFVY6
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - myhuo
+  server: 185.135.86.175
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇻 拉脱维亚 (Latvia) 07 - myhuo
+  server: 185.135.86.175
+  port: 9007
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: kSPmvwdFzGMMW5pY
+- name: 🇱🇻 拉脱维亚 (Latvia) 08 - myhuo
+  server: 185.135.86.175
+  port: 9082
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 45xgMgm386pjWjTx
+- name: 🇱🇻 拉脱维亚 (Latvia) 09 - myhuo
+  server: 195.123.213.28
   port: 443
   udp: true
   type: vless
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
-    short-id: 3c6afdc4124d0560
-  servername: lv.aiage.work
-  client-fingerprint: random
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - myhuo
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 10 - myhuo
+  server: lv1.dedushka.top
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: lv1.dedushka.top
+  skip-cert-verify: false
+- name: 🇱🇻 拉脱维亚 (Latvia) 11 - myhuo
   server: 138.124.180.137
   port: 443
   udp: true
@@ -43,7 +94,22 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - myhuo
+- name: 🇱🇻 拉脱维亚 (Latvia) 12 - myhuo
+  server: us.mediabox12wrr.site
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 1566a6e1-8181-41ef-894c-6d6d0d482470
+  tls: true
+  servername: us.mediabox12wrr.site
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /dfefc609ed724b3d8647ed29
+    headers:
+      Host: us.mediabox12wrr.site
+- name: 🇱🇻 拉脱维亚 (Latvia) 13 - myhuo
   server: 195.123.208.32
   port: 443
   udp: true
@@ -55,7 +121,7 @@ proxies:
     public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
     short-id: 757b9e1ef18e60f0
   servername: gateway.icloud.com
-  client-fingerprint: firefox
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,6 +131,15 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 02 - myhuo
   - 🇱🇻 拉脱维亚 (Latvia) 03 - myhuo
   - 🇱🇻 拉脱维亚 (Latvia) 04 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 05 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 06 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 07 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 08 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 09 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 10 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 11 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 12 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 13 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,5 +149,14 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 02 - myhuo
   - 🇱🇻 拉脱维亚 (Latvia) 03 - myhuo
   - 🇱🇻 拉脱维亚 (Latvia) 04 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 05 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 06 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 07 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 08 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 09 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 10 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 11 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 12 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 13 - myhuo
 rules:
 - MATCH,PROXIES

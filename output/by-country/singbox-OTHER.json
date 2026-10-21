@@ -4,21 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 01 - myhuo",
-      "server": "172.67.209.13",
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 01 - myhuo",
+      "server": "172.64.229.21",
       "server_port": 443,
-      "uuid": "fa45096d-bed0-ad80-c773-23c30000001b",
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev",
+        "server_name": "vmess.lbw666.dpdns.org",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/sync",
+        "path": "/ws",
         "headers": {
-          "Host": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev"
+          "Host": "vmess.lbw666.dpdns.org"
         }
       }
     },
@@ -27,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 (Belgium) 01 - myhuo"
+        "🌐 其他地区 (Other) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 (Belgium) 01 - myhuo"
+        "🌐 其他地区 (Other) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

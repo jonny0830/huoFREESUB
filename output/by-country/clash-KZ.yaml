@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 3h-kazakhstan1.09vpn.com
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
   server: 83.222.23.81
   port: 38065
   udp: true
@@ -15,8 +28,8 @@ proxies:
     public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
     short-id: fa
   servername: yahoo.com
-  client-fingerprint: random
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
+  client-fingerprint: firefox
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
   server: 178.236.16.98
   port: 35728
   udp: true
@@ -28,19 +41,6 @@ proxies:
     short-id: 69a2
   servername: yahoo.com
   client-fingerprint: firefox
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: viber.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo
   server: 38.107.234.57
   port: 80
@@ -63,6 +63,8 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess/
+    headers:
+      Host: 3h-kazakhstan1.09vpn.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - myhuo
   server: 38.107.234.57
   port: 80
@@ -75,7 +77,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: google.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - myhuo
   server: 38.107.234.57
   port: 80
@@ -88,7 +90,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: google.com
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - myhuo
   server: 38.107.234.57
   port: 80
@@ -101,8 +103,34 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 38.107.234.57
+      Host: 3h-kazakhstan1.09vpn.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - myhuo
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: viber.com
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - myhuo
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 38.107.234.57
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 11 - myhuo
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -128,6 +156,8 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - myhuo
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - myhuo
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 11 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -142,5 +172,7 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - myhuo
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - myhuo
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 11 - myhuo
 rules:
 - MATCH,PROXIES
