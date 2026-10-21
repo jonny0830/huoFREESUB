@@ -4,8 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - myhuo",
+      "server": "51.21.247.148",
+      "server_port": 443,
+      "uuid": "7060231d-b9ba-495f-a218-bf427940cf3e",
+      "transport": {
+        "type": "http"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - myhuo",
+      "server": "13.60.198.133",
+      "server_port": 443,
+      "uuid": "7060231d-b9ba-495f-a218-bf427940cf3e",
+      "transport": {
+        "type": "http"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - myhuo",
       "server": "77.110.96.201",
       "server_port": 36264,
       "password": "Telegram-vpnjey",
@@ -20,18 +40,38 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - myhuo",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 01 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 02 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 03 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 04 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 01 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 02 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 03 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
