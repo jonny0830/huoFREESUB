@@ -43,8 +43,20 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+- name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
+  server: sub.merky.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  tls: true
+  servername: sub.merky.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
     headers:
-      Host: 5.178.109.174
+      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +66,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - myhuo
   - 🇸🇪 瑞典 (Sweden) 03 - myhuo
   - 🇸🇪 瑞典 (Sweden) 04 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,5 +76,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - myhuo
   - 🇸🇪 瑞典 (Sweden) 03 - myhuo
   - 🇸🇪 瑞典 (Sweden) 04 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 05 - myhuo
 rules:
 - MATCH,PROXIES
