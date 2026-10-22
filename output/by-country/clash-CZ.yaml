@@ -5,26 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - myhuo
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  tls: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /9BozNyvQ8VdRvsYX?ed=2560
-    headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-- name: 🇨🇿 捷克 (Czech) 02 - myhuo
   server: 67.159.18.34
   port: 17001
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
+- name: 🇨🇿 捷克 (Czech) 02 - myhuo
+  server: 193.124.17.190
+  port: 443
+  udp: true
+  type: vless
+  uuid: 13aef2e0-b3fb-4322-a0e9-c10b908ce6b5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 87f895f23064
+  servername: www.techradar.com
+  client-fingerprint: firefox
 - name: 🇨🇿 捷克 (Czech) 03 - myhuo
   server: 195.123.245.241
   port: 443
@@ -37,19 +36,6 @@ proxies:
     public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
     short-id: 23d0950d60bc0d5b
   servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 04 - myhuo
-  server: 193.124.17.190
-  port: 443
-  udp: true
-  type: vless
-  uuid: fad0b9a6-187d-4fcc-96fc-498bc5b3135a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 8325360e8bd2
-  servername: www.foxsports.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -59,7 +45,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - myhuo
   - 🇨🇿 捷克 (Czech) 02 - myhuo
   - 🇨🇿 捷克 (Czech) 03 - myhuo
-  - 🇨🇿 捷克 (Czech) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,6 +53,5 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - myhuo
   - 🇨🇿 捷克 (Czech) 02 - myhuo
   - 🇨🇿 捷克 (Czech) 03 - myhuo
-  - 🇨🇿 捷克 (Czech) 04 - myhuo
 rules:
 - MATCH,PROXIES

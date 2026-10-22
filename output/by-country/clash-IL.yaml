@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇱 以色列 (Israel) 01 - myhuo
-  server: 159.246.55.30
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime59.workers.dev
-- name: 🇮🇱 以色列 (Israel) 02 - myhuo
   server: 185.95.231.156
   port: 443
   udp: true
@@ -28,6 +17,13 @@ proxies:
     short-id: a3a578ab
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇮🇱 以色列 (Israel) 02 - myhuo
+  server: 31.57.185.124
+  port: 51018
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: kda5bBwQnLkzeEmGDz6GFXm/+nilgt/2CP5+EM3wCIg=:fAOnN6mVpRrUS/wj1fMBE/kXRRLzD715DCL9bZddeWo=
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - myhuo
-  server: fool.com
+  server: help1.digikala-aparat-zula.com
   port: 443
   udp: true
   type: vless
@@ -20,16 +20,6 @@ proxies:
     headers:
       Host: wallweb-4ez.pages.dev
 - name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
-  server: 51.21.135.136
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
-  network: h2
-  h2-opts:
-    host: []
-    path: /
-- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
   server: 13.60.198.133
   port: 443
   udp: true
@@ -39,16 +29,20 @@ proxies:
   h2-opts:
     host: []
     path: /
-- name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
-  server: 5.178.109.174
-  port: 14430
+- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
+  server: 185.58.115.62
+  port: 443
   udp: true
   type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
+  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
+    short-id: 7271129440ade8fa
+  servername: se2.gderevievsvideos.fyi
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
   server: 77.110.96.201
   port: 36264
   udp: true
@@ -58,6 +52,17 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: Telegram@vpnjey
+- name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select

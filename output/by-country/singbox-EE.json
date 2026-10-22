@@ -25,41 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo",
-      "server": "138.124.4.224",
-      "server_port": 443,
-      "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "login.sakhweb.fyi",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ",
-          "short_id": "7271129440ade8fa"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
