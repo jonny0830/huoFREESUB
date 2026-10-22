@@ -6,21 +6,24 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo",
-      "server": "188.225.38.216",
+      "server": "177.3.208.65",
       "server_port": 443,
-      "uuid": "21ffcccd-8fbe-43fb-9dd1-24452fdfa8ad",
+      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
       "tls": {
         "enabled": true,
-        "server_name": "lalibobi.online",
+        "server_name": "tgmansion.site",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "lalibobi.orbit.v3.Connect"
+        "type": "ws",
+        "path": "/vless-ee",
+        "headers": {
+          "Host": "tgmansion.site"
+        }
       }
     },
     {

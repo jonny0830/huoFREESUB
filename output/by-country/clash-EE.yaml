@@ -5,18 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
-  server: 188.225.38.216
+  server: 177.3.208.65
   port: 443
   udp: true
   type: vless
-  uuid: 21ffcccd-8fbe-43fb-9dd1-24452fdfa8ad
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   tls: true
-  servername: lalibobi.online
+  servername: tgmansion.site
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: lalibobi.orbit.v3.Connect
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-ee
+    headers:
+      Host: tgmansion.site
 proxy-groups:
 - name: PROXIES
   type: select

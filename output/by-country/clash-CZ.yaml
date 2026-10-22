@@ -12,29 +12,16 @@ proxies:
   cipher: aes-256-gcm
   password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
 - name: 🇨🇿 捷克 (Czech) 02 - myhuo
-  server: 89.125.237.24
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
-    short-id: 7271129440ade8fa
-  servername: web.stride.surf
-  client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 03 - myhuo
   server: 193.124.17.190
   port: 443
   udp: true
   type: vless
-  uuid: fad0b9a6-187d-4fcc-96fc-498bc5b3135a
+  uuid: ff40696b-06d6-443b-9481-8d01eddd13e1
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 8325360e8bd2
+    short-id: d659da01fb94
   servername: www.foxsports.com
   client-fingerprint: firefox
 proxy-groups:
@@ -44,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - myhuo
   - 🇨🇿 捷克 (Czech) 02 - myhuo
-  - 🇨🇿 捷克 (Czech) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - myhuo
   - 🇨🇿 捷克 (Czech) 02 - myhuo
-  - 🇨🇿 捷克 (Czech) 03 - myhuo
 rules:
 - MATCH,PROXIES
