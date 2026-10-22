@@ -6,7 +6,30 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - myhuo",
-      "server": "51.21.247.148",
+      "server": "fool.com",
+      "server_port": 443,
+      "uuid": "e818a20d-9bcd-4744-9061-ca51b9c8aeea",
+      "tls": {
+        "enabled": true,
+        "server_name": "wallweb-4ez.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "wallweb-4ez.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - myhuo",
+      "server": "51.21.135.136",
       "server_port": 443,
       "uuid": "7060231d-b9ba-495f-a218-bf427940cf3e",
       "transport": {
@@ -15,28 +38,12 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - myhuo",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - myhuo",
       "server": "13.60.198.133",
       "server_port": 443,
       "uuid": "7060231d-b9ba-495f-a218-bf427940cf3e",
       "transport": {
         "type": "http"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - myhuo",
-      "server": "77.110.96.201",
-      "server_port": 36264,
-      "password": "Telegram-vpnjey",
-      "tls": {
-        "enabled": true,
-        "server_name": "se.vpnjey2.dpdns.org",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "Telegram@vpnjey"
       }
     },
     {
@@ -51,22 +58,19 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 05 - myhuo",
-      "server": "sub.merky.top",
-      "server_port": 443,
-      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "server": "77.110.96.201",
+      "server_port": 36264,
+      "password": "Telegram-vpnjey",
       "tls": {
         "enabled": true,
-        "server_name": "sub.merky.top",
-        "insecure": false
+        "server_name": "se.vpnjey2.dpdns.org",
+        "insecure": true
       },
-      "transport": {
-        "type": "ws",
-        "path": "/merky-connect/de6/",
-        "headers": {
-          "Host": "sub.merky.top"
-        }
+      "obfs": {
+        "type": "salamander",
+        "password": "Telegram@vpnjey"
       }
     },
     {

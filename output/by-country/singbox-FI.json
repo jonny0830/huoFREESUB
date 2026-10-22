@@ -14,7 +14,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -26,44 +26,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - myhuo",
-      "server": "2.29.101.158",
-      "server_port": 443,
-      "uuid": "9a0e84f8-4b58-477f-99da-5fac5a2e58e8",
-      "tls": {
-        "enabled": true,
-        "server_name": "36a466g.fi1.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg",
-          "short_id": "b3c9d0c6bdd114a6"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "0adb9638509b"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "45.144.234.157"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - myhuo",
       "server": "212.87.222.10",
       "server_port": 8443,
       "uuid": "8afeb33c-b686-43e9-a629-0d98f991ec28",
@@ -73,7 +35,7 @@
         "server_name": "www.nokia.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -84,7 +46,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - myhuo",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
       "server": "31.77.199.147",
       "server_port": 4443,
       "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
@@ -104,8 +66,22 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - myhuo",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - myhuo",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - myhuo",
       "server": "2.26.3.75",
       "server_port": 443,
       "password": "d5530551-5e9a-4ac5-8539-cee87e38d9e2",
@@ -114,6 +90,14 @@
         "server_name": "fi.67chat.ru",
         "insecure": false
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - myhuo",
+      "server": "fn1s.sublinkplas.ir",
+      "server_port": 53731,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QoYjvkIZ7-bMIYfVI9IzRXUx5A1o3kj7"
     },
     {
       "type": "selector",

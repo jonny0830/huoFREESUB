@@ -4,26 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇴 挪威 (Norway) 01 - myhuo",
-      "server": "185.213.23.63",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - myhuo",
+      "server": "zfd-hkv1.kunlun01dns.com",
+      "server_port": 16114,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 (Norway) 01 - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 (Norway) 01 - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

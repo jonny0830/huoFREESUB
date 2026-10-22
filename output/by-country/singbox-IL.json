@@ -6,6 +6,20 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 01 - myhuo",
+      "server": "159.246.55.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime59.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 02 - myhuo",
       "server": "185.95.231.156",
       "server_port": 443,
       "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
@@ -29,14 +43,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01 - myhuo"
+        "🇮🇱 以色列 (Israel) 01 - myhuo",
+        "🇮🇱 以色列 (Israel) 02 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01 - myhuo"
+        "🇮🇱 以色列 (Israel) 01 - myhuo",
+        "🇮🇱 以色列 (Israel) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

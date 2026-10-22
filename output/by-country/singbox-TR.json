@@ -4,8 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - myhuo",
+      "server": "193.223.107.107",
+      "server_port": 1932,
+      "uuid": "b8f083b6-ae01-431f-9b41-9e2eb96f352b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - myhuo",
       "server": "153.56.210.134",
       "server_port": 34121,
       "password": "c8ed6cd1-6566-4f7a-819e-1c55b2b360c9",
@@ -20,8 +41,48 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - myhuo",
+      "server": "me17.msjia8844.site",
+      "server_port": 7443,
+      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
+      "tls": {
+        "enabled": true,
+        "server_name": "me17.msjia8844.site",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - myhuo",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - myhuo",
+      "server": "62.133.63.45",
+      "server_port": 8444,
+      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": "457fab2ac885dbe0"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - myhuo",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -42,7 +103,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - myhuo",
+      "tag": "🇹🇷 土耳其 (Turkey) 06 - myhuo",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -61,30 +122,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - myhuo",
-      "server": "62.133.63.45",
-      "server_port": 8444,
-      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -92,7 +129,9 @@
         "🇹🇷 土耳其 (Turkey) 01 - myhuo",
         "🇹🇷 土耳其 (Turkey) 02 - myhuo",
         "🇹🇷 土耳其 (Turkey) 03 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 04 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 04 - myhuo",
+        "🇹🇷 土耳其 (Turkey) 05 - myhuo",
+        "🇹🇷 土耳其 (Turkey) 06 - myhuo"
       ]
     },
     {
@@ -102,7 +141,9 @@
         "🇹🇷 土耳其 (Turkey) 01 - myhuo",
         "🇹🇷 土耳其 (Turkey) 02 - myhuo",
         "🇹🇷 土耳其 (Turkey) 03 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 04 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 04 - myhuo",
+        "🇹🇷 土耳其 (Turkey) 05 - myhuo",
+        "🇹🇷 土耳其 (Turkey) 06 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
