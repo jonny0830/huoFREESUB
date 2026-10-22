@@ -15,7 +15,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -25,28 +25,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - myhuo",
-      "server": "152.237.230.30",
-      "server_port": 443,
-      "uuid": "e3026ffb-cde6-4cfe-b4b7-f76d5264e969",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "9Wh7M-tz9D_1WBaQhz2wIJian960Ffcx66NH8HAidDI",
-          "short_id": "61a0eb582ed4f2b5"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - myhuo",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - myhuo",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -62,40 +42,35 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - myhuo",
-      "server": "87.58.205.242",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - myhuo",
+      "server": "152.237.230.30",
       "server_port": 443,
-      "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
-      "flow": "xtls-rprx-vision",
+      "uuid": "e3026ffb-cde6-4cfe-b4b7-f76d5264e969",
       "tls": {
         "enabled": true,
-        "server_name": "backend.mskvibe.fyi",
+        "server_name": "play.google.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ",
-          "short_id": "7271129440ade8fa"
+          "public_key": "9Wh7M-tz9D_1WBaQhz2wIJian960Ffcx66NH8HAidDI",
+          "short_id": "61a0eb582ed4f2b5"
         }
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - myhuo",
-      "server": "de1.dedushka.top",
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - myhuo",
+      "server": "154.46.31.106",
       "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "de1.dedushka.top",
-        "insecure": false
-      }
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
     },
     {
       "type": "trojan",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - myhuo",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - myhuo",
       "server": "it1.dedushka.top",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
@@ -106,6 +81,21 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - myhuo",
+      "server": "de1.dedushka.top",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "de1.dedushka.top",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 07 - myhuo",
       "server": "185.156.44.99",
@@ -113,7 +103,7 @@
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "whatsapp.com",
+        "server_name": "185.156.44.99",
         "insecure": true
       }
     },

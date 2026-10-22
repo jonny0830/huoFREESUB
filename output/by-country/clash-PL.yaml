@@ -6,47 +6,39 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - myhuo
   server: 217.30.10.44
+  port: 9042
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: S7KwUu7yBy58S3Ga
+- name: 🇵🇱 波兰 (Poland) 02 - myhuo
+  server: 217.30.10.44
   port: 9062
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: tkhHVxxfM2QErBWe
-- name: 🇵🇱 波兰 (Poland) 02 - myhuo
+- name: 🇵🇱 波兰 (Poland) 03 - myhuo
   server: 217.30.10.44
-  port: 9076
+  port: 9006
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
-- name: 🇵🇱 波兰 (Poland) 03 - myhuo
-  server: 31.133.0.186
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl2.dedushka.top
-  skip-cert-verify: true
+  password: FAdUvMJUq5vDgKEq
 - name: 🇵🇱 波兰 (Poland) 04 - myhuo
-  server: 31.133.0.182
-  port: 443
+  server: 217.30.10.44
+  port: 9071
   udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl1.dedushka.top
-  skip-cert-verify: false
+  type: ss
+  cipher: aes-256-cfb
+  password: mENfxTFQpRKKh4As
 - name: 🇵🇱 波兰 (Poland) 05 - myhuo
-  server: 144.31.0.140
-  port: 443
+  server: 217.30.10.44
+  port: 9099
   udp: true
-  type: vless
-  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
-    short-id: 7271129440ade8fa
-  servername: api.sakhalin.fyi
-  client-fingerprint: firefox
+  type: ss
+  cipher: aes-256-cfb
+  password: 7heRqkPG3hg4UnRm
 - name: 🇵🇱 波兰 (Poland) 06 - myhuo
   server: 82.118.22.161
   port: 443
@@ -61,16 +53,13 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: random
 - name: 🇵🇱 波兰 (Poland) 07 - myhuo
-  server: 78.17.171.137
+  server: 31.133.0.186
   port: 443
   udp: true
   type: trojan
-  password: u93yPGuY2zgIsisJZKS2QzJzg
-  sni: 2.HI-L.IM
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: pl2.dedushka.top
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /f2fc2a1f
 - name: 🇵🇱 波兰 (Poland) 08 - myhuo
   server: 78.17.128.153
   port: 35076
@@ -80,36 +69,27 @@ proxies:
   sni: scrap.halyvanedorogo.ru
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 09 - myhuo
-  server: 2.26.225.89
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  tls: true
-  servername: pl.flen-vpn.xyz
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 10 - myhuo
-  server: 54.37.131.126
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 11 - myhuo
-  server: pl.tronsg.com
+  server: pl1.dedushka.top
   port: 443
   udp: true
   type: trojan
-  password: Trojan@82164024
-  sni: pl.tronsg.com
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: pl1.dedushka.top
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 12 - myhuo
+- name: 🇵🇱 波兰 (Poland) 10 - myhuo
+  server: 144.31.0.140
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
+    short-id: 7271129440ade8fa
+  servername: api.sakhalin.fyi
+  client-fingerprint: ios
+- name: 🇵🇱 波兰 (Poland) 11 - myhuo
   server: 150.251.113.34
   port: 443
   udp: true
@@ -138,7 +118,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 09 - myhuo
   - 🇵🇱 波兰 (Poland) 10 - myhuo
   - 🇵🇱 波兰 (Poland) 11 - myhuo
-  - 🇵🇱 波兰 (Poland) 12 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -155,6 +134,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 09 - myhuo
   - 🇵🇱 波兰 (Poland) 10 - myhuo
   - 🇵🇱 波兰 (Poland) 11 - myhuo
-  - 🇵🇱 波兰 (Poland) 12 - myhuo
 rules:
 - MATCH,PROXIES

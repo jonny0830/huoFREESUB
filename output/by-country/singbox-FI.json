@@ -14,29 +14,38 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - myhuo",
-      "server": "2.26.106.232",
-      "server_port": 8443,
-      "uuid": "5a96c1fc-f167-44b9-9020-8f6867537d14",
+      "server": "95.216.27.15",
+      "server_port": 2053,
+      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
       "tls": {
         "enabled": true,
-        "server_name": "finland02.azotvpn.xyz",
+        "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "fQ1M2sO50w5A3oM55Hfs8vmZ320I8VaKdzRqeXOMMnQ",
-          "short_id": "07f508fe5d2355d3"
+          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+          "short_id": "d368b94e275ab080"
         }
-      },
-      "transport": {
-        "type": "grpc"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
+      "server": "2.26.3.75",
+      "server_port": 443,
+      "password": "d5530551-5e9a-4ac5-8539-cee87e38d9e2",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi.67chat.ru",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - myhuo",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -50,7 +59,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - myhuo",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - myhuo",
       "server": "212.87.222.10",
       "server_port": 8443,
       "uuid": "8afeb33c-b686-43e9-a629-0d98f991ec28",
@@ -60,32 +69,12 @@
         "server_name": "www.nokia.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
           "public_key": "f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg",
           "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - myhuo",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
         }
       }
     },
@@ -111,35 +100,48 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 07 - myhuo",
-      "server": "2.26.3.75",
+      "server": "uk9.998998.best",
       "server_port": 443,
-      "password": "d5530551-5e9a-4ac5-8539-cee87e38d9e2",
+      "uuid": "5504eaa8-1395-402f-8e0e-75ecd762e627",
       "tls": {
         "enabled": true,
-        "server_name": "fi.67chat.ru",
-        "insecure": true
+        "server_name": "server8.9966338.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fdtiouasopeiyre0r95y8",
+        "headers": {
+          "Host": "server8.9966338.xyz"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 08 - myhuo",
-      "server": "webdisk.jaggyslawa.org",
+      "server": "188.114.98.0",
       "server_port": 443,
-      "uuid": "8cc7d0fc-1b83-4ee3-b51d-8a03a9b19435",
-      "flow": "xtls-rprx-vision",
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
+        "server_name": "fi1.merky.one",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s",
-          "short_id": "87174b37ce3b"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/mky-ws-4f19c8a7",
+        "headers": {
+          "Host": "fi1.merky.one"
         }
       }
     },

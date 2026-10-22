@@ -4,26 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - myhuo",
-      "server": "zfd-hkv1.kunlun01dns.com",
-      "server_port": 16114,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
+      "type": "vless",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - myhuo",
+      "server": "194.36.37.59",
+      "server_port": 10004,
+      "uuid": "f7376394-cd54-11f1-bb6a-bff6d0326f6a",
+      "transport": {
+        "type": "ws",
+        "path": "/vpnjantit"
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - myhuo"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - myhuo"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

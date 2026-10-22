@@ -5,67 +5,65 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - myhuo
-  server: 128.241.25.3
-  port: 30021
-  udp: true
-  type: vless
-  uuid: 6badcd2f-26e5-4eb4-9169-86052115058a
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇯🇵 日本 (Japan) 02 - myhuo
-  server: 128.241.25.215
-  port: 30036
-  udp: true
-  type: vless
-  uuid: 196b7228-58df-4bcf-af2a-2e96608d5add
-  tls: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 日本 (Japan) 03 - myhuo
-  server: 149.22.87.241
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 04 - myhuo
-  server: 149.22.87.240
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 05 - myhuo
   server: 149.22.87.204
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 06 - myhuo
+- name: 🇯🇵 日本 (Japan) 02 - myhuo
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 03 - myhuo
+  server: 149.22.87.240
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 04 - myhuo
+  server: 149.22.87.241
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 05 - myhuo
   server: 45.32.10.7
   port: 443
   udp: true
   type: hysteria2
   password: 96ab5cd282733fd4c312a61f972f330a
   sni: vp3.yysyy.online
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 06 - myhuo
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: '1'
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 07 - myhuo
-  server: 103.75.118.228
-  port: 11452
+  server: 3.114.220.22
+  port: 19645
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: ios
+- name: 🇯🇵 日本 (Japan) 08 - myhuo
+  server: 3.114.220.22
+  port: 18007
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -76,28 +74,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 08 - myhuo
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: www.bing.com
-  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 09 - myhuo
-  server: 45.202.254.20
-  port: 9443
-  udp: true
-  type: vless
-  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 10 - myhuo
   server: 142.91.108.25
   port: 443
   udp: true
@@ -109,34 +86,8 @@ proxies:
     public-key: 9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM
     short-id: ea36c03d86f91287
   servername: jp3.nztvpn.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 11 - myhuo
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 12 - myhuo
-  server: 38.47.97.90
-  port: 443
-  udp: true
-  type: vless
-  uuid: 26e3125d-9cc3-4f8a-816f-55c7806692ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: oM8fSNZoxUPYolfcA-trXnlHCbeG7402OQTGOfokaVY
-  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 13 - myhuo
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 14 - myhuo
+- name: 🇯🇵 日本 (Japan) 10 - myhuo
   server: 45.76.98.127
   port: 443
   udp: true
@@ -151,41 +102,9 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 15 - myhuo
-  server: 188.245.191.19
-  port: 2040
-  udp: true
-  type: vless
-  uuid: 6c7387fd-9e61-4381-8b16-ab6a80cafaf5
-  tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-- name: 🇯🇵 日本 (Japan) 16 - myhuo
-  server: 129.151.64.169
-  port: 31867
-  udp: true
-  type: vless
-  uuid: 6329b7f9-4774-425d-be6b-592213917c65
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇯🇵 日本 (Japan) 17 - myhuo
+- name: 🇯🇵 日本 (Japan) 11 - myhuo
   server: 3.114.220.22
-  port: 18007
+  port: 10583
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -196,178 +115,8 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 18 - myhuo
-  server: 188.245.191.19
-  port: 2040
-  udp: true
-  type: vless
-  uuid: 663b355b-9fea-473d-9deb-7eb44e97f24a
-  tls: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 19 - myhuo
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: 281be80c-6034-4db1-b456-5a5307c6edee
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇯🇵 日本 (Japan) 20 - myhuo
-  server: 3.114.220.22
-  port: 19645
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 21 - myhuo
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: b80ea549-156d-4cc1-8683-3f53d5b335cb
-  tls: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 日本 (Japan) 22 - myhuo
-  server: 57.129.130.57
-  port: 52014
-  udp: true
-  type: vless
-  uuid: eb9ee088-57d8-4d68-ad00-da4ce09daca3
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇯🇵 日本 (Japan) 23 - myhuo
-  server: 188.245.191.19
-  port: 2040
-  udp: true
-  type: vless
-  uuid: 17253e9d-483f-46d1-b425-749b45fee6c6
-  tls: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 24 - myhuo
-  server: 188.245.191.19
-  port: 2040
-  udp: true
-  type: vless
-  uuid: a42ba501-2628-40ab-87ad-cf77adc46f67
-  tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-- name: 🇯🇵 日本 (Japan) 25 - myhuo
-  server: 57.129.130.57
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 091ea5fd-4e8d-4459-90af-e4d10179efff
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇯🇵 日本 (Japan) 26 - myhuo
-  server: 104.16.10.72
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 27 - myhuo
-  server: 188.245.191.19
-  port: 2040
-  udp: true
-  type: vless
-  uuid: d89b1691-e1ad-47c4-8cdb-5bbfe1171a8c
-  tls: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 28 - myhuo
-  server: 185.125.103.62
-  port: 8082
-  udp: true
-  type: vless
-  uuid: 79b5d6d8-cabb-49c3-b4aa-9116932bc870
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇯🇵 日本 (Japan) 29 - myhuo
-  server: 38.175.202.26
-  port: 443
-  udp: true
-  type: hysteria2
-  password: wvA0PtDIuFbSqooIC2goKzFr
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 30 - myhuo
-  server: jp.yi-yi.xyz
+- name: 🇯🇵 日本 (Japan) 12 - myhuo
+  server: 154.36.155.142
   port: 8443
   udp: true
   type: vless
@@ -378,51 +127,84 @@ proxies:
     public-key: g3T4dVyrbNixv7HvSMlh91cYBa5kEsZCEInB7Xc_AEY
     short-id: 956d8072a694ff37
   servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 13 - myhuo
+  server: 18.183.215.124
+  port: 28573
+  udp: true
+  type: vless
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  servername: www.sony.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 31 - myhuo
-  server: 45.77.241.190
-  port: 8441
+- name: 🇯🇵 日本 (Japan) 14 - myhuo
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 15 - myhuo
+  server: 38.47.97.90
+  port: 443
   udp: true
   type: vless
-  uuid: 45deab47-28e0-4048-b7a2-1ab672f684f8
+  uuid: 26e3125d-9cc3-4f8a-816f-55c7806692ee
+  flow: xtls-rprx-vision
   tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: oM8fSNZoxUPYolfcA-trXnlHCbeG7402OQTGOfokaVY
+  servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 16 - myhuo
+  server: 168.138.43.75
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇯🇵 日本 (Japan) 32 - myhuo
-  server: 142.91.101.39
-  port: 627
+    path: /cctv13.m3u8
+- name: 🇯🇵 日本 (Japan) 17 - myhuo
+  server: 38.175.202.26
+  port: 443
+  udp: true
+  type: hysteria2
+  password: wvA0PtDIuFbSqooIC2goKzFr
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 18 - myhuo
+  server: 172.111.146.64
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+- name: 🇯🇵 日本 (Japan) 19 - myhuo
+  server: 104.17.50.53
+  port: 443
   udp: true
   type: vless
-  uuid: 23b385cf-02c3-4df8-8402-11f1916418cd
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
+  servername: jp3.yohototo.top
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /tyxyws
     headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 33 - myhuo
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: a32f3ec6-d776-450e-9d97-9e2deb6c8421
-  tls: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 34 - myhuo
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 20 - myhuo
   server: jp5.998998.best
   port: 443
   udp: true
@@ -438,113 +220,39 @@ proxies:
     path: /ieusrdgfhteuirgfiuws
     headers:
       Host: server11.9966338.xyz
-- name: 🇯🇵 日本 (Japan) 35 - myhuo
-  server: 142.91.101.39
-  port: 627
+- name: 🇯🇵 日本 (Japan) 21 - myhuo
+  server: 43.129.80.179
+  port: 8443
   udp: true
   type: vless
-  uuid: 30b40928-f431-4c83-bfed-44f1243d16ff
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
+  servername: jp3.yohototo.top
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /tyxyws
     headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 36 - myhuo
-  server: 142.91.101.39
-  port: 627
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 22 - myhuo
+  server: 152.69.195.67
+  port: 47878
   udp: true
   type: vless
-  uuid: 3f87daa8-3af8-40a0-b655-127911e008dc
-  tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-- name: 🇯🇵 日本 (Japan) 37 - myhuo
-  server: 142.91.101.39
-  port: 627
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+- name: 🇯🇵 日本 (Japan) 23 - myhuo
+  server: 45.202.254.20
+  port: 9443
   udp: true
   type: vless
-  uuid: 2949e720-4588-4edc-8642-ff2b7b368c78
-  tls: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 38 - myhuo
-  server: 3.114.220.22
-  port: 10583
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 39 - myhuo
-  server: 191.223.221.53
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: JuD6MNgtX3nVpCzFzXYVYjDTZ7nsmaTv
-- name: 🇯🇵 日本 (Japan) 40 - myhuo
-  server: 45.32.52.173
-  port: 8886
-  udp: true
-  type: trojan
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  sni: 45.32.52.173
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 41 - myhuo
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 42 - myhuo
-  server: 129.153.71.28
-  port: 28863
-  udp: true
-  type: vless
-  uuid: c87cdd8d-bc58-4e49-b8d9-7843098fe3be
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇯🇵 日本 (Japan) 43 - myhuo
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: jp01.a0a.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -573,26 +281,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 21 - myhuo
   - 🇯🇵 日本 (Japan) 22 - myhuo
   - 🇯🇵 日本 (Japan) 23 - myhuo
-  - 🇯🇵 日本 (Japan) 24 - myhuo
-  - 🇯🇵 日本 (Japan) 25 - myhuo
-  - 🇯🇵 日本 (Japan) 26 - myhuo
-  - 🇯🇵 日本 (Japan) 27 - myhuo
-  - 🇯🇵 日本 (Japan) 28 - myhuo
-  - 🇯🇵 日本 (Japan) 29 - myhuo
-  - 🇯🇵 日本 (Japan) 30 - myhuo
-  - 🇯🇵 日本 (Japan) 31 - myhuo
-  - 🇯🇵 日本 (Japan) 32 - myhuo
-  - 🇯🇵 日本 (Japan) 33 - myhuo
-  - 🇯🇵 日本 (Japan) 34 - myhuo
-  - 🇯🇵 日本 (Japan) 35 - myhuo
-  - 🇯🇵 日本 (Japan) 36 - myhuo
-  - 🇯🇵 日本 (Japan) 37 - myhuo
-  - 🇯🇵 日本 (Japan) 38 - myhuo
-  - 🇯🇵 日本 (Japan) 39 - myhuo
-  - 🇯🇵 日本 (Japan) 40 - myhuo
-  - 🇯🇵 日本 (Japan) 41 - myhuo
-  - 🇯🇵 日本 (Japan) 42 - myhuo
-  - 🇯🇵 日本 (Japan) 43 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -621,25 +309,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 21 - myhuo
   - 🇯🇵 日本 (Japan) 22 - myhuo
   - 🇯🇵 日本 (Japan) 23 - myhuo
-  - 🇯🇵 日本 (Japan) 24 - myhuo
-  - 🇯🇵 日本 (Japan) 25 - myhuo
-  - 🇯🇵 日本 (Japan) 26 - myhuo
-  - 🇯🇵 日本 (Japan) 27 - myhuo
-  - 🇯🇵 日本 (Japan) 28 - myhuo
-  - 🇯🇵 日本 (Japan) 29 - myhuo
-  - 🇯🇵 日本 (Japan) 30 - myhuo
-  - 🇯🇵 日本 (Japan) 31 - myhuo
-  - 🇯🇵 日本 (Japan) 32 - myhuo
-  - 🇯🇵 日本 (Japan) 33 - myhuo
-  - 🇯🇵 日本 (Japan) 34 - myhuo
-  - 🇯🇵 日本 (Japan) 35 - myhuo
-  - 🇯🇵 日本 (Japan) 36 - myhuo
-  - 🇯🇵 日本 (Japan) 37 - myhuo
-  - 🇯🇵 日本 (Japan) 38 - myhuo
-  - 🇯🇵 日本 (Japan) 39 - myhuo
-  - 🇯🇵 日本 (Japan) 40 - myhuo
-  - 🇯🇵 日本 (Japan) 41 - myhuo
-  - 🇯🇵 日本 (Japan) 42 - myhuo
-  - 🇯🇵 日本 (Japan) 43 - myhuo
 rules:
 - MATCH,PROXIES
