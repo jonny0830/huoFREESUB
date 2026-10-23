@@ -4,43 +4,84 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
-  server: 6aa21c4d-11d4-45bf-ba55-59512593692c.7b63595a-1119-4080-80e1-3f638120be58.smartprivatelink.com
+- name: 🇺🇸 美国 (United States) 01 (家宽) - myhuo
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo
+  server: 218.237.185.234
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇩🇪 德国 (Germany) 03 (家宽) - myhuo
+  server: 209.38.238.229
+  port: 20202
+  udp: true
+  type: vless
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  tls: true
+  servername: wzs.echo.net.eu.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
+    headers:
+      Host: wzs.echo.net.eu.org
+- name: 🇮🇳 印度 (India) 04 (家宽) - myhuo
+  server: 122.176.216.52
   port: 443
   udp: true
   type: vless
-  uuid: 2a778078-9f4f-4203-a204-6fb94547b707
-  flow: xtls-rprx-vision
+  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
   tls: true
-  reality-opts:
-    public-key: 3nFa_3MSnFQDm9XfVfFHOnMb3FOptREpe1ehXjAbk1c
-    short-id: d369dbc2
-  servername: www.douyin.com
-  client-fingerprint: ios
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
-  server: 61.230.160.34
-  port: 24215
+  servername: app-6ada5023.deploy.meerasolution.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+    headers:
+      Host: app-6ada5023.deploy.meerasolution.com
+- name: 🇸🇬 新加坡 (Singapore) 05 (家宽) - myhuo
+  server: wzs.echo.net.eu.org
+  port: 443
   udp: true
   type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
   tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
+  servername: wzs.echo.net.eu.org
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  - 🇺🇸 美国 (United States) 01 (家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo
+  - 🇩🇪 德国 (Germany) 03 (家宽) - myhuo
+  - 🇮🇳 印度 (India) 04 (家宽) - myhuo
+  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  - 🇺🇸 美国 (United States) 01 (家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo
+  - 🇩🇪 德国 (Germany) 03 (家宽) - myhuo
+  - 🇮🇳 印度 (India) 04 (家宽) - myhuo
+  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - myhuo
 rules:
 - MATCH,PROXIES

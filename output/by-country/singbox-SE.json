@@ -6,6 +6,33 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - myhuo",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - myhuo",
+      "server": "77.110.96.201",
+      "server_port": 36264,
+      "password": "Telegram-vpnjey",
+      "tls": {
+        "enabled": true,
+        "server_name": "se.vpnjey2.dpdns.org",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Telegram@vpnjey"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - myhuo",
       "server": "185.58.115.62",
       "server_port": 443,
       "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
@@ -25,16 +52,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - myhuo",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - myhuo",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - myhuo",
       "server": "media.vik.lalibobi.online",
       "server_port": 443,
       "uuid": "21ffcccd-8fbe-43fb-9dd1-24452fdfa8ad",
@@ -59,34 +78,28 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - myhuo",
-      "server": "77.110.96.201",
-      "server_port": 36264,
-      "password": "Telegram-vpnjey",
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - myhuo",
+      "server": "sub.merky.top",
+      "server_port": 443,
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
       "tls": {
         "enabled": true,
-        "server_name": "se.vpnjey2.dpdns.org",
-        "insecure": true
+        "server_name": "sub.merky.top",
+        "insecure": false
       },
-      "obfs": {
-        "type": "salamander",
-        "password": "Telegram@vpnjey"
+      "transport": {
+        "type": "ws",
+        "path": "/merky-connect/de6/"
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - myhuo",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - myhuo",
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
     },
     {
       "type": "selector",
@@ -97,7 +110,8 @@
         "🇸🇪 瑞典 (Sweden) 02 - myhuo",
         "🇸🇪 瑞典 (Sweden) 03 - myhuo",
         "🇸🇪 瑞典 (Sweden) 04 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 05 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 05 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 06 - myhuo"
       ]
     },
     {
@@ -108,7 +122,8 @@
         "🇸🇪 瑞典 (Sweden) 02 - myhuo",
         "🇸🇪 瑞典 (Sweden) 03 - myhuo",
         "🇸🇪 瑞典 (Sweden) 04 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 05 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 05 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 06 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
