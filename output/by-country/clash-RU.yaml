@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - myhuo
-  server: 45.128.78.178
-  port: 443
+  server: 195.58.49.34
+  port: 18443
   udp: true
-  type: vless
-  uuid: 261160d5-0343-4b85-8c28-3d40dd681559
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
-  client-fingerprint: ''
+  type: ss
+  cipher: aes-256-gcm
+  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
 - name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
   server: 113.30.154.239
   port: 8443
@@ -29,32 +24,13 @@ proxies:
   servername: apple.com
   client-fingerprint: qq
 - name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
-  server: 77.90.61.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
-  tls: true
-  reality-opts:
-    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
-    short-id: ce1dc482
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
-  server: 195.58.49.34
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
-- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
   server: 176.32.33.153
   port: 18443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-- name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
+- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   server: 193.233.253.180
   port: 8444
   udp: true
@@ -65,10 +41,29 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
+- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
+  server: 195.133.5.194
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+- name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
+  server: 46.254.17.88
+  port: 30065
+  udp: true
+  type: vless
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+  servername: a3.eosapp.net
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 07 - myhuo
   server: 130.49.189.158
   port: 43558
@@ -77,13 +72,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo=
 - name: 🇷🇺 俄罗斯 (Russia) 08 - myhuo
-  server: 195.133.5.194
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-- name: 🇷🇺 俄罗斯 (Russia) 09 - myhuo
   server: du-rov.secureservice.top
   port: 8443
   udp: true
@@ -96,50 +84,6 @@ proxies:
     short-id: 3cbc3d737fb9c4af
   servername: du-rov.secureservice.top
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 10 - myhuo
-  server: 46.254.17.88
-  port: 30065
-  udp: true
-  type: vless
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
-  servername: a3.eosapp.net
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 11 - myhuo
-  server: 45.91.52.28
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3acb386b-fdd7-4bc9-911f-159fdcd834ce
-  tls: true
-  reality-opts:
-    public-key: aovrqfVIxA_POvJorIg05wBQJM9nZ859c0fsNL7v9RM
-    short-id: 0ea5f9d7955c3971
-  servername: 9f6635t.msk1.h1clayd.click
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 12 - myhuo
-  server: 45.12.75.242
-  port: 26424
-  udp: true
-  type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 13 - myhuo
-  server: 194.87.118.184
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
-  sni: match-stream.lovkisport.blog
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -153,11 +97,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 07 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 08 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 09 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 10 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 11 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 12 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 13 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -171,10 +110,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 07 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 08 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 09 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 10 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 11 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 12 - myhuo
-  - 🇷🇺 俄罗斯 (Russia) 13 - myhuo
 rules:
 - MATCH,PROXIES

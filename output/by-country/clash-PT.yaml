@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇹 葡萄牙 (Portugal) 01 - myhuo
-  server: 31.192.237.186
-  port: 2053
+  server: 185.231.233.91
+  port: 17167
   udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlxQSwUEVRwJUx8BQRoaSVhfRhoOChkDDUs=
-    headers:
-      Host: wzs.echo.net.eu.org
+  type: ss
+  cipher: aes-128-gcm
+  password: ca438054771821250089399a2f33275e
 proxy-groups:
 - name: PROXIES
   type: select

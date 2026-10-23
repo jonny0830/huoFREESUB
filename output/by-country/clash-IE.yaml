@@ -5,49 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - myhuo
-  server: 13.134.125.31
-  port: 22224
+  server: 18.135.33.244
+  port: 22222
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - myhuo
-  server: 18.168.90.187
+  server: 18.135.33.244
   port: 22224
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: 🇮🇪 爱尔兰 (Ireland) 03 - myhuo
-  server: 18.168.90.187
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 04 - myhuo
-  server: 13.134.125.31
-  port: 22223
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 05 - myhuo
-  server: 18.168.90.187
-  port: 22223
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 06 - myhuo
-  server: 13.134.125.31
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 07 - myhuo
-  server: ie1.dedushka.top
+  server: 188.211.233.134
   port: 443
   udp: true
   type: trojan
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   sni: ie1.dedushka.top
-  skip-cert-verify: true
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,10 +32,6 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01 - myhuo
   - 🇮🇪 爱尔兰 (Ireland) 02 - myhuo
   - 🇮🇪 爱尔兰 (Ireland) 03 - myhuo
-  - 🇮🇪 爱尔兰 (Ireland) 04 - myhuo
-  - 🇮🇪 爱尔兰 (Ireland) 05 - myhuo
-  - 🇮🇪 爱尔兰 (Ireland) 06 - myhuo
-  - 🇮🇪 爱尔兰 (Ireland) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,9 +40,5 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01 - myhuo
   - 🇮🇪 爱尔兰 (Ireland) 02 - myhuo
   - 🇮🇪 爱尔兰 (Ireland) 03 - myhuo
-  - 🇮🇪 爱尔兰 (Ireland) 04 - myhuo
-  - 🇮🇪 爱尔兰 (Ireland) 05 - myhuo
-  - 🇮🇪 爱尔兰 (Ireland) 06 - myhuo
-  - 🇮🇪 爱尔兰 (Ireland) 07 - myhuo
 rules:
 - MATCH,PROXIES
