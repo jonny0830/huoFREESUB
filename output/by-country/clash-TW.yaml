@@ -10,30 +10,9 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
-  server: 166.0.199.78
-  port: 9443
-  udp: true
-  type: vless
-  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
   server: 60.248.219.78
   port: 443
   udp: true
@@ -54,8 +33,6 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,7 +40,5 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
 rules:
 - MATCH,PROXIES

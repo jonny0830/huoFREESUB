@@ -4,24 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 01 - myhuo",
-      "server": "217.30.10.44",
-      "server_port": 9062,
-      "method": "aes-256-cfb",
-      "password": "tkhHVxxfM2QErBWe"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 02 - myhuo",
-      "server": "217.30.10.44",
-      "server_port": 9042,
-      "method": "aes-256-cfb",
-      "password": "S7KwUu7yBy58S3Ga"
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - myhuo",
+      "tag": "🇵🇱 波兰 (Poland) 01 - myhuo",
       "server": "82.118.22.161",
       "server_port": 443,
       "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
@@ -31,7 +15,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -42,7 +26,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 04 - myhuo",
+      "tag": "🇵🇱 波兰 (Poland) 02 - myhuo",
       "server": "scrap.halyvanedorogo.ru",
       "server_port": 35076,
       "password": "b4c8ee9caa74b7ba0a61",
@@ -53,15 +37,18 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 05 - myhuo",
-      "server": "92.118.150.146",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.tronsg.com",
-        "insecure": false
+      "type": "vmess",
+      "tag": "🇵🇱 波兰 (Poland) 03 - myhuo",
+      "server": "54.37.131.126",
+      "server_port": 80,
+      "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+        }
       }
     },
     {
@@ -71,9 +58,7 @@
         "auto",
         "🇵🇱 波兰 (Poland) 01 - myhuo",
         "🇵🇱 波兰 (Poland) 02 - myhuo",
-        "🇵🇱 波兰 (Poland) 03 - myhuo",
-        "🇵🇱 波兰 (Poland) 04 - myhuo",
-        "🇵🇱 波兰 (Poland) 05 - myhuo"
+        "🇵🇱 波兰 (Poland) 03 - myhuo"
       ]
     },
     {
@@ -82,9 +67,7 @@
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - myhuo",
         "🇵🇱 波兰 (Poland) 02 - myhuo",
-        "🇵🇱 波兰 (Poland) 03 - myhuo",
-        "🇵🇱 波兰 (Poland) 04 - myhuo",
-        "🇵🇱 波兰 (Poland) 05 - myhuo"
+        "🇵🇱 波兰 (Poland) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

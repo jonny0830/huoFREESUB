@@ -6,20 +6,6 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - myhuo",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "13.140.56.100"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - myhuo",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -39,6 +25,20 @@
     },
     {
       "type": "vless",
+      "tag": "🇮🇳 印度 (India) 02 - myhuo",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "13.140.56.100"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇮🇳 印度 (India) 03 - myhuo",
       "server": "in.smrtai.top",
       "server_port": 443,
@@ -48,7 +48,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -58,24 +58,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇮🇳 印度 (India) 04 - myhuo",
-      "server": "165.99.222.161",
+      "server": "in.tronsg.com",
       "server_port": 443,
-      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
-      "flow": "xtls-rprx-vision",
+      "password": "Trojan@82164024",
       "tls": {
         "enabled": true,
-        "server_name": "in1.vkusnews.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4",
-          "short_id": ""
-        }
+        "server_name": "in.tronsg.com",
+        "insecure": true
       }
     },
     {
