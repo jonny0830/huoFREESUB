@@ -4,42 +4,31 @@
   },
   "outbounds": [
     {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
+      "server": "155.117.19.17",
+      "server_port": 443,
+      "password": "5fa748137b6d822308eea4611f474ad5",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) R50 - myhuo",
+      "tag": "🇺🇸 美国 (United States) 02 (家宽) R50 - myhuo",
       "server": "23.160.56.99",
       "server_port": 2087,
       "uuid": "f1e7eafa-0d6f-441e-8565-29f34171aef2"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 03 (家宽) - myhuo",
-      "server": "209.38.238.229",
-      "server_port": 20202,
-      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
-      "tls": {
-        "enabled": true,
-        "server_name": "wzs.echo.net.eu.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=",
-        "headers": {
-          "Host": "wzs.echo.net.eu.org"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 04 (家宽) - myhuo",
+      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo",
       "server": "218.237.185.234",
       "server_port": 4652,
       "method": "aes-256-cfb",
@@ -47,7 +36,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo",
       "server": "61.230.160.34",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -70,22 +59,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) R50 - myhuo",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo",
-        "🇩🇪 德国 (Germany) 03 (家宽) - myhuo",
-        "🇰🇷 韩国 (South Korea) 04 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo"
+        "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
+        "🇺🇸 美国 (United States) 02 (家宽) R50 - myhuo",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) R50 - myhuo",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo",
-        "🇩🇪 德国 (Germany) 03 (家宽) - myhuo",
-        "🇰🇷 韩国 (South Korea) 04 (家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo"
+        "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
+        "🇺🇸 美国 (United States) 02 (家宽) R50 - myhuo",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
