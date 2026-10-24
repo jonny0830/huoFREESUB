@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - myhuo
   server: 185.135.86.175
-  port: 9033
+  port: 9034
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: UTJA57ypk2XKQpnm
+  password: Yg4MbdXFQ9HFFVY6
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - myhuo
   server: 185.135.86.175
-  port: 9082
+  port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 45xgMgm386pjWjTx
+  password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - myhuo
   server: 185.135.86.175
   port: 9007
@@ -27,46 +27,46 @@ proxies:
   password: kSPmvwdFzGMMW5pY
 - name: 🇱🇻 拉脱维亚 (Latvia) 04 - myhuo
   server: 185.135.86.175
+  port: 9017
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: HAVAdE3nXhqA5nHp
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - myhuo
+  server: 185.135.86.175
   port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - myhuo
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - myhuo
   server: 185.135.86.175
-  port: 9034
+  port: 9033
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: Yg4MbdXFQ9HFFVY6
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - myhuo
+  password: UTJA57ypk2XKQpnm
+- name: 🇱🇻 拉脱维亚 (Latvia) 07 - myhuo
+  server: 185.135.86.175
+  port: 9082
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 45xgMgm386pjWjTx
+- name: 🇱🇻 拉脱维亚 (Latvia) 08 - myhuo
   server: 185.135.86.175
   port: 9036
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: hbtvgUz5uNYyB3Rf
-- name: 🇱🇻 拉脱维亚 (Latvia) 07 - myhuo
-  server: 185.135.86.175
-  port: 9017
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: HAVAdE3nXhqA5nHp
-- name: 🇱🇻 拉脱维亚 (Latvia) 08 - myhuo
+- name: 🇱🇻 拉脱维亚 (Latvia) 09 - myhuo
   server: 185.135.86.175
   port: 9094
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: rpgbNnU9rDDU4aWZ
-- name: 🇱🇻 拉脱维亚 (Latvia) 09 - myhuo
-  server: 185.135.86.175
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇻 拉脱维亚 (Latvia) 10 - myhuo
   server: 138.124.180.137
   port: 443
@@ -79,19 +79,6 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇱🇻 拉脱维亚 (Latvia) 11 - myhuo
-  server: 195.123.208.32
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1ebcb694-875c-4be7-b6a2-d53c8208991b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
-    short-id: 757b9e1ef18e60f0
-  servername: gateway.icloud.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -108,7 +95,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 08 - myhuo
   - 🇱🇻 拉脱维亚 (Latvia) 09 - myhuo
   - 🇱🇻 拉脱维亚 (Latvia) 10 - myhuo
-  - 🇱🇻 拉脱维亚 (Latvia) 11 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -124,6 +110,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 08 - myhuo
   - 🇱🇻 拉脱维亚 (Latvia) 09 - myhuo
   - 🇱🇻 拉脱维亚 (Latvia) 10 - myhuo
-  - 🇱🇻 拉脱维亚 (Latvia) 11 - myhuo
 rules:
 - MATCH,PROXIES

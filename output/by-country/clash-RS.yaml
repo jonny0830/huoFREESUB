@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇻🇳 越南 (Vietnam) 01 - myhuo
-  server: funagfrdfs.alixxplay.com
-  port: 55688
+- name: 🇷🇸 塞尔维亚 (Serbia) 01 - myhuo
+  server: 185.105.108.176
+  port: 443
   udp: true
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  uuid: 689a62e4-37e7-41de-9e6a-f2a56368c9e2
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: KeV1nArisy7FO5DjqTSmn0hBnlNd38rzhbIMMpe-MBw
-    short-id: a46bb5972cf50671
-  servername: bilibili-vn.biliimg.com
+    public-key: U9O1sbuPwoTowF3Ka7CIgUZlRjokulxSwsYohEGCLA8
+    short-id: 0d87fec579
+  servername: www.google.co.uk
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇻🇳 越南 (Vietnam) 01 - myhuo
+  - 🇷🇸 塞尔维亚 (Serbia) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 (Vietnam) 01 - myhuo
+  - 🇷🇸 塞尔维亚 (Serbia) 01 - myhuo
 rules:
 - MATCH,PROXIES

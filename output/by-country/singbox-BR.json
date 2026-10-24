@@ -7,6 +7,7 @@
       "type": "hysteria2",
       "tag": "🇧🇷 巴西 (Brazil) 01 - myhuo",
       "server": "147.15.108.14",
+      "server_port": 20000,
       "password": "CyG0RFxMjzs41uQD4OLuHQ==",
       "tls": {
         "enabled": true,
@@ -16,25 +17,44 @@
       "obfs": {
         "type": "salamander",
         "password": "CyG0RFxMjzs41uQD4OLuHQ=="
-      },
-      "server_ports": [
-        "20000:30000",
-        "20000:20000"
-      ]
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 02 - myhuo",
+      "server": "92.53.119.212",
+      "server_port": 40849,
+      "uuid": "1ef7d97f-3aa5-0001-8521-84cf4794bf7a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru-hub10.lovely.my",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jkVcZ_b3iWs2FcSjC8Mb1NoRuwPgCH9HpeOOYAXBSU0",
+          "short_id": ""
+        }
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - myhuo"
+        "🇧🇷 巴西 (Brazil) 01 - myhuo",
+        "🇧🇷 巴西 (Brazil) 02 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - myhuo"
+        "🇧🇷 巴西 (Brazil) 01 - myhuo",
+        "🇧🇷 巴西 (Brazil) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

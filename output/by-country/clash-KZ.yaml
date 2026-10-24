@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
+  server: kz-central.v8x2b.lol
+  port: 443
+  udp: true
+  type: vless
+  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
+  tls: true
+  reality-opts:
+    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
+  servername: kz-central.v8x2b.lol
+  client-fingerprint: firefox
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
   server: 3h-kazakhstan1.09vpn.com
   port: 80
   udp: true
@@ -15,9 +26,18 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess/
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -28,7 +48,7 @@ proxies:
     public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
     short-id: '83'
   servername: yahoo.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +56,8 @@ proxy-groups:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +65,7 @@ proxy-groups:
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo
 rules:
 - MATCH,PROXIES

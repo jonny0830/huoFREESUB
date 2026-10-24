@@ -1,0 +1,87 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🌐 其他地区 (Other) 01 - myhuo
+  server: us7-2.998998.best
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  tls: true
+  servername: server9.9966338.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /imnotarealherox
+    headers:
+      Host: server9.9966338.xyz
+- name: 🌐 其他地区 (Other) 02 - myhuo
+  server: uk3-2.998998.best
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: server22.9966338.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /serhrdftshg
+    headers:
+      Host: server22.9966338.xyz
+- name: 🌐 其他地区 (Other) 03 - myhuo
+  server: or3.sfacg.uk
+  port: 2083
+  udp: true
+  type: vmess
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: or3.sfacg.uk
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /or3
+- name: 🌐 其他地区 (Other) 04 - myhuo
+  server: or3.sfacg.uk
+  port: 2083
+  udp: true
+  type: vmess
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: or3.sfacg.uk
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🌐 其他地区 (Other) 01 - myhuo
+  - 🌐 其他地区 (Other) 02 - myhuo
+  - 🌐 其他地区 (Other) 03 - myhuo
+  - 🌐 其他地区 (Other) 04 - myhuo
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🌐 其他地区 (Other) 01 - myhuo
+  - 🌐 其他地区 (Other) 02 - myhuo
+  - 🌐 其他地区 (Other) 03 - myhuo
+  - 🌐 其他地区 (Other) 04 - myhuo
+rules:
+- MATCH,PROXIES

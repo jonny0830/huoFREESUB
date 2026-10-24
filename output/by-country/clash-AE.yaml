@@ -5,16 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - myhuo
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
   server: 185.253.116.33
   port: 14430
   udp: true
@@ -23,21 +13,18 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 185.253.116.33
-- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
-  server: 95.174.68.188
-  port: 14430
+- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
+  server: hy2.aspidnet.xyz
+  port: 443
   udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
-  server: 84.235.244.108
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -55,7 +42,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - myhuo
   - 🇦🇪 阿联酋 (UAE) 02 - myhuo
   - 🇦🇪 阿联酋 (UAE) 03 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,6 +50,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - myhuo
   - 🇦🇪 阿联酋 (UAE) 02 - myhuo
   - 🇦🇪 阿联酋 (UAE) 03 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 04 - myhuo
 rules:
 - MATCH,PROXIES

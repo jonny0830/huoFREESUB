@@ -5,25 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - myhuo
+  server: 5.22.221.127
+  port: 443
+  udp: true
+  type: vless
+  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
+- name: 🇵🇱 波兰 (Poland) 02 - myhuo
   server: edge10.cyrionflare.com
   port: 2052
   udp: true
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇵🇱 波兰 (Poland) 02 - myhuo
-  server: site.teslamotor.site
-  port: 20001
-  udp: true
-  type: vless
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
 - name: 🇵🇱 波兰 (Poland) 03 - myhuo
-  server: 49.12.249.167
-  port: 147
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 5uDrCF_iLoxCiRkKku6f7A
-- name: 🇵🇱 波兰 (Poland) 04 - myhuo
   server: 82.118.22.161
   port: 443
   udp: true
@@ -36,6 +29,45 @@ proxies:
     short-id: fa3ea655619a3e78
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 04 - myhuo
+  server: site.teslamotor.site
+  port: 20001
+  udp: true
+  type: vless
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+- name: 🇵🇱 波兰 (Poland) 05 - myhuo
+  server: ru1.radiolumens.uk
+  port: 8445
+  udp: true
+  type: vless
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  tls: true
+  servername: ru1.radiolumens.uk
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: beru-pl
+- name: 🇵🇱 波兰 (Poland) 06 - myhuo
+  server: scrap.halyvanedorogo.ru
+  port: 35076
+  udp: true
+  type: hysteria2
+  password: b4c8ee9caa74b7ba0a61
+  sni: scrap.halyvanedorogo.ru
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 07 - myhuo
+  server: 54.37.131.126
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +77,9 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - myhuo
   - 🇵🇱 波兰 (Poland) 03 - myhuo
   - 🇵🇱 波兰 (Poland) 04 - myhuo
+  - 🇵🇱 波兰 (Poland) 05 - myhuo
+  - 🇵🇱 波兰 (Poland) 06 - myhuo
+  - 🇵🇱 波兰 (Poland) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +89,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - myhuo
   - 🇵🇱 波兰 (Poland) 03 - myhuo
   - 🇵🇱 波兰 (Poland) 04 - myhuo
+  - 🇵🇱 波兰 (Poland) 05 - myhuo
+  - 🇵🇱 波兰 (Poland) 06 - myhuo
+  - 🇵🇱 波兰 (Poland) 07 - myhuo
 rules:
 - MATCH,PROXIES
