@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - myhuo",
+      "server": "217.30.10.44",
+      "server_port": 9006,
+      "method": "aes-256-cfb",
+      "password": "FAdUvMJUq5vDgKEq"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 02 - myhuo",
       "server": "82.118.22.161",
       "server_port": 443,
       "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
@@ -25,20 +33,15 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 02 - myhuo",
-      "server": "scrap.halyvanedorogo.ru",
-      "server_port": 35076,
-      "password": "b4c8ee9caa74b7ba0a61",
-      "tls": {
-        "enabled": true,
-        "server_name": "scrap.halyvanedorogo.ru",
-        "insecure": true
-      }
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03 - myhuo",
+      "server": "site.teslamotor.site",
+      "server_port": 20001,
+      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
     },
     {
       "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 03 - myhuo",
+      "tag": "🇵🇱 波兰 (Poland) 04 - myhuo",
       "server": "54.37.131.126",
       "server_port": 80,
       "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
@@ -52,13 +55,48 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 05 - myhuo",
+      "server": "scrap.halyvanedorogo.ru",
+      "server_port": 35076,
+      "password": "b4c8ee9caa74b7ba0a61",
+      "tls": {
+        "enabled": true,
+        "server_name": "scrap.halyvanedorogo.ru",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 06 - myhuo",
+      "server": "pl1.h1cloud.net",
+      "server_port": 27591,
+      "uuid": "056405e8-de9f-4d0d-8145-956f13cc34da",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM",
+          "short_id": "6c5c7900406a1ae7"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇵🇱 波兰 (Poland) 01 - myhuo",
         "🇵🇱 波兰 (Poland) 02 - myhuo",
-        "🇵🇱 波兰 (Poland) 03 - myhuo"
+        "🇵🇱 波兰 (Poland) 03 - myhuo",
+        "🇵🇱 波兰 (Poland) 04 - myhuo",
+        "🇵🇱 波兰 (Poland) 05 - myhuo",
+        "🇵🇱 波兰 (Poland) 06 - myhuo"
       ]
     },
     {
@@ -67,7 +105,10 @@
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - myhuo",
         "🇵🇱 波兰 (Poland) 02 - myhuo",
-        "🇵🇱 波兰 (Poland) 03 - myhuo"
+        "🇵🇱 波兰 (Poland) 03 - myhuo",
+        "🇵🇱 波兰 (Poland) 04 - myhuo",
+        "🇵🇱 波兰 (Poland) 05 - myhuo",
+        "🇵🇱 波兰 (Poland) 06 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
