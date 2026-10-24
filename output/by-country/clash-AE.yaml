@@ -26,6 +26,17 @@ proxies:
     headers:
       Host: 185.253.116.33
 - name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -44,6 +55,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - myhuo
   - 🇦🇪 阿联酋 (UAE) 02 - myhuo
   - 🇦🇪 阿联酋 (UAE) 03 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +64,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - myhuo
   - 🇦🇪 阿联酋 (UAE) 02 - myhuo
   - 🇦🇪 阿联酋 (UAE) 03 - myhuo
+  - 🇦🇪 阿联酋 (UAE) 04 - myhuo
 rules:
 - MATCH,PROXIES

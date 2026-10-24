@@ -14,20 +14,17 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇺🇸 美国 (United States) 02 (家宽) R50 - myhuo
-  server: 23.160.56.99
-  port: 2087
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo
+  server: me17.msjia8844.site
+  port: 7443
   udp: true
-  type: vless
-  uuid: f1e7eafa-0d6f-441e-8565-29f34171aef2
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo
-  server: 218.237.185.234
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
   server: 61.230.160.34
   port: 24215
   udp: true
@@ -44,17 +41,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - myhuo
-  - 🇺🇸 美国 (United States) 02 (家宽) R50 - myhuo
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - myhuo
-  - 🇺🇸 美国 (United States) 02 (家宽) R50 - myhuo
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
 rules:
 - MATCH,PROXIES
