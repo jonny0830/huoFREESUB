@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇦🇺 澳大利亚 (Australia) 01 - myhuo",
-      "server": "38.110.1.246",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - myhuo",
+      "tag": "🇦🇺 澳大利亚 (Australia) 01 - myhuo",
       "server": "158.178.137.129",
       "password": "b42d90fa667942aebc734d60",
       "tls": {
@@ -32,7 +24,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - myhuo",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - myhuo",
       "server": "152.67.115.203",
       "server_port": 443,
       "password": "633bc3be486b646190661ac2387c150a",
@@ -48,6 +40,27 @@
     },
     {
       "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - myhuo",
+      "server": "51.161.204.242",
+      "server_port": 443,
+      "uuid": "a14b736b-a92a-48d6-a596-5d31f7378ded",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE",
+          "short_id": "d15c17cef9b2e456"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 04 - myhuo",
       "server": "51.161.204.244",
       "server_port": 443,
@@ -58,7 +71,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,

@@ -16,15 +16,8 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇱 以色列 (Israel) 02 - myhuo
-  server: 31.57.185.124
-  port: 47767
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: LdovOchXf4THjDMK2Gf0nd2tcnlT28GxdzH+r885CBI=:RbSpX+O+KAA8OuleVMgWtotvRtfhd48TA3kfde5ugp4=
-- name: 🇮🇱 以色列 (Israel) 03 - myhuo
   server: 77.91.69.169
   port: 19226
   udp: true
@@ -36,22 +29,7 @@ proxies:
     public-key: PQjgf7GxBd2tDXf0zl9Z5rTZo7LdsWj0hGZLH-lJ-Uk
     short-id: 7c
   servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇮🇱 以色列 (Israel) 04 - myhuo
-  server: 177.3.208.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  tls: true
-  servername: tgmansion.site
-  skip-cert-verify: true
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-il
-    headers:
-      Host: tgmansion.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,8 +37,6 @@ proxy-groups:
   - AUTO
   - 🇮🇱 以色列 (Israel) 01 - myhuo
   - 🇮🇱 以色列 (Israel) 02 - myhuo
-  - 🇮🇱 以色列 (Israel) 03 - myhuo
-  - 🇮🇱 以色列 (Israel) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,7 +44,5 @@ proxy-groups:
   proxies:
   - 🇮🇱 以色列 (Israel) 01 - myhuo
   - 🇮🇱 以色列 (Israel) 02 - myhuo
-  - 🇮🇱 以色列 (Israel) 03 - myhuo
-  - 🇮🇱 以色列 (Israel) 04 - myhuo
 rules:
 - MATCH,PROXIES
