@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - myhuo
-  server: 104.16.10.2
+  server: 104.16.111.193
   port: 443
   udp: true
   type: vless
@@ -13,27 +13,35 @@ proxies:
   tls: true
   servername: v2ray.simspeedup.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
 - name: 🇹🇭 泰国 (Thailand) 02 - myhuo
-  server: funagfrdfs.alixxplay.com
-  port: 56415
+  server: 188.114.98.0
+  port: 443
   udp: true
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
+  uuid: 50414e45-4c5f-5a45-5553-c67e6a7b76e9
   tls: true
-  reality-opts:
-    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
-    short-id: cbd39bea0805e2
-  servername: www.kaidee.com
+  servername: kwzu1yelu3ms.ouzrzee5u7rs.workers.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/c67e6a7b76e9
+    headers:
+      Host: kwzu1yelu3ms.ouzrzee5u7rs.workers.dev
 - name: 🇹🇭 泰国 (Thailand) 03 - myhuo
-  server: support.zoom.us.v2ray.simspeedup.com
+  server: 103.107.52.106
+  port: 52351
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+- name: 🇹🇭 泰国 (Thailand) 04 - myhuo
+  server: v2ray.simspeedup.com
   port: 80
   udp: true
   type: vless
@@ -42,14 +50,7 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: support.zoom.us.v2ray.simspeedup.com
-- name: 🇹🇭 泰国 (Thailand) 04 - myhuo
-  server: 103.107.52.106
-  port: 52351
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+      Host: ais.speedtest.net
 proxy-groups:
 - name: PROXIES
   type: select

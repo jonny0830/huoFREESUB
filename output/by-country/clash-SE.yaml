@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - myhuo
-  server: 84.21.191.180
-  port: 1081
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: iWhDZY1CQ-7AQYQtmc8Ki4r3H4UYP0SF
-- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
   server: 50.7.38.243
   port: 443
   udp: true
@@ -19,8 +12,8 @@ proxies:
   password: d4ca9415f0eac7897472e1e5b86d2e96
   sni: promo.betust.net
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
-  server: se1.mycloud1.org
+- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
+  server: 91.242.228.29
   port: 443
   udp: true
   type: vless
@@ -31,7 +24,19 @@ proxies:
     public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
     short-id: afee962d
   servername: se1.mycloud1.org
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
+  server: 201.58.177.229
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM
+  servername: swidenafterlanzerotte.space
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
