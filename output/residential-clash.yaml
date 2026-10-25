@@ -15,37 +15,30 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 02 (家宽) - myhuo
-  server: s3.huhiuh.space
-  port: 18642
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
+  server: hkgb707.ifastcdncache.com
+  port: 60852
   udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo
-  server: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  sni: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  skip-cert-verify: true
+  type: vmess
+  uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
+  alterId: 2
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
-  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
-  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
 rules:
 - MATCH,PROXIES

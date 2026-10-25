@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - myhuo
   server: 213.183.63.60
-  port: 9049
+  port: 9054
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
+  password: VcFuyXvND2yQWSFY
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - myhuo
   server: 213.183.63.60
-  port: 9028
+  port: 9064
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
+  password: cp8pRSUAyLhTfVWH
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - myhuo
   server: 213.183.63.60
   port: 9098
@@ -27,25 +27,25 @@ proxies:
   password: aLpQtfEZe445QyHk
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - myhuo
   server: 213.183.63.60
-  port: 9061
+  port: 9066
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 4R3hUfZ2FHhDmNcP
+  password: 2KUaE2a8NWTvuCZ3
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - myhuo
   server: 213.183.63.60
-  port: 9064
+  port: 9028
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
+  password: 9eeJ2fwnZA5Fxgz8
 - name: 🇧🇬 保加利亚 (Bulgaria) 06 - myhuo
   server: 213.183.63.60
-  port: 9054
+  port: 9049
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
+  password: PRBf4BS2HvJqtWxY
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - myhuo
   server: 213.183.63.60
   port: 9085
@@ -61,18 +61,12 @@ proxies:
   cipher: aes-256-cfb
   password: GeregetR8cvQHzYr
 - name: 🇧🇬 保加利亚 (Bulgaria) 09 - myhuo
-  server: 195.123.227.162
-  port: 443
+  server: 213.183.63.60
+  port: 9061
   udp: true
-  type: vless
-  uuid: 7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc
-  tls: true
-  servername: zbfkmgdg8.hat.onl
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: hls-vod.ohql91f.segment-26-v1-a1.ts
+  type: ss
+  cipher: aes-256-cfb
+  password: 4R3hUfZ2FHhDmNcP
 - name: 🇧🇬 保加利亚 (Bulgaria) 10 - myhuo
   server: 195.123.226.21
   port: 443
@@ -86,6 +80,14 @@ proxies:
     short-id: 77bb0d07bddbc832
   servername: gateway.icloud.com
   client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 11 - myhuo
+  server: 45.144.48.32
+  port: 56080
+  udp: true
+  type: vmess
+  uuid: f4daaec7-0e1e-4c8e-97e8-cff5347c2dae
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,6 +103,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 08 - myhuo
   - 🇧🇬 保加利亚 (Bulgaria) 09 - myhuo
   - 🇧🇬 保加利亚 (Bulgaria) 10 - myhuo
+  - 🇧🇬 保加利亚 (Bulgaria) 11 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -116,5 +119,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 08 - myhuo
   - 🇧🇬 保加利亚 (Bulgaria) 09 - myhuo
   - 🇧🇬 保加利亚 (Bulgaria) 10 - myhuo
+  - 🇧🇬 保加利亚 (Bulgaria) 11 - myhuo
 rules:
 - MATCH,PROXIES

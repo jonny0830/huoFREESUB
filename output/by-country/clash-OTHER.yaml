@@ -5,27 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - myhuo
-  server: undef.network
-  port: 2052
+  server: or3.sfacg.uk
+  port: 2083
   udp: true
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  type: vmess
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: or3.sfacg.uk
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
+    path: /or3
 - name: 🌐 其他地区 (Other) 02 - myhuo
-  server: undef.network
-  port: 2052
+  server: or3.sfacg.uk
+  port: 2083
   udp: true
-  type: vless
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  type: vmess
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: or3.sfacg.uk
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
+    path: /or3
     headers:
-      Host: uwu.blueknightnet.qzz.io
+      Host: or3.sfacg.uk
 proxy-groups:
 - name: PROXIES
   type: select

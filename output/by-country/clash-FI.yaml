@@ -28,27 +28,6 @@ proxies:
   servername: www.google.com
   client-fingerprint: random
 - name: 🇫🇮 芬兰 (Finland) 03 - myhuo
-  server: 2.26.3.75
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
-  sni: fi.67chat.ru
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
-  server: 31.77.199.147
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -57,9 +36,21 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
+  server: se13-node.rumedia-cdn.com
+  port: 2096
+  udp: true
+  type: vless
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  tls: true
+  servername: st5ff8a.rumedia-cdn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
     headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
+      Host: st5ff8a.rumedia-cdn.com
+- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
   server: 65.109.212.121
   port: 465
   udp: true
@@ -73,7 +64,7 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
+- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
   server: 2.27.207.208
   port: 8081
   udp: true
@@ -88,7 +79,7 @@ proxies:
     path: /
     headers:
       Host: ang-el.ir
-- name: 🇫🇮 芬兰 (Finland) 08 - myhuo
+- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
   server: 2.27.203.251
   port: 443
   udp: true
@@ -100,6 +91,14 @@ proxies:
     public-key: QYdQmsVvUj4jwo9gH20nJA5x015gaAL0nGipORe6ZmY
   servername: edge-fi2.lovely.my
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 08 - myhuo
+  server: 2.26.3.75
+  port: 443
+  udp: true
+  type: hysteria2
+  password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
+  sni: fi.67chat.ru
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 09 - myhuo
   server: 177.3.214.156
   port: 443

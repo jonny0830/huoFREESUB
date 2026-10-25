@@ -18,7 +18,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world
+  sni: google.com
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
   server: tjtw.m2k699.com
@@ -28,19 +28,6 @@ proxies:
   password: 29086912-33e4-4e06-ba2b-60f1a195864f
   sni: www.itunes.com
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
-  server: 6aa21c4d-11d4-45bf-ba55-59512593692c.7b63595a-1119-4080-80e1-3f638120be58.smartprivatelink.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2a778078-9f4f-4203-a204-6fb94547b707
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3nFa_3MSnFQDm9XfVfFHOnMb3FOptREpe1ehXjAbk1c
-    short-id: d369dbc2
-  servername: www.douyin.com
-  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,7 +36,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,6 +44,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
 rules:
 - MATCH,PROXIES

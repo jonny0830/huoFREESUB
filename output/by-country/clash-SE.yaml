@@ -13,30 +13,28 @@ proxies:
   sni: promo.betust.net
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
-  server: 91.242.228.29
-  port: 443
+  server: se14-node.rumedia-cdn.com
+  port: 2096
   udp: true
   type: vless
-  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
-  flow: xtls-rprx-vision
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
   tls: true
-  reality-opts:
-    public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
-    short-id: afee962d
-  servername: se1.mycloud1.org
-  client-fingerprint: firefox
+  servername: st33614.rumedia-cdn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: st33614.rumedia-cdn.com
 - name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
-  server: 201.58.177.229
-  port: 443
+  server: 5.178.109.174
+  port: 14430
   udp: true
   type: vless
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM
-  servername: swidenafterlanzerotte.space
-  client-fingerprint: firefox
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
 proxy-groups:
 - name: PROXIES
   type: select

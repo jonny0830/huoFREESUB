@@ -5,62 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - myhuo
-  server: vless.herogoing.top
-  port: 443
-  udp: true
-  type: trojan
-  password: bpb-trojan
-  sni: vless.herogoing.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr?ed=2560
-- name: 🇩🇪 德国 (Germany) 02 - myhuo
   server: 31.76.11.83
   port: 15731
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=
-- name: 🇩🇪 德国 (Germany) 03 - myhuo
-  server: 5.175.205.190
-  port: 27774
+- name: 🇩🇪 德国 (Germany) 02 - myhuo
+  server: 185.176.204.18
+  port: 19999
   udp: true
-  type: vless
-  uuid: 653137c6-474e-4a3d-9a20-5a5afb3d4a4f
-- name: 🇩🇪 德国 (Germany) 04 - myhuo
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国 (Germany) 03 - myhuo
   server: 142.132.140.143
   port: 1003
   udp: true
   type: vless
   uuid: 0e6cd6ca-fba2-4b86-923c-f0a021f7ad15
-- name: 🇩🇪 德国 (Germany) 05 - myhuo
-  server: 185.226.172.8
-  port: 8008
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: 🇩🇪 德国 (Germany) 06 - myhuo
+- name: 🇩🇪 德国 (Germany) 04 - myhuo
   server: 213.202.208.199
-  port: 7001
+  port: 5000
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇩🇪 德国 (Germany) 07 - myhuo
-  server: 64.188.67.182
-  port: 443
+  password: Y6R9pAtvxxzmGC
+- name: 🇩🇪 德国 (Germany) 05 - myhuo
+  server: 146.70.20.147
+  port: 8080
   udp: true
-  type: vless
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: aHxzHc7w0r_8X8mdx1XCyg2ooRLjcOQMOuscdAQPrEo
-  servername: germanylanzrestik.site
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 08 - myhuo
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇩🇪 德国 (Germany) 06 - myhuo
+  server: 46.62.147.53
+  port: 145
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 5uDrCF_iLoxCiRkKku6f7A
+- name: 🇩🇪 德国 (Germany) 07 - myhuo
   server: 64.188.66.181
   port: 443
   udp: true
@@ -72,15 +57,15 @@ proxies:
     public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
     short-id: 2c9a2790ad5900b2
   servername: ge-s-1.pythonmakemigreat.wiki
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 09 - myhuo
-  server: 146.70.20.147
-  port: 8080
+  client-fingerprint: ''
+- name: 🇩🇪 德国 (Germany) 08 - myhuo
+  server: 213.202.208.199
+  port: 7001
   udp: true
   type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 (Germany) 10 - myhuo
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇩🇪 德国 (Germany) 09 - myhuo
   server: 198.202.146.51
   port: 443
   udp: true
@@ -93,27 +78,72 @@ proxies:
     short-id: 6fe2994a0e208408
   servername: 198.202.146.51.sslip.io
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 11 - myhuo
-  server: 130.17.25.67
+- name: 🇩🇪 德国 (Germany) 10 - myhuo
+  server: nl-central.v8x2b.lol
   port: 443
   udp: true
   type: vless
-  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
+  uuid: 846cedee-2a52-0002-a0b9-11850ead6a8b
+  tls: true
+  reality-opts:
+    public-key: q3UXFUE5yYxNE4ugLUnYdpc9WRtR-sjsDTrKsiqzDHE
+  servername: nl-central.v8x2b.lol
+  client-fingerprint: edge
+- name: 🇩🇪 德国 (Germany) 11 - myhuo
+  server: ov-germany1.09vpn.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇩🇪 德国 (Germany) 12 - myhuo
+  server: 5.175.205.190
+  port: 27774
+  udp: true
+  type: vless
+  uuid: 653137c6-474e-4a3d-9a20-5a5afb3d4a4f
+- name: 🇩🇪 德国 (Germany) 13 - myhuo
+  server: 144.31.215.162
+  port: 443
+  udp: true
+  type: vless
+  uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
-    short-id: 9e4eced6e98ed4d4
-  servername: github.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 12 - myhuo
+    public-key: kqKpUiLtm5SPT2NO5Ss4LuH9xpTOxi79UJZWURwulwI
+    short-id: 547f159030aedc64
+  servername: c1.qwyak.ru
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 14 - myhuo
+  server: 88.99.213.222
+  port: 14444
+  udp: true
+  type: hysteria2
+  password: mhsl
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 15 - myhuo
+  server: 104.21.65.43
+  port: 2052
+  udp: true
+  type: vless
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 16 - myhuo
   server: 169.150.210.233
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 (Germany) 13 - myhuo
+- name: 🇩🇪 德国 (Germany) 17 - myhuo
   server: 91.107.169.224
   port: 80
   udp: true
@@ -122,99 +152,50 @@ proxies:
   alterId: 0
   cipher: auto
   network: httpupgrade
-- name: 🇩🇪 德国 (Germany) 14 - myhuo
-  server: 57.129.41.216
-  port: 80
+- name: 🇩🇪 德国 (Germany) 18 - myhuo
+  server: 49.13.39.86
+  port: 443
   udp: true
   type: vless
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 15 - myhuo
-  server: 179.61.138.145
-  port: 36264
-  udp: true
-  type: hysteria2
-  password: vpnjey
-  sni: de2.jey.cc.cd
+  uuid: 6c688f63-fad4-45d8-a6a1-1e978ed26b8b
+  flow: xtls-rprx-vision
+  tls: true
+  servername: static.75.209.109.65.clients.your-server.de
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: Telegram@vpnjey
-- name: 🇩🇪 德国 (Germany) 16 - myhuo
-  server: 89.169.53.176
-  port: 4443
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 19 - myhuo
+  server: 46.28.69.123
+  port: 443
   udp: true
   type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  uuid: b945f9aa-1b45-4912-aa7e-248509472bad
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
-  servername: de.wvpn.one
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 17 - myhuo
+    public-key: 7KnJYp2-sE3o35mnbSZzX3fNg-ns9n8xyNfkRSHCD3E
+    short-id: 238e23c5150f02e4
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 20 - myhuo
   server: 5.45.100.100
   port: 51511
   udp: true
   type: hysteria2
   password: miaoge110
-  sni: www.bing.com
+  sni: 5.45.100.100
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 18 - myhuo
-  server: 82.118.19.153
-  port: 443
-  udp: true
-  type: vless
-  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
-    short-id: 670ed9f350bd8ee0
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 19 - myhuo
-  server: 144.31.215.196
-  port: 443
-  udp: true
-  type: vless
-  uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: jwLEnDwGROadL1ax-SrVC50sE5slaP7TbGQtBxkcTws
-    short-id: 8c9ab0f7b293f9ef
-  servername: c2.qwyak.ru
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 20 - myhuo
-  server: 31.70.111.146
-  port: 443
-  udp: true
-  type: vless
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  servername: www.apple.com
-  client-fingerprint: random
 - name: 🇩🇪 德国 (Germany) 21 - myhuo
-  server: 13.143.186.63
+  server: 163.245.42.48
   port: 443
   udp: true
   type: vless
-  uuid: 7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
   tls: true
-  servername: k1qqse81xfbu.hat.onl
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: hls.n7ic-p6k1.UOa1suKMcTlfijXl7w.m3u8
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 22 - myhuo
   server: 163.245.42.48
   port: 443
@@ -226,79 +207,8 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: mother-earth.fyi
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 23 - myhuo
-  server: 163.245.42.48
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 24 - myhuo
-  server: 172.64.229.129
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  network: ws
-  ws-opts:
-    path: /rain1226
-    headers:
-      Host: eu02.123450908.xyz
-- name: 🇩🇪 德国 (Germany) 25 - myhuo
-  server: 104.26.0.1
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  network: ws
-  ws-opts:
-    path: /rain1226
-    headers:
-      Host: eu02.123450908.xyz
-- name: 🇩🇪 德国 (Germany) 26 - myhuo
-  server: connect.wecantos.site
-  port: 10000
-  udp: true
-  type: vless
-  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
-- name: 🇩🇪 德国 (Germany) 27 - myhuo
-  server: test.wecantos.site
-  port: 20000
-  udp: true
-  type: vless
-  uuid: ca59a503-db23-44af-9879-49747d8da98f
-- name: 🇩🇪 德国 (Germany) 28 - myhuo
-  server: 82.39.171.12
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 29 - myhuo
-  server: 91.107.188.129
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
-  tls: true
-  servername: site.check-looks.space
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 德国 (Germany) 30 - myhuo
   server: 162.55.242.208
   port: 2053
   udp: true
@@ -310,123 +220,27 @@ proxies:
     short-id: 4d14da19b19cfc8c
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 31 - myhuo
-  server: 188.225.27.229
+- name: 🇩🇪 德国 (Germany) 24 - myhuo
+  server: 82.118.19.153
   port: 443
   udp: true
   type: vless
-  uuid: 66dc1927-8528-4f1e-bb74-5a9c7aa8ea8c
+  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
-    short-id: 88d9dc52ef39c8bd
-  servername: bridge.rkitman.ru
-  client-fingerprint: safari
-- name: 🇩🇪 德国 (Germany) 32 - myhuo
-  server: edge.bookmai.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
+    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
+    short-id: 670ed9f350bd8ee0
+  servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 33 - myhuo
-  server: 5.129.222.115
-  port: 443
-  udp: true
-  type: vless
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
-  servername: ad7.vkusnews.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 34 - myhuo
-  server: 157.90.175.178
-  port: 1222
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-    short-id: a25d0f
-  servername: play.google.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 35 - myhuo
-  server: 31.76.15.24
-  port: 443
-  udp: true
-  type: vless
-  uuid: 50a98bb9-8680-44b3-9962-902fff4631cf
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: YM1SjW-RyGtPYs_SgjtfaIxJpw2m-TZ8qnNFxkDxHV0
-    short-id: a5543a67f52ea8ab
-  servername: www.apple.com
-  client-fingerprint: ''
-- name: 🇩🇪 德国 (Germany) 36 - myhuo
-  server: 104.27.0.1
-  port: 2053
-  udp: true
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  tls: true
-  servername: uwu.blueknightnet.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 37 - myhuo
-  server: 213.202.208.199
-  port: 5000
+- name: 🇩🇪 德国 (Germany) 25 - myhuo
+  server: 46.62.147.53
+  port: 146
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇩🇪 德国 (Germany) 38 - myhuo
-  server: 31.76.5.79
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc
-  tls: true
-  servername: r2q24xzokp4.hat.onl
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: live.yejssizh1kjrn.chunk-9828.m4s
-- name: 🇩🇪 德国 (Germany) 39 - myhuo
-  server: 31.76.11.83
-  port: 22366
-  udp: true
-  type: vmess
-  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 (Germany) 40 - myhuo
-  server: cctvhikvision.center
-  port: 2052
-  udp: true
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 41 - myhuo
+  cipher: chacha20-ietf-poly1305
+  password: 5uDrCF_iLoxCiRkKku6f7A
+- name: 🇩🇪 德国 (Germany) 26 - myhuo
   server: 91.107.247.173
   port: 2083
   udp: true
@@ -440,24 +254,259 @@ proxies:
     path: /
     headers:
       Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 42 - myhuo
-  server: mci.amir12.ir
-  port: 2112
+- name: 🇩🇪 德国 (Germany) 27 - myhuo
+  server: 185.226.172.8
+  port: 8008
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 (Germany) 28 - myhuo
+  server: 31.70.111.146
+  port: 443
   udp: true
   type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-    short-id: 125ba3
-  servername: play.google.com
-  client-fingerprint: random
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 29 - myhuo
+  server: sino.bestsellers1.site
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  tls: true
+  servername: sino.bestsellers1.site
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 30 - myhuo
+  server: 91.107.188.129
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
+  tls: true
+  servername: site.check-looks.space
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 31 - myhuo
+  server: OV-Germany1.09vpn.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇩🇪 德国 (Germany) 32 - myhuo
+  server: 104.16.0.1
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  network: ws
+  ws-opts:
+    path: /rain1226
+    headers:
+      Host: eu02.123450908.xyz
+- name: 🇩🇪 德国 (Germany) 33 - myhuo
+  server: 172.67.195.79
+  port: 2053
+  udp: true
+  type: vless
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  tls: true
+  servername: uwu.blueknightnet.qzz.io
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 34 - myhuo
+  server: connect.wecantos.site
+  port: 10000
+  udp: true
+  type: vless
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+- name: 🇩🇪 德国 (Germany) 35 - myhuo
+  server: fly.lumexa.ir
+  port: 443
+  udp: true
+  type: vless
+  uuid: 756c8a9d-ff97-41f3-90b8-50f29acaba1f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0E-OTXVHsukKvwgwynrI49nTaT5m6rxdaFPg4D_UszI
+    short-id: 9cc0
+  servername: dynu.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 36 - myhuo
+  server: test.wecantos.site
+  port: 20000
+  udp: true
+  type: vless
+  uuid: ca59a503-db23-44af-9879-49747d8da98f
+- name: 🇩🇪 德国 (Germany) 37 - myhuo
+  server: 31.76.15.24
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50a98bb9-8680-44b3-9962-902fff4631cf
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: YM1SjW-RyGtPYs_SgjtfaIxJpw2m-TZ8qnNFxkDxHV0
+    short-id: a5543a67f52ea8ab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 38 - myhuo
+  server: 64.118.156.138
+  port: 14081
+  udp: true
+  type: vless
+  uuid: 531ce91b-f477-4c15-b68f-948a3eea2f70
+- name: 🇩🇪 德国 (Germany) 39 - myhuo
+  server: edge.bookmai.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 40 - myhuo
+  server: 5.129.222.115
+  port: 443
+  udp: true
+  type: vless
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+  servername: ad7.vkusnews.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 41 - myhuo
+  server: cctvhikvision.center
+  port: 2052
+  udp: true
+  type: vless
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 42 - myhuo
+  server: 130.17.25.67
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
+    short-id: 9e4eced6e98ed4d4
+  servername: github.com
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 43 - myhuo
+  server: 31.76.11.83
+  port: 22366
+  udp: true
+  type: vmess
+  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 (Germany) 44 - myhuo
+  server: 82.39.171.12
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 45 - myhuo
+  server: vpn-de-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 46 - myhuo
+  server: 18.193.79.104
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-de-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 47 - myhuo
+  server: htz1.rayan-gaming.ir
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2c1cf7c5-47e4-4eed-8b6a-59699a6c9d75
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: h9ZR6IkPEz80yKb4EzBFSYsRbaU0KcycD8dKucsBNg0
+    short-id: 961d51c938166832
+  servername: status.play.google.com
+  client-fingerprint: ios
+- name: 🇩🇪 德国 (Germany) 48 - myhuo
+  server: 144.31.125.60
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9015f0bc-2053-4ca1-9b9b-a018b97b32d2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8
+    short-id: 85c86a9863
+  servername: www.intel.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 49 - myhuo
   server: 31.77.148.89
   port: 45021
   udp: true
   type: vless
   uuid: ad263f1c-199e-4aaf-bf22-c3ad0407d377
+- name: 🇩🇪 德国 (Germany) 50 - myhuo
+  server: mci1.amir12.ir
+  port: 1222
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  servername: play.google.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -506,6 +555,13 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 41 - myhuo
   - 🇩🇪 德国 (Germany) 42 - myhuo
   - 🇩🇪 德国 (Germany) 43 - myhuo
+  - 🇩🇪 德国 (Germany) 44 - myhuo
+  - 🇩🇪 德国 (Germany) 45 - myhuo
+  - 🇩🇪 德国 (Germany) 46 - myhuo
+  - 🇩🇪 德国 (Germany) 47 - myhuo
+  - 🇩🇪 德国 (Germany) 48 - myhuo
+  - 🇩🇪 德国 (Germany) 49 - myhuo
+  - 🇩🇪 德国 (Germany) 50 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -554,5 +610,12 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 41 - myhuo
   - 🇩🇪 德国 (Germany) 42 - myhuo
   - 🇩🇪 德国 (Germany) 43 - myhuo
+  - 🇩🇪 德国 (Germany) 44 - myhuo
+  - 🇩🇪 德国 (Germany) 45 - myhuo
+  - 🇩🇪 德国 (Germany) 46 - myhuo
+  - 🇩🇪 德国 (Germany) 47 - myhuo
+  - 🇩🇪 德国 (Germany) 48 - myhuo
+  - 🇩🇪 德国 (Germany) 49 - myhuo
+  - 🇩🇪 德国 (Germany) 50 - myhuo
 rules:
 - MATCH,PROXIES
