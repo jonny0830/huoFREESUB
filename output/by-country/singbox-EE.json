@@ -6,7 +6,28 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo",
-      "server": "194.26.141.223",
+      "server": "79.98.37.106",
+      "server_port": 443,
+      "uuid": "846cedee-2a52-0001-a0b9-11850ead6a8b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ee-central.v8x2b.lol",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo",
+      "server": "ee1.mycloud1.org",
       "server_port": 443,
       "uuid": "605dea9b-b485-45c9-af9b-cc2b0195023c",
       "flow": "xtls-rprx-vision",
@@ -26,22 +47,43 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo",
-      "server": "ee-central.v8x2b.lol",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo",
+      "server": "93.89.220.37",
       "server_port": 443,
-      "uuid": "846cedee-2a52-0001-a0b9-11850ead6a8b",
+      "uuid": "185e2bb3-2934-48d0-bbd5-dd20d16e83ee",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ee-central.v8x2b.lol",
+        "server_name": "ibm.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g",
+          "short_id": "e88cb983f3c97528"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo",
+      "server": "13.143.239.119",
+      "server_port": 443,
+      "uuid": "f36c82e2-e33e-4054-960a-34619d9fdd5b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.transip.nl",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw",
-          "short_id": ""
+          "public_key": "kYbLeoF13TKNPtlYwRsAqFQR3l7v6NMe6ydARMIfEC0",
+          "short_id": "7230e3b3f137543c"
         }
       }
     },
@@ -51,7 +93,9 @@
       "outbounds": [
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo"
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo"
       ]
     },
     {
@@ -59,7 +103,9 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo"
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

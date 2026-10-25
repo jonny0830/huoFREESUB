@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - myhuo",
+      "server": "84.21.191.180",
+      "server_port": 1081,
+      "method": "chacha20-ietf-poly1305",
+      "password": "iWhDZY1CQ-7AQYQtmc8Ki4r3H4UYP0SF"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - myhuo",
       "server": "50.7.38.243",
       "server_port": 443,
       "password": "d4ca9415f0eac7897472e1e5b86d2e96",
@@ -17,15 +25,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - myhuo",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - myhuo",
+      "server": "se1.mycloud1.org",
+      "server_port": 443,
+      "uuid": "605dea9b-b485-45c9-af9b-cc2b0195023c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "se1.mycloud1.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
+          "short_id": "afee962d"
         }
       }
     },
@@ -35,7 +50,8 @@
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 02 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 02 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 03 - myhuo"
       ]
     },
     {
@@ -43,7 +59,8 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 02 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 02 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,66 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - myhuo
-  server: us7-2.998998.best
-  port: 443
+  server: hikvision-plus.com
+  port: 2053
   udp: true
   type: vless
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
   tls: true
-  servername: server9.9966338.xyz
+  servername: uwu.blueknightnet.qzz.io
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /imnotarealherox
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
     headers:
-      Host: server9.9966338.xyz
+      Host: uwu.blueknightnet.qzz.io
 - name: 🌐 其他地区 (Other) 02 - myhuo
-  server: uk3-2.998998.best
-  port: 443
+  server: hikvision-plus.com
+  port: 2053
   udp: true
-  type: vmess
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
   tls: true
-  servername: server22.9966338.xyz
+  servername: uwu.blueknightnet.qzz.io
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /serhrdftshg
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
     headers:
-      Host: server22.9966338.xyz
-- name: 🌐 其他地区 (Other) 03 - myhuo
-  server: or3.sfacg.uk
-  port: 2083
-  udp: true
-  type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: or3.sfacg.uk
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /or3
-- name: 🌐 其他地区 (Other) 04 - myhuo
-  server: or3.sfacg.uk
-  port: 2083
-  udp: true
-  type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: or3.sfacg.uk
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
+      Host: uwu.blueknightnet.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,8 +41,6 @@ proxy-groups:
   - AUTO
   - 🌐 其他地区 (Other) 01 - myhuo
   - 🌐 其他地区 (Other) 02 - myhuo
-  - 🌐 其他地区 (Other) 03 - myhuo
-  - 🌐 其他地区 (Other) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -81,7 +48,5 @@ proxy-groups:
   proxies:
   - 🌐 其他地区 (Other) 01 - myhuo
   - 🌐 其他地区 (Other) 02 - myhuo
-  - 🌐 其他地区 (Other) 03 - myhuo
-  - 🌐 其他地区 (Other) 04 - myhuo
 rules:
 - MATCH,PROXIES
