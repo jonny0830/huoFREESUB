@@ -4,15 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - myhuo",
-      "server": "lv02.gotosvo.com",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "server": "195.123.213.28",
+      "server_port": 443,
+      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
+          "short_id": "5c256336e3b673fa"
+        }
       }
     },
     {
@@ -27,7 +36,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -48,33 +57,12 @@
         "server_name": "gateway.icloud.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk",
           "short_id": "757b9e1ef18e60f0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - myhuo",
-      "server": "195.123.213.28",
-      "server_port": 443,
-      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
-          "short_id": "5c256336e3b673fa"
         }
       }
     },
@@ -85,8 +73,7 @@
         "auto",
         "🇱🇻 拉脱维亚 (Latvia) 01 - myhuo",
         "🇱🇻 拉脱维亚 (Latvia) 02 - myhuo",
-        "🇱🇻 拉脱维亚 (Latvia) 03 - myhuo",
-        "🇱🇻 拉脱维亚 (Latvia) 04 - myhuo"
+        "🇱🇻 拉脱维亚 (Latvia) 03 - myhuo"
       ]
     },
     {
@@ -95,8 +82,7 @@
       "outbounds": [
         "🇱🇻 拉脱维亚 (Latvia) 01 - myhuo",
         "🇱🇻 拉脱维亚 (Latvia) 02 - myhuo",
-        "🇱🇻 拉脱维亚 (Latvia) 03 - myhuo",
-        "🇱🇻 拉脱维亚 (Latvia) 04 - myhuo"
+        "🇱🇻 拉脱维亚 (Latvia) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -16,17 +16,7 @@ proxies:
     headers:
       Host: support.zoom.us.v2ray.simspeedup.com
 - name: 🇹🇭 泰国 (Thailand) 02 - myhuo
-  server: 38.60.254.50
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: th001.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇹🇭 泰国 (Thailand) 03 - myhuo
-  server: 104.16.10.185
+  server: 188.114.97.6
   port: 443
   udp: true
   type: vless
@@ -39,6 +29,15 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
+- name: 🇹🇭 泰国 (Thailand) 03 - myhuo
+  server: th001.zestapp778.com
+  port: 22222
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: th001.zestapp778.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

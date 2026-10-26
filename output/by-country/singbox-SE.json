@@ -18,15 +18,25 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - myhuo",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
+      "server": "136.148.218.108",
+      "server_port": 443,
+      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
+      "tls": {
+        "enabled": true,
+        "server_name": "se1-cl3.vless-fiberstasis.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qJja_3vaCxm3As6alnqjpIIThwGm4e4m_MOluQBNFgo",
+          "short_id": "11d37dd92940329e"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-se-3"
       }
     },
     {
@@ -51,13 +61,55 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - myhuo",
+      "server": "191.44.114.179",
+      "server_port": 2096,
+      "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
+      "tls": {
+        "enabled": true,
+        "server_name": "st33614.rumedia-cdn.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "st33614.rumedia-cdn.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - myhuo",
+      "server": "193.188.21.253",
+      "server_port": 10444,
+      "uuid": "57f7772d-f5d6-4d8f-992d-5fa5e0d6da55",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "video.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
+          "short_id": "8debcf36f1cc69ff"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - myhuo",
         "🇸🇪 瑞典 (Sweden) 02 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 03 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 03 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 04 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 05 - myhuo"
       ]
     },
     {
@@ -66,7 +118,9 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - myhuo",
         "🇸🇪 瑞典 (Sweden) 02 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 03 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 03 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 04 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 05 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

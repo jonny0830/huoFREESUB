@@ -29,22 +29,7 @@ proxies:
     public-key: PQjgf7GxBd2tDXf0zl9Z5rTZo7LdsWj0hGZLH-lJ-Uk
     short-id: 7c
   servername: yahoo.com
-  client-fingerprint: firefox
-- name: 🇮🇱 以色列 (Israel) 03 - myhuo
-  server: 177.3.208.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  tls: true
-  servername: tgmansion.site
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-il
-    headers:
-      Host: tgmansion.site
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇮🇱 以色列 (Israel) 01 - myhuo
   - 🇮🇱 以色列 (Israel) 02 - myhuo
-  - 🇮🇱 以色列 (Israel) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇮🇱 以色列 (Israel) 01 - myhuo
   - 🇮🇱 以色列 (Israel) 02 - myhuo
-  - 🇮🇱 以色列 (Israel) 03 - myhuo
 rules:
 - MATCH,PROXIES
