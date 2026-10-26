@@ -14,45 +14,53 @@
     {
       "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 02 - myhuo",
-      "server": "au5.pad-sservice.lat",
+      "server": "62.83.19.186",
       "server_port": 8443,
       "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
       "tls": {
         "enabled": true,
-        "server_name": "au5.pad-sservice.lat",
-        "insecure": false
+        "server_name": "au7.pad-sservice.lat",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/AU5W",
+        "path": "/AU7W",
         "headers": {
-          "Host": "au5.pad-sservice.lat"
+          "Host": "au7.pad-sservice.lat"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 03 - myhuo",
-      "server": "au6.pad-sservice.lat",
+      "server": "159.195.253.15",
       "server_port": 8443,
       "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
       "tls": {
         "enabled": true,
-        "server_name": "au6.pad-sservice.lat",
-        "insecure": false
+        "server_name": "au1.pad-sservice.lat",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/AU6W",
+        "path": "/au1",
         "headers": {
-          "Host": "au6.pad-sservice.lat"
+          "Host": "au1.pad-service.com"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 04 - myhuo",
-      "server": "au2.pad-sservice.lat",
+      "server": "89.58.20.210",
       "server_port": 8443,
       "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
       "tls": {
@@ -73,6 +81,50 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 05 - myhuo",
+      "server": "146.19.143.218",
+      "server_port": 443,
+      "uuid": "ca14493b-b984-4ffb-bc0e-9cb5da969e15",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tau1.freerunet.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l1mx_plNc2oiWxJCcZLh3SGfFU-5QxYpgQ__Ea59WEg",
+          "short_id": "4a7b1c8d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 06 - myhuo",
+      "server": "au5.pad-sservice.lat",
+      "server_port": 8443,
+      "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
+      "tls": {
+        "enabled": true,
+        "server_name": "au5.pad-sservice.lat",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/AU5W",
+        "headers": {
+          "Host": "au5.pad-sservice.lat"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -80,7 +132,9 @@
         "🇦🇹 奥地利 (Austria) 01 - myhuo",
         "🇦🇹 奥地利 (Austria) 02 - myhuo",
         "🇦🇹 奥地利 (Austria) 03 - myhuo",
-        "🇦🇹 奥地利 (Austria) 04 - myhuo"
+        "🇦🇹 奥地利 (Austria) 04 - myhuo",
+        "🇦🇹 奥地利 (Austria) 05 - myhuo",
+        "🇦🇹 奥地利 (Austria) 06 - myhuo"
       ]
     },
     {
@@ -90,7 +144,9 @@
         "🇦🇹 奥地利 (Austria) 01 - myhuo",
         "🇦🇹 奥地利 (Austria) 02 - myhuo",
         "🇦🇹 奥地利 (Austria) 03 - myhuo",
-        "🇦🇹 奥地利 (Austria) 04 - myhuo"
+        "🇦🇹 奥地利 (Austria) 04 - myhuo",
+        "🇦🇹 奥地利 (Austria) 05 - myhuo",
+        "🇦🇹 奥地利 (Austria) 06 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

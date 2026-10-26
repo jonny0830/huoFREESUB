@@ -5,25 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - myhuo
-  server: 217.30.10.44
-  port: 9052
+  server: 191.217.211.128
+  port: 20270
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
+  type: hysteria2
+  password: dd56bf58-4c37-42e1-9e75-4b6c67939ffd
+  sni: pl1.song69.fun
+  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 02 - myhuo
-  server: 5.22.221.127
-  port: 443
+  server: edge10.cyrionflare.com
+  port: 2052
   udp: true
   type: vless
-  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇵🇱 波兰 (Poland) 03 - myhuo
-  server: site.teslamotor.site
-  port: 20001
-  udp: true
-  type: vless
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 04 - myhuo
   server: 2.26.6.1
   port: 2087
   udp: true
@@ -32,28 +27,8 @@ proxies:
   tls: true
   servername: 2.26.6.1
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 05 - myhuo
-  server: 78.17.128.153
-  port: 35076
-  udp: true
-  type: hysteria2
-  password: b4c8ee9caa74b7ba0a61
-  sni: scrap.halyvanedorogo.ru
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 06 - myhuo
-  server: 13.143.197.81
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 480b4042-f713-43d7-b24b-b4064c97f841
-  tls: true
-  servername: tr2.soft10.ir
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇵🇱 波兰 (Poland) 07 - myhuo
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 04 - myhuo
   server: 77.232.135.141
   port: 8445
   udp: true
@@ -62,76 +37,18 @@ proxies:
   tls: true
   servername: ru1.radiolumens.uk
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: beru-pl
-- name: 🇵🇱 波兰 (Poland) 08 - myhuo
-  server: pl1.shvpn.ru
-  port: 4443
-  udp: true
-  type: hysteria2
-  password: c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3
-  sni: pl1.shvpn.ru
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 09 - myhuo
-  server: 54.37.131.126
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 10 - myhuo
-  server: pl2.shvpn.ru
-  port: 4443
-  udp: true
-  type: hysteria2
-  password: c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3
-  sni: pl2.shvpn.ru
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 11 - myhuo
-  server: pl.tronsg.com
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: pl.tronsg.com
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 12 - myhuo
-  server: 150.251.113.34
-  port: 443
+- name: 🇵🇱 波兰 (Poland) 05 - myhuo
+  server: site.teslamotor.site
+  port: 20001
   udp: true
   type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 13 - myhuo
-  server: pl1.pad-sservice.lat
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  tls: true
-  servername: pl1.pad-sservice.lat
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /PL1W
-    headers:
-      Host: pl1.pad-service.com
-- name: 🇵🇱 波兰 (Poland) 14 - myhuo
-  server: pl2.pad-sservice.lat
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+- name: 🇵🇱 波兰 (Poland) 06 - myhuo
+  server: 201.10.91.127
   port: 8443
   udp: true
   type: vless
@@ -139,12 +56,13 @@ proxies:
   tls: true
   servername: pl2.pad-sservice.lat
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /PL2W
     headers:
       Host: pl2.pad-service.com
-- name: 🇵🇱 波兰 (Poland) 15 - myhuo
+- name: 🇵🇱 波兰 (Poland) 07 - myhuo
   server: pl3.pad-sservice.lat
   port: 8443
   udp: true
@@ -158,19 +76,34 @@ proxies:
     path: /PL3W
     headers:
       Host: pl3.pad-service.com
-- name: 🇵🇱 波兰 (Poland) 16 - myhuo
-  server: 82.118.22.161
-  port: 443
+- name: 🇵🇱 波兰 (Poland) 08 - myhuo
+  server: 54.37.131.126
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 09 - myhuo
+  server: 201.10.91.68
+  port: 8443
   udp: true
   type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
-  client-fingerprint: safari
+  servername: pl1.pad-sservice.lat
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /PL1W
+    headers:
+      Host: pl1.pad-service.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -185,13 +118,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - myhuo
   - 🇵🇱 波兰 (Poland) 08 - myhuo
   - 🇵🇱 波兰 (Poland) 09 - myhuo
-  - 🇵🇱 波兰 (Poland) 10 - myhuo
-  - 🇵🇱 波兰 (Poland) 11 - myhuo
-  - 🇵🇱 波兰 (Poland) 12 - myhuo
-  - 🇵🇱 波兰 (Poland) 13 - myhuo
-  - 🇵🇱 波兰 (Poland) 14 - myhuo
-  - 🇵🇱 波兰 (Poland) 15 - myhuo
-  - 🇵🇱 波兰 (Poland) 16 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -206,12 +132,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - myhuo
   - 🇵🇱 波兰 (Poland) 08 - myhuo
   - 🇵🇱 波兰 (Poland) 09 - myhuo
-  - 🇵🇱 波兰 (Poland) 10 - myhuo
-  - 🇵🇱 波兰 (Poland) 11 - myhuo
-  - 🇵🇱 波兰 (Poland) 12 - myhuo
-  - 🇵🇱 波兰 (Poland) 13 - myhuo
-  - 🇵🇱 波兰 (Poland) 14 - myhuo
-  - 🇵🇱 波兰 (Poland) 15 - myhuo
-  - 🇵🇱 波兰 (Poland) 16 - myhuo
 rules:
 - MATCH,PROXIES

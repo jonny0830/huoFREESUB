@@ -15,21 +15,6 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: 9a5d54ea-7c85-4cef-bcda-3dd1c4e715e4
-  tls: true
-  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
   server: 185.253.116.33
   port: 14430
   udp: true
@@ -38,46 +23,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
-  server: 179.61.251.244
-  port: 7443
-  udp: true
-  type: vless
-  uuid: fc22278e-520b-4239-821b-06312e7faa51
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 05 - myhuo
-  server: 147.45.42.73
-  port: 20443
-  udp: true
-  type: vless
-  uuid: fcbb9617-7b3c-4b21-8a91-a57350a75222
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 06 - myhuo
-  server: 95.174.68.188
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 07 - myhuo
+- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -86,21 +32,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇦🇪 阿联酋 (UAE) 08 - myhuo
-  server: 80.240.18.227
-  port: 10051
-  udp: true
-  type: vless
-  uuid: d161dcf1-fde2-44cc-b08d-d8944895e842
-  tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -109,11 +40,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - myhuo
   - 🇦🇪 阿联酋 (UAE) 02 - myhuo
   - 🇦🇪 阿联酋 (UAE) 03 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 04 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 05 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 06 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 07 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 08 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -122,10 +48,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - myhuo
   - 🇦🇪 阿联酋 (UAE) 02 - myhuo
   - 🇦🇪 阿联酋 (UAE) 03 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 04 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 05 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 06 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 07 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 08 - myhuo
 rules:
 - MATCH,PROXIES

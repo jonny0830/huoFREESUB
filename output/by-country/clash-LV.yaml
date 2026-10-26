@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - myhuo
+  server: lv02.gotosvo.com
+  port: 9443
+  udp: true
+  type: hysteria2
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  sni: onecloudstream.com
+  skip-cert-verify: false
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - myhuo
   server: 138.124.180.137
   port: 443
   udp: true
@@ -16,8 +24,8 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - myhuo
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - myhuo
   server: 195.123.208.32
   port: 443
   udp: true
@@ -30,6 +38,19 @@ proxies:
     short-id: 757b9e1ef18e60f0
   servername: gateway.icloud.com
   client-fingerprint: firefox
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - myhuo
+  server: 195.123.213.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +58,8 @@ proxy-groups:
   - AUTO
   - 🇱🇻 拉脱维亚 (Latvia) 01 - myhuo
   - 🇱🇻 拉脱维亚 (Latvia) 02 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +67,7 @@ proxy-groups:
   proxies:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - myhuo
   - 🇱🇻 拉脱维亚 (Latvia) 02 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 04 - myhuo
 rules:
 - MATCH,PROXIES
