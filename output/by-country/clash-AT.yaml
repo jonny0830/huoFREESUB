@@ -12,25 +12,48 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇹 奥地利 (Austria) 02 - myhuo
-  server: 68.210.96.82
+  server: au5.pad-sservice.lat
   port: 8443
   udp: true
-  type: hysteria2
-  password: krdyzYNnXFQqyPtjiXw9lQ
-  sni: www.bing.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: au5.pad-sservice.lat
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /AU5W
+    headers:
+      Host: au5.pad-sservice.lat
 - name: 🇦🇹 奥地利 (Austria) 03 - myhuo
-  server: 193.160.140.140
-  port: 443
+  server: au6.pad-sservice.lat
+  port: 8443
   udp: true
   type: vless
-  uuid: 992a73b7-1aaf-4567-8786-28d560e8376b
-  flow: xtls-rprx-vision
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   tls: true
-  reality-opts:
-    public-key: e0RV9wRJdsQbQ0ugn5QUhJcTgWsSTVsKQTXMKweMDUg
-  servername: at.lstu.ru
-  client-fingerprint: firefox
+  servername: au6.pad-sservice.lat
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /AU6W
+    headers:
+      Host: au6.pad-sservice.lat
+- name: 🇦🇹 奥地利 (Austria) 04 - myhuo
+  server: au2.pad-sservice.lat
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: au2.pad-sservice.lat
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /A11U
+    headers:
+      Host: au2.pad-service.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +62,7 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01 - myhuo
   - 🇦🇹 奥地利 (Austria) 02 - myhuo
   - 🇦🇹 奥地利 (Austria) 03 - myhuo
+  - 🇦🇹 奥地利 (Austria) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -47,5 +71,6 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01 - myhuo
   - 🇦🇹 奥地利 (Austria) 02 - myhuo
   - 🇦🇹 奥地利 (Austria) 03 - myhuo
+  - 🇦🇹 奥地利 (Austria) 04 - myhuo
 rules:
 - MATCH,PROXIES
