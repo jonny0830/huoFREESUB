@@ -5,28 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - myhuo",
-      "server": "194.36.37.59",
-      "server_port": 10004,
-      "uuid": "f7376394-cd54-11f1-bb6a-bff6d0326f6a",
-      "transport": {
-        "type": "ws",
-        "path": "/vpnjantit"
-      }
+      "tag": "🇻🇳 越南 (Vietnam) 01 - myhuo",
+      "server": "150.95.109.109",
+      "server_port": 2086,
+      "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 亚美尼亚 (Armenia) 01 - myhuo"
+        "🇻🇳 越南 (Vietnam) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 亚美尼亚 (Armenia) 01 - myhuo"
+        "🇻🇳 越南 (Vietnam) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

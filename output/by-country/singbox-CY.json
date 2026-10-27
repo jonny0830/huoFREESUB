@@ -4,9 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo",
-      "server": "194.76.147.34",
+      "server": "171.22.119.74",
+      "server_port": 8447,
+      "uuid": "6aed42ba-cd2d-4671-87d9-c949b6876888"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo",
+      "server": "171.22.119.74",
+      "server_port": 8446,
+      "password": "Pass-Client-1",
+      "tls": {
+        "enabled": true,
+        "server_name": "171.22.119.74",
+        "insecure": true
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-video-call"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo",
+      "server": "hys-eu.letsconnectpoint.com",
       "server_port": 443,
       "password": "4b1be712-774c-4b65-8491-a3339e124a70",
       "tls": {
@@ -20,14 +43,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo",
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo",
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo",
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo",
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

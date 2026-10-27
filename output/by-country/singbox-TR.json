@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - myhuo",
+      "server": "206.1.103.237",
+      "server_port": 19999,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "1/kU1gF9gGRGdF5JH2jf3GeeLsItfkkOhmMP5cnPMUI=:ojXUsKiyV41J4EsaiAZFaKCW+zhuD3Tl0Z7pWkKq6eM="
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - myhuo",
       "server": "78.135.73.168",
       "server_port": 443,
       "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
@@ -15,7 +23,7 @@
         "server_name": "tr2.tv-quoralyx.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -25,16 +33,28 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - myhuo",
-      "server": "206.1.103.237",
-      "server_port": 19999,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "1/kU1gF9gGRGdF5JH2jf3GeeLsItfkkOhmMP5cnPMUI=:ojXUsKiyV41J4EsaiAZFaKCW+zhuD3Tl0Z7pWkKq6eM="
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - myhuo",
+      "server": "151.241.226.201",
+      "server_port": 2053,
+      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
+          "short_id": "9e419c0759b54d6f"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - myhuo",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - myhuo",
       "server": "62.133.63.45",
       "server_port": 8444,
       "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
@@ -54,26 +74,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "GunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - myhuo",
-      "server": "151.241.226.201",
-      "server_port": 2053,
-      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
-          "short_id": "9e419c0759b54d6f"
-        }
       }
     },
     {
@@ -98,56 +98,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - myhuo",
-      "server": "87.236.166.88",
-      "server_port": 56134,
-      "method": "chacha20-ietf-poly1305",
-      "password": "uvKNudV-N8AUCrykPiyznA"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 07 - myhuo",
-      "server": "93.180.132.104",
-      "server_port": 443,
-      "uuid": "ef328563-cda1-4530-9b0a-988cc5a74d78",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "flooraccount.net",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 08 - myhuo",
-      "server": "185.98.63.6",
-      "server_port": 8443,
-      "uuid": "6845a59f-970b-4e1e-8e26-06a34ee663d6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -156,10 +106,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - myhuo",
         "🇹🇷 土耳其 (Turkey) 03 - myhuo",
         "🇹🇷 土耳其 (Turkey) 04 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 05 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 06 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 07 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 08 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 05 - myhuo"
       ]
     },
     {
@@ -170,10 +117,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - myhuo",
         "🇹🇷 土耳其 (Turkey) 03 - myhuo",
         "🇹🇷 土耳其 (Turkey) 04 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 05 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 06 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 07 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 08 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 05 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

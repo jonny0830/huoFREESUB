@@ -5,13 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - myhuo
-  server: 45.63.30.142
+  server: au.tronsg.com
   port: 443
   udp: true
   type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectwithemployerstohireyouridealteam.com
-  skip-cert-verify: false
+  password: Trojan@82164024
+  sni: au.tronsg.com
+  skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 02 - myhuo
   server: 51.161.204.242
   port: 443
@@ -26,23 +26,39 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 03 - myhuo
-  server: au.tronsg.com
+  server: 45.63.30.142
   port: 443
   udp: true
   type: trojan
-  password: Trojan@82164024
-  sni: au.tronsg.com
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: connectwithemployerstohireyouridealteam.com
   skip-cert-verify: false
 - name: 🇦🇺 澳大利亚 (Australia) 04 - myhuo
-  server: 152.67.115.203
+  server: funagfrdfs.alixxplay.com
+  port: 54528
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
+    short-id: 54cca3c1c1c7
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 05 - myhuo
+  server: 51.161.204.244
   port: 443
   udp: true
-  type: hysteria2
-  password: 633bc3be486b646190661ac2387c150a
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
+  type: vless
+  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
+    short-id: 0ad08b47f498efd2
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +68,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 03 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 04 - myhuo
+  - 🇦🇺 澳大利亚 (Australia) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +78,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 03 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 04 - myhuo
+  - 🇦🇺 澳大利亚 (Australia) 05 - myhuo
 rules:
 - MATCH,PROXIES

@@ -38,7 +38,7 @@
         "server_name": "gateway.icloud.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -48,13 +48,26 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - myhuo",
+      "server": "185.156.44.99",
+      "server_port": 443,
+      "password": "gf1:gfhysteria2024",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇷🇴 罗马尼亚 (Romania) 01 - myhuo",
         "🇷🇴 罗马尼亚 (Romania) 02 - myhuo",
-        "🇷🇴 罗马尼亚 (Romania) 03 - myhuo"
+        "🇷🇴 罗马尼亚 (Romania) 03 - myhuo",
+        "🇷🇴 罗马尼亚 (Romania) 04 - myhuo"
       ]
     },
     {
@@ -63,7 +76,8 @@
       "outbounds": [
         "🇷🇴 罗马尼亚 (Romania) 01 - myhuo",
         "🇷🇴 罗马尼亚 (Romania) 02 - myhuo",
-        "🇷🇴 罗马尼亚 (Romania) 03 - myhuo"
+        "🇷🇴 罗马尼亚 (Romania) 03 - myhuo",
+        "🇷🇴 罗马尼亚 (Romania) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,7 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo
-  server: 194.76.147.34
+  server: 171.22.119.74
+  port: 8447
+  udp: true
+  type: vless
+  uuid: 6aed42ba-cd2d-4671-87d9-c949b6876888
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo
+  server: 171.22.119.74
+  port: 8446
+  udp: true
+  type: trojan
+  password: Pass-Client-1
+  sni: 171.22.119.74
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-video-call
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo
+  server: hys-eu.letsconnectpoint.com
   port: 443
   udp: true
   type: hysteria2
@@ -18,11 +35,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo
+  - 🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo
+  - 🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo
 rules:
 - MATCH,PROXIES

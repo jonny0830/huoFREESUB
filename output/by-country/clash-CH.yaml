@@ -25,18 +25,16 @@ proxies:
   servername: twitch.tv
   client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 03 - myhuo
-  server: 208.69.78.217
-  port: 21158
+  server: 140.238.213.114
+  port: 50160
   udp: true
   type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: www.bing.com
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 04 - myhuo
   server: 208.69.78.217
-  port: 33141
+  port: 33092
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -45,46 +43,21 @@ proxies:
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 05 - myhuo
-  server: 208.69.78.217
-  port: 33130
+  server: 45.90.59.15
+  port: 443
   udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
+  type: vless
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 06 - myhuo
   server: 208.69.78.217
-  port: 21046
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 07 - myhuo
-  server: 208.69.78.217
-  port: 21067
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 08 - myhuo
-  server: 140.238.213.114
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 09 - myhuo
-  server: 208.69.78.217
-  port: 21021
+  port: 8444
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -103,9 +76,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 04 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 05 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 06 - myhuo
-  - 🇨🇭 瑞士 (Switzerland) 07 - myhuo
-  - 🇨🇭 瑞士 (Switzerland) 08 - myhuo
-  - 🇨🇭 瑞士 (Switzerland) 09 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -117,8 +87,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 04 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 05 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 06 - myhuo
-  - 🇨🇭 瑞士 (Switzerland) 07 - myhuo
-  - 🇨🇭 瑞士 (Switzerland) 08 - myhuo
-  - 🇨🇭 瑞士 (Switzerland) 09 - myhuo
 rules:
 - MATCH,PROXIES
