@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - myhuo
-  server: 162.159.152.4
-  port: 443
-  udp: true
-  type: vless
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  tls: true
-  servername: rayan-007.maxima.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
-- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
   server: 130.49.161.70
   port: 443
   udp: true
@@ -29,51 +14,15 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
-  server: 185.253.116.33
-  port: 14430
-  udp: true
-  type: vless
-  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 185.253.116.33
-- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
+- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
   server: forshynewh.duckdns.org
   port: 443
   udp: true
   type: hysteria2
   password: 329e13e4-ee7c-4802-ac72-5fcab79c2402
   sni: forshynewh.duckdns.org
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 05 - myhuo
-  server: 84.235.244.108
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - myhuo
-  server: 172.105.241.119
-  port: 1916
-  udp: true
-  type: vless
-  uuid: 3fd1868a-a3bb-4eab-a878-2c344bc86810
-  tls: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 07 - myhuo
+- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -84,6 +33,26 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
+  server: 84.235.244.108
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - myhuo
+  server: 185.253.116.33
+  port: 14430
+  udp: true
+  type: vless
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  network: ws
+  ws-opts:
+    path: /vless
 proxy-groups:
 - name: PROXIES
   type: select
@@ -94,8 +63,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - myhuo
   - 🇦🇪 阿联酋 (UAE) 04 - myhuo
   - 🇦🇪 阿联酋 (UAE) 05 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 06 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -106,7 +73,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - myhuo
   - 🇦🇪 阿联酋 (UAE) 04 - myhuo
   - 🇦🇪 阿联酋 (UAE) 05 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 06 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 07 - myhuo
 rules:
 - MATCH,PROXIES

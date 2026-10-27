@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
-  server: 177.3.208.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  tls: true
-  servername: tgmansion.site
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-ee
-    headers:
-      Host: tgmansion.site
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
   server: ee.h1cloud.net
   port: 25895
   udp: true
@@ -30,20 +15,18 @@ proxies:
     public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
     short-id: a73f0410d728c823
   servername: www.samsung.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
 rules:
 - MATCH,PROXIES

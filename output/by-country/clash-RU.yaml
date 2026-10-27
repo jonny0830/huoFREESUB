@@ -5,66 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - myhuo
-  server: 193.160.141.104
-  port: 443
-  udp: true
-  type: vless
-  uuid: 54d1afe5-f5aa-47e6-a02f-6c41a6f886b3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
-  server: 147.45.47.83
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
-  server: 77.90.61.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
-  tls: true
-  reality-opts:
-    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
-    short-id: ce1dc482
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
-  server: 45.9.118.177
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 88c4ce99-31f1-4329-912d-2a3564b3d58b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
-  server: 113.30.154.207
-  port: 8443
-  udp: true
-  type: vless
-  uuid: ca926603-c678-4639-b726-a5b82d7e110c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
   server: 193.160.141.81
   port: 8443
   udp: true
@@ -76,17 +16,77 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: apple.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 07 - myhuo
-  server: 193.160.140.117
+- name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
+  server: 147.45.47.188
+  port: 443
+  udp: true
+  type: vless
+  uuid: 54d1afe5-f5aa-47e6-a02f-6c41a6f886b3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: ozon.ru
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
+  server: 193.160.141.50
+  port: 443
+  udp: true
+  type: vless
+  uuid: 54d1afe5-f5aa-47e6-a02f-6c41a6f886b3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: ozon.ru
+  client-fingerprint: ios
+- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
+  server: 193.160.141.2
   port: 8443
   udp: true
   type: vless
-  uuid: 57c87188-1056-4bd5-92f8-c7ca1fd19147
+  uuid: d24e0961-dd20-4528-8796-2a974e79348e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: apple.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
+  server: 193.160.140.159
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d4353076-3ec7-47dc-88b0-f21eb59fbfb8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
+  server: 45.9.118.177
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 88c4ce99-31f1-4329-912d-2a3564b3d58b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 07 - myhuo
+  server: 147.45.47.83
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: ozon.ru
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 08 - myhuo
   server: 193.160.140.119
@@ -101,42 +101,6 @@ proxies:
   servername: ozon.ru
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 09 - myhuo
-  server: 193.223.104.106
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d68be168-fda7-4e8c-8638-33a82d2202ca
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 10 - myhuo
-  server: 147.45.46.157
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 75985152-e16e-4a48-87ff-35c2615e0ab5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 11 - myhuo
-  server: 193.160.141.8
-  port: 443
-  udp: true
-  type: vless
-  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 12 - myhuo
   server: 103.91.147.203
   port: 8443
   udp: true
@@ -148,19 +112,43 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: apple.com
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 13 - myhuo
-  server: 193.160.140.159
+- name: 🇷🇺 俄罗斯 (Russia) 10 - myhuo
+  server: 77.90.61.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
+  tls: true
+  reality-opts:
+    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
+    short-id: ce1dc482
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 11 - myhuo
+  server: 193.160.141.27
+  port: 443
+  udp: true
+  type: vless
+  uuid: fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: abuse.ozon.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 12 - myhuo
+  server: 193.160.140.168
   port: 8443
   udp: true
   type: vless
-  uuid: d4353076-3ec7-47dc-88b0-f21eb59fbfb8
+  uuid: 5ce803ae-a81c-4276-b1f8-ee3b845c5c4b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: apple.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 14 - myhuo
+- name: 🇷🇺 俄罗斯 (Russia) 13 - myhuo
   server: 193.233.253.180
   port: 8444
   udp: true
@@ -174,33 +162,14 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
+- name: 🇷🇺 俄罗斯 (Russia) 14 - myhuo
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: cZGr8nLHdf+FE5ZAw0Y/Rzsml4AyikGL481Pg7eBpsI=
 - name: 🇷🇺 俄罗斯 (Russia) 15 - myhuo
-  server: 91.206.92.238
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-- name: 🇷🇺 俄罗斯 (Russia) 16 - myhuo
-  server: 195.133.5.107
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-- name: 🇷🇺 俄罗斯 (Russia) 17 - myhuo
-  server: 193.160.141.2
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d24e0961-dd20-4528-8796-2a974e79348e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 18 - myhuo
   server: 193.233.230.107
   port: 443
   udp: true
@@ -213,54 +182,61 @@ proxies:
     short-id: a0c58a106301b783
   servername: mortardapplebirch.kilnworkshop.info
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 19 - myhuo
+- name: 🇷🇺 俄罗斯 (Russia) 16 - myhuo
+  server: 201.24.121.243
+  port: 443
+  udp: true
+  type: vless
+  uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
+  tls: true
+  servername: kk-ru24a1.testkknegr.online
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vlgrpc
+- name: 🇷🇺 俄罗斯 (Russia) 17 - myhuo
   server: 194.87.118.184
   port: 2053
   udp: true
   type: hysteria2
   password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
-  sni: match-stream.lovkisport.blog
-  skip-cert-verify: false
+  sni: 194.87.118.184
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 18 - myhuo
+  server: 91.206.92.238
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+- name: 🇷🇺 俄罗斯 (Russia) 19 - myhuo
+  server: 5.42.99.64
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 20 - myhuo
-  server: 194.87.143.165
+  server: 5.42.99.64
   port: 8443
   udp: true
   type: vless
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  flow: xtls-rprx-vision
   tls: true
-  servername: wsru1.wba-pn.ru
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 21 - myhuo
-  server: 5.42.99.64
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 22 - myhuo
-  server: 5.42.99.64
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 23 - myhuo
   server: du-rov.secureservice.top
   port: 8443
   udp: true
@@ -273,7 +249,19 @@ proxies:
     short-id: 3cbc3d737fb9c4af
   servername: du-rov.secureservice.top
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 24 - myhuo
+- name: 🇷🇺 俄罗斯 (Russia) 22 - myhuo
+  server: 193.223.104.106
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d68be168-fda7-4e8c-8638-33a82d2202ca
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 23 - myhuo
   server: xsru1.ddnsfree.com
   port: 443
   udp: true
@@ -282,21 +270,92 @@ proxies:
   tls: true
   servername: xsru1.ddnsfree.com
   skip-cert-verify: false
-  client-fingerprint: random
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 25 - myhuo
-  server: 45.12.75.242
-  port: 26424
+- name: 🇷🇺 俄罗斯 (Russia) 24 - myhuo
+  server: 147.45.175.81
+  port: 443
   udp: true
   type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xsru1.ddnsfree.com
+  skip-cert-verify: false
+  client-fingerprint: android
+  network: ws
+  ws-opts:
+    path: /wsru
+    headers:
+      Host: xsru1.ddnsfree.com
+- name: 🇷🇺 俄罗斯 (Russia) 25 - myhuo
+  server: 188.120.234.199
+  port: 443
+  udp: true
+  type: vless
+  uuid: 37ca5f34-2531-4fda-a781-20f3845fea88
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
+    public-key: QPfM5knVgOkIykx2AC8S1MvkO_x-T9xMRYJdkF9aEng
+    short-id: fda83f2787e6016d
+  servername: payeeclickerhalogen.berylcord.net
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 26 - myhuo
+  server: 113.30.154.207
+  port: 8443
+  udp: true
+  type: vless
+  uuid: ca926603-c678-4639-b726-a5b82d7e110c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 27 - myhuo
+  server: 72.56.4.84
+  port: 443
+  udp: true
+  type: vless
+  uuid: Fluffy_VPN-zKZUa4Ie
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Im1i3eUtm7uDxUOA0rNWef9bILxsBvK_ElfejZTpQW0
+  servername: absolute-disaster.org
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 28 - myhuo
+  server: 193.233.221.86
+  port: 443
+  udp: true
+  type: vless
+  uuid: 37ca5f34-2531-4fda-a781-20f3845fea88
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 2iedjEliJfyf7VYxQjSHRiY0RY9ylwj-GtO4MCfuQhg
+    short-id: a50534e181896415
+  servername: capableconjuretarnish.clarionconsult.info
+  client-fingerprint: ios
+- name: 🇷🇺 俄罗斯 (Russia) 29 - myhuo
+  server: 195.133.5.107
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+- name: 🇷🇺 俄罗斯 (Russia) 30 - myhuo
+  server: 147.45.46.157
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 75985152-e16e-4a48-87ff-35c2615e0ab5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -328,6 +387,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 23 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 24 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 25 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 26 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 27 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 28 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 29 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 30 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -358,5 +422,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 23 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 24 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 25 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 26 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 27 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 28 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 29 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 30 - myhuo
 rules:
 - MATCH,PROXIES

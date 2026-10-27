@@ -12,46 +12,22 @@
       "password": "1234!@#$"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo",
-      "server": "218.237.185.234",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 (家宽) - myhuo",
-      "server": "152.70.253.44",
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
+      "server": "125.227.86.45",
       "server_port": 443,
-      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
+      "password": "0a9f1f5a397bd427",
       "tls": {
         "enabled": true,
-        "server_name": "wzs.echo.net.eu.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "TG.freecodes",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
       },
       "transport": {
-        "type": "ws",
-        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c",
-        "headers": {
-          "Host": "wzs.echo.net.eu.org"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 04 (家宽) - myhuo",
-      "server": "s3.huhiuh.space",
-      "server_port": 18642,
-      "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
-      "tls": {
-        "enabled": true,
-        "server_name": "s3.huhiuh.space",
-        "insecure": true
+        "type": "grpc",
+        "service_name": "db"
       }
     },
     {
@@ -60,9 +36,7 @@
       "outbounds": [
         "auto",
         "🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo",
-        "🇸🇬 新加坡 (Singapore) 03 (家宽) - myhuo",
-        "🇸🇬 新加坡 (Singapore) 04 (家宽) - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo"
       ]
     },
     {
@@ -70,9 +44,7 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo",
-        "🇸🇬 新加坡 (Singapore) 03 (家宽) - myhuo",
-        "🇸🇬 新加坡 (Singapore) 04 (家宽) - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

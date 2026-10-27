@@ -6,30 +6,6 @@
     {
       "type": "vless",
       "tag": "🇨🇳 CN 01 - myhuo",
-      "server": "122.8.45.7",
-      "server_port": 8443,
-      "uuid": "362a0364-2b0f-cd11-9c20-ab9dfbeb8b11",
-      "tls": {
-        "enabled": true,
-        "server_name": "download.nvidia.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wcOBPSgoOKptWa9ZHpFpmbrPfLqobBNpCgLH88Ptjhk",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇳 CN 02 - myhuo",
       "server": "vpn.cintaku.qzz.io",
       "server_port": 443,
       "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
@@ -40,7 +16,10 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vlessws"
+        "path": "/vlessws",
+        "headers": {
+          "Host": "vpn.cintaku.qzz.io"
+        }
       }
     },
     {
@@ -48,16 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - myhuo",
-        "🇨🇳 CN 02 - myhuo"
+        "🇨🇳 CN 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - myhuo",
-        "🇨🇳 CN 02 - myhuo"
+        "🇨🇳 CN 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
