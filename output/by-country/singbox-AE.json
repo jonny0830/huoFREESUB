@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - myhuo",
+      "server": "ams1.rvpn.app",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "x2A6AsyZ-rAllz0wbKHzWA"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - myhuo",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -17,18 +25,6 @@
       "obfs": {
         "type": "salamander",
         "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - myhuo",
-      "server": "forshynewh.duckdns.org",
-      "server_port": 443,
-      "password": "329e13e4-ee7c-4802-ac72-5fcab79c2402",
-      "tls": {
-        "enabled": true,
-        "server_name": "forshynewh.duckdns.org",
-        "insecure": false
       }
     },
     {
@@ -48,6 +44,43 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 04 - myhuo",
+      "server": "80.240.18.227",
+      "server_port": 10051,
+      "uuid": "711b6476-63fc-4f01-b4e0-d44e17d79383",
+      "tls": {
+        "enabled": true,
+        "server_name": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - myhuo",
+      "server": "95.174.68.188",
+      "server_port": 14430,
+      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "95.174.68.188"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - myhuo",
       "server": "185.253.116.33",
       "server_port": 14430,
       "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
@@ -67,7 +100,9 @@
         "🇦🇪 阿联酋 (UAE) 01 - myhuo",
         "🇦🇪 阿联酋 (UAE) 02 - myhuo",
         "🇦🇪 阿联酋 (UAE) 03 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 04 - myhuo"
+        "🇦🇪 阿联酋 (UAE) 04 - myhuo",
+        "🇦🇪 阿联酋 (UAE) 05 - myhuo",
+        "🇦🇪 阿联酋 (UAE) 06 - myhuo"
       ]
     },
     {
@@ -77,7 +112,9 @@
         "🇦🇪 阿联酋 (UAE) 01 - myhuo",
         "🇦🇪 阿联酋 (UAE) 02 - myhuo",
         "🇦🇪 阿联酋 (UAE) 03 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 04 - myhuo"
+        "🇦🇪 阿联酋 (UAE) 04 - myhuo",
+        "🇦🇪 阿联酋 (UAE) 05 - myhuo",
+        "🇦🇪 阿联酋 (UAE) 06 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

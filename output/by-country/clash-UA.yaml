@@ -12,19 +12,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
 - name: 🇺🇦 乌克兰 (Ukraine) 02 - myhuo
-  server: 83.147.18.75
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
-    short-id: 7f1e29593aa94ad1
-  servername: www.bing.com
-  client-fingerprint: chrome
-- name: 🇺🇦 乌克兰 (Ukraine) 03 - myhuo
   server: netx.smrtai.top
   port: 443
   udp: true
@@ -36,6 +23,20 @@ proxies:
     short-id: d8b58872
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇺🇦 乌克兰 (Ukraine) 03 - myhuo
+  server: 216.24.57.225
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 3bcbd7ef-e05b-4745-a1de-5ecf98dd2fb6
+  tls: true
+  servername: pol.netvia.ir
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /wss
+    headers:
+      Host: pol.netvia.ir
 - name: 🇺🇦 乌克兰 (Ukraine) 04 - myhuo
   server: staging.lastilhame.monster
   port: 443
@@ -49,6 +50,19 @@ proxies:
     short-id: 225e930cfd4d
   servername: www.hollywoodreporter.com
   client-fingerprint: chrome
+- name: 🇺🇦 乌克兰 (Ukraine) 05 - myhuo
+  server: 83.147.18.75
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
+    short-id: 7f1e29593aa94ad1
+  servername: www.bing.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,6 +72,7 @@ proxy-groups:
   - 🇺🇦 乌克兰 (Ukraine) 02 - myhuo
   - 🇺🇦 乌克兰 (Ukraine) 03 - myhuo
   - 🇺🇦 乌克兰 (Ukraine) 04 - myhuo
+  - 🇺🇦 乌克兰 (Ukraine) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,5 +82,6 @@ proxy-groups:
   - 🇺🇦 乌克兰 (Ukraine) 02 - myhuo
   - 🇺🇦 乌克兰 (Ukraine) 03 - myhuo
   - 🇺🇦 乌克兰 (Ukraine) 04 - myhuo
+  - 🇺🇦 乌克兰 (Ukraine) 05 - myhuo
 rules:
 - MATCH,PROXIES

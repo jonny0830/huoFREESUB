@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - myhuo
+  server: 103.86.49.57
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ais.speedtest.net
+- name: 🇹🇭 泰国 (Thailand) 02 - myhuo
   server: 45.154.26.63
   port: 443
   udp: true
@@ -17,17 +28,6 @@ proxies:
     short-id: 3c032a7e
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇭 泰国 (Thailand) 02 - myhuo
-  server: 103.86.49.57
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
 - name: 🇹🇭 泰国 (Thailand) 03 - myhuo
   server: 38.60.254.50
   port: 22222
@@ -39,20 +39,6 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇹🇭 泰国 (Thailand) 04 - myhuo
-  server: 104.16.10.2
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  tls: true
-  servername: v2ray.simspeedup.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 (Thailand) 05 - myhuo
   server: funagfrdfs.alixxplay.com
   port: 56415
   udp: true
@@ -65,6 +51,20 @@ proxies:
     short-id: cbd39bea0805e2
   servername: www.kaidee.com
   client-fingerprint: chrome
+- name: 🇹🇭 泰国 (Thailand) 05 - myhuo
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  tls: true
+  servername: v2ray.simspeedup.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select
