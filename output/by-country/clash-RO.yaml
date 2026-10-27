@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - myhuo
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - myhuo
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: google.com
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
   server: 46.28.67.55
   port: 443
   udp: true
@@ -31,8 +16,8 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - myhuo
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - myhuo
   server: 82.117.255.174
   port: 443
   udp: true
@@ -44,8 +29,8 @@ proxies:
     public-key: 0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0
     short-id: 31e91d43e553bf32
   servername: gateway.icloud.com
-  client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - myhuo
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
   server: 162.249.125.133
   port: 443
   udp: true
@@ -55,6 +40,14 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - myhuo
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: vk.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,7 +57,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 02 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 04 - myhuo
-  - 🇷🇴 罗马尼亚 (Romania) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,6 +66,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 02 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 04 - myhuo
-  - 🇷🇴 罗马尼亚 (Romania) 05 - myhuo
 rules:
 - MATCH,PROXIES

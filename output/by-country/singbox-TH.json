@@ -6,27 +6,44 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 01 - myhuo",
-      "server": "support.zoom.us.v2ray.simspeedup.com",
+      "server": "v2ray.simspeedup.com",
       "server_port": 80,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "transport": {
         "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "support.zoom.us.v2ray.simspeedup.com"
-        }
+        "path": "/ws"
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 02 - myhuo",
-      "server": "188.114.97.6",
+      "server": "38.60.254.50",
+      "server_port": 22222,
+      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+      "tls": {
+        "enabled": true,
+        "server_name": "th001.zestapp778.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 03 - myhuo",
+      "server": "104.18.26.90",
       "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {
         "enabled": true,
         "server_name": "v2ray.simspeedup.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "ws",
@@ -38,14 +55,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 03 - myhuo",
-      "server": "th001.zestapp778.com",
-      "server_port": 22222,
-      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+      "tag": "🇹🇭 泰国 (Thailand) 04 - myhuo",
+      "server": "45.154.26.63",
+      "server_port": 443,
+      "uuid": "ff85e702-b605-4109-884d-2c1f065d0954",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "th001.zestapp778.com",
-        "insecure": false
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk",
+          "short_id": "3c032a7e"
+        }
       }
     },
     {
@@ -55,7 +81,8 @@
         "auto",
         "🇹🇭 泰国 (Thailand) 01 - myhuo",
         "🇹🇭 泰国 (Thailand) 02 - myhuo",
-        "🇹🇭 泰国 (Thailand) 03 - myhuo"
+        "🇹🇭 泰国 (Thailand) 03 - myhuo",
+        "🇹🇭 泰国 (Thailand) 04 - myhuo"
       ]
     },
     {
@@ -64,7 +91,8 @@
       "outbounds": [
         "🇹🇭 泰国 (Thailand) 01 - myhuo",
         "🇹🇭 泰国 (Thailand) 02 - myhuo",
-        "🇹🇭 泰国 (Thailand) 03 - myhuo"
+        "🇹🇭 泰国 (Thailand) 03 - myhuo",
+        "🇹🇭 泰国 (Thailand) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
