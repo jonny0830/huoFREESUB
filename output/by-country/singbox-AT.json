@@ -12,18 +12,41 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 02 - myhuo",
+      "server": "45.151.101.130",
+      "server_port": 443,
+      "uuid": "26f751bc-2edc-4338-9c3f-abeb32aba3b7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "d61rdw0na.assetcache.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01 - myhuo"
+        "🇦🇹 奥地利 (Austria) 01 - myhuo",
+        "🇦🇹 奥地利 (Austria) 02 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01 - myhuo"
+        "🇦🇹 奥地利 (Austria) 01 - myhuo",
+        "🇦🇹 奥地利 (Austria) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

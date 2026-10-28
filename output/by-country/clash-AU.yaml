@@ -5,43 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - myhuo
-  server: 38.110.1.246
-  port: 18000
+  server: 158.178.137.129
+  port: 20000
   udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇦🇺 澳大利亚 (Australia) 02 - myhuo
-  server: 45.63.30.142
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectwithemployerstohireyouridealteam.com
+  type: hysteria2
+  password: b42d90fa667942aebc734d60
+  sni: rmgyvpn.rest
   skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 03 - myhuo
+  obfs: salamander
+  obfs-password: b42d90fa667942aebc734d60
+  ports: 20000-30000,20000-20000
+- name: 🇦🇺 澳大利亚 (Australia) 02 - myhuo
   server: au.tronsg.com
   port: 443
   udp: true
   type: trojan
   password: Trojan@82164024
   sni: au.tronsg.com
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 04 - myhuo
-  server: 51.161.204.242
-  port: 443
+  skip-cert-verify: false
+- name: 🇦🇺 澳大利亚 (Australia) 03 - myhuo
+  server: au001.zestapp778.com
+  port: 35652
   udp: true
   type: vless
-  uuid: a14b736b-a92a-48d6-a596-5d31f7378ded
-  flow: xtls-rprx-vision
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   tls: true
-  reality-opts:
-    public-key: a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE
-    short-id: d15c17cef9b2e456
-  servername: www.cloudflare.com
+  servername: au001.zestapp778.com
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 05 - myhuo
+- name: 🇦🇺 澳大利亚 (Australia) 04 - myhuo
   server: 51.161.204.244
   port: 443
   udp: true
@@ -54,32 +46,14 @@ proxies:
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇦🇺 澳大利亚 (Australia) 06 - myhuo
-  server: funagfrdfs.alixxplay.com
-  port: 54528
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
-    short-id: 54cca3c1c1c7
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇦🇺 澳大利亚 (Australia) 07 - myhuo
-  server: 88.216.211.130
+- name: 🇦🇺 澳大利亚 (Australia) 05 - myhuo
+  server: 45.63.30.142
   port: 443
   udp: true
-  type: vless
-  uuid: caf3d607-95c9-4ea0-98b5-864027056ba0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1TtWNQhTJr_3H7-ypMw4EiLzVxy22AzUtMiE5JmQMl4
-    short-id: 1c5869a95671bcb0
-  servername: au1.accessboy.com
-  client-fingerprint: firefox
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: 45.63.30.142
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -90,8 +64,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 04 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 05 - myhuo
-  - 🇦🇺 澳大利亚 (Australia) 06 - myhuo
-  - 🇦🇺 澳大利亚 (Australia) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -102,7 +74,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 04 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 05 - myhuo
-  - 🇦🇺 澳大利亚 (Australia) 06 - myhuo
-  - 🇦🇺 澳大利亚 (Australia) 07 - myhuo
 rules:
 - MATCH,PROXIES

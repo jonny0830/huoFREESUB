@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - myhuo
+  server: 104.21.77.142
+  port: 2096
+  udp: true
+  type: vless
+  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
+  tls: true
+  servername: courses.mftplus.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: courses.mftplus.qzz.io
+- name: 🇨🇿 捷克 (Czech) 02 - myhuo
   server: 195.123.245.241
   port: 443
   udp: true
@@ -17,7 +32,7 @@ proxies:
     short-id: 23d0950d60bc0d5b
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 02 - myhuo
+- name: 🇨🇿 捷克 (Czech) 03 - myhuo
   server: cz-prg.dontblockmepls.com
   port: 2063
   udp: true
@@ -29,18 +44,18 @@ proxies:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
   client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 03 - myhuo
+- name: 🇨🇿 捷克 (Czech) 04 - myhuo
   server: 193.124.17.190
   port: 443
   udp: true
   type: vless
-  uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
+  uuid: ff40696b-06d6-443b-9481-8d01eddd13e1
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: ee1716767f9b
-  servername: www.tradingview.com
+    short-id: d659da01fb94
+  servername: www.foxsports.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -50,6 +65,7 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - myhuo
   - 🇨🇿 捷克 (Czech) 02 - myhuo
   - 🇨🇿 捷克 (Czech) 03 - myhuo
+  - 🇨🇿 捷克 (Czech) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +74,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - myhuo
   - 🇨🇿 捷克 (Czech) 02 - myhuo
   - 🇨🇿 捷克 (Czech) 03 - myhuo
+  - 🇨🇿 捷克 (Czech) 04 - myhuo
 rules:
 - MATCH,PROXIES

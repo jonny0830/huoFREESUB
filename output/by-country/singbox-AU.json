@@ -4,61 +4,55 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - myhuo",
-      "server": "38.110.1.246",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "server": "158.178.137.129",
+      "password": "b42d90fa667942aebc734d60",
+      "tls": {
+        "enabled": true,
+        "server_name": "rmgyvpn.rest",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "b42d90fa667942aebc734d60"
+      },
+      "server_ports": [
+        "20000:30000",
+        "20000:20000"
+      ]
     },
     {
       "type": "trojan",
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - myhuo",
-      "server": "45.63.30.142",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "connectwithemployerstohireyouridealteam.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - myhuo",
       "server": "au.tronsg.com",
       "server_port": 443,
       "password": "Trojan@82164024",
       "tls": {
         "enabled": true,
         "server_name": "au.tronsg.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - myhuo",
-      "server": "51.161.204.242",
-      "server_port": 443,
-      "uuid": "a14b736b-a92a-48d6-a596-5d31f7378ded",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - myhuo",
+      "server": "au001.zestapp778.com",
+      "server_port": 35652,
+      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "au001.zestapp778.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE",
-          "short_id": "d15c17cef9b2e456"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - myhuo",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - myhuo",
       "server": "51.161.204.244",
       "server_port": 443,
       "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
@@ -78,45 +72,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 06 - myhuo",
-      "server": "funagfrdfs.alixxplay.com",
-      "server_port": 54528,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo",
-          "short_id": "54cca3c1c1c7"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 07 - myhuo",
-      "server": "88.216.211.130",
+      "type": "trojan",
+      "tag": "🇦🇺 澳大利亚 (Australia) 05 - myhuo",
+      "server": "45.63.30.142",
       "server_port": 443,
-      "uuid": "caf3d607-95c9-4ea0-98b5-864027056ba0",
-      "flow": "xtls-rprx-vision",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "au1.accessboy.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1TtWNQhTJr_3H7-ypMw4EiLzVxy22AzUtMiE5JmQMl4",
-          "short_id": "1c5869a95671bcb0"
-        }
+        "server_name": "45.63.30.142",
+        "insecure": true
       }
     },
     {
@@ -128,9 +92,7 @@
         "🇦🇺 澳大利亚 (Australia) 02 - myhuo",
         "🇦🇺 澳大利亚 (Australia) 03 - myhuo",
         "🇦🇺 澳大利亚 (Australia) 04 - myhuo",
-        "🇦🇺 澳大利亚 (Australia) 05 - myhuo",
-        "🇦🇺 澳大利亚 (Australia) 06 - myhuo",
-        "🇦🇺 澳大利亚 (Australia) 07 - myhuo"
+        "🇦🇺 澳大利亚 (Australia) 05 - myhuo"
       ]
     },
     {
@@ -141,9 +103,7 @@
         "🇦🇺 澳大利亚 (Australia) 02 - myhuo",
         "🇦🇺 澳大利亚 (Australia) 03 - myhuo",
         "🇦🇺 澳大利亚 (Australia) 04 - myhuo",
-        "🇦🇺 澳大利亚 (Australia) 05 - myhuo",
-        "🇦🇺 澳大利亚 (Australia) 06 - myhuo",
-        "🇦🇺 澳大利亚 (Australia) 07 - myhuo"
+        "🇦🇺 澳大利亚 (Australia) 05 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

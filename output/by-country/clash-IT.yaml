@@ -5,69 +5,124 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - myhuo
-  server: 185.164.175.81
-  port: 19999
+  server: fbi.gov
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
+  tls: true
+  servername: wallweb-4ez.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-4ez.pages.dev
 - name: 🇮🇹 意大利 (Italy) 02 - myhuo
-  server: 202.50.253.54
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 03 - myhuo
-  server: 57.131.48.45
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
-- name: 🇮🇹 意大利 (Italy) 04 - myhuo
   server: 202.50.253.72
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 05 - myhuo
-  server: 91.201.65.122
-  port: 9039
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qYEN5HX4JKeVCdEC
-- name: 🇮🇹 意大利 (Italy) 06 - myhuo
-  server: 202.50.253.90
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 07 - myhuo
+- name: 🇮🇹 意大利 (Italy) 03 - myhuo
   server: 202.50.253.63
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 08 - myhuo
+- name: 🇮🇹 意大利 (Italy) 04 - myhuo
   server: 202.50.253.81
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 09 - myhuo
-  server: dns22.m3hrzd.ir
-  port: 1349
+- name: 🇮🇹 意大利 (Italy) 05 - myhuo
+  server: 202.50.253.18
+  port: 19999
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: LzEeLj2OP0DQmpPDtVTazdGC0cHcT0Kn
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 06 - myhuo
+  server: 57.131.48.45
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
+- name: 🇮🇹 意大利 (Italy) 07 - myhuo
+  server: 185.164.175.81
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 08 - myhuo
+  server: 202.50.253.45
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 09 - myhuo
+  server: 202.50.253.90
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 10 - myhuo
+  server: 202.50.253.36
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 11 - myhuo
+  server: 202.50.253.27
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 12 - myhuo
+  server: 202.50.253.54
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 13 - myhuo
+  server: 202.50.253.99
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 14 - myhuo
+  server: 57.131.38.163
+  port: 2053
+  udp: true
+  type: vless
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  tls: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+    short-id: 5b8a942318178e7b
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇹 意大利 (Italy) 15 - myhuo
+  server: 91.201.65.122
+  port: 9070
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: bf7v334KKDV3YDhH
+- name: 🇮🇹 意大利 (Italy) 16 - myhuo
   server: 147.45.51.171
   port: 8443
   udp: true
@@ -80,7 +135,20 @@ proxies:
     short-id: e723d26df67888b9
   servername: twitch.tv
   client-fingerprint: firefox
-- name: 🇮🇹 意大利 (Italy) 11 - myhuo
+- name: 🇮🇹 意大利 (Italy) 17 - myhuo
+  server: 82.118.16.189
+  port: 443
+  udp: true
+  type: vless
+  uuid: d5e5f5a1-0f23-4c49-af9f-4be445bf9d8e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY
+    short-id: 37fbf155c7a9f3ff
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 18 - myhuo
   server: 82.118.16.187
   port: 443
   udp: true
@@ -93,54 +161,20 @@ proxies:
     short-id: cd6065902eea7a02
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 12 - myhuo
-  server: 82.118.16.189
-  port: 443
-  udp: true
-  type: vless
-  uuid: d5e5f5a1-0f23-4c49-af9f-4be445bf9d8e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY
-    short-id: 37fbf155c7a9f3ff
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇮🇹 意大利 (Italy) 13 - myhuo
-  server: 202.50.253.45
-  port: 19999
+- name: 🇮🇹 意大利 (Italy) 19 - myhuo
+  server: dns22.m3hrzd.ir
+  port: 1349
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 14 - myhuo
-  server: 202.50.253.36
-  port: 19999
+  cipher: chacha20-ietf-poly1305
+  password: LzEeLj2OP0DQmpPDtVTazdGC0cHcT0Kn
+- name: 🇮🇹 意大利 (Italy) 20 - myhuo
+  server: 91.201.65.122
+  port: 9097
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 15 - myhuo
-  server: 202.50.253.99
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 16 - myhuo
-  server: 202.50.253.27
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 17 - myhuo
-  server: 202.50.253.18
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-cfb
+  password: Sn5B7jTqr76aCJT8
 proxy-groups:
 - name: PROXIES
   type: select
@@ -163,6 +197,9 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 15 - myhuo
   - 🇮🇹 意大利 (Italy) 16 - myhuo
   - 🇮🇹 意大利 (Italy) 17 - myhuo
+  - 🇮🇹 意大利 (Italy) 18 - myhuo
+  - 🇮🇹 意大利 (Italy) 19 - myhuo
+  - 🇮🇹 意大利 (Italy) 20 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -185,5 +222,8 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 15 - myhuo
   - 🇮🇹 意大利 (Italy) 16 - myhuo
   - 🇮🇹 意大利 (Italy) 17 - myhuo
+  - 🇮🇹 意大利 (Italy) 18 - myhuo
+  - 🇮🇹 意大利 (Italy) 19 - myhuo
+  - 🇮🇹 意大利 (Italy) 20 - myhuo
 rules:
 - MATCH,PROXIES

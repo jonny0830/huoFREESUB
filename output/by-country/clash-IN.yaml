@@ -5,22 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - myhuo
-  server: 13.140.56.100
-  port: 14430
+  server: 139.84.145.241
+  port: 46362
   udp: true
   type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: in002.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - myhuo
-  server: 139.84.166.47
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: GEdoeeqLZtkJRgSa
-- name: 🇮🇳 印度 (India) 03 - myhuo
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -32,7 +26,7 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇮🇳 印度 (India) 04 - myhuo
+- name: 🇮🇳 印度 (India) 03 - myhuo
   server: in.smrtai.top
   port: 443
   udp: true
@@ -44,6 +38,15 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: random
+- name: 🇮🇳 印度 (India) 04 - myhuo
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
 - name: 🇮🇳 印度 (India) 05 - myhuo
   server: 152.67.8.205
   port: 80

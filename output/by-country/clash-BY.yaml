@@ -5,23 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇾 白俄罗斯 (Belarus) 01 - myhuo
-  server: 178.172.227.124
-  port: 10443
-  udp: true
-  type: vless
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
-- name: 🇧🇾 白俄罗斯 (Belarus) 02 - myhuo
-  server: 178.172.227.124
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.172.227.124
-- name: 🇧🇾 白俄罗斯 (Belarus) 03 - myhuo
   server: 95.128.71.79
   port: 14430
   udp: true
@@ -30,7 +13,9 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇧🇾 白俄罗斯 (Belarus) 04 - myhuo
+    headers:
+      Host: 95.128.71.79
+- name: 🇧🇾 白俄罗斯 (Belarus) 02 - myhuo
   server: 178.172.227.228
   port: 14430
   udp: true
@@ -41,6 +26,30 @@ proxies:
     path: /vless
     headers:
       Host: 178.172.227.228
+- name: 🇧🇾 白俄罗斯 (Belarus) 03 - myhuo
+  server: 95.128.71.79
+  port: 10444
+  udp: true
+  type: vless
+  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+- name: 🇧🇾 白俄罗斯 (Belarus) 04 - myhuo
+  server: 178.172.227.124
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.124
 - name: 🇧🇾 白俄罗斯 (Belarus) 05 - myhuo
   server: 178.172.227.124
   port: 10444
@@ -53,21 +62,8 @@ proxies:
     public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
     short-id: 8debcf36f1cc69ff
   servername: ads.x5.ru
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 🇧🇾 白俄罗斯 (Belarus) 06 - myhuo
-  server: 95.128.71.79
-  port: 10444
-  udp: true
-  type: vless
-  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: ads.x5.ru
-  client-fingerprint: safari
-- name: 🇧🇾 白俄罗斯 (Belarus) 07 - myhuo
   server: 178.172.227.228
   port: 10444
   udp: true
@@ -91,7 +87,6 @@ proxy-groups:
   - 🇧🇾 白俄罗斯 (Belarus) 04 - myhuo
   - 🇧🇾 白俄罗斯 (Belarus) 05 - myhuo
   - 🇧🇾 白俄罗斯 (Belarus) 06 - myhuo
-  - 🇧🇾 白俄罗斯 (Belarus) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -103,6 +98,5 @@ proxy-groups:
   - 🇧🇾 白俄罗斯 (Belarus) 04 - myhuo
   - 🇧🇾 白俄罗斯 (Belarus) 05 - myhuo
   - 🇧🇾 白俄罗斯 (Belarus) 06 - myhuo
-  - 🇧🇾 白俄罗斯 (Belarus) 07 - myhuo
 rules:
 - MATCH,PROXIES

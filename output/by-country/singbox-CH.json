@@ -33,8 +33,29 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 03 - myhuo",
+      "server": "45.90.57.119",
+      "server_port": 8443,
+      "uuid": "f5e70ce3-cfb4-4df1-b25c-d19bfae627c0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "twitch.tv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "L6DeK_a25_ZjPKFOrQLoCPWuXi5KCIH_EcRpARmCwkI",
+          "short_id": "16036bbef04d0509"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - myhuo",
       "server": "140.238.213.114",
       "server_port": 50160,
       "password": "84a506ca5aca505696a454d828420b3f",
@@ -46,59 +67,72 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - myhuo",
-      "server": "208.69.78.217",
-      "server_port": 2053,
-      "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - myhuo",
+      "server": "57.129.130.34",
+      "server_port": 52014,
+      "uuid": "bfbfeb23-2f8f-4ca2-9891-c1d708cffce2",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06 - myhuo",
+      "server": "144.31.135.38",
+      "server_port": 9444,
+      "uuid": "02720046-d432-4ee2-9783-06a71baa3647",
+      "tls": {
+        "enabled": true,
+        "server_name": "3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 07 - myhuo",
+      "server": "178.105.133.160",
+      "server_port": 4443,
+      "uuid": "298f220e-4cb6-4c13-8f20-c3b338bd923a",
+      "tls": {
+        "enabled": true,
+        "server_name": "3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev",
+        "insecure": false,
+        "utls": {
           "enabled": true,
-          "public_key": "A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0",
-          "short_id": "ad86e2d52ff40ebd"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 - myhuo",
-      "server": "208.69.78.217",
-      "server_port": 8444,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06 - myhuo",
-      "server": "208.69.78.217",
-      "server_port": 33171,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 07 - myhuo",
+      "tag": "🇨🇭 瑞士 (Switzerland) 08 - myhuo",
       "server": "208.69.78.217",
       "server_port": 33013,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
@@ -113,6 +147,69 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 09 - myhuo",
+      "server": "172.105.241.119",
+      "server_port": 1916,
+      "uuid": "df54bb48-921e-446a-9b10-1a2a0bef680b",
+      "tls": {
+        "enabled": true,
+        "server_name": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 10 - myhuo",
+      "server": "208.69.78.217",
+      "server_port": 2053,
+      "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0",
+          "short_id": "ad86e2d52ff40ebd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 11 - myhuo",
+      "server": "149.33.15.213",
+      "server_port": 443,
+      "uuid": "054362fb-e485-4a3f-9568-4c5b0f60e074",
+      "tls": {
+        "enabled": true,
+        "server_name": "swz.proxyplankton.ru",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -123,7 +220,11 @@
         "🇨🇭 瑞士 (Switzerland) 04 - myhuo",
         "🇨🇭 瑞士 (Switzerland) 05 - myhuo",
         "🇨🇭 瑞士 (Switzerland) 06 - myhuo",
-        "🇨🇭 瑞士 (Switzerland) 07 - myhuo"
+        "🇨🇭 瑞士 (Switzerland) 07 - myhuo",
+        "🇨🇭 瑞士 (Switzerland) 08 - myhuo",
+        "🇨🇭 瑞士 (Switzerland) 09 - myhuo",
+        "🇨🇭 瑞士 (Switzerland) 10 - myhuo",
+        "🇨🇭 瑞士 (Switzerland) 11 - myhuo"
       ]
     },
     {
@@ -136,7 +237,11 @@
         "🇨🇭 瑞士 (Switzerland) 04 - myhuo",
         "🇨🇭 瑞士 (Switzerland) 05 - myhuo",
         "🇨🇭 瑞士 (Switzerland) 06 - myhuo",
-        "🇨🇭 瑞士 (Switzerland) 07 - myhuo"
+        "🇨🇭 瑞士 (Switzerland) 07 - myhuo",
+        "🇨🇭 瑞士 (Switzerland) 08 - myhuo",
+        "🇨🇭 瑞士 (Switzerland) 09 - myhuo",
+        "🇨🇭 瑞士 (Switzerland) 10 - myhuo",
+        "🇨🇭 瑞士 (Switzerland) 11 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

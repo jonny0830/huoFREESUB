@@ -25,6 +25,19 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 03 - myhuo
+  server: 45.90.57.119
+  port: 8443
+  udp: true
+  type: vless
+  uuid: f5e70ce3-cfb4-4df1-b25c-d19bfae627c0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: L6DeK_a25_ZjPKFOrQLoCPWuXi5KCIH_EcRpARmCwkI
+    short-id: 16036bbef04d0509
+  servername: twitch.tv
+  client-fingerprint: firefox
+- name: 🇨🇭 瑞士 (Switzerland) 04 - myhuo
   server: 140.238.213.114
   port: 50160
   udp: true
@@ -32,7 +45,76 @@ proxies:
   password: 84a506ca5aca505696a454d828420b3f
   sni: 140.238.213.114
   skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 04 - myhuo
+- name: 🇨🇭 瑞士 (Switzerland) 05 - myhuo
+  server: 57.129.130.34
+  port: 52014
+  udp: true
+  type: vless
+  uuid: bfbfeb23-2f8f-4ca2-9891-c1d708cffce2
+  tls: true
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+- name: 🇨🇭 瑞士 (Switzerland) 06 - myhuo
+  server: 144.31.135.38
+  port: 9444
+  udp: true
+  type: vless
+  uuid: 02720046-d432-4ee2-9783-06a71baa3647
+  tls: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+- name: 🇨🇭 瑞士 (Switzerland) 07 - myhuo
+  server: 178.105.133.160
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 298f220e-4cb6-4c13-8f20-c3b338bd923a
+  tls: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+- name: 🇨🇭 瑞士 (Switzerland) 08 - myhuo
+  server: 208.69.78.217
+  port: 33013
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 09 - myhuo
+  server: 172.105.241.119
+  port: 1916
+  udp: true
+  type: vless
+  uuid: df54bb48-921e-446a-9b10-1a2a0bef680b
+  tls: true
+  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+- name: 🇨🇭 瑞士 (Switzerland) 10 - myhuo
   server: 208.69.78.217
   port: 2053
   udp: true
@@ -43,37 +125,17 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
+  client-fingerprint: random
+- name: 🇨🇭 瑞士 (Switzerland) 11 - myhuo
+  server: 149.33.15.213
+  port: 443
+  udp: true
+  type: vless
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+  tls: true
+  servername: swz.proxyplankton.ru
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 05 - myhuo
-  server: 208.69.78.217
-  port: 8444
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 06 - myhuo
-  server: 208.69.78.217
-  port: 33171
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 07 - myhuo
-  server: 208.69.78.217
-  port: 33013
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,6 +148,10 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 05 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 06 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 07 - myhuo
+  - 🇨🇭 瑞士 (Switzerland) 08 - myhuo
+  - 🇨🇭 瑞士 (Switzerland) 09 - myhuo
+  - 🇨🇭 瑞士 (Switzerland) 10 - myhuo
+  - 🇨🇭 瑞士 (Switzerland) 11 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -98,5 +164,9 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 05 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 06 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 07 - myhuo
+  - 🇨🇭 瑞士 (Switzerland) 08 - myhuo
+  - 🇨🇭 瑞士 (Switzerland) 09 - myhuo
+  - 🇨🇭 瑞士 (Switzerland) 10 - myhuo
+  - 🇨🇭 瑞士 (Switzerland) 11 - myhuo
 rules:
 - MATCH,PROXIES
