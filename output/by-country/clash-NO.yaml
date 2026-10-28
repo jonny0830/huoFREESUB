@@ -1,0 +1,41 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇳🇴 挪威 (Norway) 01 - myhuo
+  server: 185.213.23.63
+  port: 990
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: 🇳🇴 挪威 (Norway) 02 - myhuo
+  server: 45.12.63.39
+  port: 443
+  udp: true
+  type: vless
+  uuid: 26f751bc-2edc-4338-9c3f-abeb32aba3b7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA
+  servername: a6sh06nn94.edgecache.click
+  client-fingerprint: firefox
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇳🇴 挪威 (Norway) 01 - myhuo
+  - 🇳🇴 挪威 (Norway) 02 - myhuo
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇳🇴 挪威 (Norway) 01 - myhuo
+  - 🇳🇴 挪威 (Norway) 02 - myhuo
+rules:
+- MATCH,PROXIES

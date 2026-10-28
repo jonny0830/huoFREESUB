@@ -4,23 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇦🇪 阿联酋 (UAE) 01 - myhuo",
-      "server": "ams1.rvpn.app",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "x2A6AsyZ-rAllz0wbKHzWA"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - myhuo",
+      "tag": "🇦🇪 阿联酋 (UAE) 01 - myhuo",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
       "tls": {
         "enabled": true,
         "server_name": "hy2.aspidnet.xyz",
-        "insecure": true
+        "insecure": false
       },
       "obfs": {
         "type": "salamander",
@@ -28,66 +20,49 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - myhuo",
-      "server": "185.253.116.33",
-      "server_port": 14430,
-      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "185.253.116.33"
-        }
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - myhuo",
+      "server": "forshynewh.duckdns.org",
+      "server_port": 443,
+      "password": "329e13e4-ee7c-4802-ac72-5fcab79c2402",
+      "tls": {
+        "enabled": true,
+        "server_name": "forshynewh.duckdns.org",
+        "insecure": false
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - myhuo",
+      "server": "ams1.rvpn.app",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "x2A6AsyZ-rAllz0wbKHzWA"
     },
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 04 - myhuo",
-      "server": "107.191.53.86",
-      "server_port": 4798,
-      "uuid": "882b73fd-53fd-4956-a28b-2cb3ece9dc7c",
-      "tls": {
-        "enabled": true,
-        "server_name": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - myhuo",
-      "server": "91.132.48.136",
+      "server": "5.129.198.34",
       "server_port": 443,
-      "uuid": "0d607d84-0ae0-4b9c-a4f3-1766ab456e02",
+      "uuid": "26f751bc-2edc-4338-9c3f-abeb32aba3b7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "bunny.net",
+        "server_name": "mmxi9k64xsh7.assetgrid.space",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "_0hmzeEAGEx6boacV3d-FrFGaFBYfdvJno39FxveJwM",
-          "short_id": "e7c5f2a9"
+          "public_key": "fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA",
+          "short_id": ""
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - myhuo",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - myhuo",
       "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
@@ -101,37 +76,16 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 07 - myhuo",
-      "server": "45.77.241.190",
-      "server_port": 8441,
-      "uuid": "c6e09f95-bf02-4854-bcba-7a977a0f8ecd",
-      "tls": {
-        "enabled": true,
-        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - myhuo",
+      "server": "185.253.116.33",
+      "server_port": 14430,
+      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
       "transport": {
         "type": "ws",
-        "path": "/@Marisa_kristi",
+        "path": "/vless",
         "headers": {
-          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
+          "Host": "185.253.116.33"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 08 - myhuo",
-      "server": "forshynewh.duckdns.org",
-      "server_port": 443,
-      "password": "329e13e4-ee7c-4802-ac72-5fcab79c2402",
-      "tls": {
-        "enabled": true,
-        "server_name": "forshynewh.duckdns.org",
-        "insecure": false
       }
     },
     {
@@ -144,9 +98,7 @@
         "🇦🇪 阿联酋 (UAE) 03 - myhuo",
         "🇦🇪 阿联酋 (UAE) 04 - myhuo",
         "🇦🇪 阿联酋 (UAE) 05 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 06 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 07 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 08 - myhuo"
+        "🇦🇪 阿联酋 (UAE) 06 - myhuo"
       ]
     },
     {
@@ -158,9 +110,7 @@
         "🇦🇪 阿联酋 (UAE) 03 - myhuo",
         "🇦🇪 阿联酋 (UAE) 04 - myhuo",
         "🇦🇪 阿联酋 (UAE) 05 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 06 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 07 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 08 - myhuo"
+        "🇦🇪 阿联酋 (UAE) 06 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
