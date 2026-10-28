@@ -11,7 +11,7 @@ proxies:
   type: hysteria2
   password: d4ca9415f0eac7897472e1e5b86d2e96
   sni: promo.betust.net
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
   server: 5.178.109.174
   port: 14430
@@ -21,23 +21,20 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
-  server: 191.44.114.154
+  server: 191.44.114.179
   port: 2096
   udp: true
   type: vless
   uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
   tls: true
-  servername: st5ff8a.rumedia-cdn.com
+  servername: st33614.rumedia-cdn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /cdn/v3/live
     headers:
-      Host: st5ff8a.rumedia-cdn.com
+      Host: st33614.rumedia-cdn.com
 - name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
   server: 191.44.114.154
   port: 8443
@@ -52,33 +49,20 @@ proxies:
   servername: www.wikipedia.org
   client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
-  server: 191.44.114.179
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WEHGKyXsOD5i2kNCJ3GrjeNZQBsrzH76OrPDJ7x2YwY
-    short-id: 9d48935b2c2b8011
-  servername: www.wikipedia.org
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 06 - myhuo
-  server: 191.44.114.179
+  server: 191.44.114.154
   port: 2096
   udp: true
   type: vless
   uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
   tls: true
-  servername: st33614.rumedia-cdn.com
+  servername: st5ff8a.rumedia-cdn.com
   skip-cert-verify: false
   client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /cdn/v3/live
     headers:
-      Host: st33614.rumedia-cdn.com
+      Host: st5ff8a.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -89,7 +73,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - myhuo
   - 🇸🇪 瑞典 (Sweden) 04 - myhuo
   - 🇸🇪 瑞典 (Sweden) 05 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 06 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -100,6 +83,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - myhuo
   - 🇸🇪 瑞典 (Sweden) 04 - myhuo
   - 🇸🇪 瑞典 (Sweden) 05 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 06 - myhuo
 rules:
 - MATCH,PROXIES
