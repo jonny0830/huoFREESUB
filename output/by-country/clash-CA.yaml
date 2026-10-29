@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - myhuo
+  server: 35.183.129.117
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇨🇦 加拿大 (Canada) 02 - myhuo
   server: 216.152.147.48
   port: 443
   udp: true
@@ -12,38 +19,22 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: courses.connectingpeoplewithgreatjobs.com
   skip-cert-verify: false
-- name: 🇨🇦 加拿大 (Canada) 02 - myhuo
-  server: 23.162.200.198
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 03 - myhuo
-  server: 155.138.138.2
+  server: 216.152.147.85
   port: 443
   udp: true
   type: trojan
-  password: Trojan@82164024
-  sni: ca.tronsg.com
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.connectingpeoplewithgreatjobs.com
   skip-cert-verify: false
 - name: 🇨🇦 加拿大 (Canada) 04 - myhuo
-  server: 138.197.141.58
+  server: 137.184.174.93
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇨🇦 加拿大 (Canada) 05 - myhuo
-  server: 134.195.196.211
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 06 - myhuo
   server: 216.152.147.74
   port: 443
   udp: true
@@ -51,21 +42,28 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: api.connectingpeoplewithgreatjobs.com
   skip-cert-verify: false
-- name: 🇨🇦 加拿大 (Canada) 07 - myhuo
-  server: 149.22.95.183
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇨🇦 加拿大 (Canada) 08 - myhuo
-  server: 216.152.147.93
+- name: 🇨🇦 加拿大 (Canada) 06 - myhuo
+  server: 216.152.147.152
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectingpeoplewithgreatjobs.com
+  sni: learn.connectingpeoplewithgreatjobs.com
   skip-cert-verify: false
+- name: 🇨🇦 加拿大 (Canada) 07 - myhuo
+  server: 138.197.141.58
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇨🇦 加拿大 (Canada) 08 - myhuo
+  server: 16.54.253.154
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇨🇦 加拿大 (Canada) 09 - myhuo
   server: 66.70.179.198
   port: 2053
@@ -77,15 +75,70 @@ proxies:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
     short-id: 83f8317a948bb769
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 10 - myhuo
-  server: 137.184.174.93
-  port: 8080
+  server: 16.52.78.159
+  port: 443
   udp: true
   type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇨🇦 加拿大 (Canada) 11 - myhuo
+  server: 23.162.200.198
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 12 - myhuo
+  server: 149.22.95.183
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇨🇦 加拿大 (Canada) 13 - myhuo
+  server: 216.152.147.201
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.connectingpeoplewithgreatjobs.com
+  skip-cert-verify: false
+- name: 🇨🇦 加拿大 (Canada) 14 - myhuo
+  server: 134.195.196.211
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 15 - myhuo
+  server: www.windowsmsidownloads.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: www.windowsmsidownloads.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /truth
+- name: 🇨🇦 加拿大 (Canada) 16 - myhuo
+  server: ca001.zestapp778.com
+  port: 32355
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: ca001.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 17 - myhuo
   server: 209.200.246.148
   port: 443
   udp: true
@@ -97,46 +150,27 @@ proxies:
     public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
     short-id: f98843107912e782
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 12 - myhuo
-  server: 216.152.147.201
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.connectingpeoplewithgreatjobs.com
-  skip-cert-verify: false
-- name: 🇨🇦 加拿大 (Canada) 13 - myhuo
-  server: ca001.zestapp778.com
-  port: 32355
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: ca001.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 14 - myhuo
-  server: 51.79.85.185
-  port: 8118
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- name: 🇨🇦 加拿大 (Canada) 15 - myhuo
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 18 - myhuo
   server: 155.117.5.208
   port: 8080
   udp: true
   type: vless
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-- name: 🇨🇦 加拿大 (Canada) 16 - myhuo
-  server: 51.222.155.113
-  port: 5601
+- name: 🇨🇦 加拿大 (Canada) 19 - myhuo
+  server: 213.152.180.55
+  port: 2093
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇨🇦 加拿大 (Canada) 17 - myhuo
+  type: vless
+  uuid: dde66d29-7b12-4ced-acb9-84cd2419b0e0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
+    short-id: 8a9725533854a7e8
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 20 - myhuo
   server: 103.106.229.37
   port: 21004
   udp: true
@@ -148,14 +182,7 @@ proxies:
     short-id: 2df2bd9d8366cef1
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 18 - myhuo
-  server: 51.222.141.125
-  port: 445
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-- name: 🇨🇦 加拿大 (Canada) 19 - myhuo
+- name: 🇨🇦 加拿大 (Canada) 21 - myhuo
   server: 511.150333.xyz
   port: 21001
   udp: true
@@ -167,43 +194,7 @@ proxies:
     short-id: ab39fc68ab3dee81
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 20 - myhuo
-  server: 511.150333.xyz
-  port: 21003
-  udp: true
-  type: vless
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  tls: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-    short-id: bab49aa4c2a88d27
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 21 - myhuo
-  server: 510.150333.xyz
-  port: 21002
-  udp: true
-  type: vless
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  tls: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: d9a6b52e98121db2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 22 - myhuo
-  server: 510.150333.xyz
-  port: 21001
-  udp: true
-  type: vless
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  tls: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: a51c3ccb2320024a
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 23 - myhuo
   server: 510.150333.xyz
   port: 21004
   udp: true
@@ -215,7 +206,7 @@ proxies:
     short-id: 4e0418d648f86141
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 24 - myhuo
+- name: 🇨🇦 加拿大 (Canada) 23 - myhuo
   server: 511.150333.xyz
   port: 21002
   udp: true
@@ -227,21 +218,31 @@ proxies:
     short-id: 3ab8d93dd9b1a5be
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 24 - myhuo
+  server: 510.150333.xyz
+  port: 21001
+  udp: true
+  type: vless
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  tls: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: a51c3ccb2320024a
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 25 - myhuo
-  server: 51.79.64.198
-  port: 8119
+  server: 511.150333.xyz
+  port: 21003
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
+  type: vless
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  tls: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: bab49aa4c2a88d27
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 26 - myhuo
-  server: 51.222.200.165
-  port: 5000
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇨🇦 加拿大 (Canada) 27 - myhuo
   server: 510.150333.xyz
   port: 21003
   udp: true
@@ -252,7 +253,26 @@ proxies:
     public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
     short-id: f3602a3a1cf928b7
   servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 27 - myhuo
+  server: 510.150333.xyz
+  port: 21002
+  udp: true
+  type: vless
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  tls: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: d9a6b52e98121db2
+  servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 28 - myhuo
+  server: 51.222.136.236
+  port: 8882
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
 proxy-groups:
 - name: PROXIES
   type: select
@@ -285,6 +305,7 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 25 - myhuo
   - 🇨🇦 加拿大 (Canada) 26 - myhuo
   - 🇨🇦 加拿大 (Canada) 27 - myhuo
+  - 🇨🇦 加拿大 (Canada) 28 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -317,5 +338,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 25 - myhuo
   - 🇨🇦 加拿大 (Canada) 26 - myhuo
   - 🇨🇦 加拿大 (Canada) 27 - myhuo
+  - 🇨🇦 加拿大 (Canada) 28 - myhuo
 rules:
 - MATCH,PROXIES

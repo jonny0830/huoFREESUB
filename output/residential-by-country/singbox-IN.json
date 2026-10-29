@@ -5,17 +5,14 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
-      "server": "162.159.153.194",
+      "tag": "🇮🇳 印度 (India) 01 (家宽) - myhuo",
+      "server": "122.176.216.52",
       "server_port": 443,
-      "uuid": "1e922b22-d169-4461-89c1-07e09ff2617c",
+      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
       "tls": {
         "enabled": true,
-        "server_name": "vlesss.xttd.eu.org",
+        "server_name": "app-6ada5023.deploy.meerasolution.com",
         "insecure": false,
-        "alpn": [
-          "h3"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -23,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/proxyip=proxyip.fxxk.dedyn.io",
+        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
         "headers": {
-          "Host": "vlesss.xttd.eu.org"
+          "Host": "app-6ada5023.deploy.meerasolution.com"
         }
       }
     },
@@ -34,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - myhuo"
+        "🇮🇳 印度 (India) 01 (家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - myhuo"
+        "🇮🇳 印度 (India) 01 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

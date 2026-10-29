@@ -14,7 +14,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -35,7 +35,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -55,7 +55,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -71,42 +71,23 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 04 - myhuo",
-      "server": "83.217.9.230",
-      "server_port": 43000,
-      "uuid": "4f8493b1-9876-46c4-8ded-01cafb22cee0",
-      "flow": "xtls-rprx-vision",
+      "server": "177.3.208.65",
+      "server_port": 443,
+      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
       "tls": {
         "enabled": true,
-        "server_name": "83.217.9.230",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ptE_QnAka3pXNEf8BYKpA9CHdgj4U4xXTixjYWOji0U",
-          "short_id": "68d2eb23"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - myhuo",
-      "server": "136.234.9.23",
-      "server_port": 25021,
-      "uuid": "2446e2e2-1ce3-4502-9050-1dd32bacc68c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
+        "server_name": "tgmansion.site",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg",
-          "short_id": "17fa3af0924c88b3"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless-tr",
+        "headers": {
+          "Host": "tgmansion.site"
         }
       }
     },
@@ -118,8 +99,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - myhuo",
         "🇹🇷 土耳其 (Turkey) 02 - myhuo",
         "🇹🇷 土耳其 (Turkey) 03 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 04 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 05 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 04 - myhuo"
       ]
     },
     {
@@ -129,8 +109,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - myhuo",
         "🇹🇷 土耳其 (Turkey) 02 - myhuo",
         "🇹🇷 土耳其 (Turkey) 03 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 04 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 05 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - myhuo
-  server: 162.159.153.194
+- name: 🇮🇳 印度 (India) 01 (家宽) - myhuo
+  server: 122.176.216.52
   port: 443
   udp: true
   type: vless
-  uuid: 1e922b22-d169-4461-89c1-07e09ff2617c
+  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
   tls: true
-  servername: vlesss.xttd.eu.org
+  servername: app-6ada5023.deploy.meerasolution.com
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /proxyip=proxyip.fxxk.dedyn.io
+    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
-      Host: vlesss.xttd.eu.org
+      Host: app-6ada5023.deploy.meerasolution.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - myhuo
+  - 🇮🇳 印度 (India) 01 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - myhuo
+  - 🇮🇳 印度 (India) 01 (家宽) - myhuo
 rules:
 - MATCH,PROXIES

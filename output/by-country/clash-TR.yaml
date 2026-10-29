@@ -15,7 +15,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
   server: 78.135.73.47
   port: 443
@@ -28,7 +28,7 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 03 - myhuo
   server: 62.133.63.45
   port: 8444
@@ -40,36 +40,25 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: safari
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 04 - myhuo
-  server: 83.217.9.230
-  port: 43000
+  server: 177.3.208.65
+  port: 443
   udp: true
   type: vless
-  uuid: 4f8493b1-9876-46c4-8ded-01cafb22cee0
-  flow: xtls-rprx-vision
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   tls: true
-  reality-opts:
-    public-key: ptE_QnAka3pXNEf8BYKpA9CHdgj4U4xXTixjYWOji0U
-    short-id: 68d2eb23
-  servername: 83.217.9.230
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - myhuo
-  server: 136.234.9.23
-  port: 25021
-  udp: true
-  type: vless
-  uuid: 2446e2e2-1ce3-4502-9050-1dd32bacc68c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg
-    short-id: 17fa3af0924c88b3
-  servername: www.samsung.com
+  servername: tgmansion.site
+  skip-cert-verify: false
   client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: tgmansion.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,7 +68,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - myhuo
   - 🇹🇷 土耳其 (Turkey) 03 - myhuo
   - 🇹🇷 土耳其 (Turkey) 04 - myhuo
-  - 🇹🇷 土耳其 (Turkey) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,6 +77,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - myhuo
   - 🇹🇷 土耳其 (Turkey) 03 - myhuo
   - 🇹🇷 土耳其 (Turkey) 04 - myhuo
-  - 🇹🇷 土耳其 (Turkey) 05 - myhuo
 rules:
 - MATCH,PROXIES

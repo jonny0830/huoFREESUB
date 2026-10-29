@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - myhuo",
-      "server": "fbi.gov",
+      "server": "redis.com",
       "server_port": 443,
       "uuid": "e818a20d-9bcd-4744-9061-ca51b9c8aeea",
       "tls": {
@@ -35,7 +35,7 @@
       "tls": {
         "enabled": true,
         "server_name": "promo.betust.net",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -46,75 +46,7 @@
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
       "transport": {
         "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - myhuo",
-      "server": "191.44.114.154",
-      "server_port": 8443,
-      "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.wikipedia.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ndQzAcG4g-2OhvFb8EjFnZyxJ2lhawiulTLJOZrK8lY",
-          "short_id": "c4359f3827231250"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - myhuo",
-      "server": "191.44.114.154",
-      "server_port": 2096,
-      "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
-      "tls": {
-        "enabled": true,
-        "server_name": "st5ff8a.rumedia-cdn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "st5ff8a.rumedia-cdn.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - myhuo",
-      "server": "191.44.114.179",
-      "server_port": 8443,
-      "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.wikipedia.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WEHGKyXsOD5i2kNCJ3GrjeNZQBsrzH76OrPDJ7x2YwY",
-          "short_id": ""
-        }
+        "path": "/vless"
       }
     },
     {
@@ -124,10 +56,7 @@
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - myhuo",
         "🇸🇪 瑞典 (Sweden) 02 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 03 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 04 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 05 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 06 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 03 - myhuo"
       ]
     },
     {
@@ -136,10 +65,7 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - myhuo",
         "🇸🇪 瑞典 (Sweden) 02 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 03 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 04 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 05 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 06 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

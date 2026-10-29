@@ -6,7 +6,21 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - myhuo",
-      "server": "178.212.35.198",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "13.140.56.100"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 02 - myhuo",
+      "server": "in.smrtai.top",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
       "tls": {
@@ -25,7 +39,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - myhuo",
+      "tag": "🇮🇳 印度 (India) 03 - myhuo",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -34,7 +48,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -44,58 +58,24 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - myhuo",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
+      "type": "shadowsocks",
+      "tag": "🇮🇳 印度 (India) 04 - myhuo",
+      "server": "172.105.39.124",
+      "server_port": 7002,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 04 - myhuo",
-      "server": "in.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "in.tronsg.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
       "tag": "🇮🇳 印度 (India) 05 - myhuo",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 06 - myhuo",
       "server": "in002.zestapp778.com",
-      "server_port": 46362,
-      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+      "server_port": 42733,
+      "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
         "server_name": "in002.zestapp778.com",
         "insecure": false
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 07 - myhuo",
-      "server": "172.105.39.124",
-      "server_port": 7002,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "selector",
@@ -106,9 +86,7 @@
         "🇮🇳 印度 (India) 02 - myhuo",
         "🇮🇳 印度 (India) 03 - myhuo",
         "🇮🇳 印度 (India) 04 - myhuo",
-        "🇮🇳 印度 (India) 05 - myhuo",
-        "🇮🇳 印度 (India) 06 - myhuo",
-        "🇮🇳 印度 (India) 07 - myhuo"
+        "🇮🇳 印度 (India) 05 - myhuo"
       ]
     },
     {
@@ -119,9 +97,7 @@
         "🇮🇳 印度 (India) 02 - myhuo",
         "🇮🇳 印度 (India) 03 - myhuo",
         "🇮🇳 印度 (India) 04 - myhuo",
-        "🇮🇳 印度 (India) 05 - myhuo",
-        "🇮🇳 印度 (India) 06 - myhuo",
-        "🇮🇳 印度 (India) 07 - myhuo"
+        "🇮🇳 印度 (India) 05 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
