@@ -27,21 +27,21 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - myhuo",
-      "server": "193.124.17.190",
+      "server": "195.123.245.241",
       "server_port": 443,
-      "uuid": "6dfc9149-1ff9-41c3-8563-0ef284381731",
+      "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.tradingview.com",
+        "server_name": "gateway.icloud.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "1374bddeb25d"
+          "public_key": "hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw",
+          "short_id": "23d0950d60bc0d5b"
         }
       }
     },
@@ -67,13 +67,35 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 04 - myhuo",
+      "server": "193.124.17.190",
+      "server_port": 443,
+      "uuid": "4d017db2-7655-4276-9557-e2ec25b04ee7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "ee1716767f9b"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - myhuo",
         "🇨🇿 捷克 (Czech) 02 - myhuo",
-        "🇨🇿 捷克 (Czech) 03 - myhuo"
+        "🇨🇿 捷克 (Czech) 03 - myhuo",
+        "🇨🇿 捷克 (Czech) 04 - myhuo"
       ]
     },
     {
@@ -82,7 +104,8 @@
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - myhuo",
         "🇨🇿 捷克 (Czech) 02 - myhuo",
-        "🇨🇿 捷克 (Czech) 03 - myhuo"
+        "🇨🇿 捷克 (Czech) 03 - myhuo",
+        "🇨🇿 捷克 (Czech) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

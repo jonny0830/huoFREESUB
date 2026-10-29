@@ -4,46 +4,46 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo",
-      "server": "5.253.29.253",
-      "server_port": 443,
-      "uuid": "76ef5ab3-7075-4e23-b445-f3b1bd05d431",
+      "server": "171.22.119.74",
+      "server_port": 8446,
+      "password": "Pass-Client-1",
       "tls": {
         "enabled": true,
-        "server_name": "indi.qikbro.com",
-        "insecure": false
+        "server_name": "171.22.119.74",
+        "insecure": true
       },
       "transport": {
         "type": "grpc",
-        "service_name": "assets"
+        "service_name": "grpc-video-call"
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo",
-      "server": "5.253.42.164",
+      "server": "hydra.yokkastars.com",
       "server_port": 40443,
-      "uuid": "e99ba96d-dec8-42eb-be53-19e71eef7cab",
+      "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw",
-          "short_id": "68a8"
+          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
+          "short_id": "88b6"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo",
-      "server": "hydra.yokkastars.com",
+      "server": "5.253.28.240",
       "server_port": 2443,
       "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
       "tls": {

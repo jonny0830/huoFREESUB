@@ -16,19 +16,18 @@ proxies:
     public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
     short-id: 7f1e29593aa94ad1
   servername: www.bing.com
-  client-fingerprint: random
+  client-fingerprint: qq
 - name: 🇺🇦 乌克兰 (Ukraine) 02 - myhuo
-  server: staging.lastilhame.monster
+  server: netx.smrtai.top
   port: 443
   udp: true
   type: vless
-  uuid: aded66f1-de12-4c3c-af9e-a21d6e7d9c96
-  flow: xtls-rprx-vision
+  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
   tls: true
   reality-opts:
-    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 2a80364e93d9
-  servername: www.foxsports.com
+    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
+    short-id: d8b58872
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇺🇦 乌克兰 (Ukraine) 03 - myhuo
   server: 216.24.57.225
@@ -44,6 +43,19 @@ proxies:
     path: /wss
     headers:
       Host: pol.netvia.ir
+- name: 🇺🇦 乌克兰 (Ukraine) 04 - myhuo
+  server: staging.lastilhame.monster
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2f6e2b17-4d5e-4a12-8979-f53fdd347580
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
+    short-id: 5c8a8e6c615b
+  servername: www.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +64,7 @@ proxy-groups:
   - 🇺🇦 乌克兰 (Ukraine) 01 - myhuo
   - 🇺🇦 乌克兰 (Ukraine) 02 - myhuo
   - 🇺🇦 乌克兰 (Ukraine) 03 - myhuo
+  - 🇺🇦 乌克兰 (Ukraine) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,5 +73,6 @@ proxy-groups:
   - 🇺🇦 乌克兰 (Ukraine) 01 - myhuo
   - 🇺🇦 乌克兰 (Ukraine) 02 - myhuo
   - 🇺🇦 乌克兰 (Ukraine) 03 - myhuo
+  - 🇺🇦 乌克兰 (Ukraine) 04 - myhuo
 rules:
 - MATCH,PROXIES
