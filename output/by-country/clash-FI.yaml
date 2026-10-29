@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - myhuo
-  server: 196.196.204.174
-  port: 443
-  udp: true
-  type: vless
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  tls: true
-  reality-opts:
-    public-key: GJzag9Wrvz_bO9AQaA-Oq0P1kV9btmxxAdzPV-uQB18
-    short-id: 09d0a94a1c6fc9d5
-  servername: 8fc752g.fi3.h1clayd.click
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: f345a414c040
-- name: 🇫🇮 芬兰 (Finland) 02 - myhuo
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -30,7 +15,62 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 02 - myhuo
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - myhuo
+  server: 2.27.13.152
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 14YyFG_j2yPEUu-gO_G9GqCqRiZ0DIUgzReV9CZvOAk
+    short-id: 0f47ff9aa15e3e30
+  servername: www.nokia.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
+  server: 191.44.114.179
+  port: 2096
+  udp: true
+  type: vless
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  tls: true
+  servername: st33614.rumedia-cdn.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: st33614.rumedia-cdn.com
+- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
+  server: fn1s.sublinkplas.ir
+  port: 53731
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1Pey1iumq-W30iHVnTEERD2n1RFUS_pS
+- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
+  server: 91.103.140.6
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 46c16b68-2553-4e5e-8176-f63d6bf6ec0c
+  sni: fl.solomon-planet.ru
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -42,20 +82,23 @@ proxies:
     public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
-  server: 95.216.27.15
-  port: 2053
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 08 - myhuo
+  server: 84.22.150.39
+  port: 7443
   udp: true
   type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
   tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+- name: 🇫🇮 芬兰 (Finland) 09 - myhuo
   server: 2.27.13.152
   port: 2096
   udp: true
@@ -70,39 +113,6 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: st4834a.rumedia-cdn.com
-- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
-  server: dns22.m3hrzd.ir
-  port: 1346
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: U5Jk0BhRNKjb5wQBBOXx2wwkWZ_yWU0N
-- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
-  server: hw3.divarkhaghazi.com
-  port: 465
-  udp: true
-  type: vless
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  tls: true
-  servername: hw3.divarkhaghazi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 08 - myhuo
-  server: 193.188.21.253
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
 proxy-groups:
 - name: PROXIES
   type: select
@@ -116,6 +126,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - myhuo
   - 🇫🇮 芬兰 (Finland) 07 - myhuo
   - 🇫🇮 芬兰 (Finland) 08 - myhuo
+  - 🇫🇮 芬兰 (Finland) 09 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -129,5 +140,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - myhuo
   - 🇫🇮 芬兰 (Finland) 07 - myhuo
   - 🇫🇮 芬兰 (Finland) 08 - myhuo
+  - 🇫🇮 芬兰 (Finland) 09 - myhuo
 rules:
 - MATCH,PROXIES

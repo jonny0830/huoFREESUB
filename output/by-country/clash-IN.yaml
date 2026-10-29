@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - myhuo
-  server: in.smrtai.top
+  server: 178.212.35.198
   port: 443
   udp: true
   type: vless
@@ -17,14 +17,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02 - myhuo
-  server: 139.84.132.62
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: 139.84.132.62
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 03 - myhuo
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -35,8 +27,8 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 04 - myhuo
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 03 - myhuo
   server: 13.140.56.100
   port: 14430
   udp: true
@@ -45,16 +37,15 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇮🇳 印度 (India) 05 - myhuo
-  server: in002.zestapp778.com
-  port: 46362
+- name: 🇮🇳 印度 (India) 04 - myhuo
+  server: in.tronsg.com
+  port: 443
   udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: in002.zestapp778.com
-  skip-cert-verify: false
-- name: 🇮🇳 印度 (India) 06 - myhuo
+  type: trojan
+  password: Trojan@82164024
+  sni: in.tronsg.com
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 05 - myhuo
   server: 152.67.8.205
   port: 80
   udp: true
@@ -65,8 +56,22 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: in-152.67.8.205-0250
+- name: 🇮🇳 印度 (India) 06 - myhuo
+  server: in002.zestapp778.com
+  port: 46362
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: in002.zestapp778.com
+  skip-cert-verify: false
+- name: 🇮🇳 印度 (India) 07 - myhuo
+  server: 172.105.39.124
+  port: 7002
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,6 +83,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 04 - myhuo
   - 🇮🇳 印度 (India) 05 - myhuo
   - 🇮🇳 印度 (India) 06 - myhuo
+  - 🇮🇳 印度 (India) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,5 +95,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 04 - myhuo
   - 🇮🇳 印度 (India) 05 - myhuo
   - 🇮🇳 印度 (India) 06 - myhuo
+  - 🇮🇳 印度 (India) 07 - myhuo
 rules:
 - MATCH,PROXIES

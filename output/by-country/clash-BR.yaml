@@ -5,16 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - myhuo
-  server: br001.zestapp778.com
-  port: 15040
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: br.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇧🇷 巴西 (Brazil) 02 - myhuo
   server: 147.15.108.14
   port: 20000
   udp: true
@@ -24,20 +14,18 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
-- name: 🇧🇷 巴西 (Brazil) 03 - myhuo
-  server: 109.104.155.121
-  port: 443
+  ports: 20000-30000,20000-20000
+- name: 🇧🇷 巴西 (Brazil) 02 - myhuo
+  server: 216.128.173.124
+  port: 15040
   udp: true
   type: vless
-  uuid: caf3d607-95c9-4ea0-98b5-864027056ba0
-  flow: xtls-rprx-vision
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   tls: true
-  reality-opts:
-    public-key: 1TtWNQhTJr_3H7-ypMw4EiLzVxy22AzUtMiE5JmQMl4
-    short-id: 1c5869a95671bcb0
-  servername: br1.accessboy.com
+  servername: br001.zestapp778.com
+  skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇧🇷 巴西 (Brazil) 04 - myhuo
+- name: 🇧🇷 巴西 (Brazil) 03 - myhuo
   server: 216.238.104.154
   port: 443
   udp: true
@@ -53,7 +41,6 @@ proxy-groups:
   - 🇧🇷 巴西 (Brazil) 01 - myhuo
   - 🇧🇷 巴西 (Brazil) 02 - myhuo
   - 🇧🇷 巴西 (Brazil) 03 - myhuo
-  - 🇧🇷 巴西 (Brazil) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,6 +49,5 @@ proxy-groups:
   - 🇧🇷 巴西 (Brazil) 01 - myhuo
   - 🇧🇷 巴西 (Brazil) 02 - myhuo
   - 🇧🇷 巴西 (Brazil) 03 - myhuo
-  - 🇧🇷 巴西 (Brazil) 04 - myhuo
 rules:
 - MATCH,PROXIES
