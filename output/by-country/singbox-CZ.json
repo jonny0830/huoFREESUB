@@ -6,6 +6,27 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - myhuo",
+      "server": "195.123.245.241",
+      "server_port": 443,
+      "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw",
+          "short_id": "23d0950d60bc0d5b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - myhuo",
       "server": "212.102.38.25",
       "server_port": 443,
       "uuid": "b34a52cb-cd52-49a8-9362-b8e97c151d49",
@@ -26,14 +47,57 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - myhuo",
-      "server": "193.124.17.190",
-      "server_port": 443,
-      "uuid": "68cf8d29-5aa0-44b3-88a9-f1a576b6e84c",
+      "tag": "🇨🇿 捷克 (Czech) 03 - myhuo",
+      "server": "31.77.13.22",
+      "server_port": 2063,
+      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
+        "server_name": "rusbid.de",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 04 - myhuo",
+      "server": "104.19.235.15",
+      "server_port": 443,
+      "uuid": "f27b6f65-6e59-4f89-b929-afa397ca587f",
+      "tls": {
+        "enabled": true,
+        "server_name": "n.bitpulse.me",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/019bcbad-3813-7cce-8786-3ac0e418f128",
+        "headers": {
+          "Host": "n.bitpulse.me"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 05 - myhuo",
+      "server": "193.124.17.190",
+      "server_port": 443,
+      "uuid": "6dfc9149-1ff9-41c3-8563-0ef284381731",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.tradingview.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -41,7 +105,7 @@
         "reality": {
           "enabled": true,
           "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "73a9e631a09b"
+          "short_id": "1374bddeb25d"
         }
       }
     },
@@ -51,7 +115,10 @@
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - myhuo",
-        "🇨🇿 捷克 (Czech) 02 - myhuo"
+        "🇨🇿 捷克 (Czech) 02 - myhuo",
+        "🇨🇿 捷克 (Czech) 03 - myhuo",
+        "🇨🇿 捷克 (Czech) 04 - myhuo",
+        "🇨🇿 捷克 (Czech) 05 - myhuo"
       ]
     },
     {
@@ -59,7 +126,10 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - myhuo",
-        "🇨🇿 捷克 (Czech) 02 - myhuo"
+        "🇨🇿 捷克 (Czech) 02 - myhuo",
+        "🇨🇿 捷克 (Czech) 03 - myhuo",
+        "🇨🇿 捷克 (Czech) 04 - myhuo",
+        "🇨🇿 捷克 (Czech) 05 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -28,6 +28,17 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 03 - myhuo
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇮🇳 印度 (India) 04 - myhuo
   server: 178.212.35.198
   port: 443
   udp: true
@@ -39,14 +50,14 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 04 - myhuo
+- name: 🇮🇳 印度 (India) 05 - myhuo
   server: in002.zestapp778.com
   port: 42733
   udp: true
   type: trojan
   password: 5t6i121em5lkmsmk
   sni: in002.zestapp778.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,6 +67,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - myhuo
   - 🇮🇳 印度 (India) 03 - myhuo
   - 🇮🇳 印度 (India) 04 - myhuo
+  - 🇮🇳 印度 (India) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -65,5 +77,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - myhuo
   - 🇮🇳 印度 (India) 03 - myhuo
   - 🇮🇳 印度 (India) 04 - myhuo
+  - 🇮🇳 印度 (India) 05 - myhuo
 rules:
 - MATCH,PROXIES

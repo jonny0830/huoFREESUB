@@ -4,41 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - myhuo",
-      "server": "finland.biznes.lol",
-      "server_port": 8443,
-      "password": "7d43670b-6b08-45b9-8a24-8f3971abc132",
-      "tls": {
-        "enabled": true,
-        "server_name": "finland.biznes.lol",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - myhuo",
-      "server": "fi-1.bnc-gt.co.uk",
-      "server_port": 443,
-      "uuid": "7b22dce8-7ebd-425b-8ca4-7b6190321985",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "b.fi-1.bnc-gt.co.uk",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CegqLjzOImUmYD9ZdpOOG65UgNTGeQfRmpIni8iraB0",
-          "short_id": "7be1e9c243451b14"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -51,28 +18,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - myhuo",
-      "server": "78.17.27.137",
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - myhuo",
+      "server": "finland.biznes.lol",
       "server_port": 8443,
-      "uuid": "48d9a277-776b-4ab8-a357-88a1958beed8",
+      "password": "7d43670b-6b08-45b9-8a24-8f3971abc132",
       "tls": {
         "enabled": true,
-        "server_name": "www.aalto.fi",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM",
-          "short_id": "a05ccbf2edb5ebd1"
-        }
+        "server_name": "finland.biznes.lol",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - myhuo",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
       "server": "31.77.199.147",
       "server_port": 4443,
       "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
@@ -93,7 +52,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - myhuo",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - myhuo",
       "server": "65.109.210.221",
       "server_port": 465,
       "uuid": "924e20da-fcad-4e7e-8113-c62d27a0d01e",
@@ -118,12 +77,50 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 07 - myhuo",
-      "server": "65.21.52.113",
-      "server_port": 53731,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QoYjvkIZ7-bMIYfVI9IzRXUx5A1o3kj7"
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - myhuo",
+      "server": "78.17.27.137",
+      "server_port": 8443,
+      "uuid": "48d9a277-776b-4ab8-a357-88a1958beed8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.aalto.fi",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM",
+          "short_id": "a05ccbf2edb5ebd1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - myhuo",
+      "server": "65.109.211.81",
+      "server_port": 465,
+      "uuid": "09f30c46-3964-41ce-882a-72aee83ddd42",
+      "tls": {
+        "enabled": true,
+        "server_name": "hw6.divarkhaghazi.com.",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "hw6.divarkhaghazi.com."
+        }
+      }
     },
     {
       "type": "selector",
@@ -135,8 +132,7 @@
         "🇫🇮 芬兰 (Finland) 03 - myhuo",
         "🇫🇮 芬兰 (Finland) 04 - myhuo",
         "🇫🇮 芬兰 (Finland) 05 - myhuo",
-        "🇫🇮 芬兰 (Finland) 06 - myhuo",
-        "🇫🇮 芬兰 (Finland) 07 - myhuo"
+        "🇫🇮 芬兰 (Finland) 06 - myhuo"
       ]
     },
     {
@@ -148,8 +144,7 @@
         "🇫🇮 芬兰 (Finland) 03 - myhuo",
         "🇫🇮 芬兰 (Finland) 04 - myhuo",
         "🇫🇮 芬兰 (Finland) 05 - myhuo",
-        "🇫🇮 芬兰 (Finland) 06 - myhuo",
-        "🇫🇮 芬兰 (Finland) 07 - myhuo"
+        "🇫🇮 芬兰 (Finland) 06 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

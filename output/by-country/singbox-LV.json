@@ -25,32 +25,70 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - myhuo",
-      "server": "104.165.205.23",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "server": "138.124.180.137",
+      "server_port": 443,
+      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
+          "short_id": "33acba1b"
+        }
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - myhuo",
-      "server": "104.165.205.21",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "server": "45.43.79.92",
+      "server_port": 443,
+      "uuid": "042b12d8-bac4-4b3a-b661-79e333f08e4e",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
+        "server_name": "vikt659.isgood.host",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "M4Y9h339sntl5wEpiCa7f4IKhJ_8JLzPnAz2IzKlngM",
+          "short_id": "af4ca5d16438c938"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - myhuo",
+      "server": "45.38.143.210",
+      "server_port": 30584,
+      "uuid": "cebc5f19-18d9-48e6-9029-fb4b04caf393",
+      "tls": {
+        "enabled": true,
+        "server_name": "m.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y",
+          "short_id": "67ece882d65d0f1a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - myhuo",
       "server": "31.58.171.53",
       "server_port": 443,
       "uuid": "4d259556-57f7-4e5a-9a4a-48868787fb38",
@@ -71,40 +109,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - myhuo",
-      "server": "138.124.180.137",
-      "server_port": 443,
-      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
-          "short_id": "33acba1b"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - myhuo",
-      "server": "104.165.205.142",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - myhuo",
       "server": "195.123.208.32",
       "server_port": 443,
       "uuid": "1ebcb694-875c-4be7-b6a2-d53c8208991b",
@@ -124,26 +129,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - myhuo",
-      "server": "45.38.143.210",
-      "server_port": 30584,
-      "uuid": "cebc5f19-18d9-48e6-9029-fb4b04caf393",
-      "tls": {
-        "enabled": true,
-        "server_name": "m.vk.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y",
-          "short_id": "67ece882d65d0f1a"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -153,9 +138,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 03 - myhuo",
         "🇱🇻 拉脱维亚 (Latvia) 04 - myhuo",
         "🇱🇻 拉脱维亚 (Latvia) 05 - myhuo",
-        "🇱🇻 拉脱维亚 (Latvia) 06 - myhuo",
-        "🇱🇻 拉脱维亚 (Latvia) 07 - myhuo",
-        "🇱🇻 拉脱维亚 (Latvia) 08 - myhuo"
+        "🇱🇻 拉脱维亚 (Latvia) 06 - myhuo"
       ]
     },
     {
@@ -167,9 +150,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 03 - myhuo",
         "🇱🇻 拉脱维亚 (Latvia) 04 - myhuo",
         "🇱🇻 拉脱维亚 (Latvia) 05 - myhuo",
-        "🇱🇻 拉脱维亚 (Latvia) 06 - myhuo",
-        "🇱🇻 拉脱维亚 (Latvia) 07 - myhuo",
-        "🇱🇻 拉脱维亚 (Latvia) 08 - myhuo"
+        "🇱🇻 拉脱维亚 (Latvia) 06 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
