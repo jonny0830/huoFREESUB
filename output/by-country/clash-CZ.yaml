@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - myhuo
-  server: 195.123.245.241
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7c053ca8-38cc-45e2-930c-eda1fd66f903
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
-    short-id: 23d0950d60bc0d5b
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 02 - myhuo
   server: 212.102.38.25
   port: 443
   udp: true
@@ -29,43 +16,19 @@ proxies:
     public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
     short-id: e90360ec7cc61b20
   servername: udemy.com
-  client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 03 - myhuo
-  server: 31.77.13.22
-  port: 2063
-  udp: true
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 04 - myhuo
-  server: 46.8.113.64
-  port: 443
-  udp: true
-  type: vless
-  uuid: 55ad002b-6cdf-4d76-81bb-91f3f605afc5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _SukRXeT9BnvrE3eQTrw8vwsrhu7w3hNTMTEK2xzHEw
-  servername: www.zabbix.com
-  client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 05 - myhuo
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 02 - myhuo
   server: 193.124.17.190
   port: 443
   udp: true
   type: vless
-  uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
+  uuid: 68cf8d29-5aa0-44b3-88a9-f1a576b6e84c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: ee1716767f9b
-  servername: www.tradingview.com
+    short-id: 73a9e631a09b
+  servername: www.microsoft.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -74,9 +37,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - myhuo
   - 🇨🇿 捷克 (Czech) 02 - myhuo
-  - 🇨🇿 捷克 (Czech) 03 - myhuo
-  - 🇨🇿 捷克 (Czech) 04 - myhuo
-  - 🇨🇿 捷克 (Czech) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,8 +44,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - myhuo
   - 🇨🇿 捷克 (Czech) 02 - myhuo
-  - 🇨🇿 捷克 (Czech) 03 - myhuo
-  - 🇨🇿 捷克 (Czech) 04 - myhuo
-  - 🇨🇿 捷克 (Czech) 05 - myhuo
 rules:
 - MATCH,PROXIES
