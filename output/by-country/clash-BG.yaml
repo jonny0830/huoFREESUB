@@ -6,32 +6,32 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - myhuo
   server: 213.183.63.60
-  port: 9028
+  port: 9054
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
+  password: VcFuyXvND2yQWSFY
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - myhuo
-  server: 213.183.63.60
-  port: 9064
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - myhuo
   server: 213.183.63.60
   port: 9030
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: GeregetR8cvQHzYr
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - myhuo
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - myhuo
   server: 213.183.63.60
-  port: 9066
+  port: 9064
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 2KUaE2a8NWTvuCZ3
+  password: cp8pRSUAyLhTfVWH
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - myhuo
+  server: 213.183.63.60
+  port: 9028
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9eeJ2fwnZA5Fxgz8
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - myhuo
   server: 93.152.223.244
   port: 443
@@ -43,7 +43,7 @@ proxies:
   reality-opts:
     public-key: yKwDGqOdkC_nEPOQHMvAQLPcPK8YHskv_opYoY66Yk8
   servername: ddk5-ger.newagetechnologies.live
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 06 - myhuo
   server: 195.123.226.21
   port: 443
@@ -58,17 +58,16 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - myhuo
-  server: p1real4.greewebservices.ir
-  port: 1260
+  server: gb.privatevip.ir
+  port: 449
   udp: true
   type: vless
-  uuid: f234330e-f9df-46e3-8f60-b2af5173c147
-  tls: true
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: 9b60d3
-  servername: play.googleapis.com
-  client-fingerprint: ios
+  uuid: 7c730089-1791-4828-89b2-86e7e1663063
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: gb.privatevip.ir
 proxy-groups:
 - name: PROXIES
   type: select

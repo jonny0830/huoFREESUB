@@ -4,23 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 01 - myhuo",
-      "server": "104.21.0.1",
-      "server_port": 2083,
-      "uuid": "ac251237-576f-40c8-a543-554960c958b1",
-      "security": "auto",
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo",
+      "server": "206.1.96.108",
+      "server_port": 7443,
+      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
       "tls": {
         "enabled": true,
-        "server_name": "or3.sfacg.uk",
+        "server_name": "me17.msjia8844.site",
         "insecure": false
       },
-      "transport": {
-        "type": "ws",
-        "path": "/or3",
-        "headers": {
-          "Host": "or3.sfacg.uk"
-        }
+      "obfs": {
+        "type": "salamander",
+        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
       }
     },
     {
@@ -28,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
