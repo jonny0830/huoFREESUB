@@ -6,19 +6,12 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - myhuo
   server: 217.30.10.44
-  port: 9076
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
-- name: 🇵🇱 波兰 (Poland) 02 - myhuo
-  server: 217.30.10.44
   port: 9052
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 03 - myhuo
+- name: 🇵🇱 波兰 (Poland) 02 - myhuo
   server: 70.34.252.255
   port: 443
   udp: true
@@ -26,46 +19,15 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 03 - myhuo
+  server: 45.192.12.83
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 2a0fc918-9c61-451b-a9ad-e8f796e70f52
+  sni: nl1.obxodvpn.us
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 04 - myhuo
-  server: 72.56.235.137
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
-    short-id: b9120cd53ffd7bba
-  servername: update-76.topp-con.xyz
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 05 - myhuo
-  server: 2.26.255.215
-  port: 443
-  udp: true
-  type: vless
-  uuid: 69e41e64-a832-471a-b740-94577ca85520
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
-    short-id: '50'
-  servername: cloudflare.com
-  client-fingerprint: ''
-- name: 🇵🇱 波兰 (Poland) 06 - myhuo
-  server: 54.37.131.126
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 07 - myhuo
   server: 150.251.113.34
   port: 443
   udp: true
@@ -78,7 +40,19 @@ proxies:
     short-id: 150a627d15154cf2
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 08 - myhuo
+- name: 🇵🇱 波兰 (Poland) 05 - myhuo
+  server: 79.182.39.37
+  port: 27591
+  udp: true
+  type: vless
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  tls: true
+  reality-opts:
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+    short-id: 6c5c7900406a1ae7
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 06 - myhuo
   server: 82.118.22.161
   port: 443
   udp: true
@@ -91,6 +65,19 @@ proxies:
     short-id: fa3ea655619a3e78
   servername: www.cloudflare.com
   client-fingerprint: safari
+- name: 🇵🇱 波兰 (Poland) 07 - myhuo
+  server: 2.26.255.215
+  port: 443
+  udp: true
+  type: vless
+  uuid: 69e41e64-a832-471a-b740-94577ca85520
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
+    short-id: '50'
+  servername: cloudflare.com
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -103,7 +90,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - myhuo
   - 🇵🇱 波兰 (Poland) 06 - myhuo
   - 🇵🇱 波兰 (Poland) 07 - myhuo
-  - 🇵🇱 波兰 (Poland) 08 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -116,6 +102,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - myhuo
   - 🇵🇱 波兰 (Poland) 06 - myhuo
   - 🇵🇱 波兰 (Poland) 07 - myhuo
-  - 🇵🇱 波兰 (Poland) 08 - myhuo
 rules:
 - MATCH,PROXIES

@@ -5,36 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - myhuo
-  server: fi1.obxodvpn.us
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 2a0fc918-9c61-451b-a9ad-e8f796e70f52
-  sni: nl1.obxodvpn.us
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 02 - myhuo
-  server: 6.bmi.ir.asopardaz.ir
-  port: 35176
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: NjcyNmVjMTU1ZWU5NDA5ZDk0ODg1NWM1MzJjZTE3NDk=:YzYxMzAwMWNiMDYyNDFhZDhkYjdmNmEzZWIwNmY2MmM=
-- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
-  server: hw3.divarkhaghazi.com.
-  port: 465
-  udp: true
-  type: vless
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  tls: true
-  servername: hw3.divarkhaghazi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -47,32 +17,23 @@ proxies:
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
-  server: 6.bmi.ir.asopardaz.ir
+- name: 🇫🇮 芬兰 (Finland) 02 - myhuo
+  server: finland.biznes.lol
   port: 8443
   udp: true
-  type: vless
-  uuid: c613001c-b062-41ad-8db7-f6a3eb06f62c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: hostgator.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
-  server: 78.17.27.137
-  port: 8443
+  type: hysteria2
+  password: 7d43670b-6b08-45b9-8a24-8f3971abc132
+  sni: finland.biznes.lol
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
+  server: 177.3.220.9
+  port: 443
   udp: true
-  type: vless
-  uuid: 48d9a277-776b-4ab8-a357-88a1958beed8
-  tls: true
-  reality-opts:
-    public-key: DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM
-    short-id: a05ccbf2edb5ebd1
-  servername: www.aalto.fi
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
+  type: hysteria2
+  password: 2a0fc918-9c61-451b-a9ad-e8f796e70f52
+  sni: nl1.obxodvpn.us
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -83,14 +44,47 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 08 - myhuo
-  server: 153.76.194.118
-  port: 8443
+- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
+  server: 65.109.211.81
+  port: 465
   udp: true
-  type: hysteria2
-  password: 7d43670b-6b08-45b9-8a24-8f3971abc132
-  sni: finland.biznes.lol
+  type: vless
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  tls: true
+  servername: hw6.divarkhaghazi.com.
   skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
+  server: 65.109.210.221
+  port: 465
+  udp: true
+  type: vless
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  tls: true
+  servername: hw3.divarkhaghazi.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
+  server: swidenafterlanzerotte.space
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM
+  servername: swidenafterlanzerotte.space
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -103,7 +97,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - myhuo
   - 🇫🇮 芬兰 (Finland) 06 - myhuo
   - 🇫🇮 芬兰 (Finland) 07 - myhuo
-  - 🇫🇮 芬兰 (Finland) 08 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -116,6 +109,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - myhuo
   - 🇫🇮 芬兰 (Finland) 06 - myhuo
   - 🇫🇮 芬兰 (Finland) 07 - myhuo
-  - 🇫🇮 芬兰 (Finland) 08 - myhuo
 rules:
 - MATCH,PROXIES

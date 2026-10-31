@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - myhuo
-  server: 155.117.5.208
+  server: 178.83.45.226
   port: 2052
   udp: true
   type: vless
@@ -22,7 +22,7 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
   server: 162.249.125.133
   port: 443
@@ -47,7 +47,7 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - myhuo
-  server: app-ms-90.next-gen-shopping.com
+  server: 2.26.89.192
   port: 443
   udp: true
   type: vless
@@ -58,22 +58,22 @@ proxies:
     public-key: HA8RX24k72lyACy0T1mCDeYcUQh22XRlT4wuhj3Onl4
     short-id: 36b707a341db758d
   servername: assets-ms-90.next-gen-shopping.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇷🇴 罗马尼亚 (Romania) 06 - myhuo
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: css.rbxcdn.com
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - myhuo
   server: 154.46.31.106
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 (Romania) 07 - myhuo
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: www.amazon.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
