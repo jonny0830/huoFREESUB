@@ -18,6 +18,27 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo",
+      "server": "185.225.205.53",
+      "server_port": 443,
+      "uuid": "7a0348d6-55d3-4c23-b22f-6277fcb2264c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8",
+          "short_id": "2e82d7ac"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo",
       "server": "ee.h1cloud.net",
       "server_port": 25895,
       "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
@@ -36,12 +57,82 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo",
+      "server": "5.1.40.6",
+      "server_port": 2083,
+      "uuid": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtestmark.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless-ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo",
+      "server": "132.243.66.98",
+      "server_port": 443,
+      "uuid": "c29fa587-b10d-445d-b7e3-eaa6d1bd1330",
+      "tls": {
+        "enabled": true,
+        "server_name": "media.aava.lalibobi.online",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/live/showroom",
+        "headers": {
+          "Host": "media.aava.lalibobi.online"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo",
+      "server": "188.225.83.133",
+      "server_port": 443,
+      "uuid": "5f1c2e83-d4aa-4f10-81e9-e0ccc018974c",
+      "tls": {
+        "enabled": true,
+        "server_name": "xnodtwx.artemida.live",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw",
+          "short_id": "a1b2c3d4e5f6a7b8"
+        }
+      },
+      "transport": {
+        "type": "grpc"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo"
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo"
       ]
     },
     {
@@ -49,7 +140,11 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo"
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo",
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

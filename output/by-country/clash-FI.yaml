@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - myhuo
+  server: 153.76.194.118
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 7d43670b-6b08-45b9-8a24-8f3971abc132
+  sni: finland.biznes.lol
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 02 - myhuo
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -13,45 +21,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02 - myhuo
-  server: finland.biznes.lol
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 7d43670b-6b08-45b9-8a24-8f3971abc132
-  sni: finland.biznes.lol
-  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 03 - myhuo
-  server: 31.77.199.147
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
-  server: 65.109.210.221
-  port: 465
-  udp: true
-  type: vless
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  tls: true
-  servername: hw3.divarkhaghazi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
   server: 78.17.27.137
   port: 8443
   udp: true
@@ -63,7 +33,7 @@ proxies:
     short-id: a05ccbf2edb5ebd1
   servername: www.aalto.fi
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
+- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
   server: 65.109.211.81
   port: 465
   udp: true
@@ -78,6 +48,59 @@ proxies:
     path: /
     headers:
       Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
+  server: 65.109.210.221
+  port: 465
+  udp: true
+  type: vless
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  tls: true
+  servername: hw3.divarkhaghazi.com.
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
+  server: 31.77.199.147
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
+  server: 87.228.92.104
+  port: 443
+  udp: true
+  type: vless
+  uuid: 01a8c896-1abd-425d-bf75-b0b355754cc1
+  tls: true
+  reality-opts:
+    public-key: JpBC1XkdycLVlXlt2oe-pMVLYlI83WEurSPA8fPkPiE
+    short-id: d9d36cd07fbe103e
+  servername: 9fd04ct.fi4.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 08 - myhuo
+  server: 178.72.185.235
+  port: 40446
+  udp: true
+  type: vless
+  uuid: 572b3d30-3ced-4b88-9e06-4241f124cc88
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EbXSjwJKAI1cmU2TK3af62qS2k58x8Rnct1525c0m1I
+    short-id: d4e5f60718293a4b
+  servername: www.booking.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -89,6 +112,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
   - 🇫🇮 芬兰 (Finland) 05 - myhuo
   - 🇫🇮 芬兰 (Finland) 06 - myhuo
+  - 🇫🇮 芬兰 (Finland) 07 - myhuo
+  - 🇫🇮 芬兰 (Finland) 08 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -100,5 +125,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
   - 🇫🇮 芬兰 (Finland) 05 - myhuo
   - 🇫🇮 芬兰 (Finland) 06 - myhuo
+  - 🇫🇮 芬兰 (Finland) 07 - myhuo
+  - 🇫🇮 芬兰 (Finland) 08 - myhuo
 rules:
 - MATCH,PROXIES

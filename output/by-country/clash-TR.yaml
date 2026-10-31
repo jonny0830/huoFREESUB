@@ -33,6 +33,28 @@ proxies:
   servername: www.datadoghq.com
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 03 - myhuo
+  server: 153.56.210.134
+  port: 34121
+  udp: true
+  type: hysteria2
+  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
+- name: 🇹🇷 土耳其 (Turkey) 04 - myhuo
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 05 - myhuo
   server: 177.3.208.65
   port: 443
   udp: true
@@ -41,23 +63,20 @@ proxies:
   tls: true
   servername: tgmansion.site
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /vless-tr
-- name: 🇹🇷 土耳其 (Turkey) 04 - myhuo
-  server: tr2.h1cloud.net
-  port: 25021
+    headers:
+      Host: tgmansion.site
+- name: 🇹🇷 土耳其 (Turkey) 06 - myhuo
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16272
   udp: true
-  type: vless
-  uuid: 2446e2e2-1ce3-4502-9050-1dd32bacc68c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg
-    short-id: 17fa3af0924c88b3
-  servername: www.samsung.com
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,6 +86,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - myhuo
   - 🇹🇷 土耳其 (Turkey) 03 - myhuo
   - 🇹🇷 土耳其 (Turkey) 04 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 05 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 06 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,5 +97,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - myhuo
   - 🇹🇷 土耳其 (Turkey) 03 - myhuo
   - 🇹🇷 土耳其 (Turkey) 04 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 05 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 06 - myhuo
 rules:
 - MATCH,PROXIES

@@ -4,20 +4,78 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - myhuo",
-      "server": "70.34.207.14",
+      "server": "medium.com",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "uuid": "e818a20d-9bcd-4744-9061-ca51b9c8aeea",
       "tls": {
         "enabled": true,
-        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
+        "server_name": "wallweb-4ez.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "wallweb-4ez.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - myhuo",
+      "server": "50.7.38.243",
+      "server_port": 443,
+      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
+      "tls": {
+        "enabled": true,
+        "server_name": "promo.betust.net",
         "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - myhuo",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - myhuo",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - myhuo",
+      "server": "144.31.129.174",
+      "server_port": 443,
+      "uuid": "6f34a071-9a87-001e-b01a-4b5a5c95e552",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "s3-fi-1.rucdn777.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GDlgvx8exl9BJ5dD2HSVqE2oUbZyZZOFX5EdnCn5j2M",
+          "short_id": "20ed7ee26095771b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - myhuo",
       "server": "171.25.158.163",
       "server_port": 443,
       "uuid": "706bce83-91db-4260-b175-cba29145cd56",
@@ -37,31 +95,32 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - myhuo",
-      "server": "50.7.38.243",
+      "type": "trojan",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - myhuo",
+      "server": "70.34.207.14",
       "server_port": 443,
-      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "promo.betust.net",
+        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - myhuo",
+      "server": "192.142.23.46",
+      "server_port": 443,
+      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
+      "tls": {
+        "enabled": true,
+        "server_name": "diffoscope.com",
         "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - myhuo",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - myhuo",
+      "tag": "🇸🇪 瑞典 (Sweden) 08 - myhuo",
       "server": "31.172.65.4",
       "server_port": 8443,
       "uuid": "9c6e83fc-b755-4ad4-9b0a-14b610153d8f",
@@ -71,7 +130,7 @@
         "server_name": "www.bing.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -81,15 +140,24 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - myhuo",
-      "server": "192.142.23.46",
-      "server_port": 443,
-      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 09 - myhuo",
+      "server": "178.72.185.235",
+      "server_port": 40447,
+      "uuid": "572b3d30-3ced-4b88-9e06-4241f124cc88",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "diffoscope.com",
-        "insecure": false
+        "server_name": "www.booking.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EbXSjwJKAI1cmU2TK3af62qS2k58x8Rnct1525c0m1I",
+          "short_id": "30fc443cf34a1471"
+        }
       }
     },
     {
@@ -102,7 +170,10 @@
         "🇸🇪 瑞典 (Sweden) 03 - myhuo",
         "🇸🇪 瑞典 (Sweden) 04 - myhuo",
         "🇸🇪 瑞典 (Sweden) 05 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 06 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 06 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 07 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 08 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 09 - myhuo"
       ]
     },
     {
@@ -114,7 +185,10 @@
         "🇸🇪 瑞典 (Sweden) 03 - myhuo",
         "🇸🇪 瑞典 (Sweden) 04 - myhuo",
         "🇸🇪 瑞典 (Sweden) 05 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 06 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 06 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 07 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 08 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 09 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
