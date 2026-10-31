@@ -5,24 +5,18 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 01 (家宽) - myhuo",
-      "server": "122.176.216.52",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - myhuo",
+      "server": "2.56.207.68",
       "server_port": 443,
-      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+      "uuid": "0192c3d3-18d5-4b95-8eb3-598e18de6918",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "app-6ada5023.deploy.meerasolution.com",
+        "server_name": "www.slovarik.xyz",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
-        "headers": {
-          "Host": "app-6ada5023.deploy.meerasolution.com"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -31,14 +25,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 (家宽) - myhuo"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 (家宽) - myhuo"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

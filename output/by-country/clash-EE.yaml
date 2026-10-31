@@ -13,44 +13,6 @@ proxies:
   sni: nl1.obxodvpn.us
   skip-cert-verify: false
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
-  server: 185.225.205.53
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7a0348d6-55d3-4c23-b22f-6277fcb2264c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8
-    short-id: 2e82d7ac
-  servername: addons.mozilla.org
-  client-fingerprint: qq
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo
-  server: ee.h1cloud.net
-  port: 25895
-  udp: true
-  type: vless
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  tls: true
-  reality-opts:
-    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-    short-id: a73f0410d728c823
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo
-  server: 5.1.40.6
-  port: 2083
-  udp: true
-  type: vless
-  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  tls: true
-  servername: speedtestmark.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-ws
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo
   server: 132.243.66.98
   port: 443
   udp: true
@@ -65,21 +27,18 @@ proxies:
     path: /live/showroom
     headers:
       Host: media.aava.lalibobi.online
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo
-  server: 188.225.83.133
-  port: 443
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo
+  server: ee.h1cloud.net
+  port: 25895
   udp: true
   type: vless
-  uuid: 5f1c2e83-d4aa-4f10-81e9-e0ccc018974c
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   tls: true
   reality-opts:
-    public-key: JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw
-    short-id: a1b2c3d4e5f6a7b8
-  servername: xnodtwx.artemida.live
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
+  servername: www.samsung.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,9 +47,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,8 +55,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - myhuo
 rules:
 - MATCH,PROXIES

@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 爱尔兰 (Ireland) 01 - myhuo
-  server: 45.132.176.61
-  port: 443
+- name: 🇸🇮 斯洛文尼亚 (Slovenia) 01 - myhuo
+  server: 92.42.201.65
+  port: 4443
   udp: true
   type: vless
-  uuid: 1b7ee703-fa08-4305-8469-ae3e30e61e44
+  uuid: e0134f1c-8b74-4733-9c34-50cb251480c2
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: _qSbW4JL4Ffqvj25vX-6a2ul9Qlj6PBdlF0ghsf_0RQ
-    short-id: a9dc98a7dc87a7dc
-  servername: sopelka.yandex-api.com
+    public-key: CTiiN_SriTUj-eBv0047HpCWgLtAzWzq-gwvIWN9KUI
+    short-id: 7f0275a4db6068fb
+  servername: node-slo03.rkitman.ru
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 爱尔兰 (Ireland) 01 - myhuo
+  - 🇸🇮 斯洛文尼亚 (Slovenia) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 爱尔兰 (Ireland) 01 - myhuo
+  - 🇸🇮 斯洛文尼亚 (Slovenia) 01 - myhuo
 rules:
 - MATCH,PROXIES

@@ -4,25 +4,18 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇭🇺 匈牙利 (Hungary) 01 - myhuo",
-      "server": "172.67.131.125",
-      "server_port": 2083,
-      "uuid": "f418674e-f518-4318-8ff9-e10000000046",
+      "type": "trojan",
+      "tag": "🇵🇭 菲律宾 (Philippines) 01 - myhuo",
+      "server": "ph001.zestapp778.com",
+      "server_port": 46298,
+      "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
-        "server_name": "smart-edge-424.arti98399-1905.workers.dev",
+        "server_name": "ph001.zestapp778.com",
         "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "smart-edge-424.arti98399-1905.workers.dev"
         }
       }
     },
@@ -31,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇺 匈牙利 (Hungary) 01 - myhuo"
+        "🇵🇭 菲律宾 (Philippines) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇺 匈牙利 (Hungary) 01 - myhuo"
+        "🇵🇭 菲律宾 (Philippines) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

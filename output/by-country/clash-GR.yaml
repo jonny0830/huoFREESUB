@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇷 希腊 (Greece) 01 - myhuo
-  server: 62.60.229.216
-  port: 443
-  udp: true
-  type: vless
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: eh8WqxaSUlfNmlGzFLYFYrJzk1novnvfU6qmaLLOiX4
-    short-id: 72d410ce5f2036c9
-  servername: aezaf1.uni-plan.com
-  client-fingerprint: ''
-- name: 🇬🇷 希腊 (Greece) 02 - myhuo
   server: 85.90.197.220
   port: 443
   udp: true
@@ -36,13 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇬🇷 希腊 (Greece) 01 - myhuo
-  - 🇬🇷 希腊 (Greece) 02 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇬🇷 希腊 (Greece) 01 - myhuo
-  - 🇬🇷 希腊 (Greece) 02 - myhuo
 rules:
 - MATCH,PROXIES

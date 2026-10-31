@@ -5,6 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - myhuo
+  server: 185.98.63.6
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2771954b-3f7f-49cb-90fd-32616e90a2f3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
+  server: 153.56.210.134
+  port: 34121
+  udp: true
+  type: hysteria2
+  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
+- name: 🇹🇷 土耳其 (Turkey) 03 - myhuo
   server: 62.133.63.45
   port: 8444
   udp: true
@@ -19,7 +41,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
+- name: 🇹🇷 土耳其 (Turkey) 04 - myhuo
   server: 78.135.73.47
   port: 443
   udp: true
@@ -31,18 +53,8 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - myhuo
-  server: 153.56.210.134
-  port: 34121
-  udp: true
-  type: hysteria2
-  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
-- name: 🇹🇷 土耳其 (Turkey) 04 - myhuo
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 05 - myhuo
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -54,7 +66,20 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 05 - myhuo
+- name: 🇹🇷 土耳其 (Turkey) 06 - myhuo
+  server: 206.1.97.108
+  port: 25021
+  udp: true
+  type: vless
+  uuid: 2446e2e2-1ce3-4502-9050-1dd32bacc68c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg
+    short-id: 17fa3af0924c88b3
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 07 - myhuo
   server: 177.3.208.65
   port: 443
   udp: true
@@ -63,20 +88,9 @@ proxies:
   tls: true
   servername: tgmansion.site
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /vless-tr
-    headers:
-      Host: tgmansion.site
-- name: 🇹🇷 土耳其 (Turkey) 06 - myhuo
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16272
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,6 +102,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - myhuo
   - 🇹🇷 土耳其 (Turkey) 05 - myhuo
   - 🇹🇷 土耳其 (Turkey) 06 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,5 +114,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - myhuo
   - 🇹🇷 土耳其 (Turkey) 05 - myhuo
   - 🇹🇷 土耳其 (Turkey) 06 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 07 - myhuo
 rules:
 - MATCH,PROXIES

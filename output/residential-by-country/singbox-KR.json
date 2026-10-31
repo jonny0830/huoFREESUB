@@ -4,8 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo",
+      "server": "112.169.175.199",
+      "server_port": 31157,
+      "uuid": "bd2fb303-b4c7-49af-a8e3-5c6f11b005dd"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo",
       "server": "p141.panda001.net",
       "server_port": 4652,
       "method": "aes-256-cfb",
@@ -16,14 +23,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

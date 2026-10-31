@@ -16,7 +16,7 @@ proxies:
     public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
     short-id: 296f27de82dad7ff
   servername: www.bing.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: 🇲🇩 摩尔多瓦 (Moldova) 02 - myhuo
   server: 5.181.158.193
   port: 443
@@ -31,6 +31,19 @@ proxies:
   servername: svoboda18.bystriynet.online
   client-fingerprint: firefox
 - name: 🇲🇩 摩尔多瓦 (Moldova) 03 - myhuo
+  server: 5.181.158.100
+  port: 8481
+  udp: true
+  type: vless
+  uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -Ri2C7Y1tPrP8hQkgXOqVyR1Sqv5MdLZxAAu9M5kfn0
+    short-id: 44add17dbecb11ba
+  servername: svoboda16.bystriynet.online
+  client-fingerprint: firefox
+- name: 🇲🇩 摩尔多瓦 (Moldova) 04 - myhuo
   server: 5.181.158.100
   port: 8470
   udp: true
@@ -51,6 +64,7 @@ proxy-groups:
   - 🇲🇩 摩尔多瓦 (Moldova) 01 - myhuo
   - 🇲🇩 摩尔多瓦 (Moldova) 02 - myhuo
   - 🇲🇩 摩尔多瓦 (Moldova) 03 - myhuo
+  - 🇲🇩 摩尔多瓦 (Moldova) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,5 +73,6 @@ proxy-groups:
   - 🇲🇩 摩尔多瓦 (Moldova) 01 - myhuo
   - 🇲🇩 摩尔多瓦 (Moldova) 02 - myhuo
   - 🇲🇩 摩尔多瓦 (Moldova) 03 - myhuo
+  - 🇲🇩 摩尔多瓦 (Moldova) 04 - myhuo
 rules:
 - MATCH,PROXIES
