@@ -5,7 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo
-  server: 138.124.58.206
+  server: 5.253.42.164
+  port: 40443
+  udp: true
+  type: vless
+  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo
+  server: 45.86.60.102
   port: 8443
   udp: true
   type: vless
@@ -15,7 +28,7 @@ proxies:
   reality-opts:
     public-key: 1H1DiBCBB7fpALV71pH1q66ePybBFlVOcxftdlQimQ8
     short-id: 385cb18df0892069
-  servername: fr1.vpngold.ru
+  servername: ee1.vpngold.ru
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -23,11 +36,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo
 rules:
 - MATCH,PROXIES

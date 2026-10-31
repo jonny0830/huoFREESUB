@@ -4,20 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - myhuo",
-      "server": "2.56.207.68",
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo",
+      "server": "125.227.86.45",
       "server_port": 443,
-      "uuid": "0192c3d3-18d5-4b95-8eb3-598e18de6918",
-      "flow": "xtls-rprx-vision",
+      "password": "0a9f1f5a397bd427",
       "tls": {
         "enabled": true,
-        "server_name": "www.slovarik.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "server_name": "TG.freecodes",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "db"
       }
     },
     {
@@ -25,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 亚美尼亚 (Armenia) 01 - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 亚美尼亚 (Armenia) 01 - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

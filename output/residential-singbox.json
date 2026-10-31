@@ -4,63 +4,47 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
-      "server": "155.117.19.17",
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
+      "server": "125.227.86.45",
       "server_port": 443,
-      "password": "5fa748137b6d822308eea4611f474ad5",
+      "password": "0a9f1f5a397bd427",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
+        "server_name": "TG.freecodes",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
       },
-      "obfs": {
-        "type": "salamander",
-        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
+      "transport": {
+        "type": "grpc",
+        "service_name": "db"
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo",
-      "server": "112.169.175.199",
-      "server_port": 31157,
-      "uuid": "bd2fb303-b4c7-49af-a8e3-5c6f11b005dd"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - myhuo",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16116,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 04 (家宽) - myhuo",
-      "server": "p141.panda001.net",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - myhuo",
-        "🇰🇷 韩国 (South Korea) 04 (家宽) - myhuo"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - myhuo",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - myhuo",
-        "🇰🇷 韩国 (South Korea) 04 (家宽) - myhuo"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

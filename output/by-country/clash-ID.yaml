@@ -4,25 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - myhuo
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16116
+- name: 🇮🇩 印尼 (Indonesia) 01 - myhuo
+  server: az-1.linkaa.xyz
+  port: 55386
   udp: true
   type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  uuid: 6E571484-4166-4699-8F58-B34A1823691F
   alterId: 0
   cipher: auto
+  network: ws
+  ws-opts:
+    path: /game/resources
+    headers:
+      Host: az-1.linkaa.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - myhuo
+  - 🇮🇩 印尼 (Indonesia) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - myhuo
+  - 🇮🇩 印尼 (Indonesia) 01 - myhuo
 rules:
 - MATCH,PROXIES

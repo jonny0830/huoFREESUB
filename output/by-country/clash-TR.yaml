@@ -17,15 +17,18 @@ proxies:
   servername: apple.com
   client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
-  server: 153.56.210.134
-  port: 34121
+  server: 78.135.73.47
+  port: 443
   udp: true
-  type: hysteria2
-  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
+  type: vless
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 03 - myhuo
   server: 62.133.63.45
   port: 8444
@@ -42,19 +45,6 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 04 - myhuo
-  server: 78.135.73.47
-  port: 443
-  udp: true
-  type: vless
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 05 - myhuo
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -65,9 +55,9 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 06 - myhuo
-  server: 206.1.97.108
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 05 - myhuo
+  server: tr2.h1cloud.net
   port: 25021
   udp: true
   type: vless
@@ -78,19 +68,7 @@ proxies:
     public-key: od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg
     short-id: 17fa3af0924c88b3
   servername: www.samsung.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 07 - myhuo
-  server: 177.3.208.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  tls: true
-  servername: tgmansion.site
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vless-tr
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,8 +79,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - myhuo
   - 🇹🇷 土耳其 (Turkey) 04 - myhuo
   - 🇹🇷 土耳其 (Turkey) 05 - myhuo
-  - 🇹🇷 土耳其 (Turkey) 06 - myhuo
-  - 🇹🇷 土耳其 (Turkey) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -113,7 +89,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - myhuo
   - 🇹🇷 土耳其 (Turkey) 04 - myhuo
   - 🇹🇷 土耳其 (Turkey) 05 - myhuo
-  - 🇹🇷 土耳其 (Turkey) 06 - myhuo
-  - 🇹🇷 土耳其 (Turkey) 07 - myhuo
 rules:
 - MATCH,PROXIES

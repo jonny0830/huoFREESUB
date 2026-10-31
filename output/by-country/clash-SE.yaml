@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - myhuo
+  server: 50.7.38.243
+  port: 443
+  udp: true
+  type: hysteria2
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  sni: promo.betust.net
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
   server: 70.34.207.14
   port: 443
   udp: true
@@ -12,14 +20,6 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
-  server: 192.142.23.46
-  port: 443
-  udp: true
-  type: hysteria2
-  password: a0052f4f-4c63-0002-a16f-ab2d5d718cd3
-  sni: diffoscope.com
-  skip-cert-verify: true
 - name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
   server: 31.172.65.4
   port: 8443
@@ -32,29 +32,16 @@ proxies:
     public-key: wRvUAKwcHc4pBNVouIcVjQkVD9aCRR-AmtcFyBV36lU
     short-id: 0e7741edc378622f
   servername: www.bing.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
-  server: promo.betust.net
+  server: 192.142.23.46
   port: 443
   udp: true
   type: hysteria2
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  sni: promo.betust.net
+  password: a0052f4f-4c63-0002-a16f-ab2d5d718cd3
+  sni: diffoscope.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
-  server: 5.181.158.193
-  port: 8462
-  udp: true
-  type: vless
-  uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MrCVk_IX3i58KxjEk-zj6xmh1lZ_WW9SfZ-Bsc6EFnQ
-    short-id: 4c312f2eab89201d
-  servername: svoboda8.bystriynet.online
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 06 - myhuo
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -65,13 +52,6 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 07 - myhuo
-  server: 70.34.212.124
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,8 +62,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - myhuo
   - 🇸🇪 瑞典 (Sweden) 04 - myhuo
   - 🇸🇪 瑞典 (Sweden) 05 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 06 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -94,7 +72,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - myhuo
   - 🇸🇪 瑞典 (Sweden) 04 - myhuo
   - 🇸🇪 瑞典 (Sweden) 05 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 06 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 07 - myhuo
 rules:
 - MATCH,PROXIES
