@@ -5,91 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - myhuo
-  server: 104.17.148.22
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🌐 其他地区 (Other) 02 - myhuo
-  server: 104.17.148.22
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🌐 其他地区 (Other) 03 - myhuo
-  server: www.gptcloudai.com
-  port: 443
-  udp: true
-  type: vmess
-  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: www.gptcloudai.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /truth
-    headers:
-      Host: www.gptcloudai.com
-- name: 🌐 其他地区 (Other) 04 - myhuo
-  server: www.gptcloudai.com
-  port: 443
-  udp: true
-  type: vmess
-  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: www.gptcloudai.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /truth
-    headers:
-      Host: www.gptcloudai.com
-- name: 🌐 其他地区 (Other) 05 - myhuo
-  server: www.gptcloudai.com
-  port: 443
-  udp: true
-  type: vmess
-  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: www.gptcloudai.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /truth
-    headers:
-      Host: www.gptcloudai.com
-- name: 🌐 其他地区 (Other) 06 - myhuo
-  server: 104.16.10.234
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 07 - myhuo
-  server: 104.16.10.234
+  server: 104.16.10.56
   port: 443
   udp: true
   type: vless
@@ -108,23 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - myhuo
-  - 🌐 其他地区 (Other) 02 - myhuo
-  - 🌐 其他地区 (Other) 03 - myhuo
-  - 🌐 其他地区 (Other) 04 - myhuo
-  - 🌐 其他地区 (Other) 05 - myhuo
-  - 🌐 其他地区 (Other) 06 - myhuo
-  - 🌐 其他地区 (Other) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - myhuo
-  - 🌐 其他地区 (Other) 02 - myhuo
-  - 🌐 其他地区 (Other) 03 - myhuo
-  - 🌐 其他地区 (Other) 04 - myhuo
-  - 🌐 其他地区 (Other) 05 - myhuo
-  - 🌐 其他地区 (Other) 06 - myhuo
-  - 🌐 其他地区 (Other) 07 - myhuo
 rules:
 - MATCH,PROXIES

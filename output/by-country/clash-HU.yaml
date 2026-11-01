@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇳 印度 (India) 01 (家宽) - myhuo
-  server: 122.176.216.52
-  port: 443
+- name: 🇭🇺 匈牙利 (Hungary) 01 - myhuo
+  server: 172.67.131.125
+  port: 2083
   udp: true
   type: vless
-  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+  uuid: f418674e-f518-4318-8ff9-e10000000046
   tls: true
-  servername: app-6ada5023.deploy.meerasolution.com
+  servername: smart-edge-424.arti98399-1905.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+    path: /sync
     headers:
-      Host: app-6ada5023.deploy.meerasolution.com
+      Host: smart-edge-424.arti98399-1905.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇳 印度 (India) 01 (家宽) - myhuo
+  - 🇭🇺 匈牙利 (Hungary) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 (India) 01 (家宽) - myhuo
+  - 🇭🇺 匈牙利 (Hungary) 01 - myhuo
 rules:
 - MATCH,PROXIES

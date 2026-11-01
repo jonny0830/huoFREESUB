@@ -42,13 +42,69 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - myhuo",
+      "server": "static.fatcutecat.net",
+      "server_port": 443,
+      "uuid": "b95eb0b3-a8dc-41ce-8bc0-888f81731e7c",
+      "tls": {
+        "enabled": true,
+        "server_name": "static.fatcutecat.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - myhuo",
+      "server": "83.166.237.167",
+      "server_port": 443,
+      "uuid": "902e7be9-d0a8-42a6-994f-8320916a9d9e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pine.gaznw.my",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oKG1EhkfIvBM6xLEk7ck51ZbjvUKDR22RNjTJR_7sTU",
+          "short_id": "46da9a2868751b85"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - myhuo",
+      "server": "179.253.179.109",
+      "server_port": 54083,
+      "uuid": "0ef03752-c8bf-4482-8710-e563ca4808f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "177.3.215.54",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - myhuo",
         "🇸🇪 瑞典 (Sweden) 02 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 03 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 03 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 04 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 05 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 06 - myhuo"
       ]
     },
     {
@@ -57,7 +113,10 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - myhuo",
         "🇸🇪 瑞典 (Sweden) 02 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 03 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 03 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 04 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 05 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 06 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

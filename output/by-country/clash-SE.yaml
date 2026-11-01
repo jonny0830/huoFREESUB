@@ -31,6 +31,39 @@ proxies:
   password: a0052f4f-4c63-0002-a16f-ab2d5d718cd3
   sni: diffoscope.com
   skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
+  server: static.fatcutecat.net
+  port: 443
+  udp: true
+  type: vless
+  uuid: b95eb0b3-a8dc-41ce-8bc0-888f81731e7c
+  tls: true
+  servername: static.fatcutecat.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
+  server: 83.166.237.167
+  port: 443
+  udp: true
+  type: vless
+  uuid: 902e7be9-d0a8-42a6-994f-8320916a9d9e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: oKG1EhkfIvBM6xLEk7ck51ZbjvUKDR22RNjTJR_7sTU
+    short-id: 46da9a2868751b85
+  servername: pine.gaznw.my
+  client-fingerprint: qq
+- name: 🇸🇪 瑞典 (Sweden) 06 - myhuo
+  server: 179.253.179.109
+  port: 54083
+  udp: true
+  type: vless
+  uuid: 0ef03752-c8bf-4482-8710-e563ca4808f9
+  tls: true
+  servername: 177.3.215.54
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +72,9 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - myhuo
   - 🇸🇪 瑞典 (Sweden) 02 - myhuo
   - 🇸🇪 瑞典 (Sweden) 03 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 04 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 05 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 06 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -47,5 +83,8 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - myhuo
   - 🇸🇪 瑞典 (Sweden) 02 - myhuo
   - 🇸🇪 瑞典 (Sweden) 03 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 04 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 05 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 06 - myhuo
 rules:
 - MATCH,PROXIES

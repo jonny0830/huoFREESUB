@@ -4,126 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - myhuo",
-      "server": "104.17.148.22",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 02 - myhuo",
-      "server": "104.17.148.22",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 03 - myhuo",
-      "server": "www.gptcloudai.com",
-      "server_port": 443,
-      "uuid": "e70a5b70-f63c-4450-af8b-94990cdf80c0",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.gptcloudai.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/truth",
-        "headers": {
-          "Host": "www.gptcloudai.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 04 - myhuo",
-      "server": "www.gptcloudai.com",
-      "server_port": 443,
-      "uuid": "e70a5b70-f63c-4450-af8b-94990cdf80c0",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.gptcloudai.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/truth",
-        "headers": {
-          "Host": "www.gptcloudai.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 05 - myhuo",
-      "server": "www.gptcloudai.com",
-      "server_port": 443,
-      "uuid": "e70a5b70-f63c-4450-af8b-94990cdf80c0",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.gptcloudai.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/truth",
-        "headers": {
-          "Host": "www.gptcloudai.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 06 - myhuo",
-      "server": "104.16.10.234",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 07 - myhuo",
-      "server": "104.16.10.234",
+      "server": "104.16.10.56",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -144,26 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - myhuo",
-        "🌐 其他地区 (Other) 02 - myhuo",
-        "🌐 其他地区 (Other) 03 - myhuo",
-        "🌐 其他地区 (Other) 04 - myhuo",
-        "🌐 其他地区 (Other) 05 - myhuo",
-        "🌐 其他地区 (Other) 06 - myhuo",
-        "🌐 其他地区 (Other) 07 - myhuo"
+        "🌐 其他地区 (Other) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - myhuo",
-        "🌐 其他地区 (Other) 02 - myhuo",
-        "🌐 其他地区 (Other) 03 - myhuo",
-        "🌐 其他地区 (Other) 04 - myhuo",
-        "🌐 其他地区 (Other) 05 - myhuo",
-        "🌐 其他地区 (Other) 06 - myhuo",
-        "🌐 其他地区 (Other) 07 - myhuo"
+        "🌐 其他地区 (Other) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

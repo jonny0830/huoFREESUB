@@ -27,21 +27,41 @@
     {
       "type": "vless",
       "tag": "🇺🇦 乌克兰 (Ukraine) 02 - myhuo",
-      "server": "staging.lastilhame.monster",
+      "server": "netx.smrtai.top",
       "server_port": 443,
-      "uuid": "106d20f6-d70a-40e2-b69b-8e82baf8d117",
-      "flow": "xtls-rprx-vision",
+      "uuid": "d8b58872-cc25-4bb2-badb-b86399c075fa",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
+          "public_key": "L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk",
+          "short_id": "d8b58872"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 03 - myhuo",
+      "server": "104.253.216.227",
+      "server_port": 443,
+      "uuid": "594d466e-8ac3-4fda-b1d1-eeb817853518",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
           "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
-          "short_id": "60500a63ad12"
+          "short_id": "5a018643df03"
         }
       }
     },
@@ -51,7 +71,8 @@
       "outbounds": [
         "auto",
         "🇺🇦 乌克兰 (Ukraine) 01 - myhuo",
-        "🇺🇦 乌克兰 (Ukraine) 02 - myhuo"
+        "🇺🇦 乌克兰 (Ukraine) 02 - myhuo",
+        "🇺🇦 乌克兰 (Ukraine) 03 - myhuo"
       ]
     },
     {
@@ -59,7 +80,8 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇦 乌克兰 (Ukraine) 01 - myhuo",
-        "🇺🇦 乌克兰 (Ukraine) 02 - myhuo"
+        "🇺🇦 乌克兰 (Ukraine) 02 - myhuo",
+        "🇺🇦 乌克兰 (Ukraine) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
