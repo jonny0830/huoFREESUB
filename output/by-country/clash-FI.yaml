@@ -29,13 +29,13 @@ proxies:
   servername: images.unsplash.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - myhuo
-  server: 153.76.194.118
-  port: 8443
+  server: ench-snet-app.w-ctrip.cn
+  port: 41184
   udp: true
-  type: hysteria2
-  password: 7d43670b-6b08-45b9-8a24-8f3971abc132
-  sni: finland.biznes.lol
-  skip-cert-verify: false
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: ench-snet-app.w-ctrip.cn
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 04 - myhuo
   server: 179.253.179.109
   port: 62083
@@ -46,6 +46,18 @@ proxies:
   servername: 177.3.220.159
   skip-cert-verify: false
   client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b79d736d-0f10-4169-b626-362059d18204
+  tls: true
+  reality-opts:
+    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
+    short-id: 10351b07c712d2a2
+  servername: www.cloudflare.com
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +67,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - myhuo
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
+  - 🇫🇮 芬兰 (Finland) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,5 +77,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - myhuo
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
+  - 🇫🇮 芬兰 (Finland) 05 - myhuo
 rules:
 - MATCH,PROXIES

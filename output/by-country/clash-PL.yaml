@@ -6,32 +6,58 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - myhuo
   server: 217.30.10.44
-  port: 9076
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
-- name: 🇵🇱 波兰 (Poland) 02 - myhuo
-  server: 217.30.10.44
   port: 9042
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: S7KwUu7yBy58S3Ga
+- name: 🇵🇱 波兰 (Poland) 02 - myhuo
+  server: 217.30.10.44
+  port: 9006
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: FAdUvMJUq5vDgKEq
 - name: 🇵🇱 波兰 (Poland) 03 - myhuo
-  server: 2.26.255.215
+  server: 217.30.10.44
+  port: 9063
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aQqJbtwFGcCCaeL3
+- name: 🇵🇱 波兰 (Poland) 04 - myhuo
+  server: 191.217.245.10
   port: 443
   udp: true
   type: vless
-  uuid: 69e41e64-a832-471a-b740-94577ca85520
+  uuid: 2614a96d-e39f-4cca-a9c7-467a178c2c0a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
-    short-id: '50'
-  servername: cloudflare.com
-  client-fingerprint: ''
-- name: 🇵🇱 波兰 (Poland) 04 - myhuo
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  servername: pl.lenvex.cc
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 05 - myhuo
+  server: 191.217.245.227
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2614a96d-e39f-4cca-a9c7-467a178c2c0a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  servername: pl.lenvex.cc
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 06 - myhuo
+  server: 70.34.252.255
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 07 - myhuo
   server: 94.249.180.86
   port: 443
   udp: true
@@ -44,37 +70,20 @@ proxies:
     short-id: a696de84963656de
   servername: amd.com
   client-fingerprint: ''
-- name: 🇵🇱 波兰 (Poland) 05 - myhuo
-  server: 70.34.252.255
+- name: 🇵🇱 波兰 (Poland) 08 - myhuo
+  server: 2.26.255.215
   port: 443
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 06 - myhuo
-  server: 217.60.33.67
-  port: 8443
-  udp: true
   type: vless
-  uuid: dc413f44-7dce-4cc4-b2c7-878ef70ce464
+  uuid: 69e41e64-a832-471a-b740-94577ca85520
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: -r5xcA3iTzAf63kkb0VIILrLHH1VUq550pFZ-M74Jlc
-    short-id: de
-  servername: go-obsh-auto-drun.keno.su
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 07 - myhuo
-  server: 2.26.6.1
-  port: 2087
-  udp: true
-  type: vless
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  tls: true
-  servername: 2.26.6.1
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 08 - myhuo
+    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
+    short-id: '50'
+  servername: cloudflare.com
+  client-fingerprint: ''
+- name: 🇵🇱 波兰 (Poland) 09 - myhuo
   server: 82.118.22.161
   port: 443
   udp: true
@@ -85,6 +94,19 @@ proxies:
   reality-opts:
     public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
     short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 10 - myhuo
+  server: 150.251.113.34
+  port: 443
+  udp: true
+  type: vless
+  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
+    short-id: 150a627d15154cf2
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
@@ -100,6 +122,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - myhuo
   - 🇵🇱 波兰 (Poland) 07 - myhuo
   - 🇵🇱 波兰 (Poland) 08 - myhuo
+  - 🇵🇱 波兰 (Poland) 09 - myhuo
+  - 🇵🇱 波兰 (Poland) 10 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -113,5 +137,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - myhuo
   - 🇵🇱 波兰 (Poland) 07 - myhuo
   - 🇵🇱 波兰 (Poland) 08 - myhuo
+  - 🇵🇱 波兰 (Poland) 09 - myhuo
+  - 🇵🇱 波兰 (Poland) 10 - myhuo
 rules:
 - MATCH,PROXIES

@@ -5,14 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - myhuo
+  server: 169.197.142.22
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇦🇺 澳大利亚 (Australia) 02 - myhuo
   server: 45.63.30.142
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: 45.63.30.142
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 02 - myhuo
+  sni: connectwithemployerstohireyouridealteam.com
+  skip-cert-verify: false
+- name: 🇦🇺 澳大利亚 (Australia) 03 - myhuo
   server: 152.67.115.203
   port: 443
   udp: true
@@ -29,6 +37,7 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 02 - myhuo
+  - 🇦🇺 澳大利亚 (Australia) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -36,5 +45,6 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 02 - myhuo
+  - 🇦🇺 澳大利亚 (Australia) 03 - myhuo
 rules:
 - MATCH,PROXIES

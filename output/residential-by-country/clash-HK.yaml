@@ -4,15 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - myhuo
-  server: dog-hk.kunlun01dns.com
-  port: 21019
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
   server: 0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com
   port: 443
   udp: true
@@ -23,39 +15,27 @@ proxies:
     public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
   servername: download.windowsupdate.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo
-  server: 39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
+  server: ench-snet-app.w-ctrip.cn
+  port: 53004
   udp: true
-  type: hysteria2
-  password: 367e233c-2f54-11ee-9ae1-f23c9164ca5d
-  sni: 39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo
-  server: 0fd83b77-tmm5c0-tuklme-ueq.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 91df5a86-fcdd-11ef-94aa-f23c913c8d2b
-  sni: 0fd83b77-tmm5c0-tuklme-ueq.nw4.hyhuawei.com
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: ench-snet-app.w-ctrip.cn
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo
 rules:
 - MATCH,PROXIES

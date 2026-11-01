@@ -16,18 +16,32 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇧🇷 巴西 (Brazil) 02 - myhuo",
+      "server": "ench-snet-app.w-ctrip.cn",
+      "server_port": 16932,
+      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "ench-snet-app.w-ctrip.cn",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - myhuo"
+        "🇧🇷 巴西 (Brazil) 01 - myhuo",
+        "🇧🇷 巴西 (Brazil) 02 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - myhuo"
+        "🇧🇷 巴西 (Brazil) 01 - myhuo",
+        "🇧🇷 巴西 (Brazil) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

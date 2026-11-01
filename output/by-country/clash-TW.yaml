@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
-  server: 160.187.100.109
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 160.187.100.109
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   server: 103.115.109.49
   port: 443
   udp: true
@@ -20,7 +12,23 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
+  server: 160.187.100.109
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
+  server: ench-snet-app.w-ctrip.cn
+  port: 22003
+  udp: true
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: cm.g.doubleclick.net
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
   server: 152.32.167.33
   port: 443
   udp: true
@@ -33,18 +41,14 @@ proxies:
     short-id: cff998a4
   servername: www.amazon.com
   client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
-  server: n04.jinggai.online
-  port: 8443
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - myhuo
+  server: ench-snet-app.w-ctrip.cn
+  port: 47786
   udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  tls: true
-  servername: n04.jinggai.online
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: ench-snet-app.w-ctrip.cn
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +58,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,5 +68,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 05 - myhuo
 rules:
 - MATCH,PROXIES

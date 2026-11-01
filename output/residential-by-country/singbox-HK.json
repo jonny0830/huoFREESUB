@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - myhuo",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21019,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo",
       "server": "0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com",
       "server_port": 443,
       "uuid": "ea800f9e-ca6c-11ef-8e74-f23c913c8d2b",
@@ -32,26 +24,14 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo",
-      "server": "39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "367e233c-2f54-11ee-9ae1-f23c9164ca5d",
+      "type": "trojan",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo",
+      "server": "ench-snet-app.w-ctrip.cn",
+      "server_port": 53004,
+      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
       "tls": {
         "enabled": true,
-        "server_name": "39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo",
-      "server": "0fd83b77-tmm5c0-tuklme-ueq.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "91df5a86-fcdd-11ef-94aa-f23c913c8d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "0fd83b77-tmm5c0-tuklme-ueq.nw4.hyhuawei.com",
+        "server_name": "ench-snet-app.w-ctrip.cn",
         "insecure": true
       }
     },
@@ -60,20 +40,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -40,17 +40,13 @@
       "tls": {
         "enabled": true,
         "server_name": "87.121.86.24",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "insecure": false
       }
     },
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - myhuo",
-      "server": "ee.h1cloud.net",
+      "server": "79.182.39.232",
       "server_port": 25895,
       "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
       "tls": {
@@ -58,7 +54,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -68,15 +64,24 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - myhuo",
-      "server": "141.0.187.50",
+      "server": "185.225.205.53",
       "server_port": 443,
-      "password": "e5ec2586-59b3-40fa-91b7-bb37a2f7744e",
+      "uuid": "3d526c7f-059c-4e2b-b09a-8569b268935b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "crt.onecloudstream.com",
-        "insecure": false
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8",
+          "short_id": "2e82d7ac"
+        }
       }
     },
     {

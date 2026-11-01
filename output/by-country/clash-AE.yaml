@@ -23,6 +23,17 @@ proxies:
   sni: forshynewh.duckdns.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
   server: 91.132.48.199
   port: 443
   udp: true
@@ -35,30 +46,15 @@ proxies:
     short-id: e7c5f2a9
   servername: bunny.net
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
-  server: 95.174.68.188
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
 - name: 🇦🇪 阿联酋 (UAE) 05 - myhuo
-  server: 203.137.165.164
-  port: 57554
+  server: uae.unixzone.us
+  port: 22573
   udp: true
   type: vless
-  uuid: 91cf01c5-62c1-44cd-80e0-df6310025dab
-  tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
