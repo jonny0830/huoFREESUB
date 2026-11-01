@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - myhuo
-  server: 178.83.45.226
+  server: 155.117.5.208
   port: 2052
   udp: true
   type: vless
@@ -22,29 +22,16 @@ proxies:
     headers:
       Host: 88.80.135.65
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
-  server: 162.249.125.133
+  server: hy2-new.aspidnet.xyz
   port: 443
   udp: true
   type: hysteria2
   password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
   sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - myhuo
-  server: 82.117.255.174
-  port: 443
-  udp: true
-  type: vless
-  uuid: 679439c5-28f2-485e-af5f-60a5fcd9c36c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0
-    short-id: 31e91d43e553bf32
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - myhuo
   server: 46.28.67.55
   port: 443
   udp: true
@@ -57,34 +44,19 @@ proxies:
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - myhuo
-  server: app-ms-90.next-gen-shopping.com
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - myhuo
+  server: 82.117.255.174
   port: 443
   udp: true
   type: vless
-  uuid: 07680ffb-0666-4836-b6ad-ec0de62bc38f
+  uuid: 679439c5-28f2-485e-af5f-60a5fcd9c36c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: HA8RX24k72lyACy0T1mCDeYcUQh22XRlT4wuhj3Onl4
-    short-id: 36b707a341db758d
-  servername: assets-ms-90.next-gen-shopping.com
+    public-key: 0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0
+    short-id: 31e91d43e553bf32
+  servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - myhuo
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: www.amazon.com
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 08 - myhuo
-  server: 154.46.31.106
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,9 +67,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 04 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 05 - myhuo
-  - 🇷🇴 罗马尼亚 (Romania) 06 - myhuo
-  - 🇷🇴 罗马尼亚 (Romania) 07 - myhuo
-  - 🇷🇴 罗马尼亚 (Romania) 08 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -108,8 +77,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 04 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 05 - myhuo
-  - 🇷🇴 罗马尼亚 (Romania) 06 - myhuo
-  - 🇷🇴 罗马尼亚 (Romania) 07 - myhuo
-  - 🇷🇴 罗马尼亚 (Romania) 08 - myhuo
 rules:
 - MATCH,PROXIES

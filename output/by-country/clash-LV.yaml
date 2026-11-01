@@ -31,6 +31,18 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - myhuo
+  server: 72.56.52.248
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2614a96d-e39f-4cca-a9c7-467a178c2c0a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  servername: lv.dexlen.cc
+  client-fingerprint: firefox
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - myhuo
   server: 31.58.171.53
   port: 443
   udp: true
@@ -42,18 +54,6 @@ proxies:
     public-key: iCy_Y2B58KB39rw94EycaBO-aldt2PaMmWz62arreSo
     short-id: f77f3068
   servername: dl.google.com
-  client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - myhuo
-  server: 45.38.143.210
-  port: 30584
-  udp: true
-  type: vless
-  uuid: cebc5f19-18d9-48e6-9029-fb4b04caf393
-  tls: true
-  reality-opts:
-    public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
-    short-id: 67ece882d65d0f1a
-  servername: m.vk.com
   client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 05 - myhuo
   server: 195.123.208.32
@@ -68,6 +68,18 @@ proxies:
     short-id: 757b9e1ef18e60f0
   servername: gateway.icloud.com
   client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - myhuo
+  server: 45.38.143.210
+  port: 30584
+  udp: true
+  type: vless
+  uuid: cebc5f19-18d9-48e6-9029-fb4b04caf393
+  tls: true
+  reality-opts:
+    public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
+    short-id: 67ece882d65d0f1a
+  servername: m.vk.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,6 +90,7 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 03 - myhuo
   - 🇱🇻 拉脱维亚 (Latvia) 04 - myhuo
   - 🇱🇻 拉脱维亚 (Latvia) 05 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 06 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -88,5 +101,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 03 - myhuo
   - 🇱🇻 拉脱维亚 (Latvia) 04 - myhuo
   - 🇱🇻 拉脱维亚 (Latvia) 05 - myhuo
+  - 🇱🇻 拉脱维亚 (Latvia) 06 - myhuo
 rules:
 - MATCH,PROXIES

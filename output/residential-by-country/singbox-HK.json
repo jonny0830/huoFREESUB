@@ -14,15 +14,15 @@
     {
       "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo",
-      "server": "a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com",
+      "server": "0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com",
       "server_port": 443,
-      "uuid": "6d56436c-150d-11f0-b0c8-f23c913c8d2b",
+      "uuid": "ea800f9e-ca6c-11ef-8e74-f23c913c8d2b",
       "tls": {
         "enabled": true,
         "server_name": "download.windowsupdate.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -32,12 +32,38 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo",
+      "server": "39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "367e233c-2f54-11ee-9ae1-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo",
+      "server": "0fd83b77-tmm5c0-tuklme-ueq.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "91df5a86-fcdd-11ef-94aa-f23c913c8d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "0fd83b77-tmm5c0-tuklme-ueq.nw4.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo"
       ]
     },
     {
@@ -45,7 +71,9 @@
       "tag": "auto",
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
