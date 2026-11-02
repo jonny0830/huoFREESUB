@@ -21,6 +21,14 @@ proxies:
   sni: mx001.zestapp778.com
   skip-cert-verify: false
 - name: 🇲🇽 墨西哥 (Mexico) 03 - myhuo
+  server: mx001.zestapp778.com
+  port: 15083
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: mx001.zestapp778.com
+  skip-cert-verify: false
+- name: 🇲🇽 墨西哥 (Mexico) 04 - myhuo
   server: 147.78.1.253
   port: 443
   udp: true
@@ -40,6 +48,7 @@ proxy-groups:
   - 🇲🇽 墨西哥 (Mexico) 01 - myhuo
   - 🇲🇽 墨西哥 (Mexico) 02 - myhuo
   - 🇲🇽 墨西哥 (Mexico) 03 - myhuo
+  - 🇲🇽 墨西哥 (Mexico) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,5 +57,6 @@ proxy-groups:
   - 🇲🇽 墨西哥 (Mexico) 01 - myhuo
   - 🇲🇽 墨西哥 (Mexico) 02 - myhuo
   - 🇲🇽 墨西哥 (Mexico) 03 - myhuo
+  - 🇲🇽 墨西哥 (Mexico) 04 - myhuo
 rules:
 - MATCH,PROXIES

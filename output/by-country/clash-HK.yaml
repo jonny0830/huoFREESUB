@@ -5,15 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - myhuo
-  server: 152.32.254.68
-  port: 5010
+  server: 202.146.222.174
+  port: 443
   udp: true
   type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - myhuo
   server: 31.57.248.176
   port: 50160
@@ -23,14 +21,30 @@ proxies:
   sni: www.bing.com%23%e9%a6%83%e5%9a%9f%e9%a6%83%e5%9a%a2%7chk%7c%40wxgqlfx%7c147
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - myhuo
-  server: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
+  server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
-  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  sni: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8🇨🇳
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16115
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
+  server: 39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 367e233c-2f54-11ee-9ae1-f23c9164ca5d
+  sni: 39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
   server: 38.76.180.144
   port: 1443
   udp: true
@@ -41,47 +55,7 @@ proxies:
     path: /vless-ws
     headers:
       Host: 38.76.180.144
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
-  server: vpn-hk-004.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-hk-004.fastervpn.world
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2≡ƒç¿≡ƒç│
-  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
-  server: ench-snet-app.w-ctrip.cn
-  port: 43638
-  udp: true
-  type: trojan
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  sni: ench-snet-app.w-ctrip.cn
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
-  server: hik160.pacemakere.com
-  port: 20014
-  udp: true
-  type: trojan
-  password: 778f5385b4254495
-  sni: hik160.pacemakere.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
   server: 165.154.63.139
   port: 443
   udp: true
@@ -93,19 +67,35 @@ proxies:
     public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
     short-id: ca4aedd4
   servername: www.amazon.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - myhuo
-  server: 195.58.144.56
-  port: 11907
-  udp: true
-  type: vless
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
-  tls: true
-  servername: 195.58.144.56
-  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - myhuo
-  server: 152.175.6.229
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
+  server: ench-snet-app.w-ctrip.cn
+  port: 41495
+  udp: true
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: cm.g.doubleclick.net
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
+  server: 152.32.254.68
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
+  server: ench-snet-app.w-ctrip.cn
+  port: 43638
+  udp: true
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: ench-snet-app.w-ctrip.cn
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - myhuo
+  server: hk010.zestapp778.com
   port: 31884
   udp: true
   type: vless
@@ -114,13 +104,6 @@ proxies:
   servername: hk010.zestapp778.com
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - myhuo
-  server: 103.149.182.79
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
 proxy-groups:
 - name: PROXIES
   type: select
@@ -137,8 +120,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 11 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 12 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 13 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -155,7 +136,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 11 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 12 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 13 - myhuo
 rules:
 - MATCH,PROXIES

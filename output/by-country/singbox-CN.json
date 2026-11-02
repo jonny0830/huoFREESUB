@@ -4,26 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇨🇳 CN 01 - myhuo",
-      "server": "172.67.166.188",
-      "server_port": 443,
-      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.cintaku.qzz.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "39.108.113.127",
+      "server_port": 10086,
+      "uuid": "19ee3050-be66-4850-9f13-fc9d47487a3c",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/vlessws",
-        "headers": {
-          "Host": "vpn.cintaku.qzz.io"
-        }
+        "path": "/"
       }
     },
     {

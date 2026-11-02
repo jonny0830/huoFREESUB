@@ -5,20 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇳 CN 01 - myhuo
-  server: 172.67.166.188
-  port: 443
+  server: 39.108.113.127
+  port: 10086
   udp: true
-  type: vless
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 19ee3050-be66-4850-9f13-fc9d47487a3c
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
