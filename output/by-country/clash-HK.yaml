@@ -5,22 +5,50 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - myhuo
-  server: 9969bb96-tmm5c0-twuk0i-1hzyr.hk3.hyhuawei.com
-  port: 443
+  server: 103.149.182.79
+  port: 8388
   udp: true
-  type: hysteria2
-  password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
-  sni: 9969bb96-tmm5c0-twuk0i-1hzyr.hk3.hyhuawei.com
-  skip-cert-verify: false
+  type: ss
+  cipher: chacha20-ietf
+  password: asd123456
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - myhuo
-  server: baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16115
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - myhuo
+  server: 210.0.244.157
+  port: 443
+  udp: true
+  type: vless
+  uuid: f3ff9bac-2904-4f38-bae1-54ab1a72891b
+  tls: true
+  reality-opts:
+    public-key: T239VP3HbJ2KJCur7hDHJtrs6eKmKQfU_X1Xg6NmPgI
+  servername: cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
+  server: 152.32.254.68
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
+  server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
-  password: 40639730-e027-11ea-87ad-f23c913c8d2b
-  sni: baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vk.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - myhuo
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
   server: 154.83.87.6
   port: 8443
   udp: true
@@ -32,40 +60,13 @@ proxies:
     short-id: 4ad2e4e660550e43
   servername: github.githubassets.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
-  server: 38.76.180.144
-  port: 1443
-  udp: true
-  type: vless
-  uuid: d98b67d4-024a-4bba-91e2-e6ebece6df11
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 38.76.180.144
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
-  server: 31.57.248.176
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: b0917015b656b3dd2286b5633af0c5c1
-  sni: www.bing.com
-  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
+  sni: https%3a%2f%2ft.me%2fwangcai2%c3%b0%c2%9f%c2%87%c2%a8%c3%b0%c2%9f%c2%87%c2%b3
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
   server: 202.146.222.174
@@ -73,18 +74,29 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
+  sni: https%3a%2f%2ft.me%2fwangcai2
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
-  server: 152.32.254.68
-  port: 5010
+  server: 31.57.248.176
+  port: 50160
   udp: true
   type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+  password: b0917015b656b3dd2286b5633af0c5c1
+  sni: www.bing.com%23%e9%a6%83%e5%9a%9f%e9%a6%83%e5%9a%a2%7chk%7c%40wxgqlfx%7c147
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
+  server: 165.154.63.139
+  port: 443
+  udp: true
+  type: vless
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
+    short-id: ca4aedd4
+  servername: www.amazon.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -99,6 +111,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -113,5 +126,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
 rules:
 - MATCH,PROXIES

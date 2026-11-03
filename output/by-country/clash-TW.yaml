@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
+  server: 160.187.100.109
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   server: 103.115.109.49
   port: 443
   udp: true
@@ -12,26 +20,19 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
-  server: 160.187.100.109
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
+  server: 152.32.167.33
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
-  server: 45.207.159.71
-  port: 8443
-  udp: true
   type: vless
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-    short-id: 4ad2e4e660550e43
-  servername: github.githubassets.com
-  client-fingerprint: chrome
+    public-key: Q8QwBSGN6J-FqgDV1pYNm0VThS_xNRyQ3DPPa9YZ3j4
+    short-id: cff998a4
+  servername: www.amazon.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

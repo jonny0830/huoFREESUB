@@ -1,0 +1,71 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo",
+      "server": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "4eedcde6-d16a-11ef-973a-f23c913c8d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo",
+      "server": "baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "40639730-e027-11ea-87ad-f23c913c8d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo",
+      "server": "56481.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
+      "tls": {
+        "enabled": true,
+        "server_name": "images.ctfassets.net",
+        "insecure": true
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
