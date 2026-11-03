@@ -5,18 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - myhuo
-  server: 45.132.176.61
+  server: 195.123.189.221
   port: 443
   udp: true
   type: vless
-  uuid: 1b7ee703-fa08-4305-8469-ae3e30e61e44
-  flow: xtls-rprx-vision
+  uuid: 63959ed7-d26f-48dd-8c7b-ebdb6ea68535
   tls: true
   reality-opts:
-    public-key: _qSbW4JL4Ffqvj25vX-6a2ul9Qlj6PBdlF0ghsf_0RQ
-    short-id: a9dc98a7dc87a7dc
-  servername: sopelka.yandex-api.com
-  client-fingerprint: firefox
+    public-key: 9X-tgXeFaqxURY0nGxFNdz9bpNIo7DTXHoWXpBqiOj0
+    short-id: cbc638acc8ac87
+  servername: max.ru
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-90
 proxy-groups:
 - name: PROXIES
   type: select

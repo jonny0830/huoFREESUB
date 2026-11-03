@@ -16,21 +16,8 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: 3h-kazakhstan1.09vpn.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
-  server: 3h-kazakhstan1.09vpn.com
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
-  tls: true
-  servername: 3h-kazakhstan1.09vpn.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -49,7 +36,6 @@ proxy-groups:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,6 +43,5 @@ proxy-groups:
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
 rules:
 - MATCH,PROXIES
