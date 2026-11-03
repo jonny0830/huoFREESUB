@@ -17,6 +17,24 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 02 - myhuo
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
+  server: dns22.m3hrzd.ir
+  port: 1346
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
+- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -29,29 +47,18 @@ proxies:
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
-  server: 13.143.164.80
-  port: 443
+- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
+  server: areal1.greewebservices.ir
+  port: 2425
   udp: true
   type: vless
-  uuid: 2614a96d-e39f-4cca-a9c7-467a178c2c0a
-  flow: xtls-rprx-vision
+  uuid: dfb070bf-0b53-43eb-be2b-4b34f7e1644d
   tls: true
   reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: fl3.lenvex.cc
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+    public-key: MnPGY1Vo4ZbYdpLRTYHoolv5s_pwO41karyJfnQ0F3o
+    short-id: 9b60d3
+  servername: play.googleapis.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +68,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - myhuo
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
+  - 🇫🇮 芬兰 (Finland) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,5 +78,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - myhuo
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
+  - 🇫🇮 芬兰 (Finland) 05 - myhuo
 rules:
 - MATCH,PROXIES

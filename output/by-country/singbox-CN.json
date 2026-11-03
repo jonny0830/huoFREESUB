@@ -15,7 +15,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
@@ -29,7 +29,7 @@
     {
       "type": "vless",
       "tag": "🇨🇳 CN 02 - myhuo",
-      "server": "vpn.cintaku.qzz.io",
+      "server": "104.17.11.191",
       "server_port": 443,
       "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
       "tls": {
@@ -43,7 +43,10 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vlessws"
+        "path": "/vlessws",
+        "headers": {
+          "Host": "vpn.cintaku.qzz.io"
+        }
       }
     },
     {

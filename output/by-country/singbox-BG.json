@@ -4,20 +4,38 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - myhuo",
-      "server": "213.183.63.60",
-      "server_port": 9085,
-      "method": "aes-256-cfb",
-      "password": "9ej82EKe2gq7gLAM"
+      "server": "104.17.148.22",
+      "server_port": 8443,
+      "password": "uFepQ5r4JSusbY",
+      "tls": {
+        "enabled": true,
+        "server_name": "floral-grass-aa1e.dianawpewpek1.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "floral-grass-aa1e.dianawpewpek1.workers.dev"
+        }
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - myhuo",
       "server": "213.183.63.60",
-      "server_port": 9098,
+      "server_port": 9085,
       "method": "aes-256-cfb",
-      "password": "aLpQtfEZe445QyHk"
+      "password": "9ej82EKe2gq7gLAM"
     },
     {
       "type": "shadowsocks",
@@ -31,37 +49,13 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - myhuo",
       "server": "213.183.63.60",
-      "server_port": 9061,
+      "server_port": 9098,
       "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP"
+      "password": "aLpQtfEZe445QyHk"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - myhuo",
-      "server": "213.183.63.60",
-      "server_port": 9029,
-      "method": "aes-256-cfb",
-      "password": "dU3DSNS8wYPXzEKw"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - myhuo",
-      "server": "213.183.63.60",
-      "server_port": 9064,
-      "method": "aes-256-cfb",
-      "password": "cp8pRSUAyLhTfVWH"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - myhuo",
-      "server": "213.183.63.60",
-      "server_port": 9028,
-      "method": "aes-256-cfb",
-      "password": "9eeJ2fwnZA5Fxgz8"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - myhuo",
       "server": "213.183.63.60",
       "server_port": 9049,
       "method": "aes-256-cfb",
@@ -69,23 +63,31 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - myhuo",
-      "server": "213.183.63.60",
-      "server_port": 9066,
-      "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 10 - myhuo",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - myhuo",
       "server": "213.183.63.60",
       "server_port": 9054,
       "method": "aes-256-cfb",
       "password": "VcFuyXvND2yQWSFY"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - myhuo",
+      "server": "213.183.63.60",
+      "server_port": 9064,
+      "method": "aes-256-cfb",
+      "password": "cp8pRSUAyLhTfVWH"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - myhuo",
+      "server": "213.183.63.60",
+      "server_port": 9029,
+      "method": "aes-256-cfb",
+      "password": "dU3DSNS8wYPXzEKw"
+    },
+    {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 11 - myhuo",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - myhuo",
       "server": "195.123.226.21",
       "server_port": 443,
       "uuid": "6589c320-db68-43cd-a273-b46299bab355",
@@ -103,6 +105,22 @@
           "short_id": "77bb0d07bddbc832"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 10 - myhuo",
+      "server": "213.183.63.60",
+      "server_port": 9066,
+      "method": "aes-256-cfb",
+      "password": "2KUaE2a8NWTvuCZ3"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 11 - myhuo",
+      "server": "213.183.63.60",
+      "server_port": 9028,
+      "method": "aes-256-cfb",
+      "password": "9eeJ2fwnZA5Fxgz8"
     },
     {
       "type": "selector",

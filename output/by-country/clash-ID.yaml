@@ -5,15 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01 - myhuo
-  server: in001.zestapp778.com
-  port: 57353
+  server: 188.114.97.6
+  port: 443
   udp: true
   type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  uuid: 1246e51a-97cd-4d5c-9842-76dd3420bbe2
   tls: true
-  servername: in001.zestapp778.com
+  servername: investor.fb.com.r3xxe.eu.cc
   skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: investor.fb.com.r3xxe.eu.cc
 proxy-groups:
 - name: PROXIES
   type: select
