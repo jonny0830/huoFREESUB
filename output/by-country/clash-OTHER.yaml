@@ -5,69 +5,124 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - myhuo
-  server: www.gptcloudai.com
+  server: 104.17.136.198
   port: 443
   udp: true
   type: vmess
-  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
   tls: true
-  servername: www.gptcloudai.com
+  servername: vmess.lbw666.dpdns.org
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /truth
+    path: /ws
     headers:
-      Host: www.gptcloudai.com
+      Host: vmess.lbw666.dpdns.org
 - name: 🌐 其他地区 (Other) 02 - myhuo
-  server: www.gptcloudai.com
+  server: 104.17.136.198
   port: 443
   udp: true
   type: vmess
-  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
   tls: true
-  servername: www.gptcloudai.com
+  servername: vmess.lbw666.dpdns.org
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /truth
+    path: /ws?ed=2048
     headers:
-      Host: www.gptcloudai.com
+      Host: vmess.lbw666.dpdns.org
 - name: 🌐 其他地区 (Other) 03 - myhuo
-  server: www.gptcloudai.com
+  server: 104.17.136.198
   port: 443
   udp: true
   type: vmess
-  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
   tls: true
-  servername: www.gptcloudai.com
+  servername: vmess.lbw666.dpdns.org
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /truth
+    path: /ws?ed=2048
     headers:
-      Host: www.gptcloudai.com
+      Host: vmess.lbw666.dpdns.org
 - name: 🌐 其他地区 (Other) 04 - myhuo
-  server: www.gptcloudai.com
+  server: 104.17.136.198
   port: 443
   udp: true
   type: vmess
-  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
   tls: true
-  servername: www.gptcloudai.com
+  servername: vmess.lbw666.dpdns.org
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /truth
+    path: /ws
     headers:
-      Host: www.gptcloudai.com
+      Host: vmess.lbw666.dpdns.org
+- name: 🌐 其他地区 (Other) 05 - myhuo
+  server: 104.17.136.198
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: 🌐 其他地区 (Other) 06 - myhuo
+  server: 104.17.147.222
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: 🌐 其他地区 (Other) 07 - myhuo
+  server: 104.17.147.222
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: 🌐 其他地区 (Other) 08 - myhuo
+  server: 104.17.147.222
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,6 +132,10 @@ proxy-groups:
   - 🌐 其他地区 (Other) 02 - myhuo
   - 🌐 其他地区 (Other) 03 - myhuo
   - 🌐 其他地区 (Other) 04 - myhuo
+  - 🌐 其他地区 (Other) 05 - myhuo
+  - 🌐 其他地区 (Other) 06 - myhuo
+  - 🌐 其他地区 (Other) 07 - myhuo
+  - 🌐 其他地区 (Other) 08 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,5 +145,9 @@ proxy-groups:
   - 🌐 其他地区 (Other) 02 - myhuo
   - 🌐 其他地区 (Other) 03 - myhuo
   - 🌐 其他地区 (Other) 04 - myhuo
+  - 🌐 其他地区 (Other) 05 - myhuo
+  - 🌐 其他地区 (Other) 06 - myhuo
+  - 🌐 其他地区 (Other) 07 - myhuo
+  - 🌐 其他地区 (Other) 08 - myhuo
 rules:
 - MATCH,PROXIES

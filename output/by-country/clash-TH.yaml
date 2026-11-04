@@ -4,17 +4,17 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇷 希腊 (Greece) 01 - myhuo
-  server: 85.90.197.220
+- name: 🇹🇭 泰国 (Thailand) 01 - myhuo
+  server: 45.154.26.63
   port: 443
   udp: true
   type: vless
-  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
+  uuid: ff85e702-b605-4109-884d-2c1f065d0954
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
-    short-id: 94acb54627612d43
+    public-key: MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk
+    short-id: 3c032a7e
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
@@ -22,12 +22,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇬🇷 希腊 (Greece) 01 - myhuo
+  - 🇹🇭 泰国 (Thailand) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇷 希腊 (Greece) 01 - myhuo
+  - 🇹🇭 泰国 (Thailand) 01 - myhuo
 rules:
 - MATCH,PROXIES
