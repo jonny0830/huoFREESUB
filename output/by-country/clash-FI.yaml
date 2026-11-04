@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - myhuo
-  server: 217.144.188.185
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8d954cbe-7ca9-402d-bfaf-aca6c92c04c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
-  servername: www.nordea.fi
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 02 - myhuo
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -28,7 +16,27 @@ proxies:
     short-id: 10351b07c712d2a2
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 02 - myhuo
+  server: 92.242.165.40
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 2f0fccb6-4a86-4d9f-9e03-a2dfee6ed7f5
+  sni: speedtestmark.com
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 03 - myhuo
+  server: 217.144.188.185
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8d954cbe-7ca9-402d-bfaf-aca6c92c04c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
+  servername: www.nordea.fi
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
   server: 89.144.53.4
   port: 8445
   udp: true
@@ -41,7 +49,7 @@ proxies:
     short-id: 1a2b3c4d
   servername: videos.porsche.com
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
+- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
   server: 146.103.118.189
   port: 443
   udp: true
@@ -56,8 +64,31 @@ proxies:
     path: /574ck-finland
     headers:
       Host: nl2.574ck.xyz
-- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
-  server: 188.114.96.3
+- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
+  server: mein-1.octavia.dpdns.org
+  port: 60000
+  udp: true
+  type: hysteria2
+  password: xo43w4tc13ou2h3x
+  sni: main-1.octavia.dpdns.org
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: ckwudzzsfoltmbmi
+- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
+  server: 6.bmi.ir.asopardaz.ir
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 875942c6-1d42-4681-b49b-521a2bf10e8c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
+    short-id: e915
+  servername: timeline.www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 08 - myhuo
+  server: 172.66.0.1
   port: 2053
   udp: true
   type: trojan
@@ -67,7 +98,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
+- name: 🇫🇮 芬兰 (Finland) 09 - myhuo
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -78,13 +109,6 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
-  server: dns22.m3hrzd.ir
-  port: 1346
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,6 +121,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - myhuo
   - 🇫🇮 芬兰 (Finland) 06 - myhuo
   - 🇫🇮 芬兰 (Finland) 07 - myhuo
+  - 🇫🇮 芬兰 (Finland) 08 - myhuo
+  - 🇫🇮 芬兰 (Finland) 09 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -109,5 +135,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - myhuo
   - 🇫🇮 芬兰 (Finland) 06 - myhuo
   - 🇫🇮 芬兰 (Finland) 07 - myhuo
+  - 🇫🇮 芬兰 (Finland) 08 - myhuo
+  - 🇫🇮 芬兰 (Finland) 09 - myhuo
 rules:
 - MATCH,PROXIES

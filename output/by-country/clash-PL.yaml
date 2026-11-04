@@ -6,12 +6,19 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - myhuo
   server: 217.30.10.44
-  port: 9042
+  port: 9076
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
+  password: S2zDyyPcmZN2h8EC
 - name: 🇵🇱 波兰 (Poland) 02 - myhuo
+  server: 217.30.10.44
+  port: 9095
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: N7j3pdTYkKmsy8CR
+- name: 🇵🇱 波兰 (Poland) 03 - myhuo
   server: 2.26.255.215
   port: 443
   udp: true
@@ -24,14 +31,6 @@ proxies:
     short-id: '50'
   servername: cloudflare.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 03 - myhuo
-  server: 70.34.252.255
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
-  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 04 - myhuo
   server: 217.30.10.72
   port: 443
@@ -46,17 +45,17 @@ proxies:
   servername: images.porsche.com
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 05 - myhuo
-  server: 179.198.49.218
+  server: 94.249.180.86
   port: 443
   udp: true
   type: vless
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 9CKMhiYPXEIfQh_XFbbN1GoBxeLxJkaar2wg9FZKfBo
-    short-id: 75fe71d16ccae610
-  servername: assets-44.topp-con.xyz
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 06 - myhuo
   server: 82.118.22.161
@@ -72,50 +71,19 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: safari
 - name: 🇵🇱 波兰 (Poland) 07 - myhuo
-  server: 54.37.131.126
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 08 - myhuo
-  server: 94.249.180.86
+  server: 70.34.252.255
   port: 443
   udp: true
-  type: vless
-  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 09 - myhuo
-  server: 217.60.33.67
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2a66ad35-93ce-4fd2-831f-bcaa63cdac1e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: -r5xcA3iTzAf63kkb0VIILrLHH1VUq550pFZ-M74Jlc
-    short-id: de
-  servername: go-obsh-auto-drun.keno.su
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 10 - myhuo
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 08 - myhuo
   server: 145.63.143.205
   port: 8444
   udp: true
   type: vless
-  uuid: a8321cfe-39a2-48a0-a918-f01f7d9006ed
+  uuid: 35c9f200-7520-4005-b78e-f8a2fb9f68f7
   tls: true
   servername: pl1.meshbeat.online
   skip-cert-verify: false
@@ -125,7 +93,19 @@ proxies:
     path: /api/v1/devices/10be32b380/telemetry
     headers:
       Host: pl1.meshbeat.online
-- name: 🇵🇱 波兰 (Poland) 11 - myhuo
+- name: 🇵🇱 波兰 (Poland) 09 - myhuo
+  server: 84.23.52.120
+  port: 28450
+  udp: true
+  type: vless
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+  tls: true
+  servername: pl.sparxiecn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /lovelive
+- name: 🇵🇱 波兰 (Poland) 10 - myhuo
   server: 84.23.52.120
   port: 28453
   udp: true
@@ -138,13 +118,31 @@ proxies:
   network: ws
   ws-opts:
     path: /lovelive
-- name: 🇵🇱 波兰 (Poland) 12 - myhuo
-  server: 217.30.10.44
-  port: 9063
+- name: 🇵🇱 波兰 (Poland) 11 - myhuo
+  server: 54.37.131.126
+  port: 80
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aQqJbtwFGcCCaeL3
+  type: vmess
+  uuid: 059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 12 - myhuo
+  server: 84.23.52.120
+  port: 28449
+  udp: true
+  type: vless
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+  tls: true
+  servername: pl.sparxiecn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /lovelive
 proxy-groups:
 - name: PROXIES
   type: select
