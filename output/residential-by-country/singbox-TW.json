@@ -6,13 +6,16 @@
     {
       "type": "trojan",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo",
-      "server": "125.227.86.46",
+      "server": "125.227.86.45",
       "server_port": 443,
       "password": "0a9f1f5a397bd427",
       "tls": {
         "enabled": true,
         "server_name": "TG.freecodes",
-        "insecure": true
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
       },
       "transport": {
         "type": "grpc",

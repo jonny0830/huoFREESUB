@@ -4,8 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇦🇱 AL 01 - myhuo",
+      "server": "bot.vudfaro.ir",
+      "server_port": 5051,
+      "uuid": "7df4f23f-b361-412a-883a-54dfdb5b8c8f"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇱 AL 02 - myhuo",
       "server": "dns22.m3hrzd.ir",
       "server_port": 1348,
       "method": "chacha20-ietf-poly1305",
@@ -16,14 +23,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - myhuo"
+        "🇦🇱 AL 01 - myhuo",
+        "🇦🇱 AL 02 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - myhuo"
+        "🇦🇱 AL 01 - myhuo",
+        "🇦🇱 AL 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

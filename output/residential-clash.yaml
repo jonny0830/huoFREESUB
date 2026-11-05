@@ -4,15 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
-  server: 125.227.86.46
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
+  server: 125.227.86.45
   port: 443
   udp: true
   type: trojan
@@ -22,6 +15,13 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: db
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
   server: 60.248.219.78
   port: 443
@@ -41,16 +41,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
 rules:
 - MATCH,PROXIES

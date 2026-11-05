@@ -12,22 +12,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
-  server: 185.153.55.28
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 769f34f0-1500-488f-b414-03bc90666502
-  sni: se.mimowhat.online
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
-  server: 70.34.207.14
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -38,6 +22,25 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
+  server: 70.34.207.14
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
+  server: 62.93.166.184
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
   server: 138.199.55.230
   port: 1270
@@ -58,20 +61,27 @@ proxies:
   tls: true
   servername: 138-124-86-230.sslip.io
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
 - name: 🇸🇪 瑞典 (Sweden) 07 - myhuo
-  server: 31.77.13.20
-  port: 2063
+  server: 95.143.196.97
+  port: 443
+  udp: true
+  type: trojan
+  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
+  sni: connect-se.mimowhat.online
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 08 - myhuo
+  server: 194.104.94.141
+  port: 443
   udp: true
   type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
+  servername: se3.shtil.io
+  skip-cert-verify: false
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -85,6 +95,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - myhuo
   - 🇸🇪 瑞典 (Sweden) 06 - myhuo
   - 🇸🇪 瑞典 (Sweden) 07 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 08 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,5 +108,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - myhuo
   - 🇸🇪 瑞典 (Sweden) 06 - myhuo
   - 🇸🇪 瑞典 (Sweden) 07 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 08 - myhuo
 rules:
 - MATCH,PROXIES

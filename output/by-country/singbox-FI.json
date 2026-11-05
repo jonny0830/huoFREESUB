@@ -26,62 +26,25 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - myhuo",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "server": "146.103.118.189",
+      "server_port": 443,
+      "uuid": "ce698f0c-a8ec-474a-b5d8-3be8032deeb8",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl2.574ck.xyz",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/vless",
+        "path": "/574ck-finland",
         "headers": {
-          "Host": "45.144.234.157"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
-      "server": "217.144.188.185",
-      "server_port": 443,
-      "uuid": "8d954cbe-7ca9-402d-bfaf-aca6c92c04c3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.nordea.fi",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - myhuo",
-      "server": "89.144.53.4",
-      "server_port": 8445,
-      "uuid": "5c32201a-6c0e-451b-8f0a-24b4bd40df59",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "videos.porsche.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk",
-          "short_id": "1a2b3c4d"
+          "Host": "nl2.574ck.xyz"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - myhuo",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
       "server": "104.24.0.1",
       "server_port": 2053,
       "password": "gHQP0D7D15",
@@ -106,21 +69,24 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - myhuo",
+      "server": "65.108.240.210",
+      "server_port": 39018,
+      "uuid": "fa15684a-81e6-4ba7-bc4b-f601c0d998e9",
+      "security": "auto"
+    },
+    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - myhuo",
-      "server": "latvia.zovip2.ir",
-      "server_port": 443,
-      "uuid": "2a6ac8b1-a485-49d2-97be-20d2759312e2",
-      "tls": {
-        "enabled": true,
-        "server_name": "tr7.zovip2.ir",
-        "insecure": false
-      },
+      "tag": "🇫🇮 芬兰 (Finland) 05 - myhuo",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
       "transport": {
         "type": "ws",
-        "path": "/api/v3/pulse",
+        "path": "/vless",
         "headers": {
-          "Host": "tr7.zovip2.ir"
+          "Host": "45.144.234.157"
         }
       }
     },
@@ -133,8 +99,7 @@
         "🇫🇮 芬兰 (Finland) 02 - myhuo",
         "🇫🇮 芬兰 (Finland) 03 - myhuo",
         "🇫🇮 芬兰 (Finland) 04 - myhuo",
-        "🇫🇮 芬兰 (Finland) 05 - myhuo",
-        "🇫🇮 芬兰 (Finland) 06 - myhuo"
+        "🇫🇮 芬兰 (Finland) 05 - myhuo"
       ]
     },
     {
@@ -145,8 +110,7 @@
         "🇫🇮 芬兰 (Finland) 02 - myhuo",
         "🇫🇮 芬兰 (Finland) 03 - myhuo",
         "🇫🇮 芬兰 (Finland) 04 - myhuo",
-        "🇫🇮 芬兰 (Finland) 05 - myhuo",
-        "🇫🇮 芬兰 (Finland) 06 - myhuo"
+        "🇫🇮 芬兰 (Finland) 05 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

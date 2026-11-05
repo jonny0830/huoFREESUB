@@ -18,17 +18,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 02 - myhuo
-  server: 31.57.185.134
-  port: 8443
-  udp: true
-  type: trojan
-  password: YektaCloud
-  sni: 31.57.185.134
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /TELEGRAM----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud----@YektaCloud
-- name: 🇮🇱 以色列 (Israel) 03 - myhuo
   server: 64.176.163.182
   port: 443
   udp: true
@@ -36,6 +25,19 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
   skip-cert-verify: true
+- name: 🇮🇱 以色列 (Israel) 03 - myhuo
+  server: connect2.accessgate.link
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 2f6c70f3-206a-4bc1-ac1f-6b70153f9c73
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko
+    short-id: b0d8c9a285c70f6f
+  servername: unpkg.com
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,6 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇱 AL 01 - myhuo
+  server: bot.vudfaro.ir
+  port: 5051
+  udp: true
+  type: vless
+  uuid: 7df4f23f-b361-412a-883a-54dfdb5b8c8f
+- name: 🇦🇱 AL 02 - myhuo
   server: dns22.m3hrzd.ir
   port: 1348
   udp: true
@@ -17,11 +23,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇦🇱 AL 01 - myhuo
+  - 🇦🇱 AL 02 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇱 AL 01 - myhuo
+  - 🇦🇱 AL 02 - myhuo
 rules:
 - MATCH,PROXIES
