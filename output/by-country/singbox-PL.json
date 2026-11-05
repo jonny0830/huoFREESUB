@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 01 - myhuo",
-      "server": "217.30.10.44",
-      "server_port": 9095,
-      "method": "aes-256-cfb",
-      "password": "N7j3pdTYkKmsy8CR"
-    },
-    {
       "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 02 - myhuo",
+      "tag": "🇵🇱 波兰 (Poland) 01 - myhuo",
       "server": "70.34.252.255",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -25,28 +17,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - myhuo",
-      "server": "94.249.180.86",
+      "tag": "🇵🇱 波兰 (Poland) 02 - myhuo",
+      "server": "2.26.255.215",
       "server_port": 443,
-      "uuid": "0de1d303-d7de-0001-8679-c4cb67e2e2cc",
+      "uuid": "69e41e64-a832-471a-b740-94577ca85520",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "amd.com",
+        "server_name": "cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
-          "short_id": "a696de84963656de"
+          "public_key": "pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI",
+          "short_id": "50"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04 - myhuo",
+      "tag": "🇵🇱 波兰 (Poland) 03 - myhuo",
       "server": "217.30.10.72",
       "server_port": 443,
       "uuid": "5c32201a-6c0e-451b-8f0a-24b4bd40df59",
@@ -62,6 +54,27 @@
           "enabled": true,
           "public_key": "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk",
           "short_id": "1a2b3c4d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 04 - myhuo",
+      "server": "94.249.180.86",
+      "server_port": 443,
+      "uuid": "0de1d303-d7de-0001-8679-c4cb67e2e2cc",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
+          "short_id": "a696de84963656de"
         }
       }
     },
@@ -106,6 +119,30 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 07 - myhuo",
+      "server": "ru1.radiolumens.uk",
+      "server_port": 8445,
+      "uuid": "36cf792c-f07d-4500-97ea-a395e5178deb",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru1.radiolumens.uk",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "beru-pl"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 08 - myhuo",
       "server": "82.118.22.161",
       "server_port": 443,
       "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
@@ -135,7 +172,8 @@
         "🇵🇱 波兰 (Poland) 04 - myhuo",
         "🇵🇱 波兰 (Poland) 05 - myhuo",
         "🇵🇱 波兰 (Poland) 06 - myhuo",
-        "🇵🇱 波兰 (Poland) 07 - myhuo"
+        "🇵🇱 波兰 (Poland) 07 - myhuo",
+        "🇵🇱 波兰 (Poland) 08 - myhuo"
       ]
     },
     {
@@ -148,7 +186,8 @@
         "🇵🇱 波兰 (Poland) 04 - myhuo",
         "🇵🇱 波兰 (Poland) 05 - myhuo",
         "🇵🇱 波兰 (Poland) 06 - myhuo",
-        "🇵🇱 波兰 (Poland) 07 - myhuo"
+        "🇵🇱 波兰 (Poland) 07 - myhuo",
+        "🇵🇱 波兰 (Poland) 08 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

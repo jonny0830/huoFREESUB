@@ -17,39 +17,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 02 - myhuo
-  server: 146.103.118.189
-  port: 443
-  udp: true
-  type: vless
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
-  tls: true
-  servername: nl2.574ck.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /574ck-finland
-    headers:
-      Host: nl2.574ck.xyz
-- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
-  server: 104.24.0.1
-  port: 2053
-  udp: true
-  type: trojan
-  password: gHQP0D7D15
-  sni: marvdasht.phonecomparisonblog.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
-  server: 65.108.240.210
-  port: 39018
-  udp: true
-  type: vmess
-  uuid: fa15684a-81e6-4ba7-bc4b-f601c0d998e9
-  alterId: 0
-  cipher: auto
-- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -60,6 +27,38 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
+  server: 89.144.53.4
+  port: 8445
+  udp: true
+  type: vless
+  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
+  servername: videos.porsche.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
+  server: 104.24.0.1
+  port: 2053
+  udp: true
+  type: trojan
+  password: gHQP0D7D15
+  sni: marvdasht.phonecomparisonblog.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
+  server: 65.108.240.210
+  port: 39018
+  udp: true
+  type: vmess
+  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select

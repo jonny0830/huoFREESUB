@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - myhuo
-  server: 217.30.10.44
-  port: 9095
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 02 - myhuo
   server: 70.34.252.255
   port: 443
   udp: true
@@ -19,20 +12,20 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03 - myhuo
-  server: 94.249.180.86
+- name: 🇵🇱 波兰 (Poland) 02 - myhuo
+  server: 2.26.255.215
   port: 443
   udp: true
   type: vless
-  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
+  uuid: 69e41e64-a832-471a-b740-94577ca85520
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
+    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
+    short-id: '50'
+  servername: cloudflare.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 04 - myhuo
+- name: 🇵🇱 波兰 (Poland) 03 - myhuo
   server: 217.30.10.72
   port: 443
   udp: true
@@ -45,6 +38,19 @@ proxies:
     short-id: 1a2b3c4d
   servername: images.porsche.com
   client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 04 - myhuo
+  server: 94.249.180.86
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 05 - myhuo
   server: 145.63.143.205
   port: 8444
@@ -74,6 +80,19 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 07 - myhuo
+  server: ru1.radiolumens.uk
+  port: 8445
+  udp: true
+  type: vless
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  tls: true
+  servername: ru1.radiolumens.uk
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: beru-pl
+- name: 🇵🇱 波兰 (Poland) 08 - myhuo
   server: 82.118.22.161
   port: 443
   udp: true
@@ -98,6 +117,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - myhuo
   - 🇵🇱 波兰 (Poland) 06 - myhuo
   - 🇵🇱 波兰 (Poland) 07 - myhuo
+  - 🇵🇱 波兰 (Poland) 08 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,5 +130,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - myhuo
   - 🇵🇱 波兰 (Poland) 06 - myhuo
   - 🇵🇱 波兰 (Poland) 07 - myhuo
+  - 🇵🇱 波兰 (Poland) 08 - myhuo
 rules:
 - MATCH,PROXIES

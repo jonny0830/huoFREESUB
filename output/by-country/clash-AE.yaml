@@ -29,19 +29,6 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
-  server: 89.125.8.88
-  port: 443
-  udp: true
-  type: vless
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Yw0T7qr5Wk3HCqV8h6V9N5wcInMxQ0XsxUuLV62_bEM
-    short-id: c498d5e4a069592c
-  servername: nl5.japancase.site
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 05 - myhuo
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -52,14 +39,23 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 06 - myhuo
-  server: sclass-00.catcat321.com
-  port: 20123
+- name: 🇦🇪 阿联酋 (UAE) 05 - myhuo
+  server: 157.254.38.210
+  port: 20086
   udp: true
   type: trojan
   password: d9064589-74af-432a-9390-5d8a9da281bf
   sni: hk.catxstar.com
-  skip-cert-verify: true
+  skip-cert-verify: false
+- name: 🇦🇪 阿联酋 (UAE) 06 - myhuo
+  server: uae.unixzone.us
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select

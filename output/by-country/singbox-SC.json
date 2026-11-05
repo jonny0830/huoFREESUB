@@ -1,0 +1,62 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - myhuo",
+      "server": "147.45.245.177",
+      "server_port": 443,
+      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "media-91.topp-con.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU",
+          "short_id": "b9120cd53ffd7bba"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - myhuo",
+      "server": "45.207.207.25",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "gj1+XKulKV0nmw6IThckOkkJh5DSM7+C"
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇸🇨 塞舌尔 (Seychelles) 01 - myhuo",
+        "🇸🇨 塞舌尔 (Seychelles) 02 - myhuo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇸🇨 塞舌尔 (Seychelles) 01 - myhuo",
+        "🇸🇨 塞舌尔 (Seychelles) 02 - myhuo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

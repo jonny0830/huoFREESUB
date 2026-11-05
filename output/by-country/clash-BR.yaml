@@ -13,6 +13,14 @@ proxies:
   sni: 216.238.104.154
   skip-cert-verify: true
 - name: 🇧🇷 巴西 (Brazil) 02 - myhuo
+  server: br001.zestapp778.com
+  port: 39533
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: br001.zestapp778.com
+  skip-cert-verify: true
+- name: 🇧🇷 巴西 (Brazil) 03 - myhuo
   server: 103.88.232.55
   port: 1270
   udp: true
@@ -23,14 +31,6 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇧🇷 巴西 (Brazil) 03 - myhuo
-  server: br001.zestapp778.com
-  port: 39533
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: br001.zestapp778.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

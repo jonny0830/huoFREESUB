@@ -12,51 +12,8 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - myhuo",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - myhuo",
-      "server": "70.34.207.14",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - myhuo",
-      "server": "62.93.166.184",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - myhuo",
       "server": "138.199.55.230",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -68,8 +25,21 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - myhuo",
+      "server": "62.93.166.184",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - myhuo",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - myhuo",
       "server": "138.124.86.230",
       "server_port": 48115,
       "uuid": "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b",
@@ -89,7 +59,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - myhuo",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - myhuo",
       "server": "95.143.196.97",
       "server_port": 443,
       "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
@@ -108,6 +78,43 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - myhuo",
+      "server": "70.34.207.14",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - myhuo",
+      "server": "31.76.81.144",
+      "server_port": 443,
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sw.golangwikito.cfd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
+          "short_id": "a1037b25dcef6aa7"
+        }
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 08 - myhuo",
       "server": "194.104.94.141",
@@ -116,14 +123,20 @@
       "tls": {
         "enabled": true,
         "server_name": "se3.shtil.io",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 09 - myhuo",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
         }
       }
     },
@@ -139,7 +152,8 @@
         "🇸🇪 瑞典 (Sweden) 05 - myhuo",
         "🇸🇪 瑞典 (Sweden) 06 - myhuo",
         "🇸🇪 瑞典 (Sweden) 07 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 08 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 08 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 09 - myhuo"
       ]
     },
     {
@@ -153,7 +167,8 @@
         "🇸🇪 瑞典 (Sweden) 05 - myhuo",
         "🇸🇪 瑞典 (Sweden) 06 - myhuo",
         "🇸🇪 瑞典 (Sweden) 07 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 08 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 08 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 09 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
