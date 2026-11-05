@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - myhuo
-  server: 139.84.166.47
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: GEdoeeqLZtkJRgSa
-- name: 🇮🇳 印度 (India) 02 - myhuo
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -22,16 +15,42 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 02 - myhuo
+  server: 122.176.216.52
+  port: 443
+  udp: true
+  type: vless
+  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+  tls: true
+  servername: app-6ada5023.deploy.meerasolution.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+    headers:
+      Host: app-6ada5023.deploy.meerasolution.com
 - name: 🇮🇳 印度 (India) 03 - myhuo
-  server: in002.zestapp778.com
+  server: 139.84.210.39
   port: 42733
   udp: true
   type: trojan
   password: 5t6i121em5lkmsmk
   sni: in002.zestapp778.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇮🇳 印度 (India) 04 - myhuo
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 05 - myhuo
   server: in.smrtai.top
   port: 443
   udp: true
@@ -43,7 +62,7 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 05 - myhuo
+- name: 🇮🇳 印度 (India) 06 - myhuo
   server: 152.67.8.205
   port: 80
   udp: true
@@ -54,19 +73,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: in-152.67.8.205-0242
-- name: 🇮🇳 印度 (India) 06 - myhuo
-  server: 13.140.56.100
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
 proxy-groups:
 - name: PROXIES
   type: select
