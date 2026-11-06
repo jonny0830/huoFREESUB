@@ -81,23 +81,21 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 05 - myhuo",
-      "server": "145.63.143.205",
-      "server_port": 8444,
-      "uuid": "a8321cfe-39a2-48a0-a918-f01f7d9006ed",
+      "server": "82.118.22.161",
+      "server_port": 443,
+      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl1.meshbeat.online",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/v1/devices/10be32b380/telemetry",
-        "headers": {
-          "Host": "pl1.meshbeat.online"
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
+          "short_id": "fa3ea655619a3e78"
         }
       }
     },
@@ -143,22 +141,44 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 08 - myhuo",
-      "server": "82.118.22.161",
-      "server_port": 443,
-      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
-      "flow": "xtls-rprx-vision",
+      "server": "145.63.143.205",
+      "server_port": 8444,
+      "uuid": "a8321cfe-39a2-48a0-a918-f01f7d9006ed",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "pl1.meshbeat.online",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
-          "short_id": "fa3ea655619a3e78"
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v1/devices/10be32b380/telemetry",
+        "headers": {
+          "Host": "pl1.meshbeat.online"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 09 - myhuo",
+      "server": "72.56.233.10",
+      "server_port": 8443,
+      "uuid": "981c7ccc-2b17-473c-8358-7fd1d6eec1b4",
+      "tls": {
+        "enabled": true,
+        "server_name": "lte-v2-ws.gacvpn.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/static/js/runtime.9d03c7.js"
       }
     },
     {
@@ -173,7 +193,8 @@
         "🇵🇱 波兰 (Poland) 05 - myhuo",
         "🇵🇱 波兰 (Poland) 06 - myhuo",
         "🇵🇱 波兰 (Poland) 07 - myhuo",
-        "🇵🇱 波兰 (Poland) 08 - myhuo"
+        "🇵🇱 波兰 (Poland) 08 - myhuo",
+        "🇵🇱 波兰 (Poland) 09 - myhuo"
       ]
     },
     {
@@ -187,7 +208,8 @@
         "🇵🇱 波兰 (Poland) 05 - myhuo",
         "🇵🇱 波兰 (Poland) 06 - myhuo",
         "🇵🇱 波兰 (Poland) 07 - myhuo",
-        "🇵🇱 波兰 (Poland) 08 - myhuo"
+        "🇵🇱 波兰 (Poland) 08 - myhuo",
+        "🇵🇱 波兰 (Poland) 09 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

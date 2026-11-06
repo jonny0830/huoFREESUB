@@ -20,24 +20,58 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 02 (家宽) - myhuo",
+      "server": "104.234.239.139",
+      "server_port": 443,
+      "uuid": "70756c73-0000-4000-8000-650000000000",
+      "tls": {
+        "enabled": true,
+        "server_name": "parsa-panel-u48we.wotic15356.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/pulse",
+        "headers": {
+          "Host": "parsa-panel-u48we.wotic15356.workers.dev"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo",
+      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo",
       "server": "49.254.204.133",
       "server_port": 1774,
       "method": "aes-256-cfb",
       "password": "1234!@#$"
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - myhuo",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21041,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo",
+      "server": "125.227.86.45",
+      "server_port": 443,
+      "password": "0a9f1f5a397bd427",
+      "tls": {
+        "enabled": true,
+        "server_name": "TG.freecodes",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "db"
+      }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -55,14 +89,28 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 (家宽) - myhuo",
+      "server": "112.120.123.140",
+      "server_port": 443,
+      "password": "40fb1315-191a-11ed-b0ca-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (移动家宽) - myhuo",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo"
+        "🇺🇸 美国 (United States) 02 (家宽) - myhuo",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 06 (家宽) - myhuo"
       ]
     },
     {
@@ -70,9 +118,11 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (移动家宽) - myhuo",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo"
+        "🇺🇸 美国 (United States) 02 (家宽) - myhuo",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 06 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
