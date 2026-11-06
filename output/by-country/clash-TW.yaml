@@ -25,6 +25,34 @@ proxies:
     short-id: cff998a4
   servername: www.amazon.com
   client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
+  server: 83.147.13.74
+  port: 8443
+  udp: true
+  type: vless
+  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
+  tls: true
+  reality-opts:
+    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
+    short-id: 4ad2e4e660550e43
+  servername: github.githubassets.com
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
+  server: 103.115.109.49
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 103.115.109.49
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - myhuo
+  server: 18.141.210.28
+  port: 10000
+  udp: true
+  type: hysteria2
+  password: eRlY6dXnQ4QUzVOQi6YDfZWq
+  sni: sg-transit-3.nebulacloud.win
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +60,9 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +70,8 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 05 - myhuo
 rules:
 - MATCH,PROXIES

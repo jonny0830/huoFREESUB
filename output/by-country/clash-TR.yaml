@@ -5,7 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - myhuo
-  server: 198.105.123.224
+  server: 78.135.73.47
+  port: 443
+  udp: true
+  type: vless
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
+  server: 153.56.210.134
+  port: 57251
+  udp: true
+  type: hysteria2
+  password: ff0343ad-1c9f-4986-8c62-c01935b508ca
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
+- name: 🇹🇷 土耳其 (Turkey) 03 - myhuo
+  server: tr1.japancase.site
   port: 443
   udp: true
   type: vless
@@ -17,7 +40,7 @@ proxies:
     short-id: 41ae8e266bc3346f
   servername: tr1.japancase.site
   client-fingerprint: ''
-- name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
+- name: 🇹🇷 土耳其 (Turkey) 04 - myhuo
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -36,6 +59,8 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - myhuo
   - 🇹🇷 土耳其 (Turkey) 02 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 03 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +68,7 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - myhuo
   - 🇹🇷 土耳其 (Turkey) 02 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 03 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 04 - myhuo
 rules:
 - MATCH,PROXIES

@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - myhuo",
+      "server": "38.60.223.125",
+      "server_port": 13108,
+      "method": "aes-128-gcm",
+      "password": "8722de56b6c0b3f6a4d01cf91c07e6aa"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - myhuo",
       "server": "193.233.253.180",
       "server_port": 8444,
       "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
@@ -29,7 +37,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - myhuo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - myhuo",
       "server": "de-2.ffpn.pro",
       "server_port": 443,
       "uuid": "727a9178-d7f0-4142-8205-b0d19959ded0",
@@ -49,37 +57,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - myhuo",
-      "server": "38.60.223.125",
-      "server_port": 13108,
-      "method": "aes-128-gcm",
-      "password": "8722de56b6c0b3f6a4d01cf91c07e6aa"
-    },
-    {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 04 - myhuo",
-      "server": "147.45.126.97",
-      "server_port": 443,
-      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl3.japancase.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "COvqGpB7lUdZshmbn5zdqiVi81n8Iyha8RbEHtK93xc",
-          "short_id": "5037f0423dc4e4ff"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - myhuo",
       "server": "193.233.199.84",
       "server_port": 443,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
@@ -100,7 +79,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - myhuo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - myhuo",
       "server": "193.233.252.43",
       "server_port": 443,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
@@ -117,6 +96,18 @@
           "public_key": "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg",
           "short_id": "41ae8e266bc3346f"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - myhuo",
+      "server": "steel7.hadsvpn.com",
+      "server_port": 443,
+      "password": "23c82941-70f4-4381-90db-bd28e9a902e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "steel7.hadsvpn.com",
+        "insecure": false
       }
     },
     {
@@ -184,47 +175,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 10 - myhuo",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU="
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 11 - myhuo",
-      "server": "steel7.hadsvpn.com",
-      "server_port": 443,
-      "password": "23c82941-70f4-4381-90db-bd28e9a902e9",
-      "tls": {
-        "enabled": true,
-        "server_name": "steel7.hadsvpn.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 12 - myhuo",
-      "server": "du-rov.secureservice.top",
-      "server_port": 8443,
-      "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "du-rov.secureservice.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI",
-          "short_id": "3cbc3d737fb9c4af"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -237,10 +187,7 @@
         "🇷🇺 俄罗斯 (Russia) 06 - myhuo",
         "🇷🇺 俄罗斯 (Russia) 07 - myhuo",
         "🇷🇺 俄罗斯 (Russia) 08 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 09 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 10 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 11 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 12 - myhuo"
+        "🇷🇺 俄罗斯 (Russia) 09 - myhuo"
       ]
     },
     {
@@ -255,10 +202,7 @@
         "🇷🇺 俄罗斯 (Russia) 06 - myhuo",
         "🇷🇺 俄罗斯 (Russia) 07 - myhuo",
         "🇷🇺 俄罗斯 (Russia) 08 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 09 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 10 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 11 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 12 - myhuo"
+        "🇷🇺 俄罗斯 (Russia) 09 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

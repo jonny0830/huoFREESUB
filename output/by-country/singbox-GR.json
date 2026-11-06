@@ -5,21 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇶🇦 卡塔尔 (Qatar) 01 - myhuo",
-      "server": "149.104.121.174",
-      "server_port": 8443,
-      "uuid": "1506f2e0-ae12-4718-b5ab-c5609161300e",
+      "tag": "🇬🇷 希腊 (Greece) 01 - myhuo",
+      "server": "85.90.197.220",
+      "server_port": 443,
+      "uuid": "8f704ed6-9a1a-4d04-94dd-1bff501716de",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "as10.cdn77.icu",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8",
-          "short_id": ""
+          "public_key": "biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4",
+          "short_id": "94acb54627612d43"
         }
       }
     },
@@ -28,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇶🇦 卡塔尔 (Qatar) 01 - myhuo"
+        "🇬🇷 希腊 (Greece) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇶🇦 卡塔尔 (Qatar) 01 - myhuo"
+        "🇬🇷 希腊 (Greece) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
