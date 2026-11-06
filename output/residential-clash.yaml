@@ -4,44 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
-  server: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
+  server: 125.227.86.45
   port: 443
   udp: true
-  type: hysteria2
-  password: f7d95364-607b-11ee-93af-f23c91369f2d
-  sni: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo
-  server: e4e8e68f-tmm5c0-tny186-4lg6.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
-  sni: e4e8e68f-tmm5c0-tny186-4lg6.nw4.hyhuawei.com
-  skip-cert-verify: false
+  type: trojan
+  password: 0a9f1f5a397bd427
+  sni: TG.freecodes
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: db
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo
 rules:
 - MATCH,PROXIES
