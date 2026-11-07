@@ -31,33 +31,18 @@ proxies:
   servername: udemy.com
   client-fingerprint: ios
 - name: 🇨🇿 捷克 (Czech) 03 - myhuo
-  server: 91.199.147.41
+  server: server.slavkiti.monster
   port: 443
   udp: true
   type: vless
-  uuid: 4d945644-69ab-47e0-98b3-d43a6313135d
-  tls: true
-  servername: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/SaXqikbSPA3ImtmZKAFin?ed=2560
-    headers:
-      Host: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
-- name: 🇨🇿 捷克 (Czech) 04 - myhuo
-  server: 193.124.17.190
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6dfc9149-1ff9-41c3-8563-0ef284381731
+  uuid: 1896c6c9-a941-4688-a865-29027bf7f8e6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 1374bddeb25d
-  servername: www.tradingview.com
-  client-fingerprint: firefox
+    short-id: 6c825bc79850
+  servername: www.microsoft.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,7 +51,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - myhuo
   - 🇨🇿 捷克 (Czech) 02 - myhuo
   - 🇨🇿 捷克 (Czech) 03 - myhuo
-  - 🇨🇿 捷克 (Czech) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,6 +59,5 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - myhuo
   - 🇨🇿 捷克 (Czech) 02 - myhuo
   - 🇨🇿 捷克 (Czech) 03 - myhuo
-  - 🇨🇿 捷克 (Czech) 04 - myhuo
 rules:
 - MATCH,PROXIES

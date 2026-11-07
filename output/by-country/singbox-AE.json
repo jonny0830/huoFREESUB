@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - myhuo",
-      "server": "151.241.19.29",
+      "server": "151.241.19.36",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -14,7 +14,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - myhuo",
-      "server": "151.241.19.36",
+      "server": "151.241.19.29",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -28,7 +28,7 @@
       "tls": {
         "enabled": true,
         "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
+        "insecure": true
       },
       "obfs": {
         "type": "salamander",
@@ -50,29 +50,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - myhuo",
-      "server": "89.22.224.146",
-      "server_port": 43788,
-      "uuid": "6fbd9bd1-ccd4-4e2f-a918-a0f871965763",
-      "tls": {
-        "enabled": true,
-        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -80,8 +57,7 @@
         "🇦🇪 阿联酋 (UAE) 01 - myhuo",
         "🇦🇪 阿联酋 (UAE) 02 - myhuo",
         "🇦🇪 阿联酋 (UAE) 03 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 04 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 05 - myhuo"
+        "🇦🇪 阿联酋 (UAE) 04 - myhuo"
       ]
     },
     {
@@ -91,8 +67,7 @@
         "🇦🇪 阿联酋 (UAE) 01 - myhuo",
         "🇦🇪 阿联酋 (UAE) 02 - myhuo",
         "🇦🇪 阿联酋 (UAE) 03 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 04 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 05 - myhuo"
+        "🇦🇪 阿联酋 (UAE) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,61 +6,88 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - myhuo
   server: 217.30.10.44
+  port: 9071
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mENfxTFQpRKKh4As
+- name: 🇵🇱 波兰 (Poland) 02 - myhuo
+  server: 217.30.10.44
   port: 9042
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: S7KwUu7yBy58S3Ga
-- name: 🇵🇱 波兰 (Poland) 02 - myhuo
+- name: 🇵🇱 波兰 (Poland) 03 - myhuo
   server: 217.30.10.44
   port: 9052
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 03 - myhuo
-  server: 217.30.10.44
-  port: 9006
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: FAdUvMJUq5vDgKEq
 - name: 🇵🇱 波兰 (Poland) 04 - myhuo
-  server: 217.30.10.44
-  port: 9095
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 05 - myhuo
-  server: 217.30.10.44
-  port: 9062
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: tkhHVxxfM2QErBWe
-- name: 🇵🇱 波兰 (Poland) 06 - myhuo
-  server: 217.30.10.44
-  port: 9071
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 07 - myhuo
-  server: 217.30.10.44
-  port: 9076
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
-- name: 🇵🇱 波兰 (Poland) 08 - myhuo
   server: 217.30.10.44
   port: 9099
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 7heRqkPG3hg4UnRm
+- name: 🇵🇱 波兰 (Poland) 05 - myhuo
+  server: 217.30.10.44
+  port: 9006
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: FAdUvMJUq5vDgKEq
+- name: 🇵🇱 波兰 (Poland) 06 - myhuo
+  server: 217.30.10.44
+  port: 9062
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: tkhHVxxfM2QErBWe
+- name: 🇵🇱 波兰 (Poland) 07 - myhuo
+  server: 54.37.235.208
+  port: 11169
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: 122e6f90890e2691f3da63eddf951495
+- name: 🇵🇱 波兰 (Poland) 08 - myhuo
+  server: 217.30.10.44
+  port: 9063
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aQqJbtwFGcCCaeL3
 - name: 🇵🇱 波兰 (Poland) 09 - myhuo
+  server: 217.30.10.44
+  port: 9095
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: N7j3pdTYkKmsy8CR
+- name: 🇵🇱 波兰 (Poland) 10 - myhuo
+  server: 217.30.10.44
+  port: 9076
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: S2zDyyPcmZN2h8EC
+- name: 🇵🇱 波兰 (Poland) 11 - myhuo
+  server: 2.26.255.215
+  port: 443
+  udp: true
+  type: vless
+  uuid: 69e41e64-a832-471a-b740-94577ca85520
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
+    short-id: '50'
+  servername: cloudflare.com
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 12 - myhuo
   server: 70.34.252.255
   port: 443
   udp: true
@@ -68,7 +95,7 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 10 - myhuo
+- name: 🇵🇱 波兰 (Poland) 13 - myhuo
   server: 94.249.180.86
   port: 443
   udp: true
@@ -81,14 +108,7 @@ proxies:
     short-id: a696de84963656de
   servername: amd.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 11 - myhuo
-  server: 217.30.10.44
-  port: 9063
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aQqJbtwFGcCCaeL3
-- name: 🇵🇱 波兰 (Poland) 12 - myhuo
+- name: 🇵🇱 波兰 (Poland) 14 - myhuo
   server: 54.37.131.126
   port: 80
   udp: true
@@ -101,6 +121,19 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 15 - myhuo
+  server: 82.118.22.161
+  port: 443
+  udp: true
+  type: vless
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -118,6 +151,9 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 10 - myhuo
   - 🇵🇱 波兰 (Poland) 11 - myhuo
   - 🇵🇱 波兰 (Poland) 12 - myhuo
+  - 🇵🇱 波兰 (Poland) 13 - myhuo
+  - 🇵🇱 波兰 (Poland) 14 - myhuo
+  - 🇵🇱 波兰 (Poland) 15 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -135,5 +171,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 10 - myhuo
   - 🇵🇱 波兰 (Poland) 11 - myhuo
   - 🇵🇱 波兰 (Poland) 12 - myhuo
+  - 🇵🇱 波兰 (Poland) 13 - myhuo
+  - 🇵🇱 波兰 (Poland) 14 - myhuo
+  - 🇵🇱 波兰 (Poland) 15 - myhuo
 rules:
 - MATCH,PROXIES
