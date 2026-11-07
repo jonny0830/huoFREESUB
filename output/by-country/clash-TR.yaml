@@ -5,6 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - myhuo
+  server: 153.56.210.134
+  port: 34121
+  udp: true
+  type: hysteria2
+  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
+- name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
   server: 62.133.63.45
   port: 8444
   udp: true
@@ -19,7 +29,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
+- name: 🇹🇷 土耳其 (Turkey) 03 - myhuo
   server: 153.56.210.134
   port: 38045
   udp: true
@@ -29,7 +39,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 642516f2-f9bd-41ce-9904-dee699c39cf9
-- name: 🇹🇷 土耳其 (Turkey) 03 - myhuo
+- name: 🇹🇷 土耳其 (Turkey) 04 - myhuo
   server: 153.56.210.134
   port: 57251
   udp: true
@@ -39,17 +49,33 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
-- name: 🇹🇷 土耳其 (Turkey) 04 - myhuo
-  server: 153.56.210.134
-  port: 34121
-  udp: true
-  type: hysteria2
-  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
 - name: 🇹🇷 土耳其 (Turkey) 05 - myhuo
+  server: 78.135.73.47
+  port: 443
+  udp: true
+  type: vless
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 06 - myhuo
+  server: 147.45.66.60
+  port: 43000
+  udp: true
+  type: vless
+  uuid: 01e61db7-9e0b-4431-a995-a5288a01b951
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DbL9RJFvJrnxBu6fFhWkHF8nsD6cK_DKMuMV00RmlWg
+    short-id: 4d3d8e15
+  servername: 147.45.66.60
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 07 - myhuo
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -60,33 +86,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 06 - myhuo
-  server: tr3.japancase.site
-  port: 443
-  udp: true
-  type: vless
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: B5Rbu23-J_PmzD6d-5ra_pxKaXd1MeRf6IT4jT_6PEM
-    short-id: 071c3bd86b0c3c73
-  servername: tr3.japancase.site
-  client-fingerprint: ''
-- name: 🇹🇷 土耳其 (Turkey) 07 - myhuo
-  server: tr1.japancase.site
-  port: 443
-  udp: true
-  type: vless
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
-    short-id: 41ae8e266bc3346f
-  servername: tr1.japancase.site
-  client-fingerprint: ''
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
