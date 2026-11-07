@@ -4,25 +4,47 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - myhuo",
-      "server": "104.16.10.100",
-      "server_port": 443,
-      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
-      "tls": {
-        "enabled": true,
-        "server_name": "u.srilankangrill.online",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "104.17.147.222",
+      "server_port": 80,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/ws",
         "headers": {
-          "Host": "u.srilankangrill.online"
+          "Host": "vmess.lbw666.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 02 - myhuo",
+      "server": "104.17.147.222",
+      "server_port": 80,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/ws?ed=2048",
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 03 - myhuo",
+      "server": "104.17.147.222",
+      "server_port": 80,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
         }
       }
     },
@@ -31,14 +53,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🌐 其他地区 (Other) 01 - myhuo",
+        "🌐 其他地区 (Other) 02 - myhuo",
+        "🌐 其他地区 (Other) 03 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🌐 其他地区 (Other) 01 - myhuo",
+        "🌐 其他地区 (Other) 02 - myhuo",
+        "🌐 其他地区 (Other) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

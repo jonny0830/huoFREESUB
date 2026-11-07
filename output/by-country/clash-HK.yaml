@@ -5,6 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - myhuo
+  server: 165.154.63.139
+  port: 443
+  udp: true
+  type: vless
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
+    short-id: ca4aedd4
+  servername: www.amazon.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - myhuo
+  server: 78bc7982-tmm5c0-u0aht1-1rz5s.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 40e084d6-0316-11f0-90e2-f23c913c8d2b
+  sni: 78bc7982-tmm5c0-u0aht1-1rz5s.hk3.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - myhuo
   server: 209.33.160.122
   port: 39098
   udp: true
@@ -15,40 +36,22 @@ proxies:
   reality-opts:
     public-key: DtOZ39u6MyQMG96tl13-M7-HeaqQzW2RLBVPk9py-Vg
   servername: dash.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - myhuo
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
+  sni: 202.146.222.174
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - myhuo
-  server: 152.32.254.68
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
-  server: e4e8e68f-tmm5c0-tny186-4lg6.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
-  sni: e4e8e68f-tmm5c0-tny186-4lg6.nw4.hyhuawei.com
-  skip-cert-verify: false
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
-  server: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
+  server: 112.120.123.140
   port: 443
   udp: true
   type: hysteria2
-  password: f7d95364-607b-11ee-93af-f23c91369f2d
-  sni: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
+  password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
+  sni: 9fc34650-tmm5c0-tmj4pk-1kcpe.nw4.hyhuawei.com
   skip-cert-verify: false
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
   server: 85.155.149.190
@@ -69,8 +72,18 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
+  sni: t.me
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
+  server: 152.32.254.68
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: 127.0.0.1
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,6 +96,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -95,5 +109,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
 rules:
 - MATCH,PROXIES

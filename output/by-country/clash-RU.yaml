@@ -5,31 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - myhuo
-  server: 130.49.177.193
+  server: 89.105.218.138
   port: 443
   udp: true
   type: vless
-  uuid: 727a9178-d7f0-4142-8205-b0d19959ded0
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc
-    short-id: 681fc2dd643bc2f3
-  servername: de-2.ffpn.pro
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: golos.mail.ru
   client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
-  server: 193.233.252.43
-  port: 443
+  server: 193.233.253.180
+  port: 8444
   udp: true
   type: vless
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-  flow: xtls-rprx-vision
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
   tls: true
   reality-opts:
-    public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
-    short-id: 41ae8e266bc3346f
-  servername: se1.japancase.site
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
   client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
 - name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
   server: 185.215.184.85
   port: 443
@@ -44,73 +45,19 @@ proxies:
   servername: dvizhok.su
   client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
-  server: 38.60.223.125
-  port: 13108
+  server: 130.49.177.193
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
+  type: vless
+  uuid: 727a9178-d7f0-4142-8205-b0d19959ded0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc
+    short-id: 681fc2dd643bc2f3
+  servername: de-2.ffpn.pro
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
-  server: ee.subv.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: dvizhok.su
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
-  server: 81.177.215.220
-  port: 443
-  udp: true
-  type: vless
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: B5Rbu23-J_PmzD6d-5ra_pxKaXd1MeRf6IT4jT_6PEM
-    short-id: 071c3bd86b0c3c73
-  servername: tr3.japancase.site
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 07 - myhuo
-  server: steel7.hadsvpn.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 23c82941-70f4-4381-90db-bd28e9a902e9
-  sni: steel7.hadsvpn.com
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 08 - myhuo
-  server: xsru1.ddnsfree.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xsru1.ddnsfree.com
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 09 - myhuo
-  server: 201.24.121.243
-  port: 443
-  udp: true
-  type: vless
-  uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
-  tls: true
-  servername: kk-ru24a1.testkknegr.online
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vlgrpc
-- name: 🇷🇺 俄罗斯 (Russia) 10 - myhuo
   server: 193.233.199.84
   port: 443
   udp: true
@@ -123,8 +70,8 @@ proxies:
     short-id: 38559e47f5536913
   servername: fi3game.japancase.site
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 11 - myhuo
-  server: prvtch.titun.su
+- name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
+  server: novonl.subv.ru
   port: 443
   udp: true
   type: vless
@@ -134,8 +81,128 @@ proxies:
   reality-opts:
     public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
     short-id: 428ef87fd47a3a32
-  servername: perevodchiki.su
+  servername: golos.mail.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 07 - myhuo
+  server: 193.233.252.43
+  port: 443
+  udp: true
+  type: vless
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
+    short-id: 41ae8e266bc3346f
+  servername: se1.japancase.site
   client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 08 - myhuo
+  server: ee.subv.ru
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: dvizhok.su
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 09 - myhuo
+  server: fduknew.titun.su
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: bizorg.su
+  client-fingerprint: edge
+- name: 🇷🇺 俄罗斯 (Russia) 10 - myhuo
+  server: 46.17.47.58
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+- name: 🇷🇺 俄罗斯 (Russia) 11 - myhuo
+  server: 188.130.209.204
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4a0812f0-f9d7-4afd-9ae3-6c38e1e59485
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3p6W4rMBh1HCwbjq4lcbWO0KjkqTshJU5lkTix5nwTc
+    short-id: d3f314d0b692f63d
+  servername: promo-digital.wb.ru
+  client-fingerprint: ios
+- name: 🇷🇺 俄罗斯 (Russia) 12 - myhuo
+  server: 201.24.121.243
+  port: 443
+  udp: true
+  type: vless
+  uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
+  tls: true
+  servername: kk-ru24a1.testkknegr.online
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vlgrpc
+- name: 🇷🇺 俄罗斯 (Russia) 13 - myhuo
+  server: xsru1.ddnsfree.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xsru1.ddnsfree.com
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 (Russia) 14 - myhuo
+  server: xsru2.freeddns.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xsru2.freeddns.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /wsru
+    headers:
+      Host: xsru2.freeddns.org
+- name: 🇷🇺 俄罗斯 (Russia) 15 - myhuo
+  server: 92.243.66.79
+  port: 443
+  udp: true
+  type: vless
+  uuid: c5f59ef3-9540-49fa-bd1e-c6c2f79df49a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: siD4oj2gdtLLEphV6fUXb8ueIc2WHVn7msOUhNGPf2o
+    short-id: 8d03c10b6a874a9c
+  servername: ru-mow.probe.geomyip.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 16 - myhuo
+  server: 38.60.223.125
+  port: 13108
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
 proxy-groups:
 - name: PROXIES
   type: select
@@ -152,6 +219,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 09 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 10 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 11 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 12 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 13 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 14 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 15 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 16 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -168,5 +240,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 09 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 10 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 11 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 12 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 13 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 14 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 15 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 16 - myhuo
 rules:
 - MATCH,PROXIES

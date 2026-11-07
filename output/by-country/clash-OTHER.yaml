@@ -5,31 +5,59 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - myhuo
-  server: 104.16.10.100
-  port: 443
+  server: 104.17.147.222
+  port: 80
   udp: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: u.srilankangrill.online
+      Host: vmess.lbw666.dpdns.org
+- name: 🌐 其他地区 (Other) 02 - myhuo
+  server: 104.17.147.222
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: 🌐 其他地区 (Other) 03 - myhuo
+  server: 104.17.147.222
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - myhuo
+  - 🌐 其他地区 (Other) 02 - myhuo
+  - 🌐 其他地区 (Other) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - myhuo
+  - 🌐 其他地区 (Other) 02 - myhuo
+  - 🌐 其他地区 (Other) 03 - myhuo
 rules:
 - MATCH,PROXIES

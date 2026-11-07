@@ -6,6 +6,39 @@
     {
       "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - myhuo",
+      "server": "165.154.63.139",
+      "server_port": 443,
+      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ",
+          "short_id": "ca4aedd4"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - myhuo",
+      "server": "78bc7982-tmm5c0-u0aht1-1rz5s.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "40e084d6-0316-11f0-90e2-f23c913c8d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "78bc7982-tmm5c0-u0aht1-1rz5s.hk3.hyhuawei.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - myhuo",
       "server": "209.33.160.122",
       "server_port": 39098,
       "uuid": "7852e4df-db54-4f75-a35e-3b8fbe89e56d",
@@ -15,7 +48,7 @@
         "server_name": "dash.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -26,53 +59,25 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - myhuo",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - myhuo",
       "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "off",
+        "server_name": "202.146.222.174",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - myhuo",
-      "server": "152.32.254.68",
-      "server_port": 5010,
-      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
-      "tls": {
-        "enabled": true,
-        "server_name": "nas.aizhzo.com",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - myhuo",
-      "server": "e4e8e68f-tmm5c0-tny186-4lg6.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "a4c9b7cc-a816-11ed-9f65-f23c9164ca5d",
-      "tls": {
-        "enabled": true,
-        "server_name": "e4e8e68f-tmm5c0-tny186-4lg6.nw4.hyhuawei.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 05 - myhuo",
-      "server": "e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com",
+      "server": "112.120.123.140",
       "server_port": 443,
-      "password": "f7d95364-607b-11ee-93af-f23c91369f2d",
+      "password": "3f514ea2-4662-11ed-a8bf-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com",
+        "server_name": "9fc34650-tmm5c0-tmj4pk-1kcpe.nw4.hyhuawei.com",
         "insecure": false
       }
     },
@@ -105,8 +110,24 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "202.146.222.89",
+        "server_name": "t.me",
         "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - myhuo",
+      "server": "152.32.254.68",
+      "server_port": 5010,
+      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
+      "tls": {
+        "enabled": true,
+        "server_name": "127.0.0.1",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
       }
     },
     {
@@ -120,7 +141,8 @@
         "🇭🇰 中国香港 (Hong Kong) 04 - myhuo",
         "🇭🇰 中国香港 (Hong Kong) 05 - myhuo",
         "🇭🇰 中国香港 (Hong Kong) 06 - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 07 - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 07 - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 08 - myhuo"
       ]
     },
     {
@@ -133,7 +155,8 @@
         "🇭🇰 中国香港 (Hong Kong) 04 - myhuo",
         "🇭🇰 中国香港 (Hong Kong) 05 - myhuo",
         "🇭🇰 中国香港 (Hong Kong) 06 - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 07 - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 07 - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 08 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

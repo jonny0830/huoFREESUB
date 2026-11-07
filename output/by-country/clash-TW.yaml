@@ -5,14 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
+  server: 160.187.100.109
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 160.187.100.109
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
   server: 83.147.13.74
   port: 8443
   udp: true
@@ -24,14 +32,6 @@ proxies:
     short-id: 4ad2e4e660550e43
   servername: github.githubassets.com
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
