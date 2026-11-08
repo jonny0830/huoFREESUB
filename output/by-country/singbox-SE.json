@@ -6,18 +6,18 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - myhuo",
-      "server": "138.199.55.243",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - myhuo",
       "server": "70.34.212.124",
       "server_port": 8388,
       "method": "aes-256-gcm",
       "password": "AxIYWtskJWIIaefW"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - myhuo",
+      "server": "138.199.55.243",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "trojan",
@@ -28,7 +28,11 @@
       "tls": {
         "enabled": true,
         "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -59,21 +63,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - myhuo",
-      "server": "138.199.55.230",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - myhuo",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - myhuo",
       "server": "138.124.86.230",
       "server_port": 48115,
       "uuid": "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b",
@@ -93,28 +84,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 - myhuo",
-      "server": "194.104.94.141",
-      "server_port": 443,
-      "uuid": "6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6",
-      "tls": {
-        "enabled": true,
-        "server_name": "se3.shtil.io",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 09 - myhuo",
-      "server": "31.76.81.144",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - myhuo",
+      "server": "193.25.216.31",
       "server_port": 443,
       "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
       "flow": "xtls-rprx-vision",
@@ -129,6 +100,39 @@
           "enabled": true,
           "public_key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
           "short_id": "a1037b25dcef6aa7"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇪 瑞典 (Sweden) 08 - myhuo",
+      "server": "138.199.55.230",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 09 - myhuo",
+      "server": "194.104.94.141",
+      "server_port": 443,
+      "uuid": "6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6",
+      "tls": {
+        "enabled": true,
+        "server_name": "se3.shtil.io",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
         }
       }
     },
@@ -153,6 +157,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 11 - myhuo",
+      "server": "se1.h1cloud.net",
+      "server_port": 443,
+      "uuid": "632cd343-1e8f-4bf6-a9a2-20ada1f6970f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "3fb2b6t.se1.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XQWaIMBPo0mpWs3MooxxkjWNSgxnkIESd_2PnR8_2HA",
+          "short_id": "1061f1b1cdaad3ad"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -166,7 +191,8 @@
         "🇸🇪 瑞典 (Sweden) 07 - myhuo",
         "🇸🇪 瑞典 (Sweden) 08 - myhuo",
         "🇸🇪 瑞典 (Sweden) 09 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 10 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 10 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 11 - myhuo"
       ]
     },
     {
@@ -182,7 +208,8 @@
         "🇸🇪 瑞典 (Sweden) 07 - myhuo",
         "🇸🇪 瑞典 (Sweden) 08 - myhuo",
         "🇸🇪 瑞典 (Sweden) 09 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 10 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 10 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 11 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

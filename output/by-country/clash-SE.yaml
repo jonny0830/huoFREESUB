@@ -5,19 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - myhuo
-  server: 138.199.55.243
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
   server: 70.34.212.124
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
+- name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
+  server: 138.199.55.243
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
   server: 70.34.207.14
   port: 443
@@ -49,17 +49,6 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 06 - myhuo
-  server: 138.199.55.230
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 07 - myhuo
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -72,18 +61,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 08 - myhuo
-  server: 194.104.94.141
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  tls: true
-  servername: se3.shtil.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 09 - myhuo
-  server: 31.76.81.144
+- name: 🇸🇪 瑞典 (Sweden) 07 - myhuo
+  server: 193.25.216.31
   port: 443
   udp: true
   type: vless
@@ -95,6 +74,27 @@ proxies:
     short-id: a1037b25dcef6aa7
   servername: sw.golangwikito.cfd
   client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 08 - myhuo
+  server: 138.199.55.230
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 09 - myhuo
+  server: 194.104.94.141
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  tls: true
+  servername: se3.shtil.io
+  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 10 - myhuo
   server: 95.143.196.97
   port: 443
@@ -103,6 +103,19 @@ proxies:
   password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
   sni: connect-se.mimowhat.online
   skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 11 - myhuo
+  server: se1.h1cloud.net
+  port: 443
+  udp: true
+  type: vless
+  uuid: 632cd343-1e8f-4bf6-a9a2-20ada1f6970f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XQWaIMBPo0mpWs3MooxxkjWNSgxnkIESd_2PnR8_2HA
+    short-id: 1061f1b1cdaad3ad
+  servername: 3fb2b6t.se1.h1clayd.click
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -118,6 +131,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 08 - myhuo
   - 🇸🇪 瑞典 (Sweden) 09 - myhuo
   - 🇸🇪 瑞典 (Sweden) 10 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 11 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -133,5 +147,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 08 - myhuo
   - 🇸🇪 瑞典 (Sweden) 09 - myhuo
   - 🇸🇪 瑞典 (Sweden) 10 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 11 - myhuo
 rules:
 - MATCH,PROXIES

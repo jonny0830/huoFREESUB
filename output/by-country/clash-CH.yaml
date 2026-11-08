@@ -5,14 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - myhuo
-  server: 186.190.215.251
+  server: 23.166.88.127
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇨🇭 瑞士 (Switzerland) 02 - myhuo
-  server: 23.166.88.127
+  server: 186.190.215.251
   port: 19999
   udp: true
   type: ss
@@ -33,35 +33,42 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇨🇭 瑞士 (Switzerland) 05 - myhuo
+  server: 208.69.78.19
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 06 - myhuo
+  server: 208.69.78.158
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 07 - myhuo
   server: 140.238.213.114
   port: 50160
   udp: true
   type: hysteria2
   password: 84a506ca5aca505696a454d828420b3f
-  sni: www.bing.com
+  sni: 'off'
   skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 06 - myhuo
-  server: 179.43.166.190
+- name: 🇨🇭 瑞士 (Switzerland) 08 - myhuo
+  server: 94.26.35.217
   port: 443
   udp: true
   type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
+  uuid: 54066259-28a1-47dc-b0f7-e7715f27918e
   tls: true
   reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: perevodchiki.su
-  client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 07 - myhuo
-  server: 208.69.78.208
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 08 - myhuo
+    public-key: LHkKUZNBp93VjTHD9fpoj44-4WB-TQbDpa5A929nSwE
+    short-id: e368a430524df0fa
+  servername: 537df6t.ch5.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇨🇭 瑞士 (Switzerland) 09 - myhuo
   server: 208.69.78.33
   port: 443
   udp: true
@@ -69,7 +76,23 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: courses.yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 09 - myhuo
+- name: 🇨🇭 瑞士 (Switzerland) 10 - myhuo
+  server: 208.69.78.208
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 11 - myhuo
+  server: 208.69.78.222
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 12 - myhuo
   server: 62.109.1.5
   port: 2058
   udp: true
@@ -82,37 +105,16 @@ proxies:
     short-id: 937255313d6ce673
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 10 - myhuo
-  server: 142.91.101.39
-  port: 627
+- name: 🇨🇭 瑞士 (Switzerland) 13 - myhuo
+  server: 208.69.78.217
+  port: 21154
   udp: true
-  type: vless
-  uuid: 8199228b-e84b-42a2-9268-e400391e483a
-  tls: true
-  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 11 - myhuo
-  server: 208.69.78.60
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 12 - myhuo
-  server: 208.69.78.222
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -130,6 +132,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 10 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 11 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 12 - myhuo
+  - 🇨🇭 瑞士 (Switzerland) 13 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -147,5 +150,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 10 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 11 - myhuo
   - 🇨🇭 瑞士 (Switzerland) 12 - myhuo
+  - 🇨🇭 瑞士 (Switzerland) 13 - myhuo
 rules:
 - MATCH,PROXIES
