@@ -5,14 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - myhuo
-  server: 151.241.19.29
+  server: 151.241.19.36
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
-  server: 151.241.19.36
+  server: 151.241.19.29
   port: 19999
   udp: true
   type: ss
@@ -49,15 +49,7 @@ proxies:
   ws-opts:
     path: /vless
 - name: 🇦🇪 阿联酋 (UAE) 06 - myhuo
-  server: Sclass-C1.catcat321.com
-  port: 20086
-  udp: true
-  type: trojan
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  sni: hk.catxstar.com
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 07 - myhuo
-  server: sclass-00.catcat321.com
+  server: 217.217.222.230
   port: 20123
   udp: true
   type: trojan
@@ -75,7 +67,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - myhuo
   - 🇦🇪 阿联酋 (UAE) 05 - myhuo
   - 🇦🇪 阿联酋 (UAE) 06 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,6 +78,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - myhuo
   - 🇦🇪 阿联酋 (UAE) 05 - myhuo
   - 🇦🇪 阿联酋 (UAE) 06 - myhuo
-  - 🇦🇪 阿联酋 (UAE) 07 - myhuo
 rules:
 - MATCH,PROXIES

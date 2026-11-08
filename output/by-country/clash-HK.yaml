@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - myhuo
+  server: 13.140.83.153
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 4IxReHOucKiwvosjoRXlLLpu20Pso-rZ
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - myhuo
+  server: 9969bb96-tmm5c0-twuk0i-1hzyr.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
+  sni: 9969bb96-tmm5c0-twuk0i-1hzyr.hk3.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - myhuo
   server: 209.33.160.122
   port: 39098
   udp: true
@@ -15,24 +30,42 @@ proxies:
   reality-opts:
     public-key: DtOZ39u6MyQMG96tl13-M7-HeaqQzW2RLBVPk9py-Vg
   servername: dash.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - myhuo
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2🇨🇳
+  sni: 202.146.222.174
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - myhuo
-  server: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
+  server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
-  password: f7d95364-607b-11ee-93af-f23c91369f2d
-  sni: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.89
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
+  server: 152.32.254.68
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
   server: 85.155.149.190
   port: 443
   udp: true
@@ -44,50 +77,15 @@ proxies:
     public-key: pGCqNljaUIUVC7xpHa9nFnu6vsQ0OX3QyfvYMhLZuWY
     short-id: bee10b047804c637
   servername: hk1.japancase.site
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
-  server: vpn-hk-004.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-hk-004.fastervpn.world
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
-  server: 152.175.6.229
-  port: 31884
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: hk010.zestapp778.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
-  server: 152.32.254.68
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
-  server: 202.146.222.29
+  server: 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https3a2f2ft.me2fwangcai2efa3bfc3bcc3a1
-  skip-cert-verify: true
+  password: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
+  sni: 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

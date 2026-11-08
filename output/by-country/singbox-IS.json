@@ -1,0 +1,75 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇮🇸 冰岛 (Iceland) 01 - myhuo",
+      "server": "8.6.112.0",
+      "server_port": 8443,
+      "uuid": "8eb92a78-ec8d-4ff6-8a2d-8b801367be87",
+      "tls": {
+        "enabled": true,
+        "server_name": "KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇸 冰岛 (Iceland) 02 - myhuo",
+      "server": "191.44.112.170",
+      "server_port": 443,
+      "uuid": "46d221fa-e9b4-748c-4eae-019a88e42991",
+      "tls": {
+        "enabled": true,
+        "server_name": "orbylume.my.to",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tvpn-tor/is",
+        "headers": {
+          "Host": "orbylume.my.to"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇸 冰岛 (Iceland) 01 - myhuo",
+        "🇮🇸 冰岛 (Iceland) 02 - myhuo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇸 冰岛 (Iceland) 01 - myhuo",
+        "🇮🇸 冰岛 (Iceland) 02 - myhuo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
