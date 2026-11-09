@@ -33,13 +33,35 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 04 - myhuo",
+      "server": "189.74.115.23",
+      "server_port": 443,
+      "uuid": "9d8c3007-dfcd-4d34-a729-ae793f826581",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.mediaroshcha.cc",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
+          "short_id": "a8"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - myhuo",
         "🇦🇹 奥地利 (Austria) 02 - myhuo",
-        "🇦🇹 奥地利 (Austria) 03 - myhuo"
+        "🇦🇹 奥地利 (Austria) 03 - myhuo",
+        "🇦🇹 奥地利 (Austria) 04 - myhuo"
       ]
     },
     {
@@ -48,7 +70,8 @@
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - myhuo",
         "🇦🇹 奥地利 (Austria) 02 - myhuo",
-        "🇦🇹 奥地利 (Austria) 03 - myhuo"
+        "🇦🇹 奥地利 (Austria) 03 - myhuo",
+        "🇦🇹 奥地利 (Austria) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

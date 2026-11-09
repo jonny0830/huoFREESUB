@@ -5,6 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
+  server: 8.6.112.0
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 8eb92a78-ec8d-4ff6-8a2d-8b801367be87
+  tls: true
+  servername: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
+  server: sport.herumhas.shop
+  port: 443
+  udp: true
+  type: vless
+  uuid: 68a67906-5b37-4779-a6cc-58a1655f18b4
+  tls: true
+  servername: sport.herumhas.shop
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/v2/checkout/poll
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo
   server: esso-music-coroborito.keno.su
   port: 443
   udp: true
@@ -16,19 +44,6 @@ proxies:
     public-key: _MeP-WwmolUvi6wMXNoSs_zo6miG_OW7xk4ibzADiHY
   servername: esso-music-coroborito.keno.su
   client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
-  server: 185.215.184.78
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: dvizhok.su
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +51,7 @@ proxy-groups:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +59,6 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - myhuo
 rules:
 - MATCH,PROXIES

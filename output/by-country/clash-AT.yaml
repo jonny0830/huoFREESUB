@@ -29,6 +29,19 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
+- name: 🇦🇹 奥地利 (Austria) 04 - myhuo
+  server: 189.74.115.23
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9d8c3007-dfcd-4d34-a729-ae793f826581
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  servername: api.mediaroshcha.cc
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +50,7 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01 - myhuo
   - 🇦🇹 奥地利 (Austria) 02 - myhuo
   - 🇦🇹 奥地利 (Austria) 03 - myhuo
+  - 🇦🇹 奥地利 (Austria) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -45,5 +59,6 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01 - myhuo
   - 🇦🇹 奥地利 (Austria) 02 - myhuo
   - 🇦🇹 奥地利 (Austria) 03 - myhuo
+  - 🇦🇹 奥地利 (Austria) 04 - myhuo
 rules:
 - MATCH,PROXIES

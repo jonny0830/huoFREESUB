@@ -6,22 +6,46 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 01 - myhuo",
-      "server": "185.95.231.156",
+      "server": "no.gacvpn.site",
       "server_port": 443,
-      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
+      "uuid": "3f5e89d5-591f-4ac9-b071-b05680b573c3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "no.gacvpn.site",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-          "short_id": "a3a578ab"
+          "public_key": "mCLTVbcvg_tkaIuGqMVVBV-5d_ftEoLnJHhrCmeLDFk",
+          "short_id": "08d12dce"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇮🇱 以色列 (Israel) 02 - myhuo",
+      "server": "64.176.163.182",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "exploreeducationsectoropportunitiestodayandadvancecareers.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇮🇱 以色列 (Israel) 03 - myhuo",
+      "server": "129.159.156.109",
+      "server_port": 50160,
+      "password": "f25f19f29ce3fb53a35bf1b35b452a43",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
       }
     },
     {
@@ -29,14 +53,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01 - myhuo"
+        "🇮🇱 以色列 (Israel) 01 - myhuo",
+        "🇮🇱 以色列 (Israel) 02 - myhuo",
+        "🇮🇱 以色列 (Israel) 03 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01 - myhuo"
+        "🇮🇱 以色列 (Israel) 01 - myhuo",
+        "🇮🇱 以色列 (Israel) 02 - myhuo",
+        "🇮🇱 以色列 (Israel) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
