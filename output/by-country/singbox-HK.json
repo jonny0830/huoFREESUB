@@ -6,29 +6,29 @@
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - myhuo",
-      "server": "78bc7982-tmm5c0-u0aht1-1rz5s.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "40e084d6-0316-11f0-90e2-f23c913c8d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "78bc7982-tmm5c0-u0aht1-1rz5s.hk3.hyhuawei.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - myhuo",
       "server": "152.32.254.68",
       "server_port": 5010,
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
       "tls": {
         "enabled": true,
-        "server_name": "nas.aizhzo.com",
-        "insecure": false
+        "server_name": "127.0.0.1",
+        "insecure": true
       },
       "obfs": {
         "type": "salamander",
         "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - myhuo",
+      "server": "fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com",
+        "insecure": false
       }
     },
     {
@@ -46,13 +46,13 @@
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 04 - myhuo",
-      "server": "202.146.222.89",
+      "server": "112.120.123.140",
       "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "password": "5acc7a7c-d7ea-11eb-8673-f23c9164ca5d",
       "tls": {
         "enabled": true,
-        "server_name": "t.me",
-        "insecure": true
+        "server_name": "7017cade-tmm5c0-u1dz9j-12hj8.nw4.hyhuawei.com",
+        "insecure": false
       }
     },
     {
@@ -63,29 +63,35 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "google.com",
+        "server_name": "whatsapp.com",
         "insecure": true
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 06 - myhuo",
-      "server": "ad6ea328-ace0-45e1-8b69-e698536fa709.67dc6e59-0fd8-4ca5-ba29-26a8817e203b.byteprivatelink.com",
+      "server": "162.19.192.89",
+      "server_port": 16632,
+      "uuid": "992b1bc6-6e1e-455d-940b-e99bd39f70a2",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "0606f25bbb646de3feadb8d23c1c6217.mobgslb.tbcache.com"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - myhuo",
+      "server": "202.146.222.89",
       "server_port": 443,
-      "uuid": "2a778078-9f4f-4203-a204-6fb94547b707",
-      "flow": "xtls-rprx-vision",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "live.douyin.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xBBebAa3_FmRJAzPnEP9seJneZtPiIZVLHo23pHxRxc",
-          "short_id": "a0134868"
-        }
+        "server_name": "vk.com",
+        "insecure": true
       }
     },
     {
@@ -98,7 +104,8 @@
         "🇭🇰 中国香港 (Hong Kong) 03 - myhuo",
         "🇭🇰 中国香港 (Hong Kong) 04 - myhuo",
         "🇭🇰 中国香港 (Hong Kong) 05 - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 06 - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 06 - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 07 - myhuo"
       ]
     },
     {
@@ -110,7 +117,8 @@
         "🇭🇰 中国香港 (Hong Kong) 03 - myhuo",
         "🇭🇰 中国香港 (Hong Kong) 04 - myhuo",
         "🇭🇰 中国香港 (Hong Kong) 05 - myhuo",
-        "🇭🇰 中国香港 (Hong Kong) 06 - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 06 - myhuo",
+        "🇭🇰 中国香港 (Hong Kong) 07 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

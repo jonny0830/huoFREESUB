@@ -5,27 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇱 以色列 (Israel) 01 - myhuo
-  server: no.gacvpn.site
+  server: 185.95.231.156
   port: 443
   udp: true
   type: vless
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: mCLTVbcvg_tkaIuGqMVVBV-5d_ftEoLnJHhrCmeLDFk
-    short-id: 08d12dce
-  servername: no.gacvpn.site
-  client-fingerprint: chrome
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  servername: www.apple.com
+  client-fingerprint: firefox
 - name: 🇮🇱 以色列 (Israel) 02 - myhuo
-  server: 64.176.163.182
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
-  skip-cert-verify: false
-- name: 🇮🇱 以色列 (Israel) 03 - myhuo
   server: 129.159.156.109
   port: 50160
   udp: true
@@ -40,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇮🇱 以色列 (Israel) 01 - myhuo
   - 🇮🇱 以色列 (Israel) 02 - myhuo
-  - 🇮🇱 以色列 (Israel) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇮🇱 以色列 (Israel) 01 - myhuo
   - 🇮🇱 以色列 (Israel) 02 - myhuo
-  - 🇮🇱 以色列 (Israel) 03 - myhuo
 rules:
 - MATCH,PROXIES

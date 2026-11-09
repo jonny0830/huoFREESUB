@@ -4,23 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo",
-      "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "viber.com"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo",
       "server": "109.248.170.119",
       "server_port": 13447,
       "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
@@ -35,6 +20,27 @@
           "enabled": true,
           "public_key": "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE",
           "short_id": "83"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo",
+      "server": "185.246.155.91",
+      "server_port": 10403,
+      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "obQkp5VlQpnlt1hRLQ3VfHISYiiISZJyJZAMaIdjCko",
+          "short_id": "6859f5b59e55aa30"
         }
       }
     },
@@ -55,13 +61,29 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo",
+      "server": "38.107.234.57",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "38.107.234.57"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo"
       ]
     },
     {
@@ -70,7 +92,8 @@
       "outbounds": [
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
