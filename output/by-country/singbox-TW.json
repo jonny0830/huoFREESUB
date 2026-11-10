@@ -11,7 +11,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
+        "server_name": "160.187.100.109",
         "insecure": true
       }
     },
@@ -48,13 +48,35 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - myhuo",
+      "server": "23.95.72.244",
+      "server_port": 54387,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.adidas.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qqb-vrDIPSrFIithw497zM-LmGUEcTo-dqAjhHi6kyY",
+          "short_id": "f810"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 03 - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 04 - myhuo"
       ]
     },
     {
@@ -63,7 +85,8 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 03 - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

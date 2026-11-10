@@ -4,15 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
-  server: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
-  port: 443
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - myhuo
+  server: 130.94.19.95
+  port: 57277
   udp: true
-  type: hysteria2
-  password: f7d95364-607b-11ee-93af-f23c91369f2d
-  sni: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: us001.zestapp778.com
   skip-cert-verify: false
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+- name: 🇺🇸 美国 (United States) 02 (移动家宽) - myhuo
+  server: us001.zestapp778.com
+  port: 57277
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: us001.zestapp778.com
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
   server: 60.248.219.78
   port: 443
   udp: true
@@ -31,14 +46,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - myhuo
+  - 🇺🇸 美国 (United States) 02 (移动家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - myhuo
+  - 🇺🇸 美国 (United States) 02 (移动家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
 rules:
 - MATCH,PROXIES
