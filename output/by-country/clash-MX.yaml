@@ -20,14 +20,6 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇲🇽 墨西哥 (Mexico) 03 - myhuo
-  server: mx001.zestapp778.com
-  port: 15083
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: mx001.zestapp778.com
-  skip-cert-verify: false
-- name: 🇲🇽 墨西哥 (Mexico) 04 - myhuo
   server: 147.78.1.253
   port: 443
   udp: true
@@ -39,6 +31,14 @@ proxies:
     public-key: TefL2KtNcNLPmUY8TKlu5pA7ffipqgmbBN6gpyzyklk
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇲🇽 墨西哥 (Mexico) 04 - myhuo
+  server: mx001.zestapp778.com
+  port: 15083
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: mx001.zestapp778.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

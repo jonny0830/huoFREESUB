@@ -5,20 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - myhuo
-  server: 84.247.155.196
-  port: 443
+  server: 152.69.195.67
+  port: 47878
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  type: vless
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
 - name: 🇯🇵 日本 (Japan) 02 - myhuo
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 03 - myhuo
   server: 138.3.208.26
   port: 50160
   udp: true
@@ -26,36 +18,7 @@ proxies:
   password: 184cdec28da5a09450803c8debcd2cc9
   sni: '1'
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 04 - myhuo
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 05 - myhuo
-  server: 103.75.118.228
-  port: 12683
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 06 - myhuo
-  server: 193.123.160.109
-  port: 8443
-  udp: true
-  type: trojan
-  password: F3NzMNuYnG7akU2mSlBY
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 07 - myhuo
+- name: 🇯🇵 日本 (Japan) 03 - myhuo
   server: 85.121.123.197
   port: 12765
   udp: true
@@ -63,20 +26,26 @@ proxies:
   password: STYyftThFn
   sni: freedom.chenlan.top
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 08 - myhuo
-  server: 3.114.220.22
-  port: 18007
+- name: 🇯🇵 日本 (Japan) 04 - myhuo
+  server: 168.138.43.75
+  port: 80
   udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 09 - myhuo
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: 🇯🇵 日本 (Japan) 05 - myhuo
+  server: 31.76.91.168
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 1794466637:db57c865-2318-4fd2-8aea-e8ba58ec696d:Sjcl0gc4tJZu1HqNgL502Y4uLCJSzLg9X3R0zYjQ6MQ
+  sni: jp.lumacache.com
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 06 - myhuo
   server: 3.114.220.22
   port: 19645
   udp: true
@@ -88,8 +57,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 10 - myhuo
+  client-fingerprint: edge
+- name: 🇯🇵 日本 (Japan) 07 - myhuo
   server: 3.114.220.22
   port: 10583
   udp: true
@@ -101,22 +70,9 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 11 - myhuo
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: none
-- name: 🇯🇵 日本 (Japan) 12 - myhuo
-  server: 104.19.33.25
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 08 - myhuo
+  server: 43.170.8.95
   port: 443
   udp: true
   type: vless
@@ -124,14 +80,28 @@ proxies:
   tls: true
   servername: jp3.yohototo.top
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 13 - myhuo
-  server: 103.75.118.228
-  port: 11452
+- name: 🇯🇵 日本 (Japan) 09 - myhuo
+  server: 45.78.49.22
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4dbf1ade-33f1-40dc-9273-e51babd570fe
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
+    short-id: 051f20c2344a2dfd
+  servername: portal.citygrainla.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 10 - myhuo
+  server: 3.114.220.22
+  port: 18007
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -141,13 +111,15 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 14 - myhuo
-  server: 152.69.195.67
-  port: 47878
+  client-fingerprint: qq
+- name: 🇯🇵 日本 (Japan) 11 - myhuo
+  server: 8.211.175.236
+  port: 8443
   udp: true
-  type: vless
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -164,9 +136,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 09 - myhuo
   - 🇯🇵 日本 (Japan) 10 - myhuo
   - 🇯🇵 日本 (Japan) 11 - myhuo
-  - 🇯🇵 日本 (Japan) 12 - myhuo
-  - 🇯🇵 日本 (Japan) 13 - myhuo
-  - 🇯🇵 日本 (Japan) 14 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -183,8 +152,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 09 - myhuo
   - 🇯🇵 日本 (Japan) 10 - myhuo
   - 🇯🇵 日本 (Japan) 11 - myhuo
-  - 🇯🇵 日本 (Japan) 12 - myhuo
-  - 🇯🇵 日本 (Japan) 13 - myhuo
-  - 🇯🇵 日本 (Japan) 14 - myhuo
 rules:
 - MATCH,PROXIES

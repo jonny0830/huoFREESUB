@@ -4,24 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 01 - myhuo",
-      "server": "84.247.155.196",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 02 - myhuo",
-      "server": "84.247.155.196",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
+      "server": "152.69.195.67",
+      "server_port": 47878,
+      "uuid": "eb8613e3-8393-4cff-a3ad-6501fd4adc63"
     },
     {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 03 - myhuo",
+      "tag": "🇯🇵 日本 (Japan) 02 - myhuo",
       "server": "138.3.208.26",
       "server_port": 50160,
       "password": "184cdec28da5a09450803c8debcd2cc9",
@@ -33,56 +24,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 04 - myhuo",
-      "server": "8.211.175.236",
-      "server_port": 8443,
-      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
-      "tls": {
-        "enabled": true,
-        "server_name": "bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 05 - myhuo",
-      "server": "103.75.118.228",
-      "server_port": 12683,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 06 - myhuo",
-      "server": "193.123.160.109",
-      "server_port": 8443,
-      "password": "F3NzMNuYnG7akU2mSlBY",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 07 - myhuo",
+      "tag": "🇯🇵 日本 (Japan) 03 - myhuo",
       "server": "85.121.123.197",
       "server_port": 12765,
       "password": "STYyftThFn",
@@ -93,10 +35,34 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 04 - myhuo",
+      "server": "168.138.43.75",
+      "server_port": 80,
+      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 05 - myhuo",
+      "server": "31.76.91.168",
+      "server_port": 8443,
+      "password": "1794466637:db57c865-2318-4fd2-8aea-e8ba58ec696d:Sjcl0gc4tJZu1HqNgL502Y4uLCJSzLg9X3R0zYjQ6MQ",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp.lumacache.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 08 - myhuo",
+      "tag": "🇯🇵 日本 (Japan) 06 - myhuo",
       "server": "3.114.220.22",
-      "server_port": 18007,
+      "server_port": 19645,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -104,7 +70,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -115,9 +81,9 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 09 - myhuo",
+      "tag": "🇯🇵 日本 (Japan) 07 - myhuo",
       "server": "3.114.220.22",
-      "server_port": 19645,
+      "server_port": 10583,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -136,50 +102,18 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 10 - myhuo",
-      "server": "3.114.220.22",
-      "server_port": 10583,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 11 - myhuo",
-      "server": "168.138.43.75",
-      "server_port": 80,
-      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8",
-        "headers": {
-          "Host": "none"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 12 - myhuo",
-      "server": "104.19.33.25",
+      "tag": "🇯🇵 日本 (Japan) 08 - myhuo",
+      "server": "43.170.8.95",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
         "server_name": "jp3.yohototo.top",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
@@ -191,9 +125,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 13 - myhuo",
-      "server": "103.75.118.228",
-      "server_port": 11452,
+      "tag": "🇯🇵 日本 (Japan) 09 - myhuo",
+      "server": "45.78.49.22",
+      "server_port": 443,
+      "uuid": "4dbf1ade-33f1-40dc-9273-e51babd570fe",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "portal.citygrainla.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE",
+          "short_id": "051f20c2344a2dfd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 10 - myhuo",
+      "server": "3.114.220.22",
+      "server_port": 18007,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -201,7 +156,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -211,11 +166,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 14 - myhuo",
-      "server": "152.69.195.67",
-      "server_port": 47878,
-      "uuid": "eb8613e3-8393-4cff-a3ad-6501fd4adc63"
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 11 - myhuo",
+      "server": "8.211.175.236",
+      "server_port": 8443,
+      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true
+      }
     },
     {
       "type": "selector",
@@ -232,10 +192,7 @@
         "🇯🇵 日本 (Japan) 08 - myhuo",
         "🇯🇵 日本 (Japan) 09 - myhuo",
         "🇯🇵 日本 (Japan) 10 - myhuo",
-        "🇯🇵 日本 (Japan) 11 - myhuo",
-        "🇯🇵 日本 (Japan) 12 - myhuo",
-        "🇯🇵 日本 (Japan) 13 - myhuo",
-        "🇯🇵 日本 (Japan) 14 - myhuo"
+        "🇯🇵 日本 (Japan) 11 - myhuo"
       ]
     },
     {
@@ -252,10 +209,7 @@
         "🇯🇵 日本 (Japan) 08 - myhuo",
         "🇯🇵 日本 (Japan) 09 - myhuo",
         "🇯🇵 日本 (Japan) 10 - myhuo",
-        "🇯🇵 日本 (Japan) 11 - myhuo",
-        "🇯🇵 日本 (Japan) 12 - myhuo",
-        "🇯🇵 日本 (Japan) 13 - myhuo",
-        "🇯🇵 日本 (Japan) 14 - myhuo"
+        "🇯🇵 日本 (Japan) 11 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

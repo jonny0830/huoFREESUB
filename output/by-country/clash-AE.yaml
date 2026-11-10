@@ -5,38 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - myhuo
-  server: 151.241.19.29
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
   server: 151.241.19.36
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
-  server: 104.143.223.236
-  port: 2085
+- name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
+  server: 151.241.19.29
+  port: 19999
   udp: true
-  type: vless
-  uuid: 6538f5c3-5b01-4956-a8e6-47688c01c42e
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
   server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
 proxy-groups:
 - name: PROXIES
   type: select
