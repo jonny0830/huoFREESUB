@@ -5,18 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - myhuo
-  server: 89.105.218.148
-  port: 443
+  server: 90.156.203.62
+  port: 5112
   udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: golos.mail.ru
-  client-fingerprint: firefox
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: VVlAff77CnAU43Aoc5j15Y
 - name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
   server: 50.7.227.77
   port: 443
@@ -29,9 +23,9 @@ proxies:
     public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
     short-id: 428ef87fd47a3a32
   servername: bizorg.su
-  client-fingerprint: chrome
+  client-fingerprint: ios
 - name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
-  server: steel7.hadsvpn.com
+  server: 201.8.71.59
   port: 443
   udp: true
   type: hysteria2
@@ -39,13 +33,6 @@ proxies:
   sni: steel7.hadsvpn.com
   skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
-  server: 90.156.203.62
-  port: 5112
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: VVlAff77CnAU43Aoc5j15Y
-- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
   server: 193.233.253.180
   port: 8444
   udp: true
@@ -59,15 +46,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
-  server: 38.60.223.125
-  port: 13108
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
-- name: 🇷🇺 俄罗斯 (Russia) 07 - myhuo
-  server: 185.215.184.85
+- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
+  server: 185.215.184.53
   port: 443
   udp: true
   type: vless
@@ -79,14 +59,73 @@ proxies:
     short-id: 428ef87fd47a3a32
   servername: dvizhok.su
   client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+- name: 🇷🇺 俄罗斯 (Russia) 07 - myhuo
+  server: 66.90.106.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: banket-restoran.su
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 08 - myhuo
+  server: 185.215.184.85
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: dvizhok.su
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 09 - myhuo
+  server: 87.232.116.20
+  port: 443
+  udp: true
+  type: vless
+  uuid: d86e6fda-e519-46ab-98eb-9ff9a9da5984
+  tls: true
+  servername: fafeqdhlett2p5la6d.cdn.cachefleet.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 67h2o3erm0t9imsj
+- name: 🇷🇺 俄罗斯 (Russia) 10 - myhuo
   server: 46.17.47.58
   port: 18443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-- name: 🇷🇺 俄罗斯 (Russia) 09 - myhuo
+- name: 🇷🇺 俄罗斯 (Russia) 11 - myhuo
+  server: prvtch.titun.su
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: perevodchiki.su
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 12 - myhuo
   server: 201.24.121.243
   port: 443
   udp: true
@@ -99,6 +138,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vlgrpc
+- name: 🇷🇺 俄罗斯 (Russia) 13 - myhuo
+  server: 92.243.66.79
+  port: 443
+  udp: true
+  type: vless
+  uuid: c5f59ef3-9540-49fa-bd1e-c6c2f79df49a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: siD4oj2gdtLLEphV6fUXb8ueIc2WHVn7msOUhNGPf2o
+    short-id: 8d03c10b6a874a9c
+  servername: ru-mow.probe.geomyip.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -113,6 +165,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 08 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 09 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 10 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 11 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 12 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 13 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -127,5 +183,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 08 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 09 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 10 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 11 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 12 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 13 - myhuo
 rules:
 - MATCH,PROXIES

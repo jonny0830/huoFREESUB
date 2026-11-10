@@ -4,8 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - myhuo",
+      "server": "bogging-eyeteeth-fly.freesocks.work",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - myhuo",
+      "server": "185.156.44.99",
+      "server_port": 443,
+      "password": "gf1:gfhysteria2024",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amazon.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - myhuo",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -26,7 +46,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - myhuo",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - myhuo",
       "server": "hy2-new.aspidnet.xyz",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -42,7 +62,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - myhuo",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - myhuo",
       "server": "103.102.229.75",
       "server_port": 443,
       "uuid": "dc95c1dd-2cd3-414c-8cf1-71ae86dad666",
@@ -62,24 +82,28 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - myhuo",
+      "server": "162.249.125.133",
+      "server_port": 443,
+      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-new.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "c1b4086fea89914496c7e10967a419216566"
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - myhuo",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 07 - myhuo",
       "server": "194.68.44.42",
       "server_port": 64546,
       "method": "chacha20-ietf-poly1305",
       "password": "U83u9OGpvSatIUW7LsWffr"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - myhuo",
-      "server": "185.156.44.99",
-      "server_port": 443,
-      "password": "gf1:gfhysteria2024",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amazon.com",
-        "insecure": true
-      }
     },
     {
       "type": "selector",
@@ -90,7 +114,9 @@
         "🇷🇴 罗马尼亚 (Romania) 02 - myhuo",
         "🇷🇴 罗马尼亚 (Romania) 03 - myhuo",
         "🇷🇴 罗马尼亚 (Romania) 04 - myhuo",
-        "🇷🇴 罗马尼亚 (Romania) 05 - myhuo"
+        "🇷🇴 罗马尼亚 (Romania) 05 - myhuo",
+        "🇷🇴 罗马尼亚 (Romania) 06 - myhuo",
+        "🇷🇴 罗马尼亚 (Romania) 07 - myhuo"
       ]
     },
     {
@@ -101,7 +127,9 @@
         "🇷🇴 罗马尼亚 (Romania) 02 - myhuo",
         "🇷🇴 罗马尼亚 (Romania) 03 - myhuo",
         "🇷🇴 罗马尼亚 (Romania) 04 - myhuo",
-        "🇷🇴 罗马尼亚 (Romania) 05 - myhuo"
+        "🇷🇴 罗马尼亚 (Romania) 05 - myhuo",
+        "🇷🇴 罗马尼亚 (Romania) 06 - myhuo",
+        "🇷🇴 罗马尼亚 (Romania) 07 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

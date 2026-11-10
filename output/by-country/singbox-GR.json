@@ -5,21 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇸 冰岛 (Iceland) 01 - myhuo",
-      "server": "93.95.226.159",
-      "server_port": 28150,
-      "uuid": "b4e69d67-9d41-417c-b465-ebf1591fb792",
+      "tag": "🇬🇷 希腊 (Greece) 01 - myhuo",
+      "server": "85.90.197.220",
+      "server_port": 443,
+      "uuid": "8f704ed6-9a1a-4d04-94dd-1bff501716de",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "google.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "KQW_o2BlCjMC8aH5lkNkO_rmMCAUykQIQCCIIehhsAo",
-          "short_id": "06"
+          "public_key": "biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4",
+          "short_id": "94acb54627612d43"
         }
       }
     },
@@ -28,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇸 冰岛 (Iceland) 01 - myhuo"
+        "🇬🇷 希腊 (Greece) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇸 冰岛 (Iceland) 01 - myhuo"
+        "🇬🇷 希腊 (Greece) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

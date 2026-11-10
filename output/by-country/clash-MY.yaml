@@ -4,24 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇺 卢森堡 (Luxembourg) 01 - myhuo
-  server: 87.228.61.175
-  port: 1443
+- name: 🇲🇾 马来西亚 (Malaysia) 01 - myhuo
+  server: 47.250.135.244
+  port: 10000
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: tAGGzgRCi6W95UwG0qerf6
+  type: vmess
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇺 卢森堡 (Luxembourg) 01 - myhuo
+  - 🇲🇾 马来西亚 (Malaysia) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇺 卢森堡 (Luxembourg) 01 - myhuo
+  - 🇲🇾 马来西亚 (Malaysia) 01 - myhuo
 rules:
 - MATCH,PROXIES
