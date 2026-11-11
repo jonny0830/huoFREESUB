@@ -12,6 +12,14 @@ proxies:
   cipher: 2022-blake3-aes-256-gcm
   password: L9F2GjYbyk6gICuLp2LFmHC0lKaEW7HOA32XTf29C6Y=:OvfxPVBCAsZFpN0pIx9AwgxwxV+U3A7XtRagdUwio+U=
 - name: 🇫🇮 芬兰 (Finland) 02 - myhuo
+  server: 177.202.75.56
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
   server: 169.40.34.41
   port: 443
   udp: true
@@ -23,8 +31,8 @@ proxies:
     public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
     short-id: 1c3e8241a8743df9
   servername: key-master-saver.com
-  client-fingerprint: ios
-- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -35,21 +43,6 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
-  server: 146.103.118.189
-  port: 443
-  udp: true
-  type: vless
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
-  tls: true
-  servername: nl2.574ck.xyz
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /574ck-finland
-    headers:
-      Host: nl2.574ck.xyz
 - name: 🇫🇮 芬兰 (Finland) 05 - myhuo
   server: 95.216.27.15
   port: 2053
@@ -74,7 +67,7 @@ proxies:
     public-key: TSOm7XIZvGzYoCbh_lFFA9PTQJqI-JU5kKIAffGmUWg
     short-id: 5e39e518bfac6392
   servername: vk.ru
-  client-fingerprint: firefox
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select

@@ -4,65 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - myhuo",
-      "server": "160.187.100.109",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "160.187.100.109",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
-      "server": "23.95.72.244",
-      "server_port": 4443,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "business.amazon.co.uk",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "E6XD__G0KCmX1LibW4qwafvYXID5zci_bcwKueuhEA8",
-          "short_id": "807c3fa325465508"
-        }
-      }
+      "server": "amasoid.ddns.net",
+      "server_port": 14514,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "b7I6g7l7fJhBaMInJ+zkzw=="
     },
     {
       "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
       "server": "103.115.109.49",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "t.me",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - myhuo",
-      "server": "161.114.15.215",
-      "server_port": 30502,
-      "password": "5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "103.115.109.49",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - myhuo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
       "server": "83.147.13.74",
       "server_port": 8443,
       "uuid": "eb8c97f7-a154-4442-91b0-54c0d055ad0b",
@@ -81,6 +44,18 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - myhuo",
+      "server": "vpn-tw-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "127.0.0.1",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -88,8 +63,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 04 - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 05 - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 04 - myhuo"
       ]
     },
     {
@@ -99,8 +73,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 04 - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 05 - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

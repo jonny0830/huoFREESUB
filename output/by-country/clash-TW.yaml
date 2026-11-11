@@ -5,43 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
-  server: 160.187.100.109
-  port: 443
+  server: amasoid.ddns.net
+  port: 14514
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 160.187.100.109
-  skip-cert-verify: true
+  type: ss
+  cipher: 2022-blake3-aes-128-gcm
+  password: b7I6g7l7fJhBaMInJ+zkzw==
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
-  server: 23.95.72.244
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: E6XD__G0KCmX1LibW4qwafvYXID5zci_bcwKueuhEA8
-    short-id: 807c3fa325465508
-  servername: business.amazon.co.uk
-  client-fingerprint: edge
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
   server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: 103.115.109.49
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
-  server: 161.114.15.215
-  port: 30502
-  udp: true
-  type: trojan
-  password: 5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - myhuo
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
   server: 83.147.13.74
   port: 8443
   udp: true
@@ -53,6 +31,14 @@ proxies:
     short-id: 4ad2e4e660550e43
   servername: github.githubassets.com
   client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,7 +48,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,6 +57,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 05 - myhuo
 rules:
 - MATCH,PROXIES
