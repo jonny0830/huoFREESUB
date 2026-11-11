@@ -13,6 +13,19 @@ proxies:
   password: 1234!@#$
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo
   server: 23.95.72.244
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 71OwuN_2X-et_42RLIteY2parqX2cARuv-718eg_VD4
+    short-id: b88b4ed92599c16a
+  servername: api.amazonalexa.com
+  client-fingerprint: ios
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo
+  server: 23.95.72.244
   port: 5455
   udp: true
   type: vless
@@ -24,7 +37,7 @@ proxies:
     short-id: bb32911d6c
   servername: api.adidas.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - myhuo
   server: 23.95.72.244
   port: 50135
   udp: true
@@ -45,6 +58,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,5 +67,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - myhuo
 rules:
 - MATCH,PROXIES

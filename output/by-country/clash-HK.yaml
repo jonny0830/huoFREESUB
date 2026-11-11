@@ -12,80 +12,57 @@ proxies:
   cipher: aes-256-gcm
   password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - myhuo
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - myhuo
   server: 152.32.254.68
   port: 5010
   udp: true
   type: hysteria2
   password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
   sni: nas.aizhzo.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - myhuo
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
-  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
-  server: f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
-  sni: f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
-  server: 66.90.115.123
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 3b8896fd-ba38-4da7-b365-d0f01f37aa40
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
-    short-id: 08a4b1f473932632
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.29
+  sni: https://t.me/wangcai2
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
-  server: 23.95.72.244
-  port: 2087
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
+  server: 83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com
+  port: 443
   udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ALHje8E3d2TkkY2XnWRsZyw5nCptpdjHj1Yzs7_i_E8
-    short-id: 7b1602ae8a72ed0a
-  servername: repost.aws
-  client-fingerprint: qq
+  type: hysteria2
+  password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  sni: 83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
+  server: 9a07c316-tmkao0-u1vxv2-v3c2.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
+  sni: 9a07c316-tmkao0-u1vxv2-v3c2.nw4.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
   server: 39.109.111.23
-  port: 39675
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: VW9b1Lj_TPfa52PVrmLypSxQjRiV06sgG96uEd6oBRM
-    short-id: 551a216445
-  servername: www.lamer.com.hk
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
-  server: doghkzf.zalolink.com
   port: 28675
   udp: true
   type: vless
@@ -97,8 +74,34 @@ proxies:
     short-id: 9a79807253c040
   servername: www.lamer.com.hk
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - myhuo
+  server: dogyhkv2.zalolink.com
+  port: 39675
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: VW9b1Lj_TPfa52PVrmLypSxQjRiV06sgG96uEd6oBRM
+    short-id: 551a216445
+  servername: www.lamer.com.hk
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 10 - myhuo
-  server: 103.172.116.191
+  server: 23.95.72.244
+  port: 6697
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qeuzgTUkTLMVZZ3AclsA1_Qn_xX9NFDzuNzJnotcMWY
+    short-id: e718c0495c85dab2
+  servername: www.aboutamazon.sg
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - myhuo
+  server: 103.172.116.201
   port: 10103
   udp: true
   type: vless
@@ -110,32 +113,19 @@ proxies:
     short-id: f96b3b17a0f5b1fe
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - myhuo
-  server: 23.95.72.244
-  port: 58712
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: en2L9xxQOv2w4eD0sxqu3eOFGnqOxZLWuR9sFqBDdAM
-    short-id: f266fd3d4e
-  servername: api.adidas.com
-  client-fingerprint: safari
 - name: 🇭🇰 中国香港 (Hong Kong) 12 - myhuo
   server: 23.95.72.244
-  port: 5452
+  port: 5451
   udp: true
   type: vless
   uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 5QrrG8JTvX0hemy-OiCGVr5lr0QKzukwr5JlEIgQ7z8
-    short-id: a2fdcebfb3a6c8
+    public-key: qryP-M3vNPOjAVs90y0mjF03PfhJsMboTJCLxLoiKRU
+    short-id: 63f1a2ab88f9
   servername: api.adidas.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 13 - myhuo
   server: 23.95.72.244
   port: 48741
@@ -151,6 +141,19 @@ proxies:
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 14 - myhuo
   server: 23.95.72.244
+  port: 58715
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xhQQ393yiOwgfp2JzIu0Qfg-5oG3M5Y71mBmI0WM9kU
+    short-id: eab17137bf1d2bad
+  servername: api.adidas.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - myhuo
+  server: 23.95.72.244
   port: 58713
   udp: true
   type: vless
@@ -162,40 +165,19 @@ proxies:
     short-id: 715335e6264a13
   servername: api.adidas.com
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - myhuo
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8🇨🇳
-  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 16 - myhuo
-  server: 66.90.115.133
-  port: 2083
+  server: 23.95.72.244
+  port: 9443
   udp: true
   type: vless
-  uuid: 3b8896fd-ba38-4da7-b365-d0f01f37aa40
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
-    short-id: 08a4b1f473932632
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 17 - myhuo
-  server: 66.90.115.133
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 3b8896fd-ba38-4da7-b365-d0f01f37aa40
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
-    short-id: 08a4b1f473932632
-  servername: www.apple.com
-  client-fingerprint: chrome
+    public-key: hY7qJ-wCkHHGHgsWYPxVX67YkyNgAexTG3kyWhifpy0
+    short-id: e1b7e52b41b7c0a7
+  servername: www.eero.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -217,7 +199,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 14 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 15 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 16 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 17 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -239,6 +220,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 14 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 15 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 16 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 17 - myhuo
 rules:
 - MATCH,PROXIES

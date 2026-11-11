@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇵🇪 秘鲁 (Peru) 01 - myhuo
+  server: 23.95.72.244
+  port: 50122
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: a9XavLXaCvwAvMpMWT3XlJ_MvXDd41cA7Mp-DiN6WCo
+    short-id: 79c25836ab103a48
+  servername: api.adidas.com
+  client-fingerprint: qq
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇵🇪 秘鲁 (Peru) 01 - myhuo
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇵🇪 秘鲁 (Peru) 01 - myhuo
+rules:
+- MATCH,PROXIES
