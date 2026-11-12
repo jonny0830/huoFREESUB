@@ -17,6 +17,15 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - myhuo
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇮🇳 印度 (India) 03 - myhuo
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -27,19 +36,34 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - myhuo
-  server: 13.140.56.100
-  port: 14430
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 04 - myhuo
+  server: 152.67.8.205
+  port: 80
   udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /vless
+    path: /
+- name: 🇮🇳 印度 (India) 05 - myhuo
+  server: 13.140.253.35
+  port: 443
+  udp: true
+  type: vless
+  uuid: bcd3798c-a56f-6bfc-b738-a17c43bd4a50
+  tls: true
+  servername: xray-m0642ki4-silver-nebula-10.cloady.io
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /362b2b2c7197d648
     headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 04 - myhuo
+      Host: xray-m0642ki4-silver-nebula-10.cloady.io
+- name: 🇮🇳 印度 (India) 06 - myhuo
   server: 103.172.116.191
   port: 10303
   udp: true
@@ -52,8 +76,8 @@ proxies:
     short-id: f96b3b17a0f5b1fe
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 05 - myhuo
-  server: 13.140.253.35
+- name: 🇮🇳 印度 (India) 07 - myhuo
+  server: xray-bprkdwje-clever-comet-4.cloady.io
   port: 443
   udp: true
   type: vless
@@ -61,12 +85,19 @@ proxies:
   tls: true
   servername: xray-bprkdwje-clever-comet-4.cloady.io
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /27dbf143acdd7bca
     headers:
       Host: xray-bprkdwje-clever-comet-4.cloady.io
+- name: 🇮🇳 印度 (India) 08 - myhuo
+  server: 172.105.39.124
+  port: 7002
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,6 +108,9 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - myhuo
   - 🇮🇳 印度 (India) 04 - myhuo
   - 🇮🇳 印度 (India) 05 - myhuo
+  - 🇮🇳 印度 (India) 06 - myhuo
+  - 🇮🇳 印度 (India) 07 - myhuo
+  - 🇮🇳 印度 (India) 08 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,5 +121,8 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - myhuo
   - 🇮🇳 印度 (India) 04 - myhuo
   - 🇮🇳 印度 (India) 05 - myhuo
+  - 🇮🇳 印度 (India) 06 - myhuo
+  - 🇮🇳 印度 (India) 07 - myhuo
+  - 🇮🇳 印度 (India) 08 - myhuo
 rules:
 - MATCH,PROXIES

@@ -17,17 +17,60 @@ proxies:
     short-id: 6859f5b59e55aa30
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
+  server: 176.120.21.23
+  port: 443
+  udp: true
+  type: vless
+  uuid: 83cc8226-1087-49ae-aac3-1f157ddc57b4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OAU9917HKYqvTO59c9SvAL9BBh8v85tfJhw5PMg-2iU
+    short-id: c4d4cf50489d51
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
+  server: 109.248.170.119
+  port: 13447
+  udp: true
+  type: vless
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  tls: true
+  reality-opts:
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+    short-id: '83'
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo
+  server: 38.107.234.57
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
+  tls: true
+  servername: 3h-kazakhstan1.09vpn.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo
 rules:
 - MATCH,PROXIES

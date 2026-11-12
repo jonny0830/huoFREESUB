@@ -25,18 +25,81 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo",
+      "server": "176.120.21.23",
+      "server_port": 443,
+      "uuid": "83cc8226-1087-49ae-aac3-1f157ddc57b4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OAU9917HKYqvTO59c9SvAL9BBh8v85tfJhw5PMg-2iU",
+          "short_id": "c4d4cf50489d51"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo",
+      "server": "109.248.170.119",
+      "server_port": 13447,
+      "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE",
+          "short_id": "83"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo",
+      "server": "38.107.234.57",
+      "server_port": 8443,
+      "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
+      "tls": {
+        "enabled": true,
+        "server_name": "3h-kazakhstan1.09vpn.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
