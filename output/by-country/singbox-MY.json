@@ -5,29 +5,25 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇨🇳 CN 01 - myhuo",
-      "server": "39.108.113.127",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - myhuo",
+      "server": "192.228.145.118",
       "server_port": 10086,
-      "uuid": "b0253c6c-0b96-4950-bde1-669f13bc1a01",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
+      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - myhuo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - myhuo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

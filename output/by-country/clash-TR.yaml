@@ -25,19 +25,6 @@ proxies:
   obfs: salamander
   obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
 - name: 🇹🇷 土耳其 (Turkey) 03 - myhuo
-  server: 78.135.73.47
-  port: 443
-  udp: true
-  type: vless
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 04 - myhuo
   server: 153.56.210.134
   port: 34121
   udp: true
@@ -47,7 +34,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
-- name: 🇹🇷 土耳其 (Turkey) 05 - myhuo
+- name: 🇹🇷 土耳其 (Turkey) 04 - myhuo
   server: 185.246.155.91
   port: 10103
   udp: true
@@ -60,7 +47,38 @@ proxies:
     short-id: 6859f5b59e55aa30
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 05 - myhuo
+  server: 157.254.38.210
+  port: 20027
+  udp: true
+  type: trojan
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+  skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 06 - myhuo
+  server: sclass-b1.catcat321.com
+  port: 20028
+  udp: true
+  type: trojan
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 07 - myhuo
+  server: 188.225.37.43
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
+  tls: true
+  servername: torvani.cyou
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/boards/live
+    headers:
+      Host: torvani.cyou
+- name: 🇹🇷 土耳其 (Turkey) 08 - myhuo
   server: 45.92.219.47
   port: 443
   udp: true
@@ -72,15 +90,20 @@ proxies:
     public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
   servername: ty.galactichub.online
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 07 - myhuo
-  server: sclass-b1.catcat321.com
-  port: 20028
+- name: 🇹🇷 土耳其 (Turkey) 09 - myhuo
+  server: 78.135.73.47
+  port: 443
   udp: true
-  type: trojan
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  sni: hk.catxstar.com
-  skip-cert-verify: false
-- name: 🇹🇷 土耳其 (Turkey) 08 - myhuo
+  type: vless
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 10 - myhuo
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -91,7 +114,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -105,6 +128,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 06 - myhuo
   - 🇹🇷 土耳其 (Turkey) 07 - myhuo
   - 🇹🇷 土耳其 (Turkey) 08 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 09 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 10 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -118,5 +143,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 06 - myhuo
   - 🇹🇷 土耳其 (Turkey) 07 - myhuo
   - 🇹🇷 土耳其 (Turkey) 08 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 09 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 10 - myhuo
 rules:
 - MATCH,PROXIES

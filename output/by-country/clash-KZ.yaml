@@ -5,45 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
-  server: 172.67.220.103
-  port: 2087
-  udp: true
-  type: trojan
-  password: 80d4cb87-ac70-e074-bc82-6313d2d1b539
-  sni: ayhanmansur-zedmeli.kdns.fr
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZXJaQklLRUh1R0UiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjowfQ==
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
-  server: 212.41.9.190
-  port: 2093
-  udp: true
-  type: vless
-  uuid: db57c865-2318-4fd2-8aea-e8ba58ec696d
-  tls: true
-  reality-opts:
-    public-key: QbKQ1yte4_2YD425jzcAy4Ibvj0BYfqKJ54k9WMSRFs
-    short-id: 5284fea4
-  servername: s3.storage.selcloud.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cas-kz
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo
   server: 185.246.155.91
   port: 10403
   udp: true
@@ -56,66 +17,17 @@ proxies:
     short-id: 6859f5b59e55aa30
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - myhuo
-  server: 176.120.21.23
-  port: 443
-  udp: true
-  type: vless
-  uuid: 83cc8226-1087-49ae-aac3-1f157ddc57b4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: OAU9917HKYqvTO59c9SvAL9BBh8v85tfJhw5PMg-2iU
-    short-id: c4d4cf50489d51
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - myhuo
-  server: 109.248.170.119
-  port: 13447
-  udp: true
-  type: vless
-  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
-  tls: true
-  reality-opts:
-    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
-    short-id: '83'
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - myhuo
-  server: 38.107.234.57
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
-  tls: true
-  servername: 3h-kazakhstan1.09vpn.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vless/
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - myhuo
 rules:
 - MATCH,PROXIES

@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
-  server: 38.244.155.67
-  port: 443
-  udp: true
-  type: vless
-  uuid: d651c9ab-b844-4420-b3d0-20d201ef5f55
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: NLXltMEkWIxv9bL2J4XkPGb4oVwGbCkITCTXF-jVxAE
-    short-id: 2976f793571fb671
-  servername: node-eu-1.nztpro.com
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
   server: 5.129.202.80
   port: 443
   udp: true
@@ -36,13 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
 rules:
 - MATCH,PROXIES

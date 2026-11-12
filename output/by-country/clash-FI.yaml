@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - myhuo
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02 - myhuo
   server: 169.40.34.41
   port: 443
   udp: true
@@ -28,26 +17,7 @@ proxies:
     short-id: 1c3e8241a8743df9
   servername: key-master-saver.com
   client-fingerprint: ios
-- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
-  server: 65.109.208.183
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
-  tls: true
-  servername: free.for.member.iiproxy.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
-  server: bmi.ir.kolman.com.de
-  port: 80
-  udp: true
-  type: vmess
-  uuid: da59eb92-6077-4d9c-9cfc-2153e7c7c680
-  alterId: 0
-  cipher: auto
-  network: httpupgrade
-- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
+- name: 🇫🇮 芬兰 (Finland) 02 - myhuo
   server: 177.202.75.56
   port: 443
   udp: true
@@ -55,7 +25,7 @@ proxies:
   password: 146d567c-6335-4e63-a8aa-7ec068642440
   sni: fi1.obxodvpn.us
   skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
+- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -67,42 +37,16 @@ proxies:
     short-id: 10351b07c712d2a2
   servername: www.cloudflare.com
   client-fingerprint: ''
-- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
-  server: 146.103.118.189
+- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
+  server: 65.109.208.183
   port: 443
   udp: true
   type: vless
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
   tls: true
-  servername: nl2.574ck.xyz
+  servername: free.for.member.iiproxy.com
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /574ck-finland
-    headers:
-      Host: nl2.574ck.xyz
-- name: 🇫🇮 芬兰 (Finland) 08 - myhuo
-  server: 66.bmi.ir.asopardaz.ir
-  port: 8443
-  udp: true
-  type: vless
-  uuid: a564987a-380a-4c21-a462-a011863ca9be
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: hostgator.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 09 - myhuo
-  server: 65.108.240.210
-  port: 39018
-  udp: true
-  type: vmess
-  uuid: fa15684a-81e6-4ba7-bc4b-f601c0d998e9
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -112,11 +56,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - myhuo
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
-  - 🇫🇮 芬兰 (Finland) 05 - myhuo
-  - 🇫🇮 芬兰 (Finland) 06 - myhuo
-  - 🇫🇮 芬兰 (Finland) 07 - myhuo
-  - 🇫🇮 芬兰 (Finland) 08 - myhuo
-  - 🇫🇮 芬兰 (Finland) 09 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -126,10 +65,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - myhuo
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
-  - 🇫🇮 芬兰 (Finland) 05 - myhuo
-  - 🇫🇮 芬兰 (Finland) 06 - myhuo
-  - 🇫🇮 芬兰 (Finland) 07 - myhuo
-  - 🇫🇮 芬兰 (Finland) 08 - myhuo
-  - 🇫🇮 芬兰 (Finland) 09 - myhuo
 rules:
 - MATCH,PROXIES
