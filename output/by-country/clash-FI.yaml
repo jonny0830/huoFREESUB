@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - myhuo
-  server: 178.214.125.1
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3f3160a0-747d-4fed-bf3d-4d884bfa964d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ZxCwJxbsZWJYYCPzeWj7_fxJMVhwh4XGfpvjmEIQjHY
-    short-id: 6172ba9cffe9c22f
-  servername: conf.emaar.ru
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 02 - myhuo
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -28,15 +15,54 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 02 - myhuo
+  server: 66.bmi.ir.asopardaz.ir
+  port: 35176
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: NjcyNmVjMTU1ZWU5NDA5ZDk0ODg1NWM1MzJjZTE3NDk=:Y2ZlN2E4MGQzNGM2NDZkZjkwOWQyZGFhMTRmOTgxMzY=
 - name: 🇫🇮 芬兰 (Finland) 03 - myhuo
+  server: 177.202.75.56
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
   server: 94.183.164.119
   port: 24433
   udp: true
   type: hysteria2
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: 94.183.164.119
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
+  sni: lakes.blog-forme.ru
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
+  server: fin1.trialkade.ir
+  port: 12040
+  udp: true
+  type: vless
+  uuid: b7b41f80-8477-4cc8-affb-2680c2478df8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: yuNMNhM9R953IK0nvJrsfV2qiW8v8RxXLaRUalaETwI
+    short-id: 1aac41ca1a05d782
+  servername: testspeed-foreign.tci.ir
+  client-fingerprint: edge
+- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
+  server: static.44.128.217.95.clients.your-server.de
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 0eea6d8d-3c8d-4a38-bfc1-bfc8274f559e
+  flow: xtls-rprx-vision
+  tls: true
+  servername: static.216.7.245.188.clients.your-server.de
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -48,21 +74,39 @@ proxies:
     short-id: 10351b07c712d2a2
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
-  server: 146.103.118.189
-  port: 443
+- name: 🇫🇮 芬兰 (Finland) 08 - myhuo
+  server: 72.35.246.39
+  port: 2053
   udp: true
   type: vless
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
+  flow: xtls-rprx-vision
   tls: true
-  servername: nl2.574ck.xyz
-  skip-cert-verify: false
+  reality-opts:
+    public-key: TSOm7XIZvGzYoCbh_lFFA9PTQJqI-JU5kKIAffGmUWg
+    short-id: 5e39e518bfac6392
+  servername: vk.ru
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /574ck-finland
-    headers:
-      Host: nl2.574ck.xyz
+- name: 🇫🇮 芬兰 (Finland) 09 - myhuo
+  server: 66.bmi.ir.asopardaz.ir
+  port: 8443
+  udp: true
+  type: vless
+  uuid: cfe7a80d-34c6-46df-909d-2daa14f98136
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
+    short-id: e915
+  servername: timeline.www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 10 - myhuo
+  server: fn1s.sublinkplas.ir
+  port: 53731
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 3T_cJKOuz6OJRs_YbwdcmYHBylvMNxbb
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,6 +117,11 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
   - 🇫🇮 芬兰 (Finland) 05 - myhuo
+  - 🇫🇮 芬兰 (Finland) 06 - myhuo
+  - 🇫🇮 芬兰 (Finland) 07 - myhuo
+  - 🇫🇮 芬兰 (Finland) 08 - myhuo
+  - 🇫🇮 芬兰 (Finland) 09 - myhuo
+  - 🇫🇮 芬兰 (Finland) 10 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,5 +132,10 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
   - 🇫🇮 芬兰 (Finland) 05 - myhuo
+  - 🇫🇮 芬兰 (Finland) 06 - myhuo
+  - 🇫🇮 芬兰 (Finland) 07 - myhuo
+  - 🇫🇮 芬兰 (Finland) 08 - myhuo
+  - 🇫🇮 芬兰 (Finland) 09 - myhuo
+  - 🇫🇮 芬兰 (Finland) 10 - myhuo
 rules:
 - MATCH,PROXIES

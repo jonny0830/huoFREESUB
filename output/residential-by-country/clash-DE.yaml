@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇩🇪 德国 (Germany) 01 (家宽) - myhuo
+  server: 157.173.16.162
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7d718630-7a1a-4af8-9332-aa0610634e8a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: TTD2h-hUhD39pZfEOQtAjsTTR1LpN9034M2QjDSi8yE
+    short-id: 569eb4ca6edbd45f
+  servername: rheinmode.rtxownerez.com
+  client-fingerprint: firefox
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇩🇪 德国 (Germany) 01 (家宽) - myhuo
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 (Germany) 01 (家宽) - myhuo
+rules:
+- MATCH,PROXIES

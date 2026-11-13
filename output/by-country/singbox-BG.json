@@ -7,21 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - myhuo",
       "server": "213.183.63.60",
-      "server_port": 9098,
+      "server_port": 9049,
       "method": "aes-256-cfb",
-      "password": "aLpQtfEZe445QyHk"
+      "password": "PRBf4BS2HvJqtWxY"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - myhuo",
-      "server": "213.183.63.60",
-      "server_port": 9064,
-      "method": "aes-256-cfb",
-      "password": "cp8pRSUAyLhTfVWH"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - myhuo",
       "server": "213.183.63.60",
       "server_port": 9085,
       "method": "aes-256-cfb",
@@ -29,11 +21,19 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - myhuo",
+      "server": "213.183.63.60",
+      "server_port": 9066,
+      "method": "aes-256-cfb",
+      "password": "2KUaE2a8NWTvuCZ3"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - myhuo",
       "server": "213.183.63.60",
-      "server_port": 9054,
+      "server_port": 9029,
       "method": "aes-256-cfb",
-      "password": "VcFuyXvND2yQWSFY"
+      "password": "dU3DSNS8wYPXzEKw"
     },
     {
       "type": "shadowsocks",
@@ -47,36 +47,37 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - myhuo",
       "server": "213.183.63.60",
-      "server_port": 9049,
+      "server_port": 9064,
       "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
+      "password": "cp8pRSUAyLhTfVWH"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - myhuo",
-      "server": "88.80.150.15",
-      "server_port": 443,
-      "uuid": "1d46250c-f015-439d-a7fd-c4d9e2a4c63d",
-      "tls": {
-        "enabled": true,
-        "server_name": "bg2.oncloudvpn.com",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
+      "server": "213.183.63.60",
+      "server_port": 9054,
+      "method": "aes-256-cfb",
+      "password": "VcFuyXvND2yQWSFY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - myhuo",
+      "server": "213.183.63.60",
+      "server_port": 9098,
+      "method": "aes-256-cfb",
+      "password": "aLpQtfEZe445QyHk"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - myhuo",
+      "server": "213.183.63.60",
+      "server_port": 9030,
+      "method": "aes-256-cfb",
+      "password": "GeregetR8cvQHzYr"
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - myhuo",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 10 - myhuo",
       "server": "195.123.226.21",
       "server_port": 443,
       "uuid": "6589c320-db68-43cd-a273-b46299bab355",
@@ -96,6 +97,46 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 11 - myhuo",
+      "server": "p1real5.greewebservices.ir",
+      "server_port": 1270,
+      "uuid": "b0511969-f769-460b-963b-70c6b84b6967",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8",
+          "short_id": "9b60d3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 12 - myhuo",
+      "server": "p1real4.greewebservices.ir",
+      "server_port": 1260,
+      "uuid": "b0511969-f769-460b-963b-70c6b84b6967",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8",
+          "short_id": "9b60d3"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -107,7 +148,11 @@
         "🇧🇬 保加利亚 (Bulgaria) 05 - myhuo",
         "🇧🇬 保加利亚 (Bulgaria) 06 - myhuo",
         "🇧🇬 保加利亚 (Bulgaria) 07 - myhuo",
-        "🇧🇬 保加利亚 (Bulgaria) 08 - myhuo"
+        "🇧🇬 保加利亚 (Bulgaria) 08 - myhuo",
+        "🇧🇬 保加利亚 (Bulgaria) 09 - myhuo",
+        "🇧🇬 保加利亚 (Bulgaria) 10 - myhuo",
+        "🇧🇬 保加利亚 (Bulgaria) 11 - myhuo",
+        "🇧🇬 保加利亚 (Bulgaria) 12 - myhuo"
       ]
     },
     {
@@ -121,7 +166,11 @@
         "🇧🇬 保加利亚 (Bulgaria) 05 - myhuo",
         "🇧🇬 保加利亚 (Bulgaria) 06 - myhuo",
         "🇧🇬 保加利亚 (Bulgaria) 07 - myhuo",
-        "🇧🇬 保加利亚 (Bulgaria) 08 - myhuo"
+        "🇧🇬 保加利亚 (Bulgaria) 08 - myhuo",
+        "🇧🇬 保加利亚 (Bulgaria) 09 - myhuo",
+        "🇧🇬 保加利亚 (Bulgaria) 10 - myhuo",
+        "🇧🇬 保加利亚 (Bulgaria) 11 - myhuo",
+        "🇧🇬 保加利亚 (Bulgaria) 12 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
