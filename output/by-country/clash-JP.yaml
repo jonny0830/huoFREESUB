@@ -5,48 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - myhuo
-  server: 168.110.21.56
-  port: 18453
-  udp: true
-  type: vless
-  uuid: 1751bebc-1bf1-420c-8b9d-97157aad179b
-- name: 🇯🇵 日本 (Japan) 02 - myhuo
   server: 168.138.205.100
   port: 53758
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: Bwlqh7GcFB
-- name: 🇯🇵 日本 (Japan) 03 - myhuo
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 04 - myhuo
-  server: 152.69.195.67
-  port: 47878
-  udp: true
-  type: vless
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-- name: 🇯🇵 日本 (Japan) 05 - myhuo
-  server: 168.110.45.41
-  port: 21443
-  udp: true
-  type: hysteria2
-  password: pnKhsG5E1hH1VglAXmT9cq1
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 06 - myhuo
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 07 - myhuo
+- name: 🇯🇵 日本 (Japan) 02 - myhuo
   server: 158.101.140.31
   port: 1985
   udp: true
@@ -54,64 +19,7 @@ proxies:
   password: 4ab7d1e3-f2a7-44ca-91bd-45d3c5f423d2
   sni: 158.101.140.31
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 08 - myhuo
-  server: 155.248.175.201
-  port: 23169
-  udp: true
-  type: vless
-  uuid: 7318caa1-93d1-4a9d-c481-504599902700
-  flow: xtls-rprx-vision
-  tls: true
-  servername: djj.zjlo.top
-  skip-cert-verify: true
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 09 - myhuo
-  server: 168.110.48.252
-  port: 10018
-  udp: true
-  type: vless
-  uuid: d8fc873b-860d-4490-b2f0-300d6ae3c2d3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: YxoFVB0NhCx4BJCgq5Ey5jdteRU2H2toGa-ZKW5XV3c
-  servername: www.ebay.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 10 - myhuo
-  server: 158.101.151.157
-  port: 443
-  udp: true
-  type: vless
-  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
-    short-id: 684c7531e599dec0
-  servername: www.microsoft.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 11 - myhuo
-  server: 168.110.48.252
-  port: 1987
-  udp: true
-  type: hysteria2
-  password: 4d9bc232-dde6-47d0-9d7b-e453ac8e4130
-  sni: 168.110.48.252
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 12 - myhuo
-  server: 3.114.220.22
-  port: 19645
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 13 - myhuo
+- name: 🇯🇵 日本 (Japan) 03 - myhuo
   server: 168.110.45.41
   port: 23444
   udp: true
@@ -124,26 +32,89 @@ proxies:
     short-id: 119c9e68498f5900
   servername: www.microsoft.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 14 - myhuo
-  server: 138.2.37.59
-  port: 20000
-  udp: true
-  type: hysteria2
-  password: abedf59203ff9523
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: ce8a8b39835f0ce5340cf548892e8e71
-  ports: 20000-40000,17826-17826
-- name: 🇯🇵 日本 (Japan) 15 - myhuo
-  server: 193.123.160.109
+- name: 🇯🇵 日本 (Japan) 04 - myhuo
+  server: 8.211.175.236
   port: 8443
   udp: true
-  type: trojan
-  password: F3NzMNuYnG7akU2mSlBY
-  sni: www.microsoft.com
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: bing.com
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 16 - myhuo
+- name: 🇯🇵 日本 (Japan) 05 - myhuo
+  server: 168.110.48.252
+  port: 10018
+  udp: true
+  type: vless
+  uuid: d8fc873b-860d-4490-b2f0-300d6ae3c2d3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: YxoFVB0NhCx4BJCgq5Ey5jdteRU2H2toGa-ZKW5XV3c
+  servername: www.ebay.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 06 - myhuo
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: '1'
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 07 - myhuo
+  server: 3.114.220.22
+  port: 19645
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 08 - myhuo
+  server: 3.114.220.22
+  port: 10583
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 09 - myhuo
+  server: 188.114.98.0
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 10 - myhuo
+  server: 3.114.220.22
+  port: 18007
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
+- name: 🇯🇵 日本 (Japan) 11 - myhuo
   server: jp.yi-yi.xyz
   port: 8443
   udp: true
@@ -156,46 +127,21 @@ proxies:
     short-id: 956d8072a694ff37
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 17 - myhuo
-  server: 3.114.220.22
-  port: 10583
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 18 - myhuo
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: 138.3.208.26
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 19 - myhuo
+- name: 🇯🇵 日本 (Japan) 12 - myhuo
   server: 84.247.155.196
   port: 80
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 20 - myhuo
-  server: djj.zjlo.top
-  port: 23169
+- name: 🇯🇵 日本 (Japan) 13 - myhuo
+  server: 84.247.155.196
+  port: 443
   udp: true
-  type: vless
-  uuid: 9da605d3-f5f7-4135-f806-450f036f9351
-  flow: xtls-rprx-vision
-  tls: true
-  servername: djj.zjlo.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 21 - myhuo
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 14 - myhuo
   server: 103.172.116.201
   port: 10403
   udp: true
@@ -208,27 +154,31 @@ proxies:
     short-id: f96b3b17a0f5b1fe
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 22 - myhuo
-  server: 3.114.220.22
-  port: 18007
+- name: 🇯🇵 日本 (Japan) 15 - myhuo
+  server: 152.69.195.67
+  port: 47878
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+- name: 🇯🇵 日本 (Japan) 16 - myhuo
+  server: 155.248.175.201
+  port: 23169
+  udp: true
+  type: vless
+  uuid: 9da605d3-f5f7-4135-f806-450f036f9351
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
+  servername: djj.zjlo.top
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 23 - myhuo
-  server: 141.11.139.102
-  port: 32515
+- name: 🇯🇵 日本 (Japan) 17 - myhuo
+  server: 193.123.160.109
+  port: 8443
   udp: true
-  type: vmess
-  uuid: 081dbf5a-d8b6-40c8-96f8-3c4ca9f50442
-  alterId: 0
-  cipher: auto
+  type: trojan
+  password: F3NzMNuYnG7akU2mSlBY
+  sni: www.microsoft.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -251,12 +201,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 15 - myhuo
   - 🇯🇵 日本 (Japan) 16 - myhuo
   - 🇯🇵 日本 (Japan) 17 - myhuo
-  - 🇯🇵 日本 (Japan) 18 - myhuo
-  - 🇯🇵 日本 (Japan) 19 - myhuo
-  - 🇯🇵 日本 (Japan) 20 - myhuo
-  - 🇯🇵 日本 (Japan) 21 - myhuo
-  - 🇯🇵 日本 (Japan) 22 - myhuo
-  - 🇯🇵 日本 (Japan) 23 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -279,11 +223,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 15 - myhuo
   - 🇯🇵 日本 (Japan) 16 - myhuo
   - 🇯🇵 日本 (Japan) 17 - myhuo
-  - 🇯🇵 日本 (Japan) 18 - myhuo
-  - 🇯🇵 日本 (Japan) 19 - myhuo
-  - 🇯🇵 日本 (Japan) 20 - myhuo
-  - 🇯🇵 日本 (Japan) 21 - myhuo
-  - 🇯🇵 日本 (Japan) 22 - myhuo
-  - 🇯🇵 日本 (Japan) 23 - myhuo
 rules:
 - MATCH,PROXIES

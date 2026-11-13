@@ -25,8 +25,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo",
+      "server": "3h-kazakhstan1.09vpn.com",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo",
       "server": "176.120.21.23",
       "server_port": 443,
       "uuid": "83cc8226-1087-49ae-aac3-1f157ddc57b4",
@@ -47,7 +59,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo",
+      "server": "38.107.234.57",
+      "server_port": 8443,
+      "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
+      "tls": {
+        "enabled": true,
+        "server_name": "3h-kazakhstan1.09vpn.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - myhuo",
       "server": "109.248.170.119",
       "server_port": 13447,
       "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
@@ -66,22 +94,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo",
-      "server": "38.107.234.57",
-      "server_port": 8443,
-      "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
-      "tls": {
-        "enabled": true,
-        "server_name": "3h-kazakhstan1.09vpn.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -89,7 +101,8 @@
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - myhuo"
       ]
     },
     {
@@ -99,7 +112,8 @@
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

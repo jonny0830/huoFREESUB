@@ -6,45 +6,28 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - myhuo",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - myhuo",
-      "server": "16.171.159.75",
-      "server_port": 80,
-      "uuid": "5b2e2e5f-1302-4d65-ab39-27f6f0ca5562",
-      "security": "auto",
-      "transport": {
-        "type": "grpc"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - myhuo",
       "server": "138.199.55.243",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - myhuo",
-      "server": "16.171.159.75",
-      "server_port": 16751,
-      "uuid": "5b2e2e5f-1302-4d65-ab39-27f6f0ca5562",
-      "security": "auto",
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - myhuo",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
       "transport": {
-        "type": "httpupgrade",
-        "path": "/"
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
       }
     },
     {
       "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - myhuo",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - myhuo",
       "server": "138.199.55.230",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -56,21 +39,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - myhuo",
-      "server": "62.93.166.184",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - myhuo",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - myhuo",
       "server": "138.124.86.230",
       "server_port": 48115,
       "uuid": "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b",
@@ -89,22 +59,21 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 - myhuo",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
+      "type": "vmess",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - myhuo",
+      "server": "62.93.166.184",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
       }
     },
     {
       "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 09 - myhuo",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - myhuo",
       "server": "95.143.196.97",
       "server_port": 443,
       "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
@@ -123,14 +92,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 10 - myhuo",
-      "server": "62.182.193.228",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "2e555e46dbc421452416834962fd014f"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -140,11 +101,7 @@
         "🇸🇪 瑞典 (Sweden) 03 - myhuo",
         "🇸🇪 瑞典 (Sweden) 04 - myhuo",
         "🇸🇪 瑞典 (Sweden) 05 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 06 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 07 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 08 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 09 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 10 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 06 - myhuo"
       ]
     },
     {
@@ -156,11 +113,7 @@
         "🇸🇪 瑞典 (Sweden) 03 - myhuo",
         "🇸🇪 瑞典 (Sweden) 04 - myhuo",
         "🇸🇪 瑞典 (Sweden) 05 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 06 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 07 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 08 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 09 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 10 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 06 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

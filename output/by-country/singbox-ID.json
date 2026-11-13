@@ -1,0 +1,51 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vmess",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - myhuo",
+      "server": "13.249.231.85",
+      "server_port": 443,
+      "uuid": "a84c132a-3151-40fe-947b-4dd9a7d2122c",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "d7pu5mzr9c4b0.cloudfront.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vmess",
+        "headers": {
+          "Host": "d7pu5mzr9c4b0.cloudfront.net"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇩 印尼 (Indonesia) 01 - myhuo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇩 印尼 (Indonesia) 01 - myhuo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
