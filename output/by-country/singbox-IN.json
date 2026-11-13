@@ -4,29 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇮🇳 印度 (India) 01 - myhuo",
-      "server": "194.61.31.126",
-      "server_port": 2053,
-      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
-          "short_id": "9980e0609b0d3891"
-        }
-      }
+      "server": "172.105.39.124",
+      "server_port": 7002,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 02 - myhuo",
-      "server": "in.smrtai.top",
+      "server": "178.212.35.198",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
       "tls": {
@@ -34,7 +22,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -46,7 +34,7 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 03 - myhuo",
-      "server": "103.172.116.191",
+      "server": "103.172.116.201",
       "server_port": 10303,
       "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
       "flow": "xtls-rprx-vision",
@@ -79,26 +67,11 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 05 - myhuo",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "in-152.67.8.205-0250"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 06 - myhuo",
-      "server": "13.140.253.35",
+      "tag": "🇮🇳 印度 (India) 05 - myhuo",
+      "server": "xray-h0urp9tx-rapid-summit-2.cloady.io",
       "server_port": 443,
-      "uuid": "f1d3c8af-71c4-ef75-625f-cf446aa2c15b",
+      "uuid": "f1d3c8af71c4ef75625fcf446aa2c15b",
       "tls": {
         "enabled": true,
         "server_name": "xray-h0urp9tx-rapid-summit-2.cloady.io",
@@ -117,29 +90,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 07 - myhuo",
-      "server": "13.140.253.35",
-      "server_port": 443,
-      "uuid": "bcd3798c-a56f-6bfc-b738-a17c43bd4a50",
-      "tls": {
-        "enabled": true,
-        "server_name": "xray-m0642ki4-silver-nebula-10.cloady.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/362b2b2c7197d648",
-        "headers": {
-          "Host": "xray-m0642ki4-silver-nebula-10.cloady.io"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -148,9 +98,7 @@
         "🇮🇳 印度 (India) 02 - myhuo",
         "🇮🇳 印度 (India) 03 - myhuo",
         "🇮🇳 印度 (India) 04 - myhuo",
-        "🇮🇳 印度 (India) 05 - myhuo",
-        "🇮🇳 印度 (India) 06 - myhuo",
-        "🇮🇳 印度 (India) 07 - myhuo"
+        "🇮🇳 印度 (India) 05 - myhuo"
       ]
     },
     {
@@ -161,9 +109,7 @@
         "🇮🇳 印度 (India) 02 - myhuo",
         "🇮🇳 印度 (India) 03 - myhuo",
         "🇮🇳 印度 (India) 04 - myhuo",
-        "🇮🇳 印度 (India) 05 - myhuo",
-        "🇮🇳 印度 (India) 06 - myhuo",
-        "🇮🇳 印度 (India) 07 - myhuo"
+        "🇮🇳 印度 (India) 05 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

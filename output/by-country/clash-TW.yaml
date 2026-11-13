@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
-  server: 35.236.180.222
+  server: amasoid.ddns.net
   port: 14514
   udp: true
   type: ss
@@ -17,23 +17,15 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
-  server: 160.187.100.109
+  server: vpn-tw-002.fastervpn.world
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: vpn-tw-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
-  server: 161.114.15.215
-  port: 30502
-  udp: true
-  type: trojan
-  password: 5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm
-  sni: www.cloudflare.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -43,7 +35,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,6 +43,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
 rules:
 - MATCH,PROXIES

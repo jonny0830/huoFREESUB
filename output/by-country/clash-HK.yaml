@@ -5,13 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - myhuo
-  server: 202.146.222.174
-  port: 443
+  server: 206.237.11.17
+  port: 50376
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
-  skip-cert-verify: true
+  type: vmess
+  uuid: 9091fd64-7e8e-4b7a-8ae7-84474f234926
+  alterId: 0
+  cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - myhuo
   server: 152.32.254.68
   port: 5010
@@ -23,38 +23,31 @@ proxies:
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - myhuo
-  server: 213.176.92.148
-  port: 40647
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
-  server: 112.120.123.140
+  server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
-  password: c11ff50c-f582-11ee-94df-f23c9164ca5d
-  sni: 11158b9a-tmm5c0-u3xqxa-1q91p.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - myhuo
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
+  sni: https://t.me/clashv8
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
-  server: 20247da3-tmm5c0-u1dz9j-12hj8.hk3.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
+  server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
-  password: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
-  sni: 20247da3-tmm5c0-u1dz9j-12hj8.hk3.hyhuawei.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2%ef%a3%bf%c3%bc%c3%a1
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
-  server: 103.172.116.201
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
+  server: 103.172.116.191
   port: 10103
   udp: true
   type: vless
@@ -66,14 +59,13 @@ proxies:
     short-id: f96b3b17a0f5b1fe
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
-  server: 206.237.11.17
-  port: 50376
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
+  server: 213.176.92.148
+  port: 40647
   udp: true
-  type: vmess
-  uuid: 9091fd64-7e8e-4b7a-8ae7-84474f234926
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: aes-256-gcm
+  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,7 +78,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,6 +90,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 06 - myhuo
   - 🇭🇰 中国香港 (Hong Kong) 07 - myhuo
-  - 🇭🇰 中国香港 (Hong Kong) 08 - myhuo
 rules:
 - MATCH,PROXIES

@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo
-  server: 5.253.42.164
-  port: 40443
+  server: 91.92.137.165
+  port: 443
   udp: true
   type: vless
-  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
-  flow: xtls-rprx-vision
+  uuid: 1d46250c-f015-439d-a7fd-c4d9e2a4c63d
   tls: true
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  servername: deepl.com
-  client-fingerprint: chrome
+  servername: bg.oncloudvpn.com
+  skip-cert-verify: false
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select

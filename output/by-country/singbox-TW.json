@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - myhuo",
-      "server": "35.236.180.222",
+      "server": "amasoid.ddns.net",
       "server_port": 14514,
       "method": "2022-blake3-aes-128-gcm",
       "password": "b7I6g7l7fJhBaMInJ+zkzw=="
@@ -19,14 +19,14 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
+        "server_name": "https://t.me/oneclickvpnkeys",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
-      "server": "160.187.100.109",
+      "server": "vpn-tw-002.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
@@ -36,30 +36,13 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - myhuo",
-      "server": "161.114.15.215",
-      "server_port": 30502,
-      "password": "5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 04 - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 03 - myhuo"
       ]
     },
     {
@@ -68,8 +51,7 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 04 - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

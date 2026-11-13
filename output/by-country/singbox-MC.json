@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 01 (家宽) - myhuo",
-      "server": "122.176.216.52",
+      "tag": "🇲🇨 MC 01 - myhuo",
+      "server": "107.189.23.205",
       "server_port": 443,
-      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+      "uuid": "63eecfaa-50b7-4ea9-9bec-a176bf03a215",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "app-6ada5023.deploy.meerasolution.com",
-        "insecure": false,
+        "server_name": "suffolkprimarycare.uk",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
-        "headers": {
-          "Host": "app-6ada5023.deploy.meerasolution.com"
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5Xgf3UO6yZb7gCK3R3GULk8jyNIp7Sr-26YXZfSW71c",
+          "short_id": "13975a8e0bd50e7c"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 (家宽) - myhuo"
+        "🇲🇨 MC 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 (家宽) - myhuo"
+        "🇲🇨 MC 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
