@@ -5,191 +5,193 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇱 荷兰 (Netherlands) 01 - myhuo
-  server: radar.cloudflare.com
-  port: 8080
-  udp: true
-  type: vless
-  uuid: cfa71937-73d5-4eb8-9b25-eadecd944803
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sh-harand.shcharand00.workers.dev
-- name: 🇳🇱 荷兰 (Netherlands) 02 - myhuo
   server: 109.201.152.181
   port: 443
   udp: true
   type: ss
   cipher: aes-128-cfb
   password: shadowsocks
+- name: 🇳🇱 荷兰 (Netherlands) 02 - myhuo
+  server: 82.38.31.219
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
 - name: 🇳🇱 荷兰 (Netherlands) 03 - myhuo
-  server: 82.38.31.218
+  server: 82.38.31.210
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
 - name: 🇳🇱 荷兰 (Netherlands) 04 - myhuo
-  server: 82.38.31.178
+  server: 82.38.31.48
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: 🇳🇱 荷兰 (Netherlands) 05 - myhuo
-  server: 82.38.31.156
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 06 - myhuo
-  server: 193.29.139.234
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-- name: 🇳🇱 荷兰 (Netherlands) 07 - myhuo
-  server: 82.38.31.183
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 08 - myhuo
-  server: 82.38.31.199
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 09 - myhuo
-  server: 82.38.31.66
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 10 - myhuo
-  server: 82.38.31.162
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 11 - myhuo
-  server: 82.38.31.214
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 12 - myhuo
-  server: 82.38.31.189
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 13 - myhuo
-  server: 82.38.31.35
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 14 - myhuo
-  server: 82.38.31.216
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 15 - myhuo
-  server: 82.38.31.187
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 16 - myhuo
-  server: 82.38.31.207
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 17 - myhuo
-  server: 193.29.139.235
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 18 - myhuo
-  server: 82.38.31.203
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 19 - myhuo
-  server: 82.38.31.201
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 20 - myhuo
-  server: 82.38.31.181
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 21 - myhuo
-  server: 82.38.31.61
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 22 - myhuo
-  server: 82.38.31.47
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 23 - myhuo
-  server: 82.38.31.39
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 24 - myhuo
-  server: 82.38.31.191
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 25 - myhuo
   server: 82.38.31.194
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 26 - myhuo
+- name: 🇳🇱 荷兰 (Netherlands) 06 - myhuo
+  server: 82.38.31.202
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 (Netherlands) 07 - myhuo
+  server: 82.38.31.207
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 (Netherlands) 08 - myhuo
+  server: 82.38.31.214
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 (Netherlands) 09 - myhuo
+  server: 82.38.31.185
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 (Netherlands) 10 - myhuo
+  server: 82.38.31.203
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 (Netherlands) 11 - myhuo
+  server: 82.38.31.62
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 12 - myhuo
+  server: 82.38.31.181
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 (Netherlands) 13 - myhuo
+  server: 82.38.31.165
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 14 - myhuo
+  server: 82.38.31.184
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 (Netherlands) 15 - myhuo
+  server: 82.38.31.35
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 16 - myhuo
+  server: 82.38.31.61
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 17 - myhuo
   server: 82.38.31.46
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 18 - myhuo
+  server: 178.83.185.156
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 19 - myhuo
+  server: 82.38.31.178
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 (Netherlands) 20 - myhuo
+  server: 82.38.31.216
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 (Netherlands) 21 - myhuo
+  server: 82.38.31.66
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 22 - myhuo
+  server: 82.38.31.199
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 (Netherlands) 23 - myhuo
+  server: 193.29.139.198
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 (Netherlands) 24 - myhuo
+  server: 82.38.31.162
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 25 - myhuo
+  server: 82.38.31.39
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 26 - myhuo
+  server: 51.158.206.19
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
 - name: 🇳🇱 荷兰 (Netherlands) 27 - myhuo
   server: 212.34.137.105
   port: 443
@@ -199,7 +201,7 @@ proxies:
   sni: shorts.blog-forme.ru
   skip-cert-verify: true
 - name: 🇳🇱 荷兰 (Netherlands) 28 - myhuo
-  server: 51.158.206.29
+  server: 51.158.206.20
   port: 23576
   udp: true
   type: vless
@@ -212,7 +214,7 @@ proxies:
   servername: fuck.rkn
   client-fingerprint: chrome
 - name: 🇳🇱 荷兰 (Netherlands) 29 - myhuo
-  server: 51.158.206.26
+  server: 51.158.206.93
   port: 23576
   udp: true
   type: vless
@@ -225,17 +227,20 @@ proxies:
   servername: fuck.rkn
   client-fingerprint: chrome
 - name: 🇳🇱 荷兰 (Netherlands) 30 - myhuo
-  server: 51.15.16.68
-  port: 24062
+  server: 51.158.206.29
+  port: 23576
   udp: true
-  type: hysteria2
-  password: capadm54312235:JdypYweuDQOrFqWTcFAL6aFq
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: ypvL8T4HFIBLoH8q
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: ''
 - name: 🇳🇱 荷兰 (Netherlands) 31 - myhuo
-  server: 51.158.206.34
+  server: 51.158.206.96
   port: 23576
   udp: true
   type: vless
@@ -248,13 +253,18 @@ proxies:
   servername: fuck.rkn
   client-fingerprint: chrome
 - name: 🇳🇱 荷兰 (Netherlands) 32 - myhuo
-  server: 5.129.235.85
-  port: 443
+  server: 51.158.206.34
+  port: 23576
   udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: vk.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
 - name: 🇳🇱 荷兰 (Netherlands) 33 - myhuo
   server: 51.158.206.98
   port: 23576
@@ -269,137 +279,6 @@ proxies:
   servername: fuck.rkn
   client-fingerprint: chrome
 - name: 🇳🇱 荷兰 (Netherlands) 34 - myhuo
-  server: 51.158.206.20
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 35 - myhuo
-  server: 138.16.141.59
-  port: 7443
-  udp: true
-  type: vless
-  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
-  tls: true
-  reality-opts:
-    public-key: RY7zkFQ01lI92jxNAyCa8T33UBW1fgpJgg8ZEqMA10k
-    short-id: a09ff9f8
-  servername: ibm.com
-  client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 36 - myhuo
-  server: 93.152.215.254
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6db6b948-655f-4f68-a9e7-865050e05b31
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _bGFsLP1Vw7sK0g6oervHFV00C5O3q7X3x_aOo-zhWI
-    short-id: 672cac
-  servername: 93.152.215.254
-  client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 37 - myhuo
-  server: 51.158.206.93
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 38 - myhuo
-  server: 66.163.127.155
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: indyourperfectremotetechjobfromthecomfortofhome.com
-  skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 39 - myhuo
-  server: 51.158.206.8
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 40 - myhuo
-  server: 66.163.127.215
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.indyourperfectremotetechjobfromthecomfortofhome.com
-  skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 41 - myhuo
-  server: 51.15.16.68
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 7d0fd363-16d2-43ce-9d6d-ed2c15d2cb7c
-  tls: true
-  reality-opts:
-    public-key: Zotx4F9CI6_q9yeKCKIHDjwzCv_Aq7WSo7N0Zc1A6Sc
-    short-id: 3c99c85cbb6b3b44
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 42 - myhuo
-  server: 51.158.206.97
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 43 - myhuo
-  server: 188.116.27.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: c5166628-47a8-4b6c-9b57-4c8cfb60a6d3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: mprwTEsQ9nJ78qG7BJskAWXaVfDxeMHBkQHbReVfMnc
-    short-id: '1174'
-  servername: www.sony.co.uk
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 44 - myhuo
-  server: 206.166.251.70
-  port: 52901
-  udp: true
-  type: vless
-  uuid: 510a4a35-54ac-41fa-a972-8d010995c8f7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Wllsn04C4xvPzega8LO2P4t-2wsV_YIdDCYO5w_NrSQ
-    short-id: 8770eaf663
-  servername: aws.amazon.com
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 45 - myhuo
   server: 51.158.206.103
   port: 23576
   udp: true
@@ -412,72 +291,7 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 46 - myhuo
-  server: 51.158.206.12
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 47 - myhuo
-  server: 51.158.206.96
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 48 - myhuo
-  server: 51.158.206.87
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 49 - myhuo
-  server: 66.163.127.9
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.indyourperfectremotetechjobfromthecomfortofhome.com
-  skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 50 - myhuo
-  server: 66.163.127.107
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.indyourperfectremotetechjobfromthecomfortofhome.com
-  skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 51 - myhuo
-  server: 51.15.19.206
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HowdyHysteria2023w0W
-  sni: t.me
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: HysteriaHowdy
-- name: 🇳🇱 荷兰 (Netherlands) 52 - myhuo
+- name: 🇳🇱 荷兰 (Netherlands) 35 - myhuo
   server: 177.177.215.45
   port: 444
   udp: true
@@ -488,44 +302,8 @@ proxies:
   servername: ams2.shtil.io
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 53 - myhuo
-  server: 130.12.242.106
-  port: 443
-  udp: true
-  type: vless
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  servername: deepl.com
-  client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 54 - myhuo
-  server: 51.15.16.68
-  port: 24044
-  udp: true
-  type: hysteria2
-  password: capadm54312235:JdypYweuDQOrFqWTcFAL6aFq
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: ypvL8T4HFIBLoH8q
-- name: 🇳🇱 荷兰 (Netherlands) 55 - myhuo
-  server: 9.163.235.73
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
-    short-id: 0123456789abcdef
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 56 - myhuo
-  server: 51.158.206.25
+- name: 🇳🇱 荷兰 (Netherlands) 36 - myhuo
+  server: 51.158.206.26
   port: 23576
   udp: true
   type: vless
@@ -537,28 +315,63 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 57 - myhuo
-  server: 51.158.206.86
-  port: 23576
+- name: 🇳🇱 荷兰 (Netherlands) 37 - myhuo
+  server: 188.116.27.6
+  port: 443
   udp: true
   type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  uuid: 407d047a-d9b4-41f3-8a02-ebc53854efca
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 58 - myhuo
-  server: 66.163.127.154
-  port: 443
+    public-key: mprwTEsQ9nJ78qG7BJskAWXaVfDxeMHBkQHbReVfMnc
+    short-id: '1174'
+  servername: www.sony.co.uk
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 38 - myhuo
+  server: 188.166.81.135
+  port: 1270
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.indyourperfectremotetechjobfromthecomfortofhome.com
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 59 - myhuo
+- name: 🇳🇱 荷兰 (Netherlands) 39 - myhuo
+  server: 51.158.206.97
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 40 - myhuo
+  server: 193.29.139.223
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 (Netherlands) 41 - myhuo
+  server: 138.16.141.59
+  port: 7443
+  udp: true
+  type: vless
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  tls: true
+  reality-opts:
+    public-key: RY7zkFQ01lI92jxNAyCa8T33UBW1fgpJgg8ZEqMA10k
+    short-id: a09ff9f8
+  servername: ibm.com
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 42 - myhuo
   server: 51.158.206.80
   port: 23576
   udp: true
@@ -571,44 +384,8 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 60 - myhuo
-  server: 179.254.95.57
-  port: 10785
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: SHEhYeyYfxpbtz8LieWkbOHXGfg5BAsqTLholzv1Mvw=
-- name: 🇳🇱 荷兰 (Netherlands) 61 - myhuo
-  server: 188.166.81.135
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 62 - myhuo
-  server: 82.38.31.62
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 63 - myhuo
-  server: 209.38.42.238
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 64 - myhuo
-  server: 51.158.206.19
+- name: 🇳🇱 荷兰 (Netherlands) 43 - myhuo
+  server: 51.158.206.25
   port: 23576
   udp: true
   type: vless
@@ -620,20 +397,67 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 65 - myhuo
-  server: 195.206.235.215
+- name: 🇳🇱 荷兰 (Netherlands) 44 - myhuo
+  server: 130.12.242.106
   port: 443
   udp: true
   type: vless
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  servername: 8a2e72t.nl11.h1clayd.click
-  client-fingerprint: ios
-- name: 🇳🇱 荷兰 (Netherlands) 66 - myhuo
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 45 - myhuo
+  server: 51.158.206.12
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 46 - myhuo
+  server: 51.158.206.87
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 47 - myhuo
+  server: 163.172.214.188
+  port: 80
+  udp: true
+  type: vless
+  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: SC-TheNetherlands1.09vpn.com
+- name: 🇳🇱 荷兰 (Netherlands) 48 - myhuo
+  server: 209.38.42.238
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 (Netherlands) 49 - myhuo
   server: free-amsterdam-node-1.cloudwidecdn.com
   port: 443
   udp: true
@@ -645,21 +469,8 @@ proxies:
     public-key: PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU
     short-id: 1d86d17709852910
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇳🇱 荷兰 (Netherlands) 67 - myhuo
-  server: 87.199.205.28
-  port: 443
-  udp: true
-  type: vless
-  uuid: 501a2da5-cb22-4a3f-915e-e3b821d1d62d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: W-9zyiOq287RtXVTZlTFbSDJ0Mx8joyBLJoA7ZE7eBw
-    short-id: ef1d3554c652a436
-  servername: vkvd754.okcdn.ru
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 68 - myhuo
+  client-fingerprint: qq
+- name: 🇳🇱 荷兰 (Netherlands) 50 - myhuo
   server: 168.100.9.41
   port: 16386
   udp: true
@@ -672,7 +483,7 @@ proxies:
     short-id: 2d2db70fbd
   servername: www.oracle.com
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 69 - myhuo
+- name: 🇳🇱 荷兰 (Netherlands) 51 - myhuo
   server: 168.100.9.41
   port: 53171
   udp: true
@@ -687,37 +498,103 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
-- name: 🇳🇱 荷兰 (Netherlands) 70 - myhuo
+- name: 🇳🇱 荷兰 (Netherlands) 52 - myhuo
+  server: 51.158.206.8
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 53 - myhuo
+  server: 195.206.235.215
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  servername: 8a2e72t.nl11.h1clayd.click
+  client-fingerprint: ios
+- name: 🇳🇱 荷兰 (Netherlands) 54 - myhuo
+  server: 87.199.205.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 501a2da5-cb22-4a3f-915e-e3b821d1d62d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: W-9zyiOq287RtXVTZlTFbSDJ0Mx8joyBLJoA7ZE7eBw
+    short-id: ef1d3554c652a436
+  servername: vkvd754.okcdn.ru
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 55 - myhuo
   server: 94.183.164.176
   port: 443
   udp: true
   type: vless
-  uuid: b4192dfb-f458-4303-b877-29a41a6d8416
+  uuid: 12776e55-6230-48b9-b069-1bb8a04b4237
   tls: true
   reality-opts:
     public-key: _KeOS5u_irk1547CMVB3RdwQzz1SzrQZk-IV-btF7TU
   servername: optim.tildacdn.pub
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: ebl
-- name: 🇳🇱 荷兰 (Netherlands) 71 - myhuo
-  server: 104.18.151.231
-  port: 2053
+- name: 🇳🇱 荷兰 (Netherlands) 56 - myhuo
+  server: 66.163.127.215
+  port: 443
   udp: true
-  type: vless
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  tls: true
-  servername: twilight-frost-15b0.yigom67484.workers.dev
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.indyourperfectremotetechjobfromthecomfortofhome.com
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: twilight-frost-15b0.yigom67484.workers.dev
-- name: 🇳🇱 荷兰 (Netherlands) 72 - myhuo
-  server: 961ec0g.nl13.h1clayd.click
+- name: 🇳🇱 荷兰 (Netherlands) 57 - myhuo
+  server: 66.163.127.215
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: 66.163.127.215
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 (Netherlands) 58 - myhuo
+  server: 66.163.127.215
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.indyourperfectremotetechjobfromthecomfortofhome.com
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 (Netherlands) 59 - myhuo
+  server: 51.15.16.68
+  port: 37030
+  udp: true
+  type: hysteria2
+  password: capadm54312235:JdypYweuDQOrFqWTcFAL6aFq
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ypvL8T4HFIBLoH8q
+- name: 🇳🇱 荷兰 (Netherlands) 60 - myhuo
+  server: 66.163.127.154
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.indyourperfectremotetechjobfromthecomfortofhome.com
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 (Netherlands) 61 - myhuo
+  server: 196.245.153.156
   port: 443
   udp: true
   type: vless
@@ -726,62 +603,67 @@ proxies:
   reality-opts:
     public-key: xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA
     short-id: 6d289ff0f47c0aac
-  servername: 961ec0g.nl13.h1clayd.click
-  client-fingerprint: chrome
+  servername: 961ec0g.nl17.h1clayd.click
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: 7d5abcd7d8a1
-- name: 🇳🇱 荷兰 (Netherlands) 73 - myhuo
-  server: 179.254.95.57
-  port: 26032
+- name: 🇳🇱 荷兰 (Netherlands) 62 - myhuo
+  server: 51.15.16.68
+  port: 37186
   udp: true
-  type: vmess
-  uuid: 804334e2-04ca-434c-8311-3ccee8218175
-  alterId: 0
-  cipher: auto
-- name: 🇳🇱 荷兰 (Netherlands) 74 - myhuo
-  server: 176.65.151.175
-  port: 11674
+  type: hysteria2
+  password: capadm54312235:JdypYweuDQOrFqWTcFAL6aFq
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ypvL8T4HFIBLoH8q
+- name: 🇳🇱 荷兰 (Netherlands) 63 - myhuo
+  server: 66.163.127.225
+  port: 443
   udp: true
-  type: vmess
-  uuid: a98a98cb-ae86-43ae-b695-cf0dbcad3fc2
-  alterId: 0
-  cipher: auto
-- name: 🇳🇱 荷兰 (Netherlands) 75 - myhuo
-  server: 5d0319t.nl7.h1clayd.click
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.indyourperfectremotetechjobfromthecomfortofhome.com
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 (Netherlands) 64 - myhuo
+  server: 51.158.206.86
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: ''
+- name: 🇳🇱 荷兰 (Netherlands) 65 - myhuo
+  server: 196.245.153.104
   port: 443
   udp: true
   type: vless
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   tls: true
   reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
-  servername: 5d0319t.nl7.h1clayd.click
+    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
+    short-id: 50a749f0eccb628c
+  servername: 15b171g.nl7.h1clayd.click
   client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 76 - myhuo
-  server: 123466.ru
-  port: 28054
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 5b79e8a94241
+- name: 🇳🇱 荷兰 (Netherlands) 66 - myhuo
+  server: 51.15.19.206
+  port: 8443
   udp: true
-  type: vmess
-  uuid: 804334e2-04ca-434c-8311-3ccee8218175
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇳🇱 荷兰 (Netherlands) 77 - myhuo
-  server: 72.56.38.83
-  port: 443
-  udp: true
-  type: vless
-  uuid: Fluffy_VPN-zKZUa4Ie
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ZzIetLcQtENjIXQ9XZqFo8p3J81p8Emj0wi51Uy07n8
-  servername: absolute-disaster.org
-  client-fingerprint: firefox
+  type: hysteria2
+  password: HowdyHysteria2023w0W
+  sni: t.me
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: HysteriaHowdy
 proxy-groups:
 - name: PROXIES
   type: select
@@ -853,17 +735,6 @@ proxy-groups:
   - 🇳🇱 荷兰 (Netherlands) 64 - myhuo
   - 🇳🇱 荷兰 (Netherlands) 65 - myhuo
   - 🇳🇱 荷兰 (Netherlands) 66 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 67 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 68 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 69 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 70 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 71 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 72 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 73 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 74 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 75 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 76 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 77 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -935,16 +806,5 @@ proxy-groups:
   - 🇳🇱 荷兰 (Netherlands) 64 - myhuo
   - 🇳🇱 荷兰 (Netherlands) 65 - myhuo
   - 🇳🇱 荷兰 (Netherlands) 66 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 67 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 68 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 69 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 70 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 71 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 72 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 73 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 74 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 75 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 76 - myhuo
-  - 🇳🇱 荷兰 (Netherlands) 77 - myhuo
 rules:
 - MATCH,PROXIES

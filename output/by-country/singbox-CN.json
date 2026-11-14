@@ -5,17 +5,13 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 01 - myhuo",
-      "server": "104.17.147.222",
-      "server_port": 80,
-      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "tag": "🇨🇳 CN 01 - myhuo",
+      "server": "39.108.113.127",
+      "server_port": 10086,
+      "uuid": "d50cc563-0c03-4136-899f-85cbc0b02699",
       "security": "auto",
       "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "vmess.lbw666.dpdns.org"
-        }
+        "type": "ws"
       }
     },
     {
@@ -23,14 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🇨🇳 CN 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🇨🇳 CN 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
