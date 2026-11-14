@@ -5,12 +5,60 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇾 白俄罗斯 (Belarus) 01 - myhuo
+  server: 95.128.71.79
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.128.71.79
+- name: 🇧🇾 白俄罗斯 (Belarus) 02 - myhuo
+  server: 178.172.227.228
+  port: 14430
+  udp: true
+  type: vless
+  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.228
+- name: 🇧🇾 白俄罗斯 (Belarus) 03 - myhuo
+  server: 178.172.227.228
+  port: 10444
+  udp: true
+  type: vless
+  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: ads.x5.ru
+  client-fingerprint: ios
+- name: 🇧🇾 白俄罗斯 (Belarus) 04 - myhuo
+  server: 95.128.71.79
+  port: 10444
+  udp: true
+  type: vless
+  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: ads.x5.ru
+  client-fingerprint: safari
+- name: 🇧🇾 白俄罗斯 (Belarus) 05 - myhuo
   server: 178.172.227.124
   port: 10443
   udp: true
   type: vless
   uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
-- name: 🇧🇾 白俄罗斯 (Belarus) 02 - myhuo
+- name: 🇧🇾 白俄罗斯 (Belarus) 06 - myhuo
   server: 178.172.227.124
   port: 14430
   udp: true
@@ -21,20 +69,7 @@ proxies:
     path: /vless
     headers:
       Host: 178.172.227.124
-- name: 🇧🇾 白俄罗斯 (Belarus) 03 - myhuo
-  server: 78.140.253.25
-  port: 445
-  udp: true
-  type: vless
-  uuid: cdf4bc13-31e6-4bff-962c-05fe9151c593
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Vi1Rr8Qf0-OeeXyHCt8Hsz1yRzVRkniPweoKl3Y6ohY
-    short-id: 15aa18f121da1f81
-  servername: bel.vrsvpn.com
-  client-fingerprint: chrome
-- name: 🇧🇾 白俄罗斯 (Belarus) 04 - myhuo
+- name: 🇧🇾 白俄罗斯 (Belarus) 07 - myhuo
   server: 178.172.227.124
   port: 10444
   udp: true
@@ -56,6 +91,9 @@ proxy-groups:
   - 🇧🇾 白俄罗斯 (Belarus) 02 - myhuo
   - 🇧🇾 白俄罗斯 (Belarus) 03 - myhuo
   - 🇧🇾 白俄罗斯 (Belarus) 04 - myhuo
+  - 🇧🇾 白俄罗斯 (Belarus) 05 - myhuo
+  - 🇧🇾 白俄罗斯 (Belarus) 06 - myhuo
+  - 🇧🇾 白俄罗斯 (Belarus) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -65,5 +103,8 @@ proxy-groups:
   - 🇧🇾 白俄罗斯 (Belarus) 02 - myhuo
   - 🇧🇾 白俄罗斯 (Belarus) 03 - myhuo
   - 🇧🇾 白俄罗斯 (Belarus) 04 - myhuo
+  - 🇧🇾 白俄罗斯 (Belarus) 05 - myhuo
+  - 🇧🇾 白俄罗斯 (Belarus) 06 - myhuo
+  - 🇧🇾 白俄罗斯 (Belarus) 07 - myhuo
 rules:
 - MATCH,PROXIES

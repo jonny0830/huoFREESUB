@@ -5,25 +5,32 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 01 (家宽) - myhuo",
-      "server": "195.133.135.238",
-      "server_port": 10086,
-      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
-      "security": "auto"
+      "tag": "🌐 其他地区 (Other) 01 - myhuo",
+      "server": "104.17.147.222",
+      "server_port": 80,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        }
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 新加坡 (Singapore) 01 (家宽) - myhuo"
+        "🌐 其他地区 (Other) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 新加坡 (Singapore) 01 (家宽) - myhuo"
+        "🌐 其他地区 (Other) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

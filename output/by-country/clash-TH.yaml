@@ -5,6 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - myhuo
+  server: 104.17.147.208
+  port: 443
+  udp: true
+  type: vless
+  uuid: 258ca28a-d982-4a40-b620-7c1c81108060
+  tls: true
+  servername: b.rack.sxsc.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: b.rack.sxsc.dpdns.org
+- name: 🇹🇭 泰国 (Thailand) 02 - myhuo
+  server: zfapi.zalolink.com
+  port: 11802
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
+    short-id: 6c84fbac2d
+  servername: psstatic.cdn.bcebos.com
+  client-fingerprint: ios
+- name: 🇹🇭 泰国 (Thailand) 03 - myhuo
   server: 119.46.51.45
   port: 37515
   udp: true
@@ -18,11 +46,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - myhuo
+  - 🇹🇭 泰国 (Thailand) 02 - myhuo
+  - 🇹🇭 泰国 (Thailand) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - myhuo
+  - 🇹🇭 泰国 (Thailand) 02 - myhuo
+  - 🇹🇭 泰国 (Thailand) 03 - myhuo
 rules:
 - MATCH,PROXIES

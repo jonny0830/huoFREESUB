@@ -6,18 +6,18 @@
     {
       "type": "shadowsocks",
       "tag": "🇿🇦 南非 (South Africa) 01 - myhuo",
-      "server": "102.133.165.160",
-      "server_port": 16233,
-      "method": "chacha20-ietf-poly1305",
-      "password": "Xsy8Ox4yOV3xLlpxtjzs3X"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 02 - myhuo",
       "server": "102.37.156.224",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "aduB9HGxQHjA2SBMRjkHX6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇿🇦 南非 (South Africa) 02 - myhuo",
+      "server": "102.133.165.160",
+      "server_port": 16233,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Xsy8Ox4yOV3xLlpxtjzs3X"
     },
     {
       "type": "trojan",
@@ -36,38 +36,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 04 - myhuo",
-      "server": "102.208.217.14",
-      "server_port": 2087,
-      "uuid": "ead4a562-edf2-40cf-ad33-13ae98546226",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "eeD55i5qwcb8fvWZuJF6o-o2Ums4QEenTer8iNtobUk",
-          "short_id": "d9d5b093"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇿🇦 南非 (South Africa) 01 - myhuo",
         "🇿🇦 南非 (South Africa) 02 - myhuo",
-        "🇿🇦 南非 (South Africa) 03 - myhuo",
-        "🇿🇦 南非 (South Africa) 04 - myhuo"
+        "🇿🇦 南非 (South Africa) 03 - myhuo"
       ]
     },
     {
@@ -76,8 +51,7 @@
       "outbounds": [
         "🇿🇦 南非 (South Africa) 01 - myhuo",
         "🇿🇦 南非 (South Africa) 02 - myhuo",
-        "🇿🇦 南非 (South Africa) 03 - myhuo",
-        "🇿🇦 南非 (South Africa) 04 - myhuo"
+        "🇿🇦 南非 (South Africa) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

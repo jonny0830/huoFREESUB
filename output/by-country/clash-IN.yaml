@@ -15,20 +15,8 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02 - myhuo
-  server: 178.212.35.198
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
-  tls: true
-  reality-opts:
-    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
-    short-id: 6bdc8320
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 03 - myhuo
   server: 13.140.56.100
   port: 14430
   udp: true
@@ -39,6 +27,18 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 03 - myhuo
+  server: in.smrtai.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
+  tls: true
+  reality-opts:
+    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
+    short-id: 6bdc8320
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 04 - myhuo
   server: 13.140.253.35
   port: 443
@@ -53,6 +53,19 @@ proxies:
     path: /050334203cc522a3
     headers:
       Host: xray-h0urp9tx-rapid-summit-2.cloady.io
+- name: 🇮🇳 印度 (India) 05 - myhuo
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: in-152.67.8.205-0202
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,6 +75,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - myhuo
   - 🇮🇳 印度 (India) 03 - myhuo
   - 🇮🇳 印度 (India) 04 - myhuo
+  - 🇮🇳 印度 (India) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,5 +85,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - myhuo
   - 🇮🇳 印度 (India) 03 - myhuo
   - 🇮🇳 印度 (India) 04 - myhuo
+  - 🇮🇳 印度 (India) 05 - myhuo
 rules:
 - MATCH,PROXIES
