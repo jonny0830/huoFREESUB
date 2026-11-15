@@ -4,20 +4,15 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇱 波兰 (Poland) 01 (家宽) - myhuo
-  server: 185.86.145.55
-  port: 10470
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
+  server: 49.254.204.133
+  port: 1774
   udp: true
-  type: vless
-  uuid: 3ecbd833-40d8-4ddb-b80b-a7c4628ec7e5
-  tls: true
-  servername: wn-pl4.static-s3.org
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: wn-adaptcloud
-- name: 🇸🇬 新加坡 (Singapore) 02 (家宽) - myhuo
-  server: 195.133.135.238
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇲🇾 马来西亚 (Malaysia) 02 (家宽) - myhuo
+  server: 192.228.145.118
   port: 10086
   udp: true
   type: vmess
@@ -29,14 +24,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇵🇱 波兰 (Poland) 01 (家宽) - myhuo
-  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
+  - 🇲🇾 马来西亚 (Malaysia) 02 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 波兰 (Poland) 01 (家宽) - myhuo
-  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - myhuo
+  - 🇲🇾 马来西亚 (Malaysia) 02 (家宽) - myhuo
 rules:
 - MATCH,PROXIES
