@@ -4,30 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - myhuo
-  server: 104.17.147.222
-  port: 80
+- name: 🇸🇬 新加坡 (Singapore) 01 (家宽) - myhuo
+  server: 195.133.135.238
+  port: 10086
   udp: true
   type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - myhuo
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - myhuo
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - myhuo
 rules:
 - MATCH,PROXIES

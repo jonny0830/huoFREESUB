@@ -20,6 +20,13 @@ proxies:
   grpc-opts:
     grpc-service-name: ''
 - name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+- name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
   server: 45.151.70.116
   port: 443
   udp: true
@@ -31,18 +38,27 @@ proxies:
     short-id: 836c3060
   servername: www.amd.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
-  server: 5.59.204.81
-  port: 8443
+- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
+  server: 87.232.116.20
+  port: 443
   udp: true
   type: vless
-  uuid: 97fd7807-7e2b-49da-8a0e-e40197088f97
-  flow: xtls-rprx-vision
+  uuid: d86e6fda-e519-46ab-98eb-9ff9a9da5984
   tls: true
-  servername: id-6af3f40b.adhil.uk
+  servername: fafeqdhlett2p5la6d.cdn.cachefleet.com
   skip-cert-verify: false
-  client-fingerprint: edge
-- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 67h2o3erm0t9imsj
+- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
+  server: 185.22.153.117
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+- name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
   server: 201.24.121.243
   port: 443
   udp: true
@@ -55,13 +71,34 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vlgrpc
-- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
-  server: 185.22.153.117
-  port: 18443
+- name: 🇷🇺 俄罗斯 (Russia) 07 - myhuo
+  server: 185.39.204.117
+  port: 10002
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  type: vless
+  uuid: facb802c-de2e-11f1-9a22-a3404e852f3b
+  tls: true
+  servername: tr2.vpnjantit.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vpnjantit
+- name: 🇷🇺 俄罗斯 (Russia) 08 - myhuo
+  server: 212.41.8.76
+  port: 13443
+  udp: true
+  type: vless
+  uuid: a628c583-24a8-4ce5-98ad-c6458abf1cc4
+  tls: true
+  reality-opts:
+    public-key: d2B_vurRVKXLrK0ib-0sTtQuI3VDdaj8ZKTXgEPwAlc
+    short-id: 9de815e2
+  servername: s3.storage.selcloud.ru
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,6 +109,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 05 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 06 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 07 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 08 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,5 +122,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 05 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 06 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 07 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 08 - myhuo
 rules:
 - MATCH,PROXIES

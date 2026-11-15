@@ -1,0 +1,32 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇵🇱 波兰 (Poland) 01 (家宽) - myhuo
+  server: 185.86.145.55
+  port: 10470
+  udp: true
+  type: vless
+  uuid: 3ecbd833-40d8-4ddb-b80b-a7c4628ec7e5
+  tls: true
+  servername: wn-pl4.static-s3.org
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: wn-adaptcloud
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇵🇱 波兰 (Poland) 01 (家宽) - myhuo
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇵🇱 波兰 (Poland) 01 (家宽) - myhuo
+rules:
+- MATCH,PROXIES

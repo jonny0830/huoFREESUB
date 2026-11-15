@@ -6,6 +6,27 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - myhuo",
+      "server": "46.29.255.123",
+      "server_port": 59539,
+      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cloudflare-dns.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - myhuo",
       "server": "hk3n.wxgqlfx.vip",
       "server_port": 35193,
       "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
@@ -25,18 +46,46 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - myhuo",
+      "server": "179.254.115.201",
+      "server_port": 443,
+      "uuid": "88edfb30-a34b-41e1-a08f-985a93e3bc36",
+      "tls": {
+        "enabled": true,
+        "server_name": "02104dg.es7.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AK4PrvaK2WV1v1NEegq2rE53gVnlXUw_jo3XwA1aIEI",
+          "short_id": "7d0aaf84998bfe61"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "af7e99c1e3f1"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 塞舌尔 (Seychelles) 01 - myhuo"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - myhuo",
+        "🇸🇨 塞舌尔 (Seychelles) 02 - myhuo",
+        "🇸🇨 塞舌尔 (Seychelles) 03 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 塞舌尔 (Seychelles) 01 - myhuo"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - myhuo",
+        "🇸🇨 塞舌尔 (Seychelles) 02 - myhuo",
+        "🇸🇨 塞舌尔 (Seychelles) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
