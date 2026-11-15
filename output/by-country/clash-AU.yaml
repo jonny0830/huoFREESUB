@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectwithemployerstohireyouridealteam.com
+  sni: 45.63.30.142
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 02 - myhuo
   server: 152.67.115.203
@@ -23,20 +23,7 @@ proxies:
   obfs: salamander
   obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
 - name: 🇦🇺 澳大利亚 (Australia) 03 - myhuo
-  server: 43.255.157.53
-  port: 48158
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
-    short-id: 54cca3c1c1c7
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 04 - myhuo
-  server: 176.97.68.100
+  server: v1au.mateflora.com
   port: 443
   udp: true
   type: vless
@@ -48,6 +35,32 @@ proxies:
     short-id: 54cca3c1c1c7
   servername: www.apple.com
   client-fingerprint: ios
+- name: 🇦🇺 澳大利亚 (Australia) 04 - myhuo
+  server: zfapi.zalolink.com
+  port: 54528
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
+    short-id: 54cca3c1c1c7
+  servername: www.apple.com
+  client-fingerprint: ios
+- name: 🇦🇺 澳大利亚 (Australia) 05 - myhuo
+  server: doghkzf.zalolink.com
+  port: 48158
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
+    short-id: 54cca3c1c1c7
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,6 +70,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 03 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 04 - myhuo
+  - 🇦🇺 澳大利亚 (Australia) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,5 +80,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 03 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 04 - myhuo
+  - 🇦🇺 澳大利亚 (Australia) 05 - myhuo
 rules:
 - MATCH,PROXIES

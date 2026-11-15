@@ -5,13 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - myhuo
-  server: 94.183.164.119
-  port: 24433
+  server: 65.108.240.210
+  port: 39018
   udp: true
-  type: hysteria2
-  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: 94.183.164.119
-  skip-cert-verify: true
+  type: vmess
+  uuid: 45dc10c6-04c8-4c70-a06a-d396254a6c0b
+  alterId: 0
+  cipher: auto
 - name: 🇫🇮 芬兰 (Finland) 02 - myhuo
   server: 135.181.187.44
   port: 443
@@ -24,14 +24,27 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 03 - myhuo
-  server: fi1.obxodvpn.us
+  server: 196.196.208.20
   port: 443
   udp: true
-  type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: fi1.obxodvpn.us
-  skip-cert-verify: false
+  type: vless
+  uuid: 2208b003-78b1-453c-b5ca-ce847ff0efd6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jRHg94HymqCnI9LLFHMBxvi9URv_AOMgJxhLkOVuCl8
+    short-id: 0bfd7d104dcc9cae
+  servername: 45b545t.fi7.h1clayd.click
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 04 - myhuo
+  server: 94.183.164.119
+  port: 24433
+  udp: true
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: lakes.blog-forme.ru
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -42,7 +55,26 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
+- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
+  server: fi1.obxodvpn.us
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
+  server: 129.101.100.219
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  flow: xtls-rprx-vision
+  tls: true
+  servername: db-28.topp-con.xyz
+  skip-cert-verify: true
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 08 - myhuo
   server: 104.171.133.213
   port: 443
   udp: true
@@ -53,18 +85,7 @@ proxies:
   servername: mirror-75.topp-con.xyz
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
-  server: 129.101.100.219
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  flow: xtls-rprx-vision
-  tls: true
-  servername: db-28.topp-con.xyz
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
+- name: 🇫🇮 芬兰 (Finland) 09 - myhuo
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -88,6 +109,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - myhuo
   - 🇫🇮 芬兰 (Finland) 06 - myhuo
   - 🇫🇮 芬兰 (Finland) 07 - myhuo
+  - 🇫🇮 芬兰 (Finland) 08 - myhuo
+  - 🇫🇮 芬兰 (Finland) 09 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -100,5 +123,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - myhuo
   - 🇫🇮 芬兰 (Finland) 06 - myhuo
   - 🇫🇮 芬兰 (Finland) 07 - myhuo
+  - 🇫🇮 芬兰 (Finland) 08 - myhuo
+  - 🇫🇮 芬兰 (Finland) 09 - myhuo
 rules:
 - MATCH,PROXIES

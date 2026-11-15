@@ -4,26 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01 (家宽) - myhuo",
-      "server": "192.228.145.118",
-      "server_port": 10086,
-      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
-      "security": "auto"
+      "type": "trojan",
+      "tag": "🇳🇬 尼日利亚 (Nigeria) 01 - myhuo",
+      "server": "sclass-c2.catcat321.com",
+      "server_port": 20051,
+      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk.catxstar.com",
+        "insecure": true
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 (家宽) - myhuo"
+        "🇳🇬 尼日利亚 (Nigeria) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 (家宽) - myhuo"
+        "🇳🇬 尼日利亚 (Nigeria) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
