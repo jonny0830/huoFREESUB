@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - myhuo
-  server: 153.52.69.249
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WVfpQqoeOrTtCq052_IOxvMv7RCWfLlAOxEfsH1aa2U
-    short-id: d5492c7a39515c65
-  servername: cache-78.topp-con.xyz
-  client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 02 - myhuo
   server: 212.102.38.25
   port: 443
   udp: true
@@ -30,6 +17,19 @@ proxies:
     short-id: e90360ec7cc61b20
   servername: udemy.com
   client-fingerprint: ios
+- name: 🇨🇿 捷克 (Czech) 02 - myhuo
+  server: 153.52.69.249
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WVfpQqoeOrTtCq052_IOxvMv7RCWfLlAOxEfsH1aa2U
+    short-id: d5492c7a39515c65
+  servername: cache-78.topp-con.xyz
+  client-fingerprint: firefox
 - name: 🇨🇿 捷克 (Czech) 03 - myhuo
   server: 195.123.245.241
   port: 443

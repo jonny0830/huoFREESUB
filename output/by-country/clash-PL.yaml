@@ -12,47 +12,47 @@ proxies:
   cipher: aes-256-cfb
   password: S2zDyyPcmZN2h8EC
 - name: 🇵🇱 波兰 (Poland) 02 - myhuo
-  server: 217.30.10.44
-  port: 9062
+  server: 217.30.10.70
+  port: 9045
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: tkhHVxxfM2QErBWe
+  password: Lp27rqyJq72bZsqX
 - name: 🇵🇱 波兰 (Poland) 03 - myhuo
-  server: 217.30.10.44
-  port: 9095
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 04 - myhuo
   server: 217.30.10.44
   port: 9006
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: FAdUvMJUq5vDgKEq
-- name: 🇵🇱 波兰 (Poland) 05 - myhuo
+- name: 🇵🇱 波兰 (Poland) 04 - myhuo
   server: 217.30.10.44
-  port: 9063
+  port: 9099
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: aQqJbtwFGcCCaeL3
-- name: 🇵🇱 波兰 (Poland) 06 - myhuo
+  password: 7heRqkPG3hg4UnRm
+- name: 🇵🇱 波兰 (Poland) 05 - myhuo
   server: 217.30.10.44
   port: 9052
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 07 - myhuo
+- name: 🇵🇱 波兰 (Poland) 06 - myhuo
   server: 217.30.10.44
   port: 9071
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mENfxTFQpRKKh4As
+- name: 🇵🇱 波兰 (Poland) 07 - myhuo
+  server: 217.30.10.44
+  port: 9095
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: N7j3pdTYkKmsy8CR
 - name: 🇵🇱 波兰 (Poland) 08 - myhuo
   server: 217.30.10.70
   port: 9020
@@ -61,12 +61,12 @@ proxies:
   cipher: aes-256-cfb
   password: BNmAXXxAHYpTRdzu
 - name: 🇵🇱 波兰 (Poland) 09 - myhuo
-  server: 217.30.10.70
-  port: 9093
+  server: 217.30.10.44
+  port: 9062
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: wfLC2y7rzZyCmuyt
+  password: tkhHVxxfM2QErBWe
 - name: 🇵🇱 波兰 (Poland) 10 - myhuo
   server: 217.30.10.44
   port: 9042
@@ -75,14 +75,20 @@ proxies:
   cipher: aes-256-cfb
   password: S7KwUu7yBy58S3Ga
 - name: 🇵🇱 波兰 (Poland) 11 - myhuo
-  server: 217.30.10.44
-  port: 9099
+  server: 20.215.66.17
+  port: 2083
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 7heRqkPG3hg4UnRm
+  type: vless
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+    short-id: 0123456789abcdef
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 12 - myhuo
-  server: 201.58.139.183
+  server: d58daft.plp1.h1cloud.net
   port: 443
   udp: true
   type: vless
@@ -92,7 +98,7 @@ proxies:
     public-key: ixnCbdlT5sAVd-ilp2nG11CvnNsBCf9xPD56TlXxlR4
     short-id: a91531ad58c8611c
   servername: d58daft.plp1.h1cloud.net
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 13 - myhuo
   server: 54.37.131.126
   port: 80
@@ -107,19 +113,6 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 14 - myhuo
-  server: 20.215.66.17
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
-    short-id: 0123456789abcdef
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 15 - myhuo
   server: 150.251.113.34
   port: 443
   udp: true
@@ -132,6 +125,19 @@ proxies:
     short-id: 150a627d15154cf2
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 15 - myhuo
+  server: 13.143.232.205
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2208b003-78b1-453c-b5ca-ce847ff0efd6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0dAUffCns_r-xP3QP1V8qy2P29vBN5ROOoX96TxpvXA
+    short-id: b545243c33282b73
+  servername: d4a338t.pl8.h1clayd.click
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
