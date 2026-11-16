@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇦 乌克兰 (Ukraine) 01 - myhuo
-  server: 83.147.18.75
+- name: 🇲🇾 马来西亚 (Malaysia) 01 - myhuo
+  server: 45.249.91.115
   port: 443
   udp: true
   type: vless
-  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
-    short-id: 7f1e29593aa94ad1
-  servername: www.bing.com
-  client-fingerprint: chrome
+    public-key: xE5R41I9u0Ro2Ru4TUDVqA0a1GRyS5K6zh1DJcJLEUw
+    short-id: 4af284210d
+  servername: my1.gofizz.in
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇦 乌克兰 (Ukraine) 01 - myhuo
+  - 🇲🇾 马来西亚 (Malaysia) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇦 乌克兰 (Ukraine) 01 - myhuo
+  - 🇲🇾 马来西亚 (Malaysia) 01 - myhuo
 rules:
 - MATCH,PROXIES

@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇩 摩尔多瓦 (Moldova) 01 - myhuo
-  server: 176.123.11.43
+  server: 91.229.239.31
   port: 443
   udp: true
   type: vless
-  uuid: c1208c5a-2350-4506-affd-fc41b4319286
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
   tls: true
-  servername: bundledispatch.ratethatrestaurant.org
-  skip-cert-verify: false
+  reality-opts:
+    public-key: dB_0SVZC1kSyoO7HGojy4RX-xeT36JFMBYntBytwzTU
+    short-id: e09a99b8
+  servername: md1.gofizzin.com
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /media/ws/
 proxy-groups:
 - name: PROXIES
   type: select
