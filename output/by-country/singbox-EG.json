@@ -4,12 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇪🇬 埃及 (Egypt) 01 - myhuo",
-      "server": "dlc.deltapc.digital",
-      "server_port": 11133,
-      "method": "xchacha20-ietf-poly1305",
-      "password": "mDLpXyVaIwCQ5GjuekgBxYMtVT9Z/nkb3K2SXpwHCLU="
+      "server": "41.196.0.128",
+      "server_port": 443,
+      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eg1.gofizz.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tyklNbOfb-FctP-J1OQa1yUHPY9p4co70RyYuRe9nR8",
+          "short_id": "f68db13f"
+        }
+      }
     },
     {
       "type": "selector",

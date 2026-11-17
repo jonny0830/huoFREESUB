@@ -12,28 +12,13 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇪 阿联酋 (UAE) 02 - myhuo
-  server: nl41.homelab-cdn.cloud
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 0ed9418b-e687-4c2d-8869-7e368c44887e
-  tls: true
-  reality-opts:
-    public-key: NW2c4t6gXODenb0_Mo5Qf-1nrJr5xFQm30zf-IVfHjY
-    short-id: 08
-  servername: nl41.homelab-cdn.cloud
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
   server: 151.241.19.36
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
+- name: 🇦🇪 阿联酋 (UAE) 03 - myhuo
   server: 130.49.161.70
   port: 443
   udp: true
@@ -43,7 +28,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 05 - myhuo
+- name: 🇦🇪 阿联酋 (UAE) 04 - myhuo
   server: 45.86.228.39
   port: 443
   udp: true
@@ -56,8 +41,8 @@ proxies:
     short-id: 29967a52
   servername: ae1.gofizzin.com
   client-fingerprint: edge
-- name: 🇦🇪 阿联酋 (UAE) 06 - myhuo
-  server: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - myhuo
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -67,6 +52,15 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - myhuo
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
 proxy-groups:
 - name: PROXIES
   type: select

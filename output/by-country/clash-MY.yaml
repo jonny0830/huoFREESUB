@@ -17,17 +17,34 @@ proxies:
     short-id: 4af284210d
   servername: my1.gofizz.in
   client-fingerprint: firefox
+- name: 🇲🇾 马来西亚 (Malaysia) 02 - myhuo
+  server: 382218.xyz
+  port: 443
+  udp: true
+  type: vless
+  uuid: d801d4d9-111a-46e8-91fc-e2fb39ef2d22
+  tls: true
+  servername: 382218.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 382218.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇲🇾 马来西亚 (Malaysia) 01 - myhuo
+  - 🇲🇾 马来西亚 (Malaysia) 02 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇲🇾 马来西亚 (Malaysia) 01 - myhuo
+  - 🇲🇾 马来西亚 (Malaysia) 02 - myhuo
 rules:
 - MATCH,PROXIES

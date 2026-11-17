@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - myhuo
-  server: 170.114.45.6
-  port: 2096
+- name: 🇺🇸 美国 (United States) 01 (家宽) - myhuo
+  server: 172.66.47.45
+  port: 2083
   udp: true
   type: vless
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: pcloud.z-tas.com
+  servername: wk1.f1w.de5.net
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: pcloud.z-tas.com
+      Host: wk1.f1w.de5.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - myhuo
+  - 🇺🇸 美国 (United States) 01 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - myhuo
+  - 🇺🇸 美国 (United States) 01 (家宽) - myhuo
 rules:
 - MATCH,PROXIES

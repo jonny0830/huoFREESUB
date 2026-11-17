@@ -25,18 +25,43 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 02 - myhuo",
+      "server": "382218.xyz",
+      "server_port": 443,
+      "uuid": "d801d4d9-111a-46e8-91fc-e2fb39ef2d22",
+      "tls": {
+        "enabled": true,
+        "server_name": "382218.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "382218.xyz"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - myhuo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - myhuo",
+        "🇲🇾 马来西亚 (Malaysia) 02 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - myhuo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - myhuo",
+        "🇲🇾 马来西亚 (Malaysia) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
