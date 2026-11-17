@@ -5,27 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
-  server: 160.187.100.109
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 160.187.100.109
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
-  server: 114.37.105.51
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3OEqq4MiCKoUP5yKBOmZsjuwg4i8A1fb8WrEDOFQek8
-    short-id: 2c14765d0b
-  servername: tw1.gofizzin.com
-  client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
   server: 85.237.207.221
   port: 443
   udp: true
@@ -38,13 +17,21 @@ proxies:
     short-id: fd2fa5e06670120b
   servername: dl.google.com
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2🇨🇳
+  sni: https://t.me/oneclickvpnkeys
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
+  server: 160.187.100.109
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -54,7 +41,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,6 +49,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
 rules:
 - MATCH,PROXIES

@@ -6,6 +6,27 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - myhuo",
+      "server": "c353abt.es5.h1clayd.click",
+      "server_port": 443,
+      "uuid": "2208b003-78b1-453c-b5ca-ce847ff0efd6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "c353abt.es5.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "eYKLFr3Jz14re6BUiCNDujKxmUP4-SzCnSQvxVGfaCY",
+          "short_id": "3dcd74a8248d6bff"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - myhuo",
       "server": "46.29.255.123",
       "server_port": 59539,
       "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
@@ -25,26 +46,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - myhuo",
-      "server": "a357e2g.es5.h1clayd.click",
-      "server_port": 443,
-      "uuid": "2208b003-78b1-453c-b5ca-ce847ff0efd6",
-      "tls": {
-        "enabled": true,
-        "server_name": "a357e2g.es5.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RBmtyb7WJzYMTHpRrlLwVk_dbSStfGds8dZtpTf6gAE",
-          "short_id": "23dda49556665b0d"
-        }
-      },
+      "type": "vmess",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - myhuo",
+      "server": "156.239.224.107",
+      "server_port": 57278,
+      "uuid": "1270bed5-f908-4ecc-f1c8-de246033b186",
+      "security": "auto",
       "transport": {
-        "type": "grpc"
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -53,7 +63,8 @@
       "outbounds": [
         "auto",
         "🇸🇨 塞舌尔 (Seychelles) 01 - myhuo",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - myhuo"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - myhuo",
+        "🇸🇨 塞舌尔 (Seychelles) 03 - myhuo"
       ]
     },
     {
@@ -61,7 +72,8 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇨 塞舌尔 (Seychelles) 01 - myhuo",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - myhuo"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - myhuo",
+        "🇸🇨 塞舌尔 (Seychelles) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

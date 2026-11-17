@@ -12,56 +12,18 @@
       "security": "auto"
     },
     {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - myhuo",
-      "server": "203.146.170.195",
-      "server_port": 443,
-      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "th1.gofizzin.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4LwH3FEPZZqjen5iuUlRqV4Buatjv8DxL3KUvE1ULWs",
-          "short_id": "faaf02e8469f34"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 03 - myhuo",
-      "server": "52.84.199.15",
-      "server_port": 80,
-      "uuid": "f4c5605a-8424-441e-b23d-d6384d012c28",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "dcm4kwis2exkw.cloudfront.net"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - myhuo",
-        "🇹🇭 泰国 (Thailand) 02 - myhuo",
-        "🇹🇭 泰国 (Thailand) 03 - myhuo"
+        "🇹🇭 泰国 (Thailand) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - myhuo",
-        "🇹🇭 泰国 (Thailand) 02 - myhuo",
-        "🇹🇭 泰国 (Thailand) 03 - myhuo"
+        "🇹🇭 泰国 (Thailand) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

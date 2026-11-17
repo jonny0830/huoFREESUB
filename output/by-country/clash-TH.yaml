@@ -12,45 +12,17 @@ proxies:
   uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
   alterId: 0
   cipher: auto
-- name: 🇹🇭 泰国 (Thailand) 02 - myhuo
-  server: 203.146.170.195
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 4LwH3FEPZZqjen5iuUlRqV4Buatjv8DxL3KUvE1ULWs
-    short-id: faaf02e8469f34
-  servername: th1.gofizzin.com
-  client-fingerprint: firefox
-- name: 🇹🇭 泰国 (Thailand) 03 - myhuo
-  server: 52.84.199.15
-  port: 80
-  udp: true
-  type: vless
-  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dcm4kwis2exkw.cloudfront.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - myhuo
-  - 🇹🇭 泰国 (Thailand) 02 - myhuo
-  - 🇹🇭 泰国 (Thailand) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - myhuo
-  - 🇹🇭 泰国 (Thailand) 02 - myhuo
-  - 🇹🇭 泰国 (Thailand) 03 - myhuo
 rules:
 - MATCH,PROXIES
