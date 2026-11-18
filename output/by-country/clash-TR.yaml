@@ -5,6 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - myhuo
+  server: 153.56.210.134
+  port: 57251
+  udp: true
+  type: hysteria2
+  password: ff0343ad-1c9f-4986-8c62-c01935b508ca
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
+- name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
   server: 45.141.148.46
   port: 443
   udp: true
@@ -16,21 +26,6 @@ proxies:
     short-id: 868419504747f6de
   servername: tr1b.galioncc.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
-  server: 62.133.63.45
-  port: 8444
-  udp: true
-  type: vless
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
-  servername: github.com
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 03 - myhuo
   server: 185.246.155.91
   port: 10103
@@ -45,21 +40,17 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 04 - myhuo
-  server: 87.76.154.28
-  port: 57231
+  server: 77.83.245.79
+  port: 443
   udp: true
   type: vless
-  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
-- name: 🇹🇷 土耳其 (Turkey) 05 - myhuo
-  server: panel.autonetshop.ir
-  port: 43345
-  udp: true
-  type: hysteria2
-  password: d1gkicdgem3bsoaa
-  sni: panel.autonetshop.ir
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: km9oqmefh2km1i5n
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: tr1-r.bankai.party
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,7 +60,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - myhuo
   - 🇹🇷 土耳其 (Turkey) 03 - myhuo
   - 🇹🇷 土耳其 (Turkey) 04 - myhuo
-  - 🇹🇷 土耳其 (Turkey) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,6 +69,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - myhuo
   - 🇹🇷 土耳其 (Turkey) 03 - myhuo
   - 🇹🇷 土耳其 (Turkey) 04 - myhuo
-  - 🇹🇷 土耳其 (Turkey) 05 - myhuo
 rules:
 - MATCH,PROXIES

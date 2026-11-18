@@ -5,25 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 越南 (Vietnam) 01 - myhuo
-  server: 150.95.109.109
-  port: 2086
+  server: mngd.connainho.lol
+  port: 59736
   udp: true
   type: vless
-  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
-- name: 🇻🇳 越南 (Vietnam) 02 - myhuo
-  server: zfapi.zalolink.com
-  port: 42120
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  uuid: 4ff754c4-a405-401b-81ba-6241fbbb9314
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
-    short-id: bb82c8
-  servername: www.tesla.com
+    public-key: Zos_i17fmOY1oBrudr6mlL8MJClNuBXvjdOxZ4JK2lI
+    short-id: cab2f4e8
+  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇻🇳 越南 (Vietnam) 03 - myhuo
+- name: 🇻🇳 越南 (Vietnam) 02 - myhuo
   server: zfapi.zalolink.com
   port: 55688
   udp: true
@@ -36,6 +30,12 @@ proxies:
     short-id: 865c1b2c
   servername: bilibili-vn.biliimg.com
   client-fingerprint: chrome
+- name: 🇻🇳 越南 (Vietnam) 03 - myhuo
+  server: 150.95.109.109
+  port: 2086
+  udp: true
+  type: vless
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
 proxy-groups:
 - name: PROXIES
   type: select

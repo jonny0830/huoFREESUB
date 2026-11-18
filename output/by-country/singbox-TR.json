@@ -4,8 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - myhuo",
+      "server": "153.56.210.134",
+      "server_port": 57251,
+      "password": "ff0343ad-1c9f-4986-8c62-c01935b508ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "0ee2089e-70df-4c30-bfea-1fb9be61d93e"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - myhuo",
       "server": "45.141.148.46",
       "server_port": 443,
       "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
@@ -21,30 +37,6 @@
           "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
           "short_id": "868419504747f6de"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - myhuo",
-      "server": "62.133.63.45",
-      "server_port": 8444,
-      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
       }
     },
     {
@@ -71,24 +63,22 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 04 - myhuo",
-      "server": "87.76.154.28",
-      "server_port": 57231,
-      "uuid": "c34a41b6-598f-46ac-bea3-8b39a906f922"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - myhuo",
-      "server": "panel.autonetshop.ir",
-      "server_port": 43345,
-      "password": "d1gkicdgem3bsoaa",
+      "server": "77.83.245.79",
+      "server_port": 443,
+      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "panel.autonetshop.ir",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "km9oqmefh2km1i5n"
+        "server_name": "tr1-r.bankai.party",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": ""
+        }
       }
     },
     {
@@ -99,8 +89,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - myhuo",
         "🇹🇷 土耳其 (Turkey) 02 - myhuo",
         "🇹🇷 土耳其 (Turkey) 03 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 04 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 05 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 04 - myhuo"
       ]
     },
     {
@@ -110,8 +99,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - myhuo",
         "🇹🇷 土耳其 (Turkey) 02 - myhuo",
         "🇹🇷 土耳其 (Turkey) 03 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 04 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 05 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

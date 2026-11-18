@@ -18,20 +18,13 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 02 - myhuo
-  server: 87.242.95.170
-  port: 443
+  server: 129.159.156.109
+  port: 50160
   udp: true
-  type: vless
-  uuid: 49b42507-8781-46a4-8fcc-0b404690c85d
-  tls: true
-  servername: radio-prichal.online
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /checkout/step/allo3fSMLuBu
-    headers:
-      Host: radio-prichal.online
+  type: hysteria2
+  password: f25f19f29ce3fb53a35bf1b35b452a43
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

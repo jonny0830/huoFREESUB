@@ -13,48 +13,8 @@ proxies:
   sni: 45.63.30.142
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 02 - myhuo
-  server: 51.161.204.244
+  server: v1au.mateflora.com
   port: 443
-  udp: true
-  type: vless
-  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
-    short-id: 0ad08b47f498efd2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 03 - myhuo
-  server: 43.255.157.53
-  port: 48158
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
-    short-id: 54cca3c1c1c7
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇦🇺 澳大利亚 (Australia) 04 - myhuo
-  server: ujp.xn--ghqu5fm27b67w.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
-  tls: true
-  servername: portland-wins-robbie-skirt.trycloudflare.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /e0843c8ad581
-    headers:
-      Host: portland-wins-robbie-skirt.trycloudflare.com
-- name: 🇦🇺 澳大利亚 (Australia) 05 - myhuo
-  server: zfapi.zalolink.com
-  port: 54528
   udp: true
   type: vless
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
@@ -65,6 +25,19 @@ proxies:
     short-id: 54cca3c1c1c7
   servername: www.apple.com
   client-fingerprint: ios
+- name: 🇦🇺 澳大利亚 (Australia) 03 - myhuo
+  server: doghkzf.zalolink.com
+  port: 48158
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
+    short-id: 54cca3c1c1c7
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,8 +46,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 02 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 03 - myhuo
-  - 🇦🇺 澳大利亚 (Australia) 04 - myhuo
-  - 🇦🇺 澳大利亚 (Australia) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,7 +54,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 02 - myhuo
   - 🇦🇺 澳大利亚 (Australia) 03 - myhuo
-  - 🇦🇺 澳大利亚 (Australia) 04 - myhuo
-  - 🇦🇺 澳大利亚 (Australia) 05 - myhuo
 rules:
 - MATCH,PROXIES

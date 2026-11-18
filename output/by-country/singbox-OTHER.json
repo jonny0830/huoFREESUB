@@ -4,22 +4,67 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - myhuo",
-      "server": "104.27.0.1",
+      "server": "104.18.42.98",
       "server_port": 443,
-      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
-      "security": "auto",
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "vmess.lbw666.dpdns.org",
+        "server_name": "jp3.yohototo.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 02 - myhuo",
+      "server": "104.18.42.98",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 03 - myhuo",
+      "server": "104.18.42.98",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/ws",
+        "path": "/tyxyws",
         "headers": {
-          "Host": "vmess.lbw666.dpdns.org"
+          "Host": "jp3.yohototo.top"
         }
       }
     },
@@ -28,14 +73,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🌐 其他地区 (Other) 01 - myhuo",
+        "🌐 其他地区 (Other) 02 - myhuo",
+        "🌐 其他地区 (Other) 03 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🌐 其他地区 (Other) 01 - myhuo",
+        "🌐 其他地区 (Other) 02 - myhuo",
+        "🌐 其他地区 (Other) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
