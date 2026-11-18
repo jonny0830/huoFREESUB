@@ -25,18 +25,43 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 02 - myhuo",
+      "server": "87.242.95.170",
+      "server_port": 443,
+      "uuid": "49b42507-8781-46a4-8fcc-0b404690c85d",
+      "tls": {
+        "enabled": true,
+        "server_name": "radio-prichal.online",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/checkout/step/allo3fSMLuBu",
+        "headers": {
+          "Host": "radio-prichal.online"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01 - myhuo"
+        "🇮🇱 以色列 (Israel) 01 - myhuo",
+        "🇮🇱 以色列 (Israel) 02 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01 - myhuo"
+        "🇮🇱 以色列 (Israel) 01 - myhuo",
+        "🇮🇱 以色列 (Israel) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 01 - myhuo",
+      "server": "177.202.75.56",
+      "server_port": 443,
+      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi1.obxodvpn.us",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - myhuo",
       "server": "157.180.98.124",
       "server_port": 49659,
       "uuid": "88a558b1-9645-42f3-89e5-341570d8486d",
@@ -15,7 +27,7 @@
         "server_name": "apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -26,7 +38,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - myhuo",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
+      "server": "138.124.80.29",
+      "server_port": 443,
+      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fin1-r.bankai.party",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - myhuo",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -40,7 +73,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - myhuo",
       "server": "94.183.164.119",
       "server_port": 24433,
       "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
@@ -57,7 +90,9 @@
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - myhuo",
         "🇫🇮 芬兰 (Finland) 02 - myhuo",
-        "🇫🇮 芬兰 (Finland) 03 - myhuo"
+        "🇫🇮 芬兰 (Finland) 03 - myhuo",
+        "🇫🇮 芬兰 (Finland) 04 - myhuo",
+        "🇫🇮 芬兰 (Finland) 05 - myhuo"
       ]
     },
     {
@@ -66,7 +101,9 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - myhuo",
         "🇫🇮 芬兰 (Finland) 02 - myhuo",
-        "🇫🇮 芬兰 (Finland) 03 - myhuo"
+        "🇫🇮 芬兰 (Finland) 03 - myhuo",
+        "🇫🇮 芬兰 (Finland) 04 - myhuo",
+        "🇫🇮 芬兰 (Finland) 05 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
