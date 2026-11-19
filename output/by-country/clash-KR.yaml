@@ -21,45 +21,22 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 03 - myhuo
-  server: 218.237.185.234
-  port: 4652
+  server: 146.56.112.110
+  port: 8888
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  type: vmess
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  alterId: 0
+  cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 04 - myhuo
-  server: 152.70.237.123
-  port: 2053
+  server: 132.226.226.189
+  port: 50160
   udp: true
   type: hysteria2
-  password: maintell
-  sni: 152.70.237.123
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: 132.226.226.189
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 05 - myhuo
-  server: 152.67.200.82
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: vk.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 06 - myhuo
-  server: 152.69.231.175
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152.69.231.175
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07 - myhuo
-  server: 158.247.253.243
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 08 - myhuo
   server: 152.69.226.63
   port: 25555
   udp: true
@@ -68,6 +45,30 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇰🇷 韩国 (South Korea) 06 - myhuo
+  server: 158.247.253.243
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 07 - myhuo
+  server: 152.70.237.123
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: maintell
+  sni: 152.70.237.123
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 08 - myhuo
+  server: 152.67.200.82
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: www.bing.com
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 09 - myhuo
   server: 154.90.62.70
   port: 56127
@@ -77,18 +78,13 @@ proxies:
   sni: 154.90.62.70
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 10 - myhuo
-  server: 47.80.19.173
-  port: 2053
+  server: 152.69.231.175
+  port: 50160
   udp: true
-  type: vless
-  uuid: 319d5ffb-57e8-4bbd-ac0c-5d55d0c253de
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms
-    short-id: 3c4041d3
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 152.69.231.175
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
