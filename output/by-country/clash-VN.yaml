@@ -5,32 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 越南 (Vietnam) 01 - myhuo
-  server: mngd.connainho.lol
-  port: 59736
-  udp: true
-  type: vless
-  uuid: 4ff754c4-a405-401b-81ba-6241fbbb9314
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Zos_i17fmOY1oBrudr6mlL8MJClNuBXvjdOxZ4JK2lI
-    short-id: cab2f4e8
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇻🇳 越南 (Vietnam) 02 - myhuo
-  server: zfapi.zalolink.com
-  port: 55688
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 6dqd0hqbC0bht9RtsYamvlYdMpxyUbk7uXw0xtO8DzQ
-    short-id: 865c1b2c
-  servername: bilibili-vn.biliimg.com
-  client-fingerprint: chrome
-- name: 🇻🇳 越南 (Vietnam) 03 - myhuo
   server: 150.95.109.109
   port: 2086
   udp: true
@@ -42,15 +16,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇻🇳 越南 (Vietnam) 01 - myhuo
-  - 🇻🇳 越南 (Vietnam) 02 - myhuo
-  - 🇻🇳 越南 (Vietnam) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 (Vietnam) 01 - myhuo
-  - 🇻🇳 越南 (Vietnam) 02 - myhuo
-  - 🇻🇳 越南 (Vietnam) 03 - myhuo
 rules:
 - MATCH,PROXIES

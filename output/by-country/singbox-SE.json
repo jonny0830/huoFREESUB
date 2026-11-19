@@ -12,36 +12,8 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - myhuo",
-      "server": "62.182.193.228",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "2e555e46dbc421452416834962fd014f"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - myhuo",
-      "server": "88.216.214.159",
-      "server_port": 443,
-      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
-      "tls": {
-        "enabled": true,
-        "server_name": "api-svc-mgr.galioncc.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "a7c92e4b10d6f835"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - myhuo",
       "server": "88.216.189.192",
       "server_port": 443,
       "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
@@ -62,7 +34,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - myhuo",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - myhuo",
       "server": "62.93.166.184",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -74,8 +46,62 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - myhuo",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - myhuo",
+      "server": "88.216.60.73",
+      "server_port": 443,
+      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
+      "tls": {
+        "enabled": true,
+        "server_name": "ns-api-gw.galioncc.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+          "short_id": "a7c92e4b10d6f835"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 06 - myhuo",
+      "server": "88.216.214.159",
+      "server_port": 443,
+      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-svc-mgr.galioncc.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+          "short_id": "a7c92e4b10d6f835"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - myhuo",
       "server": "138.199.55.230",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -84,27 +110,6 @@
         "enabled": true,
         "server_name": "xmfhlpy.com",
         "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - myhuo",
-      "server": "144.31.179.108",
-      "server_port": 2053,
-      "uuid": "240af353-dccb-4cf6-a2d5-01457bb6fbb7",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "f3Ooz7Yxw4QqQNxddxYG0zOewK8zullgKVTBZxR1a0Y",
-          "short_id": "cc981b746a300649"
-        }
       }
     },
     {
@@ -130,35 +135,6 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 09 - myhuo",
-      "server": "84.32.154.74",
-      "server_port": 443,
-      "uuid": "fd90e601-a56c-42b8-aab7-aa02d26fcb04",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "app.streamru10.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 10 - myhuo",
-      "server": "95.143.196.97",
-      "server_port": 443,
-      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
-      "tls": {
-        "enabled": true,
-        "server_name": "connect-se.mimowhat.online",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 11 - myhuo",
       "server": "92.223.84.254",
       "server_port": 443,
       "uuid": "740b2630-b42d-425c-bacd-37e7e30d78f1",
@@ -180,57 +156,22 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 12 - myhuo",
-      "server": "143.246.195.46",
+      "type": "trojan",
+      "tag": "🇸🇪 瑞典 (Sweden) 10 - myhuo",
+      "server": "95.143.196.97",
       "server_port": 443,
-      "uuid": "5311859f-0b5d-4c26-a8bf-2648f113e4ea",
-      "flow": "xtls-rprx-vision",
+      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
       "tls": {
         "enabled": true,
-        "server_name": "sweden13.clearorbitllc.com",
+        "server_name": "connect-se.mimowhat.online",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "453QgfqoHVVQ-M7xjfH-bUu0HXz1mdWGuR3vNoBoeCM",
-          "short_id": "4e1682"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 13 - myhuo",
-      "server": "88.216.60.73",
-      "server_port": 443,
-      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
-      "tls": {
-        "enabled": true,
-        "server_name": "ns-api-gw.galioncc.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "a7c92e4b10d6f835"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 14 - myhuo",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
+          "fingerprint": "chrome"
         }
       }
     },
@@ -248,11 +189,7 @@
         "🇸🇪 瑞典 (Sweden) 07 - myhuo",
         "🇸🇪 瑞典 (Sweden) 08 - myhuo",
         "🇸🇪 瑞典 (Sweden) 09 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 10 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 11 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 12 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 13 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 14 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 10 - myhuo"
       ]
     },
     {
@@ -268,11 +205,7 @@
         "🇸🇪 瑞典 (Sweden) 07 - myhuo",
         "🇸🇪 瑞典 (Sweden) 08 - myhuo",
         "🇸🇪 瑞典 (Sweden) 09 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 10 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 11 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 12 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 13 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 14 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 10 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
