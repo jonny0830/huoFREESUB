@@ -5,27 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - myhuo
-  server: eu02.123450908.xyz
-  port: 2052
+  server: 172.67.174.37
+  port: 443
   udp: true
   type: vless
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  uuid: a25a71d1-10ed-4383-855a-f269a34ca691
+  tls: true
+  servername: ave-qualifications-choices-populations.trycloudflare.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /rain1226
+    path: /a8b8606819ef
     headers:
-      Host: eu02.123450908.xyz
+      Host: ave-qualifications-choices-populations.trycloudflare.com
+- name: 🌐 其他地区 (Other) 02 - myhuo
+  server: 104.21.34.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - myhuo
+  - 🌐 其他地区 (Other) 02 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - myhuo
+  - 🌐 其他地区 (Other) 02 - myhuo
 rules:
 - MATCH,PROXIES

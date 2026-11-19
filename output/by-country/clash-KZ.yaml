@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 3h-kazakhstan1.09vpn.com
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
   server: 91.217.10.237
   port: 443
   udp: true
@@ -15,8 +28,8 @@ proxies:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
     short-id: 868419504747f6de
   servername: api-ns-mgr.galioncc.com
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
+  client-fingerprint: firefox
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
   server: 185.246.155.91
   port: 10403
   udp: true
@@ -29,7 +42,20 @@ proxies:
     short-id: 6859f5b59e55aa30
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo
+  server: 3h-kazakhstan1.09vpn.com
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
+  tls: true
+  servername: 3h-kazakhstan1.09vpn.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - myhuo
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -49,6 +75,8 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,5 +85,7 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - myhuo
 rules:
 - MATCH,PROXIES

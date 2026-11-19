@@ -18,14 +18,13 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇲🇾 马来西亚 (Malaysia) 03 (家宽) - myhuo
-  server: 192.228.145.118
-  port: 10086
+- name: 🇩🇪 德国 (Germany) 03 (移动家宽) - myhuo
+  server: 47.85.162.44
+  port: 443
   udp: true
-  type: vmess
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
 - name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
   server: 60.248.219.78
   port: 443
@@ -47,7 +46,7 @@ proxy-groups:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - myhuo
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo
-  - 🇲🇾 马来西亚 (Malaysia) 03 (家宽) - myhuo
+  - 🇩🇪 德国 (Germany) 03 (移动家宽) - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
 - name: AUTO
   type: url-test
@@ -56,7 +55,7 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - myhuo
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo
-  - 🇲🇾 马来西亚 (Malaysia) 03 (家宽) - myhuo
+  - 🇩🇪 德国 (Germany) 03 (移动家宽) - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
 rules:
 - MATCH,PROXIES
