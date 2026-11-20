@@ -4,23 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇮🇳 印度 (India) 01 - myhuo",
-      "server": "in.smrtai.top",
-      "server_port": 443,
-      "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q",
-          "short_id": "6bdc8320"
-        }
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -40,23 +32,20 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 03 - myhuo",
-      "server": "xray-dmr3b3hy-calm-maple-7.cloady.io",
+      "server": "in.smrtai.top",
       "server_port": 443,
-      "uuid": "06a5afa1-2bbc-a5d1-1770-becd1089c636",
+      "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
       "tls": {
         "enabled": true,
-        "server_name": "xray-dmr3b3hy-calm-maple-7.cloady.io",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/0175469f14317d82",
-        "headers": {
-          "Host": "xray-dmr3b3hy-calm-maple-7.cloady.io"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q",
+          "short_id": "6bdc8320"
         }
       }
     },
@@ -84,6 +73,33 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 05 - myhuo",
+      "server": "xray-ikmqcro3-rapid-river-6.cloady.io",
+      "server_port": 443,
+      "uuid": "213224a4-6cd1-b7f4-8bbc-4f50e5ed847b",
+      "tls": {
+        "enabled": true,
+        "server_name": "xray-ikmqcro3-rapid-river-6.cloady.io",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/c54a815e676d9acc",
+        "headers": {
+          "Host": "xray-ikmqcro3-rapid-river-6.cloady.io"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇳 印度 (India) 06 - myhuo",
+      "server": "172.105.39.124",
+      "server_port": 7002,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -91,7 +107,9 @@
         "🇮🇳 印度 (India) 01 - myhuo",
         "🇮🇳 印度 (India) 02 - myhuo",
         "🇮🇳 印度 (India) 03 - myhuo",
-        "🇮🇳 印度 (India) 04 - myhuo"
+        "🇮🇳 印度 (India) 04 - myhuo",
+        "🇮🇳 印度 (India) 05 - myhuo",
+        "🇮🇳 印度 (India) 06 - myhuo"
       ]
     },
     {
@@ -101,7 +119,9 @@
         "🇮🇳 印度 (India) 01 - myhuo",
         "🇮🇳 印度 (India) 02 - myhuo",
         "🇮🇳 印度 (India) 03 - myhuo",
-        "🇮🇳 印度 (India) 04 - myhuo"
+        "🇮🇳 印度 (India) 04 - myhuo",
+        "🇮🇳 印度 (India) 05 - myhuo",
+        "🇮🇳 印度 (India) 06 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
