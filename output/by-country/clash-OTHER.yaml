@@ -4,31 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇩 印尼 (Indonesia) 01 - myhuo
-  server: 104.17.3.81
-  port: 443
+- name: 🌐 其他地区 (Other) 01 - myhuo
+  server: 104.18.0.181
+  port: 2052
   udp: true
   type: vless
-  uuid: 12d67d2b-ae5c-4d56-9f14-d71d96f7826f
-  tls: true
-  servername: natan.srpcom.cloud
-  skip-cert-verify: false
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
   network: ws
   ws-opts:
-    path: /vlessws
+    path: /rain1226
     headers:
-      Host: natan.srpcom.cloud
+      Host: eu02.123450908.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇩 印尼 (Indonesia) 01 - myhuo
+  - 🌐 其他地区 (Other) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇩 印尼 (Indonesia) 01 - myhuo
+  - 🌐 其他地区 (Other) 01 - myhuo
 rules:
 - MATCH,PROXIES
