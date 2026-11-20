@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - myhuo
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: whatsapp.com
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - myhuo
   server: 46.28.67.55
   port: 443
   udp: true
@@ -17,14 +25,6 @@ proxies:
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - myhuo
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: css.rbxcdn.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
