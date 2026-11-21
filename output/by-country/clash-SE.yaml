@@ -46,6 +46,18 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
+  server: 138.124.86.230
+  port: 48115
+  udp: true
+  type: vless
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+  tls: true
+  servername: 138-124-86-230.sslip.io
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
+- name: 🇸🇪 瑞典 (Sweden) 06 - myhuo
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -56,43 +68,41 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 06 - myhuo
-  server: 138.124.86.230
-  port: 48115
-  udp: true
-  type: vless
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
-  tls: true
-  servername: 138-124-86-230.sslip.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 138-124-86-230-sslip-io
 - name: 🇸🇪 瑞典 (Sweden) 07 - myhuo
-  server: 81.90.21.200
+  server: 95.143.196.97
+  port: 443
+  udp: true
+  type: trojan
+  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
+  sni: connect-se.mimowhat.online
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 08 - myhuo
+  server: 2.27.14.247
   port: 2096
   udp: true
   type: vless
   uuid: fbe22815-0718-4eae-816f-e91c67d15b54
   tls: true
-  servername: stadc07.rumedia-cdn.com
+  servername: st2a695.rumedia-cdn.com
   skip-cert-verify: false
   client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /cdn/v3/live
     headers:
-      Host: stadc07.rumedia-cdn.com
-- name: 🇸🇪 瑞典 (Sweden) 08 - myhuo
-  server: 95.143.196.97
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 769f34f0-1500-488f-b414-03bc90666502
-  sni: se.mimowhat.online
-  skip-cert-verify: false
+      Host: st2a695.rumedia-cdn.com
 - name: 🇸🇪 瑞典 (Sweden) 09 - myhuo
+  server: 81.90.21.163
+  port: 2053
+  udp: true
+  type: vless
+  uuid: fbe22815-0718-4eae-816f-e91c67d15b54
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 81.90.21.163
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 10 - myhuo
   server: subgift.gcorecdn.com
   port: 443
   udp: true
@@ -118,6 +128,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 07 - myhuo
   - 🇸🇪 瑞典 (Sweden) 08 - myhuo
   - 🇸🇪 瑞典 (Sweden) 09 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 10 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -132,5 +143,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 07 - myhuo
   - 🇸🇪 瑞典 (Sweden) 08 - myhuo
   - 🇸🇪 瑞典 (Sweden) 09 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 10 - myhuo
 rules:
 - MATCH,PROXIES

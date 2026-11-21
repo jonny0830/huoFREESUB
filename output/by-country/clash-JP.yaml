@@ -5,84 +5,82 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - myhuo
-  server: 168.138.205.100
-  port: 53758
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: Bwlqh7GcFB
-- name: 🇯🇵 日本 (Japan) 02 - myhuo
   server: 149.22.87.241
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 03 - myhuo
+- name: 🇯🇵 日本 (Japan) 02 - myhuo
   server: 149.22.87.240
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 04 - myhuo
-  server: 64.176.57.251
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: YKwDz3mFpT9vGcL8nBs5dHrA2sxM
-- name: 🇯🇵 日本 (Japan) 05 - myhuo
+- name: 🇯🇵 日本 (Japan) 03 - myhuo
   server: 149.22.87.204
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 06 - myhuo
-  server: 64.176.34.102
-  port: 46130
+- name: 🇯🇵 日本 (Japan) 04 - myhuo
+  server: 168.110.21.56
+  port: 18453
   udp: true
-  type: vmess
-  uuid: 477350b2-7536-4f38-ee21-020efdde2d1d
-  alterId: 0
-  cipher: auto
-- name: 🇯🇵 日本 (Japan) 07 - myhuo
+  type: vless
+  uuid: 1751bebc-1bf1-420c-8b9d-97157aad179b
+- name: 🇯🇵 日本 (Japan) 05 - myhuo
   server: 84.247.155.196
   port: 80
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 06 - myhuo
+  server: 168.138.205.100
+  port: 53758
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: Bwlqh7GcFB
+- name: 🇯🇵 日本 (Japan) 07 - myhuo
+  server: 168.138.43.75
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
 - name: 🇯🇵 日本 (Japan) 08 - myhuo
-  server: 94.177.131.113
-  port: 443
-  udp: true
-  type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  tls: true
-  servername: kuruish.org
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 09 - myhuo
-  server: 103.75.118.228
-  port: 11452
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 10 - myhuo
   server: 129.225.181.46
   port: 8443
   udp: true
   type: hysteria2
   password: oracle_hy2_pass_2026
   sni: bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 09 - myhuo
+  server: 167.17.179.207
+  port: 443
+  udp: true
+  type: hysteria2
+  password: SW_COSMOS:sYcUMf7G9g67Zuho
+  sni: spacearea.onthewifi.com
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 10 - myhuo
+  server: 193.123.160.109
+  port: 8443
+  udp: true
+  type: trojan
+  password: F3NzMNuYnG7akU2mSlBY
+  sni: www.microsoft.com
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 11 - myhuo
   server: 158.101.151.157
@@ -96,34 +94,26 @@ proxies:
     public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
     short-id: 684c7531e599dec0
   servername: www.microsoft.com
-  client-fingerprint: ''
-- name: 🇯🇵 日本 (Japan) 12 - myhuo
-  server: 139.162.91.224
-  port: 443
-  udp: true
-  type: vless
-  uuid: ff3038b1-a2f5-428f-89cd-5d5e4efba8e7
-  tls: true
-  reality-opts:
-    public-key: wmbc3kcjbG9-A9Fi7zaHuRVPH7A7UQkKNNvqyqJtMEk
-    short-id: e5b03494
-  servername: itunes.apple.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 13 - myhuo
-  server: 45.76.222.108
+- name: 🇯🇵 日本 (Japan) 12 - myhuo
+  server: 94.177.131.113
   port: 443
   udp: true
   type: vless
-  uuid: bd95a04e-e3e1-460e-b89d-e9a693d393e0
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  tls: true
+  servername: kuruish.org
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 13 - myhuo
+  server: 149.28.29.156
+  port: 443
+  udp: true
+  type: vless
+  uuid: aa1a9052-720f-4bb0-92be-21b6baf9f386
   tls: true
   reality-opts:
-    public-key: -_YzpVlKrn08il_kQdHxHTvJyWYAdetWN_IFRtvPgmE
-    short-id: b5c85d2d
+    public-key: qgCGmxD1lyAEIGZVEk4buAMGcvGvHLl9wGxPQlHCYX0
+    short-id: e535df57
   servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
@@ -132,12 +122,13 @@ proxies:
     headers:
       Host: itunes.apple.com
 - name: 🇯🇵 日本 (Japan) 14 - myhuo
-  server: 84.247.155.196
-  port: 443
+  server: 138.3.208.26
+  port: 50160
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: 138.3.208.26
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 15 - myhuo
   server: 198.13.53.39
   port: 443
@@ -156,15 +147,15 @@ proxies:
     headers:
       Host: itunes.apple.com
 - name: 🇯🇵 日本 (Japan) 16 - myhuo
-  server: 139.162.125.126
+  server: 172.105.203.15
   port: 443
   udp: true
   type: vless
-  uuid: eb6cf336-03bd-4dac-9f2a-3e456389279e
+  uuid: c8c9b995-b4b9-4915-9c7d-dee94aa733ba
   tls: true
   reality-opts:
-    public-key: mMLchVbQzhQ2bGV6wkg1LP5Q7eqL2hCVHHMT0B03dwg
-    short-id: bd6e3e70
+    public-key: HyAx05nhCz5mXxVxWXU1TrWRKdpYE0MHF4-V-LtyhTA
+    short-id: 0784b134
   servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
@@ -190,15 +181,15 @@ proxies:
     headers:
       Host: itunes.apple.com
 - name: 🇯🇵 日本 (Japan) 18 - myhuo
-  server: 149.28.29.156
+  server: 45.76.222.108
   port: 443
   udp: true
   type: vless
-  uuid: aa1a9052-720f-4bb0-92be-21b6baf9f386
+  uuid: bd95a04e-e3e1-460e-b89d-e9a693d393e0
   tls: true
   reality-opts:
-    public-key: qgCGmxD1lyAEIGZVEk4buAMGcvGvHLl9wGxPQlHCYX0
-    short-id: e535df57
+    public-key: -_YzpVlKrn08il_kQdHxHTvJyWYAdetWN_IFRtvPgmE
+    short-id: b5c85d2d
   servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
@@ -207,15 +198,15 @@ proxies:
     headers:
       Host: itunes.apple.com
 - name: 🇯🇵 日本 (Japan) 19 - myhuo
-  server: 172.105.203.15
+  server: 139.162.125.126
   port: 443
   udp: true
   type: vless
-  uuid: c8c9b995-b4b9-4915-9c7d-dee94aa733ba
+  uuid: eb6cf336-03bd-4dac-9f2a-3e456389279e
   tls: true
   reality-opts:
-    public-key: HyAx05nhCz5mXxVxWXU1TrWRKdpYE0MHF4-V-LtyhTA
-    short-id: 0784b134
+    public-key: mMLchVbQzhQ2bGV6wkg1LP5Q7eqL2hCVHHMT0B03dwg
+    short-id: bd6e3e70
   servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
@@ -224,23 +215,47 @@ proxies:
     headers:
       Host: itunes.apple.com
 - name: 🇯🇵 日本 (Japan) 20 - myhuo
-  server: oracle-tokyo-2.waverider.yingdigame.com
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 21 - myhuo
+  server: 139.162.91.239
+  port: 443
+  udp: true
+  type: vless
+  uuid: b0dc852a-97ec-4d4e-9179-f0e5c2ef1489
+  tls: true
+  reality-opts:
+    public-key: 7PBmAR6CGAh2naIi09rlP_PtmLmqhlXF_toZEdAHmRo
+    short-id: 7c6d6833
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 22 - myhuo
+  server: xinbulongdong.com
   port: 443
   udp: true
   type: trojan
-  password: ec893967c30f4c3a8b6d4c975af95f45
-  sni: oracle-tokyo-2.waverider.yingdigame.com
+  password: +vuY9gGdZ/h7Yk4Q
+  sni: xinbulongdong.com
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 21 - myhuo
-  server: 167.17.179.207
-  port: 443
+- name: 🇯🇵 日本 (Japan) 23 - myhuo
+  server: 64.176.34.102
+  port: 46130
   udp: true
-  type: hysteria2
-  password: SW_COSMOS:sYcUMf7G9g67Zuho
-  sni: spacearea.onthewifi.com
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 22 - myhuo
-  server: 104.16.10.48
+  type: vmess
+  uuid: 477350b2-7536-4f38-ee21-020efdde2d1d
+  alterId: 0
+  cipher: auto
+- name: 🇯🇵 日本 (Japan) 24 - myhuo
+  server: 104.24.31.89
   port: 443
   udp: true
   type: vless
@@ -248,27 +263,12 @@ proxies:
   tls: true
   servername: jp3.yohototo.top
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 23 - myhuo
-  server: 8.209.247.109
-  port: 443
-  udp: true
-  type: hysteria2
-  password: usqmqUKJFIlCmvkCNSY64L3k
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 24 - myhuo
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: 8.211.175.236
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

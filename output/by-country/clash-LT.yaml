@@ -13,32 +13,56 @@ proxies:
   password: qYEN5HX4JKeVCdEC
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - myhuo
   server: 195.238.126.20
+  port: 9068
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - myhuo
+  server: 195.238.126.20
   port: 9011
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - myhuo
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - myhuo
+  server: 195.238.126.20
+  port: 9078
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: JCJpbRbQZNw9XFZG
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - myhuo
+  server: 195.238.126.20
+  port: 9001
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UkXRsXvR6buDMG2Y
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - myhuo
   server: 195.238.126.20
   port: 9045
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - myhuo
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - myhuo
   server: 195.238.126.20
   port: 9012
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - myhuo
-  server: 195.238.126.20
-  port: 9086
+- name: 🇱🇹 立陶宛 (Lithuania) 08 - myhuo
+  server: 46.8.210.33
+  port: 8446
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
+  type: hysteria2
+  password: b7941807-1f4d-4bda-a878-92d708b84494
+  sni: litelitvalitter.rooferz.surf
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: nTm4oBa6QCpWoAFDVtF6mpMpfMfN8CM6
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,6 +73,9 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 03 - myhuo
   - 🇱🇹 立陶宛 (Lithuania) 04 - myhuo
   - 🇱🇹 立陶宛 (Lithuania) 05 - myhuo
+  - 🇱🇹 立陶宛 (Lithuania) 06 - myhuo
+  - 🇱🇹 立陶宛 (Lithuania) 07 - myhuo
+  - 🇱🇹 立陶宛 (Lithuania) 08 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,5 +86,8 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 03 - myhuo
   - 🇱🇹 立陶宛 (Lithuania) 04 - myhuo
   - 🇱🇹 立陶宛 (Lithuania) 05 - myhuo
+  - 🇱🇹 立陶宛 (Lithuania) 06 - myhuo
+  - 🇱🇹 立陶宛 (Lithuania) 07 - myhuo
+  - 🇱🇹 立陶宛 (Lithuania) 08 - myhuo
 rules:
 - MATCH,PROXIES

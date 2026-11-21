@@ -5,7 +5,41 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo",
+      "tag": "🇩🇪 德国 (Germany) 01 (家宽) - myhuo",
+      "server": "172.64.88.98",
+      "server_port": 443,
+      "uuid": "afa524de-2b93-4be9-b846-6bc88d8a2ce1",
+      "tls": {
+        "enabled": true,
+        "server_name": "1v5Vp5jsQ611A5dsm.PAges.dEV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/fbo164EXEqNcjQ9WdWcK?ed=2560",
+        "headers": {
+          "Host": "1v5Vp5jsQ611A5dsm.PAges.dEV"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -27,14 +61,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo"
+        "🇩🇪 德国 (Germany) 01 (家宽) - myhuo",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo"
+        "🇩🇪 德国 (Germany) 01 (家宽) - myhuo",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

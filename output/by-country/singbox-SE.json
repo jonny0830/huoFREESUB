@@ -60,6 +60,22 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 05 - myhuo",
+      "server": "138.124.86.230",
+      "server_port": 48115,
+      "uuid": "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b",
+      "tls": {
+        "enabled": true,
+        "server_name": "138-124-86-230.sslip.io",
+        "insecure": false
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "138-124-86-230-sslip-io"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - myhuo",
       "server": "5.178.109.174",
       "server_port": 14430,
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
@@ -72,34 +88,34 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - myhuo",
-      "server": "138.124.86.230",
-      "server_port": 48115,
-      "uuid": "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b",
+      "type": "trojan",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - myhuo",
+      "server": "95.143.196.97",
+      "server_port": 443,
+      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
       "tls": {
         "enabled": true,
-        "server_name": "138-124-86-230.sslip.io",
+        "server_name": "connect-se.mimowhat.online",
         "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "138-124-86-230-sslip-io"
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - myhuo",
-      "server": "81.90.21.200",
+      "tag": "🇸🇪 瑞典 (Sweden) 08 - myhuo",
+      "server": "2.27.14.247",
       "server_port": 2096,
       "uuid": "fbe22815-0718-4eae-816f-e91c67d15b54",
       "tls": {
         "enabled": true,
-        "server_name": "stadc07.rumedia-cdn.com",
+        "server_name": "st2a695.rumedia-cdn.com",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -110,25 +126,30 @@
         "type": "ws",
         "path": "/cdn/v3/live",
         "headers": {
-          "Host": "stadc07.rumedia-cdn.com"
+          "Host": "st2a695.rumedia-cdn.com"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 - myhuo",
-      "server": "95.143.196.97",
-      "server_port": 443,
-      "password": "769f34f0-1500-488f-b414-03bc90666502",
-      "tls": {
-        "enabled": true,
-        "server_name": "se.mimowhat.online",
-        "insecure": false
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 09 - myhuo",
+      "server": "81.90.21.163",
+      "server_port": 2053,
+      "uuid": "fbe22815-0718-4eae-816f-e91c67d15b54",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "81.90.21.163",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 10 - myhuo",
       "server": "subgift.gcorecdn.com",
       "server_port": 443,
       "uuid": "740b2630-b42d-425c-bacd-37e7e30d78f1",
@@ -155,7 +176,8 @@
         "🇸🇪 瑞典 (Sweden) 06 - myhuo",
         "🇸🇪 瑞典 (Sweden) 07 - myhuo",
         "🇸🇪 瑞典 (Sweden) 08 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 09 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 09 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 10 - myhuo"
       ]
     },
     {
@@ -170,7 +192,8 @@
         "🇸🇪 瑞典 (Sweden) 06 - myhuo",
         "🇸🇪 瑞典 (Sweden) 07 - myhuo",
         "🇸🇪 瑞典 (Sweden) 08 - myhuo",
-        "🇸🇪 瑞典 (Sweden) 09 - myhuo"
+        "🇸🇪 瑞典 (Sweden) 09 - myhuo",
+        "🇸🇪 瑞典 (Sweden) 10 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

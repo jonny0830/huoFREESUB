@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
-  server: 5.129.202.80
-  port: 443
+- name: 🇺🇦 乌克兰 (Ukraine) 01 - myhuo
+  server: 194.54.80.37
+  port: 8443
   udp: true
   type: vless
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  uuid: 9a597d68-6688-4046-bf24-a5a541e115e0
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8
-    short-id: 2ef2b10d5143d798
-  servername: mirror-50.topp-con.xyz
+    public-key: 6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU
+    short-id: f8d0271b4b5f9efc
+  servername: www.apple.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
+  - 🇺🇦 乌克兰 (Ukraine) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
+  - 🇺🇦 乌克兰 (Ukraine) 01 - myhuo
 rules:
 - MATCH,PROXIES

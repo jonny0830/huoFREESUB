@@ -11,18 +11,18 @@ proxies:
   type: vless
   uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
 - name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
-  server: 185.246.155.91
-  port: 10103
+  server: 188.225.36.219
+  port: 443
   udp: true
   type: vless
-  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
-  flow: xtls-rprx-vision
+  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
   tls: true
-  reality-opts:
-    public-key: obQkp5VlQpnlt1hRLQ3VfHISYiiISZJyJZAMaIdjCko
-    short-id: 6859f5b59e55aa30
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: olvento.space
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: olvento.sync.v1
 - name: 🇹🇷 土耳其 (Turkey) 03 - myhuo
   server: 64.49.13.12
   port: 2089

@@ -13,22 +13,21 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - myhuo",
-      "server": "185.246.155.91",
-      "server_port": 10103,
-      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
-      "flow": "xtls-rprx-vision",
+      "server": "188.225.36.219",
+      "server_port": 443,
+      "uuid": "25ac78e7-6d1d-4c9a-a450-c01a4871769f",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "olvento.space",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "obQkp5VlQpnlt1hRLQ3VfHISYiiISZJyJZAMaIdjCko",
-          "short_id": "6859f5b59e55aa30"
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "olvento.sync.v1"
       }
     },
     {
