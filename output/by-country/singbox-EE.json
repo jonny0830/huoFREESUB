@@ -6,27 +6,6 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo",
-      "server": "191.217.238.38",
-      "server_port": 443,
-      "uuid": "097eae28-f0e7-4b18-bce2-16cf7d9deb05",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bmw.de",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vq0Fi871QaDVmxY7F0XWByt9muX3-16E31XfHWZj9D8",
-          "short_id": "28138197d12e8e38"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo",
       "server": "77.83.198.104",
       "server_port": 8443,
       "uuid": "9a597d68-6688-4046-bf24-a5a541e115e0",
@@ -50,16 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

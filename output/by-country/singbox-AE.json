@@ -43,11 +43,28 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 04 - myhuo",
-      "server": "uae.unixzone.us",
+      "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - myhuo",
+      "server": "151.241.19.44",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
       }
     },
     {
@@ -58,7 +75,8 @@
         "🇦🇪 阿联酋 (UAE) 01 - myhuo",
         "🇦🇪 阿联酋 (UAE) 02 - myhuo",
         "🇦🇪 阿联酋 (UAE) 03 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 04 - myhuo"
+        "🇦🇪 阿联酋 (UAE) 04 - myhuo",
+        "🇦🇪 阿联酋 (UAE) 05 - myhuo"
       ]
     },
     {
@@ -68,7 +86,8 @@
         "🇦🇪 阿联酋 (UAE) 01 - myhuo",
         "🇦🇪 阿联酋 (UAE) 02 - myhuo",
         "🇦🇪 阿联酋 (UAE) 03 - myhuo",
-        "🇦🇪 阿联酋 (UAE) 04 - myhuo"
+        "🇦🇪 阿联酋 (UAE) 04 - myhuo",
+        "🇦🇪 阿联酋 (UAE) 05 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

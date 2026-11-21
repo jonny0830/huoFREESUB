@@ -20,33 +20,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
-  server: 185.117.88.9
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 9a597d68-6688-4046-bf24-a5a541e115e0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU
-    short-id: f8d0271b4b5f9efc
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
-  server: 62.93.166.184
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -59,7 +33,18 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 06 - myhuo
+- name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
+  server: 62.93.166.184
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
   server: 138.199.55.230
   port: 1270
   udp: true
@@ -70,14 +55,35 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 07 - myhuo
-  server: 95.143.196.97
-  port: 443
+- name: 🇸🇪 瑞典 (Sweden) 06 - myhuo
+  server: sonau.yaremonta.loc.cc
+  port: 8443
   udp: true
-  type: hysteria2
-  password: 769f34f0-1500-488f-b414-03bc90666502
-  sni: se.mimowhat.online
-  skip-cert-verify: false
+  type: vless
+  uuid: c5468915-f60c-4134-b4d3-eb24501d7c65
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc
+- name: 🇸🇪 瑞典 (Sweden) 07 - myhuo
+  server: sonau.yaremonta.loc.cc
+  port: 8080
+  udp: true
+  type: vless
+  uuid: c5468915-f60c-4134-b4d3-eb24501d7c65
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇸🇪 瑞典 (Sweden) 08 - myhuo
+  server: sonau.yaremonta.loc.cc
+  port: 8081
+  udp: true
+  type: vmess
+  uuid: c5468915-f60c-4134-b4d3-eb24501d7c65
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess
 proxy-groups:
 - name: PROXIES
   type: select
@@ -90,6 +96,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - myhuo
   - 🇸🇪 瑞典 (Sweden) 06 - myhuo
   - 🇸🇪 瑞典 (Sweden) 07 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 08 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -102,5 +109,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - myhuo
   - 🇸🇪 瑞典 (Sweden) 06 - myhuo
   - 🇸🇪 瑞典 (Sweden) 07 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 08 - myhuo
 rules:
 - MATCH,PROXIES
