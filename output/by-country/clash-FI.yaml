@@ -5,35 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - myhuo
-  server: 169.40.34.53
-  port: 443
-  udp: true
-  type: vless
-  uuid: bc93a03d-13b5-000b-8ee7-d50c11459dab
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-    short-id: 1c3e8241a8743df9
-  servername: brointelengence.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 02 - myhuo
-  server: 94.183.164.119
-  port: 24433
-  udp: true
-  type: hysteria2
-  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: lakes.blog-forme.ru
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
   server: static.28.210.29.2.clients.your-server.de
   port: 25565
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: C8ZJ7R4p_HHJ32cst7ilT-0Zi2F22hAc
+- name: 🇫🇮 芬兰 (Finland) 02 - myhuo
+  server: 157.180.98.124
+  port: 49659
+  udp: true
+  type: vless
+  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
+    short-id: 81959fce
+  servername: apple.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
+  server: 65.109.252.58
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2b696acb-1311-4ab7-b832-b376d29dca27
+  flow: xtls-rprx-vision
+  tls: true
+  servername: static.170.55.238.62.clients.your-server.de
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04 - myhuo
-  server: 104.17.145.145
+  server: 206.238.237.25
   port: 2083
   udp: true
   type: vless
@@ -47,6 +50,27 @@ proxies:
     path: /
     headers:
       Host: vipfree.dr-ping.ir
+- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
+  server: 94.183.164.119
+  port: 24433
+  udp: true
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: lakes.blog-forme.ru
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
+  server: 169.40.34.53
+  port: 443
+  udp: true
+  type: vless
+  uuid: bc93a03d-13b5-000b-8ee7-d50c11459dab
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+    short-id: 1c3e8241a8743df9
+  servername: brointelengence.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,6 +80,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - myhuo
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
+  - 🇫🇮 芬兰 (Finland) 05 - myhuo
+  - 🇫🇮 芬兰 (Finland) 06 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -65,5 +91,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - myhuo
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
+  - 🇫🇮 芬兰 (Finland) 05 - myhuo
+  - 🇫🇮 芬兰 (Finland) 06 - myhuo
 rules:
 - MATCH,PROXIES
