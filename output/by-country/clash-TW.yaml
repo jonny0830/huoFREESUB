@@ -10,10 +10,10 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 103.115.109.49
+  sni: https%3a%2f%2ft.me%2fwangcai2
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
-  server: vpn-tw-002.fastervpn.world
+  server: 160.187.100.109
   port: 443
   udp: true
   type: hysteria2
@@ -21,7 +21,7 @@ proxies:
   sni: 'off'
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
-  server: dp8yk.xiaoyan.io
+  server: 162.19.192.89
   port: 16616
   udp: true
   type: vmess
@@ -33,27 +33,6 @@ proxies:
     path: /
     headers:
       Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
-  server: 34.80.15.95
-  port: 443
-  udp: true
-  type: trojan
-  password: '123456'
-  sni: tw.ctt25.uk
-  skip-cert-verify: false
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - myhuo
-  server: 85.237.207.221
-  port: 443
-  udp: true
-  type: vless
-  uuid: b59bcb5b-5150-4c6b-9227-681886197014
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lJz7AGWUC-ZTEIJaU5y1GRrROWJ9J_VzQRyrYPmOygs
-    short-id: fd2fa5e06670120b
-  servername: dl.google.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,8 +41,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 05 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,7 +49,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 05 - myhuo
 rules:
 - MATCH,PROXIES

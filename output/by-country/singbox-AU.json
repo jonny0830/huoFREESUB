@@ -4,24 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - myhuo",
+      "server": "13.55.52.44",
+      "server_port": 36712,
+      "password": "linlin-2026",
+      "tls": {
+        "enabled": true,
+        "server_name": "13.55.52.44",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - myhuo",
       "server": "45.63.30.142",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "45.63.30.142",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "connectwithemployerstohireyouridealteam.com",
+        "insecure": false
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - myhuo",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - myhuo",
       "server": "13.237.192.121",
       "server_port": 36712,
       "password": "linlin-2026",
@@ -33,7 +41,19 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - myhuo",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - myhuo",
+      "server": "3.106.35.101",
+      "server_port": 36712,
+      "password": "linlin-2026",
+      "tls": {
+        "enabled": true,
+        "server_name": "3.106.35.101",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 05 - myhuo",
       "server": "152.67.115.203",
       "server_port": 443,
       "password": "633bc3be486b646190661ac2387c150a",
@@ -49,7 +69,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - myhuo",
+      "tag": "🇦🇺 澳大利亚 (Australia) 06 - myhuo",
       "server": "159.13.55.48",
       "password": "b42d90fa667942aebc734d60",
       "tls": {
@@ -65,41 +85,6 @@
         "20000:30000",
         "20000:20000"
       ]
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - myhuo",
-      "server": "13.55.52.44",
-      "server_port": 36712,
-      "password": "linlin-2026",
-      "tls": {
-        "enabled": true,
-        "server_name": "13.55.52.44",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 06 - myhuo",
-      "server": "104.18.11.153",
-      "server_port": 443,
-      "uuid": "debafe5b-6760-4b00-b0b2-ee30cbf769f0",
-      "tls": {
-        "enabled": true,
-        "server_name": "portland-wins-robbie-skirt.trycloudflare.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/e0843c8ad581",
-        "headers": {
-          "Host": "portland-wins-robbie-skirt.trycloudflare.com"
-        }
-      }
     },
     {
       "type": "selector",

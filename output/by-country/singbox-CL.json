@@ -12,10 +12,27 @@
       "tls": {
         "enabled": true,
         "server_name": "advanceyouremploymentskillsandcareerdevelopmenthub.com",
-        "insecure": false,
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 02 - myhuo",
+      "server": "147.224.226.144",
+      "server_port": 62905,
+      "uuid": "3fc3e0cf-2d3c-4c0f-9479-716712ebdb92",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "U7t4RFE9MSMtC-o1DoJ8pYzKMfgVpTg6ZhTTknBrVkU",
+          "short_id": "1f2519bb96e5589c"
         }
       }
     },
@@ -24,14 +41,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇱 智利 (Chile) 01 - myhuo"
+        "🇨🇱 智利 (Chile) 01 - myhuo",
+        "🇨🇱 智利 (Chile) 02 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇱 智利 (Chile) 01 - myhuo"
+        "🇨🇱 智利 (Chile) 01 - myhuo",
+        "🇨🇱 智利 (Chile) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
