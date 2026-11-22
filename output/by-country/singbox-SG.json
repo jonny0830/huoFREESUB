@@ -4,38 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 (Singapore) 01 - myhuo",
-      "server": "104.17.147.208",
-      "server_port": 443,
-      "uuid": "258ca28a-d982-4a40-b620-7c1c81108060",
-      "tls": {
-        "enabled": true,
-        "server_name": "b.rack.sxsc.dpdns.org",
-        "insecure": false,
-        "alpn": [
-          "h3"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "b.rack.sxsc.dpdns.org"
-        }
-      }
+      "server": "15.235.182.183",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 (Singapore) 02 - myhuo",
-      "server": "168.138.177.98",
-      "server_port": 56927,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "c11JMfCMQ3Y4aGlhMX5LrMpM13uvw+UVbjGfHP+eKkY="
+      "server": "149.88.106.74",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "shadowsocks",
@@ -48,46 +30,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 (Singapore) 04 - myhuo",
-      "server": "43.160.213.146",
-      "server_port": 8388,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "ClzJLvRzIxivCXbf5X5jnSU0pLg5ffCEUL2AZoeLg94="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 05 - myhuo",
-      "server": "51.79.228.131",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 06 - myhuo",
-      "server": "149.88.107.47",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 07 - myhuo",
       "server": "149.88.107.74",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 08 - myhuo",
-      "server": "149.88.23.202",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 09 - myhuo",
+      "tag": "🇸🇬 新加坡 (Singapore) 05 - myhuo",
       "server": "15.235.164.133",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -95,105 +45,159 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 10 - myhuo",
-      "server": "68.183.227.4",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 11 - myhuo",
-      "server": "149.88.23.207",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 12 - myhuo",
-      "server": "149.88.106.74",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 13 - myhuo",
-      "server": "15.235.182.183",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 14 - myhuo",
+      "tag": "🇸🇬 新加坡 (Singapore) 06 - myhuo",
       "server": "149.88.106.73",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 15 - myhuo",
-      "server": "54.179.113.70",
-      "server_port": 443,
-      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-sg-001.fastervpn.world",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 07 - myhuo",
+      "server": "149.88.107.47",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 08 - myhuo",
+      "server": "51.79.228.131",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 09 - myhuo",
+      "server": "168.138.177.98",
+      "server_port": 56927,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "c11JMfCMQ3Y4aGlhMX5LrMpM13uvw+UVbjGfHP+eKkY="
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇬 新加坡 (Singapore) 10 - myhuo",
+      "server": "149.88.23.207",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇬 新加坡 (Singapore) 11 - myhuo",
+      "server": "149.88.23.202",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 16 - myhuo",
-      "server": "13.212.78.215",
+      "tag": "🇸🇬 新加坡 (Singapore) 12 - myhuo",
+      "server": "138.2.89.249",
       "server_port": 443,
-      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+      "password": "d042d150716709bb778cc73889cddb02",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-sg-001.fastervpn.world",
+        "server_name": "www.bing.com",
         "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "309502c4a8df10b46fb976d4a8c43f42"
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 17 - myhuo",
-      "server": "47.129.241.99",
-      "server_port": 443,
-      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+      "type": "vmess",
+      "tag": "🇸🇬 新加坡 (Singapore) 13 - myhuo",
+      "server": "15.235.144.92",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
+        "server_name": "xmfhlpy.com",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 18 - myhuo",
-      "server": "47.84.39.7",
+      "tag": "🇸🇬 新加坡 (Singapore) 14 - myhuo",
+      "server": "140.245.113.33",
       "server_port": 443,
-      "uuid": "a6fd460c-88bd-4425-bb56-2b73d29455cc",
+      "uuid": "f4ca59b2-767d-3425-8dfc-95a96a0e6802",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.amazon.com",
+        "server_name": "learn.microsoft.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "EXPjsObdfDnKuRmw4-A9_G4k-WP2cUXuuvUo8It1sAo",
-          "short_id": "4d1244cd42a20e6c"
+          "public_key": "tF9nKF6amexok5wKbieQ2QRKQI5_ZTFE6MUj1hUBBkY",
+          "short_id": "c940a3b6d60b8611"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 15 - myhuo",
+      "server": "138.2.73.238",
+      "server_port": 50160,
+      "password": "f87376e17da040ed04c9665ce8972930",
+      "tls": {
+        "enabled": true,
+        "server_name": "off",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 16 - myhuo",
+      "server": "68.183.227.4",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 17 - myhuo",
+      "server": "5.34.177.164",
+      "server_port": 443,
+      "uuid": "ca678d26-5435-4d13-b378-06c4c3b070ff",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cwWhNuekusD1iPZZ--7G891dU9PCacxyCYwsZxOApHA",
+          "short_id": "b2efed6d157e7bb0"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 (Singapore) 18 - myhuo",
+      "server": "bgsg1.hikigo.com",
+      "server_port": 443,
+      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "tls": {
+        "enabled": true,
+        "server_name": "bgsg1.hikigo.com",
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 19 - myhuo",
-      "server": "sg.fasti.win",
+      "server": "67.159.52.81",
       "server_port": 443,
       "uuid": "a16bd0e2-ff2e-4e4c-a955-0c684255a065",
       "flow": "xtls-rprx-vision",
@@ -212,40 +216,43 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇸🇬 新加坡 (Singapore) 20 - myhuo",
-      "server": "68.183.235.240",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
+      "server": "54.179.113.70",
+      "server_port": 443,
+      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-sg-001.fastervpn.world",
+        "insecure": true
+      }
     },
     {
       "type": "hysteria2",
       "tag": "🇸🇬 新加坡 (Singapore) 21 - myhuo",
-      "server": "138.2.89.249",
+      "server": "13.212.78.215",
       "server_port": 443,
-      "password": "d042d150716709bb778cc73889cddb02",
+      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "vpn-sg-001.fastervpn.world",
         "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "309502c4a8df10b46fb976d4a8c43f42"
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 22 - myhuo",
-      "server": "15.235.144.92",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
+      "server": "207.148.124.12",
+      "server_port": 8443,
+      "uuid": "bcdb425f-80bc-4ec8-92a5-8edf53639c01",
       "tls": {
         "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
+        "server_name": "www.bing.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -314,7 +321,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -353,68 +360,37 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 27 - myhuo",
-      "server": "138.2.73.238",
-      "server_port": 50160,
-      "password": "f87376e17da040ed04c9665ce8972930",
-      "tls": {
-        "enabled": true,
-        "server_name": "138.2.73.238",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇬 新加坡 (Singapore) 28 - myhuo",
-      "server": "15.235.184.127",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "exploredigitaljobplatformandfindonlinework.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
+      "server": "104.17.3.81",
+      "server_port": 80,
+      "uuid": "fdd8f4d0-4500-11ef-8227-1577c1651679",
+      "transport": {
+        "type": "ws",
+        "path": "//worryfree",
+        "headers": {
+          "Host": "sg-vless-ws.bypass.id"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 29 - myhuo",
-      "server": "185.71.216.94",
-      "server_port": 2089,
-      "uuid": "e1eaef08-e4ff-4843-9926-c0c84a034bad",
+      "tag": "🇸🇬 新加坡 (Singapore) 28 - myhuo",
+      "server": "147.93.173.45",
+      "server_port": 10444,
+      "uuid": "75c5f51b-d548-4eab-a26e-aa10fc3dbc7b",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "video.yandex.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
-          "public_key": "oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34",
-          "short_id": "deccc6fac1ddb0ff"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 30 - myhuo",
-      "server": "xjpp.zjlo.top",
-      "server_port": 36442,
-      "uuid": "2633cbab-e901-4f5a-9a0f-18ff319d0d70",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "xjpp.zjlo.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
+          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
+          "short_id": "8debcf36f1cc69ff"
         }
       }
     },
@@ -450,9 +426,7 @@
         "🇸🇬 新加坡 (Singapore) 25 - myhuo",
         "🇸🇬 新加坡 (Singapore) 26 - myhuo",
         "🇸🇬 新加坡 (Singapore) 27 - myhuo",
-        "🇸🇬 新加坡 (Singapore) 28 - myhuo",
-        "🇸🇬 新加坡 (Singapore) 29 - myhuo",
-        "🇸🇬 新加坡 (Singapore) 30 - myhuo"
+        "🇸🇬 新加坡 (Singapore) 28 - myhuo"
       ]
     },
     {
@@ -486,9 +460,7 @@
         "🇸🇬 新加坡 (Singapore) 25 - myhuo",
         "🇸🇬 新加坡 (Singapore) 26 - myhuo",
         "🇸🇬 新加坡 (Singapore) 27 - myhuo",
-        "🇸🇬 新加坡 (Singapore) 28 - myhuo",
-        "🇸🇬 新加坡 (Singapore) 29 - myhuo",
-        "🇸🇬 新加坡 (Singapore) 30 - myhuo"
+        "🇸🇬 新加坡 (Singapore) 28 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

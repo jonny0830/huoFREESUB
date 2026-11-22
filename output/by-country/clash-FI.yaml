@@ -12,60 +12,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: C8ZJ7R4p_HHJ32cst7ilT-0Zi2F22hAc
 - name: 🇫🇮 芬兰 (Finland) 02 - myhuo
-  server: 196.196.204.147
-  port: 443
-  udp: true
-  type: vless
-  uuid: f15a2e25-6859-4bcc-b4c4-a14bb8ae0fbb
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: -ZN1kT3JlPFxu1E906JRqLAGoQQucSmL6xPiuAyasTk
-    short-id: 597e1c279d224774
-  servername: 4c980ft.fi15.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
-  server: 2.29.125.167
-  port: 8443
-  udp: true
-  type: vless
-  uuid: b2505fa2-f7c4-40d2-8c4a-1f6336bd37f1
-  flow: xtls-rprx-vision
-  tls: true
-  servername: static.162.97.119.168.clients.your-server.de
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
-  server: 94.183.164.119
-  port: 24433
-  udp: true
-  type: hysteria2
-  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: 94.183.164.119
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
-  server: static.58.252.109.65.clients.your-server.de
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2b696acb-1311-4ab7-b832-b376d29dca27
-  flow: xtls-rprx-vision
-  tls: true
-  servername: static.170.55.238.62.clients.your-server.de
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
   server: 157.180.98.124
   port: 49659
   udp: true
@@ -77,6 +23,57 @@ proxies:
     public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
     short-id: 81959fce
   servername: apple.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
+  server: 94.183.164.119
+  port: 24433
+  udp: true
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: 94.183.164.119
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
+  server: 213.176.92.168
+  port: 14430
+  udp: true
+  type: vless
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 213.176.92.168
+- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
+  server: 94.141.102.196
+  port: 21
+  udp: true
+  type: hysteria2
+  password: GIFCjtpiGVOsrCy2kgBmgndXX5lUP7Eb
+  sni: fin9.cft-razor.online
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
+  server: 107.181.151.128
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8cc7d0fc-1b83-4ee3-b51d-8a03a9b19435
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
+    short-id: 87174b37ce3b
+  servername: www.microsoft.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES

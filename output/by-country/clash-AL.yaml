@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇱 AL 01 - myhuo
+  server: dns22.m3hrzd.ir
+  port: 1348
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: pFlEjR_10osoxyR2CnNIhUMpAy4CzfXr
+- name: 🇦🇱 AL 02 - myhuo
   server: 31.171.152.222
   port: 8443
   udp: true
@@ -17,13 +24,6 @@ proxies:
     short-id: f8d0271b4b5f9efc
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇦🇱 AL 02 - myhuo
-  server: dns22.m3hrzd.ir
-  port: 1348
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: pFlEjR_10osoxyR2CnNIhUMpAy4CzfXr
 proxy-groups:
 - name: PROXIES
   type: select

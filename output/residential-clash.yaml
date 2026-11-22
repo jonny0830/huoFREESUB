@@ -11,26 +11,58 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: 🇩🇪 德国 (Germany) 02 (移动家宽) - myhuo
-  server: 8.211.57.86
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  server: 161.114.15.215
+  port: 30502
+  udp: true
+  type: trojan
+  password: 5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 03 (移动家宽) - myhuo
+  server: 47.254.167.157
   port: 443
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+- name: 🇬🇧 英国 (United Kingdom) 04 (家宽) - myhuo
+  server: dg3yg.mateflora.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: dg3yg.mateflora.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 8utjvetgzbiuwfa7
+- name: 🇸🇬 新加坡 (Singapore) 05 (家宽) - myhuo
+  server: 195.133.135.238
+  port: 10086
+  udp: true
+  type: vmess
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - myhuo
-  - 🇩🇪 德国 (Germany) 02 (移动家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  - 🇩🇪 德国 (Germany) 03 (移动家宽) - myhuo
+  - 🇬🇧 英国 (United Kingdom) 04 (家宽) - myhuo
+  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - myhuo
-  - 🇩🇪 德国 (Germany) 02 (移动家宽) - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo
+  - 🇩🇪 德国 (Germany) 03 (移动家宽) - myhuo
+  - 🇬🇧 英国 (United Kingdom) 04 (家宽) - myhuo
+  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - myhuo
 rules:
 - MATCH,PROXIES

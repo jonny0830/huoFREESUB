@@ -12,7 +12,7 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
-  server: 138.199.55.230
+  server: 62.93.166.184
   port: 1270
   udp: true
   type: vmess
@@ -23,32 +23,6 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
-  server: 185.117.88.9
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 9a597d68-6688-4046-bf24-a5a541e115e0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU
-    short-id: f8d0271b4b5f9efc
-  servername: www.apple.com
-  client-fingerprint: ''
-- name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
-  server: 158.179.203.218
-  port: 64346
-  udp: true
-  type: vless
-  uuid: ce4bcb13-0fff-4c50-a05e-3e75e59ac9b1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: U7t4RFE9MSMtC-o1DoJ8pYzKMfgVpTg6ZhTTknBrVkU
-    short-id: 1f2519bb96e5589c
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -61,8 +35,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 06 - myhuo
-  server: 62.93.166.184
+- name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
+  server: 138.199.55.230
   port: 1270
   udp: true
   type: vmess
@@ -72,6 +46,45 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
+  server: subgift.gcorecdn.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 63242a2a-7bdb-4775-bc3f-65c2f260f224
+  tls: true
+  servername: subgift.gcorecdn.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /t.me-SubGift
+    headers:
+      Host: subgift.gcorecdn.com
+- name: 🇸🇪 瑞典 (Sweden) 06 - myhuo
+  server: 2.26.93.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  tls: true
+  servername: depotchannel.lucheeebezlimitnoekino.stream
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /media/ws/
+- name: 🇸🇪 瑞典 (Sweden) 07 - myhuo
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,6 +96,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - myhuo
   - 🇸🇪 瑞典 (Sweden) 05 - myhuo
   - 🇸🇪 瑞典 (Sweden) 06 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -94,5 +108,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - myhuo
   - 🇸🇪 瑞典 (Sweden) 05 - myhuo
   - 🇸🇪 瑞典 (Sweden) 06 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 07 - myhuo
 rules:
 - MATCH,PROXIES

@@ -4,28 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - myhuo
-  server: 39.108.113.127
+- name: 🇸🇬 新加坡 (Singapore) 01 (家宽) - myhuo
+  server: 195.133.135.238
   port: 10086
   udp: true
   type: vmess
-  uuid: a625d148-e988-4008-b957-e9051a6371d2
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - myhuo
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - myhuo
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - myhuo
 rules:
 - MATCH,PROXIES

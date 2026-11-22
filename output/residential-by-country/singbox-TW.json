@@ -4,23 +4,18 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇩 印尼 (Indonesia) 01 - myhuo",
-      "server": "147.139.197.200",
-      "server_port": 443,
-      "uuid": "a197af05-7048-478e-8d99-c3151adb4064",
-      "flow": "xtls-rprx-vision",
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo",
+      "server": "161.114.15.215",
+      "server_port": 30502,
+      "password": "5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm",
       "tls": {
         "enabled": true,
-        "server_name": "www.ebay.com",
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ulPGCwIg38AVGww0FBfCNROmu_0N1hykbHbhcAFgcl0",
-          "short_id": "6135361d11cc2b31"
         }
       }
     },
@@ -29,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01 - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01 - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
