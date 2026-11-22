@@ -12,6 +12,17 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: C8ZJ7R4p_HHJ32cst7ilT-0Zi2F22hAc
 - name: 🇫🇮 芬兰 (Finland) 02 - myhuo
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
   server: 157.180.98.124
   port: 49659
   udp: true
@@ -24,7 +35,7 @@ proxies:
     short-id: 81959fce
   servername: apple.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - myhuo
+- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
   server: 94.183.164.119
   port: 24433
   udp: true
@@ -32,49 +43,6 @@ proxies:
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
   sni: 94.183.164.119
   skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 04 - myhuo
-  server: 213.176.92.168
-  port: 14430
-  udp: true
-  type: vless
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 213.176.92.168
-- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
-  server: 94.141.102.196
-  port: 21
-  udp: true
-  type: hysteria2
-  password: GIFCjtpiGVOsrCy2kgBmgndXX5lUP7Eb
-  sni: fin9.cft-razor.online
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 07 - myhuo
-  server: 107.181.151.128
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8cc7d0fc-1b83-4ee3-b51d-8a03a9b19435
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: 87174b37ce3b
-  servername: www.microsoft.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,9 +52,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - myhuo
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
-  - 🇫🇮 芬兰 (Finland) 05 - myhuo
-  - 🇫🇮 芬兰 (Finland) 06 - myhuo
-  - 🇫🇮 芬兰 (Finland) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -96,8 +61,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - myhuo
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
-  - 🇫🇮 芬兰 (Finland) 05 - myhuo
-  - 🇫🇮 芬兰 (Finland) 06 - myhuo
-  - 🇫🇮 芬兰 (Finland) 07 - myhuo
 rules:
 - MATCH,PROXIES

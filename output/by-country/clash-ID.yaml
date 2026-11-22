@@ -4,27 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇧 英国 (United Kingdom) 01 (家宽) - myhuo
-  server: dg3yg.mateflora.com
+- name: 🇮🇩 印尼 (Indonesia) 01 - myhuo
+  server: 149.33.27.162
   port: 443
   udp: true
-  type: hysteria2
+  type: trojan
   password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  sni: dg3yg.mateflora.com
+  sni: i1tr.mateflora.com
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 8utjvetgzbiuwfa7
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇧 英国 (United Kingdom) 01 (家宽) - myhuo
+  - 🇮🇩 印尼 (Indonesia) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 (United Kingdom) 01 (家宽) - myhuo
+  - 🇮🇩 印尼 (Indonesia) 01 - myhuo
 rules:
 - MATCH,PROXIES

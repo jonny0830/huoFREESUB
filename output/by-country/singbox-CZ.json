@@ -1,0 +1,84 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇿 捷克 (Czech) 01 - myhuo",
+      "server": "194.87.233.93",
+      "server_port": 46190,
+      "method": "chacha20-ietf-poly1305",
+      "password": "2Ef8X21WALqK7H6N8A78j5WYtzZ999PP8rF8DaLsb5LLyDLQpf5dGVAjdA3mj1wudigKXTt5heYU9jmaBbfxXBJJAqhPHkxe"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - myhuo",
+      "server": "195.133.93.227",
+      "server_port": 9543,
+      "uuid": "920b3cd9-4f82-4669-bbd2-d4a28b9052c6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "storage.yandexcloud.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
+          "short_id": "123abcdf"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - myhuo",
+      "server": "109.248.17.252",
+      "server_port": 443,
+      "uuid": "9000a7f3-df2a-49a8-ae56-3e7777bd32f7",
+      "tls": {
+        "enabled": true,
+        "server_name": "v4.clequinix.globalinetforallalwaysandneverbanyoubelieveme.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "v4-clequinix-globalinetforallalwaysandneverbanyoubelieveme-com"
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇿 捷克 (Czech) 01 - myhuo",
+        "🇨🇿 捷克 (Czech) 02 - myhuo",
+        "🇨🇿 捷克 (Czech) 03 - myhuo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇿 捷克 (Czech) 01 - myhuo",
+        "🇨🇿 捷克 (Czech) 02 - myhuo",
+        "🇨🇿 捷克 (Czech) 03 - myhuo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

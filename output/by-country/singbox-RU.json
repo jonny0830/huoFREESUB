@@ -4,115 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - myhuo",
-      "server": "48.103.218.77",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - myhuo",
-      "server": "176.32.33.126",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa"
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - myhuo",
-      "server": "45.151.31.69",
-      "server_port": 443,
-      "uuid": "3bc2d8b2-fd28-0001-984c-214c2587aa8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "ykqli-ru-85.my-fade.cloud",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - myhuo",
-      "server": "46.17.42.129",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - myhuo",
-      "server": "200.169.179.233",
-      "server_port": 443,
-      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
-      "tls": {
-        "enabled": true,
-        "server_name": "vps3.nemnogogo.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "mobile.api.Event"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - myhuo",
-      "server": "vps3.nemnogogo.com",
-      "server_port": 443,
-      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
-      "tls": {
-        "enabled": true,
-        "server_name": "vps3.nemnogogo.com",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "mobile.api.Event"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07 - myhuo",
-      "server": "xssite.webredirect.org",
-      "server_port": 443,
-      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
-      "tls": {
-        "enabled": true,
-        "server_name": "xssite.webredirect.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-ru"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 08 - myhuo",
       "server": "48.103.133.47",
       "server_port": 8443,
       "uuid": "2ed34e7c-45c5-4e0e-bcab-42fe99a7bd25",
@@ -132,19 +25,177 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - myhuo",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - myhuo",
+      "server": "46.17.42.129",
+      "server_port": 18443,
+      "method": "aes-256-gcm",
+      "password": "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
+    },
+    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 09 - myhuo",
-      "server": "147.45.221.225",
-      "server_port": 443,
-      "uuid": "58e22afd-bf74-4736-984d-63a8ca03d7f0",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - myhuo",
+      "server": "109.107.189.69",
+      "server_port": 8443,
+      "uuid": "cfd6ce74-f4c5-4815-bba4-2fd0fa77bf4e",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nl.lucheeebezlimitnoekino.stream",
-        "insecure": false
+        "server_name": "gw-721bd5.dobry.monster",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "q1EhO97gyUBlF7LiAfeAESI0O2Mg95T4yIk7keOnMEE",
+          "short_id": "0912cc7f28aa26ba"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - myhuo",
+      "server": "212.233.90.78",
+      "server_port": 443,
+      "uuid": "9548ef84-b54d-41dc-b17c-9da21d52ba82",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "birch-ledger.justext.space",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FwPphm8xGAKY6u74WDRVrcVye3A7GdLDfJoNSDWFsFQ",
+          "short_id": "2c6df23e"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - myhuo",
+      "server": "48.103.218.77",
+      "server_port": 18443,
+      "method": "aes-256-gcm",
+      "password": "5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - myhuo",
+      "server": "200.169.179.233",
+      "server_port": 443,
+      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
+      "tls": {
+        "enabled": true,
+        "server_name": "vps3.nemnogogo.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "mobile.api.Event"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 08 - myhuo",
+      "server": "176.32.33.126",
+      "server_port": 18443,
+      "method": "aes-256-gcm",
+      "password": "cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 09 - myhuo",
+      "server": "147.45.175.81",
+      "server_port": 443,
+      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
+      "tls": {
+        "enabled": true,
+        "server_name": "xsru1.ddnsfree.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/media/ws/"
+        "path": "/wsru",
+        "headers": {
+          "Host": "xsru1.ddnsfree.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 10 - myhuo",
+      "server": "xssite.webredirect.org",
+      "server_port": 443,
+      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
+      "tls": {
+        "enabled": true,
+        "server_name": "xssite.webredirect.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-ru"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 11 - myhuo",
+      "server": "136.148.83.69",
+      "server_port": 443,
+      "uuid": "7dff1be7-b930-0001-a8ad-dc7850168215",
+      "tls": {
+        "enabled": true,
+        "server_name": "szqbx-ru-77dc.my-fade.cloud",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 12 - myhuo",
+      "server": "147.45.97.130",
+      "server_port": 2066,
+      "uuid": "4bec3709-0954-4173-ae59-3dee6cb8b961",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "kLCwYNBhCg68BQah9El1lNg6GQ7-7Y7xfTtIs6MiTEg",
+          "short_id": "1b2a3f"
+        }
       }
     },
     {
@@ -160,7 +211,10 @@
         "🇷🇺 俄罗斯 (Russia) 06 - myhuo",
         "🇷🇺 俄罗斯 (Russia) 07 - myhuo",
         "🇷🇺 俄罗斯 (Russia) 08 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 09 - myhuo"
+        "🇷🇺 俄罗斯 (Russia) 09 - myhuo",
+        "🇷🇺 俄罗斯 (Russia) 10 - myhuo",
+        "🇷🇺 俄罗斯 (Russia) 11 - myhuo",
+        "🇷🇺 俄罗斯 (Russia) 12 - myhuo"
       ]
     },
     {
@@ -175,7 +229,10 @@
         "🇷🇺 俄罗斯 (Russia) 06 - myhuo",
         "🇷🇺 俄罗斯 (Russia) 07 - myhuo",
         "🇷🇺 俄罗斯 (Russia) 08 - myhuo",
-        "🇷🇺 俄罗斯 (Russia) 09 - myhuo"
+        "🇷🇺 俄罗斯 (Russia) 09 - myhuo",
+        "🇷🇺 俄罗斯 (Russia) 10 - myhuo",
+        "🇷🇺 俄罗斯 (Russia) 11 - myhuo",
+        "🇷🇺 俄罗斯 (Russia) 12 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

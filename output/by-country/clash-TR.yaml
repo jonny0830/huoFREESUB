@@ -18,7 +18,7 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
-  server: 188.225.78.178
+  server: cadrin.wtf
   port: 443
   udp: true
   type: vless
@@ -30,6 +30,21 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: cache.sync.v1
+- name: 🇹🇷 土耳其 (Turkey) 03 - myhuo
+  server: chatgpt.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: c2425034-91ef-44bf-9fd4-f2be9c1e989a
+  tls: true
+  servername: sinavm3.soft10.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    headers:
+      Host: sinavm3.soft10.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +52,7 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - myhuo
   - 🇹🇷 土耳其 (Turkey) 02 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +60,6 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - myhuo
   - 🇹🇷 土耳其 (Turkey) 02 - myhuo
+  - 🇹🇷 土耳其 (Turkey) 03 - myhuo
 rules:
 - MATCH,PROXIES

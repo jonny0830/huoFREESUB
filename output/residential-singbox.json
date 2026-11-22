@@ -12,55 +12,43 @@
       "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
     },
     {
-      "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
-      "server": "161.114.15.215",
-      "server_port": 30502,
-      "password": "5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 03 (移动家宽) - myhuo",
+      "tag": "🇩🇪 德国 (Germany) 02 (移动家宽) - myhuo",
       "server": "47.254.167.157",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
       "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
     },
     {
-      "type": "hysteria2",
-      "tag": "🇬🇧 英国 (United Kingdom) 04 (家宽) - myhuo",
-      "server": "dg3yg.mateflora.com",
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo",
+      "server": "60.248.219.78",
       "server_port": 443,
-      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
       "tls": {
         "enabled": true,
-        "server_name": "dg3yg.mateflora.com",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
+        "server_name": "ty986gfazs.cainiaohub.xyz",
+        "insecure": true
       },
-      "obfs": {
-        "type": "salamander",
-        "password": "8utjvetgzbiuwfa7"
+      "transport": {
+        "type": "ws",
+        "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
+        "headers": {
+          "Host": "ty986gfazs.cainiaohub.xyz"
+        }
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 05 (家宽) - myhuo",
-      "server": "195.133.135.238",
-      "server_port": 10086,
-      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
-      "security": "auto"
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo",
+      "server": "161.114.15.215",
+      "server_port": 30502,
+      "password": "5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm",
+      "tls": {
+        "enabled": true,
+        "server_name": "161.114.15.215",
+        "insecure": true
+      }
     },
     {
       "type": "selector",
@@ -68,10 +56,9 @@
       "outbounds": [
         "auto",
         "🇩🇪 德国 (Germany) 01 (移动家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
-        "🇩🇪 德国 (Germany) 03 (移动家宽) - myhuo",
-        "🇬🇧 英国 (United Kingdom) 04 (家宽) - myhuo",
-        "🇸🇬 新加坡 (Singapore) 05 (家宽) - myhuo"
+        "🇩🇪 德国 (Germany) 02 (移动家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo"
       ]
     },
     {
@@ -79,10 +66,9 @@
       "tag": "auto",
       "outbounds": [
         "🇩🇪 德国 (Germany) 01 (移动家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
-        "🇩🇪 德国 (Germany) 03 (移动家宽) - myhuo",
-        "🇬🇧 英国 (United Kingdom) 04 (家宽) - myhuo",
-        "🇸🇬 新加坡 (Singapore) 05 (家宽) - myhuo"
+        "🇩🇪 德国 (Germany) 02 (移动家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
