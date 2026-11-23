@@ -5,46 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - myhuo
-  server: 104.18.32.47
+  server: 188.225.36.219
   port: 443
   udp: true
   type: vless
-  uuid: c2425034-91ef-44bf-9fd4-f2be9c1e989a
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
   tls: true
-  servername: sinavm3.soft10.ir
+  servername: olvento.space
   skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
-    headers:
-      Host: sinavm3.soft10.ir
-- name: 🇹🇷 土耳其 (Turkey) 02 - myhuo
-  server: cadrin.wtf
-  port: 443
-  udp: true
-  type: vless
-  uuid: a4740bee-81ad-4a58-99c9-eca576ecb6e6
-  tls: true
-  servername: cadrin.wtf
-  skip-cert-verify: false
-  client-fingerprint: edge
   network: grpc
   grpc-opts:
-    grpc-service-name: cache.sync.v1
+    grpc-service-name: olvento.sync.v1
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - myhuo
-  - 🇹🇷 土耳其 (Turkey) 02 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - myhuo
-  - 🇹🇷 土耳其 (Turkey) 02 - myhuo
 rules:
 - MATCH,PROXIES

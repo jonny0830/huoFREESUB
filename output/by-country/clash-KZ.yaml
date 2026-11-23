@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
-  server: 93.152.217.175
-  port: 443
+  server: 3h-kazakhstan1.09vpn.com
+  port: 8443
   udp: true
   type: vless
-  uuid: b54b1d38-ef24-0002-823d-9ceaf930b603
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
   tls: true
-  servername: insightfailover.ratethatrestaurant.org
+  servername: 3h-kazakhstan1.09vpn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /media/ws/
+    path: /vless/
 proxy-groups:
 - name: PROXIES
   type: select

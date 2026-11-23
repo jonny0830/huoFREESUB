@@ -5,23 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - myhuo
-  server: 2.29.210.28
+  server: leviko-fi8334.shopingggg.ir
   port: 25565
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: C8ZJ7R4p_HHJ32cst7ilT-0Zi2F22hAc
 - name: 🇫🇮 芬兰 (Finland) 02 - myhuo
-  server: 45.144.234.157
-  port: 14430
+  server: 65.108.240.210
+  port: 39018
   udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  type: vmess
+  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
+  alterId: 0
+  cipher: auto
 - name: 🇫🇮 芬兰 (Finland) 03 - myhuo
   server: 157.180.98.124
   port: 49659
@@ -36,6 +33,17 @@ proxies:
   servername: apple.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04 - myhuo
+  server: 65.21.247.47
+  port: 443
+  udp: true
+  type: vless
+  uuid: fd419342-f50f-49b7-9074-d694b7d09508
+  flow: xtls-rprx-vision
+  tls: true
+  servername: static.47.247.21.65.clients.your-server.de
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - myhuo
   server: 94.183.164.119
   port: 24433
   udp: true
@@ -43,6 +51,19 @@ proxies:
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
   sni: 94.183.164.119
   skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 06 - myhuo
+  server: 196.196.204.147
+  port: 443
+  udp: true
+  type: vless
+  uuid: f15a2e25-6859-4bcc-b4c4-a14bb8ae0fbb
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -ZN1kT3JlPFxu1E906JRqLAGoQQucSmL6xPiuAyasTk
+    short-id: 597e1c279d224774
+  servername: 4c980ft.fi15.h1clayd.click
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +73,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - myhuo
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
+  - 🇫🇮 芬兰 (Finland) 05 - myhuo
+  - 🇫🇮 芬兰 (Finland) 06 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +84,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - myhuo
   - 🇫🇮 芬兰 (Finland) 03 - myhuo
   - 🇫🇮 芬兰 (Finland) 04 - myhuo
+  - 🇫🇮 芬兰 (Finland) 05 - myhuo
+  - 🇫🇮 芬兰 (Finland) 06 - myhuo
 rules:
 - MATCH,PROXIES

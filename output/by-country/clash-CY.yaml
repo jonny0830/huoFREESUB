@@ -5,13 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - myhuo
-  server: 45.86.60.174
-  port: 16443
-  udp: true
-  type: vless
-  uuid: 13e541f3-d09d-4633-89df-8513db0ced20
-- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo
-  server: 132.243.242.246
+  server: 132.243.242.97
   port: 9543
   udp: true
   type: vless
@@ -22,7 +16,20 @@ proxies:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcdf
   servername: storage.yandexcloud.net
-  client-fingerprint: ios
+  client-fingerprint: firefox
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - myhuo
+  server: 132.243.242.216
+  port: 9543
+  udp: true
+  type: vless
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
+  client-fingerprint: ''
 - name: 🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo
   server: 132.243.242.115
   port: 9543
@@ -35,21 +42,8 @@ proxies:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcdf
   servername: storage.yandexcloud.net
-  client-fingerprint: ios
+  client-fingerprint: safari
 - name: 🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo
-  server: 132.243.242.40
-  port: 9543
-  udp: true
-  type: vless
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  servername: storage.yandexcloud.net
-  client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 (Cyprus) 05 - myhuo
   server: 132.243.242.244
   port: 9543
   udp: true
@@ -62,6 +56,32 @@ proxies:
     short-id: 123abcdf
   servername: storage.yandexcloud.net
   client-fingerprint: firefox
+- name: 🇨🇾 塞浦路斯 (Cyprus) 05 - myhuo
+  server: 132.243.242.40
+  port: 9543
+  udp: true
+  type: vless
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
+  client-fingerprint: chrome
+- name: 🇨🇾 塞浦路斯 (Cyprus) 06 - myhuo
+  server: 132.243.242.219
+  port: 9543
+  udp: true
+  type: vless
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,6 +92,7 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo
   - 🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo
   - 🇨🇾 塞浦路斯 (Cyprus) 05 - myhuo
+  - 🇨🇾 塞浦路斯 (Cyprus) 06 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,5 +103,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - myhuo
   - 🇨🇾 塞浦路斯 (Cyprus) 04 - myhuo
   - 🇨🇾 塞浦路斯 (Cyprus) 05 - myhuo
+  - 🇨🇾 塞浦路斯 (Cyprus) 06 - myhuo
 rules:
 - MATCH,PROXIES

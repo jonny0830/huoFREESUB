@@ -5,14 +5,18 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇮🇩 印尼 (Indonesia) 01 - myhuo",
-      "server": "149.33.27.162",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - myhuo",
+      "server": "47.250.84.25",
       "server_port": 443,
-      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "password": "5931134d1cde66bf83a54acdfebe7ab2",
       "tls": {
         "enabled": true,
-        "server_name": "i1tr.mateflora.com",
-        "insecure": true
+        "server_name": "47.250.84.25",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -20,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01 - myhuo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01 - myhuo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

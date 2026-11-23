@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇦 乌克兰 (Ukraine) 01 - myhuo
-  server: 194.54.80.37
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 9a597d68-6688-4046-bf24-a5a541e115e0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU
-    short-id: f8d0271b4b5f9efc
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇺🇦 乌克兰 (Ukraine) 02 - myhuo
   server: 31.222.235.81
   port: 443
   udp: true
@@ -35,13 +22,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇦 乌克兰 (Ukraine) 01 - myhuo
-  - 🇺🇦 乌克兰 (Ukraine) 02 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇦 乌克兰 (Ukraine) 01 - myhuo
-  - 🇺🇦 乌克兰 (Ukraine) 02 - myhuo
 rules:
 - MATCH,PROXIES

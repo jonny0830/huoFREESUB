@@ -6,50 +6,21 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - myhuo",
-      "server": "104.18.32.47",
+      "server": "188.225.36.219",
       "server_port": 443,
-      "uuid": "c2425034-91ef-44bf-9fd4-f2be9c1e989a",
+      "uuid": "0b6a7fe0-206b-4071-9f96-cd397d1ec01a",
       "tls": {
         "enabled": true,
-        "server_name": "sinavm3.soft10.ir",
+        "server_name": "olvento.space",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
-        "headers": {
-          "Host": "sinavm3.soft10.ir"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - myhuo",
-      "server": "cadrin.wtf",
-      "server_port": 443,
-      "uuid": "a4740bee-81ad-4a58-99c9-eca576ecb6e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "cadrin.wtf",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
-      },
-      "transport": {
         "type": "grpc",
-        "service_name": "cache.sync.v1"
+        "service_name": "olvento.sync.v1"
       }
     },
     {
@@ -57,16 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 02 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 02 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

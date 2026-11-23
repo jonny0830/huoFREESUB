@@ -17,17 +17,26 @@ proxies:
     short-id: f8d0271b4b5f9efc
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇦🇱 AL 02 - myhuo
+  server: dns22.m3hrzd.ir
+  port: 1348
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: pFlEjR_10osoxyR2CnNIhUMpAy4CzfXr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇱 AL 01 - myhuo
+  - 🇦🇱 AL 02 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇱 AL 01 - myhuo
+  - 🇦🇱 AL 02 - myhuo
 rules:
 - MATCH,PROXIES
