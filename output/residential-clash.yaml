@@ -11,13 +11,13 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: 🇩🇪 德国 (Germany) 02 (移动家宽) - myhuo
-  server: 47.254.167.157
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo
+  server: 49.254.204.133
+  port: 1774
   udp: true
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  cipher: aes-256-cfb
+  password: 1234!@#$
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
   server: 60.248.219.78
   port: 443
@@ -32,31 +32,21 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
-  server: 161.114.15.215
-  port: 30502
-  udp: true
-  type: trojan
-  password: 5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm
-  sni: 161.114.15.215
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - myhuo
-  - 🇩🇪 德国 (Germany) 02 (移动家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - myhuo
-  - 🇩🇪 德国 (Germany) 02 (移动家宽) - myhuo
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
 rules:
 - MATCH,PROXIES

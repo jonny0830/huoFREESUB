@@ -6,21 +6,26 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - myhuo",
-      "server": "185.246.155.91",
-      "server_port": 10103,
-      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
-      "flow": "xtls-rprx-vision",
+      "server": "104.18.32.47",
+      "server_port": 443,
+      "uuid": "c2425034-91ef-44bf-9fd4-f2be9c1e989a",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "sinavm3.soft10.ir",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "obQkp5VlQpnlt1hRLQ3VfHISYiiISZJyJZAMaIdjCko",
-          "short_id": "6859f5b59e55aa30"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
+        "headers": {
+          "Host": "sinavm3.soft10.ir"
         }
       }
     },
@@ -48,39 +53,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - myhuo",
-      "server": "chatgpt.com",
-      "server_port": 443,
-      "uuid": "c2425034-91ef-44bf-9fd4-f2be9c1e989a",
-      "tls": {
-        "enabled": true,
-        "server_name": "sinavm3.soft10.ir",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
-        "headers": {
-          "Host": "sinavm3.soft10.ir"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 02 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 03 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 02 - myhuo"
       ]
     },
     {
@@ -88,8 +66,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 02 - myhuo",
-        "🇹🇷 土耳其 (Turkey) 03 - myhuo"
+        "🇹🇷 土耳其 (Turkey) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

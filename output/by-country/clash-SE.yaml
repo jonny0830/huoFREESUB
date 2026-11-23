@@ -12,6 +12,17 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
   server: 138.199.55.230
   port: 1270
   udp: true
@@ -22,7 +33,7 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
+- name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
   server: 62.93.166.184
   port: 1270
   udp: true
@@ -33,7 +44,7 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
+- name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -46,7 +57,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
+- name: 🇸🇪 瑞典 (Sweden) 06 - myhuo
   server: sajed.kdns.fr
   port: 443
   udp: true
@@ -57,7 +68,7 @@ proxies:
     path: /@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe
     headers:
       Host: sajed.kdns.fr
-- name: 🇸🇪 瑞典 (Sweden) 06 - myhuo
+- name: 🇸🇪 瑞典 (Sweden) 07 - myhuo
   server: 77.232.143.142
   port: 443
   udp: true
@@ -66,35 +77,10 @@ proxies:
   tls: true
   servername: volumestyle.komediyatorg.net
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /media/ws/
-- name: 🇸🇪 瑞典 (Sweden) 07 - myhuo
-  server: 2.26.93.106
-  port: 443
-  udp: true
-  type: vless
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  tls: true
-  servername: depotchannel.lucheeebezlimitnoekino.stream
-  skip-cert-verify: false
-  client-fingerprint: edge
   network: ws
   ws-opts:
     path: /media/ws/
 - name: 🇸🇪 瑞典 (Sweden) 08 - myhuo
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 09 - myhuo
   server: 185.117.88.9
   port: 8443
   udp: true
@@ -120,7 +106,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 06 - myhuo
   - 🇸🇪 瑞典 (Sweden) 07 - myhuo
   - 🇸🇪 瑞典 (Sweden) 08 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 09 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -134,6 +119,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 06 - myhuo
   - 🇸🇪 瑞典 (Sweden) 07 - myhuo
   - 🇸🇪 瑞典 (Sweden) 08 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 09 - myhuo
 rules:
 - MATCH,PROXIES

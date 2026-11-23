@@ -13,38 +13,13 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - myhuo
-  server: 152.70.237.123
-  port: 2053
+  server: 211.178.105.134
+  port: 6123
   udp: true
-  type: hysteria2
-  password: maintell
-  sni: 152.70.237.123
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 - name: 🇰🇷 韩国 (South Korea) 03 - myhuo
-  server: 132.226.226.189
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: 132.226.226.189
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 04 - myhuo
-  server: 158.247.253.243
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 05 - myhuo
-  server: 152.69.231.175
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152.69.231.175
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 06 - myhuo
   server: 152.69.226.63
   port: 25555
   udp: true
@@ -53,30 +28,38 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇰🇷 韩国 (South Korea) 07 - myhuo
+- name: 🇰🇷 韩国 (South Korea) 04 - myhuo
+  server: 132.226.226.189
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 05 - myhuo
+  server: 152.70.237.123
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: maintell
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 06 - myhuo
   server: 152.67.200.82
   port: 50160
   udp: true
   type: hysteria2
   password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: google.com
+  sni: www.bing.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - myhuo
-  server: p141.panda001.net
+- name: 🇰🇷 韩国 (South Korea) 07 - myhuo
+  server: 218.237.185.234
   port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇰🇷 韩国 (South Korea) 09 - myhuo
-  server: 154.90.62.70
-  port: 56127
-  udp: true
-  type: trojan
-  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
-  sni: 154.90.62.70
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 10 - myhuo
+- name: 🇰🇷 韩国 (South Korea) 08 - myhuo
   server: 168.107.51.32
   port: 20045
   udp: true
@@ -84,7 +67,30 @@ proxies:
   password: 463f7453753f4d47
   sni: ikr200.zxom.eu.org
   skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 09 - myhuo
+  server: 152-69-231-175.liao.kdns.fr
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 10 - myhuo
+  server: 154.90.62.70
+  port: 56127
+  udp: true
+  type: trojan
+  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
+  sni: 154.90.62.70
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 11 - myhuo
+  server: glance.asuscomm.com
+  port: 10099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: '12242'
+- name: 🇰🇷 韩国 (South Korea) 12 - myhuo
   server: 150-230-252-217.liao.kdns.fr
   port: 50160
   udp: true
@@ -92,20 +98,14 @@ proxies:
   password: 9cfc9458e48c028ec03ff86ebc71c744
   sni: 127.0.0.1
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 12 - myhuo
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
 - name: 🇰🇷 韩国 (South Korea) 13 - myhuo
-  server: 49.254.204.133
-  port: 1774
+  server: 158.247.253.243
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
+  skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 14 - myhuo
   server: 129.154.61.196
   port: 800
@@ -114,19 +114,6 @@ proxies:
   uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
   alterId: 0
   cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 15 - myhuo
-  server: 43.108.109.112
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4ded3111-b418-475a-93de-0360932508b2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: vrFq4-k-eiTSyRF3T3e7Fqmlv4XSKmByKYsw55zeX3w
-    short-id: b79a86e2b1a586a0
-  servername: www.samsung.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -146,7 +133,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 12 - myhuo
   - 🇰🇷 韩国 (South Korea) 13 - myhuo
   - 🇰🇷 韩国 (South Korea) 14 - myhuo
-  - 🇰🇷 韩国 (South Korea) 15 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -166,6 +152,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 12 - myhuo
   - 🇰🇷 韩国 (South Korea) 13 - myhuo
   - 🇰🇷 韩国 (South Korea) 14 - myhuo
-  - 🇰🇷 韩国 (South Korea) 15 - myhuo
 rules:
 - MATCH,PROXIES
