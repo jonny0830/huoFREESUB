@@ -5,18 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - myhuo
-  server: 188.225.36.219
+  server: 130.94.2.227
   port: 443
   udp: true
   type: vless
-  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  uuid: 3a1c6827-72a1-4d1c-9413-44109ff815f4
   tls: true
-  servername: olvento.space
-  skip-cert-verify: false
+  reality-opts:
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+    short-id: 2da72ce6
+  servername: navi.bankrate.com
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: olvento.sync.v1
 proxy-groups:
 - name: PROXIES
   type: select

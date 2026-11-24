@@ -6,46 +6,26 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - myhuo",
-      "server": "fr-free.fastestrelay.com",
-      "server_port": 443,
-      "uuid": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
+      "server": "104.17.70.206",
+      "server_port": 8443,
+      "uuid": "3692de53-42e6-4aed-a522-40ec355dcd2f",
       "tls": {
         "enabled": true,
-        "server_name": "fr-free.fastestrelay.com",
+        "server_name": "free.sahanwickramasinghe.com",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/700gvl",
+        "path": "/",
         "headers": {
-          "Host": "fr-free.fastestrelay.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 02 - myhuo",
-      "server": "104.21.94.203",
-      "server_port": 443,
-      "uuid": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
-      "tls": {
-        "enabled": true,
-        "server_name": "fr-free.fastestrelay.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/700gvl",
-        "headers": {
-          "Host": "fr-free.fastestrelay.com"
+          "Host": "free.sahanwickramasinghe.com"
         }
       }
     },
@@ -54,16 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - myhuo",
-        "🌐 其他地区 (Other) 02 - myhuo"
+        "🌐 其他地区 (Other) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - myhuo",
-        "🌐 其他地区 (Other) 02 - myhuo"
+        "🌐 其他地区 (Other) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
