@@ -5,7 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - myhuo
-  server: 200.169.179.233
+  server: 109.107.189.69
+  port: 8443
+  udp: true
+  type: vless
+  uuid: cfd6ce74-f4c5-4815-bba4-2fd0fa77bf4e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: q1EhO97gyUBlF7LiAfeAESI0O2Mg95T4yIk7keOnMEE
+    short-id: 0912cc7f28aa26ba
+  servername: gw-721bd5.dobry.monster
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
+  server: 201.51.12.98
   port: 443
   udp: true
   type: vless
@@ -17,26 +30,40 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
-  server: srv-17e124.21freedom.net
-  port: 11592
-  udp: true
-  type: hysteria2
-  password: 41edb44c8e
-  sni: srv-17e124
-  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
-  server: 136.148.83.71
+  server: 176.98.176.60
   port: 443
   udp: true
   type: vless
-  uuid: 00000000-0000-0001-0000-000000000000
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  flow: xtls-rprx-vision
   tls: true
-  servername: wccfu-ru-79dc.my-fade.cloud
+  servername: mosaic.topp-con.xyz
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
+  server: 176.98.176.60
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  flow: xtls-rprx-vision
+  tls: true
+  servername: mosaic.topp-con.xyz
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
+  server: 136.148.83.69
+  port: 443
+  udp: true
+  type: vless
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  tls: true
+  servername: szqbx-ru-77dc.my-fade.cloud
   skip-cert-verify: false
   client-fingerprint: qq
-- name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
-  server: 147.45.175.81
+- name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
+  server: xssite.webredirect.org
   port: 443
   udp: true
   type: vless
@@ -48,28 +75,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
-  server: 185.178.208.167
-  port: 443
-  udp: true
-  type: vless
-  uuid: c2b17066-5386-0001-803b-5e652c0528f9
-  tls: true
-  servername: trx.tools
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /session
-    headers:
-      Host: api.14887277.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
 proxy-groups:
 - name: PROXIES
   type: select

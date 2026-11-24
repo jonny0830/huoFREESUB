@@ -12,28 +12,29 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
-  server: 88.216.60.73
-  port: 443
+  server: 5.178.109.174
+  port: 14430
   udp: true
   type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7c92e4b10d6f835
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: firefox
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
-  server: 138.199.55.230
-  port: 1270
+  server: 138.124.86.230
+  port: 48115
   udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
   tls: true
-  servername: xmfhlpy.com
+  servername: 138-124-86-230.sslip.io
   skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
 - name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
   server: 62.93.166.184
   port: 1270
@@ -46,29 +47,17 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
-  server: leviko-se6979.shopingggg.ir
-  port: 48115
+  server: 138.199.55.230
+  port: 1270
   udp: true
-  type: vless
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: 138-124-86-230.sslip.io
+  servername: xmfhlpy.com
   skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 138-124-86-230-sslip-io
 - name: 🇸🇪 瑞典 (Sweden) 06 - myhuo
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 07 - myhuo
   server: sajed.kdns.fr
   port: 443
   udp: true
@@ -79,30 +68,18 @@ proxies:
     path: /@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe
     headers:
       Host: sajed.kdns.fr
-- name: 🇸🇪 瑞典 (Sweden) 08 - myhuo
-  server: 2.26.93.106
+- name: 🇸🇪 瑞典 (Sweden) 07 - myhuo
+  server: 88.216.60.73
   port: 443
   udp: true
   type: vless
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
   tls: true
-  servername: depotchannel.lucheeebezlimitnoekino.stream
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /media/ws/
-- name: 🇸🇪 瑞典 (Sweden) 09 - myhuo
-  server: 188.225.46.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: a077dc9a-712f-48ea-b75c-d94af64011ec
-  flow: xtls-rprx-vision
-  tls: true
-  servername: spb.b2ai.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
+  servername: ns-api-gw.galioncc.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -115,8 +92,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - myhuo
   - 🇸🇪 瑞典 (Sweden) 06 - myhuo
   - 🇸🇪 瑞典 (Sweden) 07 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 08 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 09 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -129,7 +104,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - myhuo
   - 🇸🇪 瑞典 (Sweden) 06 - myhuo
   - 🇸🇪 瑞典 (Sweden) 07 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 08 - myhuo
-  - 🇸🇪 瑞典 (Sweden) 09 - myhuo
 rules:
 - MATCH,PROXIES
