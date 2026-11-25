@@ -5,17 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - myhuo
-  server: 147.45.213.56
+  server: 172.64.155.209
   port: 443
   udp: true
   type: vless
-  uuid: 42c83523-9f96-41b2-82d6-2edb71a4ac19
-  flow: xtls-rprx-vision
+  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
   tls: true
-  reality-opts:
-    public-key: fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA
-  servername: zkgbzlv5d42.vortenix-data59.cfd
+  servername: sinavm3.soft10.ir
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    headers:
+      Host: sinavm3.soft10.ir
 proxy-groups:
 - name: PROXIES
   type: select

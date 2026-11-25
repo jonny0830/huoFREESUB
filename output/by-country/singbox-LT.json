@@ -7,21 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - myhuo",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9045,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
+      "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 02 - myhuo",
-      "server": "195.238.126.20",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - myhuo",
       "server": "195.238.126.20",
       "server_port": 9068,
       "method": "aes-256-cfb",
@@ -29,11 +21,19 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - myhuo",
-      "server": "195.238.126.84",
-      "server_port": 9039,
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - myhuo",
+      "server": "195.238.126.20",
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "qYEN5HX4JKeVCdEC"
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - myhuo",
+      "server": "195.238.126.20",
+      "server_port": 9008,
+      "method": "aes-256-cfb",
+      "password": "y9VURyNzJWNRYEGQ"
     },
     {
       "type": "shadowsocks",
@@ -47,17 +47,17 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 06 - myhuo",
       "server": "195.238.126.20",
-      "server_port": 9045,
+      "server_port": 9001,
       "method": "aes-256-cfb",
-      "password": "Lp27rqyJq72bZsqX"
+      "password": "UkXRsXvR6buDMG2Y"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 07 - myhuo",
-      "server": "195.238.126.20",
-      "server_port": 9008,
+      "server": "195.238.126.84",
+      "server_port": 9039,
       "method": "aes-256-cfb",
-      "password": "y9VURyNzJWNRYEGQ"
+      "password": "qYEN5HX4JKeVCdEC"
     },
     {
       "type": "shadowsocks",
@@ -68,8 +68,16 @@
       "password": "JCJpbRbQZNw9XFZG"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 09 - myhuo",
+      "server": "195.238.126.20",
+      "server_port": 9012,
+      "method": "aes-256-cfb",
+      "password": "xaupMUvhptwxdDUg"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 10 - myhuo",
       "server": "84.32.209.118",
       "server_port": 443,
       "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
@@ -88,6 +96,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 11 - myhuo",
+      "server": "lt.memepn.com",
+      "server_port": 443,
+      "uuid": "f69e272f-e0e5-4e9d-b180-5be63930cde9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lt.memepn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+          "short_id": "868419504747f6de"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -100,7 +129,9 @@
         "🇱🇹 立陶宛 (Lithuania) 06 - myhuo",
         "🇱🇹 立陶宛 (Lithuania) 07 - myhuo",
         "🇱🇹 立陶宛 (Lithuania) 08 - myhuo",
-        "🇱🇹 立陶宛 (Lithuania) 09 - myhuo"
+        "🇱🇹 立陶宛 (Lithuania) 09 - myhuo",
+        "🇱🇹 立陶宛 (Lithuania) 10 - myhuo",
+        "🇱🇹 立陶宛 (Lithuania) 11 - myhuo"
       ]
     },
     {
@@ -115,7 +146,9 @@
         "🇱🇹 立陶宛 (Lithuania) 06 - myhuo",
         "🇱🇹 立陶宛 (Lithuania) 07 - myhuo",
         "🇱🇹 立陶宛 (Lithuania) 08 - myhuo",
-        "🇱🇹 立陶宛 (Lithuania) 09 - myhuo"
+        "🇱🇹 立陶宛 (Lithuania) 09 - myhuo",
+        "🇱🇹 立陶宛 (Lithuania) 10 - myhuo",
+        "🇱🇹 立陶宛 (Lithuania) 11 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

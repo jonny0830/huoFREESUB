@@ -13,17 +13,22 @@ proxies:
   sni: xvxn1hkzf.mateflora.com
   skip-cert-verify: false
 - name: 🇻🇳 越南 (Vietnam) 02 - myhuo
-  server: 52.199.42.25
-  port: 46074
+  server: 150.95.109.109
+  port: 2086
   udp: true
   type: vless
-  uuid: c74a51bc-0e10-43e5-b6a8-9395c40f3f54
-  flow: xtls-rprx-vision
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+- name: 🇻🇳 越南 (Vietnam) 03 - myhuo
+  server: 103.163.24.22
+  port: 56026
+  udp: true
+  type: vless
+  uuid: a1f0cbb8-c74a-4c27-b881-7b14d96aece1
   tls: true
   reality-opts:
-    public-key: Zpe4RNze71UGv-T9y55k31k9BtY7gS7uvRV5aA7eiWQ
-    short-id: 367e3031
-  servername: www.apple.com
+    public-key: gjOKbmRb5cGDPbdz3x8xkBFL43pn3xqL-I6sALHO7ls
+    short-id: 99676967e6867063
+  servername: www.cloudflare.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -32,6 +37,7 @@ proxy-groups:
   - AUTO
   - 🇻🇳 越南 (Vietnam) 01 - myhuo
   - 🇻🇳 越南 (Vietnam) 02 - myhuo
+  - 🇻🇳 越南 (Vietnam) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +45,6 @@ proxy-groups:
   proxies:
   - 🇻🇳 越南 (Vietnam) 01 - myhuo
   - 🇻🇳 越南 (Vietnam) 02 - myhuo
+  - 🇻🇳 越南 (Vietnam) 03 - myhuo
 rules:
 - MATCH,PROXIES

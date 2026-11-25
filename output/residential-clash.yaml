@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 (移动家宽) - myhuo
-  server: 47.254.175.2
+  server: 18.197.131.255
   port: 443
   udp: true
   type: ss
@@ -19,14 +19,6 @@ proxies:
   cipher: aes-256-cfb
   password: 1234!@#$
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
-  server: a54ge.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: docs.microsoft.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
   server: 60.248.219.78
   port: 443
   udp: true
@@ -40,6 +32,14 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo
+  server: 5641sdds.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: images.ctfassets.net
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,7 +48,7 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - myhuo
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,6 +57,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - myhuo
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - myhuo
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - myhuo
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - myhuo
 rules:
 - MATCH,PROXIES
