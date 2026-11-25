@@ -5,37 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - myhuo
-  server: 130.49.189.158
-  port: 43558
+  server: 194.87.69.12
+  port: 18443
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  cipher: aes-256-gcm
+  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
 - name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
-  server: 147.45.221.225
-  port: 443
+  server: 45.150.238.201
+  port: 20443
   udp: true
   type: vless
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  uuid: 67a31bdf-5846-409d-8b49-3d795e1a2a4f
+  flow: xtls-rprx-vision
   tls: true
-  servername: nl.lucheeebezlimitnoekino.stream
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /media/ws/
+  reality-opts:
+    public-key: xE2CNenfDgtu28WQ23Bq2KfdkEj3XN42P_ZVou1YRC4
+    short-id: f847646adc2b82fe
+  servername: dc.insidenet.ru
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
-  server: 200.169.179.233
-  port: 443
+  server: 91.206.92.158
+  port: 18443
   udp: true
-  type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  tls: true
-  servername: vps3.nemnogogo.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
+  type: ss
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
 - name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   server: 136.148.83.69
   port: 443
@@ -47,6 +42,32 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
+  server: 31.58.191.52
+  port: 3099
+  udp: true
+  type: vless
+  uuid: cdfc923e-8d34-4b44-ac72-ab41ec560ba8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: R6XO56Bp8-HW5dW3oOu5WC-bYVBD9ed8KR_mx6oU6Ew
+    short-id: 5701ece7005006b8
+  servername: vimeo.com
+  client-fingerprint: qq
+- name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
+  server: 200.169.179.233
+  port: 443
+  udp: true
+  type: vless
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  servername: vps3.nemnogogo.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
+- name: 🇷🇺 俄罗斯 (Russia) 07 - myhuo
   server: xssite.webredirect.org
   port: 443
   udp: true
@@ -59,7 +80,14 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
+- name: 🇷🇺 俄罗斯 (Russia) 08 - myhuo
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+- name: 🇷🇺 俄罗斯 (Russia) 09 - myhuo
   server: 147.45.175.81
   port: 443
   udp: true
@@ -68,12 +96,25 @@ proxies:
   tls: true
   servername: xsru2.freeddns.org
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /wsru
+    path: wsru
     headers:
       Host: xsru2.freeddns.org
+- name: 🇷🇺 俄罗斯 (Russia) 10 - myhuo
+  server: 147.45.175.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xssite.webredirect.org
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,6 +126,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 05 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 06 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 07 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 08 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 09 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 10 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -96,5 +141,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 05 - myhuo
   - 🇷🇺 俄罗斯 (Russia) 06 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 07 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 08 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 09 - myhuo
+  - 🇷🇺 俄罗斯 (Russia) 10 - myhuo
 rules:
 - MATCH,PROXIES
