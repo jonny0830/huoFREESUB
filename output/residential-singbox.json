@@ -4,23 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 01 (移动家宽) - myhuo",
-      "server": "8.209.73.203",
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo",
+      "server": "209.9.200.147",
       "server_port": 443,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
-    },
-    {
-      "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo",
-      "server": "a54ge.df6h451rh.xin",
-      "server_port": 443,
-      "password": "0324fbc29561",
+      "uuid": "ed94398f-893f-40c6-b14c-bf02b5f6be16",
       "tls": {
         "enabled": true,
-        "server_name": "docs.microsoft.com",
-        "insecure": true
+        "server_name": "navi.bankrate.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
+          "short_id": "2da72ce6"
+        }
       }
     },
     {
@@ -28,16 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 (Germany) 01 (移动家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 德国 (Germany) 01 (移动家宽) - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - myhuo"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
