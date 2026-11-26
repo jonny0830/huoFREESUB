@@ -16,7 +16,7 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - myhuo
   server: 185.156.44.99
   port: 443
@@ -25,6 +25,19 @@ proxies:
   password: gf1:gfhysteria2024
   sni: whatsapp.com
   skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
+  server: 176.108.245.73
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1b7ee703-fa08-4305-8469-ae3e30e61e44
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _qSbW4JL4Ffqvj25vX-6a2ul9Qlj6PBdlF0ghsf_0RQ
+    short-id: a9dc98a7dc87a7dc
+  servername: pawuk.belka.tv
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +45,7 @@ proxy-groups:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 02 - myhuo
+  - 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +53,6 @@ proxy-groups:
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - myhuo
   - 🇷🇴 罗马尼亚 (Romania) 02 - myhuo
+  - 🇷🇴 罗马尼亚 (Romania) 03 - myhuo
 rules:
 - MATCH,PROXIES

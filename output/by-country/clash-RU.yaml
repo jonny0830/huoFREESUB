@@ -12,18 +12,12 @@ proxies:
   cipher: aes-256-gcm
   password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
 - name: 🇷🇺 俄罗斯 (Russia) 02 - myhuo
-  server: 45.150.238.201
-  port: 20443
+  server: 130.49.189.158
+  port: 43558
   udp: true
-  type: vless
-  uuid: 67a31bdf-5846-409d-8b49-3d795e1a2a4f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xE2CNenfDgtu28WQ23Bq2KfdkEj3XN42P_ZVou1YRC4
-    short-id: f847646adc2b82fe
-  servername: dc.insidenet.ru
-  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
 - name: 🇷🇺 俄罗斯 (Russia) 03 - myhuo
   server: 91.206.92.158
   port: 18443
@@ -32,30 +26,28 @@ proxies:
   cipher: aes-256-gcm
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
 - name: 🇷🇺 俄罗斯 (Russia) 04 - myhuo
-  server: 136.148.83.69
+  server: 136.148.83.71
   port: 443
   udp: true
   type: vless
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  uuid: 00000000-0000-0001-0000-000000000000
   tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
+  servername: wccfu-ru-79dc.my-fade.cloud
   skip-cert-verify: false
-  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 05 - myhuo
-  server: 31.58.191.52
-  port: 3099
+  server: 147.45.221.225
+  port: 443
   udp: true
   type: vless
-  uuid: cdfc923e-8d34-4b44-ac72-ab41ec560ba8
-  flow: xtls-rprx-vision
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
   tls: true
-  reality-opts:
-    public-key: R6XO56Bp8-HW5dW3oOu5WC-bYVBD9ed8KR_mx6oU6Ew
-    short-id: 5701ece7005006b8
-  servername: vimeo.com
-  client-fingerprint: qq
+  servername: nl.lucheeebezlimitnoekino.stream
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /media/ws/
 - name: 🇷🇺 俄罗斯 (Russia) 06 - myhuo
-  server: 200.169.179.233
+  server: 201.51.12.98
   port: 443
   udp: true
   type: vless
@@ -68,6 +60,34 @@ proxies:
   grpc-opts:
     grpc-service-name: mobile.api.Event
 - name: 🇷🇺 俄罗斯 (Russia) 07 - myhuo
+  server: dc.insidenet.ru
+  port: 20443
+  udp: true
+  type: vless
+  uuid: 67a31bdf-5846-409d-8b49-3d795e1a2a4f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xE2CNenfDgtu28WQ23Bq2KfdkEj3XN42P_ZVou1YRC4
+    short-id: f847646adc2b82fe
+  servername: dc.insidenet.ru
+  client-fingerprint: ''
+- name: 🇷🇺 俄罗斯 (Russia) 08 - myhuo
+  server: smartcdn.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 37af0181-5598-4aad-a040-d926bcb65757
+  tls: true
+  servername: smartcdn.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /useraction/collect/8a64b355ef0c/
+    headers:
+      Host: smartcdn.top
+- name: 🇷🇺 俄罗斯 (Russia) 09 - myhuo
   server: xssite.webredirect.org
   port: 443
   udp: true
@@ -80,41 +100,18 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 08 - myhuo
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
-- name: 🇷🇺 俄罗斯 (Russia) 09 - myhuo
-  server: 147.45.175.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xsru2.freeddns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: wsru
-    headers:
-      Host: xsru2.freeddns.org
 - name: 🇷🇺 俄罗斯 (Russia) 10 - myhuo
-  server: 147.45.175.81
+  server: 196.196.148.85
   port: 443
   udp: true
   type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   tls: true
-  servername: xssite.webredirect.org
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-ru
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
