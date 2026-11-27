@@ -18,28 +18,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
-- name: 🇿🇦 南非 (South Africa) 03 - myhuo
-  server: 139.84.231.142
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: explorecareerpathsandunlockprofessionalsuccesstoday.com
-  skip-cert-verify: false
-- name: 🇿🇦 南非 (South Africa) 04 - myhuo
-  server: 16.28.28.15
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 8ce18eab-fcc0-4757-b552-dbda5047ea11
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: za-a-zzy.glnyhlgc.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /7788/about
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,8 +25,6 @@ proxy-groups:
   - AUTO
   - 🇿🇦 南非 (South Africa) 01 - myhuo
   - 🇿🇦 南非 (South Africa) 02 - myhuo
-  - 🇿🇦 南非 (South Africa) 03 - myhuo
-  - 🇿🇦 南非 (South Africa) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,7 +32,5 @@ proxy-groups:
   proxies:
   - 🇿🇦 南非 (South Africa) 01 - myhuo
   - 🇿🇦 南非 (South Africa) 02 - myhuo
-  - 🇿🇦 南非 (South Africa) 03 - myhuo
-  - 🇿🇦 南非 (South Africa) 04 - myhuo
 rules:
 - MATCH,PROXIES

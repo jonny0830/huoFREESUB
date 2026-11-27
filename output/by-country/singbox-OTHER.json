@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - myhuo",
-      "server": "172.64.155.209",
+      "server": "104.21.33.59",
       "server_port": 443,
-      "uuid": "55b3fd10-3658-40a2-8951-ec90932d1d30",
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "sinavm2.soft10.ir",
+        "server_name": "jp3.yohototo.top",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,58 +20,29 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
+        "path": "/tyxyws",
         "headers": {
-          "Host": "sinavm2.soft10.ir"
+          "Host": "jp3.yohototo.top"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🌐 其他地区 (Other) 02 - myhuo",
-      "server": "172.64.155.209",
-      "server_port": 443,
-      "uuid": "14eccb4f-ca88-4732-b191-d8daacf63448",
+      "server": "188.114.96.3",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "sinavm3.soft10.ir",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
+        "path": "/lMnsZUN4/",
         "headers": {
-          "Host": "sinavm3.soft10.ir"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 03 - myhuo",
-      "server": "172.67.139.189",
-      "server_port": 443,
-      "uuid": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
-      "tls": {
-        "enabled": true,
-        "server_name": "fr-free.fastestrelay.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/700gvl",
-        "headers": {
-          "Host": "fr-free.fastestrelay.com"
+          "Host": "v2ray1.dozapp.xyz"
         }
       }
     },
@@ -81,8 +52,7 @@
       "outbounds": [
         "auto",
         "🌐 其他地区 (Other) 01 - myhuo",
-        "🌐 其他地区 (Other) 02 - myhuo",
-        "🌐 其他地区 (Other) 03 - myhuo"
+        "🌐 其他地区 (Other) 02 - myhuo"
       ]
     },
     {
@@ -90,8 +60,7 @@
       "tag": "auto",
       "outbounds": [
         "🌐 其他地区 (Other) 01 - myhuo",
-        "🌐 其他地区 (Other) 02 - myhuo",
-        "🌐 其他地区 (Other) 03 - myhuo"
+        "🌐 其他地区 (Other) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

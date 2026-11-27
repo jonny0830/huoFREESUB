@@ -4,26 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 01 - myhuo",
-      "server": "146.70.90.196",
-      "server_port": 17454,
-      "method": "aes-128-gcm",
-      "password": "cVCf+5/dBI353UY4YcN3nS05znsJYtLF"
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 (Thailand) 01 - myhuo",
+      "server": "119.46.51.45",
+      "server_port": 37515,
+      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - myhuo"
+        "🇹🇭 泰国 (Thailand) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - myhuo"
+        "🇹🇭 泰国 (Thailand) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

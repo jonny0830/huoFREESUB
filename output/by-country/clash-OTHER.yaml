@@ -5,50 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - myhuo
-  server: 172.64.155.209
+  server: 104.21.33.59
   port: 443
   udp: true
   type: vless
-  uuid: 55b3fd10-3658-40a2-8951-ec90932d1d30
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  servername: sinavm2.soft10.ir
+  servername: jp3.yohototo.top
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    path: /tyxyws
     headers:
-      Host: sinavm2.soft10.ir
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 02 - myhuo
-  server: 172.64.155.209
-  port: 443
+  server: 188.114.96.3
+  port: 8443
   udp: true
-  type: vless
-  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
+  type: vmess
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: sinavm3.soft10.ir
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    path: /lMnsZUN4/
     headers:
-      Host: sinavm3.soft10.ir
-- name: 🌐 其他地区 (Other) 03 - myhuo
-  server: 172.67.139.189
-  port: 443
-  udp: true
-  type: vless
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
-  tls: true
-  servername: fr-free.fastestrelay.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /700gvl
-    headers:
-      Host: fr-free.fastestrelay.com
+      Host: v2ray1.dozapp.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,7 +42,6 @@ proxy-groups:
   - AUTO
   - 🌐 其他地区 (Other) 01 - myhuo
   - 🌐 其他地区 (Other) 02 - myhuo
-  - 🌐 其他地区 (Other) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,6 +49,5 @@ proxy-groups:
   proxies:
   - 🌐 其他地区 (Other) 01 - myhuo
   - 🌐 其他地区 (Other) 02 - myhuo
-  - 🌐 其他地区 (Other) 03 - myhuo
 rules:
 - MATCH,PROXIES

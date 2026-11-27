@@ -12,17 +12,9 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇦🇹 奥地利 (Austria) 02 - myhuo",
-      "server": "152.53.1.57",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "AdawffFMHymlasRb0VOP3HFf7sTG5sJx"
-    },
-    {
       "type": "vmess",
-      "tag": "🇦🇹 奥地利 (Austria) 03 - myhuo",
-      "server": "154.47.19.225",
+      "tag": "🇦🇹 奥地利 (Austria) 02 - myhuo",
+      "server": "leviko-at0752.shopingggg.ir",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
       "security": "auto",
@@ -30,6 +22,28 @@
         "enabled": true,
         "server_name": "xmfhlpy.com",
         "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 03 - myhuo",
+      "server": "104.21.44.113",
+      "server_port": 443,
+      "uuid": "963A4918-A630-29DA-A873-093CDF8AD784",
+      "tls": {
+        "enabled": true,
+        "server_name": "ancient-haze-d203.vpnetwork3567.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ancient-haze-d203.vpnetwork3567.workers.dev"
+        }
       }
     },
     {
