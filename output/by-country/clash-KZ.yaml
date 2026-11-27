@@ -5,32 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
-  server: 3h-kazakhstan1.09vpn.com
-  port: 80
+  server: 194.87.224.137
+  port: 15443
   udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
-  server: 3h-kazakhstan1.09vpn.com
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
-  tls: true
-  servername: 3h-kazakhstan1.09vpn.com
+  type: hysteria2
+  password: lvu_3390f238bef4e3058ac47c87473755cf_07cd5acf7265adf5c1210040ca46facf:np2.1.HJjJucZ0-OZZUq5Njkl48v1gYx7ol9rXjxYXZUxrQdM
+  sni: n9.neproxy.net
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -42,54 +24,6 @@ proxies:
     short-id: '83'
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 38.107.234.57
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - myhuo
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 38.107.234.57
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - myhuo
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - myhuo
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,11 +31,6 @@ proxy-groups:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -109,10 +38,5 @@ proxy-groups:
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - myhuo
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - myhuo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - myhuo
 rules:
 - MATCH,PROXIES

@@ -12,19 +12,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02 - myhuo
-  server: 138.124.86.230
-  port: 48115
-  udp: true
-  type: vless
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
-  tls: true
-  servername: 138-124-86-230.sslip.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
   server: 138.199.55.230
   port: 1270
   udp: true
@@ -35,8 +22,19 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 03 - myhuo
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 04 - myhuo
-  server: 62.93.166.184
+  server: leviko-se3307.shopingggg.ir
   port: 1270
   udp: true
   type: vmess
@@ -46,6 +44,43 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 05 - myhuo
+  server: leviko-se4581.shopingggg.ir
+  port: 48115
+  udp: true
+  type: vless
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+  tls: true
+  servername: 138-124-86-230.sslip.io
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
+- name: 🇸🇪 瑞典 (Sweden) 06 - myhuo
+  server: 92.63.189.39
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 7aa77858-f235-0003-9434-7ab060848b17
+  flow: xtls-rprx-vision
+  tls: true
+  servername: avelon.onl
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 07 - myhuo
+  server: 13.51.184.77
+  port: 8084
+  udp: true
+  type: vless
+  uuid: ba27cf53-6904-4f7e-924c-fb820aaf631a
+  tls: true
+  servername: 13.51.184.77
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /xk6ro
+    headers:
+      Host: /?Telegram---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +90,9 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - myhuo
   - 🇸🇪 瑞典 (Sweden) 03 - myhuo
   - 🇸🇪 瑞典 (Sweden) 04 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 05 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 06 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 07 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,5 +102,8 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - myhuo
   - 🇸🇪 瑞典 (Sweden) 03 - myhuo
   - 🇸🇪 瑞典 (Sweden) 04 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 05 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 06 - myhuo
+  - 🇸🇪 瑞典 (Sweden) 07 - myhuo
 rules:
 - MATCH,PROXIES

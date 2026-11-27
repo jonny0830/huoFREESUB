@@ -6,6 +6,55 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - myhuo",
+      "server": "172.64.155.209",
+      "server_port": 443,
+      "uuid": "55b3fd10-3658-40a2-8951-ec90932d1d30",
+      "tls": {
+        "enabled": true,
+        "server_name": "sinavm2.soft10.ir",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
+        "headers": {
+          "Host": "sinavm2.soft10.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 02 - myhuo",
+      "server": "172.64.155.209",
+      "server_port": 443,
+      "uuid": "14eccb4f-ca88-4732-b191-d8daacf63448",
+      "tls": {
+        "enabled": true,
+        "server_name": "sinavm3.soft10.ir",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
+        "headers": {
+          "Host": "sinavm3.soft10.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 03 - myhuo",
       "server": "172.67.139.189",
       "server_port": 443,
       "uuid": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
@@ -15,7 +64,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -31,14 +80,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🌐 其他地区 (Other) 01 - myhuo",
+        "🌐 其他地区 (Other) 02 - myhuo",
+        "🌐 其他地区 (Other) 03 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - myhuo"
+        "🌐 其他地区 (Other) 01 - myhuo",
+        "🌐 其他地区 (Other) 02 - myhuo",
+        "🌐 其他地区 (Other) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

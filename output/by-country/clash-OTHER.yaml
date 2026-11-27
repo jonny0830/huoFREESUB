@@ -5,6 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - myhuo
+  server: 172.64.155.209
+  port: 443
+  udp: true
+  type: vless
+  uuid: 55b3fd10-3658-40a2-8951-ec90932d1d30
+  tls: true
+  servername: sinavm2.soft10.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    headers:
+      Host: sinavm2.soft10.ir
+- name: 🌐 其他地区 (Other) 02 - myhuo
+  server: 172.64.155.209
+  port: 443
+  udp: true
+  type: vless
+  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
+  tls: true
+  servername: sinavm3.soft10.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    headers:
+      Host: sinavm3.soft10.ir
+- name: 🌐 其他地区 (Other) 03 - myhuo
   server: 172.67.139.189
   port: 443
   udp: true
@@ -13,7 +43,7 @@ proxies:
   tls: true
   servername: fr-free.fastestrelay.com
   skip-cert-verify: false
-  client-fingerprint: qq
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /700gvl
@@ -25,11 +55,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - myhuo
+  - 🌐 其他地区 (Other) 02 - myhuo
+  - 🌐 其他地区 (Other) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - myhuo
+  - 🌐 其他地区 (Other) 02 - myhuo
+  - 🌐 其他地区 (Other) 03 - myhuo
 rules:
 - MATCH,PROXIES

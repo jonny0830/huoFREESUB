@@ -4,14 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "🇧🇷 巴西 (Brazil) 01 - myhuo",
-      "server": "216.238.104.154",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "server": "103.14.27.207",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
+        "server_name": "xmfhlpy.com",
         "insecure": false
       }
     },
@@ -29,15 +30,14 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "trojan",
       "tag": "🇧🇷 巴西 (Brazil) 03 - myhuo",
-      "server": "103.14.27.207",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
+      "server": "216.238.104.154",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "xmfhlpy.com",
+        "server_name": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
         "insecure": false
       }
     },
@@ -58,6 +58,32 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 05 - myhuo",
+      "server": "netra-28e601.ruzgarsis053gmailcomsaccount.workers.dev",
+      "server_port": 443,
+      "uuid": "ccaa9413-2163-466e-a915-29c215b0be0a",
+      "tls": {
+        "enabled": true,
+        "server_name": "nEtRa-28e601.rUZgArSiS053GmAIlCoMsaccOunT.WORKERs.DEV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/D1utewa490l8iCymueVABy77F5t?ed=2560",
+        "headers": {
+          "Host": "netra-28e601.ruzgarsis053gmailcomsaccount.workers.dev"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -65,7 +91,8 @@
         "🇧🇷 巴西 (Brazil) 01 - myhuo",
         "🇧🇷 巴西 (Brazil) 02 - myhuo",
         "🇧🇷 巴西 (Brazil) 03 - myhuo",
-        "🇧🇷 巴西 (Brazil) 04 - myhuo"
+        "🇧🇷 巴西 (Brazil) 04 - myhuo",
+        "🇧🇷 巴西 (Brazil) 05 - myhuo"
       ]
     },
     {
@@ -75,7 +102,8 @@
         "🇧🇷 巴西 (Brazil) 01 - myhuo",
         "🇧🇷 巴西 (Brazil) 02 - myhuo",
         "🇧🇷 巴西 (Brazil) 03 - myhuo",
-        "🇧🇷 巴西 (Brazil) 04 - myhuo"
+        "🇧🇷 巴西 (Brazil) 04 - myhuo",
+        "🇧🇷 巴西 (Brazil) 05 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

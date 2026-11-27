@@ -1,0 +1,55 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - myhuo",
+      "server": "107.181.155.27",
+      "server_port": 2089,
+      "method": "chacha20-ietf-poly1305",
+      "password": "T199MCnogZBKi0QJdcSgUnoL3U9wl7t1"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - myhuo",
+      "server": "v2new.nimbaha9.ir",
+      "server_port": 8080,
+      "uuid": "f279c19a-b324-40cf-af57-049f9b1b68f2",
+      "transport": {
+        "type": "ws",
+        "path": "/XDS45",
+        "headers": {
+          "Host": "v2new.nimbaha9.ir"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇹🇷 土耳其 (Turkey) 01 - myhuo",
+        "🇹🇷 土耳其 (Turkey) 02 - myhuo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇹🇷 土耳其 (Turkey) 01 - myhuo",
+        "🇹🇷 土耳其 (Turkey) 02 - myhuo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

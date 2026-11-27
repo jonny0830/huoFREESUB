@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - myhuo
-  server: 103.115.17.65
-  port: 8388
+- name: 🇮🇪 爱尔兰 (Ireland) 01 - myhuo
+  server: 146.70.90.196
+  port: 17454
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: 2bsZK7lH3EBMZXdo
+  cipher: aes-128-gcm
+  password: cVCf+5/dBI353UY4YcN3nS05znsJYtLF
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - myhuo
+  - 🇮🇪 爱尔兰 (Ireland) 01 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - myhuo
+  - 🇮🇪 爱尔兰 (Ireland) 01 - myhuo
 rules:
 - MATCH,PROXIES

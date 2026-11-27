@@ -4,38 +4,46 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo",
-      "server": "209.9.200.147",
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 01 (移动家宽) - myhuo",
+      "server": "47.254.128.109",
       "server_port": 443,
-      "uuid": "ed94398f-893f-40c6-b14c-bf02b5f6be16",
-      "tls": {
-        "enabled": true,
-        "server_name": "navi.bankrate.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
-          "short_id": "2da72ce6"
-        }
-      }
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 02 (移动家宽) - myhuo",
+      "server": "8.209.73.203",
+      "server_port": 443,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 (家宽) - myhuo",
+      "server": "195.133.135.238",
+      "server_port": 10086,
+      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo"
+        "🇩🇪 德国 (Germany) 01 (移动家宽) - myhuo",
+        "🇩🇪 德国 (Germany) 02 (移动家宽) - myhuo",
+        "🇸🇬 新加坡 (Singapore) 03 (家宽) - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - myhuo"
+        "🇩🇪 德国 (Germany) 01 (移动家宽) - myhuo",
+        "🇩🇪 德国 (Germany) 02 (移动家宽) - myhuo",
+        "🇸🇬 新加坡 (Singapore) 03 (家宽) - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
