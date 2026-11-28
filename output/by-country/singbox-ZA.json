@@ -20,12 +20,30 @@
       "password": "aduB9HGxQHjA2SBMRjkHX6"
     },
     {
+      "type": "vmess",
+      "tag": "🇿🇦 南非 (South Africa) 03 - myhuo",
+      "server": "16.28.28.15",
+      "server_port": 443,
+      "uuid": "8ce18eab-fcc0-4757-b552-dbda5047ea11",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "za-a-zzy.glnyhlgc.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/7788/about"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇿🇦 南非 (South Africa) 01 - myhuo",
-        "🇿🇦 南非 (South Africa) 02 - myhuo"
+        "🇿🇦 南非 (South Africa) 02 - myhuo",
+        "🇿🇦 南非 (South Africa) 03 - myhuo"
       ]
     },
     {
@@ -33,7 +51,8 @@
       "tag": "auto",
       "outbounds": [
         "🇿🇦 南非 (South Africa) 01 - myhuo",
-        "🇿🇦 南非 (South Africa) 02 - myhuo"
+        "🇿🇦 南非 (South Africa) 02 - myhuo",
+        "🇿🇦 南非 (South Africa) 03 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

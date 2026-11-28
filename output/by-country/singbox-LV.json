@@ -6,50 +6,107 @@
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - myhuo",
-      "server": "109.248.148.141",
-      "server_port": 11471,
-      "method": "aes-128-gcm",
-      "password": "EE2VWeKohIwTx6HGOo1X2p1jjNAUfRWS"
+      "server": "185.135.86.175",
+      "server_port": 9033,
+      "method": "aes-256-cfb",
+      "password": "UTJA57ypk2XKQpnm"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - myhuo",
-      "server": "185.135.86.175",
-      "server_port": 9036,
-      "method": "aes-256-cfb",
-      "password": "hbtvgUz5uNYyB3Rf"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - myhuo",
-      "server": "185.135.86.175",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - myhuo",
-      "server": "185.135.86.175",
-      "server_port": 9068,
-      "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - myhuo",
       "server": "185.135.86.175",
       "server_port": 9082,
       "method": "aes-256-cfb",
       "password": "45xgMgm386pjWjTx"
     },
     {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - myhuo",
+      "server": "45.38.143.210",
+      "server_port": 30584,
+      "uuid": "cebc5f19-18d9-48e6-9029-fb4b04caf393",
+      "tls": {
+        "enabled": true,
+        "server_name": "m.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y",
+          "short_id": "67ece882d65d0f1a"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - myhuo",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - myhuo",
+      "server": "185.135.86.175",
+      "server_port": 9007,
+      "method": "aes-256-cfb",
+      "password": "kSPmvwdFzGMMW5pY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - myhuo",
       "server": "185.135.86.175",
       "server_port": 9094,
       "method": "aes-256-cfb",
       "password": "rpgbNnU9rDDU4aWZ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - myhuo",
+      "server": "185.135.86.175",
+      "server_port": 9036,
+      "method": "aes-256-cfb",
+      "password": "hbtvgUz5uNYyB3Rf"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - myhuo",
+      "server": "195.123.213.28",
+      "server_port": 443,
+      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
+          "short_id": "5c256336e3b673fa"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - myhuo",
+      "server": "195.123.211.174",
+      "server_port": 443,
+      "uuid": "ba373a70-295f-482d-a471-8bc17b54e23b",
+      "tls": {
+        "enabled": true,
+        "server_name": "ironwillow.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ",
+          "short_id": "27350908de933e09"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "neurex"
+      }
     },
     {
       "type": "selector",
@@ -61,7 +118,9 @@
         "🇱🇻 拉脱维亚 (Latvia) 03 - myhuo",
         "🇱🇻 拉脱维亚 (Latvia) 04 - myhuo",
         "🇱🇻 拉脱维亚 (Latvia) 05 - myhuo",
-        "🇱🇻 拉脱维亚 (Latvia) 06 - myhuo"
+        "🇱🇻 拉脱维亚 (Latvia) 06 - myhuo",
+        "🇱🇻 拉脱维亚 (Latvia) 07 - myhuo",
+        "🇱🇻 拉脱维亚 (Latvia) 08 - myhuo"
       ]
     },
     {
@@ -73,7 +132,9 @@
         "🇱🇻 拉脱维亚 (Latvia) 03 - myhuo",
         "🇱🇻 拉脱维亚 (Latvia) 04 - myhuo",
         "🇱🇻 拉脱维亚 (Latvia) 05 - myhuo",
-        "🇱🇻 拉脱维亚 (Latvia) 06 - myhuo"
+        "🇱🇻 拉脱维亚 (Latvia) 06 - myhuo",
+        "🇱🇻 拉脱维亚 (Latvia) 07 - myhuo",
+        "🇱🇻 拉脱维亚 (Latvia) 08 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -12,17 +12,47 @@ proxies:
   uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
   alterId: 0
   cipher: auto
+- name: 🇹🇭 泰国 (Thailand) 02 - myhuo
+  server: 108.138.26.63
+  port: 80
+  udp: true
+  type: vless
+  uuid: 05f53797-bd04-4006-8a78-41c071e67837
+  network: ws
+  ws-opts:
+    path: /tikvpn2/
+    headers:
+      Host: d27g7kjkk3cw22.cloudfront.net
+- name: 🇹🇭 泰国 (Thailand) 03 - myhuo
+  server: 195.58.46.231
+  port: 443
+  udp: true
+  type: vless
+  uuid: bbb945a6-7d16-4099-b802-d3a7ccebd3ca
+  tls: true
+  reality-opts:
+    public-key: PVlnR_I9tZ8hKhOHW6ySpSofhsaShcBQ_JV2-0TePVA
+    short-id: b8abb26d3cfadcfb
+  servername: node43.lmdscdn.ru
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: livestreamcontent
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - myhuo
+  - 🇹🇭 泰国 (Thailand) 02 - myhuo
+  - 🇹🇭 泰国 (Thailand) 03 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - myhuo
+  - 🇹🇭 泰国 (Thailand) 02 - myhuo
+  - 🇹🇭 泰国 (Thailand) 03 - myhuo
 rules:
 - MATCH,PROXIES

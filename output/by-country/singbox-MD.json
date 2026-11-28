@@ -5,23 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇰 斯洛伐克 (Slovakia) 01 - myhuo",
-      "server": "196.245.153.114",
+      "tag": "🇲🇩 摩尔多瓦 (Moldova) 01 - myhuo",
+      "server": "217.156.123.25",
       "server_port": 443,
-      "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
-      "flow": "xtls-rprx-vision",
+      "uuid": "ba373a70-295f-482d-a471-8bc17b54e23b",
       "tls": {
         "enabled": true,
-        "server_name": "7aa271t.es9.h1clayd.click",
+        "server_name": "farlantern.xyz",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE",
-          "short_id": "42426c882c5fcd41"
+          "public_key": "pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ",
+          "short_id": "27350908de933e09"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "neurex"
       }
     },
     {
@@ -29,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇰 斯洛伐克 (Slovakia) 01 - myhuo"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇰 斯洛伐克 (Slovakia) 01 - myhuo"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

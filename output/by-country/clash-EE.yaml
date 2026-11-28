@@ -1,0 +1,48 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
+  server: 196.198.111.166
+  port: 8443
+  udp: true
+  type: vless
+  uuid: f121ffc8-f6dc-4728-a871-a05e3f9cf8c5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: usr-6b09ce88-api-v3.alcors.net
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
+  server: 185.174.135.219
+  port: 443
+  udp: true
+  type: vless
+  uuid: ba373a70-295f-482d-a471-8bc17b54e23b
+  tls: true
+  reality-opts:
+    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
+    short-id: 27350908de933e09
+  servername: eeb.899themes.pro
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: neurex
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - myhuo
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - myhuo
+rules:
+- MATCH,PROXIES

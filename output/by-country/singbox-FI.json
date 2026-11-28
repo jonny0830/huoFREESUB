@@ -4,8 +4,92 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - myhuo",
+      "server": "31.76.8.195",
+      "server_port": 443,
+      "uuid": "e894c08a-fecc-46f5-bf03-c95d0274c79d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lesson12.schoolpizorbz.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pFmgbfd2eUSmge-8f0dF7Yjo8OFaZWuZ3UWC7EXjwmg",
+          "short_id": "ae3cdc4eca7374a8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - myhuo",
+      "server": "48.102.138.212",
+      "server_port": 443,
+      "uuid": "e894c08a-fecc-46f5-bf03-c95d0274c79d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lesson13.schoolpizorbz.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "luf3doVXhkblZF7R3E5m1hc_e6dYmEn2rrgoGBvQaEU",
+          "short_id": "68bf8009e520f8da"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - myhuo",
+      "server": "65.109.171.194",
+      "server_port": 443,
+      "uuid": "da14e323-6af7-406f-a5c2-1eb7975ada8b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "mail1.besttotaldns.com",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - myhuo",
+      "server": "201.58.176.19",
+      "server_port": 443,
+      "uuid": "e894c08a-fecc-46f5-bf03-c95d0274c79d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lesson9.schoolpizorbz.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LkXRut71yrHguNpmKfCrLITrAxk7amJiI2npZ4jRYx8",
+          "short_id": "06df4d3e93672c24"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - myhuo",
       "server": "94.183.164.119",
       "server_port": 24433,
       "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
@@ -17,7 +101,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - myhuo",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - myhuo",
       "server": "2.27.122.255",
       "server_port": 443,
       "uuid": "e307f400-d65e-4afd-bfe2-9a54deca5678",
@@ -37,12 +121,38 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - myhuo",
+      "server": "31.76.21.252",
+      "server_port": 443,
+      "uuid": "e894c08a-fecc-46f5-bf03-c95d0274c79d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lesson5.schoolpizorbz.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hkbj7k2VDqVjrwQLXhoWIgjUwGOKFJ9Y1gdCv2YGQik",
+          "short_id": "190004e1840538bf"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - myhuo",
-        "🇫🇮 芬兰 (Finland) 02 - myhuo"
+        "🇫🇮 芬兰 (Finland) 02 - myhuo",
+        "🇫🇮 芬兰 (Finland) 03 - myhuo",
+        "🇫🇮 芬兰 (Finland) 04 - myhuo",
+        "🇫🇮 芬兰 (Finland) 05 - myhuo",
+        "🇫🇮 芬兰 (Finland) 06 - myhuo",
+        "🇫🇮 芬兰 (Finland) 07 - myhuo"
       ]
     },
     {
@@ -50,7 +160,12 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - myhuo",
-        "🇫🇮 芬兰 (Finland) 02 - myhuo"
+        "🇫🇮 芬兰 (Finland) 02 - myhuo",
+        "🇫🇮 芬兰 (Finland) 03 - myhuo",
+        "🇫🇮 芬兰 (Finland) 04 - myhuo",
+        "🇫🇮 芬兰 (Finland) 05 - myhuo",
+        "🇫🇮 芬兰 (Finland) 06 - myhuo",
+        "🇫🇮 芬兰 (Finland) 07 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

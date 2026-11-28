@@ -12,18 +12,44 @@
       "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
     },
     {
+      "type": "vless",
+      "tag": "🇳🇴 挪威 (Norway) 02 - myhuo",
+      "server": "85.136.80.71",
+      "server_port": 443,
+      "uuid": "ba373a70-295f-482d-a471-8bc17b54e23b",
+      "tls": {
+        "enabled": true,
+        "server_name": "hollowtide.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ",
+          "short_id": "27350908de933e09"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "neurex"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 (Norway) 01 - myhuo"
+        "🇳🇴 挪威 (Norway) 01 - myhuo",
+        "🇳🇴 挪威 (Norway) 02 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 (Norway) 01 - myhuo"
+        "🇳🇴 挪威 (Norway) 01 - myhuo",
+        "🇳🇴 挪威 (Norway) 02 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

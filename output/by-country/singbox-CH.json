@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - myhuo",
-      "server": "186.190.215.251",
+      "server": "79.127.184.104",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -20,8 +20,37 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇨🇭 瑞士 (Switzerland) 03 - myhuo",
+      "server": "186.190.215.251",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - myhuo",
+      "server": "23.166.88.127",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vmess",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - myhuo",
+      "server": "186.190.215.4",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06 - myhuo",
       "server": "140.238.213.114",
       "server_port": 50160,
       "password": "84a506ca5aca505696a454d828420b3f",
@@ -33,7 +62,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - myhuo",
+      "tag": "🇨🇭 瑞士 (Switzerland) 07 - myhuo",
       "server": "152.67.75.161",
       "server_port": 443,
       "password": "3a702d4d1de4949005d8431220e040fb",
@@ -48,29 +77,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 - myhuo",
-      "server": "79.127.184.104",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "vmess",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06 - myhuo",
-      "server": "186.190.215.4",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 07 - myhuo",
+      "tag": "🇨🇭 瑞士 (Switzerland) 08 - myhuo",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -90,6 +98,30 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 09 - myhuo",
+      "server": "45.90.59.93",
+      "server_port": 443,
+      "uuid": "ba373a70-295f-482d-a471-8bc17b54e23b",
+      "tls": {
+        "enabled": true,
+        "server_name": "coldmeadow.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ",
+          "short_id": "27350908de933e09"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "neurex"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -100,7 +132,9 @@
         "🇨🇭 瑞士 (Switzerland) 04 - myhuo",
         "🇨🇭 瑞士 (Switzerland) 05 - myhuo",
         "🇨🇭 瑞士 (Switzerland) 06 - myhuo",
-        "🇨🇭 瑞士 (Switzerland) 07 - myhuo"
+        "🇨🇭 瑞士 (Switzerland) 07 - myhuo",
+        "🇨🇭 瑞士 (Switzerland) 08 - myhuo",
+        "🇨🇭 瑞士 (Switzerland) 09 - myhuo"
       ]
     },
     {
@@ -113,7 +147,9 @@
         "🇨🇭 瑞士 (Switzerland) 04 - myhuo",
         "🇨🇭 瑞士 (Switzerland) 05 - myhuo",
         "🇨🇭 瑞士 (Switzerland) 06 - myhuo",
-        "🇨🇭 瑞士 (Switzerland) 07 - myhuo"
+        "🇨🇭 瑞士 (Switzerland) 07 - myhuo",
+        "🇨🇭 瑞士 (Switzerland) 08 - myhuo",
+        "🇨🇭 瑞士 (Switzerland) 09 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
