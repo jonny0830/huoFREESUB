@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - myhuo",
-      "server": "185.156.44.99",
-      "server_port": 443,
-      "password": "gf1:gfhysteria2024",
-      "tls": {
-        "enabled": true,
-        "server_name": "whatsapp.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - myhuo",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - myhuo",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -41,16 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 罗马尼亚 (Romania) 01 - myhuo",
-        "🇷🇴 罗马尼亚 (Romania) 02 - myhuo"
+        "🇷🇴 罗马尼亚 (Romania) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 罗马尼亚 (Romania) 01 - myhuo",
-        "🇷🇴 罗马尼亚 (Romania) 02 - myhuo"
+        "🇷🇴 罗马尼亚 (Romania) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

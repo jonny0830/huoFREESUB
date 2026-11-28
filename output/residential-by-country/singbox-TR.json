@@ -1,0 +1,45 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo",
+      "server": "v2new.nimbaha9.ir",
+      "server_port": 8080,
+      "uuid": "b1758b10-8da1-4791-a1b3-44a77deea1ed",
+      "transport": {
+        "type": "ws",
+        "path": "/XDS45",
+        "headers": {
+          "Host": "v2new.nimbaha9.ir"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

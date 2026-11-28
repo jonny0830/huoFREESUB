@@ -5,6 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
+  server: 103.115.109.49
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/oneclickvpnkeys
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: css.rbxcdn.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
+  server: 116.213.43.43
+  port: 11102
+  udp: true
+  type: vless
+  uuid: 530d31fc-2690-49e4-bfc9-3f991e145008
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: oW6HMjniDmBJdjGKwhBAIS2zMS1VvHORubh9vdazqQ0
+    short-id: ed571d022f7bc3bf
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
   server: 85.237.207.221
   port: 443
   udp: true
@@ -17,22 +46,6 @@ proxies:
     short-id: fd2fa5e06670120b
   servername: dl.google.com
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
-  server: 103.115.109.49
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
-  server: 160.187.100.109
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 160.187.100.109
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +54,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,5 +63,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 02 - myhuo
   - 🇹🇼 中国台湾 (Taiwan) 03 - myhuo
+  - 🇹🇼 中国台湾 (Taiwan) 04 - myhuo
 rules:
 - MATCH,PROXIES

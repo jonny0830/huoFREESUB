@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇷 希腊 (Greece) 01 - myhuo
-  server: 85.90.197.220
+- name: 🇮🇩 印尼 (Indonesia) 01 (移动家宽) - myhuo
+  server: 130.94.95.126
   port: 443
   udp: true
   type: vless
-  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
-  flow: xtls-rprx-vision
+  uuid: ed94398f-893f-40c6-b14c-bf02b5f6be16
   tls: true
   reality-opts:
-    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
-    short-id: 94acb54627612d43
-  servername: www.cloudflare.com
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+    short-id: 2da72ce6
+  servername: navi.bankrate.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇷 希腊 (Greece) 01 - myhuo
+  - 🇮🇩 印尼 (Indonesia) 01 (移动家宽) - myhuo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇷 希腊 (Greece) 01 - myhuo
+  - 🇮🇩 印尼 (Indonesia) 01 (移动家宽) - myhuo
 rules:
 - MATCH,PROXIES

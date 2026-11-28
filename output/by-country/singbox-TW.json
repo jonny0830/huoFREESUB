@@ -4,8 +4,53 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - myhuo",
+      "server": "103.115.109.49",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/oneclickvpnkeys",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
+      "server": "vpn-tw-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "css.rbxcdn.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
+      "server": "116.213.43.43",
+      "server_port": 11102,
+      "uuid": "530d31fc-2690-49e4-bfc9-3f991e145008",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oW6HMjniDmBJdjGKwhBAIS2zMS1VvHORubh9vdazqQ0",
+          "short_id": "ed571d022f7bc3bf"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - myhuo",
       "server": "85.237.207.221",
       "server_port": 443,
       "uuid": "b59bcb5b-5150-4c6b-9227-681886197014",
@@ -25,37 +70,14 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
-      "server": "103.115.109.49",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "t.me",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
-      "server": "160.187.100.109",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "160.187.100.109",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 03 - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 04 - myhuo"
       ]
     },
     {
@@ -64,7 +86,8 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - myhuo",
         "🇹🇼 中国台湾 (Taiwan) 02 - myhuo",
-        "🇹🇼 中国台湾 (Taiwan) 03 - myhuo"
+        "🇹🇼 中国台湾 (Taiwan) 03 - myhuo",
+        "🇹🇼 中国台湾 (Taiwan) 04 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

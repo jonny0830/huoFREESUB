@@ -1,0 +1,31 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo
+  server: v2new.nimbaha9.ir
+  port: 8080
+  udp: true
+  type: vless
+  uuid: b1758b10-8da1-4791-a1b3-44a77deea1ed
+  network: ws
+  ws-opts:
+    path: /XDS45
+    headers:
+      Host: v2new.nimbaha9.ir
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - myhuo
+rules:
+- MATCH,PROXIES

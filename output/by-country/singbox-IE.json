@@ -5,26 +5,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇲🇩 摩尔多瓦 (Moldova) 01 - myhuo",
-      "server": "217.156.123.25",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 01 - myhuo",
+      "server": "84.32.108.50",
       "server_port": 443,
-      "uuid": "ba373a70-295f-482d-a471-8bc17b54e23b",
+      "uuid": "2098ca45-e61c-0015-ad7d-8badb6b154f4",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "farlantern.xyz",
+        "server_name": "nl-ams1.connect.accessboy.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ",
-          "short_id": "27350908de933e09"
+          "public_key": "1TtWNQhTJr_3H7-ypMw4EiLzVxy22AzUtMiE5JmQMl4",
+          "short_id": "1c5869a95671bcb0"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "neurex"
       }
     },
     {
@@ -32,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 摩尔多瓦 (Moldova) 01 - myhuo"
+        "🇮🇪 爱尔兰 (Ireland) 01 - myhuo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 摩尔多瓦 (Moldova) 01 - myhuo"
+        "🇮🇪 爱尔兰 (Ireland) 01 - myhuo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
